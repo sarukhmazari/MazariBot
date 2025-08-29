@@ -1,7 +1,7 @@
 const settings = require("../settings");
 async function aliveCommand(sock, chatId, message) {
     try {
-        const message1 = `*🤖 Knight Bot is Active!*\n\n` +
+        const message1 = `*🤖 MazariBot is Active!*\n\n` +
                        `*Version:* ${settings.version}\n` +
                        `*Status:* Online\n` +
                        `*Mode:* Public\n\n` +
@@ -18,8 +18,8 @@ async function aliveCommand(sock, chatId, message) {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363161513685998@newsletter',
-                    newsletterName: 'KnightBot MD',
+                    newsletterJid: '0029Vb6GUj8BPzjOWNfnhm1B@newsletter',
+                    newsletterName: 'MAZARI TECH',
                     serverMessageId: -1
                 }
             }

@@ -1,0 +1,6 @@
+2025/08/27-22:46:15.320 2b74 Creating DB C:\Users\Zeshan\Desktop\Mazari-Bot\.wwebjs_auth\session\Default\Local Storage\leveldb since it was missing.
+2025/08/27-22:46:15.335 2b74 Reusing MANIFEST C:\Users\Zeshan\Desktop\Mazari-Bot\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2025/08/27-22:46:15.336 2b74 Recovering log #7
+2025/08/27-22:46:15.336 2b74 Reusing old log C:\Users\Zeshan\Desktop\Mazari-Bot\.wwebjs_auth\session\Default\Local Storage\leveldb/000007.log 
+2025/08/27-22:46:15.337 2b74 Delete type=2 #5
+2025/08/27-22:46:15.337 2b74 Delete type=2 #8

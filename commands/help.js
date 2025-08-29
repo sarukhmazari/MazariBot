@@ -5,9 +5,9 @@ const path = require('path');
 async function helpCommand(sock, chatId, message) {
     const helpMessage = `
 ╔═══════════════════╗
-   *🤖 ${settings.botName || 'KnightBot-MD'}*  
+   *🤖 ${settings.botName || 'MazariBot'}*  
    Version: *${settings.version || '2.0.5'}*
-   by ${settings.botOwner || 'Mr Unique Hacker'}
+   by ${settings.botOwner || 'ZOXER & Owner'}
    YT : ${global.ytch}
 ╚═══════════════════╝
 
@@ -63,6 +63,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .mode
 ║ ➤ .autostatus
 ║ ➤ .clearsession
+║ ➤ .repair
 ║ ➤ .antidelete
 ║ ➤ .cleartmp
 ║ ➤ .setpp <reply to image>
@@ -190,7 +191,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .repo
 ╚═══════════════════╝
 
-Join our channel for updates:`;
+Join our channel for updates: https://whatsapp.com/channel/0029Vb6GUj8BPzjOWNfnhm1B`;
 
     try {
         const imagePath = path.join(__dirname, '../assets/bot_image.jpg');
@@ -205,8 +206,8 @@ Join our channel for updates:`;
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD',
+                        newsletterJid: '0029Vb6GUj8BPzjOWNfnhm1B@newsletter',
+                        newsletterName: 'MAZARI TECH',
                         serverMessageId: -1
                     }
                 }
@@ -219,8 +220,8 @@ Join our channel for updates:`;
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD by Mr Unique Hacker',
+                        newsletterJid: '0029Vb6GUj8BPzjOWNfnhm1B@newsletter',
+                        newsletterName: 'MAZARI TECH',
                         serverMessageId: -1
                     } 
                 }

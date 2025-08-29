@@ -74,6 +74,7 @@ const { handlePromotionEvent } = require('./commands/promote');
 const { handleDemotionEvent } = require('./commands/demote');
 const viewOnceCommand = require('./commands/viewonce');
 const clearSessionCommand = require('./commands/clearsession');
+const repairCommand = require('./commands/repair');
 const { autoStatusCommand, handleStatusUpdate } = require('./commands/autostatus');
 const { simpCommand } = require('./commands/simp');
 const { stupidCommand } = require('./commands/stupid');
@@ -103,8 +104,8 @@ const { animeCommand } = require('./commands/anime');
 // Global settings
 global.packname = settings.packname;
 global.author = settings.author;
-global.channelLink = "https://whatsapp.com/channel/0029Va90zAnIHphOuO8Msp3A";
-global.ytch = "Mr Unique Hacker";
+global.channelLink = "";
+global.ytch = "ZOXER & Owner";
 
 // Add this near the top of main.js with other global configurations
 const channelInfo = {
@@ -113,7 +114,7 @@ const channelInfo = {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363161513685998@newsletter',
-            newsletterName: 'KnightBot MD',
+            newsletterName: 'MazariBot',
             serverMessageId: -1
         }
     }
@@ -656,6 +657,9 @@ async function handleMessages(sock, messageUpdate, printLog) {
             case userMessage === '.clearsession' || userMessage === '.clearsesi':
                 await clearSessionCommand(sock, chatId, message);
                 break;
+            case userMessage === '.repair' || userMessage === '.reconnect':
+                await repairCommand(sock, chatId, message);
+                break;
             case userMessage.startsWith('.autostatus'):
                 const autoStatusArgs = userMessage.split(' ').slice(1);
                 await autoStatusCommand(sock, chatId, message, autoStatusArgs);
@@ -1016,7 +1020,7 @@ async function handleGroupParticipantUpdate(sock, update) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: channelId,
-                            newsletterName: 'KnightBot MD',
+                            newsletterName: 'MazariBot',
                             serverMessageId: -1
                         }
                     }
@@ -1055,7 +1059,7 @@ async function handleGroupParticipantUpdate(sock, update) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: channelId,
-                            newsletterName: 'KnightBot MD',
+                            newsletterName: 'MazariBot',
                             serverMessageId: -1
                         }
                     }

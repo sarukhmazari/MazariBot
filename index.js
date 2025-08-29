@@ -1,6 +1,6 @@
 /**
- * Knight Bot - A WhatsApp Bot
- * Copyright (c) 2024 Professor
+ * MazariBot - A WhatsApp Bot
+ * Copyright (c) 2024 ZOXER & Owner
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the MIT License.
@@ -100,15 +100,16 @@ const store = {
 store.readFromFile(STORE_FILE)
 setInterval(() => store.writeToFile(STORE_FILE), 10_000)
 
-let phoneNumber = "911234567890"
+let phoneNumber = null
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'))
 
-global.botname = "KNIGHT BOT"
+global.botname = "MazariBot"
 global.themeemoji = "•"
 
 const settings = require('./settings')
-const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
-const useMobile = process.argv.includes("--mobile")
+// Always use pairing code mode for better user experience
+const pairingCode = true
+const useMobile = false
 
 // Only create readline interface if we're in an interactive environment
 const rl = process.stdin.isTTY ? readline.createInterface({ input: process.stdin, output: process.stdout }) : null
@@ -116,8 +117,10 @@ const question = (text) => {
     if (rl) {
         return new Promise((resolve) => rl.question(text, resolve))
     } else {
-        // In non-interactive environment, use ownerNumber from settings
-        return Promise.resolve(settings.ownerNumber || phoneNumber)
+        // Always prompt for phone number in pairing mode
+        console.log(chalk.yellow("⚠️  Please run the bot in an interactive terminal to enter your phone number"))
+        console.log(chalk.cyan("💡 Tip: Use PowerShell or Command Prompt instead of double-clicking the file"))
+        process.exit(1)
     }
 }
 
@@ -176,7 +179,7 @@ async function startXeonBotInc() {
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
                                 newsletterJid: '120363161513685998@newsletter',
-                                newsletterName: 'KnightBot MD',
+                                newsletterName: 'MazariBot',
                                 serverMessageId: -1
                             }
                         }
@@ -226,15 +229,16 @@ async function startXeonBotInc() {
 
     XeonBotInc.serializeM = (m) => smsg(XeonBotInc, m, store)
 
-    // Handle pairing code
-    if (pairingCode && !XeonBotInc.authState.creds.registered) {
-        if (useMobile) throw new Error('Cannot use pairing code with mobile api')
-
+    // Handle pairing code - always prompt for phone number
+    if (!XeonBotInc.authState.creds.registered) {
+        console.log(chalk.cyan("🔐 WhatsApp Pairing Mode Activated"))
+        console.log(chalk.yellow("📱 You need to link your WhatsApp account using a pairing code"))
+        
         let phoneNumber
         if (!!global.phoneNumber) {
             phoneNumber = global.phoneNumber
         } else {
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFormat: 6281376552730 (without + or spaces) : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`\n📞 Please type your WhatsApp number 😍\nFormat: 6281376552730 (without + or spaces) : `)))
         }
 
         // Clean the phone number - remove any non-digit characters
@@ -251,11 +255,25 @@ async function startXeonBotInc() {
             try {
                 let code = await XeonBotInc.requestPairingCode(phoneNumber)
                 code = code?.match(/.{1,4}/g)?.join("-") || code
-                console.log(chalk.black(chalk.bgGreen(`Your Pairing Code : `)), chalk.black(chalk.white(code)))
-                console.log(chalk.yellow(`\nPlease enter this code in your WhatsApp app:\n1. Open WhatsApp\n2. Go to Settings > Linked Devices\n3. Tap "Link a Device"\n4. Enter the code shown above`))
+                
+                console.log(chalk.magenta("╔══════════════════════════════════════════╗"))
+                console.log(chalk.magenta("║           🔐 PAIRING CODE 🔐            ║"))
+                console.log(chalk.magenta("╠══════════════════════════════════════════╣"))
+                console.log(chalk.black(chalk.bgGreen(`║  Your Pairing Code: ${code.padEnd(20)} ║`)))
+                console.log(chalk.magenta("╚══════════════════════════════════════════╝"))
+                
+                console.log(chalk.cyan("\n📱 Follow these steps to link your WhatsApp:"))
+                console.log(chalk.yellow("1️⃣  Open WhatsApp on your phone"))
+                console.log(chalk.yellow("2️⃣  Go to Settings > Linked Devices"))
+                console.log(chalk.yellow("3️⃣  Tap 'Link a Device'"))
+                console.log(chalk.yellow("4️⃣  Choose 'Link with phone number'"))
+                console.log(chalk.yellow("5️⃣  Enter the pairing code above"))
+                console.log(chalk.green("\n⏳ Waiting for you to complete the pairing..."))
+                
             } catch (error) {
                 console.error('Error requesting pairing code:', error)
-                console.log(chalk.red('Failed to get pairing code. Please check your phone number and try again.'))
+                console.log(chalk.red('❌ Failed to get pairing code. Please check your phone number and try again.'))
+                console.log(chalk.yellow('💡 Make sure you entered the correct international format (e.g., 6281234567890)'))
             }
         }, 3000)
     }
@@ -269,27 +287,25 @@ async function startXeonBotInc() {
 
             const botNumber = XeonBotInc.user.id.split(':')[0] + '@s.whatsapp.net';
             await XeonBotInc.sendMessage(botNumber, {
-                text: `🤖 Bot Connected Successfully!\n\n⏰ Time: ${new Date().toLocaleString()}\n✅ Status: Online and Ready!
-                \n✅Make sure to join below channel`,
+                text: `🤖 MazariBot Connected Successfully!\n\n⏰ Time: ${new Date().toLocaleString()}\n✅ Status: Online and Ready!\n\n👑 Owners: ZOXER AND MAZARI\n\n✅ Make sure to join our WhatsApp Channel:\nhttps://whatsapp.com/channel/0029Vb6GUj8BPzjOWNfnhm1B`,
                 contextInfo: {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD',
+                        newsletterName: 'MazariBot',
                         serverMessageId: -1
                     }
                 }
             });
 
             await delay(1999)
-            console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${global.botname || 'KNIGHT BOT'} ]`)}\n\n`))
+            console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ MazariBot ]`)}\n\n`))
             console.log(chalk.cyan(`< ================================================== >`))
-            console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: MR UNIQUE HACKER`))
-            console.log(chalk.magenta(`${global.themeemoji || '•'} GITHUB: mrunqiuehacker`))
-            console.log(chalk.magenta(`${global.themeemoji || '•'} WA NUMBER: ${owner}`))
-            console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: MR UNIQUE HACKER`))
-            console.log(chalk.green(`${global.themeemoji || '•'} 🤖 Bot Connected Successfully! ✅`))
+            console.log(chalk.magenta(`\n${global.themeemoji || '•'} OWNER: ZOXER AND MAZARI`))
+            console.log(chalk.magenta(`${global.themeemoji || '•'} CONTACT: 03232391033`))
+            console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: ZOXER AND MAZARI`))
+            console.log(chalk.green(`${global.themeemoji || '•'} 🤖 MazariBot Connected Successfully! ✅`))
         }
         if (connection === 'close') {
             const statusCode = lastDisconnect?.error?.output?.statusCode

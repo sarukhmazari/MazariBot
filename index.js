@@ -126,6 +126,9 @@ async function startBot () {
           console.log(chalk.cyan('WhatsApp → Settings → Linked Devices → Link with phone number'))
         } catch (err) {
           console.error('❌ Failed to get pairing code:', err?.message || err)
+          console.log("Retrying in 5 seconds...")
+          await delay(5000)
+          startBot().catch(e => console.error("Error on restart:", e))
         }
       }
     }

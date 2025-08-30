@@ -93,8 +93,7 @@ async function startBot() {
                     console.log(chalk.cyan("📱 Open WhatsApp on your phone → Settings → Linked Devices → Link with phone number and enter the code."));
                 } catch (err) {
                     console.error("❌ Failed to request pairing code:", err.message);
-                    console.error(chalk.red("Please check your PHONE_NUMBER environment variable and restart."));
-                    process.exit(1);
+                    console.error(chalk.red("Please check your PHONE_NUMBER environment variable. The bot will attempt to restart."));
                 }
             } else {
                 // Fallback to QR code in logs if no phone number is provided

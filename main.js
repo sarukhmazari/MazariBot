@@ -105,7 +105,7 @@ const { animeCommand } = require('./commands/anime');
 global.packname = settings.packname;
 global.author = settings.author;
 global.channelLink = "";
-global.ytch = "ZOXER & Owner";
+global.ytch = "ZOXER & MAZARI";
 
 // Add this near the top of main.js with other global configurations
 const channelInfo = {
@@ -195,6 +195,9 @@ async function handleMessages(sock, messageUpdate, printLog) {
           } */
 
         if (!message.key.fromMe) incrementMessageCount(chatId, senderId);
+
+        // Add auto-reaction to every message when enabled (before other processing)
+        await addCommandReaction(sock, message);
 
         // Check for bad words FIRST, before ANY other processing
         if (isGroup && userMessage) {
@@ -952,10 +955,8 @@ async function handleMessages(sock, messageUpdate, printLog) {
             });
         }
 
-        if (userMessage.startsWith('.')) {
-            // After command is processed successfully
-            await addCommandReaction(sock, message);
-        }
+        // Auto-reaction is now handled at the beginning for all messages
+        // No need to add it here again
     } catch (error) {
         console.error('❌ Error in message handler:', error.message);
         // Only try to send error message if we have a valid chatId

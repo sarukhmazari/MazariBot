@@ -12,7 +12,11 @@ function extractMentionedJid(message) {
 
 async function sudoCommand(sock, chatId, message) {
     const senderJid = message.key.participant || message.key.remoteJid;
-    const ownerJid = settings.ownerNumber + '@s.whatsapp.net';
+    
+    // Handle owner number with + symbol - remove + and add @s.whatsapp.net
+    const ownerNumberClean = settings.ownerNumber.replace('+', '');
+    const ownerJid = ownerNumberClean + '@s.whatsapp.net';
+    
     const isOwner = message.key.fromMe || senderJid === ownerJid;
 
     const rawText = message.message?.conversation || message.message?.extendedTextMessage?.text || '';
@@ -53,8 +57,9 @@ async function sudoCommand(sock, chatId, message) {
     }
 
     if (sub === 'del' || sub === 'remove') {
-        const ownerJid = settings.ownerNumber + '@s.whatsapp.net';
-        if (targetJid === ownerJid) {
+        // Handle owner number with + symbol for comparison
+        const ownerJidClean = ownerNumberClean + '@s.whatsapp.net';
+        if (targetJid === ownerJidClean) {
             await sock.sendMessage(chatId, { text: 'Owner cannot be removed.' });
             return;
         }

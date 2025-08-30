@@ -159,7 +159,7 @@ If you like this project, please give it a [⭐️ star on GitHub](https://githu
 
 ## Credits
 
-- [ZOXER & Owner](https://github.com/yourusername)
+- [ZOXER & MAZARI](https://github.com/yourusername)
 - [Baileys](https://github.com/adiwajshing/Baileys)
 - [TechGod143](https://github.com/TechGod143) for pair code
 - [Dgxeon](https://github.com/Dgxeon) for pair code
@@ -187,7 +187,7 @@ This project is licensed under the MIT License. However, you must:
 
 ## 📜 Copyright Notice
 
-Copyright (c) 2024 ZOXER & Owner. All rights reserved.
+Copyright (c) 2024 ZOXER & MAZARI. All rights reserved.
 
 This project contains code from various open source projects:
 - Baileys (MIT License)

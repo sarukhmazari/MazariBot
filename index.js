@@ -1,6 +1,6 @@
 /**
  * MazariBot - A WhatsApp Bot
- * Copyright (c) 2024 ZOXER & Owner
+ * Copyright (c) 2024 ZOXER & MAZARI
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the MIT License.

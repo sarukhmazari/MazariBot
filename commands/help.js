@@ -7,7 +7,7 @@ async function helpCommand(sock, chatId, message) {
 ╔═══════════════════╗
    *🤖 ${settings.botName || 'MazariBot'}*  
    Version: *${settings.version || '2.0.5'}*
-   by ${settings.botOwner || 'ZOXER & Owner'}
+   by ${settings.botOwner || 'ZOXER & MAZARI'}
    YT : ${global.ytch}
 ╚═══════════════════╝
 
@@ -67,7 +67,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .antidelete
 ║ ➤ .cleartmp
 ║ ➤ .setpp <reply to image>
-║ ➤ .autoreact
+║ ➤ .areact <on/off>
 ║ ➤ .autotyping <on/off>
 ║ ➤ .autoread <on/off>
 ╚═══════════════════╝

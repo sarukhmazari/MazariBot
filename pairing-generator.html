@@ -1,0 +1,183 @@
+    <script>
+        let currentPairingCode = null;
+        let checkInterval = null;
+
+        async function generatePairingCode() {
+            const phoneNumber = document.getElementById('phoneNumber').value.trim();
+            
+            if (!phoneNumber) {
+                showStatus('Please enter your WhatsApp number', 'error');
+                return;
+            }
+            
+            if (phoneNumber.length < 10) {
+                showStatus('Please enter a valid phone number with country code', 'error');
+                return;
+            }
+            
+            // Show loading
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('generateBtn').disabled = true;
+            hideStatus();
+            
+            try {
+                // Call the pairing server API
+                const response = await fetch('/api/generate-code', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ phoneNumber })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    currentPairingCode = data.code;
+                    
+                    // Display the code
+                    document.getElementById('pairingCode').textContent = data.code;
+                    document.getElementById('codeDisplay').style.display = 'block';
+                    document.getElementById('instructions').style.display = 'block';
+                    
+                    showStatus('✅ Pairing code generated successfully!', 'success');
+                    
+                    // Start checking for connection
+                    startConnectionCheck(phoneNumber, data.code);
+                    
+                } else {
+                    showStatus(data.message || 'Failed to generate pairing code', 'error');
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                showStatus('Failed to connect to pairing server', 'error');
+            } finally {
+                // Hide loading
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('generateBtn').disabled = false;
+            }
+        }
+        
+        async function startConnectionCheck(phoneNumber, code) {
+            showStatus('🔄 Waiting for you to enter the pairing code...', 'success');
+            
+            // Check connection status every 5 seconds
+            checkInterval = setInterval(async () => {
+                try {
+                    const response = await fetch(`/api/check-status/${code}`);
+                    const data = await response.json();
+                    
+                    if (data.success) {
+                        if (data.status === 'completed') {
+                            clearInterval(checkInterval);
+                            showStatus('🎉 Pairing completed! Your WhatsApp is now connected to MazariBot!', 'success');
+                            
+                            // Update UI to show completion
+                            document.getElementById('instructions').innerHTML = `
+                                <h3>✅ Connection Successful!</h3>
+                                <p>Your WhatsApp is now connected to MazariBot!</p>
+                                <p>You can now:</p>
+                                <ul>
+                                    <li>Send messages to the bot</li>
+                                    <li>Use commands like .ping, .help, .test</li>
+                                    <li>Get auto-reactions on your messages</li>
+                                    <li>Access all 80+ bot features</li>
+                                </ul>
+                                <p><strong>Bot is running on Railway and ready to use!</strong></p>
+                            `;
+                        }
+                    } else {
+                        console.log('Checking pairing status...');
+                    }
+                } catch (error) {
+                    console.error('Error checking status:', error);
+                }
+            }, 5000);
+        }
+        
+        async function completePairing() {
+            if (!currentPairingCode) {
+                showStatus('No pairing code available', 'error');
+                return;
+            }
+            
+            const phoneNumber = document.getElementById('phoneNumber').value.trim();
+            
+            try {
+                const response = await fetch('/api/complete-pairing', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        code: currentPairingCode,
+                        phoneNumber 
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showStatus('🎉 Pairing completed successfully!', 'success');
+                    clearInterval(checkInterval);
+                } else {
+                    showStatus(data.message || 'Failed to complete pairing', 'error');
+                }
+                
+            } catch (error) {
+                console.error('Error completing pairing:', error);
+                showStatus('Failed to complete pairing', 'error');
+            }
+        }
+        
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.textContent = message;
+            statusDiv.className = `status ${type}`;
+            statusDiv.style.display = 'block';
+        }
+        
+        function hideStatus() {
+            document.getElementById('status').style.display = 'none';
+        }
+        
+        // Clean up interval when page unloads
+        window.addEventListener('beforeunload', () => {
+            if (checkInterval) {
+                clearInterval(checkInterval);
+            }
+        });
+        
+        // Phone number formatting
+        document.getElementById('phoneNumber').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0 && !value.startsWith('92')) {
+                value = '92' + value;
+            }
+            e.target.value = value;
+        });
+        
+        // Add complete pairing button to instructions
+        document.addEventListener('DOMContentLoaded', function() {
+            const instructions = document.getElementById('instructions');
+            if (instructions) {
+                instructions.innerHTML += `
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button onclick="completePairing()" style="
+                            background: linear-gradient(135deg, #28a745, #20c997);
+                            color: white;
+                            border: none;
+                            padding: 12px 24px;
+                            border-radius: 8px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            margin-top: 15px;
+                        ">
+                            ✅ Complete Pairing
+                        </button>
+                    </div>
+                `;
+            }
+        });
+    </script>

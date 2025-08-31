@@ -2,6 +2,20 @@
  * MazariBot - A WhatsApp Bot
  * Copyright (c) 2024 ZOXER & MAZARI
  * MIT License
+ * 
+ * ⚠️  IMPORTANT: This bot code alone will NOT work!
+ * 
+ * To make the bot functional, you MUST deploy it to a server (like Railway).
+ * Simply pairing with the code here will only give you credentials, not a working bot.
+ * 
+ * 🚀 Deploy to Railway:
+ * 1. Go to Railway.app
+ * 2. Connect your GitHub repo
+ * 3. Set environment variables (SESSION_DIR, PHONE_NUMBER)
+ * 4. Add persistent volume
+ * 5. Deploy and pair with the code from Railway logs
+ * 
+ * 📖 See RAILWAY_DEPLOYMENT.md for detailed instructions
  */
 
 require('./settings')

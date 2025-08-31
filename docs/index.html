@@ -4,17 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MazariBot - Get Your Pairing Code</title>
-    <meta name="description" content="Get your WhatsApp pairing code to connect to MazariBot - The ultimate WhatsApp bot with 80+ commands!">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="MazariBot - Get Your Pairing Code">
-    <meta property="og:description" content="Connect your WhatsApp to MazariBot and unlock 80+ amazing features!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sarukhmazari.github.io/MazariBot/">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://github.com/sarukhmazari/MazariBot/raw/main/assets/bot_image.jpg">
-    
     <style>
         * {
             margin: 0;
@@ -23,7 +12,7 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
@@ -53,54 +42,18 @@
             justify-content: center;
             font-size: 50px;
             color: white;
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
         
         h1 {
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             font-size: 32px;
-            font-weight: 700;
         }
         
         .subtitle {
             color: #666;
             margin-bottom: 30px;
             font-size: 18px;
-            line-height: 1.5;
-        }
-        
-        .features {
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 25px;
-            margin: 25px 0;
-            text-align: left;
-        }
-        
-        .features h3 {
-            color: #667eea;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-        
-        .features ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .features li {
-            padding: 8px 0;
-            color: #555;
-            position: relative;
-            padding-left: 25px;
-        }
-        
-        .features li:before {
-            content: "✅";
-            position: absolute;
-            left: 0;
-            color: #28a745;
         }
         
         .phone-input {
@@ -109,93 +62,43 @@
         
         input[type="tel"] {
             width: 100%;
-            padding: 18px;
-            border: 3px solid #e1e5e9;
-            border-radius: 15px;
-            font-size: 18px;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
             text-align: center;
-            transition: all 0.3s;
-            font-weight: 600;
-        }
-        
-        input[type="tel"]:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-            transform: translateY(-2px);
         }
         
         .generate-btn {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             border: none;
-            padding: 18px 40px;
-            border-radius: 15px;
-            font-size: 18px;
-            font-weight: 600;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 16px;
             cursor: pointer;
-            transition: all 0.3s;
             margin: 20px 0;
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
-        }
-        
-        .generate-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 25px rgba(102, 126, 234, 0.4);
-        }
-        
-        .generate-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-        
-        .loading {
-            display: none;
-            margin: 25px 0;
-        }
-        
-        .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #667eea;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 15px;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
         }
         
         .code-display {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            border: 3px dashed #667eea;
-            border-radius: 20px;
-            padding: 30px;
+            background: #f8f9fa;
+            border: 2px dashed #667eea;
+            border-radius: 15px;
+            padding: 25px;
             margin: 25px 0;
             display: none;
-            animation: fadeIn 0.5s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
         }
         
         .code {
-            font-size: 40px;
+            font-size: 36px;
             font-weight: bold;
             color: #667eea;
-            letter-spacing: 8px;
+            letter-spacing: 5px;
             margin: 20px 0;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
         .instructions {
-            background: linear-gradient(135deg, #e8f4fd, #d1ecf1);
+            background: #e8f4fd;
             border-radius: 15px;
             padding: 25px;
             margin: 25px 0;
@@ -203,116 +106,29 @@
             display: none;
         }
         
-        .instructions h3 {
-            color: #1976d2;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-        
-        .instructions ol {
-            padding-left: 25px;
-            color: #555;
-        }
-        
-        .instructions li {
-            margin-bottom: 12px;
-            line-height: 1.6;
-        }
-        
-        .instructions strong {
-            color: #1976d2;
-        }
-        
         .status {
             padding: 15px;
-            border-radius: 12px;
+            border-radius: 10px;
             margin: 20px 0;
             display: none;
-            font-weight: 600;
+            font-weight: bold;
         }
         
         .status.success {
             background: #d4edda;
             color: #155724;
-            border: 2px solid #c3e6cb;
         }
         
         .status.error {
             background: #f8d7da;
             color: #721c24;
-            border: 2px solid #f5c6cb;
         }
         
         .footer {
-            margin-top: 35px;
-            padding-top: 25px;
-            border-top: 2px solid #e1e5e9;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
             color: #666;
-            font-size: 14px;
-        }
-        
-        .footer a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        
-        .social-links {
-            margin: 20px 0;
-        }
-        
-        .social-links a {
-            display: inline-block;
-            margin: 0 10px;
-            padding: 10px 20px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: 600;
-            transition: transform 0.3s;
-        }
-        
-        .social-links a:hover {
-            transform: translateY(-2px);
-        }
-        
-        .complete-btn {
-            background: linear-gradient(135deg, #28a745, #20c997);
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: all 0.3s;
-        }
-        
-        .complete-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3);
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 25px;
-                margin: 10px;
-            }
-            
-            h1 {
-                font-size: 28px;
-            }
-            
-            .code {
-                font-size: 32px;
-                letter-spacing: 6px;
-            }
         }
     </style>
 </head>
@@ -320,32 +136,15 @@
     <div class="container">
         <div class="logo">🤖</div>
         <h1>MazariBot</h1>
-        <p class="subtitle">Get your WhatsApp pairing code and connect to the ultimate WhatsApp bot with 80+ amazing features!</p>
-        
-        <div class="features">
-            <h3>🚀 What You Get:</h3>
-            <ul>
-                <li>Auto-reactions to every message (488+ emojis)</li>
-                <li>80+ powerful commands and features</li>
-                <li>Games, media tools, and entertainment</li>
-                <li>Group management and moderation</li>
-                <li>AI-powered chatbot and responses</li>
-                <li>24/7 availability on Railway</li>
-            </ul>
-        </div>
+        <p class="subtitle">Get your WhatsApp pairing code and connect to the ultimate WhatsApp bot!</p>
         
         <div class="phone-input">
             <input type="tel" id="phoneNumber" placeholder="Enter your WhatsApp number (e.g., 923232391033)" maxlength="15">
         </div>
         
-        <button class="generate-btn" id="generateBtn" onclick="generatePairingCode()">
+        <button class="generate-btn" onclick="generatePairingCode()">
             🔐 Generate Pairing Code
         </button>
-        
-        <div class="loading" id="loading">
-            <div class="spinner"></div>
-            <p>Generating your pairing code...</p>
-        </div>
         
         <div class="code-display" id="codeDisplay">
             <h3>🔐 Your Pairing Code</h3>
@@ -365,8 +164,8 @@
                 <li>Click <strong>"Complete Pairing"</strong> below</li>
             </ol>
             
-            <div style="text-align: center; margin-top: 25px;">
-                <button class="complete-btn" onclick="completePairing()">
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="generate-btn" onclick="completePairing()" style="background: #28a745;">
                     ✅ Complete Pairing
                 </button>
             </div>
@@ -374,23 +173,15 @@
         
         <div class="status" id="status"></div>
         
-        <div class="social-links">
-            <a href="https://github.com/sarukhmazari/MazariBot" target="_blank">⭐ Star on GitHub</a>
-            <a href="https://railway.app" target="_blank">🚀 Powered by Railway</a>
-        </div>
-        
         <div class="footer">
             <p>🤖 <strong>MazariBot</strong> - The Ultimate WhatsApp Bot</p>
-            <p>Developed with ❤️ by <strong>ZOXER & MAZARI</strong></p>
-            <p>Your bot is already running on Railway and ready to use!</p>
+            <p>Developed by <strong>ZOXER & MAZARI</strong></p>
+            <p>Your bot is running on Railway and ready to use!</p>
         </div>
     </div>
 
     <script>
-        let currentPairingCode = null;
-        let checkInterval = null;
-
-        async function generatePairingCode() {
+        function generatePairingCode() {
             const phoneNumber = document.getElementById('phoneNumber').value.trim();
             
             if (!phoneNumber) {
@@ -403,52 +194,18 @@
                 return;
             }
             
-            // Show loading
-            document.getElementById('loading').style.display = 'block';
-            document.getElementById('generateBtn').disabled = true;
-            hideStatus();
+            // Generate a unique 8-digit code
+            const code = Math.floor(10000000 + Math.random() * 90000000).toString();
             
-            try {
-                // Generate a unique 8-digit code
-                const code = Math.floor(10000000 + Math.random() * 90000000).toString();
-                currentPairingCode = code;
-                
-                // Display the code
-                document.getElementById('pairingCode').textContent = code.match(/.{1,4}/g).join('-');
-                document.getElementById('codeDisplay').style.display = 'block';
-                document.getElementById('instructions').style.display = 'block';
-                
-                showStatus('✅ Pairing code generated successfully!', 'success');
-                
-                // Start checking for connection
-                startConnectionCheck(phoneNumber, code);
-                
-            } catch (error) {
-                console.error('Error:', error);
-                showStatus('Failed to generate pairing code', 'error');
-            } finally {
-                // Hide loading
-                document.getElementById('loading').style.display = 'none';
-                document.getElementById('generateBtn').disabled = false;
-            }
-        }
-        
-        function startConnectionCheck(phoneNumber, code) {
-            showStatus('🔄 Waiting for you to enter the pairing code...', 'success');
+            // Display the code
+            document.getElementById('pairingCode').textContent = code.match(/.{1,4}/g).join('-');
+            document.getElementById('codeDisplay').style.display = 'block';
+            document.getElementById('instructions').style.display = 'block';
             
-            // Simulate connection check every 5 seconds
-            checkInterval = setInterval(() => {
-                console.log(`Checking connection for ${phoneNumber} with code ${code}`);
-            }, 5000);
+            showStatus('✅ Pairing code generated successfully!', 'success');
         }
         
         function completePairing() {
-            if (!currentPairingCode) {
-                showStatus('No pairing code available', 'error');
-                return;
-            }
-            
-            clearInterval(checkInterval);
             showStatus('🎉 Pairing completed! Your WhatsApp is now connected to MazariBot!', 'success');
             
             // Update UI to show completion
@@ -472,17 +229,6 @@
             statusDiv.className = `status ${type}`;
             statusDiv.style.display = 'block';
         }
-        
-        function hideStatus() {
-            document.getElementById('status').style.display = 'none';
-        }
-        
-        // Clean up interval when page unloads
-        window.addEventListener('beforeunload', () => {
-            if (checkInterval) {
-                clearInterval(checkInterval);
-            }
-        });
         
         // Phone number formatting
         document.getElementById('phoneNumber').addEventListener('input', function(e) {

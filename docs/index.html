@@ -1,134 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>MazariBot - Get Pairing Code</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MazariBot - Get Your Pairing Code</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
         }
-        
         .container {
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            padding: 40px;
-            max-width: 600px;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
             width: 100%;
             text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
-        
         .logo {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 50px;
-            color: white;
+            font-size: 60px;
+            margin-bottom: 20px;
         }
-        
         h1 {
             color: #333;
             margin-bottom: 20px;
-            font-size: 32px;
         }
-        
         .subtitle {
             color: #666;
             margin-bottom: 30px;
-            font-size: 18px;
         }
-        
-        .phone-input {
-            margin: 30px 0;
-        }
-        
-        input[type="tel"] {
+        input {
             width: 100%;
             padding: 15px;
             border: 2px solid #ddd;
             border-radius: 10px;
             font-size: 16px;
-            text-align: center;
+            margin-bottom: 20px;
+            box-sizing: border-box;
         }
-        
-        .generate-btn {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+        button {
+            background: #667eea;
             color: white;
             border: none;
             padding: 15px 30px;
             border-radius: 10px;
             font-size: 16px;
             cursor: pointer;
-            margin: 20px 0;
+            margin: 10px;
         }
-        
-        .code-display {
+        .code {
             background: #f8f9fa;
             border: 2px dashed #667eea;
-            border-radius: 15px;
-            padding: 25px;
-            margin: 25px 0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
             display: none;
         }
-        
-        .code {
-            font-size: 36px;
+        .code-text {
+            font-size: 32px;
             font-weight: bold;
             color: #667eea;
             letter-spacing: 5px;
-            margin: 20px 0;
         }
-        
         .instructions {
             background: #e8f4fd;
-            border-radius: 15px;
-            padding: 25px;
-            margin: 25px 0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
             text-align: left;
             display: none;
         }
-        
         .status {
             padding: 15px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 15px 0;
             display: none;
             font-weight: bold;
         }
-        
-        .status.success {
+        .success {
             background: #d4edda;
             color: #155724;
         }
-        
-        .status.error {
+        .error {
             background: #f8d7da;
             color: #721c24;
-        }
-        
-        .footer {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            color: #666;
         }
     </style>
 </head>
@@ -136,68 +98,59 @@
     <div class="container">
         <div class="logo">🤖</div>
         <h1>MazariBot</h1>
-        <p class="subtitle">Get your WhatsApp pairing code and connect to the ultimate WhatsApp bot!</p>
+        <p class="subtitle">Get your WhatsApp pairing code instantly!</p>
         
-        <div class="phone-input">
-            <input type="tel" id="phoneNumber" placeholder="Enter your WhatsApp number (e.g., 923232391033)" maxlength="15">
-        </div>
+        <input type="tel" id="phoneNumber" placeholder="Enter your WhatsApp number (e.g., 923232391033)" maxlength="15">
         
-        <button class="generate-btn" onclick="generatePairingCode()">
-            🔐 Generate Pairing Code
-        </button>
+        <button onclick="generateCode()">🔐 Generate Pairing Code</button>
         
-        <div class="code-display" id="codeDisplay">
-            <h3>🔐 Your Pairing Code</h3>
-            <div class="code" id="pairingCode"></div>
-            <p>Use this code to connect your WhatsApp to MazariBot</p>
+        <div class="code" id="codeDisplay">
+            <h3>Your Pairing Code:</h3>
+            <div class="code-text" id="pairingCode"></div>
+            <p>Use this code in WhatsApp to connect to MazariBot</p>
         </div>
         
         <div class="instructions" id="instructions">
             <h3>📱 How to Connect:</h3>
             <ol>
-                <li>Open <strong>WhatsApp</strong> on your phone</li>
-                <li>Go to <strong>Settings → Linked Devices</strong></li>
-                <li>Tap <strong>"Link a Device"</strong></li>
-                <li>Choose <strong>"Link with phone number"</strong></li>
+                <li>Open WhatsApp on your phone</li>
+                <li>Go to Settings → Linked Devices</li>
+                <li>Tap "Link a Device"</li>
+                <li>Choose "Link with phone number"</li>
                 <li>Enter the pairing code above</li>
                 <li>Wait for connection confirmation</li>
-                <li>Click <strong>"Complete Pairing"</strong> below</li>
             </ol>
             
-            <div style="text-align: center; margin-top: 20px;">
-                <button class="generate-btn" onclick="completePairing()" style="background: #28a745;">
-                    ✅ Complete Pairing
-                </button>
-            </div>
+            <button onclick="completePairing()" style="background: #28a745;">✅ Complete Pairing</button>
         </div>
         
         <div class="status" id="status"></div>
         
-        <div class="footer">
-            <p>🤖 <strong>MazariBot</strong> - The Ultimate WhatsApp Bot</p>
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; color: #666;">
+            <p><strong>MazariBot</strong> - The Ultimate WhatsApp Bot</p>
             <p>Developed by <strong>ZOXER & MAZARI</strong></p>
             <p>Your bot is running on Railway and ready to use!</p>
         </div>
     </div>
 
     <script>
-        function generatePairingCode() {
-            const phoneNumber = document.getElementById('phoneNumber').value.trim();
+        function generateCode() {
+            const phone = document.getElementById('phoneNumber').value.trim();
             
-            if (!phoneNumber) {
+            if (!phone) {
                 showStatus('Please enter your WhatsApp number', 'error');
                 return;
             }
             
-            if (phoneNumber.length < 10) {
-                showStatus('Please enter a valid phone number with country code', 'error');
+            if (phone.length < 10) {
+                showStatus('Please enter a valid phone number', 'error');
                 return;
             }
             
-            // Generate a unique 8-digit code
+            // Generate 8-digit code
             const code = Math.floor(10000000 + Math.random() * 90000000).toString();
             
-            // Display the code
+            // Display code
             document.getElementById('pairingCode').textContent = code.match(/.{1,4}/g).join('-');
             document.getElementById('codeDisplay').style.display = 'block';
             document.getElementById('instructions').style.display = 'block';
@@ -208,26 +161,19 @@
         function completePairing() {
             showStatus('🎉 Pairing completed! Your WhatsApp is now connected to MazariBot!', 'success');
             
-            // Update UI to show completion
             document.getElementById('instructions').innerHTML = `
                 <h3>✅ Connection Successful!</h3>
                 <p>Your WhatsApp is now connected to MazariBot!</p>
-                <p>You can now:</p>
-                <ul>
-                    <li>Send messages to the bot</li>
-                    <li>Use commands like .ping, .help, .test</li>
-                    <li>Get auto-reactions on your messages</li>
-                    <li>Access all 80+ bot features</li>
-                </ul>
+                <p>You can now use all bot commands and features!</p>
                 <p><strong>Bot is running on Railway and ready to use!</strong></p>
             `;
         }
         
         function showStatus(message, type) {
-            const statusDiv = document.getElementById('status');
-            statusDiv.textContent = message;
-            statusDiv.className = `status ${type}`;
-            statusDiv.style.display = 'block';
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = `status ${type}`;
+            status.style.display = 'block';
         }
         
         // Phone number formatting
@@ -239,10 +185,8 @@
             e.target.value = value;
         });
         
-        // Auto-focus on phone input
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('phoneNumber').focus();
-        });
+        // Auto-focus
+        document.getElementById('phoneNumber').focus();
     </script>
 </body>
 </html>

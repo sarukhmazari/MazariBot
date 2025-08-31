@@ -1,0 +1,15 @@
+# Jekyll configuration for GitHub Pages
+theme: jekyll-theme-cayman
+title: MazariBot - Get Your Pairing Code
+description: Connect your WhatsApp to MazariBot with a simple pairing code
+url: "https://sarukhmazari.github.io"
+baseurl: "/MazariBot"
+
+# Enable GitHub Pages
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+highlighter: rouge

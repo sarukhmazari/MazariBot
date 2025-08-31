@@ -9,7 +9,8 @@ async function ttsCommand(sock, chatId, text, message, language = 'en') {
     }
 
     const fileName = `tts-${Date.now()}.mp3`;
-    const filePath = path.join(__dirname, '..', 'assets', fileName);
+    // Use /tmp/ for Railway and cloud compatibility
+    const filePath = path.join('/tmp', fileName);
 
     const gtts = new gTTS(text, language);
     gtts.save(filePath, async function (err) {

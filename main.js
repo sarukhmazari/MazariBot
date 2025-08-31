@@ -104,7 +104,7 @@ const { animeCommand } = require('./commands/anime');
 // Global settings
 global.packname = settings.packname;
 global.author = settings.author;
-global.channelLink = "";
+global.channelLink = "https://whatsapp.com/channel/0029Vb6GUj8BPzjOWNfnhm1B";
 global.ytch = "ZOXER & MAZARI";
 
 // Add this near the top of main.js with other global configurations
@@ -113,8 +113,8 @@ const channelInfo = {
         forwardingScore: 1,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363161513685998@newsletter',
-            newsletterName: 'MazariBot',
+            newsletterJid: '0029Vb6GUj8BPzjOWNfnhm1B@newsletter',
+            newsletterName: 'MAZARI TECH',
             serverMessageId: -1
         }
     }
@@ -282,7 +282,21 @@ async function handleMessages(sock, messageUpdate, printLog) {
         // We'll show typing indicator after command execution if needed
         let commandExecuted = false;
 
+        // Add debug logging
+        console.log(`🔍 Processing command: "${userMessage}" in ${isGroup ? 'group' : 'private'} chat`)
+
         switch (true) {
+            case userMessage === '.test':
+                try {
+                    await sock.sendMessage(chatId, { 
+                        text: '✅ *Test Command Working!*\n\n🤖 Bot is responding to commands\n📱 All systems operational\n\nTry other commands like:\n.ping - Check bot status\n.help - See all commands\n.owner - Bot owner info' 
+                    });
+                    console.log('✅ Test command executed successfully');
+                    commandExecuted = true;
+                } catch (error) {
+                    console.error('❌ Error executing test command:', error);
+                }
+                break;
             case userMessage === '.simage': {
                 const quotedMessage = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
                 if (quotedMessage?.stickerMessage) {
@@ -1003,7 +1017,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const welcomeData = data.welcome[id];
             const welcomeMessage = welcomeData?.message || 'Welcome {user} to the group! 🎉';
-            const channelId = welcomeData?.channelId || '120363161513685998@newsletter';
+            const channelId = welcomeData?.channelId || '0029Vb6GUj8BPzjOWNfnhm1B@newsletter';
 
             // Send welcome message for each new participant
             for (const participant of participants) {
@@ -1021,7 +1035,7 @@ async function handleGroupParticipantUpdate(sock, update) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: channelId,
-                            newsletterName: 'MazariBot',
+                            newsletterName: 'MAZARI TECH',
                             serverMessageId: -1
                         }
                     }
@@ -1043,7 +1057,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const goodbyeData = data.goodbye[id];
             const goodbyeMessage = goodbyeData?.message || 'Goodbye {user} 👋';
-            const channelId = goodbyeData?.channelId || '120363161513685998@newsletter';
+            const channelId = goodbyeData?.channelId || '0029Vb6GUj8BPzjOWNfnhm1B@newsletter';
 
             // Send goodbye message for each leaving participant
             for (const participant of participants) {
@@ -1060,7 +1074,7 @@ async function handleGroupParticipantUpdate(sock, update) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: channelId,
-                            newsletterName: 'MazariBot',
+                            newsletterName: 'MAZARI TECH',
                             serverMessageId: -1
                         }
                     }

@@ -2,6 +2,14 @@
 
 A powerful WhatsApp bot with 80+ commands, auto-reactions, and advanced features.
 
+## 🚀 **Get Your Pairing Code NOW!**
+
+**[🔐 CLICK HERE TO GET YOUR PAIRING CODE](https://sarukhmazari.github.io/MazariBot/)**
+
+**Users can now get pairing codes directly from GitHub and connect to your Railway bot instantly!**
+
+---
+
 ## ⚠️ **IMPORTANT: Bot Must Be Deployed to Work**
 
 **This repository only contains the bot code. The bot will NOT work just by pairing with the code here.**

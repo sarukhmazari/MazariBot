@@ -39,14 +39,14 @@ const {
   delay
 } = require('@whiskeysockets/baileys')
 
-// ==== CONFIG ====
+// ==== CONFIG ==== 
 const SESSION_DIR = process.env.SESSION_DIR || './session'   // <-- mount a Railway Volume and set SESSION_DIR=/data/session
 const STORE_FILE = process.env.STORE_FILE || './baileys_store.json'
 const PHONE_NUMBER = process.env.PHONE_NUMBER || null         // <-- set on Railway like 923232391033 (no +)
 const RECONNECT_DELAY_MS = 5000
 const MAX_RECONNECT_ATTEMPTS = 3
 
-// ==== LIGHTWEIGHT STORE (optional) ====
+// ==== LIGHTWEIGHT STORE (optional) ==== 
 const store = { messages: {}, contacts: {}, chats: {} }
 store.readFromFile = (filePath = STORE_FILE) => {
   try {
@@ -67,9 +67,9 @@ store.writeToFile = (filePath = STORE_FILE) => {
 store.readFromFile(STORE_FILE)
 setInterval(() => store.writeToFile(STORE_FILE), 10_000)
 
-// ==== PROMPT UTILS (only local/dev) ====
-const rl = process.stdin.isTTY ? readline.createInterface({ 
-  input: process.stdin, 
+// ==== PROMPT UTILS (only local/dev) ==== 
+const rl = process.stdin.isTTY ? readline.createInterface({
+  input: process.stdin,
   output: process.stdout,
   terminal: true
 }) : null
@@ -86,7 +86,7 @@ const question = (text) => {
   })
 }
 
-// ==== GLOBAL FLAGS ====
+// ==== GLOBAL FLAGS ==== 
 let restarting = false
 let reconnectAttempts = 0
 
@@ -208,7 +208,7 @@ async function startBot() {
             }
             
             try {
-              console.log(chalk.yellow('�� Requesting pairing code...'))
+              console.log(chalk.yellow(' Requesting pairing code...'))
               let code = await sock.requestPairingCode(cleanPn)
               code = code?.match(/.{1,4}/g)?.join('-') || code
               console.log(chalk.magenta('\n🔐 Pairing Code:'), chalk.bgGreen.black(code))
@@ -304,7 +304,7 @@ async function startBot() {
   }
 }
 
-// ====== PROCESS-LEVEL SAFETY NETS ======
+// ====== PROCESS-LEVEL SAFETY NETS ====== 
 process.on('uncaughtException', (err) => {
   console.error(chalk.red('❌ Uncaught Exception:'), err)
   if (rl) rl.close()
@@ -402,140 +402,3 @@ app.post('/api/complete-pairing', async (req, res) => {
 app.listen(port, () => {
   console.log(chalk.green(`🚀 MazariBot listening on port ${port}`));
 });
-
-let pairingStatus = 'pending';
-let globalSock = null;
-
-// ... (rest of the startBot function)
-
-sock.ev.on('connection.update', async ({ connection, lastDisconnect }) => {
-  if (connection === 'open') {
-    pairingStatus = 'completed';
-    globalSock = sock;
-    console.log(chalk.green('✅ MazariBot connected successfully!'))
-    console.log(chalk.cyan('🤖 Bot is now ready to receive messages'))
-    reconnectAttempts = 0 // Reset reconnect attempts on successful connection
-    if (rl) rl.close()
-    
-    // Send connection status message to WhatsApp
-    try {
-      // Get the bot's own JID
-      const botJid = sock.user.id
-      if (botJid) {
-        // Send status message to show bot is online
-        await sock.sendMessage(botJid, {
-          text: '🤖 *MazariBot is now ONLINE!*\n\n✅ Bot connected successfully\n📱 Ready to receive messages and commands\n\nUse `.help` to see all available commands\nUse `.ping` to check if bot is responsive'
-        })
-        console.log(chalk.green('📱 Connection status message sent to WhatsApp'))
-      }
-    } catch (error) {
-      console.log(chalk.yellow('⚠️ Could not send connection status message (this is normal for first-time setup)'))
-    }
-    
-    // Initialize bot functionality
-    await initializeBot(sock)
-  }
-
-  if (connection === 'close') {
-    pairingStatus = 'pending';
-    globalSock = null;
-    const status = new Boom(lastDisconnect?.error)?.output?.statusCode
-    const text = DisconnectReason[status] || status
-
-    console.log(chalk.yellow(`Connection closed. Reason: ${text}.`))
-
-    // Cleanup on loggedOut to force full re-auth
-    if (status === DisconnectReason.loggedOut || status === 401) {
-      try { 
-        fs.rmSync(SESSION_DIR, { recursive: true, force: true })
-        console.log(chalk.red('Session removed. Will require re-link.'))
-      } catch {}
-    }
-
-    // Prevent infinite reconnection loops
-    if (reconnectAttempts >= MAX_RECONNECT_ATTEMPTS) {
-      console.log(chalk.red(`❌ Maximum reconnection attempts (${MAX_RECONNECT_ATTEMPTS}) reached. Stopping bot.`))
-      console.log(chalk.yellow('Please check your connection and restart the bot manually.'))
-      if (rl) rl.close()
-      process.exit(1)
-    }
-
-    // Backoff & restart with limit
-    if (!restarting) {
-      restarting = true
-      reconnectAttempts++
-      console.log(chalk.gray(`Reconnecting in ${RECONNECT_DELAY_MS / 1000}s... (Attempt ${reconnectAttempts}/${MAX_RECONNECT_ATTEMPTS})`))
-      await delay(RECONNECT_DELAY_MS)
-      restarting = false
-      startBot().catch(e => console.error('Restart error:', e))
-    }
-  }
-})
-
-// ... (rest of the file)
-
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.get('/', (req, res) => {
-  res.send('MazariBot is running!');
-});
-
-app.get('/pairing-code', (req, res) => {
-  res.sendFile(path.join(__dirname, 'pairing-generator.html'));
-});
-
-app.post('/api/generate-code', async (req, res) => {
-  const { phoneNumber } = req.body;
-  if (!phoneNumber) {
-    return res.status(400).json({ success: false, message: 'Phone number is required' });
-  }
-
-  try {
-    const sock = await startBot();
-    let code = await sock.requestPairingCode(phoneNumber);
-    code = code?.match(/.{1,4}/g)?.join('-') || code;
-    res.json({ success: true, code });
-  } catch (error) {
-    console.error(chalk.red('❌ Error generating pairing code:'), error);
-    res.status(500).json({ success: false, message: 'Failed to generate pairing code' });
-  }
-});
-
-app.get('/api/check-status/:code', (req, res) => {
-  const { code } = req.params;
-  // In a real application, you would check the status of the pairing code.
-  // For this example, we'll just simulate a successful pairing after a delay.
-  if (pairingStatus === 'completed') {
-    res.json({ success: true, status: 'completed' });
-  } else {
-    res.json({ success: true, status: 'pending' });
-  }
-});
-
-app.post('/api/complete-pairing', async (req, res) => {
-  const { code, phoneNumber } = req.body;
-  if (!code || !phoneNumber) {
-    return res.status(400).json({ success: false, message: 'Code and phone number are required' });
-  }
-
-  try {
-    if (globalSock) {
-      await globalSock.sendMessage(phoneNumber + '@s.whatsapp.net', {
-        text: '🎉 Pairing completed successfully! Welcome to MazariBot!'
-      });
-      res.json({ success: true });
-    } else {
-      res.status(500).json({ success: false, message: 'Bot is not connected' });
-    }
-  } catch (error) {
-    console.error(chalk.red('❌ Error sending completion message:'), error);
-    res.status(500).json({ success: false, message: 'Failed to send completion message' });
-  }
-});
-
-app.listen(port, () => {
-  console.log(chalk.green(`🚀 MazariBot listening on port ${port}`));
-});
-

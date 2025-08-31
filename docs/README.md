@@ -1,18 +1,17 @@
 # MazariBot Pairing Interface
 
-This is the GitHub Pages site for MazariBot pairing codes.
-
-Visit: https://sarukhmazari.github.io/MazariBot/
+Simple GitHub Pages site for MazariBot pairing codes.
 
 ## What This Does
 
-- Users can visit the website
-- Enter their WhatsApp number
-- Get a pairing code
-- Connect to your Railway bot instantly
+Users can visit the website, enter their WhatsApp number, and get a pairing code to connect to your Railway bot.
 
 ## Files
 
 - `index.html` - Main pairing interface
 - `_config.yml` - Jekyll configuration
 - `README.md` - This file
+
+## Visit
+
+https://sarukhmazari.github.io/MazariBot/

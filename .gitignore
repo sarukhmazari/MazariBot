@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# Baileys session files (standard auth names)
+session/
+auth/
+*auth_info.json
+*session.json
+mazari_session/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS specific files
+.DS_Store
+Thumbs.db

@@ -39,12 +39,12 @@
     "pino": "^8.21.0",
     "qrcode-terminal": "^0.12.0",
     "ruhend-scraper": "^10.0.1",
+    "sharp": "^0.33.5",
     "youtube-yts": "^2.0.0",
     "yt-search": "^2.12.1",
     "ytdl-core": "^4.11.5"
   },
   "overrides": {
-    "sharp": "npm:chalk@^4.1.2",
     "jimp": "^1.6.0"
   },
   "engines": {

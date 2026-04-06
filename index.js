@@ -53,9 +53,13 @@ async function launch() {
     // 2. Fetch existing sessions from database
     const { data: dbSessions } = await supabase.from('bot_sessions').select('phone_number').eq('is_paired', true);
 
-    // 3. Always ask for a phone number as requested
-    console.log(chalk.blue('\n🌐 Starting Mazari Bot Interactive Flow...'));
-    let primaryPhone = await question(chalk.bgBlack(chalk.cyan(`
+    // 3. Interactive or Autonomous start
+    let primaryPhone;
+    const isInteractive = process.stdout.isTTY && process.env.SKIP_PROMPT !== 'true';
+
+    if (isInteractive) {
+      console.log(chalk.blue('\n🌐 Starting Mazari Bot Interactive Flow...'));
+      primaryPhone = await question(chalk.bgBlack(chalk.cyan(`
 ‹⧼ © MAZARI BOT ⧽›
 ‹⧼ Version Official ⧽›
 =========================================
@@ -65,13 +69,17 @@ async function launch() {
 ╎ Format: 923xxxxxxxx (without + or spaces) : 
 ╰────────────────╼ `)));
 
-    if (primaryPhone) {
-      primaryPhone = primaryPhone.replace(/[^0-9]/g, '');
-      console.log(chalk.yellow(`\n🔄 Initializing new session for ${primaryPhone}...`));
-      await initSession(primaryPhone, { usePairingCode: true });
+      if (primaryPhone) {
+        primaryPhone = primaryPhone.replace(/[^0-9]/g, '');
+        console.log(chalk.yellow(`\n🔄 Initializing new session for ${primaryPhone}...`));
+        await initSession(primaryPhone, { usePairingCode: true });
+      } else {
+        console.log(chalk.yellow('\nℹ️ No number entered. Resuming existing sessions...'));
+      }
     } else {
-      console.log(chalk.yellow('\nℹ️ No number entered. Resuming existing sessions...'));
+      console.log(chalk.blue('\n🤖 Non-interactive environment detected. Skipping prompt and resuming active sessions...'));
     }
+
 
     // 4. Then initialize all other existing sessions
     const pairedSessions = dbSessions || [];

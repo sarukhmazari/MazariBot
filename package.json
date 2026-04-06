@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/boom": "^10.0.1",
+    "@supabase/supabase-js": "^2.101.1",
     "@whiskeysockets/baileys": "7.0.0-rc.9",
     "awesome-phonenumber": "^5.9.0",
     "axios": "^1.8.4",

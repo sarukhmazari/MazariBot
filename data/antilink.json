@@ -1,0 +1,11 @@
+{
+  "antilink": false,
+  "allowedDomains": [
+    "whatsapp.com",
+    "wa.me",
+    "t.me",
+    "telegram.me"
+  ],
+  "removedLinks": [],
+  "warnings": {}
+}

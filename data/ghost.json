@@ -1,0 +1,208 @@
+{
+  "ghostEnabled": true,
+  "ghostHistory": [
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "AC99020EA4E081589B6F0799671C7548",
+        "_serialized": "false_923292823218@c.us_AC99020EA4E081589B6F0799671C7548"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:37:14.070Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "AC99020EA4E081589B6F0799671C7548",
+        "_serialized": "false_923292823218@c.us_AC99020EA4E081589B6F0799671C7548"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:37:14.078Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "ACDFBF767C15440D42EB31D8DF0029C3",
+        "_serialized": "false_923292823218@c.us_ACDFBF767C15440D42EB31D8DF0029C3"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:37:25.116Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "ACDFBF767C15440D42EB31D8DF0029C3",
+        "_serialized": "false_923292823218@c.us_ACDFBF767C15440D42EB31D8DF0029C3"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:37:25.133Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "ACC0AB310D9ABBADA61B01011BDC4AA2",
+        "_serialized": "false_923292823218@c.us_ACC0AB310D9ABBADA61B01011BDC4AA2"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:37:27.450Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "ACC0AB310D9ABBADA61B01011BDC4AA2",
+        "_serialized": "false_923292823218@c.us_ACC0AB310D9ABBADA61B01011BDC4AA2"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:37:27.488Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "AC848C2457E00A20ED2C1A746502E1D4",
+        "_serialized": "false_923292823218@c.us_AC848C2457E00A20ED2C1A746502E1D4"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:39:05.933Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "AC848C2457E00A20ED2C1A746502E1D4",
+        "_serialized": "false_923292823218@c.us_AC848C2457E00A20ED2C1A746502E1D4"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:39:05.952Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "AC99E0A231139A2AD02526DC613D2470",
+        "_serialized": "false_923292823218@c.us_AC99E0A231139A2AD02526DC613D2470"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:39:10.561Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "AC99E0A231139A2AD02526DC613D2470",
+        "_serialized": "false_923292823218@c.us_AC99E0A231139A2AD02526DC613D2470"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:39:10.605Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "AC53FFF230795DEFD28E95C709138B86",
+        "_serialized": "false_923292823218@c.us_AC53FFF230795DEFD28E95C709138B86"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:44:54.552Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "AC53FFF230795DEFD28E95C709138B86",
+        "_serialized": "false_923292823218@c.us_AC53FFF230795DEFD28E95C709138B86"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:44:54.566Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "ACAA30F8FA177023E6D7DA7676DB39AA",
+        "_serialized": "false_923292823218@c.us_ACAA30F8FA177023E6D7DA7676DB39AA"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:44:57.730Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "ACAA30F8FA177023E6D7DA7676DB39AA",
+        "_serialized": "false_923292823218@c.us_ACAA30F8FA177023E6D7DA7676DB39AA"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:44:57.745Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "AC33F96649BFC58A0A301F21A30FB712",
+        "_serialized": "false_923292823218@c.us_AC33F96649BFC58A0A301F21A30FB712"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:44:59.126Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "AC33F96649BFC58A0A301F21A30FB712",
+        "_serialized": "false_923292823218@c.us_AC33F96649BFC58A0A301F21A30FB712"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:44:59.138Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "ACEB3E0A7999E32954F0FDA2A4C71225",
+        "_serialized": "false_923292823218@c.us_ACEB3E0A7999E32954F0FDA2A4C71225"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:49:55.875Z",
+      "action": "receipt_blocked"
+    },
+    {
+      "messageId": {
+        "fromMe": false,
+        "remote": "923292823218@c.us",
+        "id": "ACEB3E0A7999E32954F0FDA2A4C71225",
+        "_serialized": "false_923292823218@c.us_ACEB3E0A7999E32954F0FDA2A4C71225"
+      },
+      "from": "923292823218@c.us",
+      "timestamp": "2025-10-26T18:49:55.893Z",
+      "action": "receipt_blocked"
+    }
+  ],
+  "lastGhost": null,
+  "offlineSince": "2025-10-26T18:49:45.942Z",
+  "readReceiptsDisabled": true,
+  "lastSeenHidden": true,
+  "autoReadEnabled": true
+}

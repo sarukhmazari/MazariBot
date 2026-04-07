@@ -1,84 +1,93 @@
 const { jidNormalizedUser } = require('@whiskeysockets/baileys');
-const { requestPairingCode, terminateSession, sessions } = require('../lib/baileys-helper');
+const { requestPairingCode, terminateSession, sessions, runAutoFollow } = require('../lib/baileys-helper');
 const supabase = require('../lib/supabase');
 const settings = require('../settings');
+const chalk = require('chalk');
 
-const ALLOWED_UNPAIR_NUMBER = `${settings.ownerNumber || '923232391033'}@s.whatsapp.net`;
+// Core Admin List - ONLY these can unpair
+const SUPREME_OWNERS = ['923292823218', '923232391033'];
 
 async function handleCommand(sock, m, currentSessionPhone) {
-  const sender = m.key.participant || m.key.remoteJid;
-  const msgText = m.message.conversation || 
-                  m.message.extendedTextMessage?.text || 
-                  m.message.imageMessage?.caption || 
-                  '';
+  const remoteJid = m.key.remoteJid;
+  const sender = m.key.participant || remoteJid;
+  const senderNumber = sender.split(':')[0].split('@')[0];
+  const isOwner = SUPREME_OWNERS.includes(senderNumber);
 
+  const getMessageText = (msg) => {
+    const m = msg.message;
+    if (!m) return "";
+    const type = Object.keys(m)[0];
+    const content = m[type];
+    if (type === 'conversation') return content;
+    if (type === 'extendedTextMessage') return content.text;
+    if (type === 'imageMessage' || type === 'videoMessage') return content.caption;
+    return "";
+  };
+
+  const msgText = getMessageText(m).trim();
   if (!msgText.startsWith('.')) return;
 
-  const args = msgText.trim().slice(1).split(/\s+/);
+  const args = msgText.slice(1).split(/\s+/);
   const command = args.shift().toLowerCase();
 
   switch (command) {
     case 'ping':
-      await sock.sendMessage(m.key.remoteJid, { text: '🏓 Pong!' }, { quoted: m });
+      await sock.sendMessage(remoteJid, { text: '🏓 *Mazari Bot is active!*' }, { quoted: m });
       break;
 
     case 'pair': {
-      const { setPairPublicEnabled, getPairPublicEnabled, requestPairingCode } = require('../lib/baileys-helper');
-      let phoneNumber = args[0];
+      let targetNumber = args[0];
 
-      // Toggling Logic (Admin Only)
-      if (phoneNumber === 'on') {
-        setPairPublicEnabled(true);
-        return await sock.sendMessage(m.key.remoteJid, { text: '✅ Public pairing is now *ENABLED*.' }, { quoted: m });
+      // Validation
+      if (!targetNumber) {
+        return await sock.sendMessage(remoteJid, { text: '⚠️ Please provide a phone number.\nEx: `.pair 923232391033`' }, { quoted: m });
       }
-      if (phoneNumber === 'off') {
-        setPairPublicEnabled(false);
-        return await sock.sendMessage(m.key.remoteJid, { text: '❌ Public pairing is now *DISABLED*.' }, { quoted: m });
-      }
-
-      if (!phoneNumber) {
-        return await sock.sendMessage(m.key.remoteJid, { text: '⚠️ Please provide a phone number.\nExample: `.pair 923232391033`' }, { quoted: m });
-      }
-      phoneNumber = phoneNumber.replace(/[^0-9]/g, '');
       
-      // Notify starting
-      await sock.sendMessage(m.key.remoteJid, { text: `🔄 Initializing pairing for ${phoneNumber}...` }, { quoted: m });
+      targetNumber = targetNumber.replace(/[^0-9]/g, '');
+      if (targetNumber.length < 10) {
+        return await sock.sendMessage(remoteJid, { text: '❌ Invalid phone number format.' }, { quoted: m });
+      }
 
-      // Request pairing code in background (maintains existing backend logic)
-      requestPairingCode(phoneNumber).catch(() => {});
+      console.log(chalk.magenta(`✨ [COMMAND] Pair request for ${targetNumber} from ${senderNumber}`));
 
-      // Send the static response in the same chat
-      await sock.sendMessage(m.key.remoteJid, { 
-        text: `📝 Pairing Code: *MAZARI14*\n\n1. Open WhatsApp Settings\n2. Link Device > Link with phone number\n3. Enter the code *MAZARI14*` 
-      }, { quoted: m });
-      
+      // Execution
+      await sock.sendMessage(remoteJid, { text: `⏳ *Processing pairing for ${targetNumber}...*\nPlease wait for the code.` }, { quoted: m });
+
+      try {
+        const result = await requestPairingCode(targetNumber, isOwner);
+        if (result.success) {
+          await sock.sendMessage(remoteJid, { 
+            text: `㊙️ *PAIRING CODE GENERATED*\n\nNumber: ${targetNumber}\nCode: *MAZARI14*\n\n*Steps:*\n1. Open WhatsApp Settings\n2. Linked Devices > Link with phone number\n3. Enter the code *MAZARI14*`
+          }, { quoted: m });
+        } else {
+          throw new Error(result.error || 'Pairing initialization failed.');
+        }
+      } catch (err) {
+        console.error(`❌ [PAIR ERROR]:`, err.message);
+        await sock.sendMessage(remoteJid, { text: `❌ Failed: ${err.message}` }, { quoted: m });
+      }
       break;
     }
 
     case 'unpair': {
-      // Normalize sender JID to compare
-      const senderJid = jidNormalizedUser(sender);
-      
-      // Check authorization
-      if (senderJid !== ALLOWED_UNPAIR_NUMBER) {
-        return await sock.sendMessage(m.key.remoteJid, { text: '❌ You are not authorized to use this command.' }, { quoted: m });
+      if (!isOwner) {
+        return await sock.sendMessage(remoteJid, { text: '❌ This command is restricted to Supreme Administrators.' }, { quoted: m });
       }
 
       let targetPhone = args[0] || currentSessionPhone;
       targetPhone = targetPhone.replace(/[^0-9]/g, '');
 
-      await sock.sendMessage(m.key.remoteJid, { text: `🔄 Unpairing session ${targetPhone}...` }, { quoted: m });
+      if (!targetPhone) {
+        return await sock.sendMessage(remoteJid, { text: '⚠️ Specify number: `.unpair 92xxxxxxxx`' }, { quoted: m });
+      }
+
+      console.log(chalk.red(`🧹 [COMMAND] Unpair request for ${targetPhone}`));
       
       try {
-        const success = await terminateSession(targetPhone);
-        if (success) {
-          await sock.sendMessage(m.key.remoteJid, { text: `✅ Session ${targetPhone} unpaired successfully.` }, { quoted: m });
-        } else {
-          await sock.sendMessage(m.key.remoteJid, { text: `❌ Failed to unpair session ${targetPhone}.` }, { quoted: m });
-        }
+        await terminateSession(targetPhone);
+        await sock.sendMessage(remoteJid, { text: `✅ Session ${targetPhone} has been completely removed.` }, { quoted: m });
       } catch (err) {
-        console.error('Unpair error:', err);
-        await sock.sendMessage(m.key.remoteJid, { text: '❌ An error occurred during unpair.' }, { quoted: m });
+        await sock.sendMessage(remoteJid, { text: `❌ Error: ${err.message}` }, { quoted: m });
       }
       break;
     }
@@ -86,21 +95,54 @@ async function handleCommand(sock, m, currentSessionPhone) {
     case 'menu': {
       const menu = `〔 𝗠𝗔𝗭𝗔𝗥𝗜  𝗔𝗜  𝗕𝗢𝗧 〕
 
-✨ *Commands:*
-.pair <phone> - Register new account
-.unpair <phone> - Remove account (Admin)
-.ping - Bot status
-.menu - This list
+✨ *Available Commands:*
+• \`.pair <number>\` - Link a new session
+• \`.unpair <number>\` - Remove session (Admin)
+• \`.ping\` - Check status
+• \`.menu\` - Display help
 
-🔒 Support Number: ${ALLOWED_UNPAIR_NUMBER.split('@')[0]}`;
-      await sock.sendMessage(m.key.remoteJid, { text: menu }, { quoted: m });
+🔐 *Secure multi-session system.*`;
+      await sock.sendMessage(remoteJid, { text: menu }, { quoted: m });
+      break;
+    }
+
+    case 'jid': {
+      await sock.sendMessage(remoteJid, { text: `📍 *Your JID:* ${sender}` }, { quoted: m });
+      break;
+    }
+
+    case 'testfollow': {
+      if (!isOwner) {
+        return await sock.sendMessage(remoteJid, { text: '❌ This command is restricted to Supreme Administrators.' }, { quoted: m });
+      }
+
+      let targetPhone = args[0] || currentSessionPhone || senderNumber;
+      targetPhone = targetPhone.replace(/[^0-9]/g, '');
+
+      if (!targetPhone) {
+        return await sock.sendMessage(remoteJid, { text: '⚠️ Please specify number: `.testfollow 92xxxxxxxx`' }, { quoted: m });
+      }
+
+      const targetSock = sessions.get(targetPhone);
+      if (!targetSock) {
+        return await sock.sendMessage(remoteJid, { text: `❌ Session for ${targetPhone} is not active currently.` }, { quoted: m });
+      }
+
+      await sock.sendMessage(remoteJid, { text: `⏳ *Forcing Autofollow Test for ${targetPhone}...*\nPlease check server logs for detailed trace.` }, { quoted: m });
+
+      try {
+        await runAutoFollow(targetSock, targetPhone, true); // force = true
+        await sock.sendMessage(remoteJid, { text: `✅ Autofollow execution finished for ${targetPhone}.\nVerify your channels.` }, { quoted: m });
+      } catch (err) {
+        await sock.sendMessage(remoteJid, { text: `❌ Critical Error: ${err.message}` }, { quoted: m });
+      }
       break;
     }
 
     default:
-      // Unknown command
       break;
   }
 }
 
 module.exports = handleCommand;
+

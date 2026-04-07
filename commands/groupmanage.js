@@ -1,1 +1,92 @@
-const _0x33cf9d=_0x5e82;(function(_0x2a838a,_0x16f9a3){const _0x2a20a3=_0x5e82,_0x17f308=_0x2a838a();while(!![]){try{const _0x50b31c=-parseInt(_0x2a20a3(0x1bb))/(-0x3f*0x85+0xc39+0x1*0x1483)*(-parseInt(_0x2a20a3(0x1c0))/(0x157+0x1*0x108f+-0x11e4))+parseInt(_0x2a20a3(0x1a3))/(-0x1fd2*0x1+-0x2fa+0x43*0x85)*(parseInt(_0x2a20a3(0x1ac))/(0x1a21+-0xfb9+0x14*-0x85))+parseInt(_0x2a20a3(0x1c1))/(-0x2*-0xeeb+0x3*-0x1cd+-0x5*0x4e2)+-parseInt(_0x2a20a3(0x1cc))/(-0x578+0x21d5+-0x1c57)*(parseInt(_0x2a20a3(0x1b3))/(-0xdd1+0x22ef+0x1517*-0x1))+-parseInt(_0x2a20a3(0x1c5))/(-0x3*0xc76+0x1e0+0x238a)*(-parseInt(_0x2a20a3(0x1c7))/(-0x16c0+-0x1*0x22d7+0x8*0x734))+-parseInt(_0x2a20a3(0x1b8))/(-0x1797+0x212b+-0x98a)+parseInt(_0x2a20a3(0x1a8))/(-0x17*0x1a5+-0xa85+0x3063)*(parseInt(_0x2a20a3(0x1cd))/(0x942+-0xb61*0x1+0x22b));if(_0x50b31c===_0x16f9a3)break;else _0x17f308['push'](_0x17f308['shift']());}catch(_0xd6b805){_0x17f308['push'](_0x17f308['shift']());}}}(_0x1358,0xbc30a+0x445*-0x81+0xba98));const fs=require('fs'),path=require(_0x33cf9d(0x1a9)),{downloadContentFromMessage}=require('@whiskeysockets/baileys');async function ensureGroupAndAdmin(_0x2c416c,_0x571243,_0x1246a6){const _0x3e5959=_0x33cf9d,_0x3eefe1=_0x571243['endsWith'](_0x3e5959(0x1b4));if(!_0x3eefe1)return await _0x2c416c[_0x3e5959(0x1bc)](_0x571243,{'text':_0x3e5959(0x1ab)}),{'ok':![]};const _0x382dd8=require(_0x3e5959(0x1cf)),_0x2446ce=await _0x382dd8(_0x2c416c,_0x571243,_0x1246a6);if(!_0x2446ce[_0x3e5959(0x1bd)])return await _0x2c416c[_0x3e5959(0x1bc)](_0x571243,{'text':_0x3e5959(0x1c8)}),{'ok':![]};if(!_0x2446ce['isSenderAdmin'])return await _0x2c416c[_0x3e5959(0x1bc)](_0x571243,{'text':_0x3e5959(0x1b2)}),{'ok':![]};return{'ok':!![]};}async function setGroupDescription(_0x478c26,_0x5e2f17,_0x4749e9,_0x416842,_0x9aa709){const _0x25bd21=_0x33cf9d,_0x2f75a5=await ensureGroupAndAdmin(_0x478c26,_0x5e2f17,_0x4749e9);if(!_0x2f75a5['ok'])return;const _0x5e4824=(_0x416842||'')[_0x25bd21(0x1a7)]();if(!_0x5e4824){await _0x478c26['sendMessage'](_0x5e2f17,{'text':_0x25bd21(0x1c2)},{'quoted':_0x9aa709});return;}try{await _0x478c26['groupUpdateDescription'](_0x5e2f17,_0x5e4824),await _0x478c26[_0x25bd21(0x1bc)](_0x5e2f17,{'text':_0x25bd21(0x1ca)},{'quoted':_0x9aa709});}catch(_0x3670c8){await _0x478c26['sendMessage'](_0x5e2f17,{'text':'❌\x20Failed\x20to\x20update\x20group\x20description.'},{'quoted':_0x9aa709});}}async function setGroupName(_0x17e23d,_0x101944,_0x500626,_0x1f8827,_0xe7699d){const _0x3d9390=_0x33cf9d,_0x403342=await ensureGroupAndAdmin(_0x17e23d,_0x101944,_0x500626);if(!_0x403342['ok'])return;const _0x589681=(_0x1f8827||'')['trim']();if(!_0x589681){await _0x17e23d[_0x3d9390(0x1bc)](_0x101944,{'text':'Usage:\x20.setgname\x20<new\x20name>'},{'quoted':_0xe7699d});return;}try{await _0x17e23d[_0x3d9390(0x1b7)](_0x101944,_0x589681),await _0x17e23d[_0x3d9390(0x1bc)](_0x101944,{'text':_0x3d9390(0x1c3)},{'quoted':_0xe7699d});}catch(_0x590391){await _0x17e23d['sendMessage'](_0x101944,{'text':_0x3d9390(0x1bf)},{'quoted':_0xe7699d});}}function _0x1358(){const _0x410ca0=['DhjPBq','ndreBuL4DvO','Cgf0Aa','BwTKAxjtEw5J','vgHPCYbJB21Tyw5KignHBIbVBMX5igjLihvZzwqGAw4Gz3jVDxbZlG','mZy4yMrRtMfh','DxbKyxrLuhjVzMLSzvbPy3r1CMu','Dw5SAw5Ru3LUyW','zxHWB3j0CW','C3rPy2TLCK1LC3nHz2u','Aw1Hz2u','t25SEsbNCM91CcbHzg1PBNmGy2fUihvZzsb0AgLZignVBw1HBMqU','mJC3mJyZA0nZr2Ly','qgCUDxm','BM93','lMPWzW','z3jVDxbvCgrHDgvtDwjQzwn0','mtiXndC5odbSCNbcy2O','CxvVDgvKtwvZC2fNzq','4P2miezHAwXLzcb0BYb1CgrHDguGz3jVDxaGChjVzMLSzsbWAg90BY4','nJm2nZnyBwD0B2y','C2vUze1LC3nHz2u','AxncB3rbzg1PBG','y3DK','4P2miezHAwXLzcb0BYb1CgrHDguGz3jVDxaGBMfTzs4','mJrYtefYtu0','mta2ntiWnwrpz1bUvq','vxnHz2u6ic5ZzxrNzgvZyYa8zgvZy3jPChrPB24+','4PYfieDYB3vWig5HBwuGDxbKyxrLzc4','AM9PBG','mtqZntm2BffnvfzI','Dg1W','mZK2rhDzseLu','ugXLyxnLig1HA2uGDgHLigjVDcbHBIbHzg1PBIbMAxjZDc4','uMvWBhKGDg8Gyw4GAw1Hz2uVC3rPy2TLCIb3AxrOic5ZzxrNCha','4PYfieDYB3vWigrLC2nYAxb0Aw9UihvWzgf0zwqU','zNjVBq','nJbNvMjnDwi','ntyXotq4rM9Asenv','zxH0zw5KzwruzxH0twvZC2fNzq','lI4VBgLIl2LZqwrTAw4','mta5mtfVv2HLA0C','4PYfieDYB3vWihbYB2zPBguGCgHVDg8GDxbKyxrLzc4','BwvZC2fNzq','z3bWxW'];_0x1358=function(){return _0x410ca0;};return _0x1358();}function _0x5e82(_0x548efb,_0xc901be){_0x548efb=_0x548efb-(-0x12eb+-0x1*-0x581+-0xf0d*-0x1);const _0x56f788=_0x1358();let _0x1f264f=_0x56f788[_0x548efb];if(_0x5e82['gRMZYt']===undefined){var _0x462ad4=function(_0x34fca8){const _0x21da35='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x3bd25a='',_0xf23e43='';for(let _0x5a9332=-0x1*-0x2196+-0x6f*-0x2b+0x1*-0x343b,_0x15d7d9,_0x4eafda,_0x46a1d3=0x2a*-0x39+-0x4e3*-0x4+-0xa32;_0x4eafda=_0x34fca8['charAt'](_0x46a1d3++);~_0x4eafda&&(_0x15d7d9=_0x5a9332%(0x262d+0x588+-0x5*0x8bd)?_0x15d7d9*(0x913*-0x3+0xd87*0x1+0x33*0x46)+_0x4eafda:_0x4eafda,_0x5a9332++%(-0x1*0x24f2+0x15d*-0x5+0x2bc7))?_0x3bd25a+=String['fromCharCode'](-0x2422+0x10d*-0x19+0x3*0x1522&_0x15d7d9>>(-(-0xb6b+-0xb61*-0x2+0x3c7*-0x3)*_0x5a9332&-0x1c38+-0x47*-0x10+0x17ce)):-0x38*-0x34+0xe81+-0x19e1){_0x4eafda=_0x21da35['indexOf'](_0x4eafda);}for(let _0x540017=-0x10fa+0x1*-0x1e16+0x2f10,_0x568507=_0x3bd25a['length'];_0x540017<_0x568507;_0x540017++){_0xf23e43+='%'+('00'+_0x3bd25a['charCodeAt'](_0x540017)['toString'](0x1222+-0x3bb*-0x5+-0x24b9))['slice'](-(-0x1798+0x9e9+0xdb1));}return decodeURIComponent(_0xf23e43);};_0x5e82['ojMUnO']=_0x462ad4,_0x5e82['IeEmtx']={},_0x5e82['gRMZYt']=!![];}const _0x24dd37=_0x56f788[-0x139a*-0x1+-0x563*0x7+-0x2d*-0x67],_0x39517b=_0x548efb+_0x24dd37,_0x12c7fb=_0x5e82['IeEmtx'][_0x39517b];return!_0x12c7fb?(_0x1f264f=_0x5e82['ojMUnO'](_0x1f264f),_0x5e82['IeEmtx'][_0x39517b]=_0x1f264f):_0x1f264f=_0x12c7fb,_0x1f264f;}async function setGroupPhoto(_0x56b2e2,_0x4c7c81,_0x5d1d14,_0x477261){const _0x3fc702=_0x33cf9d,_0x29877c=await ensureGroupAndAdmin(_0x56b2e2,_0x4c7c81,_0x5d1d14);if(!_0x29877c['ok'])return;const _0x275e48=_0x477261[_0x3fc702(0x1a5)]?.[_0x3fc702(0x1ce)]?.['contextInfo']?.[_0x3fc702(0x1b9)],_0x5a523e=_0x275e48?.['imageMessage']||_0x275e48?.[_0x3fc702(0x1b0)];if(!_0x5a523e){await _0x56b2e2['sendMessage'](_0x4c7c81,{'text':_0x3fc702(0x1c9)},{'quoted':_0x477261});return;}try{const _0x2b200b=path[_0x3fc702(0x1c4)](process[_0x3fc702(0x1be)](),_0x3fc702(0x1c6));if(!fs['existsSync'](_0x2b200b))fs[_0x3fc702(0x1aa)](_0x2b200b,{'recursive':!![]});const _0x43b1c0=await downloadContentFromMessage(_0x5a523e,_0x3fc702(0x1b1));let _0x496cb5=Buffer[_0x3fc702(0x1cb)]([]);for await(const _0x396cf9 of _0x43b1c0)_0x496cb5=Buffer['concat']([_0x496cb5,_0x396cf9]);const _0x14be04=path['join'](_0x2b200b,_0x3fc702(0x1a6)+Date[_0x3fc702(0x1b5)]()+_0x3fc702(0x1b6));fs['writeFileSync'](_0x14be04,_0x496cb5),await _0x56b2e2[_0x3fc702(0x1ad)](_0x4c7c81,{'url':_0x14be04});try{fs[_0x3fc702(0x1ae)](_0x14be04);}catch(_0xf9fd3c){}await _0x56b2e2[_0x3fc702(0x1bc)](_0x4c7c81,{'text':_0x3fc702(0x1a4)},{'quoted':_0x477261});}catch(_0x8f9996){await _0x56b2e2[_0x3fc702(0x1bc)](_0x4c7c81,{'text':_0x3fc702(0x1ba)},{'quoted':_0x477261});}}module[_0x33cf9d(0x1af)]={'setGroupDescription':setGroupDescription,'setGroupName':setGroupName,'setGroupPhoto':setGroupPhoto};
+﻿const fs = require('fs');
+const path = require('path');
+const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
+
+async function ensureGroupAndAdmin(sock, chatId, senderId) {
+    const isGroup = chatId.endsWith('@g.us');
+    if (!isGroup) {
+        await sock.sendMessage(chatId, { text: 'This command can only be used in groups.' });
+        return { ok: false };
+    }
+    // Check admin status of sender and bot
+    const isAdmin = require('../lib/isAdmin');
+    const adminStatus = await isAdmin(sock, chatId, senderId);
+    if (!adminStatus.isBotAdmin) {
+        await sock.sendMessage(chatId, { text: 'Please make the bot an admin first.' });
+        return { ok: false };
+    }
+    if (!adminStatus.isSenderAdmin) {
+        await sock.sendMessage(chatId, { text: 'Only group admins can use this command.' });
+        return { ok: false };
+    }
+    return { ok: true };
+}
+
+async function setGroupDescription(sock, chatId, senderId, text, message) {
+    const check = await ensureGroupAndAdmin(sock, chatId, senderId);
+    if (!check.ok) return;
+    const desc = (text || '').trim();
+    if (!desc) {
+        await sock.sendMessage(chatId, { text: 'Usage: .setgdesc <description>' }, { quoted: message });
+        return;
+    }
+    try {
+        await sock.groupUpdateDescription(chatId, desc);
+        await sock.sendMessage(chatId, { text: '✅ Group description updated.' }, { quoted: message });
+    } catch (e) {
+        await sock.sendMessage(chatId, { text: '❌ Failed to update group description.' }, { quoted: message });
+    }
+}
+
+async function setGroupName(sock, chatId, senderId, text, message) {
+    const check = await ensureGroupAndAdmin(sock, chatId, senderId);
+    if (!check.ok) return;
+    const name = (text || '').trim();
+    if (!name) {
+        await sock.sendMessage(chatId, { text: 'Usage: .setgname <new name>' }, { quoted: message });
+        return;
+    }
+    try {
+        await sock.groupUpdateSubject(chatId, name);
+        await sock.sendMessage(chatId, { text: '✅ Group name updated.' }, { quoted: message });
+    } catch (e) {
+        await sock.sendMessage(chatId, { text: '❌ Failed to update group name.' }, { quoted: message });
+    }
+}
+
+async function setGroupPhoto(sock, chatId, senderId, message) {
+    const check = await ensureGroupAndAdmin(sock, chatId, senderId);
+    if (!check.ok) return;
+
+    const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
+    const imageMessage = quoted?.imageMessage || quoted?.stickerMessage;
+    if (!imageMessage) {
+        await sock.sendMessage(chatId, { text: 'Reply to an image/sticker with .setgpp' }, { quoted: message });
+        return;
+    }
+    try {
+        const tmpDir = path.join(process.cwd(), 'tmp');
+        if (!fs.existsSync(tmpDir)) fs.mkdirSync(tmpDir, { recursive: true });
+
+        const stream = await downloadContentFromMessage(imageMessage, 'image');
+        let buffer = Buffer.from([]);
+        for await (const chunk of stream) buffer = Buffer.concat([buffer, chunk]);
+
+        const imgPath = path.join(tmpDir, `gpp_${Date.now()}.jpg`);
+        fs.writeFileSync(imgPath, buffer);
+
+        await sock.updateProfilePicture(chatId, { url: imgPath });
+        try { fs.unlinkSync(imgPath); } catch (_) {}
+        await sock.sendMessage(chatId, { text: '✅ Group profile photo updated.' }, { quoted: message });
+    } catch (e) {
+        await sock.sendMessage(chatId, { text: '❌ Failed to update group profile photo.' }, { quoted: message });
+    }
+}
+
+module.exports = {
+    setGroupDescription,
+    setGroupName,
+    setGroupPhoto
+};
+
+

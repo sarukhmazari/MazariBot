@@ -1,14 +1,14 @@
 {
   "120363407517350313@g.us": {
     "30825651400921@lid": {
-      "lastMessage": "🤣",
+      "lastMessage": ".pair 92 304",
       "repeatCount": 1,
-      "lastTime": 1775212288156,
+      "lastTime": 1775587720864,
       "messageKeys": [
         {
           "remoteJid": "120363407517350313@g.us",
           "fromMe": false,
-          "id": "ACF98B131E8FAB7D2B773CF861D2F8D7",
+          "id": "ACC1B2034F0A9E3B172B8A744EB36A01",
           "participant": "30825651400921@lid",
           "participantAlt": "923252025304@s.whatsapp.net",
           "addressingMode": "lid"

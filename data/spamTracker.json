@@ -1,10 +1,4 @@
 {
-  "272438919176196@lid": {
-    "count": 1,
-    "lastMessageTime": 1775146990097,
-    "blocked": false,
-    "ignored": false
-  },
   "109994179600386@lid": {
     "count": 2,
     "lastMessageTime": 1775406311646,
@@ -26,6 +20,24 @@
   "252566105510140@lid": {
     "count": 2,
     "lastMessageTime": 1775408150748,
+    "blocked": false,
+    "ignored": false
+  },
+  "status@broadcast": {
+    "count": 1,
+    "lastMessageTime": 1775585306424,
+    "blocked": false,
+    "ignored": false
+  },
+  "72894671527938@lid": {
+    "count": 2,
+    "lastMessageTime": 1775585634283,
+    "blocked": false,
+    "ignored": false
+  },
+  "272438919176196@lid": {
+    "count": 2,
+    "lastMessageTime": 1775586516196,
     "blocked": false,
     "ignored": false
   }

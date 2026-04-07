@@ -1,1 +1,78 @@
-const _0x3d16ae=_0x1a7b;function _0x8132(){const _0x5aa04c=['iIaTlwPZlxj1BNrPBwvZig5VzguGlw8GiG','otG2odu0zxDWD3fR','rMfPBgvKihnLBMrPBMCGyxvKAw86','rxjYB3iGAw4GCgXHEsbJB21Tyw5KoG','BgvUz3rO','ExqTzgXWlMv4zq','Cgf0Aa','mJm2mZq5veL6wuHx','y2HPBgrFChjVy2vZCW','BwvZC2fNzq','zxjYB3i','C3bSAxq','x1bSzwfZzsb3ywL0ihLVDxiGzg93BMXVywqGAxmGAw4GChjVz3jLC3nF','iIaTEcaTlwf1zgLVlwzVCM1HDcbTCdmGls1MzM1WzwCTBg9JyxrPB24GiG','AM9PBG','mJi3mtD2v2zwD2y','DhjPBq','iIaI','zxHPC3rZu3LUyW','ExqTzgXWigvYCM9YoG','rg93BMXVywqGzMfPBgvKlIbqBgvHC2uGDhj5igfNywLUigXHDgvYlG','mtzPr2HkDKm','v2HHDcbZB25NigrVihLVDsb3yw50ihrVigrVD25SB2fKpW','mti5otC5nuvJwM14Bq','tM8GC29Uz3mGzM91BMqH','mtK0mJaWmMfiAKnkrG','nJzpAejXvNK','C2vUze1LC3nHz2u','Dw5SAw5Ru3LUyW','DxjS','mJvduvjZvgK','y3DK','y29UDMvYC2f0Aw9U','ndG5mtG4AvvSuuPj','ExqTC2vHCMnO','DgL0Bgu','lM1WmW','BwTKAxjtEw5J','zxHWB3j0CW','mtq2mJu2nLbjrenwAW','C2XPy2u','mZbnswHsuNi'];_0x8132=function(){return _0x5aa04c;};return _0x8132();}(function(_0x4f2efc,_0x459113){const _0xd8505f=_0x1a7b,_0x4dfa1b=_0x4f2efc();while(!![]){try{const _0x46ae6b=parseInt(_0xd8505f(0x17e))/(0x5a8*0x1+-0x107+0x10*-0x4a)*(parseInt(_0xd8505f(0x189))/(-0x35*0x9f+0x4b0*0x3+0x12dd))+-parseInt(_0xd8505f(0x188))/(0x3*-0x93+0x5be+-0x402)+parseInt(_0xd8505f(0x190))/(-0x1*-0x191b+-0x1*-0xd69+-0x2680)*(parseInt(_0xd8505f(0x18d))/(-0x47*0x2d+0xa7b*-0x2+0x2176))+-parseInt(_0xd8505f(0x16c))/(0x1*0x1399+0x1*-0x1d+-0x6a*0x2f)+-parseInt(_0xd8505f(0x186))/(-0x14b0+-0x26ee+0x3ba5)*(parseInt(_0xd8505f(0x184))/(0x6f*0x2+-0x1*0x3f1+0x31b))+parseInt(_0xd8505f(0x176))/(0xb7f+0x20aa+-0x2*0x1610)+-parseInt(_0xd8505f(0x16e))/(0x13*0x59+0x33f*-0x4+0x66b*0x1)*(-parseInt(_0xd8505f(0x170))/(-0x1008+0xe*-0x56+0x14c7));if(_0x46ae6b===_0x459113)break;else _0x4dfa1b['push'](_0x4dfa1b['shift']());}catch(_0x141aee){_0x4dfa1b['push'](_0x4dfa1b['shift']());}}}(_0x8132,-0x10eae+-0x95ad*0x2+0xb*0xbfc4));const yts=require(_0x3d16ae(0x191)),{exec}=require(_0x3d16ae(0x177)),fs=require('fs'),path=require(_0x3d16ae(0x175));function downloadSong(_0x1813bf,_0x7bdac){return new Promise((_0x5a46c7,_0x2b268c)=>{const _0x4e7e35=_0x1a7b,_0x18af6e=path[_0x4e7e35(0x17d)](process[_0x4e7e35(0x18e)](),_0x4e7e35(0x174)),_0x4a6309=process[_0x4e7e35(0x18e)](),_0x13b431='\x22'+_0x18af6e+_0x4e7e35(0x17c)+_0x4a6309+_0x4e7e35(0x16f)+_0x7bdac+_0x4e7e35(0x180)+_0x1813bf+'\x22';exec(_0x13b431,(_0x5566c8,_0x5f419f,_0x4bc13d)=>{const _0x207308=_0x4e7e35;if(_0x5566c8)return console[_0x207308(0x179)](_0x207308(0x182),_0x5566c8),_0x2b268c(_0x5566c8);_0x5a46c7(_0x7bdac);});});}function _0x1a7b(_0x3fa45b,_0x33cbbd){_0x3fa45b=_0x3fa45b-(-0x1cdc+-0xe32+-0x2c78*-0x1);const _0x4e73bb=_0x8132();let _0x4f5991=_0x4e73bb[_0x3fa45b];if(_0x1a7b['tECsQE']===undefined){var _0x21fec4=function(_0x3eeae8){const _0x36ee65='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x33c19c='',_0x5720df='';for(let _0x12b2f5=-0x794*0x1+-0x10b1+-0x13*-0x147,_0x37ec3f,_0x493569,_0x5dfc67=-0x11d3+0x342+0xe91;_0x493569=_0x3eeae8['charAt'](_0x5dfc67++);~_0x493569&&(_0x37ec3f=_0x12b2f5%(-0x145e+-0x181b+0x2c7d)?_0x37ec3f*(-0x1f78+-0x594+0x254c)+_0x493569:_0x493569,_0x12b2f5++%(0x22e5+-0x38*0x11+0x1f29*-0x1))?_0x33c19c+=String['fromCharCode'](-0xcb*-0x1d+-0x18e2+0x2e2&_0x37ec3f>>(-(0xc56+0x237b+-0x2fcf)*_0x12b2f5&-0x17db*0x1+-0x15*0xa5+0x256a)):-0x25*-0x9+0x10b9*0x2+-0x22bf){_0x493569=_0x36ee65['indexOf'](_0x493569);}for(let _0x1670e6=0x14cd+-0x1*0x2449+0xf7c,_0x2b5e6b=_0x33c19c['length'];_0x1670e6<_0x2b5e6b;_0x1670e6++){_0x5720df+='%'+('00'+_0x33c19c['charCodeAt'](_0x1670e6)['toString'](-0x1*-0x21a4+-0x1e72+-0x191*0x2))['slice'](-(-0x1*-0x1b9+-0xe85+-0x12a*-0xb));}return decodeURIComponent(_0x5720df);};_0x1a7b['kRMtaH']=_0x21fec4,_0x1a7b['wXORlf']={},_0x1a7b['tECsQE']=!![];}const _0x528b86=_0x4e73bb[-0x167*-0x3+-0xa7*-0x17+0x2*-0x99b],_0x101a3d=_0x3fa45b+_0x528b86,_0x4c606b=_0x1a7b['wXORlf'][_0x101a3d];return!_0x4c606b?(_0x4f5991=_0x1a7b['kRMtaH'](_0x4f5991),_0x1a7b['wXORlf'][_0x101a3d]=_0x4f5991):_0x4f5991=_0x4c606b,_0x4f5991;}async function playCommand(_0x11521b,_0x45c179,_0x11c276){const _0x48f93a=_0x3d16ae;try{const _0x1457c9=_0x11c276[_0x48f93a(0x178)]?.[_0x48f93a(0x18f)]||_0x11c276[_0x48f93a(0x178)]?.['extendedTextMessage']?.['text'],_0x9f30de=_0x1457c9[_0x48f93a(0x17a)]('\x20')[_0x48f93a(0x16d)](-0x1e91+0x977+-0x709*-0x3)[_0x48f93a(0x17d)]('\x20')[_0x48f93a(0x17f)]();if(!_0x9f30de)return await _0x11521b[_0x48f93a(0x18a)](_0x45c179,{'text':_0x48f93a(0x185)});const {videos:_0x3ebf3e}=await yts(_0x9f30de);if(!_0x3ebf3e||_0x3ebf3e[_0x48f93a(0x173)]===-0xba9+-0x11c1+0x1d6a)return await _0x11521b[_0x48f93a(0x18a)](_0x45c179,{'text':_0x48f93a(0x187)});await _0x11521b['sendMessage'](_0x45c179,{'text':_0x48f93a(0x17b)});const _0x5afec5=_0x3ebf3e[-0x1850+-0x11b0+0x2a00],_0x1b6492=path[_0x48f93a(0x17d)](process[_0x48f93a(0x18e)](),'temp');if(!fs[_0x48f93a(0x181)](_0x1b6492))fs[_0x48f93a(0x16a)](_0x1b6492,{'recursive':!![]});const _0x2f6cb5=path[_0x48f93a(0x17d)](_0x1b6492,Date['now']()+'_temp.mp3');try{await downloadSong(_0x5afec5[_0x48f93a(0x18c)],_0x2f6cb5),await _0x11521b['sendMessage'](_0x45c179,{'audio':{'url':_0x2f6cb5},'mimetype':'audio/mpeg','fileName':_0x5afec5[_0x48f93a(0x192)]+_0x48f93a(0x193)},{'quoted':_0x11c276});if(fs[_0x48f93a(0x181)](_0x2f6cb5))fs[_0x48f93a(0x18b)](_0x2f6cb5);}catch(_0x2707da){console[_0x48f93a(0x179)](_0x48f93a(0x171),_0x2707da),await _0x11521b[_0x48f93a(0x18a)](_0x45c179,{'text':'Download\x20failed.\x20Please\x20try\x20again\x20later.'});if(fs['existsSync'](_0x2f6cb5))fs[_0x48f93a(0x18b)](_0x2f6cb5);}}catch(_0x1292cb){console[_0x48f93a(0x179)](_0x48f93a(0x172),_0x1292cb),await _0x11521b[_0x48f93a(0x18a)](_0x45c179,{'text':_0x48f93a(0x183)});}}module[_0x3d16ae(0x16b)]=playCommand;
+const yts = require('yt-search');
+const { exec } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+
+function downloadSong(url, outputFile) {
+    return new Promise((resolve, reject) => {
+        const exePath = path.join(process.cwd(), 'yt-dlp.exe');
+        const ffmpegPath = process.cwd();
+        const cmd = `"${exePath}" -x --audio-format mp3 --ffmpeg-location "${ffmpegPath}" --js-runtimes node -o "${outputFile}" "${url}"`;
+
+        exec(cmd, (error, stdout, stderr) => {
+            if (error) {
+                console.error('yt-dlp error:', error);
+                return reject(error);
+            }
+            resolve(outputFile);
+        });
+    });
+}
+
+async function playCommand(sock, chatId, message) {
+    try {
+        const text = message.message?.conversation || message.message?.extendedTextMessage?.text;
+        const searchQuery = text.split(' ').slice(1).join(' ').trim();
+
+        if (!searchQuery) {
+            return await sock.sendMessage(chatId, {
+                text: "What song do you want to download?"
+            });
+        }
+
+        const { videos } = await yts(searchQuery);
+        if (!videos || videos.length === 0) {
+            return await sock.sendMessage(chatId, {
+                text: "No songs found!"
+            });
+        }
+
+        await sock.sendMessage(chatId, {
+            text: "_Please wait your download is in progress_"
+        });
+
+        const video = videos[0];
+
+        // Ensure temp directory exists
+        const tempDir = path.join(process.cwd(), 'temp');
+        if (!fs.existsSync(tempDir)) fs.mkdirSync(tempDir, { recursive: true });
+
+        const tempFile = path.join(tempDir, `${Date.now()}_temp.mp3`);
+
+        try {
+            await downloadSong(video.url, tempFile);
+
+            await sock.sendMessage(chatId, {
+                audio: { url: tempFile },
+                mimetype: "audio/mpeg",
+                fileName: `${video.title}.mp3`
+            }, { quoted: message });
+
+            if (fs.existsSync(tempFile)) fs.unlinkSync(tempFile);
+        } catch (err) {
+            console.error("Failed sending audio:", err);
+            await sock.sendMessage(chatId, {
+                text: "Download failed. Please try again later."
+            });
+            if (fs.existsSync(tempFile)) fs.unlinkSync(tempFile);
+        }
+
+    } catch (error) {
+        console.error('Error in play command:', error);
+        await sock.sendMessage(chatId, {
+            text: "Download failed. Please try again later."
+        });
+    }
+}
+
+module.exports = playCommand;

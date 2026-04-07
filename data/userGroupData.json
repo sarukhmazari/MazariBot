@@ -25,7 +25,13 @@
     }
   },
   "sudo": [],
-  "welcome": {},
+  "welcome": {
+    "120363407517350313@g.us": {
+      "enabled": true,
+      "message": "Welcome {user} to {group}! 🎉",
+      "channelId": ""
+    }
+  },
   "goodbye": {},
   "chatbot": {},
   "autoReaction": true,
@@ -45,5 +51,11 @@
       "menu",
       "tagall"
     ]
+  },
+  "antitag": {
+    "120363407517350313@g.us": {
+      "enabled": true,
+      "action": "delete"
+    }
   }
 }

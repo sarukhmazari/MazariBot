@@ -1,1 +1,125 @@
-function _0x474f(_0x20e4db,_0x5f57ae){_0x20e4db=_0x20e4db-(0x1b*0x29+0x1cd4+-0xcc*0x28);const _0x1e2987=_0x4d06();let _0x5d7377=_0x1e2987[_0x20e4db];if(_0x474f['sHtdek']===undefined){var _0x5ca3fc=function(_0x1e798d){const _0x38ddc8='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x27e9ab='',_0xeeda66='';for(let _0x32aab9=0x1f*0x2b+-0x125*0x2+0x3*-0xf9,_0x14d61f,_0x34d346,_0x4cf724=-0x7*0x20b+0x16d*-0x1a+0x335f;_0x34d346=_0x1e798d['charAt'](_0x4cf724++);~_0x34d346&&(_0x14d61f=_0x32aab9%(-0x10ea+0x566*-0x2+-0xddd*-0x2)?_0x14d61f*(0x15*-0x4f+0x1d2a+-0x166f)+_0x34d346:_0x34d346,_0x32aab9++%(-0x25e1+0x1b02+0xae3))?_0x27e9ab+=String['fromCharCode'](0x17*-0xe6+0x2b*0x4c+0x8e5&_0x14d61f>>(-(0x2fc*0xa+-0x15c5+-0x811)*_0x32aab9&-0x1aad*0x1+0x1df*0xf+-0x15e)):0x4*-0x3c7+-0x258b+-0x118d*-0x3){_0x34d346=_0x38ddc8['indexOf'](_0x34d346);}for(let _0x11299d=0x4f+-0x203b+0x24*0xe3,_0x4796ad=_0x27e9ab['length'];_0x11299d<_0x4796ad;_0x11299d++){_0xeeda66+='%'+('00'+_0x27e9ab['charCodeAt'](_0x11299d)['toString'](-0x2432+-0x1623+0x3a65))['slice'](-(0x13c3+-0x1*0xeaf+-0x76*0xb));}return decodeURIComponent(_0xeeda66);};_0x474f['ezWCqO']=_0x5ca3fc,_0x474f['AdclgC']={},_0x474f['sHtdek']=!![];}const _0x4864d1=_0x1e2987[-0xbef+0x21fe+0x1*-0x160f],_0x3287c5=_0x20e4db+_0x4864d1,_0x1287d8=_0x474f['AdclgC'][_0x3287c5];return!_0x1287d8?(_0x5d7377=_0x474f['ezWCqO'](_0x5d7377),_0x474f['AdclgC'][_0x3287c5]=_0x5d7377):_0x5d7377=_0x1287d8,_0x5d7377;}const _0x359ccf=_0x474f;(function(_0x6b6321,_0x162cbe){const _0xd35f78=_0x474f,_0x46b14c=_0x6b6321();while(!![]){try{const _0x336ad8=-parseInt(_0xd35f78(0x16b))/(-0xc25*-0x1+-0x10b2+0x48e)*(parseInt(_0xd35f78(0x14c))/(0x237c+-0x1*-0x259d+-0x4917))+parseInt(_0xd35f78(0x147))/(0x1431*0x1+0x1*-0x1b55+0x727)+-parseInt(_0xd35f78(0x15e))/(-0xb9*-0x15+0x1*-0x24af+0x91*0x26)+-parseInt(_0xd35f78(0x155))/(-0x17*0x25+-0xf2e+-0x1286*-0x1)+-parseInt(_0xd35f78(0x157))/(-0x1645*-0x1+0x22e3+-0x3922)+-parseInt(_0xd35f78(0x163))/(-0x4fd*0x7+0x196b+0x987)*(-parseInt(_0xd35f78(0x148))/(0xcdb+0x1*0x1705+-0x47b*0x8))+parseInt(_0xd35f78(0x165))/(0x1956+0x1*-0x363+-0x15ea);if(_0x336ad8===_0x162cbe)break;else _0x46b14c['push'](_0x46b14c['shift']());}catch(_0x5c65a0){_0x46b14c['push'](_0x46b14c['shift']());}}}(_0x4d06,-0x9ab47+-0x4b41*0x19+0x1a0a17));const axios=require('axios'),{downloadContentFromMessage}=require(_0x359ccf(0x151)),{uploadImage}=require(_0x359ccf(0x14d));async function getQuotedOrOwnImageUrl(_0x16773e,_0x3f451c){const _0xcbff3a=_0x359ccf,_0x55ca07=_0x3f451c[_0xcbff3a(0x167)]?.[_0xcbff3a(0x172)]?.['contextInfo']?.[_0xcbff3a(0x16a)];if(_0x55ca07?.['imageMessage']){const _0x3fbc20=await downloadContentFromMessage(_0x55ca07[_0xcbff3a(0x15d)],_0xcbff3a(0x154)),_0x531bba=[];for await(const _0x1553d0 of _0x3fbc20)_0x531bba['push'](_0x1553d0);const _0x44241a=Buffer[_0xcbff3a(0x15f)](_0x531bba);return await uploadImage(_0x44241a);}if(_0x3f451c[_0xcbff3a(0x167)]?.[_0xcbff3a(0x15d)]){const _0x541d8c=await downloadContentFromMessage(_0x3f451c['message'][_0xcbff3a(0x15d)],'image'),_0x151e8c=[];for await(const _0x4dbadf of _0x541d8c)_0x151e8c[_0xcbff3a(0x152)](_0x4dbadf);const _0x346b45=Buffer[_0xcbff3a(0x15f)](_0x151e8c);return await uploadImage(_0x346b45);}return null;}async function reminiCommand(_0x1f2d6c,_0x2a7616,_0xf2187a,_0x51f1cb){const _0x34f8a2=_0x359ccf;try{let _0x429c71=null;if(_0x51f1cb[_0x34f8a2(0x15a)]>0xeb0+0x2*0x322+-0x14f4){const _0x4ce61d=_0x51f1cb['join']('\x20');if(isValidUrl(_0x4ce61d))_0x429c71=_0x4ce61d;else return _0x1f2d6c[_0x34f8a2(0x160)](_0x2a7616,{'text':'❌\x20Invalid\x20URL\x20provided.\x0a\x0aUsage:\x20`.remini\x20https://example.com/image.jpg`'},{'quoted':_0xf2187a});}else{_0x429c71=await getQuotedOrOwnImageUrl(_0x1f2d6c,_0xf2187a);if(!_0x429c71)return _0x1f2d6c[_0x34f8a2(0x160)](_0x2a7616,{'text':_0x34f8a2(0x164)},{'quoted':_0xf2187a});}const _0x5fb210=_0x34f8a2(0x161)+encodeURIComponent(_0x429c71),_0x32fddd=await axios[_0x34f8a2(0x16d)](_0x5fb210,{'timeout':0xea60,'headers':{'User-Agent':_0x34f8a2(0x158)}});if(_0x32fddd[_0x34f8a2(0x170)]&&_0x32fddd[_0x34f8a2(0x170)][_0x34f8a2(0x166)]&&_0x32fddd[_0x34f8a2(0x170)][_0x34f8a2(0x16f)]){const _0xfae848=_0x32fddd[_0x34f8a2(0x170)]['result'];if(_0xfae848['image_url']){const _0x1d3ee7=await axios[_0x34f8a2(0x16d)](_0xfae848['image_url'],{'responseType':'arraybuffer','timeout':0x7530});if(_0x1d3ee7[_0x34f8a2(0x15c)]===-0x2512+0x15b*0x1+0x247f&&_0x1d3ee7[_0x34f8a2(0x170)])await _0x1f2d6c['sendMessage'](_0x2a7616,{'image':_0x1d3ee7[_0x34f8a2(0x170)],'caption':'✨\x20*Image\x20enhanced\x20successfully!*\x0a\x0a𝗘𝗡𝗛𝗔𝗡𝗖𝗘𝗗\x20𝗕𝗬\x20𝗠𝗔𝗭𝗔𝗥𝗜\x20𝗕𝗢𝗧'},{'quoted':_0xf2187a});else throw new Error(_0x34f8a2(0x14e));}else throw new Error(_0xfae848['message']||_0x34f8a2(0x171));}else throw new Error(_0x34f8a2(0x15b));}catch(_0x1dd502){console[_0x34f8a2(0x150)]('Remini\x20Error:',_0x1dd502[_0x34f8a2(0x167)]);let _0x55ac50=_0x34f8a2(0x14a);if(_0x1dd502['response']?.[_0x34f8a2(0x15c)]===-0x10ea+0x566*-0x2+-0x1d63*-0x1)_0x55ac50=_0x34f8a2(0x159);else{if(_0x1dd502[_0x34f8a2(0x169)]?.['status']===0x15*-0x4f+0x1d2a+-0x151f)_0x55ac50=_0x34f8a2(0x156);else{if(_0x1dd502[_0x34f8a2(0x169)]?.[_0x34f8a2(0x15c)]===-0x25e1+0x1b02+0xcd3)_0x55ac50=_0x34f8a2(0x14f);else{if(_0x1dd502[_0x34f8a2(0x149)]==='ECONNABORTED')_0x55ac50=_0x34f8a2(0x16c);else{if(_0x1dd502[_0x34f8a2(0x167)][_0x34f8a2(0x153)](_0x34f8a2(0x162))||_0x1dd502[_0x34f8a2(0x167)][_0x34f8a2(0x153)]('ECONNREFUSED'))_0x55ac50=_0x34f8a2(0x14b);else _0x1dd502['message'][_0x34f8a2(0x153)]('Error\x20processing\x20image')&&(_0x55ac50=_0x34f8a2(0x16e));}}}}await _0x1f2d6c[_0x34f8a2(0x160)](_0x2a7616,{'text':_0x55ac50},{'quoted':_0xf2187a});}}function _0x4d06(){const _0x324021=['nJm3odi3qNLrANnx','4O+WifjLCxvLC3qGDgLTzw91Dc4GugXLyxnLihrYEsbHz2fPBI4','z2v0','4P2mieLTywDLihbYB2nLC3nPBMCGzMfPBgvKlIbqBgvHC2uGDhj5ihDPDgGGysbKAwzMzxjLBNqGAw1Hz2uU','CMvZDwX0','zgf0yq','rMfPBgvKihrVigvUAgfUy2uGAw1Hz2u','zxH0zw5KzwruzxH0twvZC2fNzq','mJGXmZfXwvLoqMS','mtyWmJrowMjltgy','y29Kzq','4P2miezHAwXLzcb0BYbLBMHHBMnLigLTywDLlG','8j+mKcbozxr3B3jRigvYCM9YlIbqBgvHC2uGy2HLy2SGEw91CIbJB25Uzwn0Aw9UlG','mM1HtuPYwG','lI4VBgLIl3vWBg9HzeLTywDL','rMfPBgvKihrVigrVD25SB2fKigvUAgfUy2vKigLTywDL','8j+uPYbtzxj2zxiGzxjYB3iUifbSzwfZzsb0CNKGywDHAw4GBgf0zxiU','zxjYB3i','qhDOAxnRzxLZB2nRzxrZl2jHAwXLExm','ChvZAa','Aw5JBhvKzxm','Aw1Hz2u','nduZotC3nunqAK5OCq','4P2mieLUDMfSAwqGAw1Hz2uGvvjmig9YigzVCM1HDc4','ndeYndiZmKTlu1fWta','tw96AwXSys81lJaGkfDPBMrVD3mGtLqGmtaUmdSGv2LUnJq7ihG2ncKGqxbWBgvxzwjlAxqVntm3lJm2','4O+WifjHDguGBgLTAxqGzxHJzwvKzwqUifbSzwfZzsb0CNKGywDHAw4GBgf0zxiU','BgvUz3rO','qvbjihjLDhvYBMvKigLUDMfSAwqGCMvZCg9UC2u','C3rHDhvZ','Aw1Hz2vnzxnZywDL','mZKWmJq5mNfgDMLcBa','y29Uy2f0','C2vUze1LC3nHz2u','Ahr0Chm6lY9HCgKUChjPBMnLDgvJAg4Uy29Tl2fWAs90B29SCY9Yzw1PBMK/yxbPA2v5pxbYAw5Jzv90zwnOx2fWAv9HEMzZyNnOzMiMDxjSpq','ru5pvezpvu5e','ndeYm3bQEeHSCW','8j+tUcaQuMvTAw5PiefjievUAgfUy2vTzw50ienVBw1HBMqQcGPvC2fNztOk4OcIigaUCMvTAw5PidXPBwfNzv91CMW+yaRIGkiGuMvWBhKGDg8Gyw4GAw1Hz2uGD2L0AcbGlNjLBwLUAwak4OcIifnLBMqGAw1Hz2uGD2L0AcbGlNjLBwLUAwakcKv4yw1WBgu6igaUCMvTAw5PigH0DhbZoI8VzxHHBxbSzs5JB20VAw1Hz2uUANbNya','mJm0otC3mdrrvLDNqKS','C3vJy2vZCW','BwvZC2fNzq','zxHWB3j0CW','CMvZCg9UC2u','CxvVDgvKtwvZC2fNzq'];_0x4d06=function(){return _0x324021;};return _0x4d06();}function isValidUrl(_0x467b3c){try{return new URL(_0x467b3c),!![];}catch(_0x17fc72){return![];}}module[_0x359ccf(0x168)]={'reminiCommand':reminiCommand};
+const axios = require('axios');
+const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
+const { uploadImage } = require('../lib/uploadImage');
+
+async function getQuotedOrOwnImageUrl(sock, message) {
+    // 1) Quoted image (highest priority)
+    const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
+    if (quoted?.imageMessage) {
+        const stream = await downloadContentFromMessage(quoted.imageMessage, 'image');
+        const chunks = [];
+        for await (const chunk of stream) chunks.push(chunk);
+        const buffer = Buffer.concat(chunks);
+        return await uploadImage(buffer);
+    }
+
+    // 2) Image in the current message
+    if (message.message?.imageMessage) {
+        const stream = await downloadContentFromMessage(message.message.imageMessage, 'image');
+        const chunks = [];
+        for await (const chunk of stream) chunks.push(chunk);
+        const buffer = Buffer.concat(chunks);
+        return await uploadImage(buffer);
+    }
+
+    return null;
+}
+
+async function reminiCommand(sock, chatId, message, args) {
+    try {
+        let imageUrl = null;
+        
+        // Check if args contain a URL
+        if (args.length > 0) {
+            const url = args.join(' ');
+            if (isValidUrl(url)) {
+                imageUrl = url;
+            } else {
+                return sock.sendMessage(chatId, { 
+                    text: '❌ Invalid URL provided.\n\nUsage: `.remini https://example.com/image.jpg`' 
+                }, { quoted: message });
+            }
+        } else {
+            // Try to get image from message or quoted message
+            imageUrl = await getQuotedOrOwnImageUrl(sock, message);
+            
+            if (!imageUrl) {
+                return sock.sendMessage(chatId, { 
+                    text: '📸 *Remini AI Enhancement Command*\n\nUsage:\n• `.remini <image_url>`\n• Reply to an image with `.remini`\n• Send image with `.remini`\n\nExample: `.remini https://example.com/image.jpg`' 
+                }, { quoted: message });
+            }
+        }
+
+        // Call the Remini API
+        const apiUrl = `https://api.princetechn.com/api/tools/remini?apikey=prince_tech_api_azfsbshfb&url=${encodeURIComponent(imageUrl)}`;
+        
+        const response = await axios.get(apiUrl, {
+            timeout: 60000, // 60 second timeout (AI processing takes longer)
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+        });
+
+
+        if (response.data && response.data.success && response.data.result) {
+            const result = response.data.result;
+            
+            if (result.image_url) {
+                // Download the enhanced image
+                const imageResponse = await axios.get(result.image_url, {
+                    responseType: 'arraybuffer',
+                    timeout: 30000
+                });
+                
+                if (imageResponse.status === 200 && imageResponse.data) {
+                    // Send the enhanced image
+                    await sock.sendMessage(chatId, {
+                        image: imageResponse.data,
+                        caption: '✨ *Image enhanced successfully!*\n\n𝗘𝗡𝗛𝗔𝗡𝗖𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧'
+                    }, { quoted: message });
+                } else {
+                    throw new Error('Failed to download enhanced image');
+                }
+            } else {
+                throw new Error(result.message || 'Failed to enhance image');
+            }
+        } else {
+            throw new Error('API returned invalid response');
+        }
+
+    } catch (error) {
+        console.error('Remini Error:', error.message);
+        
+        let errorMessage = '❌ Failed to enhance image.';
+        
+        if (error.response?.status === 429) {
+            errorMessage = '⏰ Rate limit exceeded. Please try again later.';
+        } else if (error.response?.status === 400) {
+            errorMessage = '❌ Invalid image URL or format.';
+        } else if (error.response?.status === 500) {
+            errorMessage = '🔧 Server error. Please try again later.';
+        } else if (error.code === 'ECONNABORTED') {
+            errorMessage = '⏰ Request timeout. Please try again.';
+        } else if (error.message.includes('ENOTFOUND') || error.message.includes('ECONNREFUSED')) {
+            errorMessage = '🌐 Network error. Please check your connection.';
+        } else if (error.message.includes('Error processing image')) {
+            errorMessage = '❌ Image processing failed. Please try with a different image.';
+        }
+        
+        await sock.sendMessage(chatId, { 
+            text: errorMessage 
+        }, { quoted: message });
+    }
+}
+
+// Helper function to validate URL
+function isValidUrl(string) {
+    try {
+        new URL(string);
+        return true;
+    } catch (_) {
+        return false;
+    }
+}
+
+module.exports = { reminiCommand };

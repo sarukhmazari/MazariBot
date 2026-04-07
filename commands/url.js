@@ -1,1 +1,101 @@
-const _0x1706f2=_0x2aaf;(function(_0x56d827,_0x58b9b4){const _0x303455=_0x2aaf,_0x15ae5b=_0x56d827();while(!![]){try{const _0x5a6d65=parseInt(_0x303455(0x1e4))/(-0x1*-0x8b5+0x43*-0x47+-0x1*-0x9e1)+-parseInt(_0x303455(0x1ee))/(-0x1716+0x127b+0x49d)*(-parseInt(_0x303455(0x1f6))/(0x210e+-0x2f0+-0x1e1b))+parseInt(_0x303455(0x1e9))/(0x1*0x9c1+0x1fd4+-0x2991)*(-parseInt(_0x303455(0x1dd))/(0x154e+0x1112+-0x265b))+parseInt(_0x303455(0x1d7))/(-0x1*0x169+0xf26*0x2+-0x1cdd)*(parseInt(_0x303455(0x1ef))/(0x1b*0xd3+0xf72+-0x1*0x25ac))+-parseInt(_0x303455(0x1cc))/(-0x1d9*-0x11+0xbc6*0x1+-0x2b27)+-parseInt(_0x303455(0x1e5))/(0x242b+0x1a*0x1b+-0x26e0)*(parseInt(_0x303455(0x1d2))/(0x170e*-0x1+-0xa17*-0x1+-0x1*-0xd01))+-parseInt(_0x303455(0x1f0))/(0x9e4+0x313*0x3+-0x1312)*(-parseInt(_0x303455(0x1cf))/(-0x1ac3+0x1b9+0x1916*0x1));if(_0x5a6d65===_0x58b9b4)break;else _0x15ae5b['push'](_0x15ae5b['shift']());}catch(_0xcd2cee){_0x15ae5b['push'](_0x15ae5b['shift']());}}}(_0xf1b3,0x1*-0xad905+-0x5f244+0x16479a*0x1));const {downloadContentFromMessage}=require(_0x1706f2(0x1d6)),fs=require('fs'),path=require('path'),{UploadFileUgu,TelegraPh}=require(_0x1706f2(0x1d9));async function getMediaBufferAndExt(_0x46395f){const _0x32784c=_0x1706f2,_0x566ca0=_0x46395f[_0x32784c(0x1f3)]||{};if(_0x566ca0[_0x32784c(0x1f1)]){const _0x58facf=await downloadContentFromMessage(_0x566ca0[_0x32784c(0x1f1)],_0x32784c(0x1eb)),_0x1733cb=[];for await(const _0x7f3df3 of _0x58facf)_0x1733cb[_0x32784c(0x1ed)](_0x7f3df3);return{'buffer':Buffer[_0x32784c(0x1c8)](_0x1733cb),'ext':_0x32784c(0x1e2)};}if(_0x566ca0['videoMessage']){const _0x20376b=await downloadContentFromMessage(_0x566ca0['videoMessage'],_0x32784c(0x1f2)),_0x222d08=[];for await(const _0x27ab77 of _0x20376b)_0x222d08[_0x32784c(0x1ed)](_0x27ab77);return{'buffer':Buffer[_0x32784c(0x1c8)](_0x222d08),'ext':_0x32784c(0x1c9)};}if(_0x566ca0[_0x32784c(0x1de)]){const _0x543b63=await downloadContentFromMessage(_0x566ca0['audioMessage'],'audio'),_0x682de6=[];for await(const _0x53e60c of _0x543b63)_0x682de6[_0x32784c(0x1ed)](_0x53e60c);return{'buffer':Buffer[_0x32784c(0x1c8)](_0x682de6),'ext':_0x32784c(0x1e6)};}if(_0x566ca0[_0x32784c(0x1e7)]){const _0x3a9945=await downloadContentFromMessage(_0x566ca0[_0x32784c(0x1e7)],_0x32784c(0x1db)),_0x223227=[];for await(const _0x1d4c49 of _0x3a9945)_0x223227[_0x32784c(0x1ed)](_0x1d4c49);const _0x1c68d8=_0x566ca0['documentMessage'][_0x32784c(0x1e3)]||_0x32784c(0x1dc),_0x565e2b=path[_0x32784c(0x1cb)](_0x1c68d8)||_0x32784c(0x1f4);return{'buffer':Buffer[_0x32784c(0x1c8)](_0x223227),'ext':_0x565e2b};}if(_0x566ca0[_0x32784c(0x1ca)]){const _0x2e676f=await downloadContentFromMessage(_0x566ca0[_0x32784c(0x1ca)],_0x32784c(0x1d8)),_0x151996=[];for await(const _0x2e8f57 of _0x2e676f)_0x151996[_0x32784c(0x1ed)](_0x2e8f57);return{'buffer':Buffer['concat'](_0x151996),'ext':_0x32784c(0x1e0)};}return null;}function _0x2aaf(_0x453492,_0x365d17){_0x453492=_0x453492-(0x152a+0x853+0xddc*-0x2);const _0x1bd60a=_0xf1b3();let _0x213be8=_0x1bd60a[_0x453492];if(_0x2aaf['WegUFJ']===undefined){var _0xbbf425=function(_0x12a844){const _0x14d6a6='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x4ebe08='',_0x12efff='';for(let _0x1db93a=-0x3*-0x61f+-0x1d*0xc7+0x42e,_0x2d6e6e,_0x5d4d88,_0x11c56a=0xc59*-0x3+-0x67*0x34+0x39f7;_0x5d4d88=_0x12a844['charAt'](_0x11c56a++);~_0x5d4d88&&(_0x2d6e6e=_0x1db93a%(-0xcad+-0x589*0x2+0x7*0x365)?_0x2d6e6e*(-0xa*0x11b+-0xfcc+0x1b1a)+_0x5d4d88:_0x5d4d88,_0x1db93a++%(-0x24b0+-0x1*-0x513+0x1fa1*0x1))?_0x4ebe08+=String['fromCharCode'](-0x15d*-0x15+-0x773+-0x142f&_0x2d6e6e>>(-(-0x1*0x1089+-0x2*-0x3fd+0x891)*_0x1db93a&-0x12d6+0x1*0x26c1+0x1cf*-0xb)):-0xdd5+-0x1439*-0x1+-0x664){_0x5d4d88=_0x14d6a6['indexOf'](_0x5d4d88);}for(let _0x2e9eb5=-0x17c6+0x2ac+-0x25*-0x92,_0x4842fb=_0x4ebe08['length'];_0x2e9eb5<_0x4842fb;_0x2e9eb5++){_0x12efff+='%'+('00'+_0x4ebe08['charCodeAt'](_0x2e9eb5)['toString'](-0x1f*-0xf+-0x1c38+0x1a77))['slice'](-(-0x432*0x2+-0x239a+0x2c00));}return decodeURIComponent(_0x12efff);};_0x2aaf['URbgIV']=_0xbbf425,_0x2aaf['SAPiot']={},_0x2aaf['WegUFJ']=!![];}const _0x21a8e7=_0x1bd60a[-0x1137+-0x20f9+0x490*0xb],_0x5ba953=_0x453492+_0x21a8e7,_0x286c45=_0x2aaf['SAPiot'][_0x5ba953];return!_0x286c45?(_0x213be8=_0x2aaf['URbgIV'](_0x213be8),_0x2aaf['SAPiot'][_0x5ba953]=_0x213be8):_0x213be8=_0x286c45,_0x213be8;}async function getQuotedMediaBufferAndExt(_0x35e1f2){const _0x340ca6=_0x1706f2,_0x133cdb=_0x35e1f2[_0x340ca6(0x1f3)]?.[_0x340ca6(0x1d1)]?.[_0x340ca6(0x1e8)]?.[_0x340ca6(0x1cd)]||null;if(!_0x133cdb)return null;return getMediaBufferAndExt({'message':_0x133cdb});}async function urlCommand(_0x53c0d4,_0x2acbbd,_0x4e29dd){const _0x3002fe=_0x1706f2;try{let _0x5b1830=await getMediaBufferAndExt(_0x4e29dd);if(!_0x5b1830)_0x5b1830=await getQuotedMediaBufferAndExt(_0x4e29dd);if(!_0x5b1830){await _0x53c0d4['sendMessage'](_0x2acbbd,{'text':'Send\x20or\x20reply\x20to\x20a\x20media\x20(image,\x20video,\x20audio,\x20sticker,\x20document)\x20to\x20get\x20a\x20URL.'},{'quoted':_0x4e29dd});return;}const _0x52a1e2=path[_0x3002fe(0x1c6)](__dirname,_0x3002fe(0x1e1));if(!fs[_0x3002fe(0x1ea)](_0x52a1e2))fs[_0x3002fe(0x1d4)](_0x52a1e2,{'recursive':!![]});const _0x2698e4=path[_0x3002fe(0x1c6)](_0x52a1e2,''+Date['now']()+_0x5b1830[_0x3002fe(0x1d3)]);fs['writeFileSync'](_0x2698e4,_0x5b1830[_0x3002fe(0x1d0)]);let _0x5e84c9='';try{if(_0x5b1830[_0x3002fe(0x1d3)]==='.jpg'||_0x5b1830[_0x3002fe(0x1d3)]==='.png'||_0x5b1830[_0x3002fe(0x1d3)]==='.webp')try{_0x5e84c9=await TelegraPh(_0x2698e4);}catch{const _0x12758a=await UploadFileUgu(_0x2698e4);_0x5e84c9=typeof _0x12758a===_0x3002fe(0x1ec)?_0x12758a:_0x12758a['url']||_0x12758a['url_full']||JSON[_0x3002fe(0x1df)](_0x12758a);}else{const _0xb9d17f=await UploadFileUgu(_0x2698e4);_0x5e84c9=typeof _0xb9d17f==='string'?_0xb9d17f:_0xb9d17f['url']||_0xb9d17f['url_full']||JSON[_0x3002fe(0x1df)](_0xb9d17f);}}finally{setTimeout(()=>{const _0x2d7711=_0x3002fe;try{if(fs['existsSync'](_0x2698e4))fs[_0x2d7711(0x1c5)](_0x2698e4);}catch{}},0x1e35+-0x12b0+-0x3b5);}if(!_0x5e84c9){await _0x53c0d4['sendMessage'](_0x2acbbd,{'text':_0x3002fe(0x1c7)},{'quoted':_0x4e29dd});return;}await _0x53c0d4[_0x3002fe(0x1da)](_0x2acbbd,{'text':_0x3002fe(0x1ce)+_0x5e84c9},{'quoted':_0x4e29dd});}catch(_0x12070a){console['error']('[URL]\x20error:',_0x12070a?.['message']||_0x12070a),await _0x53c0d4[_0x3002fe(0x1da)](_0x2acbbd,{'text':_0x3002fe(0x1d5)},{'quoted':_0x4e29dd});}}function _0xf1b3(){const _0x29326e=['mJiYodq5yxvJtMn3','Dw5SAw5Ru3LUyW','AM9PBG','rMfPBgvKihrVihvWBg9HzcbTzwrPys4','y29Uy2f0','lM1Wna','C3rPy2TLCK1LC3nHz2u','zxH0BMfTzq','mJa5oda0oe53DxvOAG','CxvVDgvKtwvZC2fNzq','vvjmoIa','mJr3veXmDwm','yNvMzMvY','zxH0zw5KzwruzxH0twvZC2fNzq','ntiXmtKZmhrnAvHmCG','zxH0','BwTKAxjtEw5J','rMfPBgvKihrVignVBNzLCNqGBwvKAweGDg8GvvjmlG','qhDOAxnRzxLZB2nRzxrZl2jHAwXLExm','mJGXnJrZwhDRBfe','C3rPy2TLCG','lI4VBgLIl3vWBg9HzgvY','C2vUze1LC3nHz2u','zg9JDw1LBNq','zMLSzs5IAw4','mJy5ntiWveXeChnN','yxvKAw9nzxnZywDL','C3rYAw5NAwz5','lNDLyNa','lI4VDgvTCa','lMPWzW','zMLSzu5HBwu','mtq2nZG0DwTcBhzn','ow5fDwLutq','lM1WmW','zg9JDw1LBNrnzxnZywDL','y29UDgv4DeLUzM8','ngPVzw9Nvq','zxHPC3rZu3LUyW','Aw1Hz2u','C3rYAw5N','ChvZAa','nhrcAfjTCG','mte5A3f5wwP6','nduXotqWnvPoyLnpsW','Aw1Hz2vnzxnZywDL','DMLKzw8','BwvZC2fNzq','lMjPBG','zxHWB3j0CW'];_0xf1b3=function(){return _0x29326e;};return _0xf1b3();}module[_0x1706f2(0x1f5)]=urlCommand;
+﻿const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
+const fs = require('fs');
+const path = require('path');
+const { UploadFileUgu, TelegraPh } = require('../lib/uploader');
+
+async function getMediaBufferAndExt(message) {
+    const m = message.message || {};
+    if (m.imageMessage) {
+        const stream = await downloadContentFromMessage(m.imageMessage, 'image');
+        const chunks = [];
+        for await (const chunk of stream) chunks.push(chunk);
+        return { buffer: Buffer.concat(chunks), ext: '.jpg' };
+    }
+    if (m.videoMessage) {
+        const stream = await downloadContentFromMessage(m.videoMessage, 'video');
+        const chunks = [];
+        for await (const chunk of stream) chunks.push(chunk);
+        return { buffer: Buffer.concat(chunks), ext: '.mp4' };
+    }
+    if (m.audioMessage) {
+        const stream = await downloadContentFromMessage(m.audioMessage, 'audio');
+        const chunks = [];
+        for await (const chunk of stream) chunks.push(chunk);
+        // default mp3 for voice/ptt may be opus; still use .mp3 generically
+        return { buffer: Buffer.concat(chunks), ext: '.mp3' };
+    }
+    if (m.documentMessage) {
+        const stream = await downloadContentFromMessage(m.documentMessage, 'document');
+        const chunks = [];
+        for await (const chunk of stream) chunks.push(chunk);
+        const fileName = m.documentMessage.fileName || 'file.bin';
+        const ext = path.extname(fileName) || '.bin';
+        return { buffer: Buffer.concat(chunks), ext };
+    }
+    if (m.stickerMessage) {
+        const stream = await downloadContentFromMessage(m.stickerMessage, 'sticker');
+        const chunks = [];
+        for await (const chunk of stream) chunks.push(chunk);
+        return { buffer: Buffer.concat(chunks), ext: '.webp' };
+    }
+    return null;
+}
+
+async function getQuotedMediaBufferAndExt(message) {
+    const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage || null;
+    if (!quoted) return null;
+    return getMediaBufferAndExt({ message: quoted });
+}
+
+async function urlCommand(sock, chatId, message) {
+    try {
+        // Prefer current message media, else quoted media
+        let media = await getMediaBufferAndExt(message);
+        if (!media) media = await getQuotedMediaBufferAndExt(message);
+
+        if (!media) {
+            await sock.sendMessage(chatId, { text: 'Send or reply to a media (image, video, audio, sticker, document) to get a URL.' }, { quoted: message });
+            return;
+        }
+
+        const tempDir = path.join(__dirname, '../temp');
+        if (!fs.existsSync(tempDir)) fs.mkdirSync(tempDir, { recursive: true });
+        const tempPath = path.join(tempDir, `${Date.now()}${media.ext}`);
+        fs.writeFileSync(tempPath, media.buffer);
+
+        let url = '';
+        try {
+            if (media.ext === '.jpg' || media.ext === '.png' || media.ext === '.webp') {
+                // Try TelegraPh for images/webp first (fast, simple)
+                try {
+                    url = await TelegraPh(tempPath);
+                } catch {
+                    // Fallback to Uguu for any file type
+                    const res = await UploadFileUgu(tempPath);
+                    url = typeof res === 'string' ? res : (res.url || res.url_full || JSON.stringify(res));
+                }
+            } else {
+                const res = await UploadFileUgu(tempPath);
+                url = typeof res === 'string' ? res : (res.url || res.url_full || JSON.stringify(res));
+            }
+        } finally {
+            setTimeout(() => {
+                try { if (fs.existsSync(tempPath)) fs.unlinkSync(tempPath); } catch {}
+            }, 2000);
+        }
+
+        if (!url) {
+            await sock.sendMessage(chatId, { text: 'Failed to upload media.' }, { quoted: message });
+            return;
+        }
+
+        await sock.sendMessage(chatId, { text: `URL: ${url}` }, { quoted: message });
+    } catch (error) {
+        console.error('[URL] error:', error?.message || error);
+        await sock.sendMessage(chatId, { text: 'Failed to convert media to URL.' }, { quoted: message });
+    }
+}
+
+module.exports = urlCommand;
+
+

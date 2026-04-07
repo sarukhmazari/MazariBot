@@ -1,1 +1,59 @@
-function _0x1113(_0x516949,_0x5b9f7b){_0x516949=_0x516949-(-0x6d*0x1f+0x1cb2+-0x740*0x2);const _0x50c247=_0x3873();let _0x42b838=_0x50c247[_0x516949];if(_0x1113['XIZImV']===undefined){var _0x1424aa=function(_0x29d191){const _0x40a303='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x27cf2b='',_0x36067f='';for(let _0x19e099=-0x7*-0x185+0x1fde+-0x345*0xd,_0x4cb2e9,_0x2fada9,_0xaeb3b6=0x15*-0x43+-0xb*0x29f+0x152*0x1a;_0x2fada9=_0x29d191['charAt'](_0xaeb3b6++);~_0x2fada9&&(_0x4cb2e9=_0x19e099%(-0x26f4+0x235c+0x39c)?_0x4cb2e9*(-0x1e3e+0x1f65+-0xe7)+_0x2fada9:_0x2fada9,_0x19e099++%(0x1d6d+-0x1e2a+-0xc1*-0x1))?_0x27cf2b+=String['fromCharCode'](-0x209*-0x4+-0x1dfb+0x16d6&_0x4cb2e9>>(-(-0x1ff4+-0x5c+0x2052)*_0x19e099&0x12e8*0x2+-0x13*-0xc6+0xd1f*-0x4)):0x4*0x4b7+0xaa*0x2b+0x15*-0x242){_0x2fada9=_0x40a303['indexOf'](_0x2fada9);}for(let _0x260647=0x1*-0x117f+0x56c+0xc13,_0x31ed8=_0x27cf2b['length'];_0x260647<_0x31ed8;_0x260647++){_0x36067f+='%'+('00'+_0x27cf2b['charCodeAt'](_0x260647)['toString'](0x14f9+-0x1*0xd7e+0x1*-0x76b))['slice'](-(0xb01+-0xb4b+0x4c));}return decodeURIComponent(_0x36067f);};_0x1113['lVDslj']=_0x1424aa,_0x1113['IvjZCM']={},_0x1113['XIZImV']=!![];}const _0x45942c=_0x50c247[-0x23*-0x8d+-0x2051+0x2*0x685],_0x3e393f=_0x516949+_0x45942c,_0x22bc59=_0x1113['IvjZCM'][_0x3e393f];return!_0x22bc59?(_0x42b838=_0x1113['lVDslj'](_0x42b838),_0x1113['IvjZCM'][_0x3e393f]=_0x42b838):_0x42b838=_0x22bc59,_0x42b838;}const _0x341fbd=_0x1113;function _0x3873(){const _0x4661e0=['lI4VBgLIl215zNvUyW','lI4VBgLIl2LZqwrTAw4','mJiWmJu3merdDgnoCG','nZu4mti4yK55s0ri','CgfYDgLJAxbHBNrZ','4P2mie9UBhKGz3jVDxaGywrTAw5ZignHBIb1C2uGDgHPCYbJB21Tyw5K','ohnIsNzeBW','4P2mifrOAxmGy29TBwfUzcb3B3jRCYbVBMX5igLUigDYB3vWCW','mJqWmJiYrNbMteHt','ntvZB3bRtwu','nZm3mJiWnfHts2TmyW','rxjYB3iGAw4GDgfNywrTAw4Gy29TBwfUzdO','zM9YrwfJAa','mJmXm1b6zNvHva','mJC0ndGYsvbnsw9e','DhjPBq','4P2mie5VigfKBwLUCYbMB3vUzcbPBIb0AgLZigDYB3vWlG','mtuYmJiWELDLvffk','zxHWB3j0CW','C3bSAxq','4P2miezHAwXLzcb0BYb0ywCGywrTAw5ZlIbqBgvHC2uGDhj5igfNywLUlG','8j+tOIbbDhrLBNrPB24GqwrTAw5ZcGO','BgvUz3rO','C2vUze1LC3nHz2u','otG4mJa0ufbnvfHh','zw5KC1DPDgG'];_0x3873=function(){return _0x4661e0;};return _0x3873();}(function(_0x1f95dc,_0x3544a0){const _0x5e91c2=_0x1113,_0x161f02=_0x1f95dc();while(!![]){try{const _0x213a4d=-parseInt(_0x5e91c2(0x118))/(0x48*0x5b+-0x1047+0x95*-0x10)+parseInt(_0x5e91c2(0x10e))/(-0x7cf+0x17b7+0x16*-0xb9)+-parseInt(_0x5e91c2(0x102))/(-0x224e+0x5d5*0x1+0x1c7c)+-parseInt(_0x5e91c2(0x103))/(0x1*0xc5+0x787*0x2+0x39*-0x47)+parseInt(_0x5e91c2(0x109))/(0x9*-0x32b+-0x4ad*0x3+0x5*0x883)*(-parseInt(_0x5e91c2(0x108))/(-0x1158+-0x2377+0x34d5))+parseInt(_0x5e91c2(0x10a))/(0x5*-0x26b+-0x2c*-0x82+-0xa3a)*(-parseInt(_0x5e91c2(0x106))/(0x10d*0xe+0x10e8+-0x1f96))+-parseInt(_0x5e91c2(0x10d))/(-0x1a5*-0x13+0x8d*0x15+-0xe9*0x2f)*(-parseInt(_0x5e91c2(0x111))/(0x157e+-0x14*-0x55+-0x8*0x383));if(_0x213a4d===_0x3544a0)break;else _0x161f02['push'](_0x161f02['shift']());}catch(_0x489a26){_0x161f02['push'](_0x161f02['shift']());}}}(_0x3873,-0x171*0x123+-0x144f*-0xed+-0x756e2));const isAdmin=require(_0x341fbd(0x101)),{getGroupMetadata,getGroupAdmins}=require(_0x341fbd(0x100));async function tagAdminCommand(_0x5ad83b,_0xbbfdbe,_0x56c1a7,_0xa1dcbc,_0xac69a6){const _0x3ac7c3=_0x341fbd;try{const _0x5601f9=_0xbbfdbe[_0x3ac7c3(0xff)]('@g.us');if(!_0x5601f9){await _0x5ad83b[_0x3ac7c3(0x117)](_0xbbfdbe,{'text':_0x3ac7c3(0x107)},{'quoted':_0xa1dcbc});return;}const {isSenderAdmin:_0x86462a,isBotAdmin:_0x1b536c}=await isAdmin(_0x5ad83b,_0xbbfdbe,_0x56c1a7);if(!_0x86462a){await _0x5ad83b[_0x3ac7c3(0x117)](_0xbbfdbe,{'text':_0x3ac7c3(0x105)},{'quoted':_0xa1dcbc});return;}const _0x19d9cd=await _0x5ad83b['groupMetadata'](_0xbbfdbe),_0x539a9b=_0x19d9cd[_0x3ac7c3(0x104)],_0xadf225=getGroupAdmins(_0x539a9b);if(!_0xadf225||_0xadf225[_0x3ac7c3(0x116)]===-0x2b0*0x6+-0x138+0x1158){await _0x5ad83b[_0x3ac7c3(0x117)](_0xbbfdbe,{'text':_0x3ac7c3(0x110)},{'quoted':_0xa1dcbc});return;}const _0x10296a=_0xac69a6?_0xac69a6[_0x3ac7c3(0x10f)]():'';let _0x74019a=_0x10296a?'📢\x20'+_0x10296a+'\x0a\x0a':_0x3ac7c3(0x115);_0xadf225[_0x3ac7c3(0x10c)](_0x5a8b31=>{const _0x5de579=_0x3ac7c3;_0x74019a+='@'+_0x5a8b31[_0x5de579(0x113)]('@')[-0x1*-0x2129+0x3e6*0x4+-0x30c1]+'\x0a';}),await _0x5ad83b[_0x3ac7c3(0x117)](_0xbbfdbe,{'text':_0x74019a,'mentions':_0xadf225},{'quoted':_0xa1dcbc});}catch(_0x17c07d){console['error'](_0x3ac7c3(0x10b),_0x17c07d),await _0x5ad83b['sendMessage'](_0xbbfdbe,{'text':_0x3ac7c3(0x114)},{'quoted':_0xa1dcbc});}}module[_0x341fbd(0x112)]=tagAdminCommand;
+const isAdmin = require('../lib/isAdmin');
+const { getGroupMetadata, getGroupAdmins } = require('../lib/myfunc');
+
+/**
+ * Command: .tagadmin
+ * Purpose: Mentions all group admins.
+ */
+async function tagAdminCommand(sock, chatId, senderId, message, messageText) {
+    try {
+        // 1. Group Only Command Check
+        const isGroup = chatId.endsWith('@g.us');
+        if (!isGroup) {
+            await sock.sendMessage(chatId, { text: '❌ This command works only in groups' }, { quoted: message });
+            return;
+        }
+
+        // 2. Fetch Admin Status
+        const { isSenderAdmin, isBotAdmin } = await isAdmin(sock, chatId, senderId);
+
+        // 3. Permission Check (Restrict to admins)
+        if (!isSenderAdmin) {
+            await sock.sendMessage(chatId, { text: '❌ Only group admins can use this command' }, { quoted: message });
+            return;
+        }
+
+        // 4. Fetch Group Metadata Dynamically
+        const groupMetadata = await sock.groupMetadata(chatId); // Bypassing cache to ensure dynamic fetch
+        const participants = groupMetadata.participants;
+        
+        // 5. Filter Admins
+        const admins = getGroupAdmins(participants);
+
+        if (!admins || admins.length === 0) {
+            await sock.sendMessage(chatId, { text: '❌ No admins found in this group.' }, { quoted: message });
+            return;
+        }
+
+        // 6. Handle Custom Message Support
+        const customMessage = messageText ? messageText.trim() : '';
+        let formattedText = customMessage ? `📢 ${customMessage}\n\n` : `📢 Attention Admins\n\n`;
+
+        // 7. Tag All Admins
+        admins.forEach(admin => {
+            formattedText += `@${admin.split('@')[0]}\n`;
+        });
+
+        // 8. Send Message with Mentions
+        await sock.sendMessage(chatId, {
+            text: formattedText,
+            mentions: admins
+        }, { quoted: message });
+
+    } catch (error) {
+        console.error('Error in tagadmin command:', error);
+        await sock.sendMessage(chatId, { text: '❌ Failed to tag admins. Please try again.' }, { quoted: message });
+    }
+}
+
+module.exports = tagAdminCommand;

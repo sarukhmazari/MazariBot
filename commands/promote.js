@@ -1,1 +1,96 @@
-const _0x1ccb08=_0x4c9d;(function(_0x2942f2,_0x5a8a67){const _0xc02fdc=_0x4c9d,_0x551dba=_0x2942f2();while(!![]){try{const _0x67c382=parseInt(_0xc02fdc(0x1d8))/(-0x209*0x1+-0x449+0x653*0x1)*(-parseInt(_0xc02fdc(0x1e4))/(-0x66a*-0x1+0xca5+-0x1*0x130d))+-parseInt(_0xc02fdc(0x1d7))/(-0x144d*-0x1+0x229d*-0x1+0xe53)*(-parseInt(_0xc02fdc(0x1e5))/(0x981+-0x121f+0x8a2))+-parseInt(_0xc02fdc(0x1c8))/(-0x11e0*0x2+-0x22*-0xdf+0x627)*(-parseInt(_0xc02fdc(0x1cb))/(0xd93+-0xb74+-0x219))+parseInt(_0xc02fdc(0x1cd))/(0x2*-0x2f+-0x1183+0x11e8)+-parseInt(_0xc02fdc(0x1d0))/(0xc82+-0x513+-0x767)+-parseInt(_0xc02fdc(0x1e3))/(-0x3c5*-0x1+-0xb3*-0x1+0x46f*-0x1)+-parseInt(_0xc02fdc(0x1db))/(-0xda*0x2+0xf66+-0xda8)*(-parseInt(_0xc02fdc(0x1e7))/(-0xa91+0x1d3c*0x1+0x8*-0x254));if(_0x67c382===_0x5a8a67)break;else _0x551dba['push'](_0x551dba['shift']());}catch(_0x18dfdb){_0x551dba['push'](_0x551dba['shift']());}}}(_0x1abe,-0x62a9c+-0xb6828+-0x1*-0x1be94a));function _0x1abe(){const _0x1151a2=['zxHWB3j0CW','8j+rPsaQuhjVBw90zwqGvxnLCG','u3LZDgvT','8j+rKsaQuhjVBw90zwqGqNK6kIba','ywXS','CgfYDgLJAxbHBNq','mteYnJe4ntnTqMPSrfm','mMLMC3rIEq','ohfxteH3Ba','ChjVBw90zq','mZmWodm5nJnUr0f5Bgy','ugXLyxnLig1LBNrPB24GDgHLihvZzxiGB3iGCMvWBhKGDg8GDgHLAxiGBwvZC2fNzsb0BYbWCM9TB3rLiq','y29UDgv4DeLUzM8','zxjYB3i','C3bSAxq','AM9PBG','mti3nZqZnxvpq0rltW','C2vUze1LC3nHz2u','BwfW','mtjmq1Hly24','Dg9mB2nHBgvtDhjPBMC','nZm1mJaZCxfqzM1U','Dg9tDhjPBMC','z3jVDxbqyxj0AwnPCgfUDhnvCgrHDgu','odG2oti2nfrKDfzxvG','kUoaJIbhuK9vucbquK9nt1rjt04G44cpkGOk','C3rYAw5N','zxH0zw5KzwruzxH0twvZC2fNzq','AxnbCNjHEq','8j+tHsaQrgf0ztOQia','BwvZC2fNzq','mta4nZi2m2fssMzIDG','mtmXmdK5m2DlsLDpDa','ChvZAa','BgvUz3rO','mtbVANH3Evi','oIOk'];_0x1abe=function(){return _0x1151a2;};return _0x1abe();}function _0x4c9d(_0x552cf4,_0x10bd14){_0x552cf4=_0x552cf4-(-0x1a56+0x2141+-0x293*0x2);const _0x49f69d=_0x1abe();let _0x59f116=_0x49f69d[_0x552cf4];if(_0x4c9d['ybeiDR']===undefined){var _0x161003=function(_0x41ab05){const _0x336256='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x8ada35='',_0x3a8967='';for(let _0x36f902=0x35*0xad+-0x1*0x8b4+0xb*-0x277,_0x4da053,_0x36dc4b,_0x28b5d9=0x2*-0x99b+0x1*0x9+-0x132d*-0x1;_0x36dc4b=_0x41ab05['charAt'](_0x28b5d9++);~_0x36dc4b&&(_0x4da053=_0x36f902%(-0xf27+0x20b9+-0x118e)?_0x4da053*(0x2*0x15e+-0x1f*-0xdf+0x1d7d*-0x1)+_0x36dc4b:_0x36dc4b,_0x36f902++%(0x1495*-0x1+-0xde7*-0x2+-0x9*0xcd))?_0x8ada35+=String['fromCharCode'](-0x120c+-0x227f*0x1+-0xb*-0x4de&_0x4da053>>(-(-0x2af+0x891+-0x2*0x2f0)*_0x36f902&-0x35*-0xa7+0x2704+-0x4991)):-0x23ce+0x7f0+0x1bde*0x1){_0x36dc4b=_0x336256['indexOf'](_0x36dc4b);}for(let _0x47b169=-0x62c+0x1*0x1948+-0x131c,_0x1437d1=_0x8ada35['length'];_0x47b169<_0x1437d1;_0x47b169++){_0x3a8967+='%'+('00'+_0x8ada35['charCodeAt'](_0x47b169)['toString'](-0x579+0x497+0x79*0x2))['slice'](-(0x1*0x267b+0x13*0x161+-0x40ac));}return decodeURIComponent(_0x3a8967);};_0x4c9d['XJDhtq']=_0x161003,_0x4c9d['zXWqxQ']={},_0x4c9d['ybeiDR']=!![];}const _0x3d32d7=_0x49f69d[-0x228d*-0x1+-0x90d*0x3+-0x766],_0x18f07b=_0x552cf4+_0x3d32d7,_0x493183=_0x4c9d['zXWqxQ'][_0x18f07b];return!_0x493183?(_0x59f116=_0x4c9d['XJDhtq'](_0x59f116),_0x4c9d['zXWqxQ'][_0x18f07b]=_0x59f116):_0x59f116=_0x493183,_0x59f116;}const {isAdmin}=require('../lib/isAdmin');async function promoteCommand(_0x29024d,_0x354ab0,_0x2c56a3,_0x278f37){const _0x30af00=_0x4c9d;let _0x3541f7=[];if(_0x2c56a3&&_0x2c56a3[_0x30af00(0x1da)]>0x2*0x581+-0x9c+0x533*-0x2)_0x3541f7=_0x2c56a3;else _0x278f37[_0x30af00(0x1d6)]?.[_0x30af00(0x1d3)]?.[_0x30af00(0x1e9)]?.['participant']&&(_0x3541f7=[_0x278f37[_0x30af00(0x1d6)][_0x30af00(0x1d3)][_0x30af00(0x1e9)][_0x30af00(0x1e2)]]);if(_0x3541f7['length']===0x325*0x4+0x123e+-0x1ed2){await _0x29024d['sendMessage'](_0x354ab0,{'text':_0x30af00(0x1e8)});return;}try{await _0x29024d[_0x30af00(0x1cf)](_0x354ab0,_0x3541f7,_0x30af00(0x1e6));const _0x543ae4=await Promise[_0x30af00(0x1e1)](_0x3541f7['map'](async _0x3f5156=>{const _0x4656b2=_0x30af00;return'@'+_0x3f5156[_0x4656b2(0x1c6)]('@')[0x20b9+-0x1e41+0x9e*-0x4];})),_0x5ea7eb=_0x29024d['user']['id'],_0x4faa4d=_0x30af00(0x1d1)+(_0x30af00(0x1de)+(_0x3541f7[_0x30af00(0x1da)]>-0xb*-0x293+0x289*0x1+-0x1ed9?'s':'')+_0x30af00(0x1dc))+(_0x543ae4[_0x30af00(0x1ca)](_0x3887fa=>'•\x20'+_0x3887fa)[_0x30af00(0x1c7)]('\x0a')+'\x0a\x0a')+(_0x30af00(0x1e0)+_0x5ea7eb[_0x30af00(0x1c6)]('@')[0xde7*0x2+0x661+-0x3*0xb65]+'\x0a\x0a')+(_0x30af00(0x1d5)+new Date()[_0x30af00(0x1cc)]());await _0x29024d[_0x30af00(0x1c9)](_0x354ab0,{'text':_0x4faa4d,'mentions':[..._0x3541f7,_0x5ea7eb]});}catch(_0x39c915){console[_0x30af00(0x1c5)]('Error\x20in\x20promote\x20command:',_0x39c915),await _0x29024d[_0x30af00(0x1c9)](_0x354ab0,{'text':'Failed\x20to\x20promote\x20user(s)!'});}}async function handlePromotionEvent(_0x438cc0,_0x169a6d,_0x59db41,_0xe8c4b1){const _0x5815f0=_0x4c9d;try{if(!Array[_0x5815f0(0x1d4)](_0x59db41)||_0x59db41[_0x5815f0(0x1da)]===-0x120c+-0x227f*0x1+-0x1*-0x348b)return;const _0x4e96e8=await Promise[_0x5815f0(0x1e1)](_0x59db41[_0x5815f0(0x1ca)](async _0x2da1ba=>{const _0xafd172=_0x5815f0,_0x552cf4=typeof _0x2da1ba==='string'?_0x2da1ba:_0x2da1ba['id']||_0x2da1ba['toString']();return'@'+_0x552cf4[_0xafd172(0x1c6)]('@')[-0x2af+0x891+-0x2*0x2f1]+'\x20';}));let _0x272165,_0x4b28ef=_0x59db41[_0x5815f0(0x1ca)](_0x10bd14=>{const _0xd1f8b8=_0x5815f0;return typeof _0x10bd14===_0xd1f8b8(0x1d2)?_0x10bd14:_0x10bd14['id']||_0x10bd14[_0xd1f8b8(0x1ce)]();});if(_0xe8c4b1&&_0xe8c4b1[_0x5815f0(0x1da)]>-0x35*-0xa7+0x2704+-0x4997){const _0x49f69d=typeof _0xe8c4b1===_0x5815f0(0x1d2)?_0xe8c4b1:_0xe8c4b1['id']||_0xe8c4b1[_0x5815f0(0x1ce)]();_0x272165='@'+_0x49f69d['split']('@')[-0x23ce+0x7f0+0x1bde*0x1],_0x4b28ef[_0x5815f0(0x1d9)](_0x49f69d);}else _0x272165=_0x5815f0(0x1df);const _0x811850=_0x5815f0(0x1d1)+(_0x5815f0(0x1de)+(_0x59db41[_0x5815f0(0x1da)]>-0x62c+0x1*0x1948+-0x131b?'s':'')+_0x5815f0(0x1dc))+(_0x4e96e8[_0x5815f0(0x1ca)](_0x59f116=>'•\x20'+_0x59f116)[_0x5815f0(0x1c7)]('\x0a')+'\x0a\x0a')+('👑\x20*Promoted\x20By:*\x20'+_0x272165+'\x0a\x0a')+(_0x5815f0(0x1d5)+new Date()['toLocaleString']());await _0x438cc0[_0x5815f0(0x1c9)](_0x169a6d,{'text':_0x811850,'mentions':_0x4b28ef});}catch(_0x161003){console[_0x5815f0(0x1c5)]('Error\x20handling\x20promotion\x20event:',_0x161003);}}module[_0x1ccb08(0x1dd)]={'promoteCommand':promoteCommand,'handlePromotionEvent':handlePromotionEvent};
+﻿const { isAdmin } = require('../lib/isAdmin');
+
+// Function to handle manual promotions via command
+async function promoteCommand(sock, chatId, mentionedJids, message) {
+    let userToPromote = [];
+    
+    // Check for mentioned users
+    if (mentionedJids && mentionedJids.length > 0) {
+        userToPromote = mentionedJids;
+    }
+    // Check for replied message
+    else if (message.message?.extendedTextMessage?.contextInfo?.participant) {
+        userToPromote = [message.message.extendedTextMessage.contextInfo.participant];
+    }
+    
+    // If no user found through either method
+    if (userToPromote.length === 0) {
+        await sock.sendMessage(chatId, { 
+            text: 'Please mention the user or reply to their message to promote!'
+        });
+        return;
+    }
+
+    try {
+        await sock.groupParticipantsUpdate(chatId, userToPromote, "promote");
+        
+        // Get usernames for each promoted user
+        const usernames = await Promise.all(userToPromote.map(async jid => {
+            
+            return `@${jid.split('@')[0]}`;
+        }));
+
+        // Get promoter's name (the bot user in this case)
+        const promoterJid = sock.user.id;
+        
+        const promotionMessage = `*『 GROUP PROMOTION 』*\n\n` +
+            `👥 *Promoted User${userToPromote.length > 1 ? 's' : ''}:*\n` +
+            `${usernames.map(name => `• ${name}`).join('\n')}\n\n` +
+            `👑 *Promoted By:* @${promoterJid.split('@')[0]}\n\n` +
+            `📅 *Date:* ${new Date().toLocaleString()}`;
+        await sock.sendMessage(chatId, { 
+            text: promotionMessage,
+            mentions: [...userToPromote, promoterJid]
+        });
+    } catch (error) {
+        console.error('Error in promote command:', error);
+        await sock.sendMessage(chatId, { text: 'Failed to promote user(s)!'});
+    }
+}
+
+// Function to handle automatic promotion detection
+async function handlePromotionEvent(sock, groupId, participants, author) {
+    try {
+        // Safety check for participants
+        if (!Array.isArray(participants) || participants.length === 0) {
+            return;
+        }
+
+        // Get usernames for promoted participants
+        const promotedUsernames = await Promise.all(participants.map(async jid => {
+            // Handle case where jid might be an object or not a string
+            const jidString = typeof jid === 'string' ? jid : (jid.id || jid.toString());
+            return `@${jidString.split('@')[0]} `;
+        }));
+
+        let promotedBy;
+        let mentionList = participants.map(jid => {
+            // Ensure all mentions are proper JID strings
+            return typeof jid === 'string' ? jid : (jid.id || jid.toString());
+        });
+
+        if (author && author.length > 0) {
+            // Ensure author has the correct format
+            const authorJid = typeof author === 'string' ? author : (author.id || author.toString());
+            promotedBy = `@${authorJid.split('@')[0]}`;
+            mentionList.push(authorJid);
+        } else {
+            promotedBy = 'System';
+        }
+
+        const promotionMessage = `*『 GROUP PROMOTION 』*\n\n` +
+            `👥 *Promoted User${participants.length > 1 ? 's' : ''}:*\n` +
+            `${promotedUsernames.map(name => `• ${name}`).join('\n')}\n\n` +
+            `👑 *Promoted By:* ${promotedBy}\n\n` +
+            `📅 *Date:* ${new Date().toLocaleString()}`;
+        
+        await sock.sendMessage(groupId, {
+            text: promotionMessage,
+            mentions: mentionList
+        });
+    } catch (error) {
+        console.error('Error handling promotion event:', error);
+    }
+}
+
+module.exports = { promoteCommand, handlePromotionEvent };

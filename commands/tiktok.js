@@ -1,1 +1,255 @@
-const _0x591690=_0xaae3;(function(_0x5ee736,_0x48a5b6){const _0x2c1cf4=_0xaae3,_0x1f279c=_0x5ee736();while(!![]){try{const _0x13cb33=parseInt(_0x2c1cf4(0x165))/(0x8f4+0x1a90+-0x2383)*(parseInt(_0x2c1cf4(0x14b))/(0x216f+0x1c15+0x3d82*-0x1))+-parseInt(_0x2c1cf4(0x157))/(-0x2007+-0x1aad*0x1+0x3ab7)*(parseInt(_0x2c1cf4(0x139))/(-0x29d*0x6+-0xd3*0x1d+0xd33*0x3))+-parseInt(_0x2c1cf4(0x135))/(0x1914+0x2519+-0x3e28)+-parseInt(_0x2c1cf4(0x178))/(-0x217*0xa+-0x397*0x8+0x31a4*0x1)*(parseInt(_0x2c1cf4(0x13a))/(-0x1b84+-0xa3d*-0x1+0x114e))+parseInt(_0x2c1cf4(0x141))/(0x2*0x8ed+0x525+-0x16f7)*(-parseInt(_0x2c1cf4(0x134))/(0x233+-0x12f3+0x10c9))+parseInt(_0x2c1cf4(0x133))/(-0x62*0x1d+-0x1b65*0x1+0x2689*0x1)*(parseInt(_0x2c1cf4(0x146))/(-0x26f6+-0x179c+0x3e9d))+parseInt(_0x2c1cf4(0x152))/(-0x37c+-0x263b+0x29c3*0x1);if(_0x13cb33===_0x48a5b6)break;else _0x1f279c['push'](_0x1f279c['shift']());}catch(_0x858d8){_0x1f279c['push'](_0x1f279c['shift']());}}}(_0x56ce,0x4f*-0xddf+0xc526+0x60d90));const {ttdl}=require(_0x591690(0x168)),axios=require(_0x591690(0x15e)),processedMessages=new Set();function _0xaae3(_0x3a4603,_0x496204){_0x3a4603=_0x3a4603-(-0x16dd*0x1+0x1*-0xbeb+0x23f8*0x1);const _0x541307=_0x56ce();let _0x2b43c3=_0x541307[_0x3a4603];if(_0xaae3['mgxPFN']===undefined){var _0x40911c=function(_0x95925b){const _0x2a28de='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x3d2e34='',_0x58d227='';for(let _0x22023e=0xe1c+0x1a*0x15d+-0x318e,_0x23b76a,_0x3e31f4,_0x4090a1=0x1*0x2497+-0x247*0x11+0x220;_0x3e31f4=_0x95925b['charAt'](_0x4090a1++);~_0x3e31f4&&(_0x23b76a=_0x22023e%(0x13f4+0x1*0x100a+-0x3*0xbfe)?_0x23b76a*(0x8f2+-0x77c*-0x2+-0x17aa*0x1)+_0x3e31f4:_0x3e31f4,_0x22023e++%(-0x1fe+-0x535+0x1*0x737))?_0x3d2e34+=String['fromCharCode'](0xd*0x242+0x1ecf+-0x3b2a*0x1&_0x23b76a>>(-(0x1*0x2643+0x15*0x1c4+0x23*-0x227)*_0x22023e&-0x400*0x5+-0xc2f+-0x2035*-0x1)):-0xe3*0x1+0xc20+-0xb3d){_0x3e31f4=_0x2a28de['indexOf'](_0x3e31f4);}for(let _0x48bd74=-0x1c19+-0x1f*0x22+0x2037,_0x179518=_0x3d2e34['length'];_0x48bd74<_0x179518;_0x48bd74++){_0x58d227+='%'+('00'+_0x3d2e34['charCodeAt'](_0x48bd74)['toString'](0x1f5f+-0x19a0+-0x5af))['slice'](-(0x5*-0x554+0x256+-0x8*-0x30a));}return decodeURIComponent(_0x58d227);};_0xaae3['NfDRxw']=_0x40911c,_0xaae3['kdMCgl']={},_0xaae3['mgxPFN']=!![];}const _0x24f4d3=_0x541307[0x16b2+-0xee4+-0x14d*0x6],_0x183881=_0x3a4603+_0x24f4d3,_0x5b38a2=_0xaae3['kdMCgl'][_0x183881];return!_0x5b38a2?(_0x2b43c3=_0xaae3['NfDRxw'](_0x2b43c3),_0xaae3['kdMCgl'][_0x183881]=_0x2b43c3):_0x2b43c3=_0x5b38a2,_0x2b43c3;}async function tiktokCommand(_0x3465a8,_0x13ee11,_0x43b302){const _0x483a4a=_0x591690;try{if(processedMessages['has'](_0x43b302[_0x483a4a(0x15c)]['id']))return;processedMessages[_0x483a4a(0x176)](_0x43b302[_0x483a4a(0x15c)]['id']),setTimeout(()=>{const _0xd4a061=_0x483a4a;processedMessages['delete'](_0x43b302[_0xd4a061(0x15c)]['id']);},(-0x7*0x2ef+-0xc39*-0x1+0x1*0x855)*(0x5b0+0x36*-0x74+0x1304)*(-0x1*-0x59c+0x6*0x3e+-0x328));const _0x3b5e75=_0x43b302[_0x483a4a(0x148)]?.['conversation']||_0x43b302[_0x483a4a(0x148)]?.[_0x483a4a(0x149)]?.[_0x483a4a(0x136)];if(!_0x3b5e75)return await _0x3465a8['sendMessage'](_0x13ee11,{'text':_0x483a4a(0x16a)});const _0x3b2499=_0x3b5e75['split']('\x20')[_0x483a4a(0x153)](-0x21ad*-0x1+-0x2075+-0x137)[_0x483a4a(0x17c)]('\x20')[_0x483a4a(0x16b)]();if(!_0x3b2499)return await _0x3465a8['sendMessage'](_0x13ee11,{'text':'Please\x20provide\x20a\x20TikTok\x20link\x20for\x20the\x20video.'});const _0x3782ab=[/https?:\/\/(?:www\.)?tiktok\.com\//,/https?:\/\/(?:vm\.)?tiktok\.com\//,/https?:\/\/(?:vt\.)?tiktok\.com\//,/https?:\/\/(?:www\.)?tiktok\.com\/@/,/https?:\/\/(?:www\.)?tiktok\.com\/t\//],_0x291047=_0x3782ab[_0x483a4a(0x13f)](_0x1b994c=>_0x1b994c[_0x483a4a(0x144)](_0x3b2499));if(!_0x291047)return await _0x3465a8[_0x483a4a(0x142)](_0x13ee11,{'text':_0x483a4a(0x138)});await _0x3465a8[_0x483a4a(0x142)](_0x13ee11,{'react':{'text':'🔄','key':_0x43b302[_0x483a4a(0x15c)]}});try{const _0x597bd6=_0x483a4a(0x156)+encodeURIComponent(_0x3b2499);let _0x3e8bcc=null,_0x3e3cd1=null,_0x1d8824=null;try{const _0x2b33f2=await axios[_0x483a4a(0x155)](_0x597bd6,{'timeout':0x3a98,'headers':{'accept':'*/*','User-Agent':_0x483a4a(0x14e)}});if(_0x2b33f2[_0x483a4a(0x171)]&&_0x2b33f2[_0x483a4a(0x171)][_0x483a4a(0x175)]){if(_0x2b33f2['data'][_0x483a4a(0x171)]){if(_0x2b33f2[_0x483a4a(0x171)][_0x483a4a(0x171)][_0x483a4a(0x15d)]&&Array[_0x483a4a(0x163)](_0x2b33f2['data']['data'][_0x483a4a(0x15d)])&&_0x2b33f2[_0x483a4a(0x171)][_0x483a4a(0x171)]['urls'][_0x483a4a(0x16c)]>0x1*-0x19e2+0x17c*-0xa+0x2*0x145d)_0x3e8bcc=_0x2b33f2['data'][_0x483a4a(0x171)][_0x483a4a(0x15d)][-0x1853+0x24f7*0x1+0x1*-0xca4],_0x1d8824=_0x2b33f2[_0x483a4a(0x171)]['data']['metadata']?.['title']||_0x483a4a(0x16d);else{if(_0x2b33f2[_0x483a4a(0x171)][_0x483a4a(0x171)][_0x483a4a(0x151)])_0x3e8bcc=_0x2b33f2['data']['data'][_0x483a4a(0x151)],_0x1d8824=_0x2b33f2[_0x483a4a(0x171)][_0x483a4a(0x171)][_0x483a4a(0x14f)]?.[_0x483a4a(0x137)]||_0x483a4a(0x16d);else{if(_0x2b33f2[_0x483a4a(0x171)][_0x483a4a(0x171)]['url'])_0x3e8bcc=_0x2b33f2[_0x483a4a(0x171)][_0x483a4a(0x171)][_0x483a4a(0x13c)],_0x1d8824=_0x2b33f2[_0x483a4a(0x171)][_0x483a4a(0x171)][_0x483a4a(0x14f)]?.['title']||_0x483a4a(0x16d);else{if(_0x2b33f2[_0x483a4a(0x171)]['data']['download_url'])_0x3e8bcc=_0x2b33f2[_0x483a4a(0x171)][_0x483a4a(0x171)][_0x483a4a(0x172)],_0x1d8824=_0x2b33f2[_0x483a4a(0x171)][_0x483a4a(0x171)][_0x483a4a(0x14f)]?.[_0x483a4a(0x137)]||_0x483a4a(0x16d);else throw new Error(_0x483a4a(0x154));}}}}else throw new Error(_0x483a4a(0x179));}else throw new Error(_0x483a4a(0x177));}catch(_0x15dc84){console[_0x483a4a(0x15b)]('Siputzx\x20API\x20failed:\x20'+_0x15dc84['message']);}if(!_0x3e8bcc)try{let _0x55272f=await ttdl(_0x3b2499);if(_0x55272f&&_0x55272f[_0x483a4a(0x171)]&&_0x55272f[_0x483a4a(0x171)]['length']>0x4*0x3c7+0xd64+-0x1c80){const _0x507971=_0x55272f[_0x483a4a(0x171)];for(let _0x5b4088=0x39b+-0x84c*0x4+0x1d95;_0x5b4088<Math[_0x483a4a(0x14d)](0xc20+0x386+-0xf92,_0x507971[_0x483a4a(0x16c)]);_0x5b4088++){const _0x22f349=_0x507971[_0x5b4088],_0x214d6c=_0x22f349[_0x483a4a(0x13c)],_0x25d9de=/\.(mp4|mov|avi|mkv|webm)$/i[_0x483a4a(0x144)](_0x214d6c)||_0x22f349['type']===_0x483a4a(0x173);_0x25d9de?await _0x3465a8[_0x483a4a(0x142)](_0x13ee11,{'video':{'url':_0x214d6c},'mimetype':_0x483a4a(0x131),'caption':'𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗\x20𝗕𝗬\x20𝗠𝗔𝗭𝗔𝗥𝗜\x20𝗕𝗢𝗧',...global[_0x483a4a(0x161)]},{'quoted':_0x43b302}):await _0x3465a8[_0x483a4a(0x142)](_0x13ee11,{'image':{'url':_0x214d6c},'caption':_0x483a4a(0x15f),...global[_0x483a4a(0x161)]},{'quoted':_0x43b302});}return;}}catch(_0x45b91a){console[_0x483a4a(0x15b)](_0x483a4a(0x158),_0x45b91a['message']);}if(_0x3e8bcc)try{const _0x56d9ab=await axios[_0x483a4a(0x155)](_0x3e8bcc,{'responseType':_0x483a4a(0x130),'timeout':0xea60,'maxContentLength':(-0x1c19+-0x1f*0x22+0x209b)*(0x1f5f+-0x19a0+-0x1bf)*(0x5*-0x554+0x256+-0x2*-0xe27),'headers':{'User-Agent':_0x483a4a(0x13e),'Accept':_0x483a4a(0x169),'Accept-Language':_0x483a4a(0x160),'Accept-Encoding':_0x483a4a(0x132),'Connection':_0x483a4a(0x167),'Referer':'https://www.tiktok.com/'}}),_0x41982d=Buffer['from'](_0x56d9ab[_0x483a4a(0x171)]);if(_0x41982d[_0x483a4a(0x16c)]===0x16b2+-0xee4+-0x14d*0x6)throw new Error('Video\x20buffer\x20is\x20empty');const _0x2ce47a=_0x41982d[_0x483a4a(0x16c)]>-0x3*-0x2e4+-0x1*-0x150d+-0x19d1&&(_0x41982d['toString'](_0x483a4a(0x170),0x23ab+0x1f6a*-0x1+-0x441,0x51*-0x1f+0xbe3+-0x21*0x10)===_0x483a4a(0x140)||_0x41982d[_0x483a4a(0x13d)](_0x483a4a(0x170),-0x3*0x22c+0x2e9+0x39b,-0xcbb*0x2+-0x259+0x1bd3)===_0x483a4a(0x145)||_0x41982d[_0x483a4a(0x13d)](_0x483a4a(0x170),-0x779*-0x1+-0xe80+0x707,0x101c+0x3*0x43b+-0x1cc5)==='0000001866747970'||_0x41982d[_0x483a4a(0x13d)]('hex',-0x2106+0x83*-0x31+0x3a19,-0x1c86+0x1618+0x672)===_0x483a4a(0x14c));if(!_0x2ce47a&&_0x41982d[_0x483a4a(0x16c)]<-0xc*-0x3f4+-0x26d8+0x1e78){const _0x443c88=_0x41982d[_0x483a4a(0x13d)]('utf8',-0x4*0x537+-0x1410+0x28ec,-0xe41*-0x1+0x1*0xa1f+-0x1798);if(_0x443c88[_0x483a4a(0x166)](_0x483a4a(0x15b))||_0x443c88[_0x483a4a(0x166)](_0x483a4a(0x14a))||_0x443c88[_0x483a4a(0x166)](_0x483a4a(0x162)))throw new Error(_0x483a4a(0x15a));}const _0x4dfa83=_0x1d8824?'𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗\x20𝗕𝗬\x20𝗠𝗔𝗭𝗔𝗥𝗜\x20𝗕𝗢𝗧\x0a\x0a📝\x20Title:\x20'+_0x1d8824:_0x483a4a(0x15f);await _0x3465a8[_0x483a4a(0x142)](_0x13ee11,{'video':_0x41982d,'mimetype':_0x483a4a(0x131),'caption':_0x4dfa83,...global[_0x483a4a(0x161)]},{'quoted':_0x43b302});if(_0x3e3cd1)try{const _0x1ca22f=await axios[_0x483a4a(0x155)](_0x3e3cd1,{'responseType':_0x483a4a(0x130),'timeout':0x7530,'headers':{'User-Agent':_0x483a4a(0x143)}}),_0x128e1f=Buffer[_0x483a4a(0x16f)](_0x1ca22f[_0x483a4a(0x171)]);await _0x3465a8[_0x483a4a(0x142)](_0x13ee11,{'audio':_0x128e1f,'mimetype':_0x483a4a(0x17a),'caption':_0x483a4a(0x16e)},{'quoted':_0x43b302});}catch(_0x229472){console['error']('Failed\x20to\x20download\x20audio:\x20'+_0x229472[_0x483a4a(0x148)]);}return;}catch(_0x33c7de){console[_0x483a4a(0x15b)](_0x483a4a(0x164)+_0x33c7de[_0x483a4a(0x148)]);try{const _0x163a78=_0x1d8824?'𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗\x20𝗕𝗬\x20𝗠𝗔𝗭𝗔𝗥𝗜\x20𝗕𝗢𝗧\x0a\x0a📝\x20Title:\x20'+_0x1d8824:_0x483a4a(0x15f);await _0x3465a8[_0x483a4a(0x142)](_0x13ee11,{'video':{'url':_0x3e8bcc},'mimetype':_0x483a4a(0x131),'caption':_0x163a78,...global['channelInfo']},{'quoted':_0x43b302});return;}catch(_0x1bc753){console['error'](_0x483a4a(0x13b)+_0x1bc753[_0x483a4a(0x148)]);}}return await _0x3465a8[_0x483a4a(0x142)](_0x13ee11,{'text':_0x483a4a(0x147)},{'quoted':_0x43b302});}catch(_0x1984d2){console['error']('Error\x20in\x20TikTok\x20download:',_0x1984d2),await _0x3465a8[_0x483a4a(0x142)](_0x13ee11,{'text':_0x483a4a(0x17b)},{'quoted':_0x43b302});}}catch(_0xd85188){console[_0x483a4a(0x15b)](_0x483a4a(0x150),_0xd85188),await _0x3465a8[_0x483a4a(0x142)](_0x13ee11,{'text':_0x483a4a(0x159)},{'quoted':_0x43b302});}}module[_0x591690(0x174)]=tiktokCommand;function _0x56ce(){const _0x1b46b7=['4P2miezHAwXLzcb0BYbKB3DUBg9HzcbuAwTuB2SGDMLKzw8UiefSBcbKB3DUBg9HzcbTzxrOB2rZigzHAwXLzc4GugXLyxnLihrYEsbHz2fPBIb3AxrOigeGzgLMzMvYzw50igXPBMSGB3iGy2HLy2SGAwyGDgHLihzPzgvVigLZigf2ywLSywjSzs4','BwvZC2fNzq','zxH0zw5KzwruzxH0twvZC2fNzq','yMXVy2TLza','ndrOsxfjzgW','mwe0nwrMytm','BwLU','tw96AwXSys81lJaGkfDPBMrVD3mGtLqGmtaUmdSGv2LUnJq7ihG2ncKGqxbWBgvxzwjlAxqVntm3lJm2','Bwv0ywrHDge','rxjYB3iGAw4GvgLRvg9RignVBw1HBMq6','DMLKzw9FDxjS','odCXnJaYmgvWrKXkzW','C2XPy2u','tM8GDMLKzw8GvvjmigzVDw5KigLUifnPChv0ENGGqvbjihjLC3bVBNnL','z2v0','Ahr0Chm6lY9HCgKUC2LWDxr6Ec5TEs5Pzc9HCgKVzc90AwT0B2S/DxjSpq','mtjgA1PZy2u','DhrKBcbMywXSyMfJAYbHBhnVigzHAwXLzdO','qw4GzxjYB3iGB2nJDxjYzwqGD2HPBguGChjVy2vZC2LUzYb0AguGCMvXDwvZDc4GugXLyxnLihrYEsbHz2fPBIbSyxrLCI4','uMvJzwL2zwqGzxjYB3iGCgfNzsbPBNn0zwfKig9MihzPzgvV','zxjYB3i','A2v5','DxjSCW','yxHPB3m','8j2xL/cDL6lWNzEQ8j2xOFcDL5/WNzEI8j2xLpcDL5FWNzEy8j2xLYdWNzEv8j2xRcdWNzEG8j2xLpcDL63WNzEu8j2xPFcDL5WG8j2xLFcDL6lWNzEN','zw4TvvmSzw47Ct0WlJK','y2HHBM5LBeLUzM8','ndaZ','AxnbCNjHEq','rMfPBgvKihrVigrVD25SB2fKihzPzgvVoIa','odm5nfHOy3zmrG','Aw5JBhvKzxm','A2vLCc1HBgL2zq','CNvOzw5KlxnJCMfWzxi','DMLKzw8VBxa0lhzPzgvVlYOSkI8Qo3e9mc45','ugXLyxnLihbYB3zPzguGysbuAwTuB2SGBgLUAYbMB3iGDgHLihzPzgvVlG','DhjPBq','BgvUz3rO','vgLRvg9RifzPzgvV','8j+oTsbbDwrPBYbMCM9TifrPA1rVAW','zNjVBq','Agv4','zgf0yq','zg93BMXVywrFDxjS','DMLKzw8','zxHWB3j0CW','C3rHDhvZ','ywrK','sw52ywXPzcbtAxb1DhP4iefqssbYzxnWB25Zzq','nKXtv1zQBq','tM8Gzgf0ysbMAwvSzcbPBIbtAxb1DhP4iefqssbYzxnWB25Zzq','yxvKAw8VBxaZ','rMfPBgvKihrVigrVD25SB2fKihrOzsbuAwTuB2SGDMLKzw8UifbSzwfZzsb0CNKGywDHAw4GD2L0AcbHigrPzMzLCMvUDcbSAw5RlG','AM9PBG','yxjYyxLIDwzMzxi','DMLKzw8VBxa0','z3PPCcWGzgvMBgf0zsWGyNi','mtbZA2PLDfe','mJiWnZe2z0P3vu5R','mte2oda5mhrXru9bAW','Dgv4Da','DgL0Bgu','vgHHDcbPCYbUB3qGysb2ywXPzcbuAwTuB2SGBgLUAY4GugXLyxnLihbYB3zPzguGysb2ywXPzcbuAwTuB2SGDMLKzw8GBgLUAY4','mJKXmJq0sNLLu2TL','mtiYnde3neTftxfysa','vvjmig1LDgHVzcbHBhnVigzHAwXLzdOG','DxjS','Dg9tDhjPBMC','tw96AwXSys81lJaGkfDPBMrVD3mGtLqGmtaUmdSGv2LUnJq7ihG2ncKGqxbWBgvxzwjlAxqVntm3lJm2icHlsfrntcWGBgLRzsbhzwnRBYKGq2HYB21LlZeYmc4WlJaUmcbtywzHCMKVntm3lJm2','C29Tzq','mdaWmdaXyMe','mZj3uxfvCwq','C2vUze1LC3nHz2u','tw96AwXSys81lJaGkfDPBMrVD3mGtLqGmtaUmdSGv2LUnJq7ihG2ncKGqxbWBgvxzwjlAxqVntm3lJm2icHlsfrntcWGBgLRzsbhzwnRBYKGq2HYB21LlZKXlJaUndq3mI4XmJqGu2fMyxjPlZuZnY4ZnG','DgvZDa','mdaWmdaXyJm','ntG4mti2tgXqu1jN'];_0x56ce=function(){return _0x1b46b7;};return _0x56ce();}
+const { ttdl } = require("ruhend-scraper");
+const axios = require('axios');
+
+// Store processed message IDs to prevent duplicates
+const processedMessages = new Set();
+
+async function tiktokCommand(sock, chatId, message) {
+    try {
+        // Check if message has already been processed
+        if (processedMessages.has(message.key.id)) {
+            return;
+        }
+
+        // Add message ID to processed set
+        processedMessages.add(message.key.id);
+
+        // Clean up old message IDs after 5 minutes
+        setTimeout(() => {
+            processedMessages.delete(message.key.id);
+        }, 5 * 60 * 1000);
+
+        const text = message.message?.conversation || message.message?.extendedTextMessage?.text;
+
+        if (!text) {
+            return await sock.sendMessage(chatId, {
+                text: "Please provide a TikTok link for the video."
+            });
+        }
+
+        // Extract URL from command
+        const url = text.split(' ').slice(1).join(' ').trim();
+
+        if (!url) {
+            return await sock.sendMessage(chatId, {
+                text: "Please provide a TikTok link for the video."
+            });
+        }
+
+        // Check for various TikTok URL formats
+        const tiktokPatterns = [
+            /https?:\/\/(?:www\.)?tiktok\.com\//,
+            /https?:\/\/(?:vm\.)?tiktok\.com\//,
+            /https?:\/\/(?:vt\.)?tiktok\.com\//,
+            /https?:\/\/(?:www\.)?tiktok\.com\/@/,
+            /https?:\/\/(?:www\.)?tiktok\.com\/t\//
+        ];
+
+        const isValidUrl = tiktokPatterns.some(pattern => pattern.test(url));
+
+        if (!isValidUrl) {
+            return await sock.sendMessage(chatId, {
+                text: "That is not a valid TikTok link. Please provide a valid TikTok video link."
+            });
+        }
+
+        await sock.sendMessage(chatId, {
+            react: { text: '🔄', key: message.key }
+        });
+
+        try {
+            // Use only Siputzx API
+            const apiUrl = `https://api.siputzx.my.id/api/d/tiktok?url=${encodeURIComponent(url)}`;
+
+
+
+            let videoUrl = null;
+            let audioUrl = null;
+            let title = null;
+
+            // Call Siputzx API
+            try {
+                const response = await axios.get(apiUrl, {
+                    timeout: 15000,
+                    headers: {
+                        'accept': '*/*',
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                    }
+                });
+
+                if (response.data && response.data.status) {
+                    // Check if the API returned video data
+                    if (response.data.data) {
+                        // Check for urls array first (this is the main response format)
+                        if (response.data.data.urls && Array.isArray(response.data.data.urls) && response.data.data.urls.length > 0) {
+                            // Use the first URL from the urls array (usually HD quality)
+                            videoUrl = response.data.data.urls[0];
+                            title = response.data.data.metadata?.title || "TikTok Video";
+                        } else if (response.data.data.video_url) {
+                            videoUrl = response.data.data.video_url;
+                            title = response.data.data.metadata?.title || "TikTok Video";
+                        } else if (response.data.data.url) {
+                            videoUrl = response.data.data.url;
+                            title = response.data.data.metadata?.title || "TikTok Video";
+                        } else if (response.data.data.download_url) {
+                            videoUrl = response.data.data.download_url;
+                            title = response.data.data.metadata?.title || "TikTok Video";
+                        } else {
+                            throw new Error("No video URL found in Siputzx API response");
+                        }
+                    } else {
+                        throw new Error("No data field in Siputzx API response");
+                    }
+                } else {
+                    throw new Error("Invalid Siputzx API response");
+                }
+            } catch (apiError) {
+                console.error(`Siputzx API failed: ${apiError.message}`);
+            }
+
+            // If Siputzx API didn't work, try the original ttdl method
+            if (!videoUrl) {
+                try {
+                    let downloadData = await ttdl(url);
+                    if (downloadData && downloadData.data && downloadData.data.length > 0) {
+                        const mediaData = downloadData.data;
+                        for (let i = 0; i < Math.min(20, mediaData.length); i++) {
+                            const media = mediaData[i];
+                            const mediaUrl = media.url;
+
+                            // Check if URL ends with common video extensions
+                            const isVideo = /\.(mp4|mov|avi|mkv|webm)$/i.test(mediaUrl) ||
+                                media.type === 'video';
+
+                            if (isVideo) {
+                                await sock.sendMessage(chatId, {
+                                    video: { url: mediaUrl },
+                                    mimetype: "video/mp4",
+                                    caption: "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧",
+                                    ...global.channelInfo
+                                }, { quoted: message });
+                            } else {
+                                await sock.sendMessage(chatId, {
+                                    image: { url: mediaUrl },
+                                    caption: "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧",
+                                    ...global.channelInfo
+                                }, { quoted: message });
+                            }
+                        }
+                        return;
+                    }
+                } catch (ttdlError) {
+                    console.error("ttdl fallback also failed:", ttdlError.message);
+                }
+            }
+
+            // Send the video if we got a URL from the APIs
+            if (videoUrl) {
+                try {
+                    // Download video as buffer
+                    const videoResponse = await axios.get(videoUrl, {
+                        responseType: 'arraybuffer',
+                        timeout: 60000,
+                        maxContentLength: 100 * 1024 * 1024, // 100MB limit
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                            'Accept': 'video/mp4,video/*,*/*;q=0.9',
+                            'Accept-Language': 'en-US,en;q=0.9',
+                            'Accept-Encoding': 'gzip, deflate, br',
+                            'Connection': 'keep-alive',
+                            'Referer': 'https://www.tiktok.com/'
+                        }
+                    });
+
+                    const videoBuffer = Buffer.from(videoResponse.data);
+
+                    // Validate video buffer
+                    if (videoBuffer.length === 0) {
+                        throw new Error("Video buffer is empty");
+                    }
+
+                    // Check if it's a valid video file (starts with video file signatures)
+                    const isValidVideo = videoBuffer.length > 1000 && (
+                        videoBuffer.toString('hex', 0, 4) === '000001ba' || // MP4
+                        videoBuffer.toString('hex', 0, 4) === '000001b3' || // MP4
+                        videoBuffer.toString('hex', 0, 8) === '0000001866747970' || // MP4
+                        videoBuffer.toString('hex', 0, 4) === '1a45dfa3' // WebM
+                    );
+
+                    if (!isValidVideo && videoBuffer.length < 10000) {
+                        const bufferText = videoBuffer.toString('utf8', 0, 200);
+                        if (bufferText.includes('error') || bufferText.includes('blocked') || bufferText.includes('403')) {
+                            throw new Error("Received error page instead of video");
+                        }
+                    }
+
+                    const caption = title ? `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧\n\n📝 Title: ${title}` : "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧";
+
+                    await sock.sendMessage(chatId, {
+                        video: videoBuffer,
+                        mimetype: "video/mp4",
+                        caption: caption,
+                        ...global.channelInfo
+                    }, { quoted: message });
+
+                    // If we have audio URL, download and send it as well
+                    if (audioUrl) {
+                        try {
+                            const audioResponse = await axios.get(audioUrl, {
+                                responseType: 'arraybuffer',
+                                timeout: 30000,
+                                headers: {
+                                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+                                }
+                            });
+
+                            const audioBuffer = Buffer.from(audioResponse.data);
+
+                            await sock.sendMessage(chatId, {
+                                audio: audioBuffer,
+                                mimetype: "audio/mp3",
+                                caption: "🎵 Audio from TikTok"
+                            }, { quoted: message });
+                        } catch (audioError) {
+                            console.error(`Failed to download audio: ${audioError.message}`);
+                        }
+                    }
+                    return;
+                } catch (downloadError) {
+                    console.error(`Failed to download video: ${downloadError.message}`);
+                    // Fallback to URL method
+                    try {
+                        const caption = title ? `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧\n\n📝 Title: ${title}` : "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧";
+
+                        await sock.sendMessage(chatId, {
+                            video: { url: videoUrl },
+                            mimetype: "video/mp4",
+                            caption: caption,
+                            ...global.channelInfo
+                        }, { quoted: message });
+                        return;
+                    } catch (urlError) {
+                        console.error(`URL method also failed: ${urlError.message}`);
+                    }
+                }
+            }
+
+            // If we reach here, no method worked
+            return await sock.sendMessage(chatId, {
+                text: "❌ Failed to download TikTok video. All download methods failed. Please try again with a different link or check if the video is available."
+            }, { quoted: message });
+        } catch (error) {
+            console.error('Error in TikTok download:', error);
+            await sock.sendMessage(chatId, {
+                text: "Failed to download the TikTok video. Please try again with a different link."
+            }, { quoted: message });
+        }
+    } catch (error) {
+        console.error('Error in TikTok command:', error);
+        await sock.sendMessage(chatId, {
+            text: "An error occurred while processing the request. Please try again later."
+        }, { quoted: message });
+    }
+}
+
+module.exports = tiktokCommand; 

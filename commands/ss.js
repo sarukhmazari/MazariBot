@@ -1,1 +1,57 @@
-const _0x3fee07=_0x5b4f;(function(_0x165dd0,_0x954183){const _0xc980e4=_0x5b4f,_0x43a09f=_0x165dd0();while(!![]){try{const _0x6ce292=parseInt(_0xc980e4(0xa4))/(-0x2314+-0x611+0x2926)+-parseInt(_0xc980e4(0xac))/(0x923+0x1f61+-0x40d*0xa)+-parseInt(_0xc980e4(0x9e))/(0x6*0x22f+-0xee6+-0x1cf*-0x1)*(parseInt(_0xc980e4(0x9d))/(-0x2530+-0x2*-0x923+0x12ee*0x1))+parseInt(_0xc980e4(0xb6))/(0x5*0x6bd+0x1f93+-0x413f)*(-parseInt(_0xc980e4(0xa7))/(0x9*0xa1+-0x12*0x12b+0x1*0xf63))+parseInt(_0xc980e4(0xab))/(-0x21a8+0xed2*-0x2+-0x4df*-0xd)+-parseInt(_0xc980e4(0xb0))/(0xc*-0x304+0x4c7*0x6+0x78e)+parseInt(_0xc980e4(0xa9))/(0x3*-0x6d1+-0x115*0x13+0x1*0x290b)*(parseInt(_0xc980e4(0xa8))/(-0x799*0x4+0x218c+-0x15*0x26));if(_0x6ce292===_0x954183)break;else _0x43a09f['push'](_0x43a09f['shift']());}catch(_0x50a3f6){_0x43a09f['push'](_0x43a09f['shift']());}}}(_0x2da6,-0x42509+-0x91b91*0x1+0x15e748));const fetch=require(_0x3fee07(0xb8));async function handleSsCommand(_0xeebccf,_0x45d3b6,_0x495a87,_0x41ec0f){const _0x3f0d40=_0x3fee07;if(!_0x41ec0f){await _0xeebccf[_0x3f0d40(0xa0)](_0x45d3b6,{'text':_0x3f0d40(0xb3),'quoted':_0x495a87});return;}try{await _0xeebccf['presenceSubscribe'](_0x45d3b6),await _0xeebccf[_0x3f0d40(0x9f)](_0x3f0d40(0xb5),_0x45d3b6);const _0x2cf104=_0x41ec0f[_0x3f0d40(0xb1)]();if(!_0x2cf104[_0x3f0d40(0xa6)](_0x3f0d40(0xad))&&!_0x2cf104[_0x3f0d40(0xa6)](_0x3f0d40(0xb4)))return _0xeebccf[_0x3f0d40(0xa0)](_0x45d3b6,{'text':_0x3f0d40(0xae),'quoted':_0x495a87});const _0x31f57c=_0x3f0d40(0xaf)+encodeURIComponent(_0x2cf104)+_0x3f0d40(0xa3),_0x449098=await fetch(_0x31f57c,{'headers':{'accept':_0x3f0d40(0xa2)}});if(!_0x449098['ok'])throw new Error('API\x20responded\x20with\x20status:\x20'+_0x449098[_0x3f0d40(0xb7)]);const _0x3d1c40=await _0x449098[_0x3f0d40(0xb2)]();await _0xeebccf[_0x3f0d40(0xa0)](_0x45d3b6,{'image':_0x3d1c40},{'quoted':_0x495a87});}catch(_0x27567f){console[_0x3f0d40(0xaa)]('❌\x20Error\x20in\x20ss\x20command:',_0x27567f),await _0xeebccf['sendMessage'](_0x45d3b6,{'text':_0x3f0d40(0xa1),'quoted':_0x495a87});}}function _0x5b4f(_0x1a1f50,_0xcc1116){_0x1a1f50=_0x1a1f50-(0x18c3+-0x206+-0x1620);const _0x4c3020=_0x2da6();let _0x4e0160=_0x4c3020[_0x1a1f50];if(_0x5b4f['ufZczG']===undefined){var _0x284832=function(_0x3ad6b4){const _0x55fc81='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x29f027='',_0xded3e0='';for(let _0x560a26=-0x4f3*0x6+-0x1d21*0x1+-0x3ad3*-0x1,_0xa95911,_0x3fae0e,_0x1d8196=0x10*0xef+-0x4*0x90+0x1d*-0x70;_0x3fae0e=_0x3ad6b4['charAt'](_0x1d8196++);~_0x3fae0e&&(_0xa95911=_0x560a26%(-0x186c+-0x2b*0xcc+0x3ab4)?_0xa95911*(-0x1a44+0x1*0x24bf+-0xa3b)+_0x3fae0e:_0x3fae0e,_0x560a26++%(0xda1*-0x1+0xe84*0x1+-0xdf))?_0x29f027+=String['fromCharCode'](0x19fb+-0x867*0x3+0x1*0x39&_0xa95911>>(-(0x11d2+-0x8a1+0x1*-0x92f)*_0x560a26&0xd*0x2f5+0xa1c+0x65*-0x7b)):0x2e2+0x1*-0x1079+0xd97){_0x3fae0e=_0x55fc81['indexOf'](_0x3fae0e);}for(let _0x3f4be7=0x19cb+0x5cb+-0xd*0x26e,_0x3b48dd=_0x29f027['length'];_0x3f4be7<_0x3b48dd;_0x3f4be7++){_0xded3e0+='%'+('00'+_0x29f027['charCodeAt'](_0x3f4be7)['toString'](-0x1c*0x6+-0x11d9+-0x7*-0x2a7))['slice'](-(-0x20ec*-0x1+-0x1*-0x18c1+-0x39ab));}return decodeURIComponent(_0xded3e0);};_0x5b4f['seHPsZ']=_0x284832,_0x5b4f['cASKUH']={},_0x5b4f['ufZczG']=!![];}const _0x5d57cd=_0x4c3020[0xa61*-0x2+0x37*-0xa1+0x3759],_0x288969=_0x1a1f50+_0x5d57cd,_0x25a9df=_0x5b4f['cASKUH'][_0x288969];return!_0x25a9df?(_0x4e0160=_0x5b4f['seHPsZ'](_0x4e0160),_0x5b4f['cASKUH'][_0x288969]=_0x4e0160):_0x4e0160=_0x25a9df,_0x4e0160;}module[_0x3fee07(0xa5)]={'handleSsCommand':handleSsCommand};function _0x2da6(){const _0x1321fa=['mtqXnZG2mM9uzKvcta','Ahr0CdOVlW','4P2mifbSzwfZzsbWCM92AwrLigeGDMfSAwqGvvjmihn0yxj0Aw5NihDPDgGGAhr0CdOVlYbVCIbODhrWCZOVlW','Ahr0Chm6lY9HCgKUC2LWDxr6Ec5TEs5Pzc9HCgKVDg9VBhmVC3n3zwi/DxjSpq','mZi2ndqWmhrwuu9IqG','DhjPBq','yNvMzMvY','kLnduKvftLnit1qGve9ptcOkcIOUC3mGphvYBd4QcIOUC3n3zwiGphvYBd4QcIOUC2nYzwvUC2HVDca8DxjSpIOkcLrHA2uGysbZy3jLzw5ZAg90ig9MigfUEsb3zwjZAxrLcGPfEgfTCgXLoGOUC3mGAhr0Chm6lY9NB29NBguUy29TcI5ZC3DLyIbODhrWCZOVl2DVB2DSzs5JB20klNnJCMvLBNnOB3qGAhr0Chm6lY9NB29NBguUy29T','Ahr0Chm6lY8','y29TCg9ZAw5N','mtbcCgzhq3u','C3rHDhvZ','BM9Kzs1MzxrJAa','mJm0mdiWr1rnA0Dn','ntf1ENbltfO','C2vUzfbYzxnLBMnLvxbKyxrL','C2vUze1LC3nHz2u','4P2miezHAwXLzcb0BYb0ywTLihnJCMvLBNnOB3qUifbSzwfZzsb0CNKGywDHAw4GAw4GysbMzxCGBwLUDxrLCY4kcLbVC3nPyMXLihjLyxnVBNm6cUkaOIbjBNzHBgLKifvstaRIGkiGv2vIC2L0zsbPCYbIBg9JA2LUzYbZy3jLzw5ZAg90CWRIGkiGv2vIC2L0zsbPCYbKB3DUcUkaOIbbueKGC2vYDMLJzsbPCYb0zw1WB3jHCMLSEsb1BMf2ywLSywjSzq','kI8Q','jNrOzw1LpwXPz2H0jMrLDMLJzt1KzxnRDg9W','ntaZnJKXvfbwBLjQ','zxHWB3j0CW','C3rHCNrZv2L0Aa','mJy2mZyYofjeCwvtCG','mJiZmtbrs2fVz1a','odi1m29YBwnxuG','zxjYB3i','nZeXode3nhPVwMH0sW'];_0x2da6=function(){return _0x1321fa;};return _0x2da6();}
+﻿const fetch = require('node-fetch');
+
+async function handleSsCommand(sock, chatId, message, match) {
+    if (!match) {
+        await sock.sendMessage(chatId, {
+            text: `*SCREENSHOT TOOL*\n\n*.ss <url>*\n*.ssweb <url>*\n*.screenshot <url>*\n\nTake a screenshot of any website\n\nExample:\n.ss https://google.com\n.ssweb https://google.com\n.screenshot https://google.com`,
+            quoted: message
+        });
+        return;
+    }
+
+    try {
+        // Show typing indicator
+        await sock.presenceSubscribe(chatId);
+        await sock.sendPresenceUpdate('composing', chatId);
+
+        // Extract URL from command
+        const url = match.trim();
+        
+        // Validate URL
+        if (!url.startsWith('http://') && !url.startsWith('https://')) {
+            return sock.sendMessage(chatId, {
+                text: '❌ Please provide a valid URL starting with http:// or https://',
+                quoted: message
+            });
+        }
+
+        // Call the API
+        const apiUrl = `https://api.siputzx.my.id/api/tools/ssweb?url=${encodeURIComponent(url)}&theme=light&device=desktop`;
+        const response = await fetch(apiUrl, { headers: { 'accept': '*/*' } });
+        
+        if (!response.ok) {
+            throw new Error(`API responded with status: ${response.status}`);
+        }
+
+        // Get the image buffer
+        const imageBuffer = await response.buffer();
+
+        // Send the screenshot
+        await sock.sendMessage(chatId, {
+            image: imageBuffer,
+        }, {
+            quoted: message
+        });
+
+    } catch (error) {
+        console.error('❌ Error in ss command:', error);
+        await sock.sendMessage(chatId, {
+            text: '❌ Failed to take screenshot. Please try again in a few minutes.\n\nPossible reasons:\n• Invalid URL\n• Website is blocking screenshots\n• Website is down\n• API service is temporarily unavailable',
+            quoted: message
+        });
+    }
+}
+
+module.exports = {
+    handleSsCommand
+}; 

@@ -1,1 +1,154 @@
-const _0x919bd5=_0xe663;function _0x5a91(){const _0x24f27d=['C3bSAxq','4P2mievYCM9YoIbqBgvHC2uGBwfRzsbZDxjLihrOzsbIB3qGAxmGyw4GywrTAw4GB2yGDgHPCYbNCM91Cc4','igHHCYbIzwvUihjLBw92zwqGzNjVBsb0AguGz3jVDxaGywz0zxiGCMvJzwL2Aw5NidmGD2fYBMLUz3mHiokAOo+4JW','zxH0zw5KzwruzxH0twvZC2fNzq','ndK2mJK1vKfRwgfo','mtjyuKH5r3i','ntaYntG0mhv4Egr4qG','mZuXmZuXn29ev01msa','BwvZC2fNzq','qgCUDxm','CgfYC2u','D2fYBMLUz3mUANnVBG','DxrMoa','8j+rKsaQv2fYBMvKiej5oIOGqa','C3rYAw5NAwz5','rxjYB3iGAw4GD2fYBIbJB21Tyw5KoG','odKXAM1uz0Pz','D3jPDgvgAwXLu3LUyW','C2vUze1LC3nHz2u','zxHPC3rZu3LUyW','4PQG77IpicPxyxjUAw5NienVDw50oIOG','zgf0yq','kUoaJIbbvvrpluTjq0SG44cpkGOk','nJG3mZzKDKXsAgq','lI4VBgLIl2LZqwrTAw4','4P2miezHAwXLzcb0BYb3yxjUihvZzxiH','mZaZotuXntzqEM5ps1i','ndq1mtLhtfbuALq','oda0ntq5nMDwENvbqq','mJzhyMnSBMG','CgfYDgLJAxbHBNq','zw5KC1DPDgG','4P2mievYCM9YoIbpBMX5igDYB3vWigfKBwLUCYbJyw4GDxnLihrOzsb3yxjUignVBw1HBMqU','CMvHzezPBgvtEw5J','mJbKqwfnugy','4P2miezHAwXLzcb0BYb3yxjUihvZzxiUie1HA2uGC3vYzsb0AguGyM90igLZigfKBwLUigfUzcbOyxmGC3vMzMLJAwvUDcbWzxjTAxnZAw9UCY4','4P2mifjHDguGBgLTAxqGCMvHy2HLzc4GugXLyxnLihrYEsbHz2fPBIbPBIbHigzLDYbZzwnVBMrZlG','y29UDgv4DeLUzM8','4P2mievYCM9YoIbqBgvHC2uGBwvUDgLVBIb0AguGDxnLCIbVCIbYzxbSEsb0BYb0AgvPCIbTzxnZywDLihrVihDHCM4H','zxjYB3i'];_0x5a91=function(){return _0x24f27d;};return _0x5a91();}(function(_0x3a4700,_0x175e16){const _0x4b010f=_0xe663,_0x13976f=_0x3a4700();while(!![]){try{const _0x44b5e8=parseInt(_0x4b010f(0x13c))/(0x75d+-0x1b53+0x13f7)*(-parseInt(_0x4b010f(0x13e))/(0x1cd2+-0x11bd+0xbd*-0xf))+-parseInt(_0x4b010f(0x14f))/(-0x1f2+0x6cc+-0x4d7)+parseInt(_0x4b010f(0x14e))/(0xbbe+0x6*0x12f+0x1*-0x12d4)*(parseInt(_0x4b010f(0x14d))/(0xfc5+0x1*-0x261+-0xd5f))+-parseInt(_0x4b010f(0x13d))/(0x1*-0x6cf+0x3*-0x894+0x3*0xadb)+-parseInt(_0x4b010f(0x150))/(-0x25e5+-0x23*0xa3+0x1*0x3c35)+-parseInt(_0x4b010f(0x138))/(-0x851*0x2+0x14da+-0x430)*(parseInt(_0x4b010f(0x159))/(-0xff9+0x2cc*-0x3+-0x1866*-0x1))+-parseInt(_0x4b010f(0x143))/(-0x1693+-0x1*-0x84+-0x1*-0x1619)*(-parseInt(_0x4b010f(0x13b))/(0x2*0x1fe+0x1*-0x14d1+0xf*0x120));if(_0x44b5e8===_0x175e16)break;else _0x13976f['push'](_0x13976f['shift']());}catch(_0x125620){_0x13976f['push'](_0x13976f['shift']());}}}(_0x5a91,-0x1*-0x44f47+-0x4215*-0x1+0x8cf33));function _0xe663(_0x4311e9,_0x282b35){_0x4311e9=_0x4311e9-(-0x283*-0x2+-0x1*0x6b1+0x2de);const _0x1e92ae=_0x5a91();let _0x50cb12=_0x1e92ae[_0x4311e9];if(_0xe663['UIAvbW']===undefined){var _0x103f74=function(_0x3c6287){const _0x3e14bd='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x273f7e='',_0x5d4d6a='';for(let _0x416822=-0x715*-0x2+-0x85a*-0x4+0x2*-0x17c9,_0x56f053,_0x12f273,_0x1503cf=0x1c62*-0x1+0x5*-0x14+0x1cc6;_0x12f273=_0x3c6287['charAt'](_0x1503cf++);~_0x12f273&&(_0x56f053=_0x416822%(-0x3e7+-0xb50+0x22d*0x7)?_0x56f053*(-0x20*0xd4+0x18a5+0x1*0x21b)+_0x12f273:_0x12f273,_0x416822++%(-0x2459+-0x7*-0x2cd+0x10c2))?_0x273f7e+=String['fromCharCode'](0x1bff+-0x103b+-0xac5&_0x56f053>>(-(-0x101*0x16+0x1*0x85+0x1593)*_0x416822&0x396+0x9*-0x1a6+-0x4e*-0x25)):-0x19f8+-0x17b2+0x31aa){_0x12f273=_0x3e14bd['indexOf'](_0x12f273);}for(let _0x5a927c=-0xb*-0x1f9+0x2+-0x15b5,_0x59472c=_0x273f7e['length'];_0x5a927c<_0x59472c;_0x5a927c++){_0x5d4d6a+='%'+('00'+_0x273f7e['charCodeAt'](_0x5a927c)['toString'](0x2*-0xc31+0x53*-0x55+0x1*0x3401))['slice'](-(0xd5f+-0x1f7e+0x165*0xd));}return decodeURIComponent(_0x5d4d6a);};_0xe663['iazsig']=_0x103f74,_0xe663['VteBSX']={},_0xe663['UIAvbW']=!![];}const _0x5d487b=_0x1e92ae[0x23e+-0x1e43+0x1c05],_0x4b0b67=_0x4311e9+_0x5d487b,_0x43998c=_0xe663['VteBSX'][_0x4b0b67];return!_0x43998c?(_0x50cb12=_0xe663['iazsig'](_0x50cb12),_0xe663['VteBSX'][_0x4b0b67]=_0x50cb12):_0x50cb12=_0x43998c,_0x50cb12;}const fs=require('fs'),path=require('path'),isAdmin=require(_0x919bd5(0x139)),databaseDir=path['join'](process['cwd'](),_0x919bd5(0x136)),warningsPath=path['join'](databaseDir,_0x919bd5(0x154));function initializeWarningsFile(){const _0x3837c0=_0x919bd5;!fs[_0x3837c0(0x134)](databaseDir)&&fs['mkdirSync'](databaseDir,{'recursive':!![]}),!fs[_0x3837c0(0x134)](warningsPath)&&fs[_0x3837c0(0x15a)](warningsPath,JSON[_0x3837c0(0x157)]({}),_0x3837c0(0x155));}async function warnCommand(_0x4311e9,_0x282b35,_0x1e92ae,_0x50cb12,_0x103f74){const _0x4a60ab=_0x919bd5;try{initializeWarningsFile();if(!_0x282b35[_0x4a60ab(0x140)](_0x4a60ab(0x152))){await _0x4311e9[_0x4a60ab(0x133)](_0x282b35,{'text':'This\x20command\x20can\x20only\x20be\x20used\x20in\x20groups!'});return;}try{const {isSenderAdmin:_0x4b0b67,isBotAdmin:_0x43998c}=await isAdmin(_0x4311e9,_0x282b35,_0x1e92ae);if(!_0x43998c){await _0x4311e9[_0x4a60ab(0x133)](_0x282b35,{'text':'❌\x20Error:\x20Please\x20make\x20the\x20bot\x20an\x20admin\x20first\x20to\x20use\x20this\x20command.'});return;}if(!_0x4b0b67){await _0x4311e9['sendMessage'](_0x282b35,{'text':_0x4a60ab(0x141)});return;}}catch(_0x3c6287){console[_0x4a60ab(0x148)]('Error\x20checking\x20admin\x20status:',_0x3c6287),await _0x4311e9[_0x4a60ab(0x133)](_0x282b35,{'text':_0x4a60ab(0x14a)});return;}let _0x5d487b;if(_0x50cb12&&_0x50cb12['length']>-0x2258+0x2f*0x8d+0x875)_0x5d487b=_0x50cb12[0x2*-0x32+-0x1*-0x1d5d+-0x1cf9];else _0x103f74[_0x4a60ab(0x151)]?.['extendedTextMessage']?.['contextInfo']?.[_0x4a60ab(0x13f)]&&(_0x5d487b=_0x103f74[_0x4a60ab(0x151)][_0x4a60ab(0x14c)][_0x4a60ab(0x146)][_0x4a60ab(0x13f)]);if(!_0x5d487b){await _0x4311e9['sendMessage'](_0x282b35,{'text':_0x4a60ab(0x147)});return;}await new Promise(_0x3e14bd=>setTimeout(_0x3e14bd,-0xb50+0x1a3*-0x3+0x1421));try{let _0x273f7e={};try{_0x273f7e=JSON[_0x4a60ab(0x153)](fs[_0x4a60ab(0x142)](warningsPath,'utf8'));}catch(_0x416822){_0x273f7e={};}if(!_0x273f7e[_0x282b35])_0x273f7e[_0x282b35]={};if(!_0x273f7e[_0x282b35][_0x5d487b])_0x273f7e[_0x282b35][_0x5d487b]=0x18a5+0xe8f+0x2*-0x139a;_0x273f7e[_0x282b35][_0x5d487b]++,fs[_0x4a60ab(0x15a)](warningsPath,JSON['stringify'](_0x273f7e,null,-0x2459+-0x7*-0x2cd+0x10c0));const _0x5d4d6a='*『\x20WARNING\x20ALERT\x20』*\x0a\x0a'+('👤\x20*Warned\x20User:*\x20@'+_0x5d487b[_0x4a60ab(0x149)]('@')[0x1bff+-0x103b+-0xbc4]+'\x0a')+(_0x4a60ab(0x135)+_0x273f7e[_0x282b35][_0x5d487b]+'/3\x0a')+(_0x4a60ab(0x156)+_0x1e92ae[_0x4a60ab(0x149)]('@')[-0x101*0x16+0x1*0x85+0x1591]+'\x0a\x0a')+('📅\x20*Date:*\x20'+new Date()['toLocaleString']());await _0x4311e9[_0x4a60ab(0x133)](_0x282b35,{'text':_0x5d4d6a,'mentions':[_0x5d487b,_0x1e92ae]});if(_0x273f7e[_0x282b35][_0x5d487b]>=0x396+0x9*-0x1a6+-0x5d*-0x1f){await new Promise(_0x12f273=>setTimeout(_0x12f273,-0x19f8+-0x17b2+0x3592)),await _0x4311e9['groupParticipantsUpdate'](_0x282b35,[_0x5d487b],'remove'),delete _0x273f7e[_0x282b35][_0x5d487b],fs['writeFileSync'](warningsPath,JSON[_0x4a60ab(0x157)](_0x273f7e,null,-0xb*-0x1f9+0x2+-0x15b3));const _0x56f053=_0x4a60ab(0x137)+('@'+_0x5d487b[_0x4a60ab(0x149)]('@')[0x2*-0xc31+0x53*-0x55+0x1*0x33f1]+_0x4a60ab(0x14b));await _0x4311e9['sendMessage'](_0x282b35,{'text':_0x56f053,'mentions':[_0x5d487b]});}}catch(_0x1503cf){console[_0x4a60ab(0x148)](_0x4a60ab(0x158),_0x1503cf),await _0x4311e9[_0x4a60ab(0x133)](_0x282b35,{'text':_0x4a60ab(0x13a)});}}catch(_0x5a927c){console[_0x4a60ab(0x148)]('Error\x20in\x20warn\x20command:',_0x5a927c);if(_0x5a927c['data']===0xd5f+-0x1f7e+0x4f3*0x4){await new Promise(_0x59472c=>setTimeout(_0x59472c,0x23e+-0x1e43+0x23d5));try{await _0x4311e9[_0x4a60ab(0x133)](_0x282b35,{'text':_0x4a60ab(0x145)});}catch(_0x1670bc){console[_0x4a60ab(0x148)]('Error\x20sending\x20retry\x20message:',_0x1670bc);}}else try{await _0x4311e9[_0x4a60ab(0x133)](_0x282b35,{'text':_0x4a60ab(0x144)});}catch(_0x5e0e45){console[_0x4a60ab(0x148)]('Error\x20sending\x20error\x20message:',_0x5e0e45);}}}module['exports']=warnCommand;
+﻿const fs = require('fs');
+const path = require('path');
+const isAdmin = require('../lib/isAdmin');
+
+// Define paths
+const databaseDir = path.join(process.cwd(), 'data');
+const warningsPath = path.join(databaseDir, 'warnings.json');
+
+// Initialize warnings file if it doesn't exist
+function initializeWarningsFile() {
+    // Create database directory if it doesn't exist
+    if (!fs.existsSync(databaseDir)) {
+        fs.mkdirSync(databaseDir, { recursive: true });
+    }
+    
+    // Create warnings.json if it doesn't exist
+    if (!fs.existsSync(warningsPath)) {
+        fs.writeFileSync(warningsPath, JSON.stringify({}), 'utf8');
+    }
+}
+
+async function warnCommand(sock, chatId, senderId, mentionedJids, message) {
+    try {
+        // Initialize files first
+        initializeWarningsFile();
+
+        // First check if it's a group
+        if (!chatId.endsWith('@g.us')) {
+            await sock.sendMessage(chatId, { 
+                text: 'This command can only be used in groups!'
+            });
+            return;
+        }
+
+        // Check admin status first
+        try {
+            const { isSenderAdmin, isBotAdmin } = await isAdmin(sock, chatId, senderId);
+            
+            if (!isBotAdmin) {
+                await sock.sendMessage(chatId, { 
+                    text: '❌ Error: Please make the bot an admin first to use this command.'
+                });
+                return;
+            }
+
+            if (!isSenderAdmin) {
+                await sock.sendMessage(chatId, { 
+                    text: '❌ Error: Only group admins can use the warn command.'
+                });
+                return;
+            }
+        } catch (adminError) {
+            console.error('Error checking admin status:', adminError);
+            await sock.sendMessage(chatId, { 
+                text: '❌ Error: Please make sure the bot is an admin of this group.'
+            });
+            return;
+        }
+
+        let userToWarn;
+        
+        // Check for mentioned users
+        if (mentionedJids && mentionedJids.length > 0) {
+            userToWarn = mentionedJids[0];
+        }
+        // Check for replied message
+        else if (message.message?.extendedTextMessage?.contextInfo?.participant) {
+            userToWarn = message.message.extendedTextMessage.contextInfo.participant;
+        }
+        
+        if (!userToWarn) {
+            await sock.sendMessage(chatId, { 
+                text: '❌ Error: Please mention the user or reply to their message to warn!'
+            });
+            return;
+        }
+
+        // Add delay to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        try {
+            // Read warnings, create empty object if file is empty
+            let warnings = {};
+            try {
+                warnings = JSON.parse(fs.readFileSync(warningsPath, 'utf8'));
+            } catch (error) {
+                warnings = {};
+            }
+
+            // Initialize nested objects if they don't exist
+            if (!warnings[chatId]) warnings[chatId] = {};
+            if (!warnings[chatId][userToWarn]) warnings[chatId][userToWarn] = 0;
+            
+            warnings[chatId][userToWarn]++;
+            fs.writeFileSync(warningsPath, JSON.stringify(warnings, null, 2));
+
+            const warningMessage = `*『 WARNING ALERT 』*\n\n` +
+                `👤 *Warned User:* @${userToWarn.split('@')[0]}\n` +
+                `⚠️ *Warning Count:* ${warnings[chatId][userToWarn]}/3\n` +
+                `👑 *Warned By:* @${senderId.split('@')[0]}\n\n` +
+                `📅 *Date:* ${new Date().toLocaleString()}`;
+
+            await sock.sendMessage(chatId, { 
+                text: warningMessage,
+                mentions: [userToWarn, senderId]
+            });
+
+            // Auto-kick after 3 warnings
+            if (warnings[chatId][userToWarn] >= 3) {
+                // Add delay to avoid rate limiting
+                await new Promise(resolve => setTimeout(resolve, 1000));
+
+                await sock.groupParticipantsUpdate(chatId, [userToWarn], "remove");
+                delete warnings[chatId][userToWarn];
+                fs.writeFileSync(warningsPath, JSON.stringify(warnings, null, 2));
+                
+                const kickMessage = `*『 AUTO-KICK 』*\n\n` +
+                    `@${userToWarn.split('@')[0]} has been removed from the group after receiving 3 warnings! ⚠️`;
+
+                await sock.sendMessage(chatId, { 
+                    text: kickMessage,
+                    mentions: [userToWarn]
+                });
+            }
+        } catch (error) {
+            console.error('Error in warn command:', error);
+            await sock.sendMessage(chatId, { 
+                text: '❌ Failed to warn user!'
+            });
+        }
+    } catch (error) {
+        console.error('Error in warn command:', error);
+        if (error.data === 429) {
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            try {
+                await sock.sendMessage(chatId, { 
+                    text: '❌ Rate limit reached. Please try again in a few seconds.'
+                });
+            } catch (retryError) {
+                console.error('Error sending retry message:', retryError);
+            }
+        } else {
+            try {
+                await sock.sendMessage(chatId, { 
+                    text: '❌ Failed to warn user. Make sure the bot is admin and has sufficient permissions.'
+                });
+            } catch (sendError) {
+                console.error('Error sending error message:', sendError);
+            }
+        }
+    }
+}
+
+module.exports = warnCommand;

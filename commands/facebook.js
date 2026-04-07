@@ -1,1 +1,250 @@
-const _0x391805=_0x1337;(function(_0x3f646b,_0x44e0b0){const _0x44476b=_0x1337,_0x119910=_0x3f646b();while(!![]){try{const _0x3c3ff4=-parseInt(_0x44476b(0xe0))/(-0x21b2+-0x1892+0x3a45)*(-parseInt(_0x44476b(0xe9))/(0x4f*0x45+0x1c7c+-0x1*0x31c5))+-parseInt(_0x44476b(0x111))/(0xbcb*-0x2+0x158f+0x20a)*(parseInt(_0x44476b(0x115))/(-0x1b6*-0x2+0xc*0x2fe+0x25*-0x110))+-parseInt(_0x44476b(0x108))/(0x1a78+0x2*0x281+-0x1f75)*(parseInt(_0x44476b(0x11e))/(-0x1e*0x11+-0x1129+0x132d))+-parseInt(_0x44476b(0xf2))/(0x136b*0x1+-0x1af0+0x78c)*(-parseInt(_0x44476b(0x11a))/(-0x1f37*-0x1+-0x191f+-0x610))+parseInt(_0x44476b(0xfe))/(-0x3a0+0x4d*0x1+0x35c)+-parseInt(_0x44476b(0x10b))/(-0x1f*-0x106+-0x1a7b*0x1+-0x535)+parseInt(_0x44476b(0x114))/(0x4a*-0x59+-0x1378+-0x1*-0x2d3d);if(_0x3c3ff4===_0x44e0b0)break;else _0x119910['push'](_0x119910['shift']());}catch(_0x359a23){_0x119910['push'](_0x119910['shift']());}}}(_0x257b,-0x2*-0x123f7+-0x1*0x4e3eb+0xc*0x8341));function _0x257b(){const _0x5aec83=['BwvKAwe','rMfPBgvKihrVigrVD25SB2fKihzPzgvV','Dgv4Da','C3bSAxq','4P2miezHAwXLzcb0BYbNzxqGDMLKzw8GvvjmigzYB20GrMfJzwjVB2SUcGPqB3nZAwjSzsbYzwfZB25ZoGRIGkiGvMLKzw8GAxmGChjPDMf0zsbVCIbKzwXLDgvKcUkaOIbmAw5RigLZigLUDMfSAwqk4OcIifzPzgvVigLZig5VDcbHDMfPBgfIBguGzM9YigrVD25SB2fKcGPqBgvHC2uGDhj5igeGzgLMzMvYzw50iezHy2vIB29RihzPzgvVigXPBMSU','Cgf0Aa','C3rHCNrZv2L0Aa','zgf0yq','rMfJzwjVB2SGvMLKzw8','nZmZntGWCvfXt0Dl','zMLUAxnO','C3rYzwfT','mJmYntKXmerRBM5rua','DMLKzw8','zxH0zw5KzwruzxH0twvZC2fNzq','zM9YBwf0','zw4TvvmSzw47Ct0WlJu','DhjPBq','mtvtyxPWzKG','BwvZC2fNzq','yxbPtMfTzq','mZy0ndyZr3zOr2jw','mtu3ndm2BNPXCuzp','A2v5','Dg1W','DMLKzw8VBxa0lhzPzgvVlYO7Ct0WlJKSkI8Qo3e9mc44','qM90AcbvuKWGyw5Kigj1zMzLCIbTzxrOB2rZigzHAwXLza','mZa2nhPRAhftvq','y3jLyxrLv3jPDgvtDhjLyw0','Aw5JBhvKzxm','CMvZDwX0','nLvLsuT4rW','zMfJzwjVB2SUy29T','Dw5SAw5Ru3LUyW','C2XPy2u','zxjYB3i','z2v0','sgfUz2D0CYbbueKGzMfPBgvK','zxHWB3j0CW','AgLNAa','Bxa0','sgfUz2D0CYbbueK','vvjmig1LDgHVzcbMywLSzwq6ia','y2HHBM5LBeLUzM8','8j2xL/cDL6lWNzEQ8j2xOFcDL5/WNzEI8j2xLpcDL5FWNzEy8j2xLYdWNzEv8j2xRcdWNzEG8j2xLpcDL63WNzEu8j2xPFcDL5WG8j2xLFcDL6lWNzENcGRWN5oDifrPDgXLoIa','AM9PBG','y3DK','ugXLyxnLihbYB3zPzguGysbgywnLyM9VAYb2AwrLBYbvuKWUcKv4yw1WBgu6ic5MyIbODhrWCZOVl3D3DY5MywnLyM9VAY5JB20VlI4U','DgL0Bgu','yxHPB3m','ndLOAfjVAvq','tw96AwXSys81lJa','DMLKzw9FAgq','qNvMzMvYig1LDgHVzcbHBhnVigzHAwXLzdOG','qw4GzxjYB3iGB2nJDxjYzwqUiefqssbTAwDODcbIzsbKB3DUlIbfCNjVCJOG','CMvXDwvZDa','zMjF','CMvZCg9UC2u','DxjS','mtiXnZrODfLbENy','Ahr0Ca','lM1Wna','C3rYAw5N','DMLKzw8VBxa0','B2jQzwn0','tw96AwXSys81lJaGkfDPBMrVD3mGtLqGmtaUmdSGv2LUnJq7ihG2ncKGqxbWBgvxzwjlAxqVntm3lJm2icHlsfrntcWGBgLRzsbhzwnRBYKGq2HYB21LlZeYmc4WlJaUmcbtywzHCMKVntm3lJm2','zg93BMXVywq','vgHHDcbPCYbUB3qGysbgywnLyM9VAYbSAw5RlG','ndCXmuDPzwzQCW','DMLKzw9FC2q','AxnbCNjHEq','r0vu','zMLUza','Ahr0Chm6lY93D3CUzMfJzwjVB2SUy29TlW','CxvHBgL0Eq','y2fWDgLVBG','zxHPC3rZu3LUyW','C2vUze1LC3nHz2u','BM93','rxjYB3iGy2XLyw5PBMCGDxaGDgvTCcbMAwXLoG','mtK3mJm4nNblDMjfwq'];_0x257b=function(){return _0x5aec83;};return _0x257b();}function _0x1337(_0x4c812a,_0x4feec2){_0x4c812a=_0x4c812a-(-0x1a13+-0x2cc+-0xb*-0x2b3);const _0x2ef981=_0x257b();let _0xe0470a=_0x2ef981[_0x4c812a];if(_0x1337['lTaWxF']===undefined){var _0x4e4f41=function(_0x463019){const _0x17cf46='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x413cd3='',_0x1d9626='';for(let _0x3a6d34=0x3*-0x4cb+-0x632+0x1493,_0x1922ce,_0x421cd6,_0x298fef=-0x17a*-0xe+-0xa*0x28c+0x4cc;_0x421cd6=_0x463019['charAt'](_0x298fef++);~_0x421cd6&&(_0x1922ce=_0x3a6d34%(-0x2181+-0x921*-0x1+0x1864)?_0x1922ce*(0x1*0x1a73+-0x1*0x234e+0x91b)+_0x421cd6:_0x421cd6,_0x3a6d34++%(-0x9*0x20f+0x237f+0x1f*-0x8c))?_0x413cd3+=String['fromCharCode'](-0x3*-0x91f+-0x2362+0x904&_0x1922ce>>(-(0x1350*-0x1+0x708+0xc4a)*_0x3a6d34&-0xb56+-0x4*-0xce+-0x824*-0x1)):0xae3+0x1771+-0x152*0x1a){_0x421cd6=_0x17cf46['indexOf'](_0x421cd6);}for(let _0x3be4db=-0x1*0x1b3d+-0x6*0x359+0x2f53,_0x1128bc=_0x413cd3['length'];_0x3be4db<_0x1128bc;_0x3be4db++){_0x1d9626+='%'+('00'+_0x413cd3['charCodeAt'](_0x3be4db)['toString'](0x2*-0x5c2+-0x62c*0x3+0x1e18))['slice'](-(0xe6+-0x2661+-0x55b*-0x7));}return decodeURIComponent(_0x1d9626);};_0x1337['MQVZHX']=_0x4e4f41,_0x1337['jawiQt']={},_0x1337['lTaWxF']=!![];}const _0x1b7c10=_0x2ef981[-0x1*-0xad9+0x16a5+-0x10bf*0x2],_0x20a03c=_0x4c812a+_0x1b7c10,_0x4a26b4=_0x1337['jawiQt'][_0x20a03c];return!_0x4a26b4?(_0xe0470a=_0x1337['MQVZHX'](_0xe0470a),_0x1337['jawiQt'][_0x20a03c]=_0xe0470a):_0xe0470a=_0x4a26b4,_0xe0470a;}const axios=require(_0x391805(0xdf)),fs=require('fs'),path=require(_0x391805(0x104));async function facebookCommand(_0x3cfa02,_0x4c4c8d,_0xc9228e){const _0x230d90=_0x391805;try{const _0x338ab9=_0xc9228e['message']?.['conversation']||_0xc9228e[_0x230d90(0x112)]?.[_0x230d90(0x10d)]?.[_0x230d90(0x101)],_0x11d155=_0x338ab9[_0x230d90(0x102)]('\x20')[_0x230d90(0x121)](-0x502*0x6+-0x2fe*0x1+-0xb*-0x301)[_0x230d90(0xdb)]('\x20')[_0x230d90(0x110)]();if(!_0x11d155)return await _0x3cfa02[_0x230d90(0xfb)](_0x4c4c8d,{'text':_0x230d90(0xdd)},{'quoted':_0xc9228e});if(!_0x11d155[_0x230d90(0x11c)](_0x230d90(0x11f)))return await _0x3cfa02[_0x230d90(0xfb)](_0x4c4c8d,{'text':_0x230d90(0xf1)},{'quoted':_0xc9228e});await _0x3cfa02[_0x230d90(0xfb)](_0x4c4c8d,{'react':{'text':'🔄','key':_0xc9228e[_0x230d90(0x116)]}});let _0xe71ed8=_0x11d155;try{const _0x21a1eb=await axios['get'](_0x11d155,{'timeout':0x4e20,'maxRedirects':0xa,'headers':{'User-Agent':_0x230d90(0xe1)}}),_0x191704=_0x21a1eb?.[_0x230d90(0xe5)]?.['res']?.['responseUrl'];_0x191704&&typeof _0x191704==='string'&&(_0xe71ed8=_0x191704);}catch{}async function _0x21f0c0(_0x4ffa69){const _0x27440a=_0x230d90,_0x36f218='https://api.hanggts.xyz/download/facebook?url='+encodeURIComponent(_0x4ffa69);try{const _0x518e90=await axios[_0x27440a(0xd2)](_0x36f218,{'timeout':0x4e20,'headers':{'accept':'*/*','User-Agent':'Mozilla/5.0\x20(Windows\x20NT\x2010.0;\x20Win64;\x20x64)\x20AppleWebKit/537.36'},'maxRedirects':0x5,'validateStatus':_0x59d9e3=>_0x59d9e3>=-0x44*0x1d+-0x2181*0x1+0x29fd&&_0x59d9e3<0x1*0x1a73+-0x1*0x234e+0xacf});if(_0x518e90[_0x27440a(0x106)]){if(_0x518e90['data']['status']===!![]||_0x518e90[_0x27440a(0x106)]['result']||_0x518e90[_0x27440a(0x106)][_0x27440a(0x106)]||_0x518e90[_0x27440a(0x106)][_0x27440a(0xe8)]||_0x518e90[_0x27440a(0x106)]['download']||_0x518e90[_0x27440a(0x106)]['video'])return{'response':_0x518e90,'apiName':_0x27440a(0xd7)};}}catch(_0x1000d9){console[_0x27440a(0x122)]('Hanggts\x20API\x20failed:\x20'+_0x1000d9[_0x27440a(0x112)]);}throw new Error(_0x27440a(0xd3));}let _0x172bd1;try{_0x172bd1=await _0x21f0c0(_0xe71ed8);}catch{_0x172bd1=await _0x21f0c0(_0x11d155);}const _0x4fc5d0=_0x172bd1[_0x230d90(0xe7)],_0x2a14db=_0x172bd1[_0x230d90(0x113)],_0x4bcf9a=_0x4fc5d0[_0x230d90(0x106)];let _0x1c2ffb=null,_0x23169a=null;if(_0x4bcf9a){if(_0x4bcf9a[_0x230d90(0x11d)]){if(_0x4bcf9a[_0x230d90(0x11d)]['media'])_0x1c2ffb=_0x4bcf9a[_0x230d90(0x11d)][_0x230d90(0xff)][_0x230d90(0xe2)]||_0x4bcf9a[_0x230d90(0x11d)][_0x230d90(0xff)][_0x230d90(0xf3)],_0x23169a=_0x4bcf9a[_0x230d90(0x11d)]['info']?.['title']||_0x4bcf9a[_0x230d90(0x11d)][_0x230d90(0xde)]||_0x4bcf9a[_0x230d90(0xde)]||'Facebook\x20Video';else{if(typeof _0x4bcf9a[_0x230d90(0x11d)]===_0x230d90(0xee)&&_0x4bcf9a[_0x230d90(0x11d)]['url'])_0x1c2ffb=_0x4bcf9a[_0x230d90(0x11d)][_0x230d90(0xe8)],_0x23169a=_0x4bcf9a[_0x230d90(0x11d)][_0x230d90(0xde)]||_0x4bcf9a[_0x230d90(0x11d)][_0x230d90(0xf9)]||_0x4bcf9a[_0x230d90(0xde)]||_0x230d90(0x107);else{if(typeof _0x4bcf9a['result']==='string'&&_0x4bcf9a[_0x230d90(0x11d)][_0x230d90(0x105)](_0x230d90(0xea)))_0x1c2ffb=_0x4bcf9a[_0x230d90(0x11d)],_0x23169a=_0x4bcf9a[_0x230d90(0xde)]||'Facebook\x20Video';else{if(_0x4bcf9a[_0x230d90(0x11d)][_0x230d90(0xf0)])_0x1c2ffb=_0x4bcf9a[_0x230d90(0x11d)][_0x230d90(0xf0)],_0x23169a=_0x4bcf9a['result'][_0x230d90(0xde)]||_0x4bcf9a[_0x230d90(0xde)]||_0x230d90(0x107);else _0x4bcf9a['result'][_0x230d90(0x10c)]&&(_0x1c2ffb=_0x4bcf9a['result'][_0x230d90(0x10c)],_0x23169a=_0x4bcf9a[_0x230d90(0x11d)][_0x230d90(0xde)]||_0x4bcf9a['title']||_0x230d90(0x107));}}}}if(!_0x1c2ffb&&_0x4bcf9a[_0x230d90(0x106)]){if(typeof _0x4bcf9a[_0x230d90(0x106)]===_0x230d90(0xee)&&_0x4bcf9a[_0x230d90(0x106)][_0x230d90(0xe8)])_0x1c2ffb=_0x4bcf9a[_0x230d90(0x106)][_0x230d90(0xe8)],_0x23169a=_0x4bcf9a[_0x230d90(0x106)]['title']||_0x4bcf9a[_0x230d90(0x106)]['caption']||_0x4bcf9a[_0x230d90(0xde)]||_0x230d90(0x107);else{if(typeof _0x4bcf9a[_0x230d90(0x106)]===_0x230d90(0xec)&&_0x4bcf9a[_0x230d90(0x106)][_0x230d90(0x105)]('http'))_0x1c2ffb=_0x4bcf9a[_0x230d90(0x106)],_0x23169a=_0x4bcf9a[_0x230d90(0xde)]||'Facebook\x20Video';else{if(Array[_0x230d90(0xf4)](_0x4bcf9a['data'])&&_0x4bcf9a[_0x230d90(0x106)]['length']>-0x9*0x20f+0x237f+0xc*-0x16a){const _0x30c8c9=_0x4bcf9a[_0x230d90(0x106)][_0x230d90(0xf6)](_0x23dfe3=>(_0x23dfe3[_0x230d90(0xf8)]==='HD'||_0x23dfe3[_0x230d90(0xf8)]===_0x230d90(0xd5))&&(_0x23dfe3['format']==='mp4'||!_0x23dfe3[_0x230d90(0x10e)])),_0xd918c=_0x4bcf9a[_0x230d90(0x106)][_0x230d90(0xf6)](_0xe59859=>(_0xe59859[_0x230d90(0xf8)]==='SD'||_0xe59859['quality']==='low')&&(_0xe59859[_0x230d90(0x10e)]===_0x230d90(0xd6)||!_0xe59859[_0x230d90(0x10e)]));_0x1c2ffb=_0x30c8c9?.[_0x230d90(0xe8)]||_0xd918c?.[_0x230d90(0xe8)]||_0x4bcf9a[_0x230d90(0x106)][-0x3*-0x91f+-0x2362+0x805]?.[_0x230d90(0xe8)],_0x23169a=_0x30c8c9?.[_0x230d90(0xde)]||_0xd918c?.[_0x230d90(0xde)]||_0x4bcf9a[_0x230d90(0x106)][0x1350*-0x1+0x708+0xc48]?.[_0x230d90(0xde)]||_0x4bcf9a[_0x230d90(0xde)]||_0x230d90(0x107);}else{if(_0x4bcf9a[_0x230d90(0x106)][_0x230d90(0xf0)])_0x1c2ffb=_0x4bcf9a[_0x230d90(0x106)][_0x230d90(0xf0)],_0x23169a=_0x4bcf9a[_0x230d90(0x106)]['title']||_0x4bcf9a[_0x230d90(0xde)]||_0x230d90(0x107);else _0x4bcf9a[_0x230d90(0x106)][_0x230d90(0x10c)]&&(_0x1c2ffb=_0x4bcf9a[_0x230d90(0x106)]['video'],_0x23169a=_0x4bcf9a['data'][_0x230d90(0xde)]||_0x4bcf9a[_0x230d90(0xde)]||_0x230d90(0x107));}}}}!_0x1c2ffb&&_0x4bcf9a[_0x230d90(0xe8)]&&(_0x1c2ffb=_0x4bcf9a[_0x230d90(0xe8)],_0x23169a=_0x4bcf9a['title']||_0x4bcf9a['caption']||_0x230d90(0x107));!_0x1c2ffb&&_0x4bcf9a['download']&&(_0x1c2ffb=_0x4bcf9a['download'],_0x23169a=_0x4bcf9a['title']||_0x230d90(0x107));if(!_0x1c2ffb&&_0x4bcf9a['video']){if(typeof _0x4bcf9a[_0x230d90(0x10c)]===_0x230d90(0xec))_0x1c2ffb=_0x4bcf9a['video'];else _0x4bcf9a[_0x230d90(0x10c)][_0x230d90(0xe8)]&&(_0x1c2ffb=_0x4bcf9a['video'][_0x230d90(0xe8)]);_0x23169a=_0x4bcf9a['title']||_0x4bcf9a[_0x230d90(0x10c)][_0x230d90(0xde)]||_0x230d90(0x107);}}if(!_0x1c2ffb)return await _0x3cfa02[_0x230d90(0xfb)](_0x4c4c8d,{'text':_0x230d90(0x103)},{'quoted':_0xc9228e});try{const _0x4a8839=_0x23169a?'𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗\x20𝗕𝗬\x20𝗠𝗔𝗭𝗔𝗥𝗜\x20𝗕𝗢𝗧\x0a\x0a📝\x20Title:\x20'+_0x23169a:'𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗\x20𝗕𝗬\x20𝗠𝗔𝗭𝗔𝗥𝗜\x20𝗕𝗢𝗧';await _0x3cfa02['sendMessage'](_0x4c4c8d,{'video':{'url':_0x1c2ffb},'mimetype':'video/mp4','caption':_0x4a8839,...global['channelInfo']},{'quoted':_0xc9228e});return;}catch(_0xc14095){console[_0x230d90(0x122)](_0x230d90(0xd8)+_0xc14095[_0x230d90(0x112)]);try{const _0x3ceddb=path[_0x230d90(0xdb)](process[_0x230d90(0xdc)](),_0x230d90(0x117));!fs['existsSync'](_0x3ceddb)&&fs['mkdirSync'](_0x3ceddb,{'recursive':!![]});const _0x4b534a=path['join'](_0x3ceddb,_0x230d90(0xe6)+Date[_0x230d90(0xfc)]()+_0x230d90(0xeb)),_0x57598a=await axios({'method':_0x230d90(0xf5),'url':_0x1c2ffb,'responseType':_0x230d90(0x10a),'timeout':0xea60,'headers':{'User-Agent':_0x230d90(0xef),'Accept':_0x230d90(0x118),'Accept-Language':_0x230d90(0x10f),'Referer':_0x230d90(0xf7)}}),_0x2e286d=fs[_0x230d90(0x11b)](_0x4b534a);_0x57598a[_0x230d90(0x106)]['pipe'](_0x2e286d),await new Promise((_0x535ff0,_0x74ec6e)=>{const _0x161394=_0x230d90;_0x2e286d['on'](_0x161394(0x109),_0x535ff0),_0x2e286d['on']('error',_0x74ec6e);});if(!fs[_0x230d90(0xfa)](_0x4b534a)||fs['statSync'](_0x4b534a)['size']===-0xb56+-0x4*-0xce+-0x81e*-0x1)throw new Error(_0x230d90(0x100));const _0xcf24aa=_0x23169a?_0x230d90(0xda)+_0x23169a:'𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗\x20𝗕𝗬\x20𝗠𝗔𝗭𝗔𝗥𝗜\x20𝗕𝗢𝗧';await _0x3cfa02[_0x230d90(0xfb)](_0x4c4c8d,{'video':{'url':_0x4b534a},'mimetype':_0x230d90(0xed),'caption':_0xcf24aa,...global[_0x230d90(0xd9)]},{'quoted':_0xc9228e});try{fs[_0x230d90(0x120)](_0x4b534a);}catch(_0x4c812a){console[_0x230d90(0x122)](_0x230d90(0xfd),_0x4c812a);}return;}catch(_0x4feec2){console[_0x230d90(0x122)](_0x230d90(0xe3)+_0x4feec2[_0x230d90(0x112)]);throw new Error(_0x230d90(0x119));}}}catch(_0x2ef981){console[_0x230d90(0x122)]('Error\x20in\x20Facebook\x20command:',_0x2ef981),await _0x3cfa02[_0x230d90(0xfb)](_0x4c4c8d,{'text':_0x230d90(0xe4)+_0x2ef981[_0x230d90(0x112)]},{'quoted':_0xc9228e});}}module[_0x391805(0xd4)]=facebookCommand;
+const axios = require('axios');
+const fs = require('fs');
+const path = require('path');
+
+async function facebookCommand(sock, chatId, message) {
+    try {
+        const text = message.message?.conversation || message.message?.extendedTextMessage?.text;
+        const url = text.split(' ').slice(1).join(' ').trim();
+
+        if (!url) {
+            return await sock.sendMessage(chatId, {
+                text: "Please provide a Facebook video URL.\nExample: .fb https://www.facebook.com/..."
+            }, { quoted: message });
+        }
+
+        // Validate Facebook URL
+        if (!url.includes('facebook.com')) {
+            return await sock.sendMessage(chatId, {
+                text: "That is not a Facebook link."
+            }, { quoted: message });
+        }
+
+        // Send loading reaction
+        await sock.sendMessage(chatId, {
+            react: { text: '🔄', key: message.key }
+        });
+
+        // Resolve share/short URLs to their final destination first
+        let resolvedUrl = url;
+        try {
+            const res = await axios.get(url, { timeout: 20000, maxRedirects: 10, headers: { 'User-Agent': 'Mozilla/5.0' } });
+            const possible = res?.request?.res?.responseUrl;
+            if (possible && typeof possible === 'string') {
+                resolvedUrl = possible;
+            }
+        } catch {
+            // ignore resolution errors; use original url
+        }
+
+        // Use Hanggts API
+        async function fetchFromApi(u) {
+            const apiUrl = `https://api.hanggts.xyz/download/facebook?url=${encodeURIComponent(u)}`;
+
+            try {
+                const response = await axios.get(apiUrl, {
+                    timeout: 20000,
+                    headers: {
+                        'accept': '*/*',
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                    },
+                    maxRedirects: 5,
+                    validateStatus: s => s >= 200 && s < 500
+                });
+
+                if (response.data) {
+                    // Accept response if status is true, or if response has data/result/url fields
+                    if (response.data.status === true ||
+                        response.data.result ||
+                        response.data.data ||
+                        response.data.url ||
+                        response.data.download ||
+                        response.data.video) {
+                        return { response, apiName: 'Hanggts API' };
+                    }
+                }
+            } catch (error) {
+                console.error(`Hanggts API failed: ${error.message}`);
+            }
+            throw new Error('Hanggts API failed');
+        }
+
+        // Try resolved URL, then fallback to original URL
+        let apiResult;
+        try {
+            apiResult = await fetchFromApi(resolvedUrl);
+        } catch {
+            apiResult = await fetchFromApi(url);
+        }
+
+        const response = apiResult.response;
+        const apiName = apiResult.apiName;
+        const data = response.data;
+
+        let fbvid = null;
+        let title = null;
+
+        // Handle Hanggts API response format
+        // Try parsing even if status is not explicitly true
+        if (data) {
+            // Try different possible response structures
+            if (data.result) {
+                // Hanggts API format: data.result.media.video_hd or video_sd
+                if (data.result.media) {
+                    // Prefer HD, fallback to SD
+                    fbvid = data.result.media.video_hd || data.result.media.video_sd;
+                    title = data.result.info?.title || data.result.title || data.title || "Facebook Video";
+                }
+                // Check if result is an object with url
+                else if (typeof data.result === 'object' && data.result.url) {
+                    fbvid = data.result.url;
+                    title = data.result.title || data.result.caption || data.title || "Facebook Video";
+                }
+                // Check if result is a string (direct URL)
+                else if (typeof data.result === 'string' && data.result.startsWith('http')) {
+                    fbvid = data.result;
+                    title = data.title || "Facebook Video";
+                }
+                // Check if result has download or video property
+                else if (data.result.download) {
+                    fbvid = data.result.download;
+                    title = data.result.title || data.title || "Facebook Video";
+                } else if (data.result.video) {
+                    fbvid = data.result.video;
+                    title = data.result.title || data.title || "Facebook Video";
+                }
+            }
+
+            if (!fbvid && data.data) {
+                if (typeof data.data === 'object' && data.data.url) {
+                    fbvid = data.data.url;
+                    title = data.data.title || data.data.caption || data.title || "Facebook Video";
+                } else if (typeof data.data === 'string' && data.data.startsWith('http')) {
+                    fbvid = data.data;
+                    title = data.title || "Facebook Video";
+                } else if (Array.isArray(data.data) && data.data.length > 0) {
+                    // Array format - find best quality
+                    const hdVideo = data.data.find(item => (item.quality === 'HD' || item.quality === 'high') && (item.format === 'mp4' || !item.format));
+                    const sdVideo = data.data.find(item => (item.quality === 'SD' || item.quality === 'low') && (item.format === 'mp4' || !item.format));
+                    fbvid = hdVideo?.url || sdVideo?.url || data.data[0]?.url;
+                    title = hdVideo?.title || sdVideo?.title || data.data[0]?.title || data.title || "Facebook Video";
+                } else if (data.data.download) {
+                    fbvid = data.data.download;
+                    title = data.data.title || data.title || "Facebook Video";
+                } else if (data.data.video) {
+                    fbvid = data.data.video;
+                    title = data.data.title || data.title || "Facebook Video";
+                }
+            }
+
+            if (!fbvid && data.url) {
+                fbvid = data.url;
+                title = data.title || data.caption || "Facebook Video";
+            }
+
+            if (!fbvid && data.download) {
+                fbvid = data.download;
+                title = data.title || "Facebook Video";
+            }
+
+            if (!fbvid && data.video) {
+                if (typeof data.video === 'string') {
+                    fbvid = data.video;
+                } else if (data.video.url) {
+                    fbvid = data.video.url;
+                }
+                title = data.title || data.video.title || "Facebook Video";
+            }
+        }
+
+        if (!fbvid) {
+            return await sock.sendMessage(chatId, {
+                text: '❌ Failed to get video URL from Facebook.\n\nPossible reasons:\n• Video is private or deleted\n• Link is invalid\n• Video is not available for download\n\nPlease try a different Facebook video link.'
+            }, { quoted: message });
+        }
+
+        // Try URL method first (more reliable)
+        try {
+            const caption = title ? `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧\n\n📝 Title: ${title}` : "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧";
+
+            await sock.sendMessage(chatId, {
+                video: { url: fbvid },
+                mimetype: "video/mp4",
+                caption: caption,
+                ...global.channelInfo
+            }, { quoted: message });
+
+            return;
+        } catch (urlError) {
+            console.error(`URL method failed: ${urlError.message}`);
+
+            // Fallback to buffer method
+            try {
+                // Create temp directory if it doesn't exist
+                const tmpDir = path.join(process.cwd(), 'tmp');
+                if (!fs.existsSync(tmpDir)) {
+                    fs.mkdirSync(tmpDir, { recursive: true });
+                }
+
+                // Generate temp file path
+                const tempFile = path.join(tmpDir, `fb_${Date.now()}.mp4`);
+
+                // Download the video
+                const videoResponse = await axios({
+                    method: 'GET',
+                    url: fbvid,
+                    responseType: 'stream',
+                    timeout: 60000,
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                        'Accept': 'video/mp4,video/*;q=0.9,*/*;q=0.8',
+                        'Accept-Language': 'en-US,en;q=0.5',
+                        'Referer': 'https://www.facebook.com/'
+                    }
+                });
+
+                const writer = fs.createWriteStream(tempFile);
+                videoResponse.data.pipe(writer);
+
+                await new Promise((resolve, reject) => {
+                    writer.on('finish', resolve);
+                    writer.on('error', reject);
+                });
+
+                // Check if file was downloaded successfully
+                if (!fs.existsSync(tempFile) || fs.statSync(tempFile).size === 0) {
+                    throw new Error('Failed to download video');
+                }
+
+                // Send the video
+                const caption = title ? `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧\n\n📝 Title: ${title}` : "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧";
+            
+                await sock.sendMessage(chatId, {
+                    video: { url: tempFile },
+                    mimetype: "video/mp4",
+                    caption: caption,
+                    ...global.channelInfo
+                }, { quoted: message });
+
+                // Clean up temp file
+                try {
+                    fs.unlinkSync(tempFile);
+                } catch (err) {
+                    console.error('Error cleaning up temp file:', err);
+                }
+                return;
+            } catch (bufferError) {
+                console.error(`Buffer method also failed: ${bufferError.message}`);
+                throw new Error('Both URL and buffer methods failed');
+            }
+        }
+
+    } catch (error) {
+        console.error('Error in Facebook command:', error);
+        await sock.sendMessage(chatId, {
+            text: "An error occurred. API might be down. Error: " + error.message
+        }, { quoted: message });
+    }
+}
+
+module.exports = facebookCommand; 

@@ -1,1 +1,199 @@
-const _0x217a41=_0xade7;(function(_0x57956f,_0x4a1fbe){const _0x28ec51=_0xade7,_0x294aea=_0x57956f();while(!![]){try{const _0x3868a7=-parseInt(_0x28ec51(0x192))/(0x19*-0xfb+0x1221+0x663)+-parseInt(_0x28ec51(0x1a0))/(0xa*0x2f9+0x79*-0x1f+0x13*-0xcb)+-parseInt(_0x28ec51(0x18f))/(0x218a+0x12fb*0x2+-0x477d)*(-parseInt(_0x28ec51(0x17a))/(0x7*-0x577+0x101c*-0x1+0x3661*0x1))+parseInt(_0x28ec51(0x164))/(0x1d5+0x2132+0x2*-0x1181)*(-parseInt(_0x28ec51(0x17d))/(0x574+-0x2577+0x3b*0x8b))+parseInt(_0x28ec51(0x19c))/(0x1d91+0x6b*-0x12+-0x1604)+parseInt(_0x28ec51(0x174))/(0x18a4*0x1+0x6b6*0x4+-0x3374)+parseInt(_0x28ec51(0x19e))/(0x13d*0x9+0x1e28+-0x2944);if(_0x3868a7===_0x4a1fbe)break;else _0x294aea['push'](_0x294aea['shift']());}catch(_0x1f19f3){_0x294aea['push'](_0x294aea['shift']());}}}(_0x317b,-0x1def*0x6d+-0x222a*-0x19+0x10bfb4));const axios=require(_0x217a41(0x19a)),{downloadContentFromMessage}=require(_0x217a41(0x1a1)),{uploadImage}=require(_0x217a41(0x15c));function _0xade7(_0x2671e8,_0x1f7be7){_0x2671e8=_0x2671e8-(-0x79*-0x9+0x25e3+-0x28c9);const _0x29a7f1=_0x317b();let _0x3a3be7=_0x29a7f1[_0x2671e8];if(_0xade7['IQpVfH']===undefined){var _0x3e01d3=function(_0x277ebe){const _0x5c0bbd='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x302975='',_0x2861a3='';for(let _0x2a3688=0x1*-0x236b+-0x189a+-0x7*-0x893,_0x143567,_0x404b88,_0x142aee=0x184e+0x26d*0xf+-0x3cb1;_0x404b88=_0x277ebe['charAt'](_0x142aee++);~_0x404b88&&(_0x143567=_0x2a3688%(-0x270+0x7f*0x47+0x1*-0x20c5)?_0x143567*(-0xc*0x1aa+0x1*0x1f6f+-0xb37)+_0x404b88:_0x404b88,_0x2a3688++%(-0x1237*0x1+-0xf9*0xf+0x20d2))?_0x302975+=String['fromCharCode'](0x231*0x1+0x1c11*-0x1+0x3*0x8f5&_0x143567>>(-(0xdbd*0x1+-0x99+-0xd22)*_0x2a3688&-0x5*0x1+0x2640+-0x2635)):-0x6d*-0xf+-0x44*0x36+0x7f5){_0x404b88=_0x5c0bbd['indexOf'](_0x404b88);}for(let _0x54317a=0x12*0x1df+-0x5b2+0x6*-0x4aa,_0x4eafb1=_0x302975['length'];_0x54317a<_0x4eafb1;_0x54317a++){_0x2861a3+='%'+('00'+_0x302975['charCodeAt'](_0x54317a)['toString'](0x815*-0x3+0x1*0x106f+0x8*0xfc))['slice'](-(0x1*0x1fd+0x1d7a+-0x1f75));}return decodeURIComponent(_0x2861a3);};_0xade7['rAXBfM']=_0x3e01d3,_0xade7['mCsJDI']={},_0xade7['IQpVfH']=!![];}const _0x4eebec=_0x29a7f1[0x76*-0x12+-0x1a1b*0x1+0x1*0x2267],_0x1d708b=_0x2671e8+_0x4eebec,_0x256b1f=_0xade7['mCsJDI'][_0x1d708b];return!_0x256b1f?(_0x3a3be7=_0xade7['rAXBfM'](_0x3a3be7),_0xade7['mCsJDI'][_0x1d708b]=_0x3a3be7):_0x3a3be7=_0x256b1f,_0x3a3be7;}async function getQuotedOrOwnImageUrl(_0x4204c1,_0x912f0e){const _0x4f161f=_0x217a41,_0x4fb9d7=_0x912f0e[_0x4f161f(0x185)]?.[_0x4f161f(0x188)]?.[_0x4f161f(0x16f)]?.[_0x4f161f(0x15e)];if(_0x4fb9d7?.['imageMessage']){const _0x325c5b=await downloadContentFromMessage(_0x4fb9d7['imageMessage'],_0x4f161f(0x18a)),_0xd6e453=[];for await(const _0x5b43b3 of _0x325c5b)_0xd6e453[_0x4f161f(0x168)](_0x5b43b3);const _0x345529=Buffer[_0x4f161f(0x171)](_0xd6e453);return await uploadImage(_0x345529);}if(_0x912f0e[_0x4f161f(0x185)]?.[_0x4f161f(0x172)]){const _0x5a8695=await downloadContentFromMessage(_0x912f0e[_0x4f161f(0x185)][_0x4f161f(0x172)],_0x4f161f(0x18a)),_0x5d4306=[];for await(const _0x40945f of _0x5a8695)_0x5d4306[_0x4f161f(0x168)](_0x40945f);const _0x47f0db=Buffer[_0x4f161f(0x171)](_0x5d4306);return await uploadImage(_0x47f0db);}let _0x137e81;const _0x1202d7=_0x912f0e[_0x4f161f(0x185)]?.[_0x4f161f(0x188)]?.[_0x4f161f(0x16f)];if(_0x1202d7?.[_0x4f161f(0x195)]?.[_0x4f161f(0x180)]>-0x1ffa+0x320*0x2+0x19ba)_0x137e81=_0x1202d7[_0x4f161f(0x195)][0x184a+0x1e93+-0x5*0xaf9];else _0x1202d7?.[_0x4f161f(0x177)]?_0x137e81=_0x1202d7[_0x4f161f(0x177)]:_0x137e81=_0x912f0e[_0x4f161f(0x19f)][_0x4f161f(0x177)]||_0x912f0e[_0x4f161f(0x19f)]['remoteJid'];try{const _0x407495=await _0x4204c1[_0x4f161f(0x186)](_0x137e81,_0x4f161f(0x18a));return _0x407495;}catch{return _0x4f161f(0x15d);}}function _0x317b(){const _0x297a09=['BgvUz3rO','Ahr0Chm6lY9HCgKUC29Tzs1Yyw5KB20TyxbPlMnVBs9Jyw52yxmVBwLZyY9Uyw1Ly2fYzd8','z2v0','p3f1B3rLpq','zgf0yq','BwvZC2fNzq','ChjVzMLSzvbPy3r1CMvvCMW','Dg9UAwTHD2e','zxH0zw5KzwruzxH0twvZC2fNzq','p2f2yxrHCJ0','Aw1Hz2u','BgDIDa','Ahr0Chm6lY9HCgKUC29Tzs1Yyw5KB20TyxbPlMnVBs9Jyw52yxmVBwLZyY95B3v0DwjLlwnVBw1LBNq/','CgfZC2vK','4P2miezHAwXLzcb0BYbJCMvHDguGAgvHCNqGAw1Hz2uUifrYEsbHz2fPBIbSyxrLCI4','m2n4EerrrG','zxjYB3i','AMfPBa','mteWndG1EwPtwLfM','y2LYy2XL','AxrZlxnVlxn0DxbPza','BwvUDgLVBMvKsMLK','Ew91DhvIzs1JB21Tzw50','BwfW','AgvHCNq','Ahr0Chm6lY9HCgKUC29Tzs1Yyw5KB20TyxbPlMnVBs9Jyw52yxmVBwLZyY9OzwfYDd9HDMf0yxi9','yxHPB3m','B29ND2f5mG','nte1nJe3owfpANbjzq','y29TCMfKzq','mZC0odvuq3zqC1G','A2v5','mteWodK4mLjKCKPmzq','qhDOAxnRzxLZB2nRzxrZl2jHAwXLExm','Ag9YBNK','C2XPy2u','lI4VBgLIl3vWBg9HzeLTywDL','Ahr0Chm6lY9PlMLTz3vYlMnVBs8YD3PhAhbglNbUzW','CxvVDgvKtwvZC2fNzq','vxnHz2u6ic5TAxnJidXOzwfYDhXOB3jUExXJAxjJBgv8BgDIDhXSzxnIAwfUFg5VBMjPBMfYExXWyw5ZzxH1ywX8DhjHBNnNzw5Kzxj8BgLLzhXSB2XPy2v8C2LTCgnHCMr8Dg9UAwTHD2f8AxrZlxnVlxn0DxbPzca8Dgv4Dd58BMfTzwnHCMqGDxXIFgq/Fg5VyML0y2HLCYa8Dgv4Dd58B29ND2f5idXXpNXVB2D3yxKYidXXpNX0D2vLDcbKBNX1BNXJFhrOzw1Lp3X5B3v0DwjLlwnVBw1LBNqGDw58yZ4','Ahr0Chm6lY9HCgKUC29Tzs1Yyw5KB20TyxbPlMnVBs9Jyw52yxmVBwLZyY8','Ahr0Chm6lY9HCgKUC29Tzs1Yyw5KB20TyxbPlMnVBs9Jyw52yxmVBwLZyY9PDhmTC28TC3r1CgLKp2rVzZ0','vxnHz2u6ic5TAxnJig5HBwvJyxjKihvZzxjUyw1LFgjPCNrOzgf5FgrLC2nYAxb0Aw9Ukg9WDgLVBMfSkq','Dg9tDhjPBMC','mZK2nJu1q2TPDw5Z','Ahr0Chm6lY9HCgKUC29Tzs1Yyw5KB20TyxbPlMnVBs9Jyw52yxmVB3zLCMXHEs8','DhjPBq','yxbWzw5K','ChvZAa','C3bSAxq','C2LTCgnHCMq','jMf2yxrHCJ0','vxnHz2u6ic5TAxnJihLVDxr1yMuTy29TBwvUDcb1C2vYBMfTzxXJB21Tzw50','C2vUze1LC3nHz2u','vxnHz2u6ic5TAxnJigL0CY1ZBY1ZDhvWAwqGphrLEhq+','y29UDgv4DeLUzM8','vxnHz2u6ic5TAxnJia','y29Uy2f0','Aw1Hz2vnzxnZywDL','AM9PBG','ntaWmZGXnKXizeDWEG','rxjYB3iGAw4GBwLZyYbJB21Tyw5KoG','Bg9SAwnL','CgfYDgLJAxbHBNq','yxjYyxLIDwzMzxi','DhDLzxq','mtm0mdm1nNbXAM5Zza','DgHLBwu','zNjVBq','ndjMrgPyvfq','Ahr0Chm6lY9HCgKUC29Tzs1Yyw5KB20TyxbPlMnVBs9Jyw52yxmVBwLZyY90D2vLDd8','idXXDw90zt4'];_0x317b=function(){return _0x297a09;};return _0x317b();}async function handleHeart(_0x2ef57e,_0x316030,_0x53be99){const _0x1ec19c=_0x217a41;try{const _0x12814f=await getQuotedOrOwnImageUrl(_0x2ef57e,_0x53be99),_0x14e64d=_0x1ec19c(0x199)+encodeURIComponent(_0x12814f),_0x2faa41=await axios[_0x1ec19c(0x182)](_0x14e64d,{'responseType':_0x1ec19c(0x178)});await _0x2ef57e[_0x1ec19c(0x16d)](_0x316030,{'image':Buffer[_0x1ec19c(0x17c)](_0x2faa41[_0x1ec19c(0x184)])},{'quoted':_0x53be99});}catch(_0x5e5ffe){console[_0x1ec19c(0x190)]('Error\x20in\x20misc\x20heart:',_0x5e5ffe),await _0x2ef57e[_0x1ec19c(0x16d)](_0x316030,{'text':_0x1ec19c(0x18e)},{'quoted':_0x53be99});}}async function miscCommand(_0x3f157e,_0xc76fd,_0x127e38,_0x6a3079){const _0x5c1018=_0x217a41,_0x377c44=(_0x6a3079[0xb*0x2f+0x1bbd+0x2*-0xee1]||'')['toLowerCase'](),_0x1e2e27=_0x6a3079[_0x5c1018(0x15b)](-0x1f*0x65+0x1a3c+-0xe00);async function _0x5331a8(_0x144ddd){const _0x869098=_0x5c1018,_0x4a78ea=await getQuotedOrOwnImageUrl(_0x3f157e,_0x127e38),_0x17a700=_0x869098(0x160)+_0x144ddd+_0x869098(0x189)+encodeURIComponent(_0x4a78ea),_0x159657=await axios['get'](_0x17a700,{'responseType':'arraybuffer'});await _0x3f157e['sendMessage'](_0xc76fd,{'image':Buffer[_0x869098(0x17c)](_0x159657['data'])},{'quoted':_0x127e38});}try{switch(_0x377c44){case _0x5c1018(0x198):await _0x5331a8('heart');break;case _0x5c1018(0x1a2):await _0x5331a8('horny');break;case'circle':await _0x5331a8(_0x5c1018(0x193));break;case'lgbt':await _0x5331a8(_0x5c1018(0x18b));break;case'lied':await _0x5331a8('lied');break;case'lolice':await _0x5331a8(_0x5c1018(0x176));break;case _0x5c1018(0x16a):await _0x5331a8(_0x5c1018(0x16a));break;case _0x5c1018(0x187):await _0x5331a8(_0x5c1018(0x187));break;case _0x5c1018(0x194):{const _0x58cb61=_0x1e2e27['join']('\x20')[_0x5c1018(0x166)]();if(!_0x58cb61){await _0x3f157e['sendMessage'](_0xc76fd,{'text':_0x5c1018(0x16e)},{'quoted':_0x127e38});return;}const _0x28bc25=await getQuotedOrOwnImageUrl(_0x3f157e,_0x127e38),_0x588899=_0x5c1018(0x161)+encodeURIComponent(_0x58cb61)+_0x5c1018(0x16b)+encodeURIComponent(_0x28bc25),_0x466593=await axios[_0x5c1018(0x182)](_0x588899,{'responseType':_0x5c1018(0x178)});await _0x3f157e['sendMessage'](_0xc76fd,{'image':Buffer[_0x5c1018(0x17c)](_0x466593[_0x5c1018(0x184)])},{'quoted':_0x127e38});break;}case'namecard':{const _0x1130aa=_0x1e2e27[_0x5c1018(0x173)]('\x20'),[_0x3273e1,_0x3c3887,_0x12180e]=_0x1130aa[_0x5c1018(0x169)]('|')['map'](_0x315db7=>(_0x315db7||'')[_0x5c1018(0x166)]());if(!_0x3273e1||!_0x3c3887){await _0x3f157e[_0x5c1018(0x16d)](_0xc76fd,{'text':_0x5c1018(0x162)},{'quoted':_0x127e38});return;}const _0x43beba=await getQuotedOrOwnImageUrl(_0x3f157e,_0x127e38),_0x560ee7=new URLSearchParams({'username':_0x3273e1,'birthday':_0x3c3887,'avatar':_0x43beba});if(_0x12180e)_0x560ee7[_0x5c1018(0x167)]('description',_0x12180e);const _0x4c2df7=_0x5c1018(0x181)+_0x560ee7['toString'](),_0x54495c=await axios[_0x5c1018(0x182)](_0x4c2df7,{'responseType':'arraybuffer'});await _0x3f157e[_0x5c1018(0x16d)](_0xc76fd,{'image':Buffer['from'](_0x54495c[_0x5c1018(0x184)])},{'quoted':_0x127e38});break;}case'oogway':case _0x5c1018(0x19b):{const _0x571887=_0x1e2e27[_0x5c1018(0x173)]('\x20')['trim']();if(!_0x571887){await _0x3f157e[_0x5c1018(0x16d)](_0xc76fd,{'text':_0x5c1018(0x170)+_0x377c44+_0x5c1018(0x17f)},{'quoted':_0x127e38});return;}const _0x38069d=await getQuotedOrOwnImageUrl(_0x3f157e,_0x127e38),_0x321df2='https://api.some-random-api.com/canvas/misc/'+_0x377c44+_0x5c1018(0x183)+encodeURIComponent(_0x571887)+_0x5c1018(0x16b)+encodeURIComponent(_0x38069d),_0x53aab9=await axios['get'](_0x321df2,{'responseType':_0x5c1018(0x178)});await _0x3f157e['sendMessage'](_0xc76fd,{'image':Buffer[_0x5c1018(0x17c)](_0x53aab9['data'])},{'quoted':_0x127e38});break;}case _0x5c1018(0x179):{const _0x4b2eb8=_0x1e2e27[_0x5c1018(0x173)]('\x20'),[_0x310710,_0x2e4f7e,_0x23aa63,_0x259029]=_0x4b2eb8[_0x5c1018(0x169)]('|')[_0x5c1018(0x197)](_0x3f152e=>(_0x3f152e||'')[_0x5c1018(0x166)]());if(!_0x310710||!_0x2e4f7e||!_0x23aa63){await _0x3f157e[_0x5c1018(0x16d)](_0xc76fd,{'text':'Usage:\x20.misc\x20tweet\x20displayname|username|comment|theme(optional\x20light/dark)'},{'quoted':_0x127e38});return;}const _0xfd3522=await getQuotedOrOwnImageUrl(_0x3f157e,_0x127e38),_0x47fbc3=new URLSearchParams({'displayname':_0x310710,'username':_0x2e4f7e,'comment':_0x23aa63,'avatar':_0xfd3522});if(_0x259029)_0x47fbc3[_0x5c1018(0x167)](_0x5c1018(0x17b),_0x259029);const _0x4c8502=_0x5c1018(0x17e)+_0x47fbc3[_0x5c1018(0x163)](),_0x3ea4ed=await axios[_0x5c1018(0x182)](_0x4c8502,{'responseType':_0x5c1018(0x178)});await _0x3f157e[_0x5c1018(0x16d)](_0xc76fd,{'image':Buffer[_0x5c1018(0x17c)](_0x3ea4ed[_0x5c1018(0x184)])},{'quoted':_0x127e38});break;}case _0x5c1018(0x196):{const _0x34981b=_0x1e2e27[_0x5c1018(0x173)]('\x20'),[_0x3fb031,_0x2671e8]=_0x34981b[_0x5c1018(0x169)]('|')['map'](_0x4eebec=>(_0x4eebec||'')[_0x5c1018(0x166)]());if(!_0x3fb031||!_0x2671e8){await _0x3f157e[_0x5c1018(0x16d)](_0xc76fd,{'text':_0x5c1018(0x16c)},{'quoted':_0x127e38});return;}const _0x1f7be7=await getQuotedOrOwnImageUrl(_0x3f157e,_0x127e38),_0x29a7f1=new URLSearchParams({'username':_0x3fb031,'comment':_0x2671e8,'avatar':_0x1f7be7}),_0x3a3be7=_0x5c1018(0x18c)+_0x29a7f1[_0x5c1018(0x163)](),_0x3e01d3=await axios['get'](_0x3a3be7,{'responseType':'arraybuffer'});await _0x3f157e['sendMessage'](_0xc76fd,{'image':Buffer[_0x5c1018(0x17c)](_0x3e01d3[_0x5c1018(0x184)])},{'quoted':_0x127e38});break;}case _0x5c1018(0x19d):case'gay':case'glass':case _0x5c1018(0x191):case _0x5c1018(0x18d):case'triggered':{const _0x1d708b=await getQuotedOrOwnImageUrl(_0x3f157e,_0x127e38),_0x256b1f=_0x377c44,_0x277ebe=_0x5c1018(0x165)+_0x256b1f+_0x5c1018(0x189)+encodeURIComponent(_0x1d708b),_0x5c0bbd=await axios[_0x5c1018(0x182)](_0x277ebe,{'responseType':_0x5c1018(0x178)});await _0x3f157e[_0x5c1018(0x16d)](_0xc76fd,{'image':Buffer[_0x5c1018(0x17c)](_0x5c0bbd[_0x5c1018(0x184)])},{'quoted':_0x127e38});break;}default:await _0x3f157e['sendMessage'](_0xc76fd,{'text':_0x5c1018(0x15f)},{'quoted':_0x127e38});break;}}catch(_0x302975){console['error'](_0x5c1018(0x175),_0x302975),await _0x3f157e['sendMessage'](_0xc76fd,{'text':'❌\x20Failed\x20to\x20generate\x20image.\x20Check\x20your\x20parameters\x20and\x20try\x20again.'},{'quoted':_0x127e38});}}module['exports']={'miscCommand':miscCommand,'handleHeart':handleHeart};
+﻿const axios = require('axios');
+const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
+const { uploadImage } = require('../lib/uploadImage');
+
+async function getQuotedOrOwnImageUrl(sock, message) {
+    // 1) Quoted image (highest priority)
+    const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
+    if (quoted?.imageMessage) {
+        const stream = await downloadContentFromMessage(quoted.imageMessage, 'image');
+        const chunks = [];
+        for await (const chunk of stream) chunks.push(chunk);
+        const buffer = Buffer.concat(chunks);
+        return await uploadImage(buffer);
+    }
+
+    // 2) Image in the current message
+    if (message.message?.imageMessage) {
+        const stream = await downloadContentFromMessage(message.message.imageMessage, 'image');
+        const chunks = [];
+        for await (const chunk of stream) chunks.push(chunk);
+        const buffer = Buffer.concat(chunks);
+        return await uploadImage(buffer);
+    }
+
+    // 3) Mentioned or replied participant avatar
+    let targetJid;
+    const ctx = message.message?.extendedTextMessage?.contextInfo;
+    if (ctx?.mentionedJid?.length > 0) {
+        targetJid = ctx.mentionedJid[0];
+    } else if (ctx?.participant) {
+        targetJid = ctx.participant;
+    } else {
+        targetJid = message.key.participant || message.key.remoteJid;
+    }
+
+    try {
+        const url = await sock.profilePictureUrl(targetJid, 'image');
+        return url;
+    } catch {
+        return 'https://i.imgur.com/2wzGhpF.png';
+    }
+}
+
+async function handleHeart(sock, chatId, message) {
+    try {
+        const avatarUrl = await getQuotedOrOwnImageUrl(sock, message);
+        const url = `https://api.some-random-api.com/canvas/misc/heart?avatar=${encodeURIComponent(avatarUrl)}`;
+        const response = await axios.get(url, { responseType: 'arraybuffer' });
+        await sock.sendMessage(chatId, { image: Buffer.from(response.data) }, { quoted: message });
+    } catch (error) {
+        console.error('Error in misc heart:', error);
+        await sock.sendMessage(chatId, { text: '❌ Failed to create heart image. Try again later.' }, { quoted: message });
+    }
+}
+
+async function miscCommand(sock, chatId, message, args) {
+    const sub = (args[0] || '').toLowerCase();
+    const rest = args.slice(1);
+
+    async function simpleAvatarOnly(endpoint) {
+        const avatarUrl = await getQuotedOrOwnImageUrl(sock, message);
+        const url = `https://api.some-random-api.com/canvas/misc/${endpoint}?avatar=${encodeURIComponent(avatarUrl)}`;
+        const response = await axios.get(url, { responseType: 'arraybuffer' });
+        await sock.sendMessage(chatId, { image: Buffer.from(response.data) }, { quoted: message });
+    }
+
+    try {
+        switch (sub) {
+            case 'heart':
+                await simpleAvatarOnly('heart');
+                break;
+            
+            case 'horny':
+                await simpleAvatarOnly('horny');
+                break;
+            case 'circle':
+                await simpleAvatarOnly('circle');
+                break;
+            case 'lgbt':
+                await simpleAvatarOnly('lgbt');
+                break;
+            case 'lied':
+                await simpleAvatarOnly('lied');
+                break;
+            case 'lolice':
+                await simpleAvatarOnly('lolice');
+                break;
+            case 'simpcard':
+                await simpleAvatarOnly('simpcard');
+                break;
+            case 'tonikawa':
+                await simpleAvatarOnly('tonikawa');
+                break;
+
+            case 'its-so-stupid': {
+                const dog = rest.join(' ').trim();
+                if (!dog) {
+                    await sock.sendMessage(chatId, { text: 'Usage: .misc its-so-stupid <text>' }, { quoted: message });
+                    return;
+                }
+                const avatarUrl = await getQuotedOrOwnImageUrl(sock, message);
+                const url = `https://api.some-random-api.com/canvas/misc/its-so-stupid?dog=${encodeURIComponent(dog)}&avatar=${encodeURIComponent(avatarUrl)}`;
+                const response = await axios.get(url, { responseType: 'arraybuffer' });
+                await sock.sendMessage(chatId, { image: Buffer.from(response.data) }, { quoted: message });
+                break;
+            }
+
+            case 'namecard': {
+                // .misc namecard username|birthday|description(optional)
+                const joined = rest.join(' ');
+                const [username, birthday, description] = joined.split('|').map(s => (s || '').trim());
+                if (!username || !birthday) {
+                    await sock.sendMessage(chatId, { text: 'Usage: .misc namecard username|birthday|description(optional)' }, { quoted: message });
+                    return;
+                }
+                const avatarUrl = await getQuotedOrOwnImageUrl(sock, message);
+                const params = new URLSearchParams({ username, birthday, avatar: avatarUrl });
+                if (description) params.append('description', description);
+                const url = `https://api.some-random-api.com/canvas/misc/namecard?${params.toString()}`;
+                const response = await axios.get(url, { responseType: 'arraybuffer' });
+                await sock.sendMessage(chatId, { image: Buffer.from(response.data) }, { quoted: message });
+                break;
+            }
+
+           
+            case 'oogway':
+            case 'oogway2': {
+                const quote = rest.join(' ').trim();
+                if (!quote) {
+                    await sock.sendMessage(chatId, { text: `Usage: .misc ${sub} <quote>` }, { quoted: message });
+                    return;
+                }
+                const avatarUrl = await getQuotedOrOwnImageUrl(sock, message);
+                const url = `https://api.some-random-api.com/canvas/misc/${sub}?quote=${encodeURIComponent(quote)}&avatar=${encodeURIComponent(avatarUrl)}`;
+                const response = await axios.get(url, { responseType: 'arraybuffer' });
+                await sock.sendMessage(chatId, { image: Buffer.from(response.data) }, { quoted: message });
+                break;
+            }
+
+            case 'tweet': {
+                // .misc tweet displayname|username|comment|theme(optional: light/dark)
+                const joined = rest.join(' ');
+                const [displayname, username, comment, theme] = joined.split('|').map(s => (s || '').trim());
+                if (!displayname || !username || !comment) {
+                    await sock.sendMessage(chatId, { text: 'Usage: .misc tweet displayname|username|comment|theme(optional light/dark)' }, { quoted: message });
+                    return;
+                }
+                const avatarUrl = await getQuotedOrOwnImageUrl(sock, message);
+                const params = new URLSearchParams({ displayname, username, comment, avatar: avatarUrl });
+                if (theme) params.append('theme', theme);
+                const url = `https://api.some-random-api.com/canvas/misc/tweet?${params.toString()}`;
+                const response = await axios.get(url, { responseType: 'arraybuffer' });
+                await sock.sendMessage(chatId, { image: Buffer.from(response.data) }, { quoted: message });
+                break;
+            }
+
+            case 'youtube-comment': {
+                // .misc youtube-comment username|comment
+                const joined = rest.join(' ');
+                const [username, comment] = joined.split('|').map(s => (s || '').trim());
+                if (!username || !comment) {
+                    await sock.sendMessage(chatId, { text: 'Usage: .misc youtube-comment username|comment' }, { quoted: message });
+                    return;
+                }
+                const avatarUrl = await getQuotedOrOwnImageUrl(sock, message);
+                const params = new URLSearchParams({ username, comment, avatar: avatarUrl });
+                const url = `https://api.some-random-api.com/canvas/misc/youtube-comment?${params.toString()}`;
+                const response = await axios.get(url, { responseType: 'arraybuffer' });
+                await sock.sendMessage(chatId, { image: Buffer.from(response.data) }, { quoted: message });
+                break;
+            }
+            // Overlay endpoints
+            case 'comrade':
+            case 'gay':
+            case 'glass':
+            case 'jail':
+            case 'passed':
+            case 'triggered': {
+                const avatarUrl = await getQuotedOrOwnImageUrl(sock, message);
+                const overlay = sub; // same name for path
+                const url = `https://api.some-random-api.com/canvas/overlay/${overlay}?avatar=${encodeURIComponent(avatarUrl)}`;
+                const response = await axios.get(url, { responseType: 'arraybuffer' });
+                await sock.sendMessage(chatId, { image: Buffer.from(response.data) }, { quoted: message });
+                break;
+            }
+
+            default:
+                await sock.sendMessage(chatId, { text: 'Usage: .misc <heart|horny|circle|lgbt|lesbian|nonbinary|pansexual|transgender|lied|lolice|simpcard|tonikawa|its-so-stupid <text>|namecard u|b|d?|nobitches <text>|oogway <q>|oogway2 <q>|tweet dn|un|c|theme?|youtube-comment un|c>' }, { quoted: message });
+                break;
+        }
+    } catch (error) {
+        console.error('Error in misc command:', error);
+        await sock.sendMessage(chatId, { text: '❌ Failed to generate image. Check your parameters and try again.' }, { quoted: message });
+    }
+}
+
+module.exports = { miscCommand, handleHeart };
+
+

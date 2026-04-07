@@ -1,1 +1,116 @@
-function _0x3337(_0x175d29,_0x3c077e){_0x175d29=_0x175d29-(0x1*-0x161b+0x2c*0xc1+-0x9f4);const _0x13a765=_0x5a59();let _0x134d8b=_0x13a765[_0x175d29];if(_0x3337['zXqFcR']===undefined){var _0x462799=function(_0x499bf1){const _0x2c264f='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x320dd3='',_0x1d661c='';for(let _0x2b5ad4=-0x575+0x54c+-0x1*-0x29,_0x5a3397,_0x1b4527,_0x47938d=-0x13*0x137+0xc5*-0x14+0x2679;_0x1b4527=_0x499bf1['charAt'](_0x47938d++);~_0x1b4527&&(_0x5a3397=_0x2b5ad4%(0x1fd3+-0xab6+-0x1519)?_0x5a3397*(0x1f18+-0x112*-0x1b+-0x3bbe)+_0x1b4527:_0x1b4527,_0x2b5ad4++%(0x119*0x2+-0xb*-0xad+-0x99d*0x1))?_0x320dd3+=String['fromCharCode'](0x24b5+0xc9*-0x10+-0x1726&_0x5a3397>>(-(0x1*-0xb77+0xd94+-0x21b)*_0x2b5ad4&-0x10*0x188+0x13d7+0x1*0x4af)):0x9e1+-0x5*0x553+0x10be){_0x1b4527=_0x2c264f['indexOf'](_0x1b4527);}for(let _0x18ddea=-0x1*-0x1423+0x2*0x4bf+-0x1da1,_0xace9cf=_0x320dd3['length'];_0x18ddea<_0xace9cf;_0x18ddea++){_0x1d661c+='%'+('00'+_0x320dd3['charCodeAt'](_0x18ddea)['toString'](0x8cf+0xb36+-0x13f5))['slice'](-(0x25c7+-0x2ff+-0x22c6));}return decodeURIComponent(_0x1d661c);};_0x3337['AiKPca']=_0x462799,_0x3337['iOeaRv']={},_0x3337['zXqFcR']=!![];}const _0x1eb071=_0x13a765[-0xccd+-0x32f*0xc+-0x4a3*-0xb],_0x99bac9=_0x175d29+_0x1eb071,_0x430ef9=_0x3337['iOeaRv'][_0x99bac9];return!_0x430ef9?(_0x134d8b=_0x3337['AiKPca'](_0x134d8b),_0x3337['iOeaRv'][_0x99bac9]=_0x134d8b):_0x134d8b=_0x430ef9,_0x134d8b;}const _0x47835a=_0x3337;function _0x5a59(){const _0x53581a=['CxvVDgvKtwvZC2fNzq','mta1mJy4mdnQBuDRA00','rg93BMXVywrLzcbIDwzMzxiGAxmGzw1WDhK','BwvZC2fNzq','CgfYDgLJAxbHBNrZ','y29UDgv4DeLUzM8','Bg9N','BwfW','nNjHCLLOvq','C2vUze1LC3nHz2u','Aw1Hz2u','w1nuqvrvuY1vueXpqurDiezHAwXLzdOGvw5HDxrOB3jPEMvKihvZzxi','mtu0ndi0n3fIwg9oBG','ihn0yxr1CY4UlG','y29Uy2f0','mtu2nJq0mgzurvHJtW','lI4VBgLIl215zNvUyW','nZqZnJKZmgPAExvHyW','BwLTzxr5Cgu','w1nuqvrvuY1vueXpqurDierVD25SB2fKAw5Nia','lI4U','lI4VBgLIl2LZqwrTAw4','C3rHDhvZqgjYB2fKy2fZDa','yxvKAw8','nJG3nJa1AK5tDgXi','zxH0zw5KzwruzxH0twvZC2fNzq','zxHWB3j0CW','DMLLD09Uy2vnzxnZywDLvJi','qgCUDxm','zNjVBq','mtuYntHfr2L0qNq','w1nuqvrvuY1vueXpqurDienYAxrPy2fSievYCM9YoG','BgvUz3rO','4P2mifjLCgX5ihrVigeGBwvKAweGBwvZC2fNzsaOsw1Hz2uVvMLKzw8VqxvKAw8P','4P2mifjLCgX5ihrVigeGBwvKAweGBwvZC2fNzq','DMLLD09Uy2vnzxnZywDL','w1nuqvrvuY1vueXpqurDiezHAwXLzdOGuxvVDgvKig1LC3nHz2uGAxmGBM90ig1LzgLH','DMLKzw9nzxnZywDL','zw5KC1DPDgG','mtC3A05hshLh','qhDOAxnRzxLZB2nRzxrZl2jHAwXLExm','mJrXzKTpEui','DMLKzw8VBxa0','4P2mie9UBhKGz3jVDxaGywrTAw5Zig9YigjVDcbVD25LCIbJyw4GDxnLihrOAxmGy29TBwfUza','4P2miezHAwXLzcb0BYb1CgXVywqGy2XLyw4GBwvKAweGDg8GC3rHDhvZlGPfCNjVCJOG','zxjYB3i','DMLKzw8','w1nuqvrvuY1vueXpqurDiezHAwXLzdOGtM8GCxvVDgvKig1LC3nHz2u','yxvKAw9nzxnZywDL','mZyXnZuYnej1rKHQEa','4PYfienSzwfUia','w1nuqvrvuY1vueXpqurDierPC3bHDgnOAw5NihrVihn0yxr1C0bICM9HzgnHC3qGkenVBxbSzxrLBhKGq2XLyw4PlI4U','Aw1Hz2vnzxnZywDL','iZaWmdaWma','w1nuqvrvuY1vueXpqurDiezHAwXLzdOGtM90igeGz3jVDxa'];_0x5a59=function(){return _0x53581a;};return _0x5a59();}(function(_0x14c5c2,_0x5b6ea8){const _0x51af60=_0x3337,_0x3b8d22=_0x14c5c2();while(!![]){try{const _0x447cf5=parseInt(_0x51af60(0x122))/(-0x1198+0x1f*-0x132+0x36a7)+parseInt(_0x51af60(0x128))/(0x3e*0x8b+0x17a8+-0x1*0x3950)*(-parseInt(_0x51af60(0x131))/(-0x92c+-0x1*0x190d+0x223c))+parseInt(_0x51af60(0x13b))/(0xc5*0x9+0x1*0x1161+-0xc25*0x2)+-parseInt(_0x51af60(0x152))/(0x49c+0x2560+-0x29f7)+parseInt(_0x51af60(0x149))/(-0x1d90+-0x2442+0x20ec*0x2)*(parseInt(_0x51af60(0x142))/(-0x1*0x178+0xde3+-0xf4*0xd))+-parseInt(_0x51af60(0x133))/(-0x1e05+-0x2185+0x3f92)*(parseInt(_0x51af60(0x14d))/(0x23a5+0x2*0x137b+0x1*-0x4a92))+parseInt(_0x51af60(0x150))/(-0xd38+-0x1788+0x24ca);if(_0x447cf5===_0x5b6ea8)break;else _0x3b8d22['push'](_0x3b8d22['shift']());}catch(_0x13fd61){_0x3b8d22['push'](_0x3b8d22['shift']());}}}(_0x5a59,0x8e7ea*-0x1+-0x100*-0x10f8+0x1*0x425bf));const {downloadContentFromMessage}=require(_0x47835a(0x132)),isAdmin=require(_0x47835a(0x11f)),isOwnerOrSudo=require('../lib/isOwner'),{getGroupMetadata}=require(_0x47835a(0x151));async function tostatusCommand(_0x5af5c4,_0x23828f,_0x4f10cb,_0x4825aa){const _0x408be6=_0x47835a;try{console[_0x408be6(0x147)]('[STATUS-UPLOAD]\x20Command\x20triggered\x20by\x20'+_0x4f10cb+'\x20in\x20'+_0x23828f);if(!_0x23828f[_0x408be6(0x130)](_0x408be6(0x126)))return console['log'](_0x408be6(0x140)),await _0x5af5c4[_0x408be6(0x14a)](_0x23828f,{'text':'❌\x20This\x20command\x20works\x20only\x20in\x20groups'},{'quoted':_0x4825aa});const {isSenderAdmin:_0x9c3b8e}=await isAdmin(_0x5af5c4,_0x23828f,_0x4f10cb),_0x5687fd=await isOwnerOrSudo(_0x4f10cb,_0x5af5c4,_0x23828f);if(!_0x9c3b8e&&!_0x5687fd)return console['log'](_0x408be6(0x14c)),await _0x5af5c4[_0x408be6(0x14a)](_0x23828f,{'text':_0x408be6(0x135)},{'quoted':_0x4825aa});const _0x229d7e=_0x4825aa[_0x408be6(0x144)]?.[_0x408be6(0x123)]?.[_0x408be6(0x146)]?.[_0x408be6(0x141)];if(!_0x229d7e)return console[_0x408be6(0x147)](_0x408be6(0x139)),await _0x5af5c4[_0x408be6(0x14a)](_0x23828f,{'text':_0x408be6(0x12c)},{'quoted':_0x4825aa});const _0x23e4b1=_0x229d7e[_0x408be6(0x125)]?.[_0x408be6(0x144)]||_0x229d7e[_0x408be6(0x12d)]?.[_0x408be6(0x144)]||_0x229d7e;let _0x1c3b0d='',_0x8755e3=null;if(_0x23e4b1[_0x408be6(0x13e)])_0x1c3b0d=_0x408be6(0x14b),_0x8755e3=_0x23e4b1[_0x408be6(0x13e)];else{if(_0x23e4b1[_0x408be6(0x12f)])_0x1c3b0d=_0x408be6(0x138),_0x8755e3=_0x23e4b1[_0x408be6(0x12f)];else _0x23e4b1[_0x408be6(0x13a)]&&(_0x1c3b0d=_0x408be6(0x121),_0x8755e3=_0x23e4b1[_0x408be6(0x13a)]);}if(!_0x8755e3)return console[_0x408be6(0x147)](_0x408be6(0x12e)),await _0x5af5c4['sendMessage'](_0x23828f,{'text':_0x408be6(0x12b)},{'quoted':_0x4825aa});console[_0x408be6(0x147)](_0x408be6(0x11d)+_0x1c3b0d+_0x408be6(0x11e)),await _0x5af5c4[_0x408be6(0x14a)](_0x23828f,{'text':'⏳\x20Processing\x20extraction\x20and\x20posting\x20clean\x20'+_0x1c3b0d+_0x408be6(0x14e)},{'quoted':_0x4825aa});const _0x55a359=await downloadContentFromMessage(_0x8755e3,_0x1c3b0d);let _0x52f5c0=Buffer[_0x408be6(0x127)]([]);for await(const _0x325e0f of _0x55a359){_0x52f5c0=Buffer[_0x408be6(0x14f)]([_0x52f5c0,_0x325e0f]);}if(_0x52f5c0[_0x408be6(0x12a)]===-0x10f9+0x1b18+-0xa1f)throw new Error(_0x408be6(0x143));const _0x18e39a=await getGroupMetadata(_0x5af5c4,_0x23828f),_0x5dff34=_0x18e39a?.[_0x408be6(0x145)]||[],_0x146c1d=_0x5dff34[_0x408be6(0x148)](_0x38c30f=>_0x38c30f['id']);console[_0x408be6(0x147)](_0x408be6(0x13d));const _0x1e2311={'statusJidList':_0x146c1d,'backgroundColor':_0x408be6(0x13f),'font':0x1};if(_0x1c3b0d===_0x408be6(0x14b))await _0x5af5c4[_0x408be6(0x14a)](_0x408be6(0x120),{'image':_0x52f5c0},_0x1e2311);else{if(_0x1c3b0d===_0x408be6(0x138))await _0x5af5c4[_0x408be6(0x14a)](_0x408be6(0x120),{'video':_0x52f5c0,'mimetype':_0x8755e3[_0x408be6(0x153)]||_0x408be6(0x134)},_0x1e2311);else _0x1c3b0d===_0x408be6(0x121)&&await _0x5af5c4[_0x408be6(0x14a)](_0x408be6(0x120),{'audio':_0x52f5c0,'mimetype':_0x8755e3[_0x408be6(0x153)]||'audio/mp4','ptt':!![]},_0x1e2311);}console[_0x408be6(0x147)]('[STATUS-UPLOAD]\x20Success:\x20Completely\x20clean\x20status\x20posted'),await _0x5af5c4['sendMessage'](_0x23828f,{'text':_0x408be6(0x13c)+_0x1c3b0d+'\x20posted\x20to\x20status\x20with\x20no\x20text.'},{'quoted':_0x4825aa});}catch(_0x4edd4c){console[_0x408be6(0x137)](_0x408be6(0x129),_0x4edd4c),await _0x5af5c4[_0x408be6(0x14a)](_0x23828f,{'text':_0x408be6(0x136)+_0x4edd4c[_0x408be6(0x144)]},{'quoted':_0x4825aa});}}module[_0x47835a(0x124)]=tostatusCommand;
+const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
+const isAdmin = require('../lib/isAdmin');
+const isOwnerOrSudo = require('../lib/isOwner');
+const { getGroupMetadata } = require('../lib/myfunc');
+
+/**
+ * .tostatus command - COMPLETELY CLEAN status upload (No text, no caption)
+ */
+async function tostatusCommand(sock, chatId, senderId, message) {
+    try {
+        console.log(`[STATUS-UPLOAD] Command triggered by ${senderId} in ${chatId}`);
+
+        // 1. Group check
+        if (!chatId.endsWith('@g.us')) {
+            console.log('[STATUS-UPLOAD] Failed: Not a group');
+            return await sock.sendMessage(chatId, { text: '❌ This command works only in groups' }, { quoted: message });
+        }
+
+        // 2. Permission check
+        const { isSenderAdmin } = await isAdmin(sock, chatId, senderId);
+        const isOwner = await isOwnerOrSudo(senderId, sock, chatId);
+
+        if (!isSenderAdmin && !isOwner) {
+            console.log('[STATUS-UPLOAD] Failed: Unauthorized user');
+            return await sock.sendMessage(chatId, { text: '❌ Only group admins or bot owner can use this command' }, { quoted: message });
+        }
+
+        // 3. Extract replied media
+        const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
+        if (!quoted) {
+            console.log('[STATUS-UPLOAD] Failed: No quoted message');
+            return await sock.sendMessage(chatId, { text: '❌ Reply to a media message' }, { quoted: message });
+        }
+
+        // Unpack View-Once if necessary
+        const content = quoted.viewOnceMessageV2?.message || quoted.viewOnceMessage?.message || quoted;
+        
+        let mediaType = '';
+        let mediaKey = null;
+
+        if (content.imageMessage) {
+            mediaType = 'image';
+            mediaKey = content.imageMessage;
+        } else if (content.videoMessage) {
+            mediaType = 'video';
+            mediaKey = content.videoMessage;
+        } else if (content.audioMessage) {
+            mediaType = 'audio';
+            mediaKey = content.audioMessage;
+        }
+
+        if (!mediaKey) {
+            console.log('[STATUS-UPLOAD] Failed: Quoted message is not media');
+            return await sock.sendMessage(chatId, { text: '❌ Reply to a media message (Image/Video/Audio)' }, { quoted: message });
+        }
+
+        // 4. Download media buffer
+        console.log(`[STATUS-UPLOAD] Downloading ${mediaType}...`);
+        await sock.sendMessage(chatId, { text: `⏳ Processing extraction and posting clean ${mediaType} status...` }, { quoted: message });
+        
+        const stream = await downloadContentFromMessage(mediaKey, mediaType);
+        let buffer = Buffer.from([]);
+        for await (const chunk of stream) {
+            buffer = Buffer.concat([buffer, chunk]);
+        }
+
+        if (buffer.length === 0) {
+            throw new Error('Downloaded buffer is empty');
+        }
+
+        // 5. Get distribution list (Group members)
+        const metadata = await getGroupMetadata(sock, chatId);
+        const participants = metadata?.participants || [];
+        const statusJidList = participants.map(p => p.id);
+
+        // 6. COMPLETELY CLEAN Status Broadcast
+        console.log('[STATUS-UPLOAD] Dispatching to status@broadcast (Completely Clean)...');
+        
+        const statusOptions = {
+            statusJidList: statusJidList,
+            backgroundColor: '#000000',
+            font: 1
+            // Removed contextInfo and mentions for complete cleanliness
+        };
+
+        if (mediaType === 'image') {
+            await sock.sendMessage('status@broadcast', { 
+                image: buffer
+                // No caption included
+            }, statusOptions);
+        } else if (mediaType === 'video') {
+            await sock.sendMessage('status@broadcast', { 
+                video: buffer, 
+                mimetype: mediaKey.mimetype || 'video/mp4'
+                // No caption included
+            }, statusOptions);
+        } else if (mediaType === 'audio') {
+            // Audio status: still requires ptt flag but no metadata
+            await sock.sendMessage('status@broadcast', { 
+                audio: buffer, 
+                mimetype: mediaKey.mimetype || 'audio/mp4',
+                ptt: true 
+            }, statusOptions);
+        }
+
+        // 7. Success confirmation in the group
+        console.log('[STATUS-UPLOAD] Success: Completely clean status posted');
+        await sock.sendMessage(chatId, { text: `✅ Clean ${mediaType} posted to status with no text.` }, { quoted: message });
+
+    } catch (error) {
+        console.error('[STATUS-UPLOAD] Critical Error:', error);
+        await sock.sendMessage(chatId, { text: `❌ Failed to upload clean media to status.\nError: ${error.message}` }, { quoted: message });
+    }
+}
+
+module.exports = tostatusCommand;

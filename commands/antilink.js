@@ -1,1 +1,141 @@
-const _0x2cec60=_0x29d4;(function(_0x15e12d,_0x1ac5f5){const _0x3ecfaa=_0x29d4,_0x1cecfb=_0x15e12d();while(!![]){try{const _0x5ae844=-parseInt(_0x3ecfaa(0xb2))/(0x1*-0x13df+-0xd76+0x2156)*(parseInt(_0x3ecfaa(0xaa))/(0x8b3*-0x1+0x1b4e+0x45*-0x45))+-parseInt(_0x3ecfaa(0xc1))/(0x2*0xa03+-0x2*0xa54+-0xa5*-0x1)*(parseInt(_0x3ecfaa(0xc2))/(0x5a2+0x2398+-0x2936))+-parseInt(_0x3ecfaa(0xb7))/(-0x360+0x2091+-0x1d2c)*(parseInt(_0x3ecfaa(0xca))/(-0x2147+-0x21a0+0x42ed))+-parseInt(_0x3ecfaa(0xb3))/(-0x7f*-0x1f+0x627+0xf*-0x16f)*(parseInt(_0x3ecfaa(0xc0))/(-0x1600+0xc3a+0x9ce))+parseInt(_0x3ecfaa(0xcf))/(0x165d+0x3e*0x18+-0x1c24)*(-parseInt(_0x3ecfaa(0xda))/(0x22*0x7+0x254e+-0x2*0x1319))+parseInt(_0x3ecfaa(0xbd))/(0x1a1*0x12+0x3*0x19b+-0x2218)*(parseInt(_0x3ecfaa(0xc3))/(-0x2258+-0x18dd+-0xb*-0x563))+parseInt(_0x3ecfaa(0xb8))/(-0x2150+-0x1*0x1fff+0x415c);if(_0x5ae844===_0x1ac5f5)break;else _0x1cecfb['push'](_0x1cecfb['shift']());}catch(_0x5c89a7){_0x1cecfb['push'](_0x1cecfb['shift']());}}}(_0x47dc,-0x132d8f+0x33*-0x5bef+0x3011aa));function _0x47dc(){const _0x1ade70=['D2HHDhnHChbhCM91Ca','yw50AwXPBMSGC2v0igrLBgv0zsb8igTPy2SGFcb3yxjUxYO','D2HHDhnHChbdAgfUBMvS','lI4VBgLIl2fUDgLSAw5R','nJbLBNzMDgW','ygbGrM9YieDYB3vWiefKBwLUCYbpBMX5iwbGya','igrLBgv0zwqGC3vJy2vZC2z1BgX5lG','C2vUze1LC3nHz2u','DhjPBq','mZzyug12sxK','DgvZDa','C2v0','kL9gywLSzwqGDg8GC2v0iefUDgLSAw5RigfJDgLVBL8Q','lcbWB3n0Aw5NigXPBMTZigLZig5VDcbHBgXVD2vKlG','rxjYB3iGAw4Gyw50AwXPBMSGy29TBwfUzdO','kL9bBNrPBgLUAYbPCYbHBhjLywr5ig9UxYO','A2v5','Bg9N','tM8GBgLUAYbKzxrLy3rLzcbVCIbWCM90zwn0Aw9Uig5VDcbLBMfIBgvKigzVCIb0AgLZihr5CguGB2yGBgLUAY4','C2XPy2u','mty4ntm1meHywNDHra','CgfYDgLJAxbHBNq','BgvUz3rO','Dg9mB3DLCKnHC2u','rNvSBcbTzxnZywDLig9IAMvJDdOG','z2v0','kL9qBgvHC2uGC3bLy2LMEsbHBIbHy3rPB246ia','kL9bBNrPBgLUAYbOyxmGyMvLBIb0DxjUzwqGt05FkG','lI4VBgLIl2LUzgv4','rMfPBgvKihrVigrLBgv0zsbTzxnZywDLoG','yw50AwXPBMSGzM9YihvZywDLlL8Q','q2HLy2TPBMCGBwvZC2fNzsbMB3iGBgLUA3m6ia','lI4VBgLIl2LZqwrTAw4','kL9jBNzHBgLKigfJDgLVBI4Gq2HVB3nLigrLBgv0zsWGA2LJAYWGB3iGD2fYBI5FkG','qw50AwXPBMSGu2v0DgLUzYbMB3iG','zxjYB3i','B2zM','zw5HyMXLza','Aw5JBhvKzxm','nZe2odm2EfLdwuri','yw50AwXPBMSGB24k','kL9fCNjVCIbWCM9JzxnZAw5NigfUDgLSAw5RignVBw1HBMrFkG','ywn0Aw9U','v2HHDhnbChaGz3jVDxaGBgLUAYbWCM90zwn0Aw9UigLZigvUywjSzwqU','tM90ihnLDa','twvZC2fNzsb3AxrOieLeia','yw50AwXPBMSGC2v0igrLBgv0zsb8igTPy2SGFcb3yxjUcG','m2TNu0LVEG','otmXwhHps3De','cKfJDgLVBJOG','qxr0zw1WDgLUzYb0BYbKzwXLDguGBwvZC2fNzsb3AxrOigLKoIa','kL9bBNrPBgLUAYbdB25MAwD1CMf0Aw9UoL8QcLn0yxr1CZOG','mJuZmdm1v1nHDufV','mZG0mtuWmdbwzK5ot0u','C3bSAxq','DgvSzwDYyw0','kL9gywLSzwqGDg8GDhvYBIbVBIbbBNrPBgLUA18Q','kL9bBNrPBgLUAYbOyxmGyMvLBIb0DxjUzwqGt0zgxYO','mte3mJy2nNnIzvLVyq','rgv0zwn0zwqGysbxAgf0C0fWCcbNCM91CcbSAw5Riq','kL9bBNrPBgLUAYbHy3rPB24GC2v0ihrVia','mJGZnZzOwg9sBLO','mtq4mJm2m3vsuunuwq','ngfUy3rtDq','mta4ENjyz1jY','t0zg','zgvSzxrL'];_0x47dc=function(){return _0x1ade70;};return _0x47dc();}const {bots}=require(_0x2cec60(0xc9)),{setAntilink,getAntilink,removeAntilink}=require(_0x2cec60(0x9f)),isAdmin=require(_0x2cec60(0xa3));async function handleAntilinkCommand(_0x154fdd,_0xd17768,_0x2ee3bc,_0x70a911,_0x576264,_0x1556ad){const _0x4c48a8=_0x2cec60;try{if(!_0x576264){await _0x154fdd['sendMessage'](_0xd17768,{'text':_0x4c48a8(0xcb)},{'quoted':_0x1556ad});return;}const _0x11c4a4='.',_0x5bb75f=_0x2ee3bc[_0x4c48a8(0xd9)](0x20c7+0x1*-0x2218+0xad*0x2)[_0x4c48a8(0x9a)]()[_0x4c48a8(0xce)]()[_0x4c48a8(0xb9)]('\x20'),_0x32b874=_0x5bb75f[0x2*-0x9a6+-0x1ce8+-0xc0d*-0x4];if(!_0x32b874){const _0x75b438='```ANTILINK\x20SETUP\x0a\x0a'+_0x11c4a4+_0x4c48a8(0xab)+_0x11c4a4+_0x4c48a8(0xb1)+_0x11c4a4+'antilink\x20off\x0a```';await _0x154fdd['sendMessage'](_0xd17768,{'text':_0x75b438},{'quoted':_0x1556ad});return;}switch(_0x32b874){case'on':const _0x288439=await getAntilink(_0xd17768,'on');if(_0x288439?.[_0x4c48a8(0xa8)]){await _0x154fdd[_0x4c48a8(0xcd)](_0xd17768,{'text':_0x4c48a8(0xd5)},{'quoted':_0x1556ad});return;}const _0x391323=await setAntilink(_0xd17768,'on',_0x4c48a8(0xc5));await _0x154fdd['sendMessage'](_0xd17768,{'text':_0x391323?_0x4c48a8(0x9e):_0x4c48a8(0xbb)},{'quoted':_0x1556ad});break;case'off':await removeAntilink(_0xd17768,'on'),await _0x154fdd['sendMessage'](_0xd17768,{'text':_0x4c48a8(0xbc)},{'quoted':_0x1556ad});break;case _0x4c48a8(0xd1):if(_0x5bb75f[_0x4c48a8(0xdc)]<0x1b6e+0x21d0+-0x3d3c){await _0x154fdd[_0x4c48a8(0xcd)](_0xd17768,{'text':_0x4c48a8(0x9d)+_0x11c4a4+_0x4c48a8(0xc7)},{'quoted':_0x1556ad});return;}const _0x2d4f9a=_0x5bb75f[0x11f3+0x2*-0x10c3+0xf94];if(!['delete','kick','warn'][_0x4c48a8(0xa9)](_0x2d4f9a)){await _0x154fdd[_0x4c48a8(0xcd)](_0xd17768,{'text':_0x4c48a8(0xa4)},{'quoted':_0x1556ad});return;}const _0x1caf0e=await setAntilink(_0xd17768,'on',_0x2d4f9a);await _0x154fdd['sendMessage'](_0xd17768,{'text':_0x1caf0e?_0x4c48a8(0xbf)+_0x2d4f9a+'_*':_0x4c48a8(0xd2)},{'quoted':_0x1556ad});break;case _0x4c48a8(0x9c):const _0x6f6206=await getAntilink(_0xd17768,'on'),_0x3afedd=await getAntilink(_0xd17768,'on');await _0x154fdd[_0x4c48a8(0xcd)](_0xd17768,{'text':_0x4c48a8(0xb6)+(_0x6f6206?'ON':_0x4c48a8(0xc4))+_0x4c48a8(0xb4)+(_0x3afedd?_0x3afedd[_0x4c48a8(0xad)]:_0x4c48a8(0xaf))},{'quoted':_0x1556ad});break;default:await _0x154fdd[_0x4c48a8(0xcd)](_0xd17768,{'text':'*_Use\x20'+_0x11c4a4+_0x4c48a8(0xa1)});}}catch(_0x17883f){console['error'](_0x4c48a8(0xd4),_0x17883f),await _0x154fdd[_0x4c48a8(0xcd)](_0xd17768,{'text':_0x4c48a8(0xac)});}}async function handleLinkDetection(_0x4c4c38,_0x5b23f6,_0x1b38e4,_0xcd7559,_0x4ed027){const _0x4432a7=_0x2cec60,_0x26f860=getAntilinkSetting(_0x5b23f6);if(_0x26f860===_0x4432a7(0xa7))return;console[_0x4432a7(0xd7)](_0x4432a7(0xa5)+_0x5b23f6+':\x20'+_0x26f860),console[_0x4432a7(0xd7)](_0x4432a7(0xa2)+_0xcd7559),console['log'](_0x4432a7(0x9b),JSON['stringify'](_0x1b38e4,null,-0xc26+-0x1*-0x864+0x3c4));let _0x870ae6=![];const _0x12cf44={'whatsappGroup':/chat\.whatsapp\.com\/[A-Za-z0-9]{20,}/i,'whatsappChannel':/wa\.me\/channel\/[A-Za-z0-9]{20,}/i,'telegram':/t\.me\/[A-Za-z0-9_]+/i,'allLinks':/https?:\/\/\S+|www\.\S+|(?:[a-z0-9-]+\.)+[a-z]{2,}(?:\/\S*)?/i};if(_0x26f860===_0x4432a7(0xc6))console['log'](_0x4432a7(0xae)),_0x12cf44[_0x4432a7(0xc6)][_0x4432a7(0xd0)](_0xcd7559)&&(console[_0x4432a7(0xd7)](_0x4432a7(0xbe)),_0x870ae6=!![]);else{if(_0x26f860===_0x4432a7(0xc8)&&_0x12cf44[_0x4432a7(0xc8)][_0x4432a7(0xd0)](_0xcd7559))_0x870ae6=!![];else{if(_0x26f860===_0x4432a7(0xba)&&_0x12cf44['telegram']['test'](_0xcd7559))_0x870ae6=!![];else _0x26f860==='allLinks'&&_0x12cf44['allLinks']['test'](_0xcd7559)&&(_0x870ae6=!![]);}}if(_0x870ae6){const _0x2b4d73=_0x1b38e4[_0x4432a7(0xd6)]['id'],_0x23933f=_0x1b38e4[_0x4432a7(0xd6)][_0x4432a7(0xdb)]||_0x4ed027;console[_0x4432a7(0xd7)](_0x4432a7(0xb5)+_0x2b4d73+'\x20from\x20participant:\x20'+_0x23933f);try{await _0x4c4c38['sendMessage'](_0x5b23f6,{'delete':{'remoteJid':_0x5b23f6,'fromMe':![],'id':_0x2b4d73,'participant':_0x23933f}}),console[_0x4432a7(0xd7)](_0x4432a7(0xb0)+_0x2b4d73+_0x4432a7(0xcc));}catch(_0x141f82){console[_0x4432a7(0xa6)](_0x4432a7(0xa0),_0x141f82);}const _0x18d196=[_0x4ed027];await _0x4c4c38[_0x4432a7(0xcd)](_0x5b23f6,{'text':'Warning!\x20@'+_0x4ed027['split']('@')[-0x1*-0x619+0x2d2+0x1*-0x8eb]+_0x4432a7(0xd3),'mentions':_0x18d196});}else console[_0x4432a7(0xd7)](_0x4432a7(0xd8));}function _0x29d4(_0x4065d8,_0x68cfc2){_0x4065d8=_0x4065d8-(-0x1*0x16af+0x1b8+0x1591);const _0x57b0d4=_0x47dc();let _0xddcee4=_0x57b0d4[_0x4065d8];if(_0x29d4['EdtdrG']===undefined){var _0x3b9992=function(_0x5beb1f){const _0x56544b='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x2e6d1a='',_0x127fc6='';for(let _0xb901f7=0x272*0x2+-0x6dd*-0x2+-0x129e,_0x50e8b2,_0x3e836a,_0x1a6134=0x1cb*0x15+0x4c6+-0x2a6d;_0x3e836a=_0x5beb1f['charAt'](_0x1a6134++);~_0x3e836a&&(_0x50e8b2=_0xb901f7%(0x24c6+-0xa0*-0x4+0x7da*-0x5)?_0x50e8b2*(-0x1dca+-0x1087*0x1+0x2e91)+_0x3e836a:_0x3e836a,_0xb901f7++%(0x26ba+0x614+-0x1*0x2cca))?_0x2e6d1a+=String['fromCharCode'](0x1f34+0x1*-0x1ee+-0x3*0x96d&_0x50e8b2>>(-(-0x61*0x11+0x7c7+-0x154)*_0xb901f7&-0x214e+0x2086+0x1*0xce)):-0x1*0x210b+-0x5e0+0x26eb){_0x3e836a=_0x56544b['indexOf'](_0x3e836a);}for(let _0x2f8aac=0x944*0x1+-0x13cb+0xa87,_0x2ab2db=_0x2e6d1a['length'];_0x2f8aac<_0x2ab2db;_0x2f8aac++){_0x127fc6+='%'+('00'+_0x2e6d1a['charCodeAt'](_0x2f8aac)['toString'](0x1980+-0x725+-0x124b))['slice'](-(-0x9ed+-0x215*0x9+0x1cac));}return decodeURIComponent(_0x127fc6);};_0x29d4['fykFbr']=_0x3b9992,_0x29d4['FlAphq']={},_0x29d4['EdtdrG']=!![];}const _0x1a5514=_0x57b0d4[-0xe43+0xd4b*-0x1+0x1b8e],_0x5a2002=_0x4065d8+_0x1a5514,_0x350fc0=_0x29d4['FlAphq'][_0x5a2002];return!_0x350fc0?(_0xddcee4=_0x29d4['fykFbr'](_0xddcee4),_0x29d4['FlAphq'][_0x5a2002]=_0xddcee4):_0xddcee4=_0x350fc0,_0xddcee4;}module['exports']={'handleAntilinkCommand':handleAntilinkCommand,'handleLinkDetection':handleLinkDetection};
+﻿const { bots } = require('../lib/antilink');
+const { setAntilink, getAntilink, removeAntilink } = require('../lib/index');
+const isAdmin = require('../lib/isAdmin');
+
+async function handleAntilinkCommand(sock, chatId, userMessage, senderId, isSenderAdmin, message) {
+    try {
+        if (!isSenderAdmin) {
+            await sock.sendMessage(chatId, { text: '```For Group Admins Only!```' }, { quoted: message });
+            return;
+        }
+
+        const prefix = '.';
+        const args = userMessage.slice(9).toLowerCase().trim().split(' ');
+        const action = args[0];
+
+        if (!action) {
+            const usage = `\`\`\`ANTILINK SETUP\n\n${prefix}antilink on\n${prefix}antilink set delete | kick | warn\n${prefix}antilink off\n\`\`\``;
+            await sock.sendMessage(chatId, { text: usage }, { quoted: message });
+            return;
+        }
+
+        switch (action) {
+            case 'on':
+                const existingConfig = await getAntilink(chatId, 'on');
+                if (existingConfig?.enabled) {
+                    await sock.sendMessage(chatId, { text: '*_Antilink is already on_*' }, { quoted: message });
+                    return;
+                }
+                const result = await setAntilink(chatId, 'on', 'delete');
+                await sock.sendMessage(chatId, { 
+                    text: result ? '*_Antilink has been turned ON_*' : '*_Failed to turn on Antilink_*' 
+                },{ quoted: message });
+                break;
+
+            case 'off':
+                await removeAntilink(chatId, 'on');
+                await sock.sendMessage(chatId, { text: '*_Antilink has been turned OFF_*' }, { quoted: message });
+                break;
+
+            case 'set':
+                if (args.length < 2) {
+                    await sock.sendMessage(chatId, { 
+                        text: `*_Please specify an action: ${prefix}antilink set delete | kick | warn_*` 
+                    }, { quoted: message });
+                    return;
+                }
+                const setAction = args[1];
+                if (!['delete', 'kick', 'warn'].includes(setAction)) {
+                    await sock.sendMessage(chatId, { 
+                        text: '*_Invalid action. Choose delete, kick, or warn._*' 
+                    }, { quoted: message });
+                    return;
+                }
+                const setResult = await setAntilink(chatId, 'on', setAction);
+                await sock.sendMessage(chatId, { 
+                    text: setResult ? `*_Antilink action set to ${setAction}_*` : '*_Failed to set Antilink action_*' 
+                }, { quoted: message });
+                break;
+
+            case 'get':
+                const status = await getAntilink(chatId, 'on');
+                const actionConfig = await getAntilink(chatId, 'on');
+                await sock.sendMessage(chatId, { 
+                    text: `*_Antilink Configuration:_*\nStatus: ${status ? 'ON' : 'OFF'}\nAction: ${actionConfig ? actionConfig.action : 'Not set'}` 
+                }, { quoted: message });
+                break;
+
+            default:
+                await sock.sendMessage(chatId, { text: `*_Use ${prefix}antilink for usage._*` });
+        }
+    } catch (error) {
+        console.error('Error in antilink command:', error);
+        await sock.sendMessage(chatId, { text: '*_Error processing antilink command_*' });
+    }
+}
+
+async function handleLinkDetection(sock, chatId, message, userMessage, senderId) {
+    const antilinkSetting = getAntilinkSetting(chatId);
+    if (antilinkSetting === 'off') return;
+
+    console.log(`Antilink Setting for ${chatId}: ${antilinkSetting}`);
+    console.log(`Checking message for links: ${userMessage}`);
+    
+    // Log the full message object to diagnose message structure
+    console.log("Full message object: ", JSON.stringify(message, null, 2));
+
+    let shouldDelete = false;
+
+    const linkPatterns = {
+        whatsappGroup: /chat\.whatsapp\.com\/[A-Za-z0-9]{20,}/i,
+        whatsappChannel: /wa\.me\/channel\/[A-Za-z0-9]{20,}/i,
+        telegram: /t\.me\/[A-Za-z0-9_]+/i,
+        // Matches:
+        // - Full URLs with protocol (http/https)
+        // - URLs starting with www.
+        // - Bare domains anywhere in the string, even when attached to text
+        //   e.g., "helloinstagram.comworld" or "testhttps://x.com"
+        allLinks: /https?:\/\/\S+|www\.\S+|(?:[a-z0-9-]+\.)+[a-z]{2,}(?:\/\S*)?/i,
+    };
+
+    // Detect WhatsApp Group links
+    if (antilinkSetting === 'whatsappGroup') {
+        console.log('WhatsApp group link protection is enabled.');
+        if (linkPatterns.whatsappGroup.test(userMessage)) {
+            console.log('Detected a WhatsApp group link!');
+            shouldDelete = true;
+        }
+    } else if (antilinkSetting === 'whatsappChannel' && linkPatterns.whatsappChannel.test(userMessage)) {
+        shouldDelete = true;
+    } else if (antilinkSetting === 'telegram' && linkPatterns.telegram.test(userMessage)) {
+        shouldDelete = true;
+    } else if (antilinkSetting === 'allLinks' && linkPatterns.allLinks.test(userMessage)) {
+        shouldDelete = true;
+    }
+
+    if (shouldDelete) {
+        const quotedMessageId = message.key.id; // Get the message ID to delete
+        const quotedParticipant = message.key.participant || senderId; // Get the participant ID
+
+        console.log(`Attempting to delete message with id: ${quotedMessageId} from participant: ${quotedParticipant}`);
+
+        try {
+            await sock.sendMessage(chatId, {
+                delete: { remoteJid: chatId, fromMe: false, id: quotedMessageId, participant: quotedParticipant },
+            });
+            console.log(`Message with ID ${quotedMessageId} deleted successfully.`);
+        } catch (error) {
+            console.error('Failed to delete message:', error);
+        }
+
+        const mentionedJidList = [senderId];
+        await sock.sendMessage(chatId, { text: `Warning! @${senderId.split('@')[0]}, posting links is not allowed.`, mentions: mentionedJidList });
+    } else {
+        console.log('No link detected or protection not enabled for this type of link.');
+    }
+}
+
+module.exports = {
+    handleAntilinkCommand,
+    handleLinkDetection,
+};

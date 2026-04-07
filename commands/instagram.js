@@ -1,1 +1,146 @@
-const _0x257fe6=_0x1cec;(function(_0x400dc0,_0x55ea08){const _0x12c844=_0x1cec,_0x3b35ed=_0x400dc0();while(!![]){try{const _0x4204d6=-parseInt(_0x12c844(0x1f8))/(-0x1c3f+0x1b3d*0x1+0x103*0x1)+-parseInt(_0x12c844(0x1ff))/(0x1*-0x32b+-0x896+0xbc3)*(-parseInt(_0x12c844(0x20c))/(-0x4*-0x653+0x2338+-0x3c81))+parseInt(_0x12c844(0x200))/(0x1*0x117b+0x8*-0x38a+-0xad9*-0x1)+-parseInt(_0x12c844(0x1f2))/(0x16e6+0x40*-0x5+-0x317*0x7)+parseInt(_0x12c844(0x1eb))/(-0x224f*0x1+-0x8e*-0x34+0x57d)*(-parseInt(_0x12c844(0x204))/(-0x974*-0x1+-0x5e0+-0x12f*0x3))+-parseInt(_0x12c844(0x1fe))/(0xefc+0xa29*-0x3+0x31b*0x5)+parseInt(_0x12c844(0x1f7))/(0x1ed3*0x1+0x59*-0x25+0xd*-0x161);if(_0x4204d6===_0x55ea08)break;else _0x3b35ed['push'](_0x3b35ed['shift']());}catch(_0x4614b2){_0x3b35ed['push'](_0x3b35ed['shift']());}}}(_0x1693,-0x1f13b*0x6+0xf1c04+0xd7e*0xc9));const {igdl}=require(_0x257fe6(0x209)),processedMessages=new Set();function extractUniqueMedia(_0x22e502){const _0x55f40e=_0x257fe6,_0x5bb241=[],_0x445d39=new Set();for(const _0x2f7b9d of _0x22e502){if(!_0x2f7b9d['url'])continue;!_0x445d39[_0x55f40e(0x1f1)](_0x2f7b9d['url'])&&(_0x445d39[_0x55f40e(0x20b)](_0x2f7b9d['url']),_0x5bb241[_0x55f40e(0x206)](_0x2f7b9d));}return _0x5bb241;}function isValidMediaUrl(_0x11ed39){const _0x5f15e3=_0x257fe6;if(!_0x11ed39||typeof _0x11ed39!==_0x5f15e3(0x1f3))return![];return _0x11ed39['includes'](_0x5f15e3(0x205))||_0x11ed39[_0x5f15e3(0x208)](_0x5f15e3(0x1ea))||_0x11ed39[_0x5f15e3(0x208)](_0x5f15e3(0x1e9));}function _0x1cec(_0x403a3e,_0x59ea06){_0x403a3e=_0x403a3e-(-0x739+0x164e+-0xd2c);const _0x588481=_0x1693();let _0x57d11c=_0x588481[_0x403a3e];if(_0x1cec['IuIqUE']===undefined){var _0x51f87a=function(_0x4ea9c8){const _0x48f2bb='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x384923='',_0x27ce77='';for(let _0x3a97da=-0x1*-0x21d3+-0x16f8*-0x1+-0x38cb*0x1,_0x56f7a9,_0x245f67,_0x37c86b=-0x11a1*0x2+0x48e+-0x14*-0x189;_0x245f67=_0x4ea9c8['charAt'](_0x37c86b++);~_0x245f67&&(_0x56f7a9=_0x3a97da%(0x1527*0x1+0x1c1c+-0x1*0x313f)?_0x56f7a9*(0x24b5*-0x1+0x22d2*0x1+-0x223*-0x1)+_0x245f67:_0x245f67,_0x3a97da++%(-0x18bc+-0x2049+-0x3*-0x1303))?_0x384923+=String['fromCharCode'](-0x1*-0x8bf+0x1dff+-0x25bf&_0x56f7a9>>(-(0x1*0x74f+-0x36d*0x7+-0x131*-0xe)*_0x3a97da&0x6aa+0x8*0x1fa+-0x1674)):0x1f7e+0x1*0x1eb6+-0x3*0x14bc){_0x245f67=_0x48f2bb['indexOf'](_0x245f67);}for(let _0x4ef781=-0x11a7+0xf7f+-0x3*-0xb8,_0x1b35c8=_0x384923['length'];_0x4ef781<_0x1b35c8;_0x4ef781++){_0x27ce77+='%'+('00'+_0x384923['charCodeAt'](_0x4ef781)['toString'](0x1225*0x1+-0x2c*-0x61+-0x7*0x4f7))['slice'](-(0xd3*0x17+0x1e97+0x22*-0x175));}return decodeURIComponent(_0x27ce77);};_0x1cec['bYqgjg']=_0x51f87a,_0x1cec['LWtVdO']={},_0x1cec['IuIqUE']=!![];}const _0x301a6d=_0x588481[-0x2b+-0x2*0xc31+0x5*0x4e9],_0x2bb553=_0x403a3e+_0x301a6d,_0x2360fa=_0x1cec['LWtVdO'][_0x2bb553];return!_0x2360fa?(_0x57d11c=_0x1cec['bYqgjg'](_0x57d11c),_0x1cec['LWtVdO'][_0x2bb553]=_0x57d11c):_0x57d11c=_0x2360fa,_0x57d11c;}async function instagramCommand(_0x1376bc,_0x49b8ff,_0x2134ed){const _0x2c524c=_0x257fe6;try{if(processedMessages[_0x2c524c(0x1f1)](_0x2134ed[_0x2c524c(0x201)]['id']))return;processedMessages[_0x2c524c(0x20b)](_0x2134ed[_0x2c524c(0x201)]['id']),setTimeout(()=>{const _0x11fd26=_0x2c524c;processedMessages[_0x11fd26(0x20a)](_0x2134ed[_0x11fd26(0x201)]['id']);},(-0x269c+0x1570+0x9*0x1e9)*(-0x21*0xbf+0x3e*-0xd+0x1c01*0x1)*(-0x1016+0x531+0x1*0xecd));const _0x39b1f1=_0x2134ed[_0x2c524c(0x1fb)]?.['conversation']||_0x2134ed[_0x2c524c(0x1fb)]?.['extendedTextMessage']?.[_0x2c524c(0x207)];if(!_0x39b1f1)return await _0x1376bc[_0x2c524c(0x1ed)](_0x49b8ff,{'text':_0x2c524c(0x1ef)});const _0x3fd0b8=[/https?:\/\/(?:www\.)?instagram\.com\//,/https?:\/\/(?:www\.)?instagr\.am\//,/https?:\/\/(?:www\.)?instagram\.com\/p\//,/https?:\/\/(?:www\.)?instagram\.com\/reel\//,/https?:\/\/(?:www\.)?instagram\.com\/tv\//],_0x403a3e=_0x3fd0b8[_0x2c524c(0x20e)](_0x301a6d=>_0x301a6d[_0x2c524c(0x203)](_0x39b1f1));if(!_0x403a3e)return await _0x1376bc['sendMessage'](_0x49b8ff,{'text':_0x2c524c(0x202)});await _0x1376bc['sendMessage'](_0x49b8ff,{'react':{'text':'🔄','key':_0x2134ed['key']}});const _0x59ea06=await igdl(_0x39b1f1);if(!_0x59ea06||!_0x59ea06[_0x2c524c(0x20f)]||_0x59ea06[_0x2c524c(0x20f)][_0x2c524c(0x1f0)]===0x7*0x2de+0x26a8+-0x3aba)return await _0x1376bc[_0x2c524c(0x1ed)](_0x49b8ff,{'text':_0x2c524c(0x1ee)});const _0x588481=_0x59ea06['data'],_0x57d11c=extractUniqueMedia(_0x588481),_0x51f87a=_0x57d11c['slice'](-0x2049+-0x1*0x12a1+0x3a3*0xe,0x716+-0x610+-0x16*0xb);if(_0x51f87a['length']===-0xa6f*-0x3+-0x76*-0x19+0x13*-0x241)return await _0x1376bc[_0x2c524c(0x1ed)](_0x49b8ff,{'text':_0x2c524c(0x1fd)});for(let _0x2bb553=-0x6d3*0x2+0xcec*0x2+-0xc32;_0x2bb553<_0x51f87a[_0x2c524c(0x1f0)];_0x2bb553++){try{const _0x2360fa=_0x51f87a[_0x2bb553],_0x4ea9c8=_0x2360fa['url'],_0x48f2bb=/\.(mp4|mov|avi|mkv|webm)$/i['test'](_0x4ea9c8)||_0x2360fa[_0x2c524c(0x1ec)]===_0x2c524c(0x20d)||_0x39b1f1[_0x2c524c(0x208)]('/reel/')||_0x39b1f1['includes']('/tv/');_0x48f2bb?await _0x1376bc['sendMessage'](_0x49b8ff,{'video':{'url':_0x4ea9c8},'mimetype':_0x2c524c(0x1f4),'caption':'𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗\x20𝗕𝗬\x20𝗠𝗔𝗭𝗔𝗥𝗜\x20𝗕𝗢𝗧',...global[_0x2c524c(0x1f6)]},{'quoted':_0x2134ed}):await _0x1376bc[_0x2c524c(0x1ed)](_0x49b8ff,{'image':{'url':_0x4ea9c8},'caption':_0x2c524c(0x1f5),...global[_0x2c524c(0x1f6)]},{'quoted':_0x2134ed}),_0x2bb553<_0x51f87a[_0x2c524c(0x1f0)]-(-0x1*-0x1177+0x831+-0x3*0x88d)&&await new Promise(_0x384923=>setTimeout(_0x384923,-0x7b8+0x1c*0x6d+0x26*-0x2));}catch(_0x27ce77){console['error'](_0x2c524c(0x1fc)+(_0x2bb553+(-0x4*-0x895+0x15e*-0xd+0xdf*-0x13))+':',_0x27ce77);}}}catch(_0x3a97da){console['error'](_0x2c524c(0x1fa),_0x3a97da),await _0x1376bc['sendMessage'](_0x49b8ff,{'text':_0x2c524c(0x1f9)});}}module['exports']=instagramCommand;function _0x1693(){const _0x138206=['nNHTsKPsCq','DhLWzq','C2vUze1LC3nHz2u','4P2mie5Vig1LzgLHigzVDw5Kigf0ihrOzsbWCM92AwrLzcbSAw5RlIbuAguGCg9ZDcbTAwDODcbIzsbWCML2yxrLig9YihrOzsbSAw5RigLZigLUDMfSAwqU','ugXLyxnLihbYB3zPzguGyw4Gsw5ZDgfNCMfTigXPBMSGzM9YihrOzsb2AwrLBY4','BgvUz3rO','AgfZ','mZK1ndu1mePdt1vVzG','C3rYAw5N','DMLKzw8VBxa0','8j2xL/cDL6lWNzEQ8j2xOFcDL5/WNzEI8j2xLpcDL5FWNzEy8j2xLYdWNzEv8j2xRcdWNzEG8j2xLpcDL63WNzEu8j2xPFcDL5WG8j2xLFcDL6lWNzEN','y2HHBM5LBeLUzM8','mJm4otiXntziAg5OveK','ndm3mdm1u0Xprvbp','4P2miefUigvYCM9Yig9Jy3vYCMvKihDOAwXLihbYB2nLC3nPBMCGDgHLieLUC3rHz3jHBsbYzxf1zxn0lIbqBgvHC2uGDhj5igfNywLUlG','rxjYB3iGAw4Gsw5ZDgfNCMfTignVBw1HBMq6','BwvZC2fNzq','rxjYB3iGzg93BMXVywrPBMCGBwvKAweG','4P2mie5VihzHBgLKig1LzgLHigzVDw5KihrVigrVD25SB2fKlIbuAgLZig1Pz2H0igjLigeGChjPDMf0zsbWB3n0ig9YihrOzsbZy3jHCgvYigzHAwXLzc4','ndmYnJi3mNniwwzUza','mti3nJbkyxnyEvy','ndGZmJa4ohHXDMTIvW','A2v5','vgHHDcbPCYbUB3qGysb2ywXPzcbjBNn0ywDYyw0GBgLUAY4GugXLyxnLihbYB3zPzguGysb2ywXPzcbjBNn0ywDYyw0GCg9ZDcWGCMvLBcWGB3iGDMLKzw8GBgLUAY4','DgvZDa','mta0mdeXmZLKCLzOsfO','y2rUAw5ZDgfNCMfTlMnVBq','ChvZAa','Dgv4Da','Aw5JBhvKzxm','CNvOzw5KlxnJCMfWzxi','zgvSzxrL','ywrK','mtq3BvrAAwDh','DMLKzw8','C29Tzq','zgf0yq','Ahr0Ca','Aw5ZDgfNCMfT'];_0x1693=function(){return _0x138206;};return _0x1693();}
+const { igdl } = require("ruhend-scraper");
+
+// Store processed message IDs to prevent duplicates
+const processedMessages = new Set();
+
+// Function to extract unique media URLs with simple deduplication
+function extractUniqueMedia(mediaData) {
+    const uniqueMedia = [];
+    const seenUrls = new Set();
+    
+    for (const media of mediaData) {
+        if (!media.url) continue;
+        
+        // Only check for exact URL duplicates
+        if (!seenUrls.has(media.url)) {
+            seenUrls.add(media.url);
+            uniqueMedia.push(media);
+        }
+    }
+    
+    return uniqueMedia;
+}
+
+// Function to validate media URL
+function isValidMediaUrl(url) {
+    if (!url || typeof url !== 'string') return false;
+    
+    // Accept any URL that looks like media
+    return url.includes('cdninstagram.com') || 
+           url.includes('instagram') || 
+           url.includes('http');
+}
+
+async function instagramCommand(sock, chatId, message) {
+    try {
+        // Check if message has already been processed
+        if (processedMessages.has(message.key.id)) {
+            return;
+        }
+        
+        // Add message ID to processed set
+        processedMessages.add(message.key.id);
+        
+        // Clean up old message IDs after 5 minutes
+        setTimeout(() => {
+            processedMessages.delete(message.key.id);
+        }, 5 * 60 * 1000);
+
+        const text = message.message?.conversation || message.message?.extendedTextMessage?.text;
+        
+        if (!text) {
+            return await sock.sendMessage(chatId, { 
+                text: "Please provide an Instagram link for the video."
+            });
+        }
+
+        // Check for various Instagram URL formats
+        const instagramPatterns = [
+            /https?:\/\/(?:www\.)?instagram\.com\//,
+            /https?:\/\/(?:www\.)?instagr\.am\//,
+            /https?:\/\/(?:www\.)?instagram\.com\/p\//,
+            /https?:\/\/(?:www\.)?instagram\.com\/reel\//,
+            /https?:\/\/(?:www\.)?instagram\.com\/tv\//
+        ];
+
+        const isValidUrl = instagramPatterns.some(pattern => pattern.test(text));
+        
+        if (!isValidUrl) {
+            return await sock.sendMessage(chatId, { 
+                text: "That is not a valid Instagram link. Please provide a valid Instagram post, reel, or video link."
+            });
+        }
+
+        await sock.sendMessage(chatId, {
+            react: { text: '🔄', key: message.key }
+        });
+
+        const downloadData = await igdl(text);
+        
+        if (!downloadData || !downloadData.data || downloadData.data.length === 0) {
+            return await sock.sendMessage(chatId, { 
+                text: "❌ No media found at the provided link. The post might be private or the link is invalid."
+            });
+        }
+
+        const mediaData = downloadData.data;
+        
+        // Simple deduplication - just remove exact URL duplicates
+        const uniqueMedia = extractUniqueMedia(mediaData);
+        
+        // Limit to maximum 20 unique media items
+        const mediaToDownload = uniqueMedia.slice(0, 20);
+        
+        if (mediaToDownload.length === 0) {
+            return await sock.sendMessage(chatId, { 
+                text: "❌ No valid media found to download. This might be a private post or the scraper failed."
+            });
+        }
+
+        // Download all media silently without status messages
+        for (let i = 0; i < mediaToDownload.length; i++) {
+            try {
+                const media = mediaToDownload[i];
+                const mediaUrl = media.url;
+
+                // Check if URL ends with common video extensions
+                const isVideo = /\.(mp4|mov|avi|mkv|webm)$/i.test(mediaUrl) || 
+                              media.type === 'video' || 
+                              text.includes('/reel/') || 
+                              text.includes('/tv/');
+
+                if (isVideo) {
+                    await sock.sendMessage(chatId, {
+                        video: { url: mediaUrl },
+                        mimetype: "video/mp4",
+                        caption: "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧",
+                        ...global.channelInfo
+                    }, { quoted: message });
+                } else {
+                    await sock.sendMessage(chatId, {
+                        image: { url: mediaUrl },
+                        caption: "𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 𝗠𝗔𝗭𝗔𝗥𝗜 𝗕𝗢𝗧",
+                        ...global.channelInfo
+                    }, { quoted: message });
+                }
+                
+                // Add small delay between downloads to prevent rate limiting
+                if (i < mediaToDownload.length - 1) {
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                }
+                
+            } catch (mediaError) {
+                console.error(`Error downloading media ${i + 1}:`, mediaError);
+                // Continue with next media if one fails
+            }
+        }
+
+    } catch (error) {
+        console.error('Error in Instagram command:', error);
+        await sock.sendMessage(chatId, { 
+            text: "❌ An error occurred while processing the Instagram request. Please try again."
+        });
+    }
+}
+
+module.exports = instagramCommand;

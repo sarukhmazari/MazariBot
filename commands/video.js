@@ -1,1 +1,102 @@
-const _0x24478f=_0x45b0;(function(_0x2cc25e,_0x52ba98){const _0x508140=_0x45b0,_0x2ac51d=_0x2cc25e();while(!![]){try{const _0x75386d=parseInt(_0x508140(0x1dc))/(-0xdac+0x1*-0x1dfb+0xb*0x3f8)*(-parseInt(_0x508140(0x208))/(-0x11*0x1f6+-0x1*-0x2573+-0x41b))+parseInt(_0x508140(0x1ef))/(-0x9bc*0x2+-0x1e4b+-0x2e*-0x115)*(-parseInt(_0x508140(0x1eb))/(-0x691*0x3+0xe3*-0x2+0x157d))+parseInt(_0x508140(0x1f0))/(0x1e6d+-0x3*-0x599+-0x2f33)*(parseInt(_0x508140(0x1db))/(-0x1600+0x22c*0xd+-0x9f*0xa))+parseInt(_0x508140(0x1f6))/(0x16a*-0x1a+-0x7*-0x29f+0x1272)+parseInt(_0x508140(0x1f4))/(0xa82+-0x2*-0x11e7+-0x2e48)+parseInt(_0x508140(0x1f3))/(0x22db*-0x1+-0xd61+0x3045)+parseInt(_0x508140(0x1ee))/(-0x1*-0xbb9+0x1809+0x48*-0x7f)*(-parseInt(_0x508140(0x200))/(-0x2654+0x2446+0x219*0x1));if(_0x75386d===_0x52ba98)break;else _0x2ac51d['push'](_0x2ac51d['shift']());}catch(_0x1a5e29){_0x2ac51d['push'](_0x2ac51d['shift']());}}}(_0x69fa,0xefbcf+0x7f724+-0xf65a1));function _0x45b0(_0x536806,_0x5d5eb7){_0x536806=_0x536806-(-0x223a+-0x861*0x2+0x34d6);const _0x234cb5=_0x69fa();let _0x524cf2=_0x234cb5[_0x536806];if(_0x45b0['aenIgU']===undefined){var _0x2f0bab=function(_0x4960d1){const _0xe2d1bf='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x3c1bfb='',_0x541853='';for(let _0x12c7b7=-0x1*0x1ae1+-0x179*-0x9+-0x1b4*-0x8,_0x1edef6,_0x26bfd4,_0x2d93ef=0xc*-0x12a+0x6*0x49d+-0xdb6;_0x26bfd4=_0x4960d1['charAt'](_0x2d93ef++);~_0x26bfd4&&(_0x1edef6=_0x12c7b7%(0x1d51+-0x1d09*0x1+0x22*-0x2)?_0x1edef6*(-0x1a5b+0xc1*0x2e+0x9f*-0xd)+_0x26bfd4:_0x26bfd4,_0x12c7b7++%(0x588*0x4+0x1*0x224b+-0x12cd*0x3))?_0x3c1bfb+=String['fromCharCode'](-0x4c8+0xbf*-0x18+0x81*0x2f&_0x1edef6>>(-(0x1307*0x1+0x1*0x2337+-0x363c)*_0x12c7b7&0xc*-0x1db+0x2*-0x1017+-0x7c8*-0x7)):0x1950+0x1*0x26c0+-0x4010){_0x26bfd4=_0xe2d1bf['indexOf'](_0x26bfd4);}for(let _0x11a283=-0x122f+-0x2d3+0x1*0x1502,_0x576fa9=_0x3c1bfb['length'];_0x11a283<_0x576fa9;_0x11a283++){_0x541853+='%'+('00'+_0x3c1bfb['charCodeAt'](_0x11a283)['toString'](0x1169+-0x1*-0x5ea+-0x1743))['slice'](-(-0x66f+-0x31f*0x9+0x2288));}return decodeURIComponent(_0x541853);};_0x45b0['ZmrjWc']=_0x2f0bab,_0x45b0['exoCxz']={},_0x45b0['aenIgU']=!![];}const _0x5ba14b=_0x234cb5[0xa*-0x37+-0x1*0x15b5+0xc5*0x1f],_0x5659e3=_0x536806+_0x5ba14b,_0x3147cd=_0x45b0['exoCxz'][_0x5659e3];return!_0x3147cd?(_0x524cf2=_0x45b0['ZmrjWc'](_0x524cf2),_0x45b0['exoCxz'][_0x5659e3]=_0x524cf2):_0x524cf2=_0x3147cd,_0x524cf2;}function _0x69fa(){const _0x319125=['4P2miezHAwXLzcb0BYbWCM9JzxnZihrOzsbYzxf1zxn0igr1zsb0BYbHBIbPBNrLCM5HBcbLCNjVCI4','mZyZmZaWn1rzDfn6wa','BgvUz3rO','rMfPBgvKihrVigDLDcb2AwrLBYbMCM9TigfSBcbHDMfPBgfIBguGC291CMnLCY4','yxHPB3m','zxHPC3rZu3LUyW','DhjPBq','C2vUze1LC3nHz2u','ExqTC2vHCMnO','iIaTzIaIyMvZDfTLEhq9Bxa0xsiGlw8GiG','y29UDMvYC2f0Aw9U','mJi4otq2m0PryuXNEG','y3DK','Cgf0Aa','ExqTzgXWihzPzgvVigzHAwXLzdO','DgL0Bgu','zxH0zw5KzwruzxH0twvZC2fNzq','v2HHDcb2AwrLBYbKBYb5B3uGD2fUDcb0BYbKB3DUBg9Hzd8GuhjVDMLKzsbHifvstcbVCIbZzwfYy2GGDgvYBs4','qwT1yxjPiefqssbMywXSyMfJAYbMywLSzwq6','mMTdqw1UEq','C3rHDhvZ','Ahr0Chm6lY9PlMLTz3vYlMnVBs9Ru3jVtteXlNbUzW','DgvTCa','AM9PBG','DxrPBa','w1zjrevpxsbdB21Tyw5KieLUDgvYBMfSievYCM9YoG','iIaI','kGOkx0rVD25SB2fKAw5NihzPzgvVlcbWBgvHC2uGD2fPDc4UlL8','mZy5mdq2mLjhtNPjuq','nduZnZa5qKvnzvfA','BwTKAxjtEw5J','kGOkpIaQx0rVD25SB2fKzwqGyNKGtufAqvjjiejpvf8Q','BwvZC2fNzq','DMLKzw8VBxa0','4P2mifzPzgvVigrVD25SB2fKigzHAwXLzc4Gww91vhvIzsbPCYbJDxjYzw50BhKGyMXVy2TPBMCGDgHLihjLCxvLC3qUifbSzwfZzsb0CNKGywDHAw4GBgf0zxiU','DMLKzw9Z','vMLKzw8Gzg93BMXVywqGChjVy2vZCYbMywLSzwq6','C3bSAxq','z2v0','zgXFBgLUAW','zgf0yq','Dw5SAw5Ru3LUyW','C2XPy2u','y2HPBgrFChjVy2vZCW','mJmZmNvkExH2Aa','DxjS','BM93','mZbvyxbXzMi','mJCWnMPKsufmra','nxLgzMv5Ba','zxHWB3j0CW','zxjYB3i','nteXnZmXmgTXDNLQvG','mZe2otG4ofzbt2Hhva'];_0x69fa=function(){return _0x319125;};return _0x69fa();}const yts=require(_0x24478f(0x1fd)),axios=require(_0x24478f(0x1f9)),{exec}=require(_0x24478f(0x1ea)),fs=require('fs'),path=require(_0x24478f(0x202)),util=require(_0x24478f(0x20d)),execPromise=util['promisify'](exec);async function videoCommand(_0x487808,_0xc2e4fc,_0x3d5589){const _0x2dc608=_0x24478f;try{const _0x5637c8=_0x3d5589[_0x2dc608(0x1df)]?.[_0x2dc608(0x1ff)]||_0x3d5589[_0x2dc608(0x1df)]?.[_0x2dc608(0x205)]?.['text']||'',_0xf853ff=_0x5637c8[_0x2dc608(0x1e4)]('\x20')[_0x2dc608(0x1e9)](-0x1d3*-0x2+-0x1f39+0x4*0x6e5)['join']('\x20')[_0x2dc608(0x1fb)]();if(!_0xf853ff){await _0x487808['sendMessage'](_0xc2e4fc,{'text':_0x2dc608(0x206)},{'quoted':_0x3d5589});return;}let _0x5a0372;try{const _0x4ba032=await yts(_0xf853ff);if(!_0x4ba032||!_0x4ba032['videos'][_0x2dc608(0x1f7)])return await _0x487808['sendMessage'](_0xc2e4fc,{'text':'No\x20videos\x20found!'},{'quoted':_0x3d5589});_0x5a0372=_0x4ba032[_0x2dc608(0x1e2)][-0x1*-0xfef+-0xce*-0x7+-0x1591];}catch(_0x478d12){return await _0x487808[_0x2dc608(0x1fc)](_0xc2e4fc,{'text':'Invalid\x20YouTube\x20link\x20or\x20video\x20not\x20found.'},{'quoted':_0x3d5589});}await _0x487808[_0x2dc608(0x1fc)](_0xc2e4fc,{'image':{'url':_0x5a0372['thumbnail']||_0x2dc608(0x20a)},'caption':'*'+_0x5a0372[_0x2dc608(0x204)]+_0x2dc608(0x1da)},{'quoted':_0x3d5589});let _0x27cc97=null,_0x5bc8fb=null;try{const _0x4fb06a=path[_0x2dc608(0x20c)](process[_0x2dc608(0x201)](),'yt-dlp.exe');if(fs[_0x2dc608(0x1fa)](_0x4fb06a))try{const _0x598bc9=path[_0x2dc608(0x20c)](process[_0x2dc608(0x201)](),_0x2dc608(0x20b));if(!fs[_0x2dc608(0x1fa)](_0x598bc9))fs[_0x2dc608(0x1dd)](_0x598bc9,{'recursive':!![]});const _0x5304fe=Date[_0x2dc608(0x1ed)]()+'.mp4';_0x5bc8fb=path['join'](_0x598bc9,_0x5304fe),await execPromise('\x22'+_0x4fb06a+_0x2dc608(0x1fe)+_0x5bc8fb+_0x2dc608(0x20f)+_0x5a0372[_0x2dc608(0x1ec)]+'\x22');if(fs['existsSync'](_0x5bc8fb))return await _0x487808[_0x2dc608(0x1fc)](_0xc2e4fc,{'video':{'url':_0x5bc8fb},'mimetype':_0x2dc608(0x1e0),'caption':'*'+_0x5a0372[_0x2dc608(0x204)]+_0x2dc608(0x1de)},{'quoted':_0x3d5589}),fs['unlinkSync'](_0x5bc8fb);}catch(_0x5847ab){console[_0x2dc608(0x1f2)](_0x2dc608(0x203),_0x5847ab[_0x2dc608(0x1df)]);if(_0x5bc8fb&&fs[_0x2dc608(0x1fa)](_0x5bc8fb))fs[_0x2dc608(0x1e8)](_0x5bc8fb);}const _0x4ab1e1=encodeURIComponent(_0x5a0372[_0x2dc608(0x1ec)]);try{const _0x5e2798=await axios[_0x2dc608(0x1e5)]('https://api.akuari.my.id/downloader/youtube?link='+_0x4ab1e1);_0x5e2798['data']&&_0x5e2798[_0x2dc608(0x1e7)][_0x2dc608(0x209)]===!![]&&_0x5e2798[_0x2dc608(0x1e7)][_0x2dc608(0x1e6)]&&_0x5e2798[_0x2dc608(0x1e7)]['dl_link']['mp4']&&(_0x27cc97=_0x5e2798[_0x2dc608(0x1e7)][_0x2dc608(0x1e6)]['mp4']);}catch(_0x4409e4){console[_0x2dc608(0x1f2)](_0x2dc608(0x207),_0x4409e4[_0x2dc608(0x1df)]);}if(_0x27cc97){await _0x487808[_0x2dc608(0x1fc)](_0xc2e4fc,{'video':{'url':_0x27cc97},'mimetype':_0x2dc608(0x1e0),'caption':'*'+_0x5a0372[_0x2dc608(0x204)]+'*\x0a\x0a>\x20*_Downloaded\x20by\x20MAZARI\x20BOT_*'},{'quoted':_0x3d5589});return;}throw new Error(_0x2dc608(0x1f8));}catch(_0x480dfd){console[_0x2dc608(0x1f2)](_0x2dc608(0x1e3),_0x480dfd),await _0x487808[_0x2dc608(0x1fc)](_0xc2e4fc,{'text':_0x2dc608(0x1e1)},{'quoted':_0x3d5589});}}catch(_0x16d384){console[_0x2dc608(0x1f2)](_0x2dc608(0x20e),_0x16d384),await _0x487808[_0x2dc608(0x1fc)](_0xc2e4fc,{'text':_0x2dc608(0x1f5)},{'quoted':_0x3d5589});}}module[_0x24478f(0x1f1)]=videoCommand;
+const yts = require('yt-search');
+const axios = require('axios');
+const { exec } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+const util = require('util');
+const execPromise = util.promisify(exec);
+
+async function videoCommand(sock, chatId, message) {
+    try {
+        const text = message.message?.conversation || message.message?.extendedTextMessage?.text || '';
+        const query = text.split(' ').slice(1).join(' ').trim();
+
+        if (!query) {
+            await sock.sendMessage(chatId, { text: 'What video do you want to download? Provide a URL or search term.' }, { quoted: message });
+            return;
+        }
+
+        let video;
+        try {
+            const search = await yts(query);
+            if (!search || !search.videos.length) {
+                return await sock.sendMessage(chatId, { text: 'No videos found!' }, { quoted: message });
+            }
+            video = search.videos[0];
+        } catch (e) {
+            return await sock.sendMessage(chatId, { text: 'Invalid YouTube link or video not found.' }, { quoted: message });
+        }
+
+        await sock.sendMessage(chatId, {
+            image: { url: video.thumbnail || 'https://i.imgur.com/kSroM11.png' },
+            caption: `*${video.title}*\n\n_Downloading video, please wait..._`
+        }, { quoted: message });
+
+        let videoUrl = null;
+        let localFilePath = null;
+
+        try {
+            // Priority 1: Use local yt-dlp.exe (Most robust)
+            const ytDlpPath = path.join(process.cwd(), 'yt-dlp.exe');
+            if (fs.existsSync(ytDlpPath)) {
+                try {
+                    const tempDir = path.join(process.cwd(), 'temp');
+                    if (!fs.existsSync(tempDir)) fs.mkdirSync(tempDir, { recursive: true });
+                    const fileName = `${Date.now()}.mp4`;
+                    localFilePath = path.join(tempDir, fileName);
+
+                    // Download as best video/audio combined mp4
+                    await execPromise(`"${ytDlpPath}" -f "best[ext=mp4]" -o "${localFilePath}" "${video.url}"`);
+
+                    if (fs.existsSync(localFilePath)) {
+                        await sock.sendMessage(chatId, {
+                            video: { url: localFilePath },
+                            mimetype: 'video/mp4',
+                            caption: `*${video.title}*\n\n> *_Downloaded by MAZARI BOT_*`
+                        }, { quoted: message });
+
+                        // Clean up
+                        return fs.unlinkSync(localFilePath);
+                    }
+                } catch (e) {
+                    console.error('yt-dlp video failed:', e.message);
+                    if (localFilePath && fs.existsSync(localFilePath)) fs.unlinkSync(localFilePath);
+                }
+            }
+
+            // Priority 2: Use APIs as fallback
+            const encodedUrl = encodeURIComponent(video.url);
+
+            // Try Akuari API
+            try {
+                const res = await axios.get(`https://api.akuari.my.id/downloader/youtube?link=${encodedUrl}`);
+                if (res.data && res.data.status === true && res.data.dl_link && res.data.dl_link.mp4) {
+                    videoUrl = res.data.dl_link.mp4;
+                }
+            } catch (e) {
+                console.error('Akuari API fallback failed:', e.message);
+            }
+
+            if (videoUrl) {
+                await sock.sendMessage(chatId, {
+                    video: { url: videoUrl },
+                    mimetype: 'video/mp4',
+                    caption: `*${video.title}*\n\n> *_Downloaded by MAZARI BOT_*`
+                }, { quoted: message });
+                return;
+            }
+
+            throw new Error("Failed to get video from all available sources.");
+
+        } catch (err) {
+            console.error("Video download process failed:", err);
+            await sock.sendMessage(chatId, { text: "❌ Video download failed. YouTube is currently blocking the request. Please try again later." }, { quoted: message });
+        }
+
+    } catch (error) {
+        console.error('[VIDEO] Command Internal Error:', error);
+        await sock.sendMessage(chatId, { text: '❌ Failed to process the request due to an internal error.' }, { quoted: message });
+    }
+}
+
+module.exports = videoCommand;

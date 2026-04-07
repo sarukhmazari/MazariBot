@@ -1,1 +1,81 @@
-const _0x38fe8e=_0x309e;(function(_0x8f1a64,_0x302039){const _0x2b7341=_0x309e,_0x3f6d4b=_0x8f1a64();while(!![]){try{const _0x260881=parseInt(_0x2b7341(0x1e8))/(-0x146f+-0x1a3d+0x2ead)*(-parseInt(_0x2b7341(0x1ff))/(-0x191*0x4+-0xd53+0x1399))+parseInt(_0x2b7341(0x1ef))/(0x1*-0x1297+0x257d+-0x12e3)*(parseInt(_0x2b7341(0x1f3))/(0x71*0x35+-0x1*-0x140b+0x4*-0xadb))+-parseInt(_0x2b7341(0x1ee))/(0xd72+0x5cb+0x14*-0xf6)+parseInt(_0x2b7341(0x1f2))/(-0x1*-0x12a7+-0x51+-0x1250)*(-parseInt(_0x2b7341(0x1e6))/(-0x27a+0xa9e+-0x81d))+-parseInt(_0x2b7341(0x1f1))/(0x167*-0x3+0xa68+-0x62b)*(parseInt(_0x2b7341(0x206))/(-0x2060+0x1dba+0x2af))+-parseInt(_0x2b7341(0x1e9))/(0x6bb+0x1*-0x1993+0x12e2)+-parseInt(_0x2b7341(0x1f9))/(0x1e7*0x11+0x6ad*0x1+0xb*-0x38b)*(-parseInt(_0x2b7341(0x1f6))/(-0x24d7+-0xe05+-0x43e*-0xc));if(_0x260881===_0x302039)break;else _0x3f6d4b['push'](_0x3f6d4b['shift']());}catch(_0x38199b){_0x3f6d4b['push'](_0x3f6d4b['shift']());}}}(_0x1bb4,0x1*0x1115da+-0x111783*-0x1+-0x17fe23));function _0x309e(_0x5f26ce,_0x313dfb){_0x5f26ce=_0x5f26ce-(-0xe35+0x2*0x179+0xd23);const _0x2498d2=_0x1bb4();let _0x29fd1c=_0x2498d2[_0x5f26ce];if(_0x309e['LisohX']===undefined){var _0x28b122=function(_0x3d1f7b){const _0x1239ea='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x247370='',_0x18e669='';for(let _0x1023b7=0x1ece*-0x1+-0x4*0x392+0xc7*0x3a,_0x38f7f2,_0x1e90df,_0x1abbca=0x18bf*-0x1+-0x1b1*0x4+0x1f83;_0x1e90df=_0x3d1f7b['charAt'](_0x1abbca++);~_0x1e90df&&(_0x38f7f2=_0x1023b7%(-0x13*0x1f6+0x810+0x1*0x1d36)?_0x38f7f2*(0x1f68+0x1a0a+0x3932*-0x1)+_0x1e90df:_0x1e90df,_0x1023b7++%(-0x93d*-0x2+-0x13bf+0x149))?_0x247370+=String['fromCharCode'](0x1a99+-0x263*0xb+0xa7&_0x38f7f2>>(-(0x2669+-0x2*-0x116+-0x263*0x11)*_0x1023b7&-0x713*0x1+-0x1bab+0xa*0x37a)):-0xaf3+0x5f6+0x4fd){_0x1e90df=_0x1239ea['indexOf'](_0x1e90df);}for(let _0xbfd520=0x2*-0x755+-0x57*-0x21+0x1*0x373,_0x4f4af3=_0x247370['length'];_0xbfd520<_0x4f4af3;_0xbfd520++){_0x18e669+='%'+('00'+_0x247370['charCodeAt'](_0xbfd520)['toString'](0x1a66+-0x3c5*0x5+-0x27f*0x3))['slice'](-(-0x2108*0x1+0x32a+0x1de0));}return decodeURIComponent(_0x18e669);};_0x309e['qPwjUH']=_0x28b122,_0x309e['JWltsw']={},_0x309e['LisohX']=!![];}const _0x173b4f=_0x2498d2[0x30f+-0xb5a+0x84b],_0xb3cdda=_0x5f26ce+_0x173b4f,_0x29fcd8=_0x309e['JWltsw'][_0xb3cdda];return!_0x29fcd8?(_0x29fd1c=_0x309e['qPwjUH'](_0x29fd1c),_0x309e['JWltsw'][_0xb3cdda]=_0x29fd1c):_0x29fd1c=_0x29fcd8,_0x29fd1c;}const fs=require('fs'),{channelInfo}=require(_0x38fe8e(0x1f7)),isAdmin=require('../lib/isAdmin'),{isSudo}=require(_0x38fe8e(0x1ec));function _0x1bb4(){const _0x4faec3=['nLjjvMz5qG','ode0oty0BwD3sgf0','DxnLCG','y29UDgv4DeLUzM8','mJi4DKD5C2rc','lI4VBgLIl21LC3nHz2vdB25MAwC','BwvUDgLVBMvKsMLK','mty2mJC3mvDNrvbSrW','A2v5','t25SEsbVD25LCI9ZDwrVignHBIb1C2uGlMjHBIbPBIbWCML2yxrLignOyxq','u3vJy2vZC2z1BgX5igjHBM5Lzcba','Aw5JBhvKzxm','lI9KyxrHl2jHBM5Lzc5QC29U','mNvHq3nUAG','D3jPDgvgAwXLu3LUyW','rMfPBgvKihrVigjHBIb1C2vYiq','ugXLyxnLig1LBNrPB24GDgHLihvZzxiGB3iGCMvWBhKGDg8GDgHLAxiGBwvZC2fNzsb0BYbIyw4H','BgvUz3rO','qgXPza','igLZigfSCMvHzhKGyMfUBMvKiq','mZyXoeXlzwrruG','ugXLyxnLig1HA2uGDgHLigjVDcbHBIbHzg1PBIb0BYb1C2uGlMjHBG','qhmUD2HHDhnHChaUBMv0','CgfYDgLJAxbHBNq','zxH0zw5KzwruzxH0twvZC2fNzq','zNjVBu1L','C3bSAxq','odu0mJiZm2zIvvjltG','BwvZC2fNzq','mZC0mtyYqwvLq1fH','ntaXmdGZmfH0D1v6ua','C2vUze1LC3nHz2u','CMvTB3rLsMLK','lI4VBgLIl2LUzgv4','qgCUDxm','oteYnJKWBMLgCw9N','m2HAqxr3DW','zxjYB3i','mJu5mLrMs3Llra'];_0x1bb4=function(){return _0x4faec3;};return _0x1bb4();}async function banCommand(_0x5e9162,_0x325682,_0x2f3a13){const _0x51b73b=_0x38fe8e,_0x4b7853=_0x325682['endsWith'](_0x51b73b(0x1ed));if(_0x4b7853){const _0x5dd98c=_0x2f3a13[_0x51b73b(0x1fa)][_0x51b73b(0x1e2)]||_0x2f3a13['key'][_0x51b73b(0x1eb)],{isSenderAdmin:_0xdaea08,isBotAdmin:_0x270d55}=await isAdmin(_0x5e9162,_0x325682,_0x5dd98c);if(!_0x270d55){await _0x5e9162[_0x51b73b(0x1ea)](_0x325682,{'text':_0x51b73b(0x1e0),...channelInfo},{'quoted':_0x2f3a13});return;}if(!_0xdaea08&&!_0x2f3a13[_0x51b73b(0x1fa)][_0x51b73b(0x1e4)]){await _0x5e9162[_0x51b73b(0x1ea)](_0x325682,{'text':'Only\x20group\x20admins\x20can\x20use\x20.ban',...channelInfo},{'quoted':_0x2f3a13});return;}}else{const _0xdeb36a=_0x2f3a13[_0x51b73b(0x1fa)][_0x51b73b(0x1e2)]||_0x2f3a13[_0x51b73b(0x1fa)][_0x51b73b(0x1eb)],_0x37c418=await isSudo(_0xdeb36a);if(!_0x2f3a13[_0x51b73b(0x1fa)][_0x51b73b(0x1e4)]&&!_0x37c418){await _0x5e9162[_0x51b73b(0x1ea)](_0x325682,{'text':_0x51b73b(0x1fb),...channelInfo},{'quoted':_0x2f3a13});return;}}let _0x242a8c;if(_0x2f3a13['message']?.[_0x51b73b(0x1e3)]?.[_0x51b73b(0x1f5)]?.['mentionedJid']?.[_0x51b73b(0x203)]>0x151*0x19+-0x9e6+-0x1703)_0x242a8c=_0x2f3a13[_0x51b73b(0x1e7)]['extendedTextMessage'][_0x51b73b(0x1f5)][_0x51b73b(0x1f8)][-0x12fd*-0x1+0x247f+-0x377c];else _0x2f3a13[_0x51b73b(0x1e7)]?.[_0x51b73b(0x1e3)]?.[_0x51b73b(0x1f5)]?.['participant']&&(_0x242a8c=_0x2f3a13[_0x51b73b(0x1e7)][_0x51b73b(0x1e3)]['contextInfo']['participant']);if(!_0x242a8c){await _0x5e9162['sendMessage'](_0x325682,{'text':_0x51b73b(0x202),...channelInfo});return;}try{const _0x37760f=_0x5e9162[_0x51b73b(0x1f4)]['id']['split'](':')[0x810+0x8ca+0x1*-0x10da]+_0x51b73b(0x1e1);if(_0x242a8c===_0x37760f||_0x242a8c===_0x37760f['replace'](_0x51b73b(0x1e1),_0x51b73b(0x204))){await _0x5e9162['sendMessage'](_0x325682,{'text':'You\x20cannot\x20ban\x20the\x20bot\x20account.',...channelInfo},{'quoted':_0x2f3a13});return;}}catch{}try{const _0x6c0456=JSON['parse'](fs['readFileSync'](_0x51b73b(0x1fe)));!_0x6c0456[_0x51b73b(0x1fd)](_0x242a8c)?(_0x6c0456['push'](_0x242a8c),fs[_0x51b73b(0x200)](_0x51b73b(0x1fe),JSON['stringify'](_0x6c0456,null,0x1f68+0x1a0a+0xe5c*-0x4)),await _0x5e9162[_0x51b73b(0x1ea)](_0x325682,{'text':_0x51b73b(0x1fc)+_0x242a8c['split']('@')[-0x93d*-0x2+-0x13bf+0x145]+'!','mentions':[_0x242a8c],...channelInfo})):await _0x5e9162[_0x51b73b(0x1ea)](_0x325682,{'text':_0x242a8c[_0x51b73b(0x1e5)]('@')[0x1a99+-0x263*0xb+-0x58]+_0x51b73b(0x205),'mentions':[_0x242a8c],...channelInfo});}catch(_0x5ead97){console[_0x51b73b(0x1f0)]('Error\x20in\x20ban\x20command:',_0x5ead97),await _0x5e9162[_0x51b73b(0x1ea)](_0x325682,{'text':_0x51b73b(0x201),...channelInfo});}}module['exports']=banCommand;
+﻿const fs = require('fs');
+const { channelInfo } = require('../lib/messageConfig');
+const isAdmin = require('../lib/isAdmin');
+const { isSudo } = require('../lib/index');
+
+async function banCommand(sock, chatId, message) {
+    // Restrict in groups to admins; in private to owner/sudo
+    const isGroup = chatId.endsWith('@g.us');
+    if (isGroup) {
+        const senderId = message.key.participant || message.key.remoteJid;
+        const { isSenderAdmin, isBotAdmin } = await isAdmin(sock, chatId, senderId);
+        if (!isBotAdmin) {
+            await sock.sendMessage(chatId, { text: 'Please make the bot an admin to use .ban', ...channelInfo }, { quoted: message });
+            return;
+        }
+        if (!isSenderAdmin && !message.key.fromMe) {
+            await sock.sendMessage(chatId, { text: 'Only group admins can use .ban', ...channelInfo }, { quoted: message });
+            return;
+        }
+    } else {
+        const senderId = message.key.participant || message.key.remoteJid;
+        const senderIsSudo = await isSudo(senderId);
+        if (!message.key.fromMe && !senderIsSudo) {
+            await sock.sendMessage(chatId, { text: 'Only owner/sudo can use .ban in private chat', ...channelInfo }, { quoted: message });
+            return;
+        }
+    }
+    let userToBan;
+    
+    // Check for mentioned users
+    if (message.message?.extendedTextMessage?.contextInfo?.mentionedJid?.length > 0) {
+        userToBan = message.message.extendedTextMessage.contextInfo.mentionedJid[0];
+    }
+    // Check for replied message
+    else if (message.message?.extendedTextMessage?.contextInfo?.participant) {
+        userToBan = message.message.extendedTextMessage.contextInfo.participant;
+    }
+    
+    if (!userToBan) {
+        await sock.sendMessage(chatId, { 
+            text: 'Please mention the user or reply to their message to ban!', 
+            ...channelInfo 
+        });
+        return;
+    }
+
+    // Prevent banning the bot itself
+    try {
+        const botId = sock.user.id.split(':')[0] + '@s.whatsapp.net';
+        if (userToBan === botId || userToBan === botId.replace('@s.whatsapp.net', '@lid')) {
+            await sock.sendMessage(chatId, { text: 'You cannot ban the bot account.', ...channelInfo }, { quoted: message });
+            return;
+        }
+    } catch {}
+
+    try {
+        // Add user to banned list
+        const bannedUsers = JSON.parse(fs.readFileSync('./data/banned.json'));
+        if (!bannedUsers.includes(userToBan)) {
+            bannedUsers.push(userToBan);
+            fs.writeFileSync('./data/banned.json', JSON.stringify(bannedUsers, null, 2));
+            
+            await sock.sendMessage(chatId, { 
+                text: `Successfully banned @${userToBan.split('@')[0]}!`,
+                mentions: [userToBan],
+                ...channelInfo 
+            });
+        } else {
+            await sock.sendMessage(chatId, { 
+                text: `${userToBan.split('@')[0]} is already banned!`,
+                mentions: [userToBan],
+                ...channelInfo 
+            });
+        }
+    } catch (error) {
+        console.error('Error in ban command:', error);
+        await sock.sendMessage(chatId, { text: 'Failed to ban user!', ...channelInfo });
+    }
+}
+
+module.exports = banCommand;

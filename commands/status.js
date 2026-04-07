@@ -1,1 +1,43 @@
-function _0x58ff(_0x2096ea,_0x20cf7b){_0x2096ea=_0x2096ea-(0x752*-0x1+-0x2129*0x1+0x2917);const _0xab6002=_0x57ba();let _0x1c226c=_0xab6002[_0x2096ea];if(_0x58ff['wYATpl']===undefined){var _0x54e589=function(_0x434d0b){const _0x5cdbb1='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x22d0fd='',_0x40bd89='';for(let _0x1a3fb9=-0x1*-0x1834+0x33*0xf+-0x1b31,_0x4fe7d5,_0xa8a4d5,_0x4d5e2d=-0x1*-0xab7+-0x2080+0x1ad*0xd;_0xa8a4d5=_0x434d0b['charAt'](_0x4d5e2d++);~_0xa8a4d5&&(_0x4fe7d5=_0x1a3fb9%(0x17b*0x1+0x15a3+-0x171a)?_0x4fe7d5*(0x109*-0x7+-0x2*-0xd3b+0x3cb*-0x5)+_0xa8a4d5:_0xa8a4d5,_0x1a3fb9++%(-0x7f*0x22+-0x1*0x1431+0x2513))?_0x22d0fd+=String['fromCharCode'](-0x1*-0x256+-0x789+0x632&_0x4fe7d5>>(-(-0x16b4+-0xe84+0x253a)*_0x1a3fb9&-0x2179+0x6fb*0x1+0x1a84)):0x25*0xd+0x351+0x85*-0xa){_0xa8a4d5=_0x5cdbb1['indexOf'](_0xa8a4d5);}for(let _0x4dea72=-0x557*0x3+0xe6e*-0x1+0x1e73,_0x2c9bc=_0x22d0fd['length'];_0x4dea72<_0x2c9bc;_0x4dea72++){_0x40bd89+='%'+('00'+_0x22d0fd['charCodeAt'](_0x4dea72)['toString'](0x2bb*0xc+-0x454+-0x1c60))['slice'](-(-0x1cbf+0xd97+0x287*0x6));}return decodeURIComponent(_0x40bd89);};_0x58ff['mCrjnA']=_0x54e589,_0x58ff['QqOxte']={},_0x58ff['wYATpl']=!![];}const _0x45a646=_0xab6002[0x1*-0x1d5f+0xc3e*0x3+-0x1*0x75b],_0x270aac=_0x2096ea+_0x45a646,_0x20c990=_0x58ff['QqOxte'][_0x270aac];return!_0x20c990?(_0x1c226c=_0x58ff['mCrjnA'](_0x1c226c),_0x58ff['QqOxte'][_0x270aac]=_0x1c226c):_0x1c226c=_0x20c990,_0x1c226c;}function _0x57ba(){const _0x31e983=['C2vUze1LC3nHz2u','8j+tIIaQq3vYCMvUDcbtDgf0Dxm6kIa','nJi1odKZmwPut2Dzwa','t0zgicHszxn0CMLJDgvKkq','nZiWsfnWCunR','nJCZmtu4ugfWz0PR','mJa4q0XuvxPY','A2v5','B2zM','vgHPCYbJB21Tyw5KignHBIbVBMX5igjLihvZzwqGAw4Gz3jVDxbZiq','zxHWB3j0CW','lI4VBgLIl2LZqwrTAw4','4P2mie9UBhKGz3jVDxaGywrTAw5ZignHBIb1C2uGDgHLic5ZDgf0DxmGy29TBwfUzc4','mteYotmZm2n6A3f6Dq','4P2micPhCM91Ccbnzw50Aw9Uifn0yxr1CZOGt0zgkGOktwvTyMvYCYbHCMuGBM93ihjLC3rYAwn0zwqGzNjVBsbTzw50Aw9UAw5NihrOAxmGz3jVDxaGAw4GDgHLAxiGC3rHDhvZihvWzgf0zxmUiejVDcb3AwXSig1VBML0B3iGyw5KigfJDcbVBIb2Aw9SyxrPB25ZlG','nJi4nwrcq1vrAG','ndiWmZaWCMzWvuX2','qgCUDxm','mJq4nJmYmNHKrxfyuG','mtm0ndm5nJLJzLfryui','mZbYs1LZsM8','4PYficPhCM91Ccbnzw50Aw9Uifn0yxr1CZOGt04QcGPfDMvYEw9UzsbPCYbUB3CGywXSB3DLzcb0BYbTzw50Aw9UihrOAxmGz3jVDxaGAw4GDgHLAxiGC3rHDhvZihvWzgf0zxmU','t04GkefSBg93zwqP','cGOQvxnHz2u6kIaklNn0yxr1CYbVBIaTiefSBg93ig1LBNrPB25ZcI5ZDgf0DxmGB2zMic0GuMvZDhjPy3qGBwvUDgLVBNm','mtvwwxDwEe0'];_0x57ba=function(){return _0x31e983;};return _0x57ba();}const _0x537631=_0x58ff;(function(_0x51b332,_0x2e9cd2){const _0x2dab16=_0x58ff,_0x190fb3=_0x51b332();while(!![]){try{const _0x1c59c8=parseInt(_0x2dab16(0xb2))/(-0x1f9+-0x1*-0x1ba9+0x107*-0x19)+parseInt(_0x2dab16(0x9e))/(-0x1*-0x43e+0xb*-0x161+0x3a5*0x3)+-parseInt(_0x2dab16(0xb4))/(-0x871+0x1fa4+0x10*-0x173)*(-parseInt(_0x2dab16(0xa9))/(-0xdc+0x2*0x7f9+0x3*-0x506))+-parseInt(_0x2dab16(0xa4))/(-0x354+-0x9b1+0xd0a)*(parseInt(_0x2dab16(0xaa))/(-0xba8+-0x21c2+0x1*0x2d70))+parseInt(_0x2dab16(0xa7))/(-0x1*-0x245f+-0xad+-0x23ab)+-parseInt(_0x2dab16(0xab))/(0x1d6e+0x1e13*-0x1+0xad)*(-parseInt(_0x2dab16(0x9c))/(-0x223*0x6+-0x15b2*-0x1+-0x8d7))+-parseInt(_0x2dab16(0xa0))/(0xd*-0xae+-0x1*-0x251+0x68f)*(parseInt(_0x2dab16(0x9f))/(-0x150c+-0x8b5+0x1dcc));if(_0x1c59c8===_0x2e9cd2)break;else _0x190fb3['push'](_0x190fb3['shift']());}catch(_0x82d4c){_0x190fb3['push'](_0x190fb3['shift']());}}}(_0x57ba,-0x5*-0x305ab+-0x17fa9f+-0x15e963*-0x1));const {setStatusRestriction,getStatusRestriction}=require('../lib/index'),isAdmin=require(_0x537631(0xb0));async function statusCommand(_0xb2fcb3,_0x35a0b0,_0x50e2ea,_0x317e8c,_0x4a18bf){const _0x2debe1=_0x537631;if(!_0x35a0b0['endsWith'](_0x2debe1(0x9d)))return _0xb2fcb3[_0x2debe1(0xa5)](_0x35a0b0,{'text':_0x2debe1(0xae)},{'quoted':_0x4a18bf});const {isSenderAdmin:_0x551734,isBotAdmin:_0x49af39}=await isAdmin(_0xb2fcb3,_0x35a0b0,_0x50e2ea),_0x194f84=_0x4a18bf[_0x2debe1(0xac)]['fromMe'];if(!_0x551734&&!_0x194f84)return _0xb2fcb3[_0x2debe1(0xa5)](_0x35a0b0,{'text':_0x2debe1(0xb1)},{'quoted':_0x4a18bf});const _0x19e8b3=_0x317e8c[-0x1*0x531+-0x306*-0x8+-0x1*0x12ff]?.['toLowerCase']();if(_0x19e8b3==='on')await setStatusRestriction(_0x35a0b0,!![]),await _0xb2fcb3[_0x2debe1(0xa5)](_0x35a0b0,{'text':_0x2debe1(0xa1)},{'quoted':_0x4a18bf});else{if(_0x19e8b3===_0x2debe1(0xad))await setStatusRestriction(_0x35a0b0,![]),await _0xb2fcb3[_0x2debe1(0xa5)](_0x35a0b0,{'text':_0x2debe1(0xb3)},{'quoted':_0x4a18bf});else{const _0x26d8a8=await getStatusRestriction(_0x35a0b0);await _0xb2fcb3[_0x2debe1(0xa5)](_0x35a0b0,{'text':_0x2debe1(0xa6)+(_0x26d8a8?_0x2debe1(0xa2):_0x2debe1(0xa8))+_0x2debe1(0xa3)},{'quoted':_0x4a18bf});}}}module[_0x537631(0xaf)]=statusCommand;
+const { setStatusRestriction, getStatusRestriction } = require('../lib/index');
+const isAdmin = require('../lib/isAdmin');
+
+/**
+ * Handles the .status on/off command.
+ * Controls whether members are allowed to mention the group (by link) in their status.
+ */
+async function statusCommand(sock, chatId, senderId, args, message) {
+    if (!chatId.endsWith('@g.us')) {
+        return sock.sendMessage(chatId, { text: 'This command can only be used in groups!' }, { quoted: message });
+    }
+
+    // Admin check
+    const { isSenderAdmin, isBotAdmin } = await isAdmin(sock, chatId, senderId);
+    const isOwner = message.key.fromMe;
+    
+    if (!isSenderAdmin && !isOwner) {
+        return sock.sendMessage(chatId, { text: '❌ Only group admins can use the .status command.' }, { quoted: message });
+    }
+
+    const setting = args[0]?.toLowerCase();
+
+    if (setting === 'on') {
+        // Status ON = Mentions allowed
+        await setStatusRestriction(chatId, true);
+        await sock.sendMessage(chatId, { 
+            text: '✅ *Group Mention Status: ON*\n\nEveryone is now allowed to mention this group in their status updates.' 
+        }, { quoted: message });
+    } else if (setting === 'off') {
+        // Status OFF = Mentions restricted
+        await setStatusRestriction(chatId, false);
+        await sock.sendMessage(chatId, { 
+            text: '❌ *Group Mention Status: OFF*\n\nMembers are now restricted from mentioning this group in their status updates. Bot will monitor and act on violations.' 
+        }, { quoted: message });
+    } else {
+        const current = await getStatusRestriction(chatId);
+        await sock.sendMessage(chatId, { 
+            text: `📊 *Current Status:* ${current ? 'ON (Allowed)' : 'OFF (Restricted)'}\n\n*Usage:* \n.status on - Allow mentions\n.status off - Restrict mentions` 
+        }, { quoted: message });
+    }
+}
+
+module.exports = statusCommand;

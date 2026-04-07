@@ -1,1 +1,231 @@
-const _0x5cae91=_0x2d8f;(function(_0x9a1a45,_0x20f7ef){const _0x352d9b=_0x2d8f,_0x40090d=_0x9a1a45();while(!![]){try{const _0xa8ddb0=parseInt(_0x352d9b(0x22d))/(0x14cc+-0x215e+0xc93)+-parseInt(_0x352d9b(0x1f3))/(-0x7ca+-0xa96+0x1a*0xb5)*(-parseInt(_0x352d9b(0x1f4))/(0x1*0x16bd+-0x59*0x3d+-0x185))+-parseInt(_0x352d9b(0x219))/(-0x1be5+0xf6e+0xc7b)*(-parseInt(_0x352d9b(0x208))/(0x5bf*0x5+0x46e+-0x2124))+parseInt(_0x352d9b(0x243))/(0x9*-0x288+0x2043+-0x327*0x3)+parseInt(_0x352d9b(0x1fc))/(0x21bd*-0x1+0x153+-0xb*-0x2f3)*(parseInt(_0x352d9b(0x229))/(-0x1486+0x527*0x2+-0x29*-0x40))+parseInt(_0x352d9b(0x224))/(-0x14d*-0xd+-0x17b0+0x6d0)+-parseInt(_0x352d9b(0x21d))/(0x2aa+0x1016+-0x12b6)*(parseInt(_0x352d9b(0x1f1))/(-0xa*-0xc7+0x5*0x1f+-0x856));if(_0xa8ddb0===_0x20f7ef)break;else _0x40090d['push'](_0x40090d['shift']());}catch(_0xc50711){_0x40090d['push'](_0x40090d['shift']());}}}(_0x25e5,0x2ad50+-0xdc381+0x18f5ab));const {exec}=require(_0x5cae91(0x237)),fs=require('fs'),path=require(_0x5cae91(0x222)),https=require(_0x5cae91(0x236)),settings=require(_0x5cae91(0x214)),isOwnerOrSudo=require(_0x5cae91(0x22a));function _0x2d8f(_0x240564,_0x1dc6d2){_0x240564=_0x240564-(-0x2030+-0x1d7e+0x1533*0x3);const _0x1864d3=_0x25e5();let _0x488786=_0x1864d3[_0x240564];if(_0x2d8f['fdhOtE']===undefined){var _0x410c54=function(_0x50784c){const _0x3293b1='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x133ac7='',_0x58e745='';for(let _0x25b24f=0x62*0x59+-0x127d*0x1+-0x1*0xf95,_0x38a151,_0x259f56,_0x30a70d=0x2*-0x805+0x33*0xbf+-0x1603;_0x259f56=_0x50784c['charAt'](_0x30a70d++);~_0x259f56&&(_0x38a151=_0x25b24f%(-0x15a7*-0x1+-0x15af+0x3*0x4)?_0x38a151*(0xf80+-0x102b*-0x2+-0x2*0x17cb)+_0x259f56:_0x259f56,_0x25b24f++%(-0xe42+-0x9c9+0x180f))?_0x133ac7+=String['fromCharCode'](0xad5*0x3+0xdc+-0xda*0x26&_0x38a151>>(-(0x1*0x202+0x73b+-0x93b)*_0x25b24f&0xa38+0x1444+-0x22d*0xe)):0x1a*0xab+-0x1374+-0x1*-0x216){_0x259f56=_0x3293b1['indexOf'](_0x259f56);}for(let _0x1b619b=0x1c26+-0x7a7+-0x147f,_0x5a2655=_0x133ac7['length'];_0x1b619b<_0x5a2655;_0x1b619b++){_0x58e745+='%'+('00'+_0x133ac7['charCodeAt'](_0x1b619b)['toString'](-0x275*-0x8+-0x26ab+0x1313))['slice'](-(0x1*-0xf48+-0x17a4+0x26ee));}return decodeURIComponent(_0x58e745);};_0x2d8f['SbxoEr']=_0x410c54,_0x2d8f['KQZVfk']={},_0x2d8f['fdhOtE']=!![];}const _0x33d9fe=_0x1864d3[0x1b97+0x2134+0x4f*-0xc5],_0x572982=_0x240564+_0x33d9fe,_0xa8ada4=_0x2d8f['KQZVfk'][_0x572982];return!_0xa8ada4?(_0x488786=_0x2d8f['SbxoEr'](_0x488786),_0x2d8f['KQZVfk'][_0x572982]=_0x488786):_0x488786=_0xa8ada4,_0x488786;}function run(_0x47ae7d){return new Promise((_0x7e319,_0x3500c2)=>{exec(_0x47ae7d,{'windowsHide':!![]},(_0x9e2505,_0x2b2d9c,_0x2eeb40)=>{const _0x1b94b0=_0x2d8f;if(_0x9e2505)return _0x3500c2(new Error((_0x2eeb40||_0x2b2d9c||_0x9e2505[_0x1b94b0(0x209)]||'')[_0x1b94b0(0x200)]()));_0x7e319((_0x2b2d9c||'')['toString']());});});}async function hasGitRepo(){const _0x203f9a=_0x5cae91,_0x1d092e=path[_0x203f9a(0x242)](process[_0x203f9a(0x23a)](),_0x203f9a(0x204));if(!fs[_0x203f9a(0x241)](_0x1d092e))return![];try{return await run('git\x20--version'),!![];}catch{return![];}}async function updateViaGit(){const _0x2e7bd9=_0x5cae91,_0x12d5c1=(await run(_0x2e7bd9(0x20f))[_0x2e7bd9(0x203)](()=>_0x2e7bd9(0x23f)))[_0x2e7bd9(0x1ec)]();await run(_0x2e7bd9(0x249));const _0x5eaf5d=(await run(_0x2e7bd9(0x23c)))[_0x2e7bd9(0x1ec)](),_0x324128=_0x12d5c1===_0x5eaf5d,_0x4510c9=_0x324128?'':await run(_0x2e7bd9(0x247)+_0x12d5c1+'..'+_0x5eaf5d)['catch'](()=>''),_0x18ddcb=_0x324128?'':await run(_0x2e7bd9(0x202)+_0x12d5c1+'\x20'+_0x5eaf5d)[_0x2e7bd9(0x203)](()=>'');return await run(_0x2e7bd9(0x244)+_0x5eaf5d),await run('git\x20clean\x20-fd'),{'oldRev':_0x12d5c1,'newRev':_0x5eaf5d,'alreadyUpToDate':_0x324128,'commits':_0x4510c9,'files':_0x18ddcb};}function downloadFile(_0x515c76,_0x583722,_0x3fe649=new Set()){return new Promise((_0x1d64a8,_0x53cb2e)=>{const _0x6c64fd=_0x2d8f;try{if(_0x3fe649['has'](_0x515c76)||_0x3fe649[_0x6c64fd(0x248)]>-0x1*-0x16d9+-0x1f13+0x83f*0x1)return _0x53cb2e(new Error(_0x6c64fd(0x233)));_0x3fe649['add'](_0x515c76);const _0x3e15f8=_0x515c76[_0x6c64fd(0x24b)](_0x6c64fd(0x211)),_0x240564=_0x3e15f8?require('https'):require(_0x6c64fd(0x20e)),_0x1dc6d2=_0x240564[_0x6c64fd(0x1f6)](_0x515c76,{'headers':{'User-Agent':'MazariBot-Updater/1.0','Accept':_0x6c64fd(0x21b)}},_0x1864d3=>{const _0x17a1d4=_0x6c64fd;if([-0x1*-0xf4d+-0xdb7*-0x1+-0x1bd7*0x1,0x20*-0x12a+-0x4*-0x3fa+-0x3c1*-0x6,0x18c0+-0x10e1+-0x6b0,0x1*-0xaf2+0x1751*-0x1+0x2376,0x3*0x731+0x1*-0x1875+0x416]['includes'](_0x1864d3[_0x17a1d4(0x20c)])){const _0x410c54=_0x1864d3[_0x17a1d4(0x21c)][_0x17a1d4(0x1f5)];if(!_0x410c54)return _0x53cb2e(new Error(_0x17a1d4(0x206)+_0x1864d3['statusCode']+'\x20without\x20Location'));const _0x33d9fe=new URL(_0x410c54,_0x515c76)['toString']();return _0x1864d3['resume'](),downloadFile(_0x33d9fe,_0x583722,_0x3fe649)[_0x17a1d4(0x21e)](_0x1d64a8)[_0x17a1d4(0x203)](_0x53cb2e);}if(_0x1864d3['statusCode']!==-0x1*0x21af+0xa38+-0x815*-0x3)return _0x53cb2e(new Error('HTTP\x20'+_0x1864d3[_0x17a1d4(0x20c)]));const _0x488786=fs[_0x17a1d4(0x23d)](_0x583722);_0x1864d3[_0x17a1d4(0x1f9)](_0x488786),_0x488786['on']('finish',()=>_0x488786[_0x17a1d4(0x227)](_0x1d64a8)),_0x488786['on']('error',_0x572982=>{const _0x1d24f2=_0x17a1d4;try{_0x488786[_0x1d24f2(0x227)](()=>{});}catch{}fs['unlink'](_0x583722,()=>_0x53cb2e(_0x572982));});});_0x1dc6d2['on'](_0x6c64fd(0x217),_0xa8ada4=>{fs['unlink'](_0x583722,()=>_0x53cb2e(_0xa8ada4));});}catch(_0x50784c){_0x53cb2e(_0x50784c);}});}async function extractZip(_0x3293b1,_0x133ac7){const _0x43fefd=_0x5cae91;if(process[_0x43fefd(0x240)]===_0x43fefd(0x20d)){const _0x58e745=_0x43fefd(0x22e)+_0x3293b1+_0x43fefd(0x215)+_0x133ac7['replace'](/\\/g,'/')+_0x43fefd(0x1f7);await run(_0x58e745);return;}try{await run(_0x43fefd(0x1f0)),await run(_0x43fefd(0x235)+_0x3293b1+_0x43fefd(0x230)+_0x133ac7+'\x27');return;}catch{}try{await run(_0x43fefd(0x207)),await run('7z\x20x\x20-y\x20\x27'+_0x3293b1+_0x43fefd(0x239)+_0x133ac7+'\x27');return;}catch{}try{await run(_0x43fefd(0x245)),await run('busybox\x20unzip\x20-o\x20\x27'+_0x3293b1+_0x43fefd(0x230)+_0x133ac7+'\x27');return;}catch{}throw new Error(_0x43fefd(0x23b));}function copyRecursive(_0x25b24f,_0x38a151,_0x259f56=[],_0x30a70d='',_0x1b619b=[]){const _0x17315c=_0x5cae91;if(!fs['existsSync'](_0x38a151))fs['mkdirSync'](_0x38a151,{'recursive':!![]});for(const _0x5a2655 of fs['readdirSync'](_0x25b24f)){if(_0x259f56['includes'](_0x5a2655))continue;const _0x4d2d67=path[_0x17315c(0x242)](_0x25b24f,_0x5a2655),_0x16bb13=path[_0x17315c(0x242)](_0x38a151,_0x5a2655),_0x19f2db=fs[_0x17315c(0x1fb)](_0x4d2d67);if(_0x19f2db[_0x17315c(0x226)]())copyRecursive(_0x4d2d67,_0x16bb13,_0x259f56,path[_0x17315c(0x242)](_0x30a70d,_0x5a2655),_0x1b619b);else{fs['copyFileSync'](_0x4d2d67,_0x16bb13);if(_0x1b619b)_0x1b619b['push'](path[_0x17315c(0x242)](_0x30a70d,_0x5a2655)[_0x17315c(0x23e)](/\\/g,'/'));}}}async function updateViaZip(_0x163d2c,_0x2ca564,_0x5efbad,_0x28bae4){const _0x11af60=_0x5cae91,_0x2f80dd=(_0x28bae4||settings[_0x11af60(0x228)]||process.env.UPDATE_ZIP_URL||'')[_0x11af60(0x1ec)]();if(!_0x2f80dd)throw new Error(_0x11af60(0x1eb));const _0x4c42ce=path['join'](process['cwd'](),_0x11af60(0x20b));if(!fs[_0x11af60(0x241)](_0x4c42ce))fs[_0x11af60(0x246)](_0x4c42ce,{'recursive':!![]});const _0x3b7382=path[_0x11af60(0x242)](_0x4c42ce,'update.zip');await downloadFile(_0x2f80dd,_0x3b7382);const _0x5d0bda=path['join'](_0x4c42ce,_0x11af60(0x1f8));if(fs['existsSync'](_0x5d0bda))fs[_0x11af60(0x216)](_0x5d0bda,{'recursive':!![],'force':!![]});await extractZip(_0x3b7382,_0x5d0bda);const [_0x328862]=fs[_0x11af60(0x1ef)](_0x5d0bda)['map'](_0x3cf319=>path[_0x11af60(0x242)](_0x5d0bda,_0x3cf319)),_0x152191=fs[_0x11af60(0x241)](_0x328862)&&fs[_0x11af60(0x1fb)](_0x328862)['isDirectory']()?_0x328862:_0x5d0bda,_0x38b262=[_0x11af60(0x234),_0x11af60(0x204),_0x11af60(0x24c),_0x11af60(0x20b),_0x11af60(0x21f),'temp',_0x11af60(0x1fa),_0x11af60(0x1ee)],_0x38539e=[];let _0x266b17=null,_0x4bc784=null;try{const _0x138bb7=require(_0x11af60(0x214));_0x266b17=_0x138bb7&&_0x138bb7[_0x11af60(0x220)]?String(_0x138bb7['ownerNumber']):null,_0x4bc784=_0x138bb7&&_0x138bb7[_0x11af60(0x20a)]?String(_0x138bb7[_0x11af60(0x20a)]):null;}catch{}copyRecursive(_0x152191,process[_0x11af60(0x23a)](),_0x38b262,'',_0x38539e);if(_0x266b17)try{const _0x5c4a5b=path[_0x11af60(0x242)](process['cwd'](),_0x11af60(0x218));if(fs[_0x11af60(0x241)](_0x5c4a5b)){let _0x134e88=fs[_0x11af60(0x225)](_0x5c4a5b,_0x11af60(0x201));_0x134e88=_0x134e88[_0x11af60(0x23e)](/ownerNumber:\s*'[^']*'/,_0x11af60(0x1ed)+_0x266b17+'\x27'),_0x4bc784&&(_0x134e88=_0x134e88[_0x11af60(0x23e)](/botOwner:\s*'[^']*'/,_0x11af60(0x231)+_0x4bc784+'\x27')),fs[_0x11af60(0x205)](_0x5c4a5b,_0x134e88);}}catch{}try{fs[_0x11af60(0x216)](_0x5d0bda,{'recursive':!![],'force':!![]});}catch{}try{fs['rmSync'](_0x3b7382,{'force':!![]});}catch{}return{'copiedFiles':_0x38539e};}async function restartProcess(_0x8ec52a,_0x24cf8c,_0x2c5f34){const _0x3a1d33=_0x5cae91;try{await _0x8ec52a[_0x3a1d33(0x210)](_0x24cf8c,{'text':'✅\x20Update\x20complete!\x20Restarting…'},{'quoted':_0x2c5f34});}catch{}try{await run('pm2\x20restart\x20all');return;}catch{}setTimeout(()=>{const _0x3f9215=_0x3a1d33;process[_0x3f9215(0x221)](0x1a*0xab+-0x1374+-0x1*-0x216);},0x1c26+-0x7a7+-0x128b);}async function updateCommand(_0xa63192,_0x314fda,_0x5eda0b,_0xf4f214){const _0xf7e12a=_0x5cae91,_0x25bbea=_0x5eda0b[_0xf7e12a(0x212)][_0xf7e12a(0x22f)]||_0x5eda0b['key'][_0xf7e12a(0x232)],_0x51abb3=await isOwnerOrSudo(_0x25bbea,_0xa63192,_0x314fda);if(!_0x5eda0b[_0xf7e12a(0x212)][_0xf7e12a(0x1f2)]&&!_0x51abb3){await _0xa63192[_0xf7e12a(0x210)](_0x314fda,{'text':_0xf7e12a(0x24a)},{'quoted':_0x5eda0b});return;}try{await _0xa63192[_0xf7e12a(0x210)](_0x314fda,{'text':_0xf7e12a(0x1fd)},{'quoted':_0x5eda0b});if(await hasGitRepo()){const {oldRev:_0x2369a7,newRev:_0x3d9363,alreadyUpToDate:_0x30d04b,commits:_0x578f31,files:_0x37b970}=await updateViaGit(),_0x39237d=_0x30d04b?_0xf7e12a(0x21a)+_0x3d9363:_0xf7e12a(0x22b)+_0x3d9363;console[_0xf7e12a(0x213)]('[update]\x20summary\x20generated'),await run('npm\x20install\x20--no-audit\x20--no-fund');}else{const {copiedFiles:_0x59019d}=await updateViaZip(_0xa63192,_0x314fda,_0x5eda0b,_0xf4f214);}try{const _0x736d79=require(_0xf7e12a(0x214))[_0xf7e12a(0x22c)]||'';await _0xa63192[_0xf7e12a(0x210)](_0x314fda,{'text':'✅\x20Update\x20done.\x20Restarting…'},{'quoted':_0x5eda0b});}catch{await _0xa63192[_0xf7e12a(0x210)](_0x314fda,{'text':_0xf7e12a(0x223)},{'quoted':_0x5eda0b});}await restartProcess(_0xa63192,_0x314fda,_0x5eda0b);}catch(_0x3ea8cb){console['error'](_0xf7e12a(0x1fe),_0x3ea8cb),await _0xa63192[_0xf7e12a(0x210)](_0x314fda,{'text':_0xf7e12a(0x1ff)+String(_0x3ea8cb[_0xf7e12a(0x209)]||_0x3ea8cb)},{'quoted':_0x5eda0b});}}module[_0x5cae91(0x238)]=updateCommand;function _0x25e5(){const _0x367b1f=['nda2mJe1oxfVy0v2za','CMvHzezPBgvtEw5J','AxneAxjLy3rVCNK','y2XVC2u','DxbKyxrLwMLWvxjS','mtqYnJy0oeH4BLHIyW','lI4VBgLIl2LZt3DUzxi','4PYfifvWzgf0zwqGDg8G','DMvYC2LVBG','mJa2ndG1vKLcrurW','Cg93zxjZAgvSBcaTtM9qCM9MAwXLic1dB21Tyw5KicjfEhbHBMqTqxjJAgL2zsaTugf0AcaN','CgfYDgLJAxbHBNq','jYaTzcaN','yM90t3DUzxi6icC','CMvTB3rLsMLK','vg9Vig1HBNKGCMvKAxjLy3rZ','BM9Kzv9TB2r1BgvZ','Dw56AxaGlw8GjW','Ahr0Chm','y2HPBgrFChjVy2vZCW','zxHWB3j0CW','jYaTBYC','y3DK','tM8GC3LZDgvTihvUEMLWihrVB2WGzM91BMqGkhvUEMLWlZD6l2j1C3LIB3GPlIbhAxqGBw9KzsbPCYbYzwnVBw1LBMrLzcbVBIb0AgLZihbHBMvSlG','z2L0ihjLDI1WyxjZzsbVCMLNAw4VBwfPBG','y3jLyxrLv3jPDgvtDhjLyw0','CMvWBgfJzq','Dw5RBM93BG','CgXHDgzVCM0','zxHPC3rZu3LUyW','AM9PBG','ndy0nda5mhDZtfjkEa','z2L0ihjLC2v0ic0TAgfYzca','yNvZEwjVEcb1BNPPCcaTAa','BwTKAxjtEw5J','z2L0igXVzYaTlxbYzxr0Et1MB3jTyxq6iIvOicvZicGLyw4PiIa','C2L6zq','z2L0igzLDgnOic0TywXSic0TChj1BMu','t25SEsbIB3qGB3DUzxiGB3iGC3vKBYbJyw4GDxnLic51CgrHDgu','C3rHCNrZv2L0Aa','C2vZC2LVBG','tM8GwKLqifvstcbJB25MAwD1CMvKlIbtzxqGC2v0DgLUz3mUDxbKyxrLwMLWvxjSig9Yifvqrefurv9AsvbFvvjmigvUDI4','DhjPBq','B3DUzxjoDw1Izxi6icC','yMfPBgv5C19ZDg9Yzs5QC29U','CMvHzgrPCLn5BMm','y29TBwfUzcaTDIb1BNPPCa','nJuZode2oxrrwLHLuq','zNjVBu1L','nJK0BK52tu5l','otiZn1vlzwPXtW','Bg9JyxrPB24','z2v0','jYaTrM9Yy2uI','DxbKyxrLx2v4DhjHy3q','CgLWzq','zgf0yq','Bhn0yxrtEw5J','mJH1BMHQv3u','8j+uHcbvCgrHDgLUzYb0AguGyM90lcbWBgvHC2uGD2fPDokaPG','vxbKyxrLigzHAwXLzdO','4P2mifvWzgf0zsbMywLSzwq6cG','Dg9tDhjPBMC','DxrMoa','z2L0igrPzMyGls1Uyw1Llxn0yxr1CYa','y2f0y2G','lMDPDa','D3jPDgvgAwXLu3LUyW','sfruuca','y29TBwfUzcaTDIa3EG','ndbZvNnfEgS','BwvZC2fNzq','yM90t3DUzxi','Dg1W','C3rHDhvZq29Kzq','D2LUmZi','Ahr0Ca','z2L0ihjLDI1WyxjZzsbirufe','C2vUze1LC3nHz2u','Ahr0Chm6lY8','A2v5','Bg9N','lI4VC2v0DgLUz3m','jYaTrgvZDgLUyxrPB25qyxrOicC','CM1tEw5J','zxjYB3i','C2v0DgLUz3mUANm','nJmWotmYCwDquu9m','4PYfiefSCMvHzhKGDxaGDg8Gzgf0ztOG','kI8Q','AgvHzgvYCW','nJblvKHeDeG','DgHLBG','Dg1WlW','B3DUzxjoDw1Izxi','zxHPDa','Cgf0Aa','4PYfifjLC3rHCMvKifn1y2nLC3nMDwXSEqOGvhLWzsaUCgLUzYb0BYbJAgvJAYbSyxrLC3qGDMvYC2LVBI4'];_0x25e5=function(){return _0x367b1f;};return _0x25e5();}
+const { exec } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+const https = require('https');
+const settings = require('../settings');
+const isOwnerOrSudo = require('../lib/isOwner');
+
+function run(cmd) {
+    return new Promise((resolve, reject) => {
+        exec(cmd, { windowsHide: true }, (err, stdout, stderr) => {
+            if (err) return reject(new Error((stderr || stdout || err.message || '').toString()));
+            resolve((stdout || '').toString());
+        });
+    });
+}
+
+async function hasGitRepo() {
+    const gitDir = path.join(process.cwd(), '.git');
+    if (!fs.existsSync(gitDir)) return false;
+    try {
+        await run('git --version');
+        return true;
+    } catch {
+        return false;
+    }
+}
+
+async function updateViaGit() {
+    const oldRev = (await run('git rev-parse HEAD').catch(() => 'unknown')).trim();
+    await run('git fetch --all --prune');
+    const newRev = (await run('git rev-parse origin/main')).trim();
+    const alreadyUpToDate = oldRev === newRev;
+    const commits = alreadyUpToDate ? '' : await run(`git log --pretty=format:"%h %s (%an)" ${oldRev}..${newRev}`).catch(() => '');
+    const files = alreadyUpToDate ? '' : await run(`git diff --name-status ${oldRev} ${newRev}`).catch(() => '');
+    await run(`git reset --hard ${newRev}`);
+    await run('git clean -fd');
+    return { oldRev, newRev, alreadyUpToDate, commits, files };
+}
+
+function downloadFile(url, dest, visited = new Set()) {
+    return new Promise((resolve, reject) => {
+        try {
+            // Avoid infinite redirect loops
+            if (visited.has(url) || visited.size > 5) {
+                return reject(new Error('Too many redirects'));
+            }
+            visited.add(url);
+
+            const useHttps = url.startsWith('https://');
+            const client = useHttps ? require('https') : require('http');
+            const req = client.get(url, {
+                headers: {
+                    'User-Agent': 'MazariBot-Updater/1.0',
+                    'Accept': '*/*'
+                }
+            }, res => {
+                // Handle redirects
+                if ([301, 302, 303, 307, 308].includes(res.statusCode)) {
+                    const location = res.headers.location;
+                    if (!location) return reject(new Error(`HTTP ${res.statusCode} without Location`));
+                    const nextUrl = new URL(location, url).toString();
+                    res.resume();
+                    return downloadFile(nextUrl, dest, visited).then(resolve).catch(reject);
+                }
+
+                if (res.statusCode !== 200) {
+                    return reject(new Error(`HTTP ${res.statusCode}`));
+                }
+
+                const file = fs.createWriteStream(dest);
+                res.pipe(file);
+                file.on('finish', () => file.close(resolve));
+                file.on('error', err => {
+                    try { file.close(() => {}); } catch {}
+                    fs.unlink(dest, () => reject(err));
+                });
+            });
+            req.on('error', err => {
+                fs.unlink(dest, () => reject(err));
+            });
+        } catch (e) {
+            reject(e);
+        }
+    });
+}
+
+async function extractZip(zipPath, outDir) {
+    // Try to use platform tools; no extra npm modules required
+    if (process.platform === 'win32') {
+        const cmd = `powershell -NoProfile -Command "Expand-Archive -Path '${zipPath}' -DestinationPath '${outDir.replace(/\\/g, '/')}' -Force"`;
+        await run(cmd);
+        return;
+    }
+    // Linux/mac: try unzip, else 7z, else busybox unzip
+    try {
+        await run('command -v unzip');
+        await run(`unzip -o '${zipPath}' -d '${outDir}'`);
+        return;
+    } catch {}
+    try {
+        await run('command -v 7z');
+        await run(`7z x -y '${zipPath}' -o'${outDir}'`);
+        return;
+    } catch {}
+    try {
+        await run('busybox unzip -h');
+        await run(`busybox unzip -o '${zipPath}' -d '${outDir}'`);
+        return;
+    } catch {}
+    throw new Error("No system unzip tool found (unzip/7z/busybox). Git mode is recommended on this panel.");
+}
+
+function copyRecursive(src, dest, ignore = [], relative = '', outList = []) {
+    if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+    for (const entry of fs.readdirSync(src)) {
+        if (ignore.includes(entry)) continue;
+        const s = path.join(src, entry);
+        const d = path.join(dest, entry);
+        const stat = fs.lstatSync(s);
+        if (stat.isDirectory()) {
+            copyRecursive(s, d, ignore, path.join(relative, entry), outList);
+        } else {
+            fs.copyFileSync(s, d);
+            if (outList) outList.push(path.join(relative, entry).replace(/\\/g, '/'));
+        }
+    }
+}
+
+async function updateViaZip(sock, chatId, message, zipOverride) {
+    const zipUrl = (zipOverride || settings.updateZipUrl || process.env.UPDATE_ZIP_URL || '').trim();
+    if (!zipUrl) {
+        throw new Error('No ZIP URL configured. Set settings.updateZipUrl or UPDATE_ZIP_URL env.');
+    }
+    const tmpDir = path.join(process.cwd(), 'tmp');
+    if (!fs.existsSync(tmpDir)) fs.mkdirSync(tmpDir, { recursive: true });
+    const zipPath = path.join(tmpDir, 'update.zip');
+    await downloadFile(zipUrl, zipPath);
+    const extractTo = path.join(tmpDir, 'update_extract');
+    if (fs.existsSync(extractTo)) fs.rmSync(extractTo, { recursive: true, force: true });
+    await extractZip(zipPath, extractTo);
+
+    // Find the top-level extracted folder (GitHub zips create REPO-branch folder)
+    const [root] = fs.readdirSync(extractTo).map(n => path.join(extractTo, n));
+    const srcRoot = fs.existsSync(root) && fs.lstatSync(root).isDirectory() ? root : extractTo;
+
+    // Copy over while preserving runtime dirs/files
+    const ignore = ['node_modules', '.git', 'session', 'tmp', 'tmp/', 'temp', 'data', 'baileys_store.json'];
+    const copied = [];
+    // Preserve ownerNumber from existing settings.js if present
+    let preservedOwner = null;
+    let preservedBotOwner = null;
+    try {
+        const currentSettings = require('../settings');
+        preservedOwner = currentSettings && currentSettings.ownerNumber ? String(currentSettings.ownerNumber) : null;
+        preservedBotOwner = currentSettings && currentSettings.botOwner ? String(currentSettings.botOwner) : null;
+    } catch {}
+    copyRecursive(srcRoot, process.cwd(), ignore, '', copied);
+    if (preservedOwner) {
+        try {
+            const settingsPath = path.join(process.cwd(), 'settings.js');
+            if (fs.existsSync(settingsPath)) {
+                let text = fs.readFileSync(settingsPath, 'utf8');
+                text = text.replace(/ownerNumber:\s*'[^']*'/, `ownerNumber: '${preservedOwner}'`);
+                if (preservedBotOwner) {
+                    text = text.replace(/botOwner:\s*'[^']*'/, `botOwner: '${preservedBotOwner}'`);
+                }
+                fs.writeFileSync(settingsPath, text);
+            }
+        } catch {}
+    }
+    // Cleanup extracted directory
+    try { fs.rmSync(extractTo, { recursive: true, force: true }); } catch {}
+    try { fs.rmSync(zipPath, { force: true }); } catch {}
+    return { copiedFiles: copied };
+}
+
+async function restartProcess(sock, chatId, message) {
+    try {
+        await sock.sendMessage(chatId, { text: '✅ Update complete! Restarting…' }, { quoted: message });
+    } catch {}
+    try {
+        // Preferred: PM2
+        await run('pm2 restart all');
+        return;
+    } catch {}
+    // Panels usually auto-restart when the process exits.
+    // Exit after a short delay to allow the above message to flush.
+    setTimeout(() => {
+        process.exit(0);
+    }, 500);
+}
+
+async function updateCommand(sock, chatId, message, zipOverride) {
+    const senderId = message.key.participant || message.key.remoteJid;
+    const isOwner = await isOwnerOrSudo(senderId, sock, chatId);
+    
+    if (!message.key.fromMe && !isOwner) {
+        await sock.sendMessage(chatId, { text: 'Only bot owner or sudo can use .update' }, { quoted: message });
+        return;
+    }
+    try {
+        // Minimal UX
+        await sock.sendMessage(chatId, { text: '🔄 Updating the bot, please wait…' }, { quoted: message });
+        if (await hasGitRepo()) {
+            // silent
+            const { oldRev, newRev, alreadyUpToDate, commits, files } = await updateViaGit();
+            // Short message only: version info
+            const summary = alreadyUpToDate ? `✅ Already up to date: ${newRev}` : `✅ Updated to ${newRev}`;
+            console.log('[update] summary generated');
+            // silent
+            await run('npm install --no-audit --no-fund');
+        } else {
+            const { copiedFiles } = await updateViaZip(sock, chatId, message, zipOverride);
+            // silent
+        }
+        try {
+            const v = require('../settings').version || '';
+            await sock.sendMessage(chatId, { text: `✅ Update done. Restarting…` }, { quoted: message });
+        } catch {
+            await sock.sendMessage(chatId, { text: '✅ Restared Successfully\n Type .ping to check latest version.' }, { quoted: message });
+        }
+        await restartProcess(sock, chatId, message);
+    } catch (err) {
+        console.error('Update failed:', err);
+        await sock.sendMessage(chatId, { text: `❌ Update failed:\n${String(err.message || err)}` }, { quoted: message });
+    }
+}
+
+module.exports = updateCommand;
+
+

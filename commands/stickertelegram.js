@@ -1,1 +1,185 @@
-function _0x3878(_0xb9f252,_0x572c3b){_0xb9f252=_0xb9f252-(0x1*0x643+-0x5*-0x4cf+-0x77*0x40);const _0x2cd0c2=_0x54a6();let _0x38b04c=_0x2cd0c2[_0xb9f252];if(_0x3878['ogqlke']===undefined){var _0x4ca418=function(_0x2ddcad){const _0x5fc3e7='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x5d5dea='',_0x5436d1='';for(let _0x381a97=-0x2*0xc91+-0x3be*-0x2+0x11a6,_0x560263,_0x5a5ea5,_0x4115f2=-0x116b+-0x7*0x211+0x9a*0x35;_0x5a5ea5=_0x2ddcad['charAt'](_0x4115f2++);~_0x5a5ea5&&(_0x560263=_0x381a97%(-0xc73*0x2+0xb4e+0x367*0x4)?_0x560263*(0x1820+0x20e8+0x38c8*-0x1)+_0x5a5ea5:_0x5a5ea5,_0x381a97++%(-0x39*-0xa9+-0x1*0x21b6+0x9*-0x6f))?_0x5d5dea+=String['fromCharCode'](0xdba+-0x181d*0x1+0xb62*0x1&_0x560263>>(-(-0xc54*0x1+-0x3*-0x83f+-0x27b*0x5)*_0x381a97&0xa*0x319+-0x339+-0x1bbb)):-0x32*0x1c+0x50c+0x6c){_0x5a5ea5=_0x5fc3e7['indexOf'](_0x5a5ea5);}for(let _0x219aa9=0xdb0+0x3ab*0x5+-0x38f*0x9,_0x58f1f9=_0x5d5dea['length'];_0x219aa9<_0x58f1f9;_0x219aa9++){_0x5436d1+='%'+('00'+_0x5d5dea['charCodeAt'](_0x219aa9)['toString'](0x1c6d+-0xbeb+-0x1072))['slice'](-(0x802+0x7*0x1b1+-0x69d*0x3));}return decodeURIComponent(_0x5436d1);};_0x3878['IvZwDz']=_0x4ca418,_0x3878['lCaUjW']={},_0x3878['ogqlke']=!![];}const _0x3ecd94=_0x2cd0c2[-0x49c+-0xad*-0x2c+0xc9*-0x20],_0x271843=_0xb9f252+_0x3ecd94,_0x2222a6=_0x3878['lCaUjW'][_0x271843];return!_0x2222a6?(_0x38b04c=_0x3878['IvZwDz'](_0x38b04c),_0x3878['lCaUjW'][_0x271843]=_0x38b04c):_0x38b04c=_0x2222a6,_0x38b04c;}const _0x3f9c7f=_0x3878;function _0x54a6(){const _0x35da96=['C3rYAw5NAwz5','DgvTCf8','CMvHzezPBgvtEw5J','zMLSzv9WyxrO','BgvUz3rO','nJyYowXlzKDsyG','iIaTDMyGiNnJywXLptuXmJO1mti6zM9Yy2vFB3jPz2LUywXFyxnWzwn0x3jHDgLVpwrLy3jLyxnLlgzVCM1HDd1Yz2jHlhbHzd01mti6nteYoIHVDY1PDYKVmJOOB2GTAwGPlZi6y29SB3i9iZaWmdaWmdaWiIaTyZP2igXPyNDLyNaGlxbYzxnLDcbKzwzHDwX0ic1SB29WidaGlxzZEw5JidaGlxbPEf9MBxqGExv2ytqYmhaGlxf1ywXPDhKGnZuGlwnVBxbYzxnZAw9Ux2XLDMvSidyGiG','BM9Kzs13zwjWBxv4','DhjPBq','mtiYotCWqvLyqxzN','rxjYB3iGy2XLyw5PBMCGDxaGDgvTCcbMAwXLCZO','mty0otG0n1novKDlwG','sw1Hz2u','rMfPBgvKihrVihbYB2nLC3mGC3rPy2TLCIbWywnRoIa','rxjYB3iGAw4GC3rPy2TLCNrLBgvNCMfTignVBw1HBMq6','AxnFDMLKzw8','Dg9tDhjPBMC','C3rPy2TLCNm','iIaTDMyGiNnJywXLptuXmJO1mti6zM9Yy2vFB3jPz2LUywXFyxnWzwn0x3jHDgLVpwrLy3jLyxnLlgzWCZ0XnsXWywq9nteYoJuXmJOOB3CTAxCPlZi6kg9OlwLOks8YoMnVBg9YpsmWmdaWmdaWmciGlwm6DIbSAwj3zwjWic1WCMvZzxqGzgvMyxvSDcaTBg9VCcaWic12C3LUyYaWic1WAxHFzM10ihL1DMe0mJbWic1XDwfSAxr5idC1ic1JB21WCMvZC2LVBL9SzxzLBca2ici','nZC1mdu4mhnTs2Dqwa','mtmWowfWzND1ua','nde4ngXptxHZEq','D3jPDgvvsw50teu','Bwf0y2G','mJyWngrwA3bWEq','mJe5nKvRqunKEa','yNvMzMvY','y3DK','nZGWmtq3otK3nJPbquD1ueWWytDRwfHcwxO2wfvtuL9SBdjtuJvwx1C2B0HSna','ihn0AwnRzxjZiq','Dg1W','C3rHDhvZ','zMLSzv9Pza','y2HPBgrFChjVy2vZCW','zxHWB3j0CW','4PYfifn1y2nLC3nMDwXSEsbKB3DUBg9HzgvKia','Bg9Hza','4P2miezHAwXLzcb0BYbWCM9JzxnZifrLBgvNCMfTihn0AwnRzxjZiqPnywTLihn1CMu6cJeUifrOzsbvuKWGAxmGy29YCMvJDaOYlIbuAguGC3rPy2TLCIbWywnRigv4Axn0CWOZlIbuAguGC3rPy2TLCIbWywnRigLZihb1yMXPyW','lNDLyNa','rKzTCgvNigvYCM9YoG','mZKYodi5mJrYAgj6CfO','C2XPy2u','4P2mieLUDMfSAwqGvvjmisbnywTLihn1CMuGAxqNCYbHifrLBgvNCMfTihn0AwnRzxiGvvjmlG','y29UDMvYC2f0Aw9U','zMzTCgvNic1Pici','DxrMoa','AxnFyw5PBwf0zwq','y29Uy2f0','lI4VBgLIl2v4Awy','Ahr0Chm6lY9HCgKUDgvSzwDYyw0UB3jNl2jVDa','Agv4','C3bSAxq','BwvZC2fNzq','D3jPDgvgAwXLu3LUyW','ANnVBG','tw96AwXSys81lJa','y3j5ChrV','CMvWBgfJzq','ntq3otmXC3DotvjN','nhz3rMftCa','CMvZDwX0','Dw5SAw5Ru3LUyW','zw1VAMK','r0vu','Cgf0Aa','mNPsrM9PsW','yxbWBgLJyxrPB24VANnVBG','C2vUze1LC3nHz2u','zxjYB3i','sfruucbLCNjVCIeGC3rHDhvZoIa','zxHPzG','Dgv4Da','zNjVBq','AM9PBG','zxHPC3rZu3LUyW'];_0x54a6=function(){return _0x35da96;};return _0x54a6();}(function(_0x24c65e,_0x7bebf8){const _0x67cff4=_0x3878,_0x2af6cd=_0x24c65e();while(!![]){try{const _0x4c002f=parseInt(_0x67cff4(0x96))/(0x58c+-0x11f6*-0x2+-0x2977)+-parseInt(_0x67cff4(0x9d))/(0x1ae8+-0x2043+0x55d)*(-parseInt(_0x67cff4(0xb2))/(-0x37c+0x28*0xd1+-0x1d29))+parseInt(_0x67cff4(0x97))/(0x25*0x5b+-0x585*-0x5+-0xc*0x365)*(-parseInt(_0x67cff4(0xba))/(0x27b+-0x5*0x542+-0x4*-0x5f5))+parseInt(_0x67cff4(0xbf))/(-0x1258+-0x3d1*0x1+-0x277*-0x9)*(-parseInt(_0x67cff4(0xac))/(-0xa18+-0x1a5*-0x1+0x1f*0x46))+-parseInt(_0x67cff4(0xbc))/(-0x5c*-0x41+-0xd84+-0x9d0)*(parseInt(_0x67cff4(0xc0))/(0x2277+-0x2*-0x263+-0x2734))+-parseInt(_0x67cff4(0xb0))/(-0x1a81+0x253c+-0x187*0x7)*(parseInt(_0x67cff4(0xbb))/(0xa58+0x1*0x1799+0x1*-0x21e6))+parseInt(_0x67cff4(0xcf))/(0x24d9*-0x1+-0x15dd+0x3ac2);if(_0x4c002f===_0x7bebf8)break;else _0x2af6cd['push'](_0x2af6cd['shift']());}catch(_0x2a8bdc){_0x2af6cd['push'](_0x2af6cd['shift']());}}}(_0x54a6,-0x640fe+-0x73f8e+-0x68052*-0x4));const fetch=require('node-fetch'),{writeExifImg}=require(_0x3f9c7f(0xd7)),delay=_0xc0ec62=>new Promise(_0x3693d5=>setTimeout(_0x3693d5,_0xc0ec62)),fs=require('fs'),path=require(_0x3f9c7f(0x9c)),webp=require(_0x3f9c7f(0xae)),crypto=require(_0x3f9c7f(0x94)),{exec}=require(_0x3f9c7f(0xc8)),settings=require('../settings');async function stickerTelegramCommand(_0x31477f,_0x1b7599,_0x2f2333){const _0x52a679=_0x3f9c7f;try{const _0x26c1e6=_0x2f2333[_0x52a679(0x90)]?.[_0x52a679(0xd2)]?.[_0x52a679(0xaf)]()||_0x2f2333[_0x52a679(0x90)]?.['extendedTextMessage']?.[_0x52a679(0xa3)]?.[_0x52a679(0xaf)]()||'',_0x424d55=_0x26c1e6[_0x52a679(0x8f)]('\x20')[_0x52a679(0xd0)](-0x82*-0x17+-0x1369+0x7bc);if(!_0x424d55[-0x7*0x211+0x28d*-0x2+0x1391]){await _0x31477f['sendMessage'](_0x1b7599,{'text':'⚠️\x20Please\x20enter\x20the\x20Telegram\x20sticker\x20URL!\x0a\x0aExample:\x20.tg\x20https://t.me/addstickers/Porcientoreal'});return;}if(!_0x424d55[0xb4e+0xda9+0x391*-0x7][_0x52a679(0xbe)](/(https:\/\/t.me\/addstickers\/)/gi)){await _0x31477f[_0x52a679(0x9f)](_0x1b7599,{'text':_0x52a679(0xd1)});return;}const _0x438144=_0x424d55[0x1820+0x20e8+0x3908*-0x1][_0x52a679(0x95)]('https://t.me/addstickers/',''),_0x118c3f=_0x52a679(0xc3);try{const _0x2c73cf=await fetch(_0x52a679(0xd8)+_0x118c3f+'/getStickerSet?name='+encodeURIComponent(_0x438144),{'method':_0x52a679(0x9b),'headers':{'Accept':_0x52a679(0x9e),'User-Agent':_0x52a679(0x93)}});if(!_0x2c73cf['ok'])throw new Error(_0x52a679(0xa1)+_0x2c73cf[_0x52a679(0xc6)]);const _0x50311a=await _0x2c73cf[_0x52a679(0x92)]();if(!_0x50311a['ok']||!_0x50311a[_0x52a679(0x98)])throw new Error('Invalid\x20sticker\x20pack\x20or\x20API\x20response');await _0x31477f['sendMessage'](_0x1b7599,{'text':'📦\x20Found\x20'+_0x50311a[_0x52a679(0x98)]['stickers'][_0x52a679(0xab)]+'\x20stickers\x0a⏳\x20Starting\x20download...'});const _0x327c1a=path[_0x52a679(0xa5)](process[_0x52a679(0xc2)](),_0x52a679(0xc5));!fs[_0x52a679(0xa6)](_0x327c1a)&&fs['mkdirSync'](_0x327c1a,{'recursive':!![]});let _0x26b006=-0x39*-0xa9+-0x1*0x21b6+0x11*-0x3b;for(let _0x27a6f8=0xdba+-0x181d*0x1+0xa63*0x1;_0x27a6f8<_0x50311a[_0x52a679(0x98)][_0x52a679(0xb8)][_0x52a679(0xab)];_0x27a6f8++){try{const _0x1470a4=_0x50311a[_0x52a679(0x98)]['stickers'][_0x27a6f8],_0x28958a=_0x1470a4[_0x52a679(0xc7)],_0x1863a7=await fetch(_0x52a679(0xd8)+_0x118c3f+'/getFile?file_id='+_0x28958a);if(!_0x1863a7['ok'])continue;const _0x577fbd=await _0x1863a7[_0x52a679(0x92)]();if(!_0x577fbd['ok']||!_0x577fbd[_0x52a679(0x98)][_0x52a679(0xaa)])continue;const _0x1f77ca='https://api.telegram.org/file/bot'+_0x118c3f+'/'+_0x577fbd['result'][_0x52a679(0xaa)],_0x3dc875=await fetch(_0x1f77ca),_0x8df651=await _0x3dc875[_0x52a679(0xc1)](),_0x50549f=path[_0x52a679(0xa5)](_0x327c1a,_0x52a679(0xa8)+Date['now']()+'_'+_0x27a6f8),_0x1ffaf9=path['join'](_0x327c1a,'sticker_'+Date['now']()+'_'+_0x27a6f8+_0x52a679(0xcd));fs[_0x52a679(0x91)](_0x50549f,_0x8df651);const _0x46b8d2=_0x1470a4[_0x52a679(0xd5)]||_0x1470a4[_0x52a679(0xb6)],_0x1d1d50=_0x46b8d2?_0x52a679(0xd3)+_0x50549f+_0x52a679(0xb9)+_0x1ffaf9+'\x22':_0x52a679(0xd3)+_0x50549f+_0x52a679(0xad)+_0x1ffaf9+'\x22';await new Promise((_0x57941c,_0x273dd2)=>{exec(_0x1d1d50,_0x4b0f7d=>{const _0x36666a=_0x3878;if(_0x4b0f7d)console[_0x36666a(0xa0)](_0x36666a(0xce),_0x4b0f7d),_0x273dd2(_0x4b0f7d);else _0x57941c();});});const _0x51b586=fs[_0x52a679(0xa9)](_0x1ffaf9),_0x14b71a=new webp[(_0x52a679(0xb3))]();await _0x14b71a[_0x52a679(0xcb)](_0x51b586);const _0x335f1c={'sticker-pack-id':crypto['randomBytes'](-0xc54*0x1+-0x3*-0x83f+-0xb9*0x11)[_0x52a679(0xb7)](_0x52a679(0x8e)),'sticker-pack-name':settings['packname'],'emojis':_0x1470a4[_0x52a679(0x9a)]?[_0x1470a4['emoji']]:['🤖']},_0x42168f=Buffer['from']([0xa*0x319+-0x339+-0x1b78,-0x32*0x1c+0x50c+0xb5,0xdb0+0x3ab*0x5+-0xa9f*0x3,0x1c6d+-0xbeb+-0x1082,0x802+0x7*0x1b1+-0x10b*0x13,-0x49c+-0xad*-0x2c+0xc9*-0x20,-0x1d8d+0x65*0x52+-0x1*0x2cd,-0xb1b+0x17f*-0x1+0xc9a*0x1,0x22f8+0xe41*0x1+0x1*-0x3138,-0x1958+0x2590+-0x22*0x5c,-0xac+0x1920+0x5*-0x4d7,0x13*-0xd9+0x2*0xe9c+-0xcc6,-0x2360+-0x1*-0x1706+0x1*0xc61,0x2*-0x1173+-0x1ee+0x2*0x126a,-0x1*0xb47+0x1a26+-0x2f*0x51,0xb5*-0xf+0x11c8+-0x72d,0xf38+-0x92d+-0x60b,0x1837+0x5da+-0x1e11,-0x1c51+-0x2*-0x3ad+0x150d,0x5*-0x577+0x1*-0xaab+0x2*0x12ff,0x3ad*-0x9+-0x1*0x18e6+0x1*0x39fb,0x191c+0x1d53+0x1*-0x366f]),_0x9b4996=Buffer[_0x52a679(0xa4)](JSON[_0x52a679(0xa7)](_0x335f1c),_0x52a679(0xd4)),_0x5bf507=Buffer[_0x52a679(0xd6)]([_0x42168f,_0x9b4996]);_0x5bf507[_0x52a679(0xbd)](_0x9b4996[_0x52a679(0xab)],-0x46*0x5a+-0x145a+0x2d04,-0x8*0x89+-0x1ff3+0x243f),_0x14b71a[_0x52a679(0xa2)]=_0x5bf507;const _0x315a5f=await _0x14b71a['save'](null);await _0x31477f[_0x52a679(0x9f)](_0x1b7599,{'sticker':_0x315a5f}),_0x26b006++,await delay(0x23eb+-0x2*0xc8e+-0x6e7);try{fs['unlinkSync'](_0x50549f),fs[_0x52a679(0x99)](_0x1ffaf9);}catch(_0x40a06a){console[_0x52a679(0xa0)](_0x52a679(0xb1),_0x40a06a);}}catch(_0x553a68){console['error']('Error\x20processing\x20sticker\x20'+_0x27a6f8+':',_0x553a68);continue;}}await _0x31477f['sendMessage'](_0x1b7599,{'text':_0x52a679(0xca)+_0x26b006+'/'+_0x50311a[_0x52a679(0x98)][_0x52a679(0xb8)]['length']+_0x52a679(0xc4)});}catch(_0x5d40db){throw new Error(_0x52a679(0xb4)+_0x5d40db['message']);}}catch(_0x4a1a5c){console['error'](_0x52a679(0xb5),_0x4a1a5c),await _0x31477f[_0x52a679(0x9f)](_0x1b7599,{'text':_0x52a679(0xcc)});}}module[_0x3f9c7f(0xc9)]=stickerTelegramCommand;
+const fetch = require('node-fetch');
+const { writeExifImg } = require('../lib/exif');
+const delay = time => new Promise(res => setTimeout(res, time));
+const fs = require('fs');
+const path = require('path');
+const webp = require('node-webpmux');
+const crypto = require('crypto');
+const { exec } = require('child_process');
+const settings = require('../settings');
+
+async function stickerTelegramCommand(sock, chatId, msg) {
+    try {
+        // Get the URL from message
+        const text = msg.message?.conversation?.trim() ||
+            msg.message?.extendedTextMessage?.text?.trim() || '';
+
+        const args = text.split(' ').slice(1);
+
+        if (!args[0]) {
+            await sock.sendMessage(chatId, {
+                text: '⚠️ Please enter the Telegram sticker URL!\n\nExample: .tg https://t.me/addstickers/Porcientoreal'
+            });
+            return;
+        }
+
+        // Validate URL format
+        if (!args[0].match(/(https:\/\/t.me\/addstickers\/)/gi)) {
+            await sock.sendMessage(chatId, {
+                text: '❌ Invalid URL! Make sure it\'s a Telegram sticker URL.'
+            });
+            return;
+        }
+
+        // Get pack name from URL
+        const packName = args[0].replace("https://t.me/addstickers/", "");
+
+        // Using working bot token
+        const botToken = '7801479976:AAGuPL0a7kXXBYz6XUSR_ll2SR5V_W6oHl4';
+
+        try {
+            // Fetch sticker pack info
+            const response = await fetch(
+                `https://api.telegram.org/bot${botToken}/getStickerSet?name=${encodeURIComponent(packName)}`,
+                {
+                    method: "GET",
+                    headers: {
+                        "Accept": "application/json",
+                        "User-Agent": "Mozilla/5.0"
+                    }
+                }
+            );
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const stickerSet = await response.json();
+
+            if (!stickerSet.ok || !stickerSet.result) {
+                throw new Error('Invalid sticker pack or API response');
+            }
+
+            // Send initial message with sticker count
+            await sock.sendMessage(chatId, {
+                text: `📦 Found ${stickerSet.result.stickers.length} stickers\n⏳ Starting download...`
+            });
+
+            // Create temp directory if it doesn't exist
+            const tmpDir = path.join(process.cwd(), 'tmp');
+            if (!fs.existsSync(tmpDir)) {
+                fs.mkdirSync(tmpDir, { recursive: true });
+            }
+
+            // Process each sticker
+            let successCount = 0;
+            for (let i = 0; i < stickerSet.result.stickers.length; i++) {
+                try {
+                    const sticker = stickerSet.result.stickers[i];
+                    const fileId = sticker.file_id;
+
+                    // Get file path
+                    const fileInfo = await fetch(
+                        `https://api.telegram.org/bot${botToken}/getFile?file_id=${fileId}`
+                    );
+
+                    if (!fileInfo.ok) continue;
+
+                    const fileData = await fileInfo.json();
+                    if (!fileData.ok || !fileData.result.file_path) continue;
+
+                    // Download sticker
+                    const fileUrl = `https://api.telegram.org/file/bot${botToken}/${fileData.result.file_path}`;
+                    const imageResponse = await fetch(fileUrl);
+                    const imageBuffer = await imageResponse.buffer();
+
+                    // Generate temp file paths
+                    const tempInput = path.join(tmpDir, `temp_${Date.now()}_${i}`);
+                    const tempOutput = path.join(tmpDir, `sticker_${Date.now()}_${i}.webp`);
+
+                    // Write media to temp file
+                    fs.writeFileSync(tempInput, imageBuffer);
+
+                    // Check if sticker is animated or video
+                    const isAnimated = sticker.is_animated || sticker.is_video;
+
+                    // Convert to WebP using ffmpeg with optimized settings
+                    const ffmpegCommand = isAnimated
+                        ? `ffmpeg -i "${tempInput}" -vf "scale=512:512:force_original_aspect_ratio=decrease,fps=15,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000" -c:v libwebp -preset default -loop 0 -vsync 0 -pix_fmt yuva420p -quality 75 -compression_level 6 "${tempOutput}"`
+                        : `ffmpeg -i "${tempInput}" -vf "scale=512:512:force_original_aspect_ratio=decrease,format=rgba,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000" -c:v libwebp -preset default -loop 0 -vsync 0 -pix_fmt yuva420p -quality 75 -compression_level 6 "${tempOutput}"`;
+
+                    await new Promise((resolve, reject) => {
+                        exec(ffmpegCommand, (error) => {
+                            if (error) {
+                                console.error('FFmpeg error:', error);
+                                reject(error);
+                            } else resolve();
+                        });
+                    });
+
+                    // Read the WebP file
+                    const webpBuffer = fs.readFileSync(tempOutput);
+
+                    // Add metadata using webpmux
+                    const img = new webp.Image();
+                    await img.load(webpBuffer);
+
+                    // Create metadata
+                    const metadata = {
+                        'sticker-pack-id': crypto.randomBytes(32).toString('hex'),
+                        'sticker-pack-name': settings.packname,
+                        'emojis': sticker.emoji ? [sticker.emoji] : ['🤖']
+                    };
+
+                    // Create exif buffer
+                    const exifAttr = Buffer.from([0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57, 0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00]);
+                    const jsonBuffer = Buffer.from(JSON.stringify(metadata), 'utf8');
+                    const exif = Buffer.concat([exifAttr, jsonBuffer]);
+                    exif.writeUIntLE(jsonBuffer.length, 14, 4);
+
+                    // Set the exif data
+                    img.exif = exif;
+
+                    // Get the final buffer
+                    const finalBuffer = await img.save(null);
+
+                    // Send sticker only once
+                    await sock.sendMessage(chatId, {
+                        sticker: finalBuffer
+                    });
+
+                    successCount++;
+                    await delay(1000); // Reduced delay
+
+                    // Cleanup temp files
+                    try {
+                        fs.unlinkSync(tempInput);
+                        fs.unlinkSync(tempOutput);
+                    } catch (err) {
+                        console.error('Error cleaning up temp files:', err);
+                    }
+
+                } catch (err) {
+                    console.error(`Error processing sticker ${i}:`, err);
+                    continue;
+                }
+            }
+
+            // Only send completion message at the end
+            await sock.sendMessage(chatId, {
+                text: `✅ Successfully downloaded ${successCount}/${stickerSet.result.stickers.length} stickers!`
+            });
+
+        } catch (error) {
+            throw new Error(`Failed to process sticker pack: ${error.message}`);
+        }
+
+    } catch (error) {
+        console.error('Error in stickertelegram command:', error);
+        await sock.sendMessage(chatId, {
+            text: '❌ Failed to process Telegram stickers!\nMake sure:\n1. The URL is correct\n2. The sticker pack exists\n3. The sticker pack is public'
+        });
+    }
+}
+
+module.exports = stickerTelegramCommand; 

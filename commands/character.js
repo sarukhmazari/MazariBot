@@ -1,1 +1,82 @@
-const _0x2038a=_0x534a;(function(_0x13b2d3,_0x22a76b){const _0x16bae2=_0x534a,_0x16a5c1=_0x13b2d3();while(!![]){try{const _0x2f99ca=-parseInt(_0x16bae2(0x17e))/(-0x157+0x443+0x1*-0x2eb)+-parseInt(_0x16bae2(0x192))/(0x1*-0xc9a+-0x21ca+0x2e66)+parseInt(_0x16bae2(0x195))/(0x19df+-0x181*0x1+-0x185b)+-parseInt(_0x16bae2(0x186))/(0x38f+-0x1bf*0x15+0x2120)+-parseInt(_0x16bae2(0x181))/(0x182d+-0xc3a+-0xbee)+-parseInt(_0x16bae2(0x17f))/(-0x10c8+0x500+0x1*0xbce)*(parseInt(_0x16bae2(0x19b))/(-0x85*-0x30+-0x1402+-0x4e7))+-parseInt(_0x16bae2(0x197))/(-0x3*-0x9f5+0x1e72+-0x3c49)*(-parseInt(_0x16bae2(0x1a2))/(0xc37+-0xc*0x28+-0x2*0x527));if(_0x2f99ca===_0x22a76b)break;else _0x16a5c1['push'](_0x16a5c1['shift']());}catch(_0x1a43ee){_0x16a5c1['push'](_0x16a5c1['shift']());}}}(_0x11bc,0x462fc+0x59e1+0x4f5d0));function _0x534a(_0x18b89a,_0x3c4a35){_0x18b89a=_0x18b89a-(0xea8+0x2660+-0x53*0x9f);const _0x1e5f22=_0x11bc();let _0x1966ae=_0x1e5f22[_0x18b89a];if(_0x534a['VolHKq']===undefined){var _0x10fcb7=function(_0x7a4ea6){const _0x20ec32='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x541170='',_0x23e78e='';for(let _0x4104f1=0x1*-0xe87+0xc7*-0x1+0x2*0x7a7,_0x26fe19,_0x568380,_0x3e8fcc=-0x2692+0x2*-0x5b3+-0xf6*-0x34;_0x568380=_0x7a4ea6['charAt'](_0x3e8fcc++);~_0x568380&&(_0x26fe19=_0x4104f1%(0xb44+0x1*0x171+-0xcb1)?_0x26fe19*(-0xeae+0x541+0x9ad*0x1)+_0x568380:_0x568380,_0x4104f1++%(-0x12f2+0x7*0x165+0x933))?_0x541170+=String['fromCharCode'](0x274*-0x4+0xc92*0x1+-0x1c3*0x1&_0x26fe19>>(-(-0x2430+-0xd1a+0x277*0x14)*_0x4104f1&-0x21e5*0x1+0x4f7+-0x44*-0x6d)):0x13d5*0x1+0x10af+0x13*-0x1ec){_0x568380=_0x20ec32['indexOf'](_0x568380);}for(let _0x4165d1=0x1b50+-0x3*0xbdc+0x2e*0x2e,_0x150266=_0x541170['length'];_0x4165d1<_0x150266;_0x4165d1++){_0x23e78e+='%'+('00'+_0x541170['charCodeAt'](_0x4165d1)['toString'](0x71f*-0x3+0x1cda+-0x76d))['slice'](-(0x143*-0x1b+-0x6eb+-0x42*-0x9f));}return decodeURIComponent(_0x23e78e);};_0x534a['fgdoEc']=_0x10fcb7,_0x534a['suWsUX']={},_0x534a['VolHKq']=!![];}const _0x25e7fa=_0x1e5f22[-0x1075+-0x6a*-0x2+-0x1*-0xfa1],_0x1ceabb=_0x18b89a+_0x25e7fa,_0x23e2bd=_0x534a['suWsUX'][_0x1ceabb];return!_0x23e2bd?(_0x1966ae=_0x534a['fgdoEc'](_0x1966ae),_0x534a['suWsUX'][_0x1ceabb]=_0x1966ae):_0x1966ae=_0x23e2bd,_0x1966ae;}const axios=require('axios'),{channelInfo}=require(_0x2038a(0x198));async function characterCommand(_0x528e77,_0x2b494f,_0x2efffc){const _0x3d1a35=_0x2038a;let _0x61bece;if(_0x2efffc[_0x3d1a35(0x1a1)]?.[_0x3d1a35(0x183)]?.[_0x3d1a35(0x185)]?.['mentionedJid']?.['length']>0x6*0x60f+0x13f8+-0x3852)_0x61bece=_0x2efffc[_0x3d1a35(0x1a1)]['extendedTextMessage'][_0x3d1a35(0x185)][_0x3d1a35(0x1a8)][0x1d7d*-0x1+0xc99+0x1*0x10e4];else _0x2efffc[_0x3d1a35(0x1a1)]?.['extendedTextMessage']?.[_0x3d1a35(0x185)]?.[_0x3d1a35(0x189)]&&(_0x61bece=_0x2efffc[_0x3d1a35(0x1a1)][_0x3d1a35(0x183)]['contextInfo'][_0x3d1a35(0x189)]);if(!_0x61bece){await _0x528e77[_0x3d1a35(0x17c)](_0x2b494f,{'text':_0x3d1a35(0x19d),...channelInfo});return;}try{let _0x273ea7;try{_0x273ea7=await _0x528e77[_0x3d1a35(0x18a)](_0x61bece,_0x3d1a35(0x17d));}catch{_0x273ea7=_0x3d1a35(0x18e);}const _0x41a1c9=[_0x3d1a35(0x19f),_0x3d1a35(0x18c),_0x3d1a35(0x188),_0x3d1a35(0x1a0),_0x3d1a35(0x19e),_0x3d1a35(0x19a),_0x3d1a35(0x1aa),_0x3d1a35(0x1a5),'Energetic',_0x3d1a35(0x199),_0x3d1a35(0x18f),_0x3d1a35(0x191),'Humorous',_0x3d1a35(0x184),'Independent','Intuitive','Kind',_0x3d1a35(0x1a3),'Loyal',_0x3d1a35(0x1ad),'Passionate',_0x3d1a35(0x187),_0x3d1a35(0x17b),_0x3d1a35(0x18d),_0x3d1a35(0x1a7),_0x3d1a35(0x180),_0x3d1a35(0x18b),'Understanding','Versatile',_0x3d1a35(0x194)],_0x4e519f=Math[_0x3d1a35(0x190)](Math['random']()*(-0x6*0x5bd+0x87b+-0xcfb*-0x2))+(-0x4*0x5cb+-0x6b*-0x39+0x2*-0x52),_0x25b536=[];for(let _0x1b99d7=0x5*-0x634+0x4*-0x274+0x1*0x28d4;_0x1b99d7<_0x4e519f;_0x1b99d7++){const _0x30b2ef=_0x41a1c9[Math['floor'](Math[_0x3d1a35(0x196)]()*_0x41a1c9[_0x3d1a35(0x1ac)])];!_0x25b536[_0x3d1a35(0x19c)](_0x30b2ef)&&_0x25b536[_0x3d1a35(0x182)](_0x30b2ef);}const _0x5b9814=_0x25b536[_0x3d1a35(0x1ab)](_0x4d01b1=>{const _0xbe8648=_0x3d1a35,_0x543a59=Math[_0xbe8648(0x190)](Math[_0xbe8648(0x196)]()*(-0x1f1a+-0x2430+0x4373))+(0x1fbe+0x1*0x1618+-0x359a);return _0x4d01b1+':\x20'+_0x543a59+'%';}),_0x1b081e=_0x3d1a35(0x193)+('👤\x20*User:*\x20'+_0x61bece[_0x3d1a35(0x1af)]('@')[-0x14a6+0x14*0x35+0x1082*0x1]+'\x0a\x0a')+('✨\x20*Key\x20Traits:*\x0a'+_0x5b9814['join']('\x0a')+'\x0a\x0a')+('🎯\x20*Overall\x20Rating:*\x20'+(Math[_0x3d1a35(0x190)](Math['random']()*(0x16eb*-0x1+0x1dfd+-0x6fd))+(0x25*0x39+-0x241+0x16*-0x42))+_0x3d1a35(0x1a4))+'Note:\x20This\x20is\x20a\x20fun\x20analysis\x20and\x20should\x20not\x20be\x20taken\x20seriously!';await _0x528e77[_0x3d1a35(0x17c)](_0x2b494f,{'image':{'url':_0x273ea7},'caption':_0x1b081e,'mentions':[_0x61bece],...channelInfo});}catch(_0xd042a2){console['error'](_0x3d1a35(0x1a9),_0xd042a2),await _0x528e77['sendMessage'](_0x2b494f,{'text':_0x3d1a35(0x1ae),...channelInfo});}}module[_0x2038a(0x1a6)]=characterCommand;function _0x11bc(){const _0x306ed3=['mtK0mtu2vKLkBfnj','nNvoANfhsW','u2LUy2vYzq','mJK3mdKZmhbUDhz4ta','ChvZAa','zxH0zw5KzwruzxH0twvZC2fNzq','sw1Hz2LUyxrPDMu','y29UDgv4DeLUzM8','mtG0nJy4nefxBfDyyq','ugf0AwvUDa','rgv0zxjTAw5Lza','CgfYDgLJAxbHBNq','ChjVzMLSzvbPy3r1CMvvCMW','vgHVDwDODgz1Ba','q3jLyxrPDMu','uMvSAwfIBgu','Ahr0Chm6lY9PlMLTz3vYlMnVBs8YD3PhAhbglMPWzwC','r2vUzxjVDxm','zMXVB3i','sg9Uzxn0','mtiYndyZmeTjBenhAG','8j+uRIaQq2HHCMfJDgvYiefUywX5C2LZkIdWN5sUcGO','v2LZzq','mtaWnZG2ofbYq0fYvq','CMfUzg9T','mJG4uKHHshnY','lI4VBgLIl21LC3nHz2vdB25MAwC','rNjPzw5KBhK','q2HHCMLZBwf0Awm','ntCYotuYmxPgD2vrCG','Aw5JBhvKzxm','ugXLyxnLig1LBNrPB24GC29Tzw9UzsbVCIbYzxbSEsb0BYb0AgvPCIbTzxnZywDLihrVigfUywX5EMuGDgHLAxiGy2HHCMfJDgvYiq','q2fYAw5N','sw50zwXSAwDLBNq','qw1IAxrPB3vZ','BwvZC2fNzq','nZq1mteWwvPlruHJ','tg9NAwnHBa','jqOk','rw1WyxrOzxrPyW','zxHWB3j0CW','uMvZB3vYy2vMDwW','BwvUDgLVBMvKsMLK','rxjYB3iGAw4Gy2HHCMfJDgvYignVBw1HBMq6','q29UzMLKzw50','BwfW','BgvUz3rO','t3b0Aw1PC3rPyW','rMfPBgvKihrVigfUywX5EMuGy2HHCMfJDgvYisbuCNKGywDHAw4GBgf0zxiU','C3bSAxq','ugvYC2LZDgvUDa','C2vUze1LC3nHz2u','Aw1Hz2u'];_0x11bc=function(){return _0x306ed3;};return _0x11bc();}
+﻿const axios = require('axios');
+const { channelInfo } = require('../lib/messageConfig');
+
+async function characterCommand(sock, chatId, message) {
+    let userToAnalyze;
+    
+    // Check for mentioned users
+    if (message.message?.extendedTextMessage?.contextInfo?.mentionedJid?.length > 0) {
+        userToAnalyze = message.message.extendedTextMessage.contextInfo.mentionedJid[0];
+    }
+    // Check for replied message
+    else if (message.message?.extendedTextMessage?.contextInfo?.participant) {
+        userToAnalyze = message.message.extendedTextMessage.contextInfo.participant;
+    }
+    
+    if (!userToAnalyze) {
+        await sock.sendMessage(chatId, { 
+            text: 'Please mention someone or reply to their message to analyze their character!', 
+            ...channelInfo 
+        });
+        return;
+    }
+
+    try {
+        // Get user's profile picture
+        let profilePic;
+        try {
+            profilePic = await sock.profilePictureUrl(userToAnalyze, 'image');
+        } catch {
+            profilePic = 'https://i.imgur.com/2wzGhpF.jpeg'; // Default image if no profile pic
+        }
+
+        const traits = [
+            "Intelligent", "Creative", "Determined", "Ambitious", "Caring",
+            "Charismatic", "Confident", "Empathetic", "Energetic", "Friendly",
+            "Generous", "Honest", "Humorous", "Imaginative", "Independent",
+            "Intuitive", "Kind", "Logical", "Loyal", "Optimistic",
+            "Passionate", "Patient", "Persistent", "Reliable", "Resourceful",
+            "Sincere", "Thoughtful", "Understanding", "Versatile", "Wise"
+        ];
+
+        // Get 3-5 random traits
+        const numTraits = Math.floor(Math.random() * 3) + 3; // Random number between 3 and 5
+        const selectedTraits = [];
+        for (let i = 0; i < numTraits; i++) {
+            const randomTrait = traits[Math.floor(Math.random() * traits.length)];
+            if (!selectedTraits.includes(randomTrait)) {
+                selectedTraits.push(randomTrait);
+            }
+        }
+
+        // Calculate random percentages for each trait
+        const traitPercentages = selectedTraits.map(trait => {
+            const percentage = Math.floor(Math.random() * 41) + 60; // Random number between 60-100
+            return `${trait}: ${percentage}%`;
+        });
+
+        // Create character analysis message
+        const analysis = `🔮 *Character Analysis* 🔮\n\n` +
+            `👤 *User:* ${userToAnalyze.split('@')[0]}\n\n` +
+            `✨ *Key Traits:*\n${traitPercentages.join('\n')}\n\n` +
+            `🎯 *Overall Rating:* ${Math.floor(Math.random() * 21) + 80}%\n\n` +
+            `Note: This is a fun analysis and should not be taken seriously!`;
+
+        // Send the analysis with the user's profile picture
+        await sock.sendMessage(chatId, {
+            image: { url: profilePic },
+            caption: analysis,
+            mentions: [userToAnalyze],
+            ...channelInfo
+        });
+
+    } catch (error) {
+        console.error('Error in character command:', error);
+        await sock.sendMessage(chatId, { 
+            text: 'Failed to analyze character! Try again later.',
+            ...channelInfo 
+        });
+    }
+}
+
+module.exports = characterCommand; 

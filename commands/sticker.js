@@ -1,1 +1,228 @@
-const _0x232b94=_0x1ebc;(function(_0x349169,_0xc84fe){const _0x29b78a=_0x1ebc,_0xe3a2ec=_0x349169();while(!![]){try{const _0x4349b2=-parseInt(_0x29b78a(0x1f3))/(0x9*0x2cd+-0x389*0x7+-0x3*0x27)+-parseInt(_0x29b78a(0x1c3))/(-0x21bd+-0x25*-0xd+0x1fde)*(parseInt(_0x29b78a(0x1db))/(0x2*0x529+-0x65*0x3d+-0x6*-0x24b))+-parseInt(_0x29b78a(0x1d1))/(-0xd*0x95+-0x1112+0x18a7*0x1)*(-parseInt(_0x29b78a(0x1ff))/(0x1792+0x35*0x43+-0x256c))+parseInt(_0x29b78a(0x1c1))/(-0x1bc4+0x460+-0x6f*-0x36)+-parseInt(_0x29b78a(0x1d4))/(-0x1625+-0xade*0x1+0x210a)+-parseInt(_0x29b78a(0x1ee))/(-0x15a*-0x11+0x7*0x137+-0x1f73)*(-parseInt(_0x29b78a(0x1dc))/(0x2540+0xa0a+-0x2f41))+parseInt(_0x29b78a(0x1eb))/(0x1b54+-0x266*-0x2+-0x2016);if(_0x4349b2===_0xc84fe)break;else _0xe3a2ec['push'](_0xe3a2ec['shift']());}catch(_0x4b449d){_0xe3a2ec['push'](_0xe3a2ec['shift']());}}}(_0x45f6,0x7eea9+-0xa248a+-0x219*-0x59f));const {downloadMediaMessage}=require('@whiskeysockets/baileys'),{exec}=require(_0x232b94(0x1cd)),fs=require('fs'),path=require('path'),settings=require(_0x232b94(0x1c4)),webp=require('node-webpmux'),crypto=require(_0x232b94(0x1f8));function _0x45f6(){const _0x43fd24=['zg9JDw1LBNrnzxnZywDL','z2LM','ntjTAhPxugy','rMfPBgvKihrVignYzwf0zsbZDgLJA2vYisbuCNKGywDHAw4GBgf0zxiU','BM93','nJa0mduYng9VsLn2wG','zxHPzG','lNDLyNa','Aw5JBhvKzxm','C3rPy2TLCL8','D3jPDgvvsw50teu','zxHPC3rZu3LUyW','mJm0mZy5C1Hbs29M','ntu3nda1mvr3C0Ddsq','DxbKyxrLtwvKAwfnzxnZywDL','yNvMzMvY','DgvTCf8','iIaTDMyGiNnJywXLptuXmJO1mti6zM9Yy2vFB3jPz2LUywXFyxnWzwn0x3jHDgLVpwrLy3jLyxnLlgzWCZ0XnsXWywq9nteYoJuXmJOOB3CTAxCPlZi6kg9OlwLOks8YoMnVBg9YpsmWmdaWmdaWmciGlwm6DIbSAwj3zwjWic1WCMvZzxqGzgvMyxvSDcaTBg9VCcaWic12C3LUyYaWic1WAxHFzM10ihL1DMe0mJbWic1XDwfSAxr5idC1ic1JB21WCMvZC2LVBL9SzxzLBca2ici','iIaTDcaYic12zIaIC2nHBgu9mZiWoJmYmdPMB3jJzv9VCMLNAw5HBf9HC3bLy3rFCMf0Aw89zgvJCMvHC2uSzNbZptGSCgfKptmYmdOZmJa6kg93lwL3ks8YoIHVAc1PAcKVmJPJB2XVCJ0JmdaWmdaWmdaIic1JoNyGBgLID2vICcaTChjLC2v0igrLzMf1BhqGlwXVB3aGmcaTDNn5BMmGmcaTCgL4x2zTDcb5DxzHndiWCcaTCxvHBgL0EsaZmcaTy29TChjLC3nPB25FBgv2zwWGnIaTyJP2idGWAYaTBwf4x211EgLUz19XDwv1zv9ZAxPLideWmJqGiG','C3rPy2TLCL9MywXSyMfJA18','AM9PBG','zMzTCgvNic1Pici','zxjYB3i','CxvVDgvKtwvZC2fNzq','C3rHBNPHswq','zNjVBq','DMLKzw8','C3rPy2TLCL9ZBwfSBf8','mtiYmtuWmZbpBMPmCwW','s25Pz2H0qM90','zxH0zw5KzwruzxH0twvZC2fNzq','mtzer29Utve','CgfYDgLJAxbHBNq','BgvUz3rO','C2vJB25KCW','BwvZC2fNzq','mtaXnJiZmMr3qvbHwG','Bg9Hza','iIaTDcaYic12zIaIC2nHBgu9nteYoJuXmJPMB3jJzv9VCMLNAw5HBf9HC3bLy3rFCMf0Aw89zgvJCMvHC2uSzNbZptGSCgfKptuXmJO1mti6kg93lwL3ks8YoIHVAc1PAcKVmJPJB2XVCJ0JmdaWmdaWmdaIic1JoNyGBgLID2vICcaTChjLC2v0igrLzMf1BhqGlwXVB3aGmcaTDNn5BMmGmcaTCgL4x2zTDcb5DxzHndiWCcaTCxvHBgL0EsaZmcaTy29TChjLC3nPB25FBgv2zwWGnIaTyJP2ideWmgSGlw1HEf9TDxHPBMDFCxvLDwvFC2L6zsaXmdi0ici','BwTKAxjtEw5J','Dw5SAw5Ru3LUyW','y3j5ChrV','CMvHzezPBgvtEw5J','ugXLyxnLihjLCgX5ihrVigfUigLTywDLl3zPzgvVihDPDgGGlNn0AwnRzxiSig9YihnLBMqGyw4GAw1Hz2uVDMLKzw8GD2L0AcaUC3rPy2TLCIbHCYb0AguGy2fWDgLVBI4','C3rYAw5NAwz5','Dg1W','CMfUzg9TqNL0zxm','y29UDgv4DeLUzM8','ndCXodv5D2jlyvi','zxHWB3j0CW','DxrMoa','iIaTDMyGiNnJywXLptuXmJO1mti6zM9Yy2vFB3jPz2LUywXFyxnWzwn0x3jHDgLVpwrLy3jLyxnLlgzVCM1HDd1Yz2jHlhbHzd01mti6nteYoIHVDY1PDYKVmJOOB2GTAwGPlZi6y29SB3i9iZaWmdaWmdaWiIaTyZP2igXPyNDLyNaGlxbYzxnLDcbKzwzHDwX0ic1SB29WidaGlxzZEw5JidaGlxbPEf9MBxqGExv2ytqYmhaGlxf1ywXPDhKGnZuGlwnVBxbYzxnZAw9Ux2XLDMvSidyGiG','DMLKzw9nzxnZywDL','iIaTDcaZic12zIaIC2nHBgu9nteYoJuXmJPMB3jJzv9VCMLNAw5HBf9HC3bLy3rFCMf0Aw89zgvJCMvHC2uSzNbZpteYlhbHzd01mti6nteYoIHVDY1PDYKVmJOOB2GTAwGPlZi6y29SB3i9iZaWmdaWmdaWiIaTyZP2igXPyNDLyNaGlxbYzxnLDcbKzwzHDwX0ic1SB29WidaGlxzZEw5JidaGlxbPEf9MBxqGExv2ytqYmhaGlxf1ywXPDhKGnduGlwnVBxbYzxnZAw9Ux2XLDMvSidyGlwi6DIaXntbRic1TyxHFBxv4Aw5Nx3f1zxvLx3nPEMuGmtaYncaI','mtm4mtHSsMPYz3a','C2f2zq','mMDODhvbAW','lI4VC2v0DgLUz3m','Dg9tDhjPBMC','zMzTCgvNic15ic1Pici','y29Uy2f0','sw1Hz2u','D3jPDgvgAwXLu3LUyW','Agv4','C2vUze1LC3nHz2u','CgfJA25HBwu','y2HPBgrFChjVy2vZCW','tufAqvjjiejpva'];_0x45f6=function(){return _0x43fd24;};return _0x45f6();}function _0x1ebc(_0x388ef1,_0x27452f){_0x388ef1=_0x388ef1-(-0x195a*0x1+-0x643+0x215e);const _0x347919=_0x45f6();let _0x256a38=_0x347919[_0x388ef1];if(_0x1ebc['diwyRm']===undefined){var _0x23d339=function(_0x24b515){const _0xe813f9='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x3537af='',_0x3f1cb7='';for(let _0x565714=-0x1cd0+-0x18cf*0x1+0x359f,_0x4934f5,_0x5aa9a8,_0x723c7b=-0x1b*-0x68+0x25e+0x2*-0x6ab;_0x5aa9a8=_0x24b515['charAt'](_0x723c7b++);~_0x5aa9a8&&(_0x4934f5=_0x565714%(0x1112+0x2681+-0x378f)?_0x4934f5*(-0x2051*-0x1+-0x1e79+-0x198)+_0x5aa9a8:_0x5aa9a8,_0x565714++%(0x1*0x10f2+-0x1485+0x397))?_0x3537af+=String['fromCharCode'](-0x1cfd*0x1+-0xbbf*-0x3+-0x541&_0x4934f5>>(-(-0x5*-0x14e+-0x13af+0xd2b)*_0x565714&-0x1bc2*0x1+0x1*0x1db6+-0x1ee)):0x2*-0x11dd+0x16bd+0xcfd*0x1){_0x5aa9a8=_0xe813f9['indexOf'](_0x5aa9a8);}for(let _0x2e0b90=0x81d+0x25e3+0x8*-0x5c0,_0x366db0=_0x3537af['length'];_0x2e0b90<_0x366db0;_0x2e0b90++){_0x3f1cb7+='%'+('00'+_0x3537af['charCodeAt'](_0x2e0b90)['toString'](-0x1f83+-0x1*-0x725+0x186e))['slice'](-(0x1785+-0xe38+-0xd*0xb7));}return decodeURIComponent(_0x3f1cb7);};_0x1ebc['XBzTmn']=_0x23d339,_0x1ebc['TgDyrH']={},_0x1ebc['diwyRm']=!![];}const _0x5673d3=_0x347919[-0x1663+0x1*0xb74+0xaef],_0x57bdf0=_0x388ef1+_0x5673d3,_0x53df66=_0x1ebc['TgDyrH'][_0x57bdf0];return!_0x53df66?(_0x256a38=_0x1ebc['XBzTmn'](_0x256a38),_0x1ebc['TgDyrH'][_0x57bdf0]=_0x256a38):_0x256a38=_0x53df66,_0x256a38;}async function stickerCommand(_0x3ebcaa,_0x35cc6d,_0x422e36){const _0x4f53a0=_0x232b94,_0x112a8b=_0x422e36;let _0x197a49=_0x422e36;if(_0x422e36[_0x4f53a0(0x1f2)]?.[_0x4f53a0(0x1ed)]?.[_0x4f53a0(0x1fe)]?.[_0x4f53a0(0x1e6)]){const _0x5f2f19=_0x422e36['message'][_0x4f53a0(0x1ed)][_0x4f53a0(0x1fe)];_0x197a49={'key':{'remoteJid':_0x35cc6d,'id':_0x5f2f19[_0x4f53a0(0x1e7)],'participant':_0x5f2f19[_0x4f53a0(0x1ef)]},'message':_0x5f2f19['quotedMessage']};}const _0x229a3d=_0x197a49[_0x4f53a0(0x1f2)]?.['imageMessage']||_0x197a49[_0x4f53a0(0x1f2)]?.[_0x4f53a0(0x203)]||_0x197a49['message']?.[_0x4f53a0(0x1cf)];if(!_0x229a3d){await _0x3ebcaa[_0x4f53a0(0x1cb)](_0x35cc6d,{'text':_0x4f53a0(0x1fa),'contextInfo':{'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x4f53a0(0x1ce),'serverMessageId':-(0x1*-0x2357+-0x24*0x87+0x3654)}}},{'quoted':_0x112a8b});return;}try{const _0x4abb94=await downloadMediaMessage(_0x197a49,_0x4f53a0(0x1de),{},{'logger':undefined,'reuploadRequest':_0x3ebcaa[_0x4f53a0(0x1dd)]});if(!_0x4abb94){await _0x3ebcaa[_0x4f53a0(0x1cb)](_0x35cc6d,{'text':'Failed\x20to\x20download\x20media.\x20Please\x20try\x20again.','contextInfo':{'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':'MAZARI\x20BOT','serverMessageId':-(0xd2d*0x1+0x7de+-0x150a)}}});return;}const _0x3b7282=path['join'](process['cwd'](),_0x4f53a0(0x1fc));!fs[_0x4f53a0(0x1da)](_0x3b7282)&&fs[_0x4f53a0(0x1f6)](_0x3b7282,{'recursive':!![]});const _0x22d7b8=path[_0x4f53a0(0x1e3)](_0x3b7282,_0x4f53a0(0x1df)+Date[_0x4f53a0(0x1d3)]()),_0x18b668=path[_0x4f53a0(0x1e3)](_0x3b7282,_0x4f53a0(0x1d8)+Date['now']()+_0x4f53a0(0x1d6));fs[_0x4f53a0(0x1c9)](_0x22d7b8,_0x4abb94);const _0x2f2d74=_0x229a3d['mimetype']?.[_0x4f53a0(0x1d7)](_0x4f53a0(0x1d0))||_0x229a3d['mimetype']?.[_0x4f53a0(0x1d7)](_0x4f53a0(0x1e9))||_0x229a3d[_0x4f53a0(0x1f1)]>-0xf92+-0x2051*-0x1+-0x10bf,_0x5e6d0d=_0x2f2d74?'ffmpeg\x20-i\x20\x22'+_0x22d7b8+_0x4f53a0(0x1e0)+_0x18b668+'\x22':_0x4f53a0(0x1e4)+_0x22d7b8+_0x4f53a0(0x202)+_0x18b668+'\x22';await new Promise((_0x1fc65d,_0x12a097)=>{exec(_0x5e6d0d,_0x15ab6f=>{const _0x5282df=_0x1ebc;if(_0x15ab6f)console[_0x5282df(0x1e5)]('FFmpeg\x20error:',_0x15ab6f),_0x12a097(_0x15ab6f);else _0x1fc65d();});});let _0x36e005=fs[_0x4f53a0(0x1f9)](_0x18b668);if(_0x2f2d74&&_0x36e005[_0x4f53a0(0x1f0)]>(-0x10a+0x1*0x10f2+-0xc00)*(0x9fd*-0x2+-0x1cfd+-0x791*-0x7))try{const _0x1ca82d=path[_0x4f53a0(0x1e3)](_0x3b7282,'sticker_fallback_'+Date[_0x4f53a0(0x1d3)]()+_0x4f53a0(0x1d6)),_0x2fa574=_0x4abb94[_0x4f53a0(0x1f0)]/(-0x1d25+-0x5*-0x14e+0x1a9f),_0x1b9c2d=_0x2fa574>0xc3*-0x29+-0x1bc2+0x1*0x4e85,_0x5e9c9e=_0x1b9c2d?_0x4f53a0(0x1c6)+_0x22d7b8+_0x4f53a0(0x1f5)+_0x1ca82d+'\x22':'ffmpeg\x20-y\x20-i\x20\x22'+_0x22d7b8+_0x4f53a0(0x204)+_0x1ca82d+'\x22';await new Promise((_0x5059e2,_0x40b8d0)=>{exec(_0x5e9c9e,_0x5c5a28=>_0x5c5a28?_0x40b8d0(_0x5c5a28):_0x5059e2());});if(fs[_0x4f53a0(0x1da)](_0x1ca82d)){_0x36e005=fs['readFileSync'](_0x1ca82d);try{fs[_0x4f53a0(0x1f7)](_0x1ca82d);}catch{}}}catch{}_0x36e005=fs[_0x4f53a0(0x1f9)](_0x18b668);if(_0x2f2d74&&_0x36e005['length']>(0x116*-0x15+-0x11dd*0x2+0x14d0*0x3)*(0x81d+0x25e3+0xc*-0x380))try{const _0x29c027=path[_0x4f53a0(0x1e3)](_0x3b7282,_0x4f53a0(0x1e2)+Date['now']()+_0x4f53a0(0x1d6)),_0x502c1f=_0x4abb94[_0x4f53a0(0x1f0)]/(-0x1f83+-0x1*-0x725+0x1c5e),_0x337dc1=_0x502c1f>0x1785+-0xe38+-0x9*-0x123,_0x1d3979=_0x337dc1?_0x4f53a0(0x1c6)+_0x22d7b8+'\x22\x20-t\x202\x20-vf\x20\x22scale=512:512:force_original_aspect_ratio=decrease,fps=8,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000\x22\x20-c:v\x20libwebp\x20-preset\x20default\x20-loop\x200\x20-vsync\x200\x20-pix_fmt\x20yuva420p\x20-quality\x2030\x20-compression_level\x206\x20-b:v\x20100k\x20-max_muxing_queue_size\x201024\x20\x22'+_0x29c027+'\x22':'ffmpeg\x20-y\x20-i\x20\x22'+_0x22d7b8+_0x4f53a0(0x204)+_0x29c027+'\x22';await new Promise((_0x5ab0b4,_0x27b5b0)=>{exec(_0x1d3979,_0x28a933=>_0x28a933?_0x27b5b0(_0x28a933):_0x5ab0b4());});if(fs[_0x4f53a0(0x1da)](_0x29c027)){_0x36e005=fs['readFileSync'](_0x29c027);try{fs[_0x4f53a0(0x1f7)](_0x29c027);}catch{}}}catch{}const _0x387c43=new webp[(_0x4f53a0(0x1c8))]();await _0x387c43[_0x4f53a0(0x1f4)](_0x36e005);const _0x1dde6f={'sticker-pack-id':crypto[_0x4f53a0(0x1fd)](-0x1663+0x1*0xb74+0xb0f)['toString'](_0x4f53a0(0x1ca)),'sticker-pack-name':settings[_0x4f53a0(0x1cc)]||_0x4f53a0(0x1ec),'emojis':['🤖']},_0x475ac5=Buffer['from']([-0x6*-0x136+-0x6e6+0x15*-0x1,0x1da6+0x7*-0x149+0x4f*-0x42,0x2336+-0x87*0x3f+-0x1d3,0xe23+0x1020+-0x1*0x1e43,0xbdf+0x19*0x14e+-0x2c75*0x1,-0x13*-0x5b+0x3c*-0x7f+0x1703,-0x1b2f*0x1+-0x12f3+0x2e22,-0x33*-0x6b+0x69e+-0x1*0x1bef,0xe*0x9+-0x1dac+0x1d2f,0x1*0x1625+-0x3ee+-0x1237,-0xcd1*-0x2+0x806+0x2167*-0x1,0x11*0x175+-0x19*-0xa3+0x21*-0x139,0x2ed+0x2159+-0x243f,0x25b*-0x9+-0x124a+0x277d,-0xe91*0x2+0x22e+0x47e*0x6,-0x1556*-0x1+-0x862+-0x4*0x33d,-0x223c+-0x156f+0x37ab,-0x5*0xf1+0x4*-0x511+0x18f9,0x409+-0x2*-0xd69+0x1ec5*-0x1,-0x1950*-0x1+-0x1527+-0x429,-0x6*-0x104+0x41*-0x90+-0x32*-0x9c,-0x1*0x18a2+-0xe*0x1fd+0x5c*0x92]),_0x4a1c80=Buffer[_0x4f53a0(0x1e8)](JSON[_0x4f53a0(0x1fb)](_0x1dde6f),_0x4f53a0(0x201)),_0x13d7f3=Buffer[_0x4f53a0(0x1c7)]([_0x475ac5,_0x4a1c80]);_0x13d7f3['writeUIntLE'](_0x4a1c80[_0x4f53a0(0x1f0)],0x14*-0x1e3+-0x14d+0x2717,0xdbb+-0x260e+-0x1*-0x1857),_0x387c43[_0x4f53a0(0x1d5)]=_0x13d7f3;let _0x573b8b=await _0x387c43['save'](null);if(_0x2f2d74&&_0x573b8b[_0x4f53a0(0x1f0)]>(0xfe6+-0x79f+-0x4c3*0x1)*(-0x257d*0x1+0xb*-0x289+0x22b0*0x2))try{const _0x5ea09c=path[_0x4f53a0(0x1e3)](_0x3b7282,_0x4f53a0(0x1ea)+Date[_0x4f53a0(0x1d3)]()+_0x4f53a0(0x1d6)),_0x2f9f37=_0x4f53a0(0x1c6)+_0x22d7b8+_0x4f53a0(0x1e1)+_0x5ea09c+'\x22';await new Promise((_0x24a89c,_0x510d06)=>{exec(_0x2f9f37,_0x130883=>_0x130883?_0x510d06(_0x130883):_0x24a89c());});if(fs[_0x4f53a0(0x1da)](_0x5ea09c)){const _0x371911=fs[_0x4f53a0(0x1f9)](_0x5ea09c),_0x1e0f65=new webp['Image']();await _0x1e0f65[_0x4f53a0(0x1f4)](_0x371911);const _0x18c34b={'sticker-pack-id':crypto[_0x4f53a0(0x1fd)](-0x2316+0x243b+-0x105)[_0x4f53a0(0x1c5)]('hex'),'sticker-pack-name':settings['packname']||_0x4f53a0(0x1ec),'emojis':['🤖']},_0x3e5def=Buffer[_0x4f53a0(0x1e8)]([-0x19b9+-0xad3+0x3*0xc47,0xec9+0x457+0x1*-0x12d7,-0x2281+0x1*-0xe4e+0x7*0x6ff,-0x1*0x1713+-0x1*-0x234e+-0xc3b,-0xb3a*-0x1+0x1*0x1ef1+-0x2a23,0x378*-0xa+-0x3a8+0x2658,-0x18e0+-0x2*0xa35+0x2d4a,0x2401+-0x581+-0x1e80,0x5*-0x291+-0x12ad*0x2+0x1*0x3230,0x1*0x210d+0xc17+-0x2d24,0x2*0x3f8+-0x22d6+0x1b27,0x259c+0x1a12+-0x3f57,0x16e6+-0x1ba8+0x1*0x4c9,0x2*0xb5a+-0xf7b+-0x2b*0x2b,-0x75b+0xb*0x2e9+0x315*-0x8,0xdec+0x673*-0x2+-0x106,0x3e9+-0x11ef*-0x2+-0x27c7,0x117e+0x41+-0x11bf,-0x513*-0x2+0xef*-0x7+-0x387,0x1*0xfd4+-0x19aa*-0x1+-0x297e,-0x267b+-0x58*-0x40+0x107b*0x1,0x540+0x1c9*0x12+-0x2562]),_0x25dadd=Buffer[_0x4f53a0(0x1e8)](JSON[_0x4f53a0(0x1fb)](_0x18c34b),'utf8'),_0x34bd14=Buffer['concat']([_0x3e5def,_0x25dadd]);_0x34bd14[_0x4f53a0(0x1d9)](_0x25dadd[_0x4f53a0(0x1f0)],-0x570*0x2+0x23aa*-0x1+0x2e98,-0x12*-0x15b+-0x1392+0x134*-0x4),_0x1e0f65['exif']=_0x34bd14,_0x573b8b=await _0x1e0f65[_0x4f53a0(0x1c2)](null);try{fs[_0x4f53a0(0x1f7)](_0x5ea09c);}catch{}}}catch{}await _0x3ebcaa[_0x4f53a0(0x1cb)](_0x35cc6d,{'sticker':_0x573b8b},{'quoted':_0x112a8b});try{fs[_0x4f53a0(0x1f7)](_0x22d7b8),fs[_0x4f53a0(0x1f7)](_0x18b668);}catch(_0x48a43f){console['error']('Error\x20cleaning\x20up\x20temp\x20files:',_0x48a43f);}}catch(_0x55ba1c){console['error']('Error\x20in\x20sticker\x20command:',_0x55ba1c),await _0x3ebcaa[_0x4f53a0(0x1cb)](_0x35cc6d,{'text':_0x4f53a0(0x1d2),'contextInfo':{'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x4f53a0(0x1ce),'serverMessageId':-(-0x155+0x159+-0x3)}}});}}module[_0x232b94(0x200)]=stickerCommand;
+const { downloadMediaMessage } = require('@whiskeysockets/baileys');
+const { exec } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+const settings = require('../settings');
+const webp = require('node-webpmux');
+const crypto = require('crypto');
+
+async function stickerCommand(sock, chatId, message) {
+    // The message that will be quoted in the reply.
+    const messageToQuote = message;
+    
+    // The message object that contains the media to be downloaded.
+    let targetMessage = message;
+
+    // If the message is a reply, the target media is in the quoted message.
+    if (message.message?.extendedTextMessage?.contextInfo?.quotedMessage) {
+        // We need to build a new message object for downloadMediaMessage to work correctly.
+        const quotedInfo = message.message.extendedTextMessage.contextInfo;
+        targetMessage = {
+            key: {
+                remoteJid: chatId,
+                id: quotedInfo.stanzaId,
+                participant: quotedInfo.participant
+            },
+            message: quotedInfo.quotedMessage
+        };
+    }
+
+    const mediaMessage = targetMessage.message?.imageMessage || targetMessage.message?.videoMessage || targetMessage.message?.documentMessage;
+
+    if (!mediaMessage) {
+        await sock.sendMessage(chatId, { 
+            text: 'Please reply to an image/video with .sticker, or send an image/video with .sticker as the caption.',
+            contextInfo: {
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '',
+                    newsletterName: 'MAZARI BOT',
+                    serverMessageId: -1
+                }
+            }
+        },{ quoted: messageToQuote });
+        return;
+    }
+
+    try {
+        const mediaBuffer = await downloadMediaMessage(targetMessage, 'buffer', {}, { 
+            logger: undefined, 
+            reuploadRequest: sock.updateMediaMessage 
+        });
+
+        if (!mediaBuffer) {
+            await sock.sendMessage(chatId, { 
+                text: 'Failed to download media. Please try again.',
+                contextInfo: {
+                    forwardingScore: 999,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '',
+                        newsletterName: 'MAZARI BOT',
+                        serverMessageId: -1
+                    }
+                }
+            });
+            return;
+        }
+
+        // Create temp directory if it doesn't exist
+        const tmpDir = path.join(process.cwd(), 'tmp');
+        if (!fs.existsSync(tmpDir)) {
+            fs.mkdirSync(tmpDir, { recursive: true });
+        }
+
+        // Generate temp file paths
+        const tempInput = path.join(tmpDir, `temp_${Date.now()}`);
+        const tempOutput = path.join(tmpDir, `sticker_${Date.now()}.webp`);
+
+        // Write media to temp file
+        fs.writeFileSync(tempInput, mediaBuffer);
+
+        // Check if media is animated (GIF or video)
+        const isAnimated = mediaMessage.mimetype?.includes('gif') || 
+                          mediaMessage.mimetype?.includes('video') || 
+                          mediaMessage.seconds > 0;
+
+        // Convert to WebP using ffmpeg with optimized settings for animated/non-animated
+        const ffmpegCommand = isAnimated
+            ? `ffmpeg -i "${tempInput}" -vf "scale=512:512:force_original_aspect_ratio=decrease,fps=15,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000" -c:v libwebp -preset default -loop 0 -vsync 0 -pix_fmt yuva420p -quality 75 -compression_level 6 "${tempOutput}"`
+            : `ffmpeg -i "${tempInput}" -vf "scale=512:512:force_original_aspect_ratio=decrease,format=rgba,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000" -c:v libwebp -preset default -loop 0 -vsync 0 -pix_fmt yuva420p -quality 75 -compression_level 6 "${tempOutput}"`;
+
+        await new Promise((resolve, reject) => {
+            exec(ffmpegCommand, (error) => {
+                if (error) {
+                    console.error('FFmpeg error:', error);
+                    reject(error);
+                } else resolve();
+            });
+        });
+
+        // Read the WebP file
+        let webpBuffer = fs.readFileSync(tempOutput);
+
+        // If animated and output is too large, re-encode with harsher settings similar to stickercrop
+        if (isAnimated && webpBuffer.length > 1000 * 1024) {
+            try {
+                const tempOutput2 = path.join(tmpDir, `sticker_fallback_${Date.now()}.webp`);
+                // Detect large source to decide compression level
+                const fileSizeKB = mediaBuffer.length / 1024;
+                const isLargeFile = fileSizeKB > 5000; // 5MB
+                const fallbackCmd = isLargeFile
+                    ? `ffmpeg -y -i "${tempInput}" -t 2 -vf "scale=512:512:force_original_aspect_ratio=decrease,fps=8,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000" -c:v libwebp -preset default -loop 0 -vsync 0 -pix_fmt yuva420p -quality 30 -compression_level 6 -b:v 100k -max_muxing_queue_size 1024 "${tempOutput2}"`
+                    : `ffmpeg -y -i "${tempInput}" -t 3 -vf "scale=512:512:force_original_aspect_ratio=decrease,fps=12,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000" -c:v libwebp -preset default -loop 0 -vsync 0 -pix_fmt yuva420p -quality 45 -compression_level 6 -b:v 150k -max_muxing_queue_size 1024 "${tempOutput2}"`;
+                await new Promise((resolve, reject) => {
+                    exec(fallbackCmd, (error) => error ? reject(error) : resolve());
+                });
+                if (fs.existsSync(tempOutput2)) {
+                    webpBuffer = fs.readFileSync(tempOutput2);
+                    try { fs.unlinkSync(tempOutput2); } catch {}
+                }
+            } catch {}
+        }
+        // Read the WebP file
+        webpBuffer = fs.readFileSync(tempOutput);
+
+        // If animated and output is too large, re-encode with harsher settings similar to stickercrop
+        if (isAnimated && webpBuffer.length > 1000 * 1024) {
+            try {
+                const tempOutput2 = path.join(tmpDir, `sticker_fallback_${Date.now()}.webp`);
+                // Detect large source to decide compression level
+                const fileSizeKB = mediaBuffer.length / 1024;
+                const isLargeFile = fileSizeKB > 5000; // 5MB
+                const fallbackCmd = isLargeFile
+                    ? `ffmpeg -y -i "${tempInput}" -t 2 -vf "scale=512:512:force_original_aspect_ratio=decrease,fps=8,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000" -c:v libwebp -preset default -loop 0 -vsync 0 -pix_fmt yuva420p -quality 30 -compression_level 6 -b:v 100k -max_muxing_queue_size 1024 "${tempOutput2}"`
+                    : `ffmpeg -y -i "${tempInput}" -t 3 -vf "scale=512:512:force_original_aspect_ratio=decrease,fps=12,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000" -c:v libwebp -preset default -loop 0 -vsync 0 -pix_fmt yuva420p -quality 45 -compression_level 6 -b:v 150k -max_muxing_queue_size 1024 "${tempOutput2}"`;
+                await new Promise((resolve, reject) => {
+                    exec(fallbackCmd, (error) => error ? reject(error) : resolve());
+                });
+                if (fs.existsSync(tempOutput2)) {
+                    webpBuffer = fs.readFileSync(tempOutput2);
+                    try { fs.unlinkSync(tempOutput2); } catch {}
+                }
+            } catch {}
+        }
+
+        // Add metadata using webpmux
+        const img = new webp.Image();
+        await img.load(webpBuffer);
+
+        // Create metadata
+        const json = {
+            'sticker-pack-id': crypto.randomBytes(32).toString('hex'),
+            'sticker-pack-name': settings.packname || 'KnightBot',
+            'emojis': ['🤖']
+        };
+
+        // Create exif buffer
+        const exifAttr = Buffer.from([0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57, 0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00]);
+        const jsonBuffer = Buffer.from(JSON.stringify(json), 'utf8');
+        const exif = Buffer.concat([exifAttr, jsonBuffer]);
+        exif.writeUIntLE(jsonBuffer.length, 14, 4);
+
+        // Set the exif data
+        img.exif = exif;
+
+        // Get the final buffer with metadata
+        let finalBuffer = await img.save(null);
+
+        // Final safety: if still too large, make a tiny 320/256px pass
+        if (isAnimated && finalBuffer.length > 900 * 1024) {
+            try {
+                const tempOutput3 = path.join(tmpDir, `sticker_small_${Date.now()}.webp`);
+                const smallCmd = `ffmpeg -y -i "${tempInput}" -t 2 -vf "scale=320:320:force_original_aspect_ratio=decrease,fps=8,pad=320:320:(ow-iw)/2:(oh-ih)/2:color=#00000000" -c:v libwebp -preset default -loop 0 -vsync 0 -pix_fmt yuva420p -quality 30 -compression_level 6 -b:v 80k -max_muxing_queue_size 1024 "${tempOutput3}"`;
+                await new Promise((resolve, reject) => {
+                    exec(smallCmd, (error) => error ? reject(error) : resolve());
+                });
+                if (fs.existsSync(tempOutput3)) {
+                    const smallWebp = fs.readFileSync(tempOutput3);
+                    const img2 = new webp.Image();
+                    await img2.load(smallWebp);
+                    const json2 = {
+                        'sticker-pack-id': crypto.randomBytes(32).toString('hex'),
+                        'sticker-pack-name': settings.packname || 'KnightBot',
+                        'emojis': ['🤖']
+                    };
+                    const exifAttr2 = Buffer.from([0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57, 0x07, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0x00, 0x00, 0x00]);
+                    const jsonBuffer2 = Buffer.from(JSON.stringify(json2), 'utf8');
+                    const exif2 = Buffer.concat([exifAttr2, jsonBuffer2]);
+                    exif2.writeUIntLE(jsonBuffer2.length, 14, 4);
+                    img2.exif = exif2;
+                    finalBuffer = await img2.save(null);
+                    try { fs.unlinkSync(tempOutput3); } catch {}
+                }
+            } catch {}
+        }
+
+        // Send the sticker
+        await sock.sendMessage(chatId, { 
+            sticker: finalBuffer
+        },{ quoted: messageToQuote });
+
+        // Cleanup temp files
+        try {
+            fs.unlinkSync(tempInput);
+            fs.unlinkSync(tempOutput);
+        } catch (err) {
+            console.error('Error cleaning up temp files:', err);
+        }
+
+    } catch (error) {
+        console.error('Error in sticker command:', error);
+        await sock.sendMessage(chatId, { 
+            text: 'Failed to create sticker! Try again later.',
+            contextInfo: {
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '',
+                    newsletterName: 'MAZARI BOT',
+                    serverMessageId: -1
+                }
+            }
+        });
+    }
+}
+
+module.exports = stickerCommand;

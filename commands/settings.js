@@ -1,1 +1,94 @@
-const _0x251d82=_0x43a2;(function(_0x1f022c,_0x5a6bc7){const _0x339756=_0x43a2,_0xf8f43f=_0x1f022c();while(!![]){try{const _0x1b5900=parseInt(_0x339756(0x157))/(-0xc7c*0x1+0x5*0xfe+0x787)*(parseInt(_0x339756(0x168))/(0x4*-0x182+-0x31*0x49+-0x1403*-0x1))+parseInt(_0x339756(0x167))/(0x2531+-0x177e*-0x1+-0x584*0xb)*(parseInt(_0x339756(0x163))/(-0xc*0x1b1+-0x1f1*0x1+0x9*0x279))+-parseInt(_0x339756(0x154))/(0x195e+0x4*0x439+-0x3d7*0xb)+parseInt(_0x339756(0x141))/(0x1*-0xe5a+0x1a*-0x10a+-0x2*-0x14b2)*(parseInt(_0x339756(0x16a))/(0x724+-0x1111*-0x1+0x182e*-0x1))+-parseInt(_0x339756(0x14d))/(0x32f*-0x2+0x19dc+0x2f*-0x6a)*(parseInt(_0x339756(0x15c))/(0x1*-0x6d0+0x67f+0x5a))+-parseInt(_0x339756(0x172))/(0x53*-0x48+0x1414*-0x1+0x2*0x15bb)+parseInt(_0x339756(0x145))/(-0x9d6+-0x1ac0+0x24a1);if(_0x1b5900===_0x5a6bc7)break;else _0xf8f43f['push'](_0xf8f43f['shift']());}catch(_0x5f268b){_0xf8f43f['push'](_0xf8f43f['shift']());}}}(_0x40dc,-0x6b*0x18dd+0x438b*-0xb+0x13e400));function _0x43a2(_0x388d6b,_0x3535c6){_0x388d6b=_0x388d6b-(0x2b*-0x53+-0x7d7+-0x89*-0x2b);const _0x2ad354=_0x40dc();let _0x79bc19=_0x2ad354[_0x388d6b];if(_0x43a2['VqHEXx']===undefined){var _0x17feb7=function(_0x1068fc){const _0x58d97c='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x1abfa1='',_0x4f0dc1='';for(let _0x336d69=-0x576*-0x1+-0x1b28+0xad9*0x2,_0x16b99a,_0x286545,_0x21bc20=-0x132b*0x1+0xb25+-0x806*-0x1;_0x286545=_0x1068fc['charAt'](_0x21bc20++);~_0x286545&&(_0x16b99a=_0x336d69%(-0x1*-0x295+-0x493+-0x101*-0x2)?_0x16b99a*(-0x10e6+0x4f6+-0xc*-0x104)+_0x286545:_0x286545,_0x336d69++%(-0x33f*-0x3+0x58f*-0x7+0x1d30))?_0x1abfa1+=String['fromCharCode'](0x18ce+-0x131c*-0x1+-0x2aeb&_0x16b99a>>(-(0x3*0x38f+0x17e4+0xb85*-0x3)*_0x336d69&0x8c2+-0x41a+-0x1*0x4a2)):0xc97*0x1+-0x867+-0x430){_0x286545=_0x58d97c['indexOf'](_0x286545);}for(let _0x2c8c74=0x418*0x2+0x125f+-0x1a8f,_0x418e38=_0x1abfa1['length'];_0x2c8c74<_0x418e38;_0x2c8c74++){_0x4f0dc1+='%'+('00'+_0x1abfa1['charCodeAt'](_0x2c8c74)['toString'](0xdd7+0x53*-0x35+-0x1b4*-0x2))['slice'](-(-0x8*0x3c7+-0x2*0x62c+0x2a92));}return decodeURIComponent(_0x4f0dc1);};_0x43a2['JXBtsI']=_0x17feb7,_0x43a2['fhHNOa']={},_0x43a2['VqHEXx']=!![];}const _0x5a419d=_0x2ad354[-0x1*0x1fb7+-0x12d9+0x4*0xca4],_0x3f2203=_0x388d6b+_0x5a419d,_0x55280f=_0x43a2['fhHNOa'][_0x3f2203];return!_0x55280f?(_0x79bc19=_0x43a2['JXBtsI'](_0x79bc19),_0x43a2['fhHNOa'][_0x3f2203]=_0x79bc19):_0x79bc19=_0x55280f,_0x79bc19;}const fs=require('fs');function _0x40dc(){const _0x180afd=['4OcIief1Dg8Gu3rHDhvZoIa','4OcIief1Dg9YzwfKoIa','l2f1Dg90ExbPBMCUANnVBG','zw5HyMXLza','yw50AwjHzhDVCMq','l3vZzxjhCM91CerHDgeUANnVBG','mZy1mdrqDMrmseu','4OcIiefUDgLIywr3B3jKoIbptIaOywn0Aw9UoIa','CMvHzezPBgvtEw5J','yxv0B1jLywn0Aw9U','nJe2mZeZnwDACfbRBW','zgvSzxrL','l21LC3nHz2vdB3vUDc5QC29U','qgCUDxm','zxjYB3i','4OcIiefUDgLSAw5RoIbptIaOywn0Aw9UoIa','4OcIiefUDgL0ywC6ie9oicHHy3rPB246ia','4OcIifbniejSB2nRzxi6ia','mtzvAvDVuKm','yw50AxrHzW','kKjpvcbtrvrusu5huYO','l2f1Dg9tDgf0DxmUANnVBG','4OcIiefUDgL0ywC6ie9grG','uhjPDMf0zq','y2HHDgjVDa','mteWnJm2mg5qEgHLBG','rMfPBgvKihrVihjLywqGC2v0DgLUz3mU','zw5KC1DPDgG','mtyYouv2sxvfwG','C2vUze1LC3nHz2u','4OcIief1Dg90ExbPBMC6ia','uhvIBgLJ','zNjVBu1L','mZy0odyZnM13yNLJrq','4OcIie1Vzgu6ia','CMvTB3rLsMLK','4OcIiefUDgLIywr3B3jKoIbprKy','4OcIiefUDgLSAw5RoIbprKy','ChvZAa','A2v5','mtCYnJrswwvMCKe','lI4VBgLIl2LZt3DUzxi','4OcIieDVB2rIEwu6ia','r3jVDxa6ia','mJK0BxrkB2Pk','nJC0Cgfgtvbx','4OcIief1Dg8GuMvHy3rPB246ia','ndu1rhHLBLHj','tM90ztOGugvYlwDYB3vWihnLDhrPBMDZihDPBgWGyMuGC2HVD24GD2HLBIb1C2vKigLUC2LKzsbHigDYB3vWlG','DxrMoa','z29Vzgj5zq','D2vSy29Tzq','AM9PBG','t25SEsbIB3qGB3DUzxiGy2fUihvZzsb0AgLZignVBw1HBMqH','rxjYB3iGAw4GC2v0DgLUz3mGy29TBwfUzdO','ndyZmZeWmerRwvvRBG','ywn0Aw9U','AxnqDwjSAwm','4OcIifDLBgnVBwu6ia','t0zg'];_0x40dc=function(){return _0x180afd;};return _0x40dc();}function readJsonSafe(_0x12f148,_0xb9dbe4){const _0x3d63d8=_0x43a2;try{const _0x4fb0d4=fs[_0x3d63d8(0x143)](_0x12f148,_0x3d63d8(0x16c));return JSON['parse'](_0x4fb0d4);}catch(_0x4f84f6){return _0xb9dbe4;}}const isOwnerOrSudo=require(_0x251d82(0x164));async function settingsCommand(_0x184a9d,_0x3d4adb,_0x465c2c){const _0x4fb4d8=_0x251d82;try{const _0x437655=_0x465c2c[_0x4fb4d8(0x162)]['participant']||_0x465c2c['key'][_0x4fb4d8(0x15e)],_0x2498ee=await isOwnerOrSudo(_0x437655,_0x184a9d,_0x3d4adb);if(!_0x465c2c[_0x4fb4d8(0x162)][_0x4fb4d8(0x15b)]&&!_0x2498ee){await _0x184a9d[_0x4fb4d8(0x158)](_0x3d4adb,{'text':_0x4fb4d8(0x170)},{'quoted':_0x465c2c});return;}const _0x459be8=_0x3d4adb[_0x4fb4d8(0x156)](_0x4fb4d8(0x148)),_0x1e22a8='./data',_0x32d6f8=readJsonSafe(_0x1e22a8+_0x4fb4d8(0x147),{'isPublic':!![]}),_0x2a1b53=readJsonSafe(_0x1e22a8+_0x4fb4d8(0x150),{'enabled':![]}),_0x5d664c=readJsonSafe(_0x1e22a8+'/autoread.json',{'enabled':![]}),_0x2abde4=readJsonSafe(_0x1e22a8+_0x4fb4d8(0x13d),{'enabled':![]}),_0x79a2a2=readJsonSafe(_0x1e22a8+'/pmblocker.json',{'enabled':![]}),_0x3fff9c=readJsonSafe(_0x1e22a8+'/anticall.json',{'enabled':![]}),_0x1511f0=readJsonSafe(_0x1e22a8+_0x4fb4d8(0x140),{'antilink':{},'antibadword':{},'welcome':{},'goodbye':{},'chatbot':{},'antitag':{}}),_0x1b105f=Boolean(_0x1511f0[_0x4fb4d8(0x144)]),_0x35be8e=_0x459be8?_0x3d4adb:null,_0x4bf97a=_0x35be8e?Boolean(_0x1511f0['antilink']&&_0x1511f0['antilink'][_0x35be8e]):![],_0x2715fe=_0x35be8e?Boolean(_0x1511f0[_0x4fb4d8(0x13f)]&&_0x1511f0[_0x4fb4d8(0x13f)][_0x35be8e]):![],_0x4b7a9c=_0x35be8e?Boolean(_0x1511f0[_0x4fb4d8(0x16e)]&&_0x1511f0['welcome'][_0x35be8e]):![],_0x2622f8=_0x35be8e?Boolean(_0x1511f0[_0x4fb4d8(0x16d)]&&_0x1511f0[_0x4fb4d8(0x16d)][_0x35be8e]):![],_0x3b935f=_0x35be8e?Boolean(_0x1511f0[_0x4fb4d8(0x153)]&&_0x1511f0[_0x4fb4d8(0x153)][_0x35be8e]):![],_0x323cc=_0x35be8e?_0x1511f0[_0x4fb4d8(0x14e)]&&_0x1511f0[_0x4fb4d8(0x14e)][_0x35be8e]:null,_0x4c5d16=[];_0x4c5d16[_0x4fb4d8(0x161)](_0x4fb4d8(0x14f)),_0x4c5d16[_0x4fb4d8(0x161)](''),_0x4c5d16[_0x4fb4d8(0x161)](_0x4fb4d8(0x15d)+(_0x32d6f8[_0x4fb4d8(0x174)]?_0x4fb4d8(0x15a):_0x4fb4d8(0x152))),_0x4c5d16[_0x4fb4d8(0x161)](_0x4fb4d8(0x13b)+(_0x2a1b53[_0x4fb4d8(0x13e)]?'ON':'OFF')),_0x4c5d16[_0x4fb4d8(0x161)](_0x4fb4d8(0x13c)+(_0x5d664c[_0x4fb4d8(0x13e)]?'ON':_0x4fb4d8(0x176))),_0x4c5d16[_0x4fb4d8(0x161)](_0x4fb4d8(0x159)+(_0x2abde4[_0x4fb4d8(0x13e)]?'ON':_0x4fb4d8(0x176))),_0x4c5d16[_0x4fb4d8(0x161)](_0x4fb4d8(0x14c)+(_0x79a2a2[_0x4fb4d8(0x13e)]?'ON':'OFF')),_0x4c5d16[_0x4fb4d8(0x161)]('•\x20Anticall:\x20'+(_0x3fff9c['enabled']?'ON':_0x4fb4d8(0x176))),_0x4c5d16[_0x4fb4d8(0x161)](_0x4fb4d8(0x169)+(_0x1b105f?'ON':'OFF'));if(_0x35be8e){_0x4c5d16[_0x4fb4d8(0x161)](''),_0x4c5d16['push'](_0x4fb4d8(0x166)+_0x35be8e);if(_0x4bf97a){const _0x9b2357=_0x1511f0['antilink'][_0x35be8e];_0x4c5d16[_0x4fb4d8(0x161)](_0x4fb4d8(0x14a)+(_0x9b2357[_0x4fb4d8(0x173)]||'delete')+')');}else _0x4c5d16['push'](_0x4fb4d8(0x160));if(_0x2715fe){const _0x50c9c3=_0x1511f0[_0x4fb4d8(0x13f)][_0x35be8e];_0x4c5d16['push'](_0x4fb4d8(0x142)+(_0x50c9c3[_0x4fb4d8(0x173)]||_0x4fb4d8(0x146))+')');}else _0x4c5d16['push'](_0x4fb4d8(0x15f));_0x4c5d16['push'](_0x4fb4d8(0x175)+(_0x4b7a9c?'ON':_0x4fb4d8(0x176))),_0x4c5d16['push'](_0x4fb4d8(0x165)+(_0x2622f8?'ON':'OFF')),_0x4c5d16[_0x4fb4d8(0x161)]('•\x20Chatbot:\x20'+(_0x3b935f?'ON':_0x4fb4d8(0x176))),_0x323cc&&_0x323cc['enabled']?_0x4c5d16[_0x4fb4d8(0x161)](_0x4fb4d8(0x14b)+(_0x323cc['action']||_0x4fb4d8(0x146))+')'):_0x4c5d16['push'](_0x4fb4d8(0x151));}else _0x4c5d16['push'](''),_0x4c5d16[_0x4fb4d8(0x161)](_0x4fb4d8(0x16b));await _0x184a9d['sendMessage'](_0x3d4adb,{'text':_0x4c5d16[_0x4fb4d8(0x16f)]('\x0a')},{'quoted':_0x465c2c});}catch(_0x4f9950){console[_0x4fb4d8(0x149)](_0x4fb4d8(0x171),_0x4f9950),await _0x184a9d[_0x4fb4d8(0x158)](_0x3d4adb,{'text':_0x4fb4d8(0x155)},{'quoted':_0x465c2c});}}module['exports']=settingsCommand;
+﻿const fs = require('fs');
+
+function readJsonSafe(path, fallback) {
+    try {
+        const txt = fs.readFileSync(path, 'utf8');
+        return JSON.parse(txt);
+    } catch (_) {
+        return fallback;
+    }
+}
+
+const isOwnerOrSudo = require('../lib/isOwner');
+
+async function settingsCommand(sock, chatId, message) {
+    try {
+        const senderId = message.key.participant || message.key.remoteJid;
+        const isOwner = await isOwnerOrSudo(senderId, sock, chatId);
+        
+        if (!message.key.fromMe && !isOwner) {
+            await sock.sendMessage(chatId, { text: 'Only bot owner can use this command!' }, { quoted: message });
+            return;
+        }
+
+        const isGroup = chatId.endsWith('@g.us');
+        const dataDir = './data';
+
+        const mode = readJsonSafe(`${dataDir}/messageCount.json`, { isPublic: true });
+        const autoStatus = readJsonSafe(`${dataDir}/autoStatus.json`, { enabled: false });
+        const autoread = readJsonSafe(`${dataDir}/autoread.json`, { enabled: false });
+        const autotyping = readJsonSafe(`${dataDir}/autotyping.json`, { enabled: false });
+        const pmblocker = readJsonSafe(`${dataDir}/pmblocker.json`, { enabled: false });
+        const anticall = readJsonSafe(`${dataDir}/anticall.json`, { enabled: false });
+        const userGroupData = readJsonSafe(`${dataDir}/userGroupData.json`, {
+            antilink: {}, antibadword: {}, welcome: {}, goodbye: {}, chatbot: {}, antitag: {}
+        });
+        const autoReaction = Boolean(userGroupData.autoReaction);
+
+        // Per-group features
+        const groupId = isGroup ? chatId : null;
+        const antilinkOn = groupId ? Boolean(userGroupData.antilink && userGroupData.antilink[groupId]) : false;
+        const antibadwordOn = groupId ? Boolean(userGroupData.antibadword && userGroupData.antibadword[groupId]) : false;
+        const welcomeOn = groupId ? Boolean(userGroupData.welcome && userGroupData.welcome[groupId]) : false;
+        const goodbyeOn = groupId ? Boolean(userGroupData.goodbye && userGroupData.goodbye[groupId]) : false;
+        const chatbotOn = groupId ? Boolean(userGroupData.chatbot && userGroupData.chatbot[groupId]) : false;
+        const antitagCfg = groupId ? (userGroupData.antitag && userGroupData.antitag[groupId]) : null;
+
+        const lines = [];
+        lines.push('*BOT SETTINGS*');
+        lines.push('');
+        lines.push(`• Mode: ${mode.isPublic ? 'Public' : 'Private'}`);
+        lines.push(`• Auto Status: ${autoStatus.enabled ? 'ON' : 'OFF'}`);
+        lines.push(`• Autoread: ${autoread.enabled ? 'ON' : 'OFF'}`);
+        lines.push(`• Autotyping: ${autotyping.enabled ? 'ON' : 'OFF'}`);
+        lines.push(`• PM Blocker: ${pmblocker.enabled ? 'ON' : 'OFF'}`);
+        lines.push(`• Anticall: ${anticall.enabled ? 'ON' : 'OFF'}`);
+        lines.push(`• Auto Reaction: ${autoReaction ? 'ON' : 'OFF'}`);
+        if (groupId) {
+            lines.push('');
+            lines.push(`Group: ${groupId}`);
+            if (antilinkOn) {
+                const al = userGroupData.antilink[groupId];
+                lines.push(`• Antilink: ON (action: ${al.action || 'delete'})`);
+            } else {
+                lines.push('• Antilink: OFF');
+            }
+            if (antibadwordOn) {
+                const ab = userGroupData.antibadword[groupId];
+                lines.push(`• Antibadword: ON (action: ${ab.action || 'delete'})`);
+            } else {
+                lines.push('• Antibadword: OFF');
+            }
+            lines.push(`• Welcome: ${welcomeOn ? 'ON' : 'OFF'}`);
+            lines.push(`• Goodbye: ${goodbyeOn ? 'ON' : 'OFF'}`);
+            lines.push(`• Chatbot: ${chatbotOn ? 'ON' : 'OFF'}`);
+            if (antitagCfg && antitagCfg.enabled) {
+                lines.push(`• Antitag: ON (action: ${antitagCfg.action || 'delete'})`);
+            } else {
+                lines.push('• Antitag: OFF');
+            }
+        } else {
+            lines.push('');
+            lines.push('Note: Per-group settings will be shown when used inside a group.');
+        }
+
+        await sock.sendMessage(chatId, { text: lines.join('\n') }, { quoted: message });
+    } catch (error) {
+        console.error('Error in settings command:', error);
+        await sock.sendMessage(chatId, { text: 'Failed to read settings.' }, { quoted: message });
+    }
+}
+
+module.exports = settingsCommand;
+
+

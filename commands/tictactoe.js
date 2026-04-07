@@ -1,1 +1,215 @@
-const _0x16614b=_0x1867;function _0x1867(_0x225b9f,_0x191c88){_0x225b9f=_0x225b9f-(-0x45*0x76+0x4e*-0x51+-0x5*-0xb61);const _0xe5b57e=_0x45b4();let _0xcbdeda=_0xe5b57e[_0x225b9f];if(_0x1867['SdsVaQ']===undefined){var _0x163e96=function(_0x2222e6){const _0x391c64='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x5663c7='',_0x5d888d='';for(let _0x319005=0x1902+0x23f+0x1*-0x1b41,_0x18075c,_0x2ede1b,_0x5d7fce=-0x1b51+0x2454+-0x903*0x1;_0x2ede1b=_0x2222e6['charAt'](_0x5d7fce++);~_0x2ede1b&&(_0x18075c=_0x319005%(0x23f7+0x7*0x451+-0xb07*0x6)?_0x18075c*(0x7*0x2cb+0x1b03*0x1+-0x3*0xf70)+_0x2ede1b:_0x2ede1b,_0x319005++%(0x220*-0x9+0x179+-0x11ab*-0x1))?_0x5663c7+=String['fromCharCode'](-0x1*0xb53+0x145e+-0x80c&_0x18075c>>(-(-0x489+-0xc7+0x552)*_0x319005&-0x7f*-0x9+-0x1150+0xcdf)):0xfed+-0x10cd+0x20*0x7){_0x2ede1b=_0x391c64['indexOf'](_0x2ede1b);}for(let _0x3eeca8=-0xc34+-0x684+0x12b8,_0x26b582=_0x5663c7['length'];_0x3eeca8<_0x26b582;_0x3eeca8++){_0x5d888d+='%'+('00'+_0x5663c7['charCodeAt'](_0x3eeca8)['toString'](0x24a4+-0xe1c+-0x2cf*0x8))['slice'](-(-0x1b7b*-0x1+0x3a*0x2b+-0x2537));}return decodeURIComponent(_0x5d888d);};_0x1867['nuZJXJ']=_0x163e96,_0x1867['slHsGN']={},_0x1867['SdsVaQ']=!![];}const _0x32cf0b=_0xe5b57e[0x4a2+-0x55a+0xb8],_0x2d548e=_0x225b9f+_0x32cf0b,_0x4cb67a=_0x1867['slHsGN'][_0x2d548e];return!_0x4cb67a?(_0xcbdeda=_0x1867['nuZJXJ'](_0xcbdeda),_0x1867['slHsGN'][_0x2d548e]=_0xcbdeda):_0xcbdeda=_0x4cb67a,_0xcbdeda;}(function(_0x38c989,_0x479d68){const _0x56e787=_0x1867,_0x43d0f0=_0x38c989();while(!![]){try{const _0x43168d=parseInt(_0x56e787(0x6c))/(-0xdf2+0x7de*0x3+-0x1*0x9a7)*(parseInt(_0x56e787(0x82))/(0x2a2*0x3+0x14f7*0x1+-0x1cdb))+parseInt(_0x56e787(0xaa))/(0x1*-0x40d+-0x3dd*0x3+0xfa7*0x1)*(-parseInt(_0x56e787(0x6e))/(0x713+0x11*-0x209+0x1b8a))+parseInt(_0x56e787(0x9e))/(-0x14b7*0x1+-0x61b+0x1ad7*0x1)*(parseInt(_0x56e787(0x9a))/(0x5bc*-0x6+0x1b23+0x74b))+-parseInt(_0x56e787(0x91))/(-0x48*-0x89+-0x18a9*-0x1+-0x126*0x37)*(-parseInt(_0x56e787(0x7c))/(0x2*-0xd3+0x229+0x3*-0x29))+parseInt(_0x56e787(0x93))/(0x15*0xab+0xd3*0xb+-0x170f*0x1)+-parseInt(_0x56e787(0x69))/(0x632+-0xb5*0x1a+0x272*0x5)*(parseInt(_0x56e787(0x6a))/(-0x11fe*-0x1+0x1*-0x211f+0x1*0xf2c))+-parseInt(_0x56e787(0xa2))/(0x1921+-0xb26+0x29*-0x57)*(parseInt(_0x56e787(0x8e))/(-0x480+-0x15*-0xfb+0x100a*-0x1));if(_0x43168d===_0x479d68)break;else _0x43d0f0['push'](_0x43d0f0['shift']());}catch(_0x181769){_0x43d0f0['push'](_0x43d0f0['shift']());}}}(_0x45b4,-0x158d*-0x2+0x47f50+-0xbf1*-0x1));const TicTacToe=require(_0x16614b(0x70)),games={};function _0x45b4(){const _0x2b4583=['8j+oSIbuDxjUoIba','mJy1mZuYCePqDLz6','mE+4J+kdOW','v0fjveLorW','cGRILQiGugXHEwvYiokDJJOGqa','BwfW','ueXbwuLorW','mLbMBgTsrG','DhvYBG','C3rHCNrZv2L0Aa','mU+4J+kdOW','no+4J+kdOW','4P2mie5VDcb5B3vYihr1CM4H','4P2mievYCM9Yihn0yxj0Aw5NigDHBwuUifbSzwfZzsb0CNKGywDHAw4U','DgLJDgfJDg9Llq','CgXHEwvYwa','AM9PBG','n++4J+kdOW','nE+4J+kdOW','odmYquPVBKzm','D2LUBMvY','cVcFJQ4GkLrPy1rHy1rVzsbhyw1Lifn0yxj0zwqHkGOkv2fPDgLUzYbMB3iGqa','mteYBfDOrMfH','ihrVihbSyxKUlI4kcG','mJuXmtK2m0fwvKnzqW','oo+4J+kdOW','DgvZDa','oE+4J+kdOW','4P2mifLVDsbHCMuGC3rPBgWGAw4GysbNyw1LlIbuExbLicPZDxjYzw5KzxiQihrVihf1AxqU','C2XPy2u','ihDPBNmGDgHLigDHBwuH','nJGZodmYrwjSCffN','z2fTzq','cUkwOIaQuNvSzxm6kGRIGkiGtwfRzsaZihjVD3mGB2yGC3LTyM9SCYb2zxj0AwnHBgX5lcbOB3jPEM9UDgfSBhKGB3iGzgLHz29UywXSEsb0BYb3Aw4k4OcIifr5CguGysbUDw1IzxiGkdeTosKGDg8GCgXHy2uGEw91CIbZEw1IB2Wk4OcIifr5CguGkNn1CNjLBMrLCIOGDg8Gz2L2zsb1CaO','CMvUzgvY','nxDjvgz6CW','zxHWB3j0CW','BMfTzq','rxjYB3iGAw4GDgLJDgfJDg9LignVBw1HBMq6','ndy2nJHUrxDyBgu','igHHCYbZDxjYzw5KzxjLzceGqa','m++4J+kdOW','C3bSAxq','C3rHDgu','8j+KNsbhyw1LigvUzgvKigLUigeGzhjHDYe','C2vUze1LC3nHz2u','Aw5JBhvKzxm','nZy4odaXsenks1vH','ndq4mdqWv3vksMT4','ntvKveLAtMi','DMfSDwvZ','mte0mJi3zfzrEvH2','kIb0BYbQB2LUiq','ng9vBxv4vW','CgXHEwvYtW','lI4VBgLIl3rPy3rHy3rVzq','DhvYBNm','4P2mieLUDMfSAwqGBw92zseGvgHHDcbWB3nPDgLVBIbPCYbHBhjLywr5ihrHA2vUlG','nU+4J+kdOW','zMLUza','y3vYCMvUDfr1CM4','8j+pS++4JYba','cUkwOIbqBgf5zxiG4Q2voIba','4O+ZicPxywL0Aw5NigzVCIbVChbVBMvUDcOkvhLWzsaQlNr0Dca','DgLJDgfJDg9L','cGRILQiGkLjVB20Gsuq6kIa'];_0x45b4=function(){return _0x2b4583;};return _0x45b4();}async function tictactoeCommand(_0x42a9cb,_0x1e9cb4,_0x2928f4,_0x35d4b3){const _0xa23983=_0x16614b;try{if(Object[_0xa23983(0x6b)](games)[_0xa23983(0x74)](_0x290153=>_0x290153['id'][_0xa23983(0x84)]('tictactoe')&&[_0x290153[_0xa23983(0x9b)][_0xa23983(0x8a)],_0x290153[_0xa23983(0x9b)][_0xa23983(0x6f)]][_0xa23983(0xa9)](_0x2928f4))){await _0x42a9cb[_0xa23983(0xa8)](_0x1e9cb4,{'text':_0xa23983(0x97)});return;}let _0x1efc77=Object['values'](games)[_0xa23983(0x74)](_0x4fd966=>_0x4fd966[_0xa23983(0xa6)]===_0xa23983(0x7e)&&(_0x35d4b3?_0x4fd966[_0xa23983(0xa0)]===_0x35d4b3:!![]));if(_0x1efc77){_0x1efc77['o']=_0x1e9cb4,_0x1efc77[_0xa23983(0x9b)][_0xa23983(0x6f)]=_0x2928f4,_0x1efc77[_0xa23983(0xa6)]='PLAYING';const _0x530da3=_0x1efc77['game']['render']()['map'](_0x40eda4=>({'X':'❎','O':'⭕','1':_0xa23983(0x7d),'2':'2️⃣','3':_0xa23983(0xa4),'4':_0xa23983(0x86),'5':_0xa23983(0x8d),'6':_0xa23983(0x73),'7':_0xa23983(0x8c),'8':_0xa23983(0x94),'9':_0xa23983(0x96)}[_0x40eda4])),_0x304aa3=_0xa23983(0x90)+_0x1efc77['game'][_0xa23983(0x75)][_0xa23983(0xa5)]('@')[0xb*-0x35d+-0x1e5f+-0x1*-0x435e]+_0xa23983(0x92)+_0x530da3[_0xa23983(0x98)](-0x9b3+0x8a1*0x2+-0x78f,-0x119*-0x1f+0x8d*0xd+0x1*-0x292d)[_0xa23983(0x8b)]('')+'\x0a'+_0x530da3['slice'](-0x1*-0x12c1+0x246a+0x5*-0xb08,-0x183*-0x15+-0x2665+0x4*0x1ab)['join']('')+'\x0a'+_0x530da3[_0xa23983(0x98)](-0x33c+-0x65e+0x9a0)[_0xa23983(0x8b)]('')+_0xa23983(0x7a)+_0x1efc77['id']+_0xa23983(0x9c);await _0x42a9cb[_0xa23983(0xa8)](_0x1e9cb4,{'text':_0x304aa3,'mentions':[_0x1efc77[_0xa23983(0x9b)][_0xa23983(0x75)],_0x1efc77[_0xa23983(0x9b)][_0xa23983(0x8a)],_0x1efc77[_0xa23983(0x9b)][_0xa23983(0x6f)]]});}else{_0x1efc77={'id':_0xa23983(0x89)+ +new Date(),'x':_0x1e9cb4,'o':'','game':new TicTacToe(_0x2928f4,'o'),'state':_0xa23983(0x7e)};if(_0x35d4b3)_0x1efc77['name']=_0x35d4b3;await _0x42a9cb['sendMessage'](_0x1e9cb4,{'text':_0xa23983(0x78)+(_0x35d4b3||'')+_0xa23983(0x6d)}),games[_0x1efc77['id']]=_0x1efc77;}}catch(_0x1365f4){console['error'](_0xa23983(0xa1),_0x1365f4),await _0x42a9cb[_0xa23983(0xa8)](_0x1e9cb4,{'text':_0xa23983(0x88)});}}async function handleTicTacToeMove(_0x5b179a,_0x109bb0,_0x363382,_0x6ffa1b){const _0x3aa413=_0x16614b;try{const _0x28111f=Object['values'](games)[_0x3aa413(0x74)](_0x29d86d=>_0x29d86d['id'][_0x3aa413(0x84)](_0x3aa413(0x79))&&[_0x29d86d[_0x3aa413(0x9b)][_0x3aa413(0x8a)],_0x29d86d[_0x3aa413(0x9b)]['playerO']][_0x3aa413(0xa9)](_0x363382)&&_0x29d86d['state']===_0x3aa413(0x81));if(!_0x28111f)return;const _0xe02183=/^(surrender|give up)$/i[_0x3aa413(0x95)](_0x6ffa1b);if(!_0xe02183&&!/^[1-9]$/[_0x3aa413(0x95)](_0x6ffa1b))return;if(_0x363382!==_0x28111f[_0x3aa413(0x9b)][_0x3aa413(0x75)]&&!_0xe02183){await _0x5b179a[_0x3aa413(0xa8)](_0x109bb0,{'text':_0x3aa413(0x87)});return;}let _0x2b5ca9=_0xe02183?!![]:_0x28111f['game'][_0x3aa413(0x83)](_0x363382===_0x28111f[_0x3aa413(0x9b)]['playerO'],parseInt(_0x6ffa1b)-(-0xfdf+-0x2*0x5bf+-0x71*-0x3e));if(!_0x2b5ca9){await _0x5b179a[_0x3aa413(0xa8)](_0x109bb0,{'text':_0x3aa413(0x72)});return;}let _0x1e1a50=_0x28111f[_0x3aa413(0x9b)][_0x3aa413(0x8f)],_0x4614bd=_0x28111f['game'][_0x3aa413(0x71)]===-0xb*0x24b+-0x208c+0x39ce;const _0x2b8cd9=_0x28111f[_0x3aa413(0x9b)][_0x3aa413(0x9d)]()[_0x3aa413(0x80)](_0x4d8f25=>({'X':'❎','O':'⭕','1':_0x3aa413(0x7d),'2':_0x3aa413(0x85),'3':_0x3aa413(0xa4),'4':_0x3aa413(0x86),'5':'5️⃣','6':'6️⃣','7':'7️⃣','8':_0x3aa413(0x94),'9':_0x3aa413(0x96)}[_0x4d8f25]));if(_0xe02183){_0x1e1a50=_0x363382===_0x28111f[_0x3aa413(0x9b)][_0x3aa413(0x8a)]?_0x28111f[_0x3aa413(0x9b)]['playerO']:_0x28111f[_0x3aa413(0x9b)][_0x3aa413(0x8a)],await _0x5b179a['sendMessage'](_0x109bb0,{'text':_0x3aa413(0x76)+_0x363382[_0x3aa413(0xa5)]('@')[0x26b0+0x1af8+-0x41a8]+_0x3aa413(0xa3)+_0x1e1a50['split']('@')[-0x10*0x86+-0xbd1+0x1431]+_0x3aa413(0x99),'mentions':[_0x363382,_0x1e1a50]}),delete games[_0x28111f['id']];return;}let _0x554a36;if(_0x1e1a50)_0x554a36='🎉\x20@'+_0x1e1a50['split']('@')[0x2*0x10dd+-0x14bf*0x1+0xcfb*-0x1]+_0x3aa413(0x99);else _0x4614bd?_0x554a36=_0x3aa413(0xa7):_0x554a36=_0x3aa413(0x7b)+_0x28111f[_0x3aa413(0x9b)]['currentTurn'][_0x3aa413(0xa5)]('@')[-0x25c1+0x4a2+0x211f]+'\x20('+(_0x363382===_0x28111f[_0x3aa413(0x9b)][_0x3aa413(0x8a)]?'❎':'⭕')+')';const _0x34c740='\x0a🎮\x20*TicTacToe\x20Game*\x0a\x0a'+_0x554a36+'\x0a\x0a'+_0x2b8cd9[_0x3aa413(0x98)](-0xfb9+-0xaec+0x1aa5,-0x14d9+-0x3*-0xda+0x30d*0x6)[_0x3aa413(0x8b)]('')+'\x0a'+_0x2b8cd9['slice'](0x2590+0x189+0x2*-0x138b,-0x1*0x75b+-0xb*0x4c+-0x19*-0x6d)[_0x3aa413(0x8b)]('')+'\x0a'+_0x2b8cd9['slice'](0xd*0x3b+0x10fb+-0x13f4)[_0x3aa413(0x8b)]('')+_0x3aa413(0x7f)+_0x28111f[_0x3aa413(0x9b)][_0x3aa413(0x8a)][_0x3aa413(0xa5)]('@')[0x1*0xa81+0x8bf*-0x4+0x829*0x3]+_0x3aa413(0x77)+_0x28111f[_0x3aa413(0x9b)][_0x3aa413(0x6f)][_0x3aa413(0xa5)]('@')[0x2325+0xd9c+-0x7*0x6f7]+'\x0a\x0a'+(!_0x1e1a50&&!_0x4614bd?'•\x20Type\x20a\x20number\x20(1-9)\x20to\x20make\x20your\x20move\x0a•\x20Type\x20*surrender*\x20to\x20give\x20up':'')+'\x0a',_0x2f62a0=[_0x28111f[_0x3aa413(0x9b)][_0x3aa413(0x8a)],_0x28111f[_0x3aa413(0x9b)][_0x3aa413(0x6f)],..._0x1e1a50?[_0x1e1a50]:[_0x28111f['game'][_0x3aa413(0x75)]]];await _0x5b179a[_0x3aa413(0xa8)](_0x28111f['x'],{'text':_0x34c740,'mentions':_0x2f62a0}),_0x28111f['x']!==_0x28111f['o']&&await _0x5b179a['sendMessage'](_0x28111f['o'],{'text':_0x34c740,'mentions':_0x2f62a0}),(_0x1e1a50||_0x4614bd)&&delete games[_0x28111f['id']];}catch(_0xd067ae){console['error']('Error\x20in\x20tictactoe\x20move:',_0xd067ae);}}module[_0x16614b(0x9f)]={'tictactoeCommand':tictactoeCommand,'handleTicTacToeMove':handleTicTacToeMove};
+﻿const TicTacToe = require('../lib/tictactoe');
+
+// Store games globally
+const games = {};
+
+async function tictactoeCommand(sock, chatId, senderId, text) {
+    try {
+        // Check if player is already in a game
+        if (Object.values(games).find(room => 
+            room.id.startsWith('tictactoe') && 
+            [room.game.playerX, room.game.playerO].includes(senderId)
+        )) {
+            await sock.sendMessage(chatId, { 
+                text: '❌ You are still in a game. Type *surrender* to quit.' 
+            });
+            return;
+        }
+
+        // Look for existing room
+        let room = Object.values(games).find(room => 
+            room.state === 'WAITING' && 
+            (text ? room.name === text : true)
+        );
+
+        if (room) {
+            // Join existing room
+            room.o = chatId;
+            room.game.playerO = senderId;
+            room.state = 'PLAYING';
+
+            const arr = room.game.render().map(v => ({
+                'X': '❎',
+                'O': '⭕',
+                '1': '1️⃣',
+                '2': '2️⃣',
+                '3': '3️⃣',
+                '4': '4️⃣',
+                '5': '5️⃣',
+                '6': '6️⃣',
+                '7': '7️⃣',
+                '8': '8️⃣',
+                '9': '9️⃣',
+            }[v]));
+
+            const str = `
+🎮 *TicTacToe Game Started!*
+
+Waiting for @${room.game.currentTurn.split('@')[0]} to play...
+
+${arr.slice(0, 3).join('')}
+${arr.slice(3, 6).join('')}
+${arr.slice(6).join('')}
+
+▢ *Room ID:* ${room.id}
+▢ *Rules:*
+• Make 3 rows of symbols vertically, horizontally or diagonally to win
+• Type a number (1-9) to place your symbol
+• Type *surrender* to give up
+`;
+
+            // Send message only once to the group
+            await sock.sendMessage(chatId, { 
+                text: str,
+                mentions: [room.game.currentTurn, room.game.playerX, room.game.playerO]
+            });
+
+        } else {
+            // Create new room
+            room = {
+                id: 'tictactoe-' + (+new Date),
+                x: chatId,
+                o: '',
+                game: new TicTacToe(senderId, 'o'),
+                state: 'WAITING'
+            };
+
+            if (text) room.name = text;
+
+            await sock.sendMessage(chatId, { 
+                text: `⏳ *Waiting for opponent*\nType *.ttt ${text || ''}* to join!`
+            });
+
+            games[room.id] = room;
+        }
+
+    } catch (error) {
+        console.error('Error in tictactoe command:', error);
+        await sock.sendMessage(chatId, { 
+            text: '❌ Error starting game. Please try again.' 
+        });
+    }
+}
+
+async function handleTicTacToeMove(sock, chatId, senderId, text) {
+    try {
+        // Find player's game
+        const room = Object.values(games).find(room => 
+            room.id.startsWith('tictactoe') && 
+            [room.game.playerX, room.game.playerO].includes(senderId) && 
+            room.state === 'PLAYING'
+        );
+
+        if (!room) return;
+
+        const isSurrender = /^(surrender|give up)$/i.test(text);
+        
+        if (!isSurrender && !/^[1-9]$/.test(text)) return;
+
+        // Allow surrender at any time, not just during player's turn
+        if (senderId !== room.game.currentTurn && !isSurrender) {
+            await sock.sendMessage(chatId, { 
+                text: '❌ Not your turn!' 
+            });
+            return;
+        }
+
+        let ok = isSurrender ? true : room.game.turn(
+            senderId === room.game.playerO,
+            parseInt(text) - 1
+        );
+
+        if (!ok) {
+            await sock.sendMessage(chatId, { 
+                text: '❌ Invalid move! That position is already taken.' 
+            });
+            return;
+        }
+
+        let winner = room.game.winner;
+        let isTie = room.game.turns === 9;
+
+        const arr = room.game.render().map(v => ({
+            'X': '❎',
+            'O': '⭕',
+            '1': '1️⃣',
+            '2': '2️⃣',
+            '3': '3️⃣',
+            '4': '4️⃣',
+            '5': '5️⃣',
+            '6': '6️⃣',
+            '7': '7️⃣',
+            '8': '8️⃣',
+            '9': '9️⃣',
+        }[v]));
+
+        if (isSurrender) {
+            // Set the winner to the opponent of the surrendering player
+            winner = senderId === room.game.playerX ? room.game.playerO : room.game.playerX;
+            
+            // Send a surrender message
+            await sock.sendMessage(chatId, { 
+                text: `🏳️ @${senderId.split('@')[0]} has surrendered! @${winner.split('@')[0]} wins the game!`,
+                mentions: [senderId, winner]
+            });
+            
+            // Delete the game immediately after surrender
+            delete games[room.id];
+            return;
+        }
+
+        let gameStatus;
+        if (winner) {
+            gameStatus = `🎉 @${winner.split('@')[0]} wins the game!`;
+        } else if (isTie) {
+            gameStatus = `🤝 Game ended in a draw!`;
+        } else {
+            gameStatus = `🎲 Turn: @${room.game.currentTurn.split('@')[0]} (${senderId === room.game.playerX ? '❎' : '⭕'})`;
+        }
+
+        const str = `
+🎮 *TicTacToe Game*
+
+${gameStatus}
+
+${arr.slice(0, 3).join('')}
+${arr.slice(3, 6).join('')}
+${arr.slice(6).join('')}
+
+▢ Player ❎: @${room.game.playerX.split('@')[0]}
+▢ Player ⭕: @${room.game.playerO.split('@')[0]}
+
+${!winner && !isTie ? '• Type a number (1-9) to make your move\n• Type *surrender* to give up' : ''}
+`;
+
+        const mentions = [
+            room.game.playerX, 
+            room.game.playerO,
+            ...(winner ? [winner] : [room.game.currentTurn])
+        ];
+
+        await sock.sendMessage(room.x, { 
+            text: str,
+            mentions: mentions
+        });
+
+        if (room.x !== room.o) {
+            await sock.sendMessage(room.o, { 
+                text: str,
+                mentions: mentions
+            });
+        }
+
+        if (winner || isTie) {
+            delete games[room.id];
+        }
+
+    } catch (error) {
+        console.error('Error in tictactoe move:', error);
+    }
+}
+
+module.exports = {
+    tictactoeCommand,
+    handleTicTacToeMove
+};

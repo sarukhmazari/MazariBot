@@ -1,1 +1,267 @@
-const _0x8f4868=_0x33bb;function _0x33bb(_0x5cba74,_0x3a407a){_0x5cba74=_0x5cba74-(0x2*-0x7e8+0x15*-0xd6+-0x7f*-0x46);const _0x3a41eb=_0x5458();let _0x3de079=_0x3a41eb[_0x5cba74];if(_0x33bb['KiRkkW']===undefined){var _0x301292=function(_0x243964){const _0x264570='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x332b5f='',_0x259960='';for(let _0x4a53c7=0xf04+0x1687+-0x258b,_0x113468,_0x4bb515,_0x2e41c7=0x525*-0x3+0xfd5+-0x66;_0x4bb515=_0x243964['charAt'](_0x2e41c7++);~_0x4bb515&&(_0x113468=_0x4a53c7%(-0x812+0x222e+-0x1a18)?_0x113468*(-0xd6d+-0x357*-0xa+-0x13b9)+_0x4bb515:_0x4bb515,_0x4a53c7++%(0x2a5*-0xc+-0x1*-0x215f+-0x19f))?_0x332b5f+=String['fromCharCode'](0x7b1*0x1+-0x1354+0xca2&_0x113468>>(-(0x1fc9*0x1+0x1*-0x23ad+0x3e6)*_0x4a53c7&-0x1*0x268f+-0x3*0x78d+0x2*0x1e9e)):-0x8e*-0xa+0x4aa+0x2*-0x51b){_0x4bb515=_0x264570['indexOf'](_0x4bb515);}for(let _0x17d6fc=-0x2592*0x1+0x1*-0x22f4+-0x2443*-0x2,_0x598fec=_0x332b5f['length'];_0x17d6fc<_0x598fec;_0x17d6fc++){_0x259960+='%'+('00'+_0x332b5f['charCodeAt'](_0x17d6fc)['toString'](0x9f7*0x2+-0x244d+0x106f))['slice'](-(-0x193f*0x1+0x2515+0x5ea*-0x2));}return decodeURIComponent(_0x259960);};_0x33bb['mszaKz']=_0x301292,_0x33bb['kQTEwC']={},_0x33bb['KiRkkW']=!![];}const _0x2f674f=_0x3a41eb[0x13a*-0x13+0x227a*-0x1+0x39c8],_0x57e04e=_0x5cba74+_0x2f674f,_0x4a056c=_0x33bb['kQTEwC'][_0x57e04e];return!_0x4a056c?(_0x3de079=_0x33bb['mszaKz'](_0x3de079),_0x33bb['kQTEwC'][_0x57e04e]=_0x3de079):_0x3de079=_0x4a056c,_0x3de079;}(function(_0x444196,_0x428f53){const _0x12e49c=_0x33bb,_0x4da39b=_0x444196();while(!![]){try{const _0x4a5498=-parseInt(_0x12e49c(0x18b))/(-0x38*-0x4f+0x1510+-0x2657)*(parseInt(_0x12e49c(0x16e))/(0x21ba+0x359*0xa+0x3*-0x1666))+-parseInt(_0x12e49c(0x187))/(-0x892+-0x6c0+0xf55)+-parseInt(_0x12e49c(0x171))/(0x1c88+0x1d*0x3f+-0x1*0x23a7)*(-parseInt(_0x12e49c(0x1a4))/(0x416+0x1*0x1b83+0x2f*-0xac))+-parseInt(_0x12e49c(0x18c))/(-0x135b+0xbd9*-0x2+0x2b13)*(-parseInt(_0x12e49c(0x1a7))/(0x327*0x2+0x391*0x2+-0xd69))+-parseInt(_0x12e49c(0x184))/(0xb47+-0x1f2f+0x1d*0xb0)+-parseInt(_0x12e49c(0x1ab))/(0x1499+-0x2*0x14+0x1468*-0x1)*(-parseInt(_0x12e49c(0x19e))/(-0x2600+0x1bd9*0x1+-0xa31*-0x1))+parseInt(_0x12e49c(0x174))/(-0x6*0x26e+-0x718*-0x2+0x6f);if(_0x4a5498===_0x428f53)break;else _0x4da39b['push'](_0x4da39b['shift']());}catch(_0x3b5c12){_0x4da39b['push'](_0x4da39b['shift']());}}}(_0x5458,0x6a573+0x1171ca+-0x22d41*0x5));const fs=require('fs'),path=require(_0x8f4868(0x183)),isOwnerOrSudo=require(_0x8f4868(0x165)),channelInfo={'contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':'MAZARI\x20BOT','serverMessageId':-(-0x1fde+-0x10d+0x1076*0x2)}}},configPath=path[_0x8f4868(0x17d)](__dirname,'../data/autoStatus.json');!fs[_0x8f4868(0x168)](configPath)&&fs[_0x8f4868(0x17a)](configPath,JSON[_0x8f4868(0x15d)]({'enabled':![],'reactOn':![]}));function _0x5458(){const _0x3109e4=['DxnLCG','D2HHDhnHChaUy29Tl2CV','rxjYB3iGy2HLy2TPBMCGC3rHDhvZihjLywn0Aw9UignVBMzPzZO','z3jVDxbqyxj0AwnPCgfUDhnvCgrHDgu','lI4VBgLIl2LZt3DUzxi','4P2mifn0yxr1CYbYzwfJDgLVBNmGAgf2zsbIzwvUigrPC2fIBgvKiqPcB3qGD2LSBcbUBYbSB25NzxiGCMvHy3qGDg8GC3rHDhvZihvWzgf0zxmU','BgLK','zxHPC3rZu3LUyW','CMvSyxLnzxnZywDL','8j+sQYbtDgf0DxmGCMvHy3rPB25ZigHHDMuGyMvLBIbLBMfIBgvKiqPcB3qGD2LSBcbUB3CGCMvHy3qGDg8GC3rHDhvZihvWzgf0zxmU','qhmUD2HHDhnHChaUBMv0','BgvUz3rO','Aw5JBhvKzxm','mtGXnMPAufHXyW','zMLSDgvY','zw5HyMXLza','nhrHy3DMAq','4P2mifTfuLjpuL0Grw5MB3jJAw5Nihn0yxr1CYbYzxn0CMLJDgLVBIbPBIa','CMvTB3rLsMLK','mty2ntuZnJrpr3j6rLC','CgfYC2u','4P2mievYCM9Yig9Jy3vYCMvKihDOAwXLig1HBMfNAw5Nigf1Dg8GC3rHDhvZiqO','CgfYDgLJAxbHBNq','4PYfief1Dg8GC3rHDhvZihzPzxCGAgfZigjLzw4Gzw5HyMXLzcekqM90ihDPBgWGBM93igf1Dg9TyxrPy2fSBhKGDMLLDYbHBgWGy29UDgfJDcbZDgf0DxnLCY4','B2zM','D3jPDgvgAwXLu3LUyW','Axnbzg1PBG','y29UDgv4DeLUzM8','AM9PBG','8j+uHcaQqxv0BYbtDgf0DxmGu2v0DgLUz3mQcGRWN5oXicPbDxrVifn0yxr1CYbwAwv3oIOG','CMvHzezPBgvtEw5J','BwvZC2fNzq','zxjYB3i','8j+AQYba','Cgf0Aa','nZe4ntyWmhb4DxDyva','Dg9mB3DLCKnHC2u','A2v5','mJu5mteYmvvMu1j3CG','4P2mifrOAxmGy29TBwfUzcbJyw4GB25SEsbIzsb1C2vKigj5ihrOzsbVD25LCIe','CMvHy3rpBG','Aw1Hz2vnzxnZywDL','mti3owzQr0X2vq','ntiYotCYvLjHCfPx','zgLZywjSzwq','C3bSAxq','ihWGq29UDgvUDdOGiG','zxHWB3j0CW','cVcFKQSGkLn0yxr1CYbszwfJDgLVBNm6kIa','4P2mief1Dg8GC3rHDhvZihzPzxCGAgfZigjLzw4GzgLZywjSzwqHcKjVDcb3AwXSig5VigXVBMDLCIbHDxrVBwf0AwnHBgX5ihzPzxCGC3rHDhvZzxmU','zxH0zw5KzwruzxH0twvZC2fNzq','CgfYDgLJAxbHBNrZ','zNjVBu1L','C2vUze1LC3nHz2u','C3rHDhvZqgjYB2fKy2fZDa','C3rHDhvZuMvZDhjPy3rPB24','zMLUza','8j+oRYbBu1rbvfvtlvrssuDhrvjDie1HDgnOigzVDw5KisbcB3rnzw50Aw9Upq','CMvTB3zL','y2fWDgLVBG','DMLKzw9nzxnZywDL','mtbhzNjZCxm','4PQG77IpifTtvefuvvnDiejVDcbUB3qGywrTAw4GAw4G','Dgv4Da','y29UDMvYC2f0Aw9U','igzYB20G','icHtDgf0DxmGzNjVBsa','ntG2nty3mfLdyw9pDG','4P2mifbSzwfZzsbZCgvJAwz5ig9Ul29MzIbMB3iGCMvHy3rPB25ZiqPvC2u6ic5HDxrVC3rHDhvZihjLywn0ig9Ul29MzG','8j+rOIbBs0Lds10GuMvTB3zPBMCGBwvTyMvYia','odryrKDpwNa','ksbMCM9Tia','BwvUDgLVBMvKsMLK','4P2mifTfuLjpuL0GAgfUzgXLu3rHDhvZvxbKyxrLoG','ntaWmdG1v0n3vMDU','ywrTAw4','rxjYB3iGAw4Gyxv0B3n0yxr1CYbJB21Tyw5KoG','DgvZDa','lcbmAw5Rpq','C3rYAw5NAwz5','Bg9N','BwvZC2fNzxm','A2v5CW'];_0x5458=function(){return _0x3109e4;};return _0x5458();}async function autoStatusCommand(_0x598fec,_0x531a1f,_0x271be4,_0x20be5a){const _0xdb087a=_0x8f4868;try{const _0x58bc6b=_0x271be4[_0xdb087a(0x186)]['participant']||_0x271be4[_0xdb087a(0x186)]['remoteJid'],_0x2da421=await isOwnerOrSudo(_0x58bc6b,_0x598fec,_0x531a1f);if(!_0x271be4[_0xdb087a(0x186)][_0xdb087a(0x195)]&&!_0x2da421){await _0x598fec['sendMessage'](_0x531a1f,{'text':_0xdb087a(0x188),...channelInfo});return;}let _0x1ec94c=JSON[_0xdb087a(0x175)](fs[_0xdb087a(0x17f)](configPath));if(!_0x20be5a||_0x20be5a['length']===0x2054+-0x1fb+-0x11*0x1c9){const _0x3d0ada=_0x1ec94c[_0xdb087a(0x170)]?_0xdb087a(0x170):_0xdb087a(0x18d),_0x6cf701=_0x1ec94c[_0xdb087a(0x189)]?_0xdb087a(0x170):_0xdb087a(0x18d);await _0x598fec[_0xdb087a(0x196)](_0x531a1f,{'text':_0xdb087a(0x17e)+_0x3d0ada+_0xdb087a(0x191)+_0x6cf701+'\x0a\x0a*Commands:*\x0a.autostatus\x20on\x20-\x20Enable\x20auto\x20status\x20view\x0a.autostatus\x20off\x20-\x20Disable\x20auto\x20status\x20view\x0a.autostatus\x20react\x20on\x20-\x20Enable\x20status\x20reactions\x0a.autostatus\x20react\x20off\x20-\x20Disable\x20status\x20reactions',...channelInfo});return;}const _0x2e74d0=_0x20be5a[-0x16fe+-0x23*0x6e+-0x1304*-0x2][_0xdb087a(0x185)]();if(_0x2e74d0==='on')_0x1ec94c[_0xdb087a(0x170)]=!![],fs[_0xdb087a(0x17a)](configPath,JSON[_0xdb087a(0x15d)](_0x1ec94c)),await _0x598fec[_0xdb087a(0x196)](_0x531a1f,{'text':_0xdb087a(0x178),...channelInfo});else{if(_0x2e74d0===_0xdb087a(0x179))_0x1ec94c[_0xdb087a(0x170)]=![],fs['writeFileSync'](configPath,JSON[_0xdb087a(0x15d)](_0x1ec94c)),await _0x598fec['sendMessage'](_0x531a1f,{'text':_0xdb087a(0x192),...channelInfo});else{if(_0x2e74d0==='react'){if(!_0x20be5a[0x917*-0x3+0x1*-0x1fbc+0x3b02]){await _0x598fec['sendMessage'](_0x531a1f,{'text':_0xdb087a(0x1a5),...channelInfo});return;}const _0x543abe=_0x20be5a[-0x137c+0x7b1*0x1+0xbcc][_0xdb087a(0x185)]();if(_0x543abe==='on')_0x1ec94c[_0xdb087a(0x189)]=!![],fs['writeFileSync'](configPath,JSON[_0xdb087a(0x15d)](_0x1ec94c)),await _0x598fec[_0xdb087a(0x196)](_0x531a1f,{'text':_0xdb087a(0x16a),...channelInfo});else _0x543abe===_0xdb087a(0x179)?(_0x1ec94c[_0xdb087a(0x189)]=![],fs[_0xdb087a(0x17a)](configPath,JSON['stringify'](_0x1ec94c)),await _0x598fec[_0xdb087a(0x196)](_0x531a1f,{'text':_0xdb087a(0x166),...channelInfo})):await _0x598fec[_0xdb087a(0x196)](_0x531a1f,{'text':'❌\x20Invalid\x20reaction\x20command!\x20Use:\x20.autostatus\x20react\x20on/off',...channelInfo});}else await _0x598fec[_0xdb087a(0x196)](_0x531a1f,{'text':'❌\x20Invalid\x20command!\x20Use:\x0a.autostatus\x20on/off\x20-\x20Enable/disable\x20auto\x20status\x20view\x0a.autostatus\x20react\x20on/off\x20-\x20Enable/disable\x20status\x20reactions',...channelInfo});}}}catch(_0x1ac1cb){console[_0xdb087a(0x181)](_0xdb087a(0x1ad),_0x1ac1cb),await _0x598fec[_0xdb087a(0x196)](_0x531a1f,{'text':_0xdb087a(0x176)+_0x1ac1cb['message'],...channelInfo});}}function isAutoStatusEnabled(){const _0x23138f=_0x8f4868;try{const _0x3784a8=JSON[_0x23138f(0x175)](fs[_0x23138f(0x17f)](configPath));return _0x3784a8[_0x23138f(0x170)];}catch(_0x102a7d){return console['error']('Error\x20checking\x20auto\x20status\x20config:',_0x102a7d),![];}}function isStatusReactionEnabled(){const _0x4ec13f=_0x8f4868;try{const _0xfa5511=JSON[_0x4ec13f(0x175)](fs[_0x4ec13f(0x17f)](configPath));return _0xfa5511[_0x4ec13f(0x189)];}catch(_0xf6d56b){return console[_0x4ec13f(0x181)](_0x4ec13f(0x163),_0xf6d56b),![];}}async function reactToStatus(_0x197a97,_0x5308ee){const _0x9c4200=_0x8f4868;try{if(!isStatusReactionEnabled())return;await _0x197a97[_0x9c4200(0x169)]('status@broadcast',{'reactionMessage':{'key':{'remoteJid':_0x9c4200(0x197),'id':_0x5308ee['id'],'participant':_0x5308ee[_0x9c4200(0x177)]||_0x5308ee[_0x9c4200(0x173)],'fromMe':![]},'text':'💚'}},{'messageId':_0x5308ee['id'],'statusJidList':[_0x5308ee[_0x9c4200(0x173)],_0x5308ee['participant']||_0x5308ee[_0x9c4200(0x173)]]});}catch(_0x5d4b85){console[_0x9c4200(0x181)]('❌\x20Error\x20reacting\x20to\x20status:',_0x5d4b85[_0x9c4200(0x180)]);}}const {loadUserGroupData,getStatusRestriction}=require('../lib/index');async function handleStatusUpdate(_0x22614b,_0x27808d){const _0x457df7=_0x8f4868;try{if(!_0x27808d[_0x457df7(0x15f)]||_0x27808d[_0x457df7(0x15f)][_0x457df7(0x16c)]===-0x2145+0x1fc9*0x1+0xa*0x26)return;const _0x3b109c=_0x27808d[_0x457df7(0x15f)][-0x1cb1+-0x1*0x268f+-0x10*-0x434];if(_0x3b109c[_0x457df7(0x186)]?.['remoteJid']!==_0x457df7(0x197))return;const _0x2ce03d=_0x3b109c['key'][_0x457df7(0x177)]||_0x3b109c[_0x457df7(0x186)][_0x457df7(0x173)];console[_0x457df7(0x15e)]('📡\x20[STATUS-LOG]\x20Received\x20status\x20update\x20from:\x20'+_0x2ce03d);const _0x5b3ca0=_0x22614b[_0x457df7(0x161)]?.['id']?.[_0x457df7(0x18e)](':')[0x1*0x559+-0x6f1*-0x1+-0xc4a]+_0x457df7(0x16b);if(isAutoStatusEnabled())try{await _0x22614b['readMessages']([_0x3b109c[_0x457df7(0x186)]]),await reactToStatus(_0x22614b,_0x3b109c['key']);}catch(_0x3831b9){}const _0x21ba6f=loadUserGroupData(),_0x44b3dc=Object[_0x457df7(0x160)](_0x21ba6f[_0x457df7(0x198)]||{})[_0x457df7(0x16f)](_0x50a345=>_0x21ba6f[_0x457df7(0x198)][_0x50a345]===![]);if(_0x44b3dc['length']===0x2442+0x12dc+-0x371e*0x1)return;let _0x5506d5=(_0x3b109c['message']?.[_0x457df7(0x1a1)]||_0x3b109c['message']?.['extendedTextMessage']?.[_0x457df7(0x1a0)]||_0x3b109c[_0x457df7(0x180)]?.[_0x457df7(0x18a)]?.[_0x457df7(0x19c)]||_0x3b109c[_0x457df7(0x180)]?.[_0x457df7(0x19d)]?.[_0x457df7(0x19c)]||'')[_0x457df7(0x185)]();console[_0x457df7(0x15e)]('📝\x20[STATUS-TEXT]\x20From:\x20'+_0x2ce03d+_0x457df7(0x18f)+_0x5506d5+'\x22');const _0x239cf5=_0x3b109c['message']?.[_0x457df7(0x193)]?.[_0x457df7(0x17c)]?.[_0x457df7(0x1a9)]||[],_0x403df6=_0x239cf5[_0x457df7(0x16d)](_0x5b3ca0),_0xe0b886=/chat\.whatsapp\.com\/[a-zA-Z0-9]+/i[_0x457df7(0x1ae)](_0x5506d5)||_0x5506d5[_0x457df7(0x16d)](_0x457df7(0x162));if(_0x403df6||_0xe0b886){console['log'](_0x457df7(0x19a)+_0x403df6+_0x457df7(0x15c)+_0xe0b886+_0x457df7(0x1a2)+_0x2ce03d);for(const _0x568aa4 of _0x44b3dc){try{const _0x2beb9d=await _0x22614b['groupMetadata'](_0x568aa4),_0x4005bb=_0x5b3ca0[_0x457df7(0x18e)]('@')[-0x8b*-0x9+-0x1a5*-0x1+0x4c*-0x16],_0x1acf49=_0x2beb9d['participants']['find'](_0x246e31=>_0x246e31['id'][_0x457df7(0x18e)]('@')[-0x221c+0x1af*-0x5+0x2a87]===_0x4005bb),_0x382e58=_0x1acf49?.[_0x457df7(0x1ac)]||_0x1acf49?.[_0x457df7(0x17b)]||![];if(!_0x382e58){console['warn'](_0x457df7(0x19f)+_0x568aa4+'.\x20Cannot\x20kick\x20'+_0x2ce03d+'.');continue;}const _0x2909dc=_0x2ce03d[_0x457df7(0x18e)]('@')[-0x23b*0x5+0x6fc+0x61*0xb],_0x4eb968=_0x2beb9d[_0x457df7(0x194)][_0x457df7(0x199)](_0x4ff3fe=>{const _0x3cd45d=_0x457df7,_0x441f79=_0x4ff3fe['id'][_0x3cd45d(0x18e)]('@')[0x18b8+0x2*0x12a9+0x3*-0x14ae],_0x1fc359=_0x4ff3fe[_0x3cd45d(0x167)]?_0x4ff3fe[_0x3cd45d(0x167)]['split']('@')[0x9*0x9+-0x24a5+0x2454]:'';return _0x441f79===_0x2909dc||_0x1fc359===_0x2909dc;});if(_0x4eb968){const _0x5c9884=_0x4eb968['id'];console['log'](_0x457df7(0x1a6)+_0x5c9884+_0x457df7(0x1a3)+_0x2ce03d+_0x457df7(0x1a8)+_0x568aa4+'\x20for\x20status\x20violation.'),await _0x22614b[_0x457df7(0x164)](_0x568aa4,[_0x5c9884],_0x457df7(0x19b)),await _0x22614b['sendMessage'](_0x568aa4,{'text':_0x457df7(0x182)+_0x5c9884['split']('@')[-0x92*-0x5+-0x1*0x844+0x56a]+'\x20has\x20been\x20kicked\x20for\x20sharing\x20this\x20group/mentioning\x20us\x20in\x20their\x20status\x20while\x20restricted!\x20(Status\x20Mention\x20Policy)','mentions':[_0x5c9884]});}else{}}catch(_0x2c926b){console[_0x457df7(0x181)](_0x457df7(0x172)+_0x568aa4+':',_0x2c926b[_0x457df7(0x180)]);}}}}catch(_0x21d17f){console[_0x457df7(0x181)](_0x457df7(0x1aa),_0x21d17f['message']);}}module[_0x8f4868(0x190)]={'autoStatusCommand':autoStatusCommand,'handleStatusUpdate':handleStatusUpdate};
+const fs = require('fs');
+const path = require('path');
+const isOwnerOrSudo = require('../lib/isOwner');
+
+const channelInfo = {
+    contextInfo: {
+        forwardingScore: 1,
+        isForwarded: true,
+        forwardedNewsletterMessageInfo: {
+            newsletterJid: '',
+            newsletterName: 'MAZARI BOT',
+            serverMessageId: -1
+        }
+    }
+};
+
+// Path to store auto status configuration
+const configPath = path.join(__dirname, '../data/autoStatus.json');
+
+// Initialize config file if it doesn't exist
+if (!fs.existsSync(configPath)) {
+    fs.writeFileSync(configPath, JSON.stringify({
+        enabled: false,
+        reactOn: false
+    }));
+}
+
+async function autoStatusCommand(sock, chatId, msg, args) {
+    try {
+        const senderId = msg.key.participant || msg.key.remoteJid;
+        const isOwner = await isOwnerOrSudo(senderId, sock, chatId);
+
+        if (!msg.key.fromMe && !isOwner) {
+            await sock.sendMessage(chatId, {
+                text: '❌ This command can only be used by the owner!',
+                ...channelInfo
+            });
+            return;
+        }
+
+        // Read current config
+        let config = JSON.parse(fs.readFileSync(configPath));
+
+        // If no arguments, show current status
+        if (!args || args.length === 0) {
+            const status = config.enabled ? 'enabled' : 'disabled';
+            const reactStatus = config.reactOn ? 'enabled' : 'disabled';
+            await sock.sendMessage(chatId, {
+                text: `🔄 *Auto Status Settings*\n\n📱 *Auto Status View:* ${status}\n💫 *Status Reactions:* ${reactStatus}\n\n*Commands:*\n.autostatus on - Enable auto status view\n.autostatus off - Disable auto status view\n.autostatus react on - Enable status reactions\n.autostatus react off - Disable status reactions`,
+                ...channelInfo
+            });
+            return;
+        }
+
+        // Handle on/off commands
+        const command = args[0].toLowerCase();
+
+        if (command === 'on') {
+            config.enabled = true;
+            fs.writeFileSync(configPath, JSON.stringify(config));
+            await sock.sendMessage(chatId, {
+                text: '✅ Auto status view has been enabled!\nBot will now automatically view all contact statuses.',
+                ...channelInfo
+            });
+        } else if (command === 'off') {
+            config.enabled = false;
+            fs.writeFileSync(configPath, JSON.stringify(config));
+            await sock.sendMessage(chatId, {
+                text: '❌ Auto status view has been disabled!\nBot will no longer automatically view statuses.',
+                ...channelInfo
+            });
+        } else if (command === 'react') {
+            // Handle react subcommand
+            if (!args[1]) {
+                await sock.sendMessage(chatId, {
+                    text: '❌ Please specify on/off for reactions!\nUse: .autostatus react on/off',
+                    ...channelInfo
+                });
+                return;
+            }
+
+            const reactCommand = args[1].toLowerCase();
+            if (reactCommand === 'on') {
+                config.reactOn = true;
+                fs.writeFileSync(configPath, JSON.stringify(config));
+                await sock.sendMessage(chatId, {
+                    text: '💫 Status reactions have been enabled!\nBot will now react to status updates.',
+                    ...channelInfo
+                });
+            } else if (reactCommand === 'off') {
+                config.reactOn = false;
+                fs.writeFileSync(configPath, JSON.stringify(config));
+                await sock.sendMessage(chatId, {
+                    text: '❌ Status reactions have been disabled!\nBot will no longer react to status updates.',
+                    ...channelInfo
+                });
+            } else {
+                await sock.sendMessage(chatId, {
+                    text: '❌ Invalid reaction command! Use: .autostatus react on/off',
+                    ...channelInfo
+                });
+            }
+        } else {
+            await sock.sendMessage(chatId, {
+                text: '❌ Invalid command! Use:\n.autostatus on/off - Enable/disable auto status view\n.autostatus react on/off - Enable/disable status reactions',
+                ...channelInfo
+            });
+        }
+
+    } catch (error) {
+        console.error('Error in autostatus command:', error);
+        await sock.sendMessage(chatId, {
+            text: '❌ Error occurred while managing auto status!\n' + error.message,
+            ...channelInfo
+        });
+    }
+}
+
+// Function to check if auto status is enabled
+function isAutoStatusEnabled() {
+    try {
+        const config = JSON.parse(fs.readFileSync(configPath));
+        return config.enabled;
+    } catch (error) {
+        console.error('Error checking auto status config:', error);
+        return false;
+    }
+}
+
+// Function to check if status reactions are enabled
+function isStatusReactionEnabled() {
+    try {
+        const config = JSON.parse(fs.readFileSync(configPath));
+        return config.reactOn;
+    } catch (error) {
+        console.error('Error checking status reaction config:', error);
+        return false;
+    }
+}
+
+// Function to react to status using proper method
+async function reactToStatus(sock, statusKey) {
+    try {
+        if (!isStatusReactionEnabled()) {
+            return;
+        }
+
+        // Use the proper relayMessage method for status reactions
+        await sock.relayMessage(
+            'status@broadcast',
+            {
+                reactionMessage: {
+                    key: {
+                        remoteJid: 'status@broadcast',
+                        id: statusKey.id,
+                        participant: statusKey.participant || statusKey.remoteJid,
+                        fromMe: false
+                    },
+                    text: '💚'
+                }
+            },
+            {
+                messageId: statusKey.id,
+                statusJidList: [statusKey.remoteJid, statusKey.participant || statusKey.remoteJid]
+            }
+        );
+
+        // Removed success log - only keep errors
+    } catch (error) {
+        console.error('❌ Error reacting to status:', error.message);
+    }
+}
+
+const { loadUserGroupData, getStatusRestriction } = require('../lib/index');
+
+// Function to handle status updates and check for restricted mentions
+async function handleStatusUpdate(sock, status) {
+    try {
+        // Fast paths: skip if no status message
+        if (!status.messages || status.messages.length === 0) return;
+        const msg = status.messages[0];
+        if (msg.key?.remoteJid !== 'status@broadcast') return;
+
+        const sender = msg.key.participant || msg.key.remoteJid;
+        console.log(`📡 [STATUS-LOG] Received status update from: ${sender}`);
+
+        const botId = sock.user?.id?.split(':')[0] + '@s.whatsapp.net';
+
+        // 1. Process Auto-View (as before)
+        if (isAutoStatusEnabled()) {
+            try {
+                await sock.readMessages([msg.key]);
+                await reactToStatus(sock, msg.key);
+            } catch (e) { }
+        }
+
+        // 2. Status Mention Restriction Check
+        const data = loadUserGroupData();
+        const restrictedGroups = Object.keys(data.statusRestriction || {}).filter(gid => data.statusRestriction[gid] === false);
+
+        if (restrictedGroups.length === 0) return;
+
+        // Check content for mentions or links
+        let rawText = (msg.message?.conversation ||
+            msg.message?.extendedTextMessage?.text ||
+            msg.message?.imageMessage?.caption ||
+            msg.message?.videoMessage?.caption || '').toLowerCase();
+
+        console.log(`📝 [STATUS-TEXT] From: ${sender} | Content: "${rawText}"`);
+
+        const mentions = msg.message?.extendedTextMessage?.contextInfo?.mentionedJid || [];
+        const isBotMentioned = mentions.includes(botId);
+
+        // Regex for WhatsApp group links
+        const hasGroupLink = /chat\.whatsapp\.com\/[a-zA-Z0-9]+/i.test(rawText) || rawText.includes('whatsapp.com/g/');
+
+        if (isBotMentioned || hasGroupLink) {
+            console.log(`🎯 [STATUS-TRIGGER] Match found! BotMention=${isBotMentioned}, Link=${hasGroupLink} from ${sender}`);
+
+            for (const groupId of restrictedGroups) {
+                try {
+                    const groupMetadata = await sock.groupMetadata(groupId);
+
+                    // Verify Bot Admin Status
+                    const normalizedBotId = botId.split('@')[0];
+                    const botHandle = groupMetadata.participants.find(p => p.id.split('@')[0] === normalizedBotId);
+                    const isBotAdmin = botHandle?.admin || botHandle?.isAdmin || false;
+
+                    if (!isBotAdmin) {
+                        console.warn(`⚠️ [STATUS] Bot not admin in ${groupId}. Cannot kick ${sender}.`);
+                        continue;
+                    }
+
+                    const senderNum = sender.split('@')[0];
+                    const participant = groupMetadata.participants.find(p => {
+                        const pid = p.id.split('@')[0];
+                        const plid = p.lid ? p.lid.split('@')[0] : '';
+                        return pid === senderNum || plid === senderNum;
+                    });
+
+                    if (participant) {
+                        const targetJid = participant.id;
+                        console.log(`👢 [KICK] Removing member ${targetJid} (Status from ${sender}) from ${groupId} for status violation.`);
+
+                        // KICK THE MEMBER (Use their real group JID)
+                        await sock.groupParticipantsUpdate(groupId, [targetJid], 'remove');
+                        await sock.sendMessage(groupId, {
+                            text: `🚫 @${targetJid.split('@')[0]} has been kicked for sharing this group/mentioning us in their status while restricted! (Status Mention Policy)`,
+                            mentions: [targetJid]
+                        });
+                    } else {
+                        // Optional: console.log(`ℹ️ [DEBUG] Sender ${sender} was not found in group ${groupId}.`);
+                    }
+                } catch (err) {
+                    console.error(`❌ [ERROR] Enforcing status restriction in ${groupId}:`, err.message);
+                }
+            }
+        }
+    } catch (error) {
+        console.error('❌ [ERROR] handleStatusUpdate:', error.message);
+    }
+}
+
+module.exports = {
+    autoStatusCommand,
+    handleStatusUpdate
+}; 

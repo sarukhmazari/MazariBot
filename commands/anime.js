@@ -1,1 +1,145 @@
-function _0x5636(_0x271a6c,_0x30a3fc){_0x271a6c=_0x271a6c-(0xd0c+-0x1*0x8c3+-0x266);const _0xebb223=_0x22f7();let _0x1fa2ce=_0xebb223[_0x271a6c];if(_0x5636['KHDZRG']===undefined){var _0x539a7e=function(_0x2dbf5c){const _0x15ff9e='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x4a5442='',_0x5155ca='';for(let _0x54ce1c=-0xfe9+-0x1af2+0x2adb,_0x17a7af,_0x1f2519,_0xd91d84=0x17f6+-0x342+0x14*-0x109;_0x1f2519=_0x2dbf5c['charAt'](_0xd91d84++);~_0x1f2519&&(_0x17a7af=_0x54ce1c%(-0x200f+-0x1*0xabd+0x2ad0)?_0x17a7af*(-0x26c5+-0x25f1*-0x1+0x4*0x45)+_0x1f2519:_0x1f2519,_0x54ce1c++%(-0xe4*0x12+-0x1a83+0x883*0x5))?_0x4a5442+=String['fromCharCode'](0x1*-0x5f7+-0x19b1+0x1*0x20a7&_0x17a7af>>(-(-0xd16+-0x160b+0x2323)*_0x54ce1c&-0x4b*0x7d+0x89*0x2a+-0x75*-0x1f)):0x14e*-0x2+-0x78a*-0x1+-0x4ee){_0x1f2519=_0x15ff9e['indexOf'](_0x1f2519);}for(let _0x581b88=0x5*-0x525+-0x1fa7+0x110*0x36,_0x22076c=_0x4a5442['length'];_0x581b88<_0x22076c;_0x581b88++){_0x5155ca+='%'+('00'+_0x4a5442['charCodeAt'](_0x581b88)['toString'](0x36*0x3d+0x2605+-0x32d3))['slice'](-(0x1148+0x166e+-0x27b4));}return decodeURIComponent(_0x5155ca);};_0x5636['FOudkQ']=_0x539a7e,_0x5636['kxdtTM']={},_0x5636['KHDZRG']=!![];}const _0x452afb=_0xebb223[0x6a9+-0xe3*0x21+-0x107*-0x16],_0x5cf13f=_0x271a6c+_0x452afb,_0x2a9fed=_0x5636['kxdtTM'][_0x5cf13f];return!_0x2a9fed?(_0x1fa2ce=_0x5636['FOudkQ'](_0x1fa2ce),_0x5636['kxdtTM'][_0x5cf13f]=_0x1fa2ce):_0x1fa2ce=_0x2a9fed,_0x1fa2ce;}function _0x22f7(){const _0x497695=['4PYOiefUAw1LoIa','Ahr0Chm6lY9HCgKUC29Tzs1Yyw5KB20TyxbPlMnVBs9HBMLTDq','zxjYB3i','uhjPBwfYEsbbueKGzMfPBgvKigzVCIa','y3j5','Cgf0','A2LZCW','qwXSiefqsxmGzMfPBgvKigzVCIa','nteWndiYnwP2qwLYva','BgLUAW','BwfW','ChjPBwfYEq','zMfSBgjHy2SX','nKXzEhLStW','4P2mifnVCNj5lcbHBMLTzsa','AhvN','mty3ndm4ndHNrNLVwwy','nteWownmt2f5Ca','tw96AwXSys81lJa','4P2miefUigvYCM9Yig9Jy3vYCMvKihDOAwXLigzLDgnOAw5NigfUAw1LihjLywn0Aw9UlG','y2HPBgrFChjVy2vZCW','AM9PBG','mZGXodmXmNnPrfHPBq','yw5PBxuTCxvVDgu','Ahr0Chm6lY9UzwTVCY5SAwzLl2fWAs92mI9PBwC','DxjS','mZmXAwvcsw1n','mtiXmKvNCvbQqW','Aw5JBhvKzxm','CxvVDgu','zMfJzv9WywXT','rMfSBgjHy2SGqvbjideGzMfPBgvKlcb0CNLPBMCGzMfSBgjHy2SGmI4UlG','Cg9Rzq','y3j5ChrV','z2v0','rxjYB3iGC2vUzgLUzYbHBMLTzsbPBwfNztO','rxjYB3iGAw4Gyw5PBwuGy29TBwfUzdO','D2LUAW','kVcFJQ3IG6qGqw5PBwuGuMvHy3rPB25ZkGOkvxnHz2u6ic5HBMLTzsa8DhLWzt4kcKf2ywLSywjSzsb0ExbLCZOk','zgf0yq','zxHWB3j0CW','zMfSBgjHy2SY','Cgf0Aa','ndm4nJe5m1nvBxfOvW','zMfJzxbHBg0','zMfJzs1WywXT','cGPuCNKGB25Lig9MoIa','ndaYuuLAqu1W','4P2mifvUC3vWCg9YDgvKihr5Cgu6ia','ndC4mtK1mgL3vvvsqG','Ahr0Chm6lY9HCgKUD2fPzNuUCgLJCY9ZzNC','4P2miezHAwXLzcb0BYbZzw5KigfUAw1LigLTywDLlG','Bg9N','BM9T','ovfmD1vcCa','yw5PBxvXDw90zq','C2vUze1LC3nHz2u'];_0x22f7=function(){return _0x497695;};return _0x22f7();}const _0x364b39=_0x5636;(function(_0x39aca1,_0x14dde4){const _0x2d2b40=_0x5636,_0x475d88=_0x39aca1();while(!![]){try{const _0x4df014=parseInt(_0x2d2b40(0x1f5))/(-0xfa+-0x21a+0x315)*(-parseInt(_0x2d2b40(0x20a))/(0x5*-0x55b+0x95*0x18+0xcd1*0x1))+-parseInt(_0x2d2b40(0x1ec))/(0x1136+-0x970+-0x7c3)*(parseInt(_0x2d2b40(0x1f6))/(0x85*0x1+0xf9*0x26+-0x2577))+-parseInt(_0x2d2b40(0x1e3))/(0x26dd+-0x1dba+0x91e*-0x1)+parseInt(_0x2d2b40(0x1e8))/(-0x1c1*0x15+0x1664+-0x1*-0xe77)*(parseInt(_0x2d2b40(0x206))/(0x1b80+-0x26*0x20+0x33f*-0x7))+parseInt(_0x2d2b40(0x1f1))/(-0x1c33+-0x1320+0x2f5b)*(parseInt(_0x2d2b40(0x211))/(0x1*0x1b6b+0x17c1+0x2b1*-0x13))+-parseInt(_0x2d2b40(0x20c))/(0x1036+0x1a08+-0x94*0x49)+parseInt(_0x2d2b40(0x1eb))/(0x25d2+-0x1*-0x179f+0x1eb3*-0x2);if(_0x4df014===_0x14dde4)break;else _0x475d88['push'](_0x475d88['shift']());}catch(_0x28b96e){_0x475d88['push'](_0x475d88['shift']());}}}(_0x22f7,0x40e8a+-0x16e+0xb5a*0x60));const axios=require('axios'),{exec}=require(_0x364b39(0x1ef)),fs=require('fs'),path=require(_0x364b39(0x205)),webp=require('node-webpmux'),crypto=require(_0x364b39(0x1fc)),API_ENDPOINTS={'primary':_0x364b39(0x215),'fallback1':_0x364b39(0x20d),'fallback2':_0x364b39(0x1f3)};function normalizeType(_0x4c6cf9){const _0x23d225=_0x364b39,_0x29e4f1=(_0x4c6cf9||'')['toLowerCase']();if(_0x29e4f1===_0x23d225(0x207)||_0x29e4f1===_0x23d225(0x1f9))return _0x23d225(0x208);if(_0x29e4f1===_0x23d225(0x1f8)||_0x29e4f1===_0x23d225(0x1f2)||_0x29e4f1===_0x23d225(0x212))return _0x23d225(0x1f8);return _0x29e4f1;}async function sendAnimu(_0xf2f09b,_0x5ede0,_0x5dff52,_0x62d3ac){const _0x44111e=_0x364b39;let _0x3d1e17=null;try{const _0x49c188=API_ENDPOINTS[_0x44111e(0x1e6)]+'/'+_0x62d3ac,_0x30ceb2=await axios['get'](_0x49c188,{'timeout':0x2710,'headers':{'User-Agent':_0x44111e(0x1ed)}});_0x30ceb2[_0x44111e(0x202)]&&_0x30ceb2['data'][_0x44111e(0x1e4)]&&(_0x3d1e17=_0x30ceb2[_0x44111e(0x202)][_0x44111e(0x1e4)]);}catch(_0x3f7993){console[_0x44111e(0x20f)](_0x44111e(0x217)+_0x62d3ac+',\x20trying\x20fallback...');try{const _0x1c1ed4={'hug':'hug','kiss':_0x44111e(0x21a),'pat':_0x44111e(0x219),'poke':_0x44111e(0x1fb),'wink':_0x44111e(0x200),'nom':_0x44111e(0x210),'cry':_0x44111e(0x218)};if(_0x1c1ed4[_0x62d3ac]){const _0xf545ce=await axios[_0x44111e(0x1fd)](API_ENDPOINTS[_0x44111e(0x1e7)]+'/'+_0x1c1ed4[_0x62d3ac],{'timeout':0x2710,'headers':{'User-Agent':_0x44111e(0x1ed)}});_0xf545ce[_0x44111e(0x202)]&&_0xf545ce[_0x44111e(0x202)]['url']&&(_0x3d1e17=_0xf545ce[_0x44111e(0x202)]['url']);}}catch(_0x44cc8b){console[_0x44111e(0x20f)](_0x44111e(0x1fa));try{const _0xd6a572={'hug':_0x44111e(0x1ea),'kiss':'kiss','pat':_0x44111e(0x219),'poke':_0x44111e(0x1fb),'wink':_0x44111e(0x200)};if(_0xd6a572[_0x62d3ac]){const _0x240322=await axios[_0x44111e(0x1fd)](API_ENDPOINTS[_0x44111e(0x204)]+'/'+_0xd6a572[_0x62d3ac],{'timeout':0x2710,'headers':{'User-Agent':_0x44111e(0x1ed)}});_0x240322[_0x44111e(0x202)]&&_0x240322[_0x44111e(0x202)][_0x44111e(0x1f4)]&&(_0x3d1e17=_0x240322[_0x44111e(0x202)][_0x44111e(0x1f4)]);}}catch(_0x3f71fc){console[_0x44111e(0x20f)](_0x44111e(0x21b)+_0x62d3ac);}}}if(!_0x3d1e17){await _0xf2f09b[_0x44111e(0x213)](_0x5ede0,{'text':_0x44111e(0x1e9)+_0x62d3ac+'\x20is\x20temporarily\x20unavailable.\x20Please\x20try\x20again\x20later.'},{'quoted':_0x5dff52});return;}try{await _0xf2f09b[_0x44111e(0x213)](_0x5ede0,{'image':{'url':_0x3d1e17},'caption':_0x44111e(0x214)+_0x62d3ac},{'quoted':_0x5dff52});}catch(_0x4f2682){console['error'](_0x44111e(0x1fe),_0x4f2682),await _0xf2f09b[_0x44111e(0x213)](_0x5ede0,{'text':_0x44111e(0x20e)},{'quoted':_0x5dff52});}}async function animeCommand(_0x2867f9,_0x1054cd,_0x415f06,_0x31983b){const _0xc8e44a=_0x364b39,_0x2b1500=_0x31983b&&_0x31983b[-0x7c8+0x17f6+-0x102e]?_0x31983b[0x1c98+0xb14+-0x27ac]:'',_0x4eaf5f=normalizeType(_0x2b1500),_0x30f48b=['nom',_0xc8e44a(0x1fb),'cry','kiss',_0xc8e44a(0x219),_0xc8e44a(0x1ea),'wink','face-palm'];try{if(!_0x4eaf5f){await _0x2867f9['sendMessage'](_0x1054cd,{'text':_0xc8e44a(0x201)+_0x30f48b[_0xc8e44a(0x1e5)](_0x1fb734=>'•\x20'+_0x1fb734)[_0xc8e44a(0x1f0)]('\x0a')},{'quoted':_0x415f06});return;}if(!_0x30f48b[_0xc8e44a(0x1f7)](_0x4eaf5f)){await _0x2867f9[_0xc8e44a(0x213)](_0x1054cd,{'text':_0xc8e44a(0x20b)+_0x4eaf5f+_0xc8e44a(0x209)+_0x30f48b[_0xc8e44a(0x1f0)](',\x20')},{'quoted':_0x415f06});return;}await sendAnimu(_0x2867f9,_0x1054cd,_0x415f06,_0x4eaf5f);}catch(_0x14c8ab){console[_0xc8e44a(0x216)](_0xc8e44a(0x1ff),_0x14c8ab),await _0x2867f9[_0xc8e44a(0x213)](_0x1054cd,{'text':_0xc8e44a(0x1ee)},{'quoted':_0x415f06});}}module[_0x364b39(0x203)]={'animeCommand':animeCommand};
+﻿const axios = require('axios');
+const { exec } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+const webp = require('node-webpmux');
+const crypto = require('crypto');
+
+// Multiple API endpoints for fallback
+const API_ENDPOINTS = {
+    primary: 'https://api.some-random-api.com/animu',
+    fallback1: 'https://api.waifu.pics/sfw',
+    fallback2: 'https://nekos.life/api/v2/img'
+};
+
+function normalizeType(input) {
+    const lower = (input || '').toLowerCase();
+    if (lower === 'facepalm' || lower === 'face_palm') return 'face-palm';
+    if (lower === 'quote' || lower === 'animu-quote' || lower === 'animuquote') return 'quote';
+    return lower;
+}
+
+async function sendAnimu(sock, chatId, message, type) {
+    let imageUrl = null;
+
+    // Try primary API first
+    try {
+        const endpoint = `${API_ENDPOINTS.primary}/${type}`;
+        const res = await axios.get(endpoint, {
+            timeout: 10000,
+            headers: { 'User-Agent': 'Mozilla/5.0' }
+        });
+        if (res.data && res.data.link) {
+            imageUrl = res.data.link;
+        }
+    } catch (error) {
+        console.log(`Primary API failed for ${type}, trying fallback...`);
+
+        // Try fallback API 1 (waifu.pics)
+        try {
+            const typeMap = {
+                'hug': 'hug',
+                'kiss': 'kiss',
+                'pat': 'pat',
+                'poke': 'poke',
+                'wink': 'wink',
+                'nom': 'nom',
+                'cry': 'cry'
+            };
+
+            if (typeMap[type]) {
+                const res = await axios.get(`${API_ENDPOINTS.fallback1}/${typeMap[type]}`, {
+                    timeout: 10000,
+                    headers: { 'User-Agent': 'Mozilla/5.0' }
+                });
+                if (res.data && res.data.url) {
+                    imageUrl = res.data.url;
+                }
+            }
+        } catch (err2) {
+            console.log(`Fallback API 1 failed, trying fallback 2...`);
+
+            // Try fallback API 2 (nekos.life)
+            try {
+                const typeMap2 = {
+                    'hug': 'hug',
+                    'kiss': 'kiss',
+                    'pat': 'pat',
+                    'poke': 'poke',
+                    'wink': 'wink'
+                };
+
+                if (typeMap2[type]) {
+                    const res = await axios.get(`${API_ENDPOINTS.fallback2}/${typeMap2[type]}`, {
+                        timeout: 10000,
+                        headers: { 'User-Agent': 'Mozilla/5.0' }
+                    });
+                    if (res.data && res.data.url) {
+                        imageUrl = res.data.url;
+                    }
+                }
+            } catch (err3) {
+                console.log(`All APIs failed for ${type}`);
+            }
+        }
+    }
+
+    if (!imageUrl) {
+        await sock.sendMessage(
+            chatId,
+            { text: `❌ Sorry, anime ${type} is temporarily unavailable. Please try again later.` },
+            { quoted: message }
+        );
+        return;
+    }
+
+    // Send the image
+    try {
+        await sock.sendMessage(
+            chatId,
+            { image: { url: imageUrl }, caption: `✨ Anime: ${type}` },
+            { quoted: message }
+        );
+    } catch (sendError) {
+        console.error('Error sending anime image:', sendError);
+        await sock.sendMessage(
+            chatId,
+            { text: '❌ Failed to send anime image.' },
+            { quoted: message }
+        );
+    }
+}
+
+async function animeCommand(sock, chatId, message, args) {
+    const subArg = args && args[0] ? args[0] : '';
+    const sub = normalizeType(subArg);
+
+    const supported = [
+        'nom', 'poke', 'cry', 'kiss', 'pat', 'hug', 'wink', 'face-palm'
+    ];
+
+    try {
+        if (!sub) {
+            await sock.sendMessage(chatId, {
+                text: `*🎭⃤ Anime Reactions*\n\nUsage: .anime <type>\n\nAvailable types:\n${supported.map(t => `• ${t}`).join('\n')}`
+            }, { quoted: message });
+            return;
+        }
+
+        if (!supported.includes(sub)) {
+            await sock.sendMessage(chatId, {
+                text: `❌ Unsupported type: ${sub}\n\nTry one of: ${supported.join(', ')}`
+            }, { quoted: message });
+            return;
+        }
+
+        await sendAnimu(sock, chatId, message, sub);
+    } catch (err) {
+        console.error('Error in anime command:', err);
+        await sock.sendMessage(chatId, {
+            text: '❌ An error occurred while fetching anime reaction.'
+        }, { quoted: message });
+    }
+}
+
+module.exports = { animeCommand };

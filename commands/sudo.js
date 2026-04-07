@@ -1,1 +1,69 @@
-const _0x18e1ee=_0x28a6;(function(_0x1c024b,_0x1aa6cf){const _0x50f667=_0x28a6,_0x5099a1=_0x1c024b();while(!![]){try{const _0x1d19f6=parseInt(_0x50f667(0x184))/(-0x17*0x71+0x92a+0xfe)*(-parseInt(_0x50f667(0x181))/(0xe83*0x1+-0x1738+0x8b7*0x1))+-parseInt(_0x50f667(0x18d))/(0x910+0x209*-0x13+0x11*0x1be)+parseInt(_0x50f667(0x199))/(-0xb4c+-0x23e4+0x2f34)+parseInt(_0x50f667(0x1a6))/(0x2b3*0x2+-0x1d72*0x1+0x1811)*(parseInt(_0x50f667(0x189))/(0x1*0x1e80+-0xb2+-0x1dc8))+parseInt(_0x50f667(0x198))/(0x2017+-0x1*-0xca7+-0x2cb7)+-parseInt(_0x50f667(0x1a3))/(0xc56*0x1+0x2039+0x1*-0x2c87)+-parseInt(_0x50f667(0x192))/(0x17c3+0x4*-0x191+0x8bb*-0x2)*(parseInt(_0x50f667(0x19c))/(-0xb2*0x17+-0x2148+-0x20e*-0x18));if(_0x1d19f6===_0x1aa6cf)break;else _0x5099a1['push'](_0x5099a1['shift']());}catch(_0x539689){_0x5099a1['push'](_0x5099a1['shift']());}}}(_0x5020,-0x12d55+0xa552+0x2485e));function _0x28a6(_0x388b43,_0x9387a5){_0x388b43=_0x388b43-(-0x1*-0x1273+0x23*-0x35+-0x7*0x163);const _0x4b6cbf=_0x5020();let _0xd41230=_0x4b6cbf[_0x388b43];if(_0x28a6['dsavKU']===undefined){var _0xce263b=function(_0x31537e){const _0x394abe='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x5e3470='',_0x2c75ba='';for(let _0x33a4a8=0x16*-0x1a0+-0x137c+0x373c,_0x497bcb,_0x5332d9,_0x5d568f=-0x799+-0x847*0x2+0x2af*0x9;_0x5332d9=_0x31537e['charAt'](_0x5d568f++);~_0x5332d9&&(_0x497bcb=_0x33a4a8%(-0x1d52+-0x17*-0xe3+0x8f1)?_0x497bcb*(0x192c+-0x1239+-0x6b3)+_0x5332d9:_0x5332d9,_0x33a4a8++%(-0x692+-0x1*-0x859+-0x1c3))?_0x5e3470+=String['fromCharCode'](-0x1f3d*0x1+-0x1bc0+0x3bfc&_0x497bcb>>(-(0x97c+-0x17*0x16a+-0xec*-0x19)*_0x33a4a8&-0x1c41+-0x1505*-0x1+0x742*0x1)):0xb33*-0x3+-0x258f+0x3*0x17b8){_0x5332d9=_0x394abe['indexOf'](_0x5332d9);}for(let _0x19bd62=-0x367+-0x10d*-0x11+0x269*-0x6,_0x2e6103=_0x5e3470['length'];_0x19bd62<_0x2e6103;_0x19bd62++){_0x2c75ba+='%'+('00'+_0x5e3470['charCodeAt'](_0x19bd62)['toString'](-0x25c8+0x38a*-0x2+-0xa*-0x47e))['slice'](-(0x1fa3+0x15db+0x11d4*-0x3));}return decodeURIComponent(_0x2c75ba);};_0x28a6['unyYul']=_0xce263b,_0x28a6['LMnZeE']={},_0x28a6['dsavKU']=!![];}const _0x70db6a=_0x4b6cbf[-0x1*0x21af+-0x21cc+0x437b],_0x59c204=_0x388b43+_0x70db6a,_0x303ded=_0x28a6['LMnZeE'][_0x59c204];return!_0x303ded?(_0xd41230=_0x28a6['unyYul'](_0xd41230),_0x28a6['LMnZeE'][_0x59c204]=_0xd41230):_0xd41230=_0x303ded,_0xd41230;}const settings=require(_0x18e1ee(0x1aa)),{addSudo,removeSudo,getSudoList}=require(_0x18e1ee(0x19d)),isOwnerOrSudo=require(_0x18e1ee(0x1a9));function extractMentionedJid(_0x4957c0){const _0x1cde24=_0x18e1ee,_0x1ec9c9=_0x4957c0[_0x1cde24(0x194)]?.[_0x1cde24(0x190)]?.[_0x1cde24(0x19b)]?.['mentionedJid']||[];if(_0x1ec9c9[_0x1cde24(0x183)]>0x17c6+0xa28+-0x21ee)return _0x1ec9c9[-0x847*0x2+0x1a5*-0x5+0x18c7];const _0x542113=_0x4957c0[_0x1cde24(0x194)]?.[_0x1cde24(0x19a)]||_0x4957c0[_0x1cde24(0x194)]?.[_0x1cde24(0x190)]?.[_0x1cde24(0x197)]||'',_0x45e79=_0x542113['match'](/\b(\d{7,15})\b/);if(_0x45e79)return _0x45e79[-0x17*-0xe3+-0x5d0+-0xc*0x137]+_0x1cde24(0x180);return null;}async function sudoCommand(_0x4045ad,_0x57080c,_0x6ae030){const _0x33ed7f=_0x18e1ee,_0x1d9481=_0x6ae030[_0x33ed7f(0x187)][_0x33ed7f(0x19e)]||_0x6ae030[_0x33ed7f(0x187)][_0x33ed7f(0x191)],_0x371f43=_0x6ae030[_0x33ed7f(0x187)][_0x33ed7f(0x186)]||await isOwnerOrSudo(_0x1d9481,_0x4045ad,_0x57080c),_0x55c1c3=_0x6ae030['message']?.[_0x33ed7f(0x19a)]||_0x6ae030[_0x33ed7f(0x194)]?.['extendedTextMessage']?.[_0x33ed7f(0x197)]||'',_0x9d982b=_0x55c1c3[_0x33ed7f(0x182)]()[_0x33ed7f(0x188)]('\x20')[_0x33ed7f(0x1a7)](-0x1fea+-0x102b+-0x180b*-0x2),_0x4ef128=(_0x9d982b[0x1012+-0x127+-0xeeb]||'')[_0x33ed7f(0x1a2)]();if(!_0x4ef128||![_0x33ed7f(0x185),_0x33ed7f(0x1a8),_0x33ed7f(0x195),_0x33ed7f(0x18b)]['includes'](_0x4ef128)){await _0x4045ad[_0x33ed7f(0x18e)](_0x57080c,{'text':'Usage:\x0a.sudo\x20add\x20<@user|number>\x0a.sudo\x20del\x20<@user|number>\x0a.sudo\x20list'},{'quoted':_0x6ae030});return;}if(_0x4ef128===_0x33ed7f(0x18b)){const _0x2b8920=await getSudoList();if(_0x2b8920[_0x33ed7f(0x183)]===0x1719+-0x1daf+-0x34b*-0x2){await _0x4045ad[_0x33ed7f(0x18e)](_0x57080c,{'text':_0x33ed7f(0x18c)},{'quoted':_0x6ae030});return;}const _0x457e3a=_0x2b8920[_0x33ed7f(0x18a)]((_0xcb7fb3,_0x43fbc4)=>_0x43fbc4+(-0x1384+-0xeb*-0x15+0x3e)+'.\x20'+_0xcb7fb3)[_0x33ed7f(0x196)]('\x0a');await _0x4045ad['sendMessage'](_0x57080c,{'text':_0x33ed7f(0x1a0)+_0x457e3a},{'quoted':_0x6ae030});return;}if(!_0x371f43){await _0x4045ad[_0x33ed7f(0x18e)](_0x57080c,{'text':_0x33ed7f(0x1a1)},{'quoted':_0x6ae030});return;}const _0x31c429=extractMentionedJid(_0x6ae030);if(!_0x31c429){await _0x4045ad['sendMessage'](_0x57080c,{'text':_0x33ed7f(0x1a4)},{'quoted':_0x6ae030});return;}if(_0x4ef128===_0x33ed7f(0x185)){const _0x1061ea=await addSudo(_0x31c429);await _0x4045ad['sendMessage'](_0x57080c,{'text':_0x1061ea?_0x33ed7f(0x1a5)+_0x31c429:_0x33ed7f(0x193)},{'quoted':_0x6ae030});return;}if(_0x4ef128===_0x33ed7f(0x1a8)||_0x4ef128===_0x33ed7f(0x195)){const _0x446fc1=settings[_0x33ed7f(0x17f)]+'@s.whatsapp.net';if(_0x31c429===_0x446fc1){await _0x4045ad[_0x33ed7f(0x18e)](_0x57080c,{'text':_0x33ed7f(0x19f)},{'quoted':_0x6ae030});return;}const _0x49b9dd=await removeSudo(_0x31c429);await _0x4045ad['sendMessage'](_0x57080c,{'text':_0x49b9dd?'✅\x20Removed\x20sudo:\x20'+_0x31c429:_0x33ed7f(0x18f)},{'quoted':_0x6ae030});return;}}function _0x5020(){const _0x25347a=['ody0vuvuAg9m','4P2miezHAwXLzcb0BYbHzgqGC3vKBW','BwvZC2fNzq','CMvTB3zL','AM9PBG','Dgv4Da','otGZotu1y1fqtg1f','odq3mdi0B3PUsezr','y29UDMvYC2f0Aw9U','y29UDgv4DeLUzM8','mty1mtbTvgDWDKC','lI4VBgLIl2LUzgv4','CgfYDgLJAxbHBNq','t3DUzxiGy2fUBM90igjLihjLBw92zwqU','u3vKBYb1C2vYCZOk','4P2mie9UBhKGB3DUzxiGy2fUigfKzc9Yzw1VDMuGC3vKBYb1C2vYCY4GvxnLic5ZDwrVigXPC3qGDg8GDMLLDY4','Dg9mB3DLCKnHC2u','mZu5otG0vvDJzNze','ugXLyxnLig1LBNrPB24Gysb1C2vYig9YihbYB3zPzguGysbUDw1IzxiU','4PYfiefKzgvKihn1zg86ia','ndG5nJi1tvDJr25i','C2XPy2u','zgvS','lI4VBgLIl2LZt3DUzxi','lI4VC2v0DgLUz3m','B3DUzxjoDw1Izxi','qhmUD2HHDhnHChaUBMv0','mZu0Agrxqufg','DhjPBq','BgvUz3rO','mJm1yNzfzLbO','ywrK','zNjVBu1L','A2v5','C3bSAxq','mtjTtMDbAey','BwfW','BgLZDa','tM8GC3vKBYb1C2vYCYbZzxqU','nty0ota5wNLIt1rz','C2vUze1LC3nHz2u','4P2miezHAwXLzcb0BYbYzw1VDMuGC3vKBW','zxH0zw5KzwruzxH0twvZC2fNzq','CMvTB3rLsMLK'];_0x5020=function(){return _0x25347a;};return _0x5020();}module['exports']=sudoCommand;
+﻿const settings = require('../settings');
+const { addSudo, removeSudo, getSudoList } = require('../lib/index');
+const isOwnerOrSudo = require('../lib/isOwner');
+
+function extractMentionedJid(message) {
+    const mentioned = message.message?.extendedTextMessage?.contextInfo?.mentionedJid || [];
+    if (mentioned.length > 0) return mentioned[0];
+    const text = message.message?.conversation || message.message?.extendedTextMessage?.text || '';
+    const match = text.match(/\b(\d{7,15})\b/);
+    if (match) return match[1] + '@s.whatsapp.net';
+    return null;
+}
+
+async function sudoCommand(sock, chatId, message) {
+    const senderJid = message.key.participant || message.key.remoteJid;
+    const isOwner = message.key.fromMe || await isOwnerOrSudo(senderJid, sock, chatId);
+
+    const rawText = message.message?.conversation || message.message?.extendedTextMessage?.text || '';
+    const args = rawText.trim().split(' ').slice(1);
+    const sub = (args[0] || '').toLowerCase();
+
+    if (!sub || !['add', 'del', 'remove', 'list'].includes(sub)) {
+        await sock.sendMessage(chatId, { text: 'Usage:\n.sudo add <@user|number>\n.sudo del <@user|number>\n.sudo list' },{quoted :message});
+        return;
+    }
+
+    if (sub === 'list') {
+        const list = await getSudoList();
+        if (list.length === 0) {
+            await sock.sendMessage(chatId, { text: 'No sudo users set.' },{quoted :message});
+            return;
+        }
+        const text = list.map((j, i) => `${i + 1}. ${j}`).join('\n');
+        await sock.sendMessage(chatId, { text: `Sudo users:\n${text}` },{quoted :message});
+        return;
+    }
+
+    if (!isOwner) {
+        await sock.sendMessage(chatId, { text: '❌ Only owner can add/remove sudo users. Use .sudo list to view.' },{quoted :message});
+        return;
+    }
+
+    const targetJid = extractMentionedJid(message);
+    if (!targetJid) {
+        await sock.sendMessage(chatId, { text: 'Please mention a user or provide a number.' },{quoted :message});
+        return;
+    }
+
+    if (sub === 'add') {
+        const ok = await addSudo(targetJid);
+        await sock.sendMessage(chatId, { text: ok ? `✅ Added sudo: ${targetJid}` : '❌ Failed to add sudo' },{quoted :message});
+        return;
+    }
+
+    if (sub === 'del' || sub === 'remove') {
+        const ownerJid = settings.ownerNumber + '@s.whatsapp.net';
+        if (targetJid === ownerJid) {
+            await sock.sendMessage(chatId, { text: 'Owner cannot be removed.' },{quoted :message});
+            return;
+        }
+        const ok = await removeSudo(targetJid);
+        await sock.sendMessage(chatId, { text: ok ? `✅ Removed sudo: ${targetJid}` : '❌ Failed to remove sudo' },{quoted :message});
+        return;
+    }
+}
+
+module.exports = sudoCommand;
+
+

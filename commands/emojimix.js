@@ -1,1 +1,102 @@
-const _0x2d90c1=_0x4e0c;(function(_0x5c4985,_0x2e0b66){const _0x28d8b8=_0x4e0c,_0x3b9708=_0x5c4985();while(!![]){try{const _0x1d77fc=-parseInt(_0x28d8b8(0xd7))/(0x259d*0x1+-0x1491+0x1*-0x110b)+parseInt(_0x28d8b8(0xf2))/(0x2*-0xb69+-0x8d*-0x2b+0x49*-0x3)+-parseInt(_0x28d8b8(0x100))/(-0x52*-0x43+-0xe69+-0x11*0x6a)*(-parseInt(_0x28d8b8(0xe2))/(-0xd*-0x73+0x1273+0xd*-0x1de))+parseInt(_0x28d8b8(0xd9))/(0xd*-0x259+0x1*-0x17b9+0x3643)*(-parseInt(_0x28d8b8(0xfd))/(-0x14*-0x7c+-0x5e+-0x94c))+-parseInt(_0x28d8b8(0xe5))/(-0xcd3+-0x865*0x3+-0x7*-0x56f)*(parseInt(_0x28d8b8(0xd4))/(0x1*0xdd9+-0x11fc+0x42b))+parseInt(_0x28d8b8(0xf3))/(0x8*-0x2ec+-0x1*0x7b+0x17e4)+-parseInt(_0x28d8b8(0xf8))/(-0x36*-0xb7+-0x545*0x1+-0x3*0xb19)*(-parseInt(_0x28d8b8(0xd5))/(-0x1ab1+0x4*-0x8b0+-0x1*-0x3d7c));if(_0x1d77fc===_0x2e0b66)break;else _0x3b9708['push'](_0x3b9708['shift']());}catch(_0x1175c4){_0x3b9708['push'](_0x3b9708['shift']());}}}(_0x47ed,0x4834f*0x1+-0x53be1+0x8*0x8b23));const fetch=require('node-fetch'),fs=require('fs'),{exec}=require(_0x2d90c1(0xfa)),path=require(_0x2d90c1(0xea));function _0x47ed(){const _0x51c0f4=['otyWv2ztsgTu','DgvTCf8','y3DK','mJa3mfPoB3fQBG','4P2miezHAwXLzcb0BYbTAxGGzw1VAMLZisbnywTLihn1CMuGEw91j3jLihvZAw5NihzHBgLKigvTB2PPCY4kcKv4yw1WBgu6ic5LBw9QAw1PEcdWN5Iok/cFPBa','mJr4zg1ks3q','mtGXndK3ogPcuhrtEa','CMvHzezPBgvtEw5J','ndu3mdm0zgnOrvDh','CMvZDwX0CW','odeZnwzUAwzKqG','zMzTCgvNic1Pici','rKzTCgvNigvYCM9YoG','y29UDMvYC2f0Aw9U','yNvMzMvY','Aw5JBhvKzxm','BwvZC2fNzq','C2XPy2u','Dw5SAw5Ru3LUyW','mJy2mfbtBujzAG','Dgv4Da','DhjPBq','ndq0ndiZAKTjAwrw','Ahr0Chm6lY90zw5VCI5NB29NBgvHCgLZlMnVBs92mI9Mzwf0DxjLzd9RzxK9quL6yvn5qxLPBwT1wvfzrL9gwfzbtgv4uhvhuwn0vvDsvvjKq1LrjMnVBNrLBNrMAwX0zxi9AgLNAczTzwrPyv9MAwX0zxi9Cg5Nx3rYyw5ZCgfYzw50jMnVBxbVBMvUDd1WCM9Hy3rPDMuMy29SBgvJDgLVBJ1LBw9QAv9RAxrJAgvUx3y1jNe9','BgvUz3rO','C3bSAxq','BM93','Cgf0Aa','4P2mifrOzxnLigvTB2PPCYbJyw5UB3qGyMuGBwL4zwqHifrYEsbKAwzMzxjLBNqGB25LCY4','DxjS','zxHWB3j0CW','CMvWBgfJzq','C2vUze1LC3nHz2u','zxHPC3rZu3LUyW','zxjYB3i','mZu1nZuWrLDpDe95','mtyWotiXogTLve16wq','rMfPBgvKihrVignYzwf0zsbZDgLJA2vYigzPBgu','lNbUzW','AM9PBG','C3rPy2TLCL8','mJbcCw5Hsxi','4PYZ77IpifnLCgfYyxrLihrOzsbLBw9QAsb3AxrOigeGkISQihnPz24kcVcFK4WGrxHHBxbSztOGcIOUzw1VAMLTAxGQipcFMi4R8j+LSa','y2HPBgrFChjVy2vZCW','lNDLyNa','rxjYB3iGAw4Gzw1VAMLTAxGGy29TBwfUzdO'];_0x47ed=function(){return _0x51c0f4;};return _0x47ed();}async function emojimixCommand(_0xf7381,_0x32be1a,_0x4b2ba6){const _0x39e3ee=_0x2d90c1;try{const _0x52caf0=_0x4b2ba6[_0x39e3ee(0xdf)]?.[_0x39e3ee(0xdc)]?.[_0x39e3ee(0xe4)]()||_0x4b2ba6[_0x39e3ee(0xdf)]?.['extendedTextMessage']?.[_0x39e3ee(0xe3)]?.[_0x39e3ee(0xe4)]()||'',_0xfd36fb=_0x52caf0[_0x39e3ee(0xe8)]('\x20')[_0x39e3ee(0xe0)](0xa7*-0xb+-0x11ce+0x7b*0x34);if(!_0xfd36fb[-0x29*0x19+-0x2f1+0x379*0x2]){await _0xf7381['sendMessage'](_0x32be1a,{'text':'🎴\x20Example:\x20.emojimix\x20😎+🥰'});return;}if(!_0x52caf0[_0x39e3ee(0xde)]('+')){await _0xf7381['sendMessage'](_0x32be1a,{'text':_0x39e3ee(0xf9)});return;}let [_0x512ef1,_0xfb381]=_0xfd36fb[0x8*-0x3b9+0x1*-0xdcc+0x2b94][_0x39e3ee(0xe8)]('+')['map'](_0x3a34bc=>_0x3a34bc[_0x39e3ee(0xe4)]());const _0x1dbaad=_0x39e3ee(0xe6)+encodeURIComponent(_0x512ef1)+'_'+encodeURIComponent(_0xfb381),_0x28341a=await fetch(_0x1dbaad),_0x5d3b75=await _0x28341a['json']();if(!_0x5d3b75[_0x39e3ee(0xd8)]||_0x5d3b75[_0x39e3ee(0xd8)][_0x39e3ee(0xe7)]===-0x1d64+0xd*-0x1ee+0x367a){await _0xf7381[_0x39e3ee(0xef)](_0x32be1a,{'text':_0x39e3ee(0xeb)});return;}const _0x97be66=_0x5d3b75[_0x39e3ee(0xd8)][-0x124f*-0x2+0x1a0e+0x2a*-0x17e][_0x39e3ee(0xec)],_0x2fe5f3=path[_0x39e3ee(0xf6)](process[_0x39e3ee(0xff)](),'tmp');!fs[_0x39e3ee(0xf0)](_0x2fe5f3)&&fs['mkdirSync'](_0x2fe5f3,{'recursive':!![]});const _0x110378=path[_0x39e3ee(0xf6)](_0x2fe5f3,_0x39e3ee(0xfe)+Date[_0x39e3ee(0xe9)]()+_0x39e3ee(0xf5))['replace'](/\\/g,'/'),_0xc8f04c=path[_0x39e3ee(0xf6)](_0x2fe5f3,_0x39e3ee(0xf7)+Date[_0x39e3ee(0xe9)]()+_0x39e3ee(0xfb))[_0x39e3ee(0xee)](/\\/g,'/'),_0x27375c=await fetch(_0x97be66),_0x17ab3a=await _0x27375c[_0x39e3ee(0xdd)]();fs['writeFileSync'](_0x110378,_0x17ab3a);const _0x520aaf=_0x39e3ee(0xda)+_0x110378+'\x22\x20-vf\x20\x22scale=512:512:force_original_aspect_ratio=decrease,format=rgba,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000\x22\x20\x22'+_0xc8f04c+'\x22';await new Promise((_0x1d3c00,_0x4618c1)=>{exec(_0x520aaf,_0x42dcdc=>{const _0x2be795=_0x4e0c;_0x42dcdc?(console[_0x2be795(0xf1)](_0x2be795(0xdb),_0x42dcdc),_0x4618c1(_0x42dcdc)):_0x1d3c00();});});if(!fs[_0x39e3ee(0xf0)](_0xc8f04c))throw new Error(_0x39e3ee(0xf4));const _0x24b8c1=fs[_0x39e3ee(0xd6)](_0xc8f04c);await _0xf7381['sendMessage'](_0x32be1a,{'sticker':_0x24b8c1},{'quoted':_0x4b2ba6});try{fs[_0x39e3ee(0xe1)](_0x110378),fs['unlinkSync'](_0xc8f04c);}catch(_0x19cb22){console[_0x39e3ee(0xf1)]('Error\x20cleaning\x20up\x20temp\x20files:',_0x19cb22);}}catch(_0x592a23){console[_0x39e3ee(0xf1)](_0x39e3ee(0xfc),_0x592a23),await _0xf7381['sendMessage'](_0x32be1a,{'text':_0x39e3ee(0xd3)});}}function _0x4e0c(_0x5968e1,_0x4a0baf){_0x5968e1=_0x5968e1-(0x135*-0x7+0x1*0x1d54+-0x140e);const _0x23fe8e=_0x47ed();let _0x4aeea3=_0x23fe8e[_0x5968e1];if(_0x4e0c['TxDorm']===undefined){var _0x2d3d5d=function(_0x1da5d0){const _0x110c17='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x19910a='',_0x4ce841='';for(let _0x5160b9=-0x1*0x263+-0x68e+0x6d*0x15,_0x168834,_0x32afa9,_0x5bf5ef=-0x1*0x157d+0x246c+-0xeef*0x1;_0x32afa9=_0x1da5d0['charAt'](_0x5bf5ef++);~_0x32afa9&&(_0x168834=_0x5160b9%(-0x371*0x1+0x1e3+0x6*0x43)?_0x168834*(0x1db3+0x363+-0x20d6)+_0x32afa9:_0x32afa9,_0x5160b9++%(-0x1*0x1efe+0x2dd*0xd+-0x637*0x1))?_0x19910a+=String['fromCharCode'](-0x20ee*0x1+0x14b*0x9+-0x3b7*-0x6&_0x168834>>(-(0x1b71+-0x2645+-0x56b*-0x2)*_0x5160b9&0x2c+-0x1922+0x18fc)):-0x37*-0x83+0x19*-0x5c+-0x1329){_0x32afa9=_0x110c17['indexOf'](_0x32afa9);}for(let _0x11fd27=0x21fb+0x1b1c*-0x1+-0x6df,_0x990fd4=_0x19910a['length'];_0x11fd27<_0x990fd4;_0x11fd27++){_0x4ce841+='%'+('00'+_0x19910a['charCodeAt'](_0x11fd27)['toString'](-0xfa7+0xeb1+-0x83*-0x2))['slice'](-(-0x168*-0x12+0x1502+-0x10*0x2e5));}return decodeURIComponent(_0x4ce841);};_0x4e0c['GlkrRC']=_0x2d3d5d,_0x4e0c['ncCwnZ']={},_0x4e0c['TxDorm']=!![];}const _0x5e3156=_0x23fe8e[-0x21ed+0x23c5*-0x1+0x2*0x22d9],_0x481c8f=_0x5968e1+_0x5e3156,_0x1a2947=_0x4e0c['ncCwnZ'][_0x481c8f];return!_0x1a2947?(_0x4aeea3=_0x4e0c['GlkrRC'](_0x4aeea3),_0x4e0c['ncCwnZ'][_0x481c8f]=_0x4aeea3):_0x4aeea3=_0x1a2947,_0x4aeea3;}module[_0x2d90c1(0xed)]=emojimixCommand;
+﻿const fetch = require('node-fetch');
+const fs = require('fs');
+const { exec } = require('child_process');
+const path = require('path');
+
+async function emojimixCommand(sock, chatId, msg) {
+    try {
+        // Get the text after command
+        const text = msg.message?.conversation?.trim() || 
+                    msg.message?.extendedTextMessage?.text?.trim() || '';
+        
+        const args = text.split(' ').slice(1);
+        
+        if (!args[0]) {
+            await sock.sendMessage(chatId, { text: '🎴 Example: .emojimix 😎+🥰' });
+            return;
+        }
+
+        if (!text.includes('+')) {
+            await sock.sendMessage(chatId, { 
+                text: '✳️ Separate the emoji with a *+* sign\n\n📌 Example: \n*.emojimix* 😎+🥰' 
+            });
+            return;
+        }
+
+        let [emoji1, emoji2] = args[0].split('+').map(e => e.trim());
+
+        // Using Tenor API endpoint
+        const url = `https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`;
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (!data.results || data.results.length === 0) {
+            await sock.sendMessage(chatId, { 
+                text: '❌ These emojis cannot be mixed! Try different ones.' 
+            });
+            return;
+        }
+
+        // Get the first result URL
+        const imageUrl = data.results[0].url;
+
+        // Create temp directory if it doesn't exist
+        const tmpDir = path.join(process.cwd(), 'tmp');
+        if (!fs.existsSync(tmpDir)) {
+            fs.mkdirSync(tmpDir, { recursive: true });
+        }
+
+        // Generate random filenames with escaped paths
+        const tempFile = path.join(tmpDir, `temp_${Date.now()}.png`).replace(/\\/g, '/');
+        const outputFile = path.join(tmpDir, `sticker_${Date.now()}.webp`).replace(/\\/g, '/');
+
+        // Download and save the image
+        const imageResponse = await fetch(imageUrl);
+        const buffer = await imageResponse.buffer();
+        fs.writeFileSync(tempFile, buffer);
+
+        // Convert to WebP using ffmpeg with proper path escaping
+        const ffmpegCommand = `ffmpeg -i "${tempFile}" -vf "scale=512:512:force_original_aspect_ratio=decrease,format=rgba,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000" "${outputFile}"`;
+        
+        await new Promise((resolve, reject) => {
+            exec(ffmpegCommand, (error) => {
+                if (error) {
+                    console.error('FFmpeg error:', error);
+                    reject(error);
+                } else {
+                    resolve();
+                }
+            });
+        });
+
+        // Check if output file exists
+        if (!fs.existsSync(outputFile)) {
+            throw new Error('Failed to create sticker file');
+        }
+
+        // Read the WebP file
+        const stickerBuffer = fs.readFileSync(outputFile);
+
+        // Send the sticker
+        await sock.sendMessage(chatId, { 
+            sticker: stickerBuffer 
+        }, { quoted: msg });
+
+        // Cleanup temp files
+        try {
+            fs.unlinkSync(tempFile);
+            fs.unlinkSync(outputFile);
+        } catch (err) {
+            console.error('Error cleaning up temp files:', err);
+        }
+
+    } catch (error) {
+        console.error('Error in emojimix command:', error);
+        await sock.sendMessage(chatId, { 
+            text: '❌ Failed to mix emojis! Make sure you\'re using valid emojis.\n\nExample: .emojimix 😎+🥰' 
+        });
+    }
+}
+
+module.exports = emojimixCommand; 

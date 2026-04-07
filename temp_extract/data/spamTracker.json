@@ -1,10 +1,4 @@
 {
-  "272438919176196@lid": {
-    "count": 1,
-    "lastMessageTime": 1775146990097,
-    "blocked": false,
-    "ignored": false
-  },
   "109994179600386@lid": {
     "count": 1,
     "lastMessageTime": 1775152110213,
@@ -17,9 +11,9 @@
     "blocked": false,
     "ignored": false
   },
-  "12224080949405@lid": {
-    "count": 2,
-    "lastMessageTime": 1775491859368,
+  "272438919176196@lid": {
+    "count": 4,
+    "lastMessageTime": 1775556936879,
     "blocked": false,
     "ignored": false
   }

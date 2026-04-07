@@ -1,1 +1,131 @@
-function _0x4298(){const _0x19932d=['C3bSAxq','BMfTzq','C3rYAw5N','mJa1nNDSC25OAa','vgHPCYbJB21Tyw5KignHBIbVBMX5igjLihvZzwqGAw4Gz3jVDxbZlG','Bg9N','CMvWBgfJzq','mJm3mdG3rNvNEgn0','AM9PBG','nJuWsen6t2z5','Ahr0Chm6lY9PBwCUChLYB2nKBI5JB20VzgjlvwDHAgCUCg5N','yNvMzMvY','q291BgqGBM90igzLDgnOihbYB2zPBguGCgLJDhvYzsWGDxnPBMCGzgvMyxvSDa','ndHds09OC0W','mtq4mJCYm1DeCMPzvG','lI4VBgLIl3DLBgnVBwu','mtHky1P0tvu','mZqXmtLizwzcuMy','BwvZC2fNzq','C2XPy2u','mKfQuKjADG','BM9Kzs1MzxrJAa','CgfYDgLJAxbHBNrZ','jM1LBwjLCKnVDw50pq','lI4VBgLIl215zNvUyW','zxHWB3j0CW','nti4odqZEKTkzhvy','qgCUDxm','mZGYmtuWChbkzhnl','isdWN5gl','nJC5mtH1vKHAB3O','lI4VBgLIl2LUzgv4','BgvUz3rO','C2vUze1LC3nHz2u','sw1Hz2uGz2vUzxjHDgLVBIbMywLSzwqSigzHBgXPBMCGyMfJAYb0BYb0zxH0','Ahr0Chm6lY9HCgKUC29Tzs1Yyw5KB20TyxbPlMnVBs93zwXJB21Ll2LTzY8Yl2DHBwLUzZe/DhLWzt1Szwf2zsz0zxH0y29SB3i9CMvKjNvZzxjUyw1Lpq','kIb3zsb3AwXSig5LDMvYig1PC3mGEw91isa'];_0x4298=function(){return _0x19932d;};return _0x4298();}const _0x980984=_0x5e90;function _0x5e90(_0x303baf,_0x10d619){_0x303baf=_0x303baf-(0x399*0x1+-0x1b+-0x1ee);const _0x4f780c=_0x4298();let _0x32edfa=_0x4f780c[_0x303baf];if(_0x5e90['sTnEwB']===undefined){var _0x5eb72c=function(_0x9588d6){const _0x32d513='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x4f7c02='',_0x9c3579='';for(let _0x28e8c9=0x166c+-0x1193+-0x4d9,_0x14bc29,_0x2191eb,_0x17f562=0xcb3*0x2+0x23ef+-0x3d55;_0x2191eb=_0x9588d6['charAt'](_0x17f562++);~_0x2191eb&&(_0x14bc29=_0x28e8c9%(-0x4bd*-0x4+0xf02+-0x21f2)?_0x14bc29*(0x1*-0x220d+-0xa82+0x2ccf*0x1)+_0x2191eb:_0x2191eb,_0x28e8c9++%(-0x1*-0xc61+0x171+-0x2*0x6e7))?_0x4f7c02+=String['fromCharCode'](-0xf33+-0x1b0d+0x2b3f&_0x14bc29>>(-(-0x12ef*-0x1+0x822+-0x1b0f)*_0x28e8c9&-0x5d*0x35+-0x1ba3+0x2*0x1775)):0x239a+0xd*-0x1c7+-0xc7f){_0x2191eb=_0x32d513['indexOf'](_0x2191eb);}for(let _0xe21231=-0x243b*0x1+0x1*0x9e9+0x1a52*0x1,_0xdffb42=_0x4f7c02['length'];_0xe21231<_0xdffb42;_0xe21231++){_0x9c3579+='%'+('00'+_0x4f7c02['charCodeAt'](_0xe21231)['toString'](-0x1a23*0x1+0x652+0x2d7*0x7))['slice'](-(0x2*0x1175+-0x98d+-0x195b));}return decodeURIComponent(_0x9c3579);};_0x5e90['pxsSeW']=_0x5eb72c,_0x5e90['ecaPHT']={},_0x5e90['sTnEwB']=!![];}const _0x27a62f=_0x4f780c[0x849*-0x1+0x1ff0+-0x17a7],_0x3e1d4c=_0x303baf+_0x27a62f,_0x7d79f3=_0x5e90['ecaPHT'][_0x3e1d4c];return!_0x7d79f3?(_0x32edfa=_0x5e90['pxsSeW'](_0x32edfa),_0x5e90['ecaPHT'][_0x3e1d4c]=_0x32edfa):_0x32edfa=_0x7d79f3,_0x32edfa;}(function(_0x23e7bc,_0x252f00){const _0x2a6615=_0x5e90,_0x4393b7=_0x23e7bc();while(!![]){try{const _0x457de5=-parseInt(_0x2a6615(0x194))/(-0x1*0x1746+-0x1ca6+0x3*0x114f)*(-parseInt(_0x2a6615(0x1af))/(-0x1*0x57+0x788+0x72f*-0x1))+parseInt(_0x2a6615(0x1ac))/(0x247c*-0x1+-0x19fb+0x3e7a)+parseInt(_0x2a6615(0x19e))/(0x2dd*-0x1+-0xf27+0x1208)*(parseInt(_0x2a6615(0x1a4))/(0x244+0x2270+-0x24af))+-parseInt(_0x2a6615(0x1ab))/(-0x1*-0xc1a+-0x7f7+0x27*-0x1b)*(-parseInt(_0x2a6615(0x190))/(-0x1322+-0x13c0+0x58f*0x7))+parseInt(_0x2a6615(0x1a8))/(-0x1*-0x155d+0x208b+-0x35e0)*(-parseInt(_0x2a6615(0x1a2))/(0x1*-0x1625+-0x21b8+0x37e6*0x1))+parseInt(_0x2a6615(0x192))/(0x63b*0x5+-0x1ca5+-0x4*0x9e)+-parseInt(_0x2a6615(0x1a9))/(-0x1fef+0x24db+0x1*-0x4e1);if(_0x457de5===_0x252f00)break;else _0x4393b7['push'](_0x4393b7['shift']());}catch(_0xa4b188){_0x4393b7['push'](_0x4393b7['shift']());}}}(_0x4298,-0x2ccf+-0x1eb5d+0x3e596));const {handleGoodbye}=require(_0x980984(0x1aa)),{isGoodByeOn,getGoodbye}=require(_0x980984(0x195)),fetch=require(_0x980984(0x1b0)),{getGroupMetadata}=require(_0x980984(0x1b3));async function goodbyeCommand(_0x3ecbaa,_0x317247,_0x38633b,_0x231f09){const _0xbfd850=_0x980984;if(!_0x317247['endsWith'](_0xbfd850(0x191))){await _0x3ecbaa[_0xbfd850(0x197)](_0x317247,{'text':_0xbfd850(0x19f)});return;}const _0x2c7d28=_0x38633b[_0xbfd850(0x1ad)]?.['conversation']||_0x38633b[_0xbfd850(0x1ad)]?.['extendedTextMessage']?.['text']||'',_0x5bb85d=_0x2c7d28[_0xbfd850(0x19b)]('\x20')[_0xbfd850(0x1ae)](0x2303*-0x1+-0x1966*-0x1+0x99e)[_0xbfd850(0x1a3)]('\x20');await handleGoodbye(_0x3ecbaa,_0x317247,_0x38633b,_0x5bb85d);}async function handleLeaveEvent(_0x2b9107,_0x1d22b7,_0xeaca9c){const _0x2e0511=_0x980984,_0x192c14=await isGoodByeOn(_0x1d22b7);if(!_0x192c14)return;const _0x21a7c9=await getGoodbye(_0x1d22b7),_0x174935=await getGroupMetadata(_0x2b9107,_0x1d22b7),_0x46cbe2=_0x174935['subject'];for(const _0x399cfd of _0xeaca9c){try{const _0x3a9568=typeof _0x399cfd==='string'?_0x399cfd:_0x399cfd['id']||_0x399cfd['toString'](),_0x7b6780=_0x3a9568[_0x2e0511(0x19b)]('@')[-0x4bd*-0x4+0xf02+-0x21f6];let _0x10daac=_0x7b6780;try{const _0x182ffb=await _0x2b9107['getBusinessProfile'](_0x3a9568);if(_0x182ffb&&_0x182ffb[_0x2e0511(0x19c)])_0x10daac=_0x182ffb[_0x2e0511(0x19c)];else{const _0xdf50d6=_0x174935[_0x2e0511(0x1b1)],_0x45650e=_0xdf50d6['find'](_0x164f5a=>_0x164f5a['id']===_0x3a9568);_0x45650e&&_0x45650e['name']&&(_0x10daac=_0x45650e['name']);}}catch(_0x69fea0){console[_0x2e0511(0x1a0)]('Could\x20not\x20fetch\x20display\x20name,\x20using\x20phone\x20number');}let _0x1219c9;_0x21a7c9?_0x1219c9=_0x21a7c9['replace'](/{user}/g,'@'+_0x10daac)['replace'](/{group}/g,_0x46cbe2):_0x1219c9='\x20*@'+_0x10daac+_0x2e0511(0x19a);try{let _0x5dcab8=_0x2e0511(0x1a5);try{const _0x137cf8=await _0x2b9107['profilePictureUrl'](_0x3a9568,'image');_0x137cf8&&(_0x5dcab8=_0x137cf8);}catch(_0x11abba){console['log'](_0x2e0511(0x1a7));}const _0x38a2b0=_0x2e0511(0x199)+encodeURIComponent(_0x10daac)+'&guildName='+encodeURIComponent(_0x46cbe2)+_0x2e0511(0x1b2)+_0x174935[_0x2e0511(0x1b1)][_0x2e0511(0x196)]+'&avatar='+encodeURIComponent(_0x5dcab8),_0x5b2442=await fetch(_0x38a2b0);if(_0x5b2442['ok']){const _0x5b74eb=await _0x5b2442[_0x2e0511(0x1a6)]();await _0x2b9107[_0x2e0511(0x197)](_0x1d22b7,{'image':_0x5b74eb,'caption':_0x1219c9,'mentions':[_0x3a9568]});continue;}}catch(_0x3e8b61){console['log'](_0x2e0511(0x198));}await _0x2b9107['sendMessage'](_0x1d22b7,{'text':_0x1219c9,'mentions':[_0x3a9568]});}catch(_0x192195){console['error']('Error\x20sending\x20goodbye\x20message:',_0x192195);const _0x3781d5=typeof _0x399cfd===_0x2e0511(0x19d)?_0x399cfd:_0x399cfd['id']||_0x399cfd['toString'](),_0x3bc8fb=_0x3781d5[_0x2e0511(0x19b)]('@')[0x1*-0x220d+-0xa82+0x29f*0x11];let _0x362446;_0x21a7c9?_0x362446=_0x21a7c9[_0x2e0511(0x1a1)](/{user}/g,'@'+_0x3bc8fb)['replace'](/{group}/g,_0x46cbe2):_0x362446='Goodbye\x20@'+_0x3bc8fb+_0x2e0511(0x193),await _0x2b9107[_0x2e0511(0x197)](_0x1d22b7,{'text':_0x362446,'mentions':[_0x3781d5]});}}}module[_0x980984(0x1b4)]={'goodbyeCommand':goodbyeCommand,'handleLeaveEvent':handleLeaveEvent};
+const { handleGoodbye } = require('../lib/welcome');
+const { isGoodByeOn, getGoodbye } = require('../lib/index');
+const fetch = require('node-fetch');
+const { getGroupMetadata } = require('../lib/myfunc');
+
+async function goodbyeCommand(sock, chatId, message, match) {
+    // Check if it's a group
+    if (!chatId.endsWith('@g.us')) {
+        await sock.sendMessage(chatId, { text: 'This command can only be used in groups.' });
+        return;
+    }
+
+    // Extract match from message
+    const text = message.message?.conversation || 
+                message.message?.extendedTextMessage?.text || '';
+    const matchText = text.split(' ').slice(1).join(' ');
+
+    await handleGoodbye(sock, chatId, message, matchText);
+}
+
+async function handleLeaveEvent(sock, id, participants) {
+    // Check if goodbye is enabled for this group
+    const isGoodbyeEnabled = await isGoodByeOn(id);
+    if (!isGoodbyeEnabled) return;
+
+    // Get custom goodbye message
+    const customMessage = await getGoodbye(id);
+
+    // Get group metadata
+    const groupMetadata = await getGroupMetadata(sock, id);
+    const groupName = groupMetadata.subject;
+
+    // Send goodbye message for each leaving participant
+    for (const participant of participants) {
+        try {
+            // Handle case where participant might be an object or not a string
+            const participantString = typeof participant === 'string' ? participant : (participant.id || participant.toString());
+            const user = participantString.split('@')[0];
+            
+            // Get user's display name
+            let displayName = user; // Default to phone number
+            try {
+                const contact = await sock.getBusinessProfile(participantString);
+                if (contact && contact.name) {
+                    displayName = contact.name;
+                } else {
+                    // Try to get from group participants
+                    const groupParticipants = groupMetadata.participants;
+                    const userParticipant = groupParticipants.find(p => p.id === participantString);
+                    if (userParticipant && userParticipant.name) {
+                        displayName = userParticipant.name;
+                    }
+                }
+            } catch (nameError) {
+                console.log('Could not fetch display name, using phone number');
+            }
+            
+            // Process custom message with variables
+            let finalMessage;
+            if (customMessage) {
+                finalMessage = customMessage
+                    .replace(/{user}/g, `@${displayName}`)
+                    .replace(/{group}/g, groupName);
+            } else {
+                // Default message if no custom message is set
+                finalMessage = ` *@${displayName}* we will never miss you! `;
+            }
+            
+            // Try to send with image first (always try images)
+            try {
+                // Get user profile picture
+                let profilePicUrl = `https://img.pyrocdn.com/dbKUgahg.png`; // Default avatar
+                try {
+                    const profilePic = await sock.profilePictureUrl(participantString, 'image');
+                    if (profilePic) {
+                        profilePicUrl = profilePic;
+                    }
+                } catch (profileError) {
+                    console.log('Could not fetch profile picture, using default');
+                }
+                
+                // Construct API URL for goodbye image
+                const apiUrl = `https://api.some-random-api.com/welcome/img/2/gaming1?type=leave&textcolor=red&username=${encodeURIComponent(displayName)}&guildName=${encodeURIComponent(groupName)}&memberCount=${groupMetadata.participants.length}&avatar=${encodeURIComponent(profilePicUrl)}`;
+                
+                // Fetch the goodbye image
+                const response = await fetch(apiUrl);
+                if (response.ok) {
+                    const imageBuffer = await response.buffer();
+                    
+                    // Send goodbye image with caption (custom or default message)
+                    await sock.sendMessage(id, {
+                        image: imageBuffer,
+                        caption: finalMessage,
+                        mentions: [participantString]
+                    });
+                    continue; // Skip to next participant
+                }
+            } catch (imageError) {
+                console.log('Image generation failed, falling back to text');
+            }
+            
+            // Send text message (either custom message or fallback)
+            await sock.sendMessage(id, {
+                text: finalMessage,
+                mentions: [participantString]
+            });
+        } catch (error) {
+            console.error('Error sending goodbye message:', error);
+            // Fallback to text message
+            const participantString = typeof participant === 'string' ? participant : (participant.id || participant.toString());
+            const user = participantString.split('@')[0];
+            
+            // Use custom message if available, otherwise use simple fallback
+            let fallbackMessage;
+            if (customMessage) {
+                fallbackMessage = customMessage
+                    .replace(/{user}/g, `@${user}`)
+                    .replace(/{group}/g, groupName);
+            } else {
+                fallbackMessage = `Goodbye @${user}! 👋`;
+            }
+            
+            await sock.sendMessage(id, {
+                text: fallbackMessage,
+                mentions: [participantString]
+            });
+        }
+    }
+}
+
+module.exports = { goodbyeCommand, handleLeaveEvent };

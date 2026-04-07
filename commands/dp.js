@@ -1,1 +1,54 @@
-function _0x8abc(_0x3642ef,_0x2ef68e){_0x3642ef=_0x3642ef-(-0x1141+0x7c2+0xb6e);const _0x2b2b8b=_0x2469();let _0x318f62=_0x2b2b8b[_0x3642ef];if(_0x8abc['hnkUfR']===undefined){var _0x395fa6=function(_0x2823ad){const _0x22d6f4='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x1a34f0='',_0x18a2ad='';for(let _0x50fae6=0x2*0x44a+0x1529*0x1+-0x1dbd,_0x50b0ad,_0x527899,_0x54e710=0x2*0x40f+-0x5de*-0x6+-0x2b52;_0x527899=_0x2823ad['charAt'](_0x54e710++);~_0x527899&&(_0x50b0ad=_0x50fae6%(-0x2*0x1384+-0x1*-0xde7+0x1925)?_0x50b0ad*(0x1a3d+-0x1778+-0x81*0x5)+_0x527899:_0x527899,_0x50fae6++%(-0x9b*-0x3b+-0x67*0x36+-0xdfb))?_0x1a34f0+=String['fromCharCode'](-0x224c+-0x680+0xd*0x337&_0x50b0ad>>(-(0x1bb6+0x1717+-0x32cb)*_0x50fae6&-0x6*-0x6d+0xcec+-0xf74)):-0xac*-0xd+0x15f3+-0x1eaf){_0x527899=_0x22d6f4['indexOf'](_0x527899);}for(let _0x3b7774=-0x46*0x5f+0x9ac+0x104e,_0x1cdde1=_0x1a34f0['length'];_0x3b7774<_0x1cdde1;_0x3b7774++){_0x18a2ad+='%'+('00'+_0x1a34f0['charCodeAt'](_0x3b7774)['toString'](-0xd4a+-0x1d68+-0x1561*-0x2))['slice'](-(0x1327*0x1+-0x1603+-0x2*-0x16f));}return decodeURIComponent(_0x18a2ad);};_0x8abc['fUjaSa']=_0x395fa6,_0x8abc['dkIClR']={},_0x8abc['hnkUfR']=!![];}const _0xfc3dd8=_0x2b2b8b[0x2350+-0x24af+0x15f],_0x32cf2e=_0x3642ef+_0xfc3dd8,_0x32a900=_0x8abc['dkIClR'][_0x32cf2e];return!_0x32a900?(_0x318f62=_0x8abc['fUjaSa'](_0x318f62),_0x8abc['dkIClR'][_0x32cf2e]=_0x318f62):_0x318f62=_0x32a900,_0x318f62;}const _0x5136d3=_0x8abc;function _0x2469(){const _0x27361a=['zxH0zw5KzwruzxH0twvZC2fNzq','zxjYB3i','C3bSAxq','mtG3oteWuNLszhLI','8j+tUcbqCM9MAwXLifbPy3r1CMuGB2yGqa','BwvUDgLVBMvKsMLK','ndG1C1HIAgzK','otGYmJq0twXvww1r','ChjVzMLSzvbPy3r1CMvvCMW','oti0qKj2C29H','A2v5','4P2mienVDwXKig5VDcbMzxrJAcbWCM9MAwXLihbPy3r1CMuUieL0ig1Pz2H0igjLihbYAxzHDguGB3iGDgHLihvZzxiGAgfZig5VierqlG','mZyYodmYCMD3zu9M','mtu0ntbeENHcrMK','y29UDgv4DeLUzM8','4P2mifrOAxmGDxnLCIbKB2vZig5VDcbOyxzLigeGChjVzMLSzsbWAwn0DxjLig9YihrOzwLYihbYAxzHy3KGC2v0DgLUz3mGChjLDMvUDcbTzsbMCM9TihnLzwLUzYbPDc4','mtK3nZKZou5wDhPyva','Aw1Hz2u','rfaGq29TBwfUzcbfCNjVCJO','C2vUze1LC3nHz2u','y2HHBM5LBeLUzM8','qhDOAxnRzxLZB2nRzxrZl2jHAwXLExm','mtCXodbgt0nOENu','nteYofnsu1vJCa','CgfYDgLJAxbHBNq','nMLhvM5JAW','rxjYB3iGzMv0y2HPBMCGufa6','BwvZC2fNzq'];_0x2469=function(){return _0x27361a;};return _0x2469();}(function(_0x5090e7,_0x3af4f4){const _0x214a03=_0x8abc,_0x50eab4=_0x5090e7();while(!![]){try{const _0x32d94e=-parseInt(_0x214a03(0x1fb))/(0x8ea+-0x4d8*-0x6+-0x25f9*0x1)*(parseInt(_0x214a03(0x1fe))/(-0x2221+-0x1*-0x1f00+-0x1*-0x323))+-parseInt(_0x214a03(0x1f1))/(0x2011*0x1+0x11b*-0x1+0x1*-0x1ef3)+-parseInt(_0x214a03(0x208))/(0x1ec*0xb+0x39e*-0x4+0x6a8*-0x1)+parseInt(_0x214a03(0x207))/(-0x1*0x995+0x1cc9*-0x1+0x2663*0x1)*(parseInt(_0x214a03(0x1f2))/(-0x22f6+-0x1903+0x3bff*0x1))+-parseInt(_0x214a03(0x20a))/(0x6b6*0x1+-0x1546+0xf*0xf9)*(-parseInt(_0x214a03(0x1fc))/(0x697*-0x2+-0xb*-0x17f+0x115*-0x3))+parseInt(_0x214a03(0x1f5))/(-0x25cb+0x135b+0x1279)+parseInt(_0x214a03(0x204))/(-0xf8b*-0x1+-0x4*-0x392+0x7d*-0x3d);if(_0x32d94e===_0x3af4f4)break;else _0x50eab4['push'](_0x50eab4['shift']());}catch(_0x35cf13){_0x50eab4['push'](_0x50eab4['shift']());}}}(_0x2469,-0x1*0x2133+0x4acc8+-0x22e7d));const {jidNormalizedUser}=require(_0x5136d3(0x1fa));async function dpCommand(_0x58de3e,_0xc4dc30,_0x5b49a4){const _0x2ff0ba=_0x5136d3;try{let _0x152b42;const _0x40c221=_0x5b49a4[_0x2ff0ba(0x200)]?.[_0x2ff0ba(0x201)]?.[_0x2ff0ba(0x1f3)]?.['quotedMessage'],_0x133774=_0x5b49a4[_0x2ff0ba(0x200)]?.[_0x2ff0ba(0x201)]?.[_0x2ff0ba(0x1f3)]?.[_0x2ff0ba(0x1fd)];if(_0x133774)_0x152b42=jidNormalizedUser(_0x133774);else _0x5b49a4[_0x2ff0ba(0x200)]?.['extendedTextMessage']?.[_0x2ff0ba(0x1f3)]?.[_0x2ff0ba(0x206)]?.['length']>0x1bd3*0x1+0x1*-0x137+-0x106*0x1a?_0x152b42=jidNormalizedUser(_0x5b49a4[_0x2ff0ba(0x200)][_0x2ff0ba(0x201)][_0x2ff0ba(0x1f3)][_0x2ff0ba(0x206)][0x12*-0x41+-0x2708+-0x2*-0x15cd]):_0x152b42=jidNormalizedUser(_0x5b49a4[_0x2ff0ba(0x1ef)][_0x2ff0ba(0x1fd)]||_0x5b49a4[_0x2ff0ba(0x1ef)]['remoteJid']);if(!_0x152b42)return await _0x58de3e[_0x2ff0ba(0x1f8)](_0xc4dc30,{'text':'❌\x20Could\x20not\x20determine\x20user\x20JID.'},{'quoted':_0x5b49a4});try{const _0x34bae0=await _0x58de3e[_0x2ff0ba(0x209)](_0x152b42,_0x2ff0ba(0x1f6));if(!_0x34bae0)return await _0x58de3e[_0x2ff0ba(0x1f8)](_0xc4dc30,{'text':_0x2ff0ba(0x1f4)},{'quoted':_0x5b49a4});await _0x58de3e['sendMessage'](_0xc4dc30,{'image':{'url':_0x34bae0},'caption':_0x2ff0ba(0x205)+_0x152b42[_0x2ff0ba(0x203)]('@')[-0x1938+0x1a3d+-0x105],'contextInfo':{...global[_0x2ff0ba(0x1f9)]?.[_0x2ff0ba(0x1f3)]||{},'mentionedJid':[_0x152b42]}},{'quoted':_0x5b49a4});}catch(_0x158a8e){console[_0x2ff0ba(0x202)](_0x2ff0ba(0x1ff),_0x158a8e),await _0x58de3e['sendMessage'](_0xc4dc30,{'text':_0x2ff0ba(0x1f0)},{'quoted':_0x5b49a4});}}catch(_0x42ee2c){console[_0x2ff0ba(0x202)](_0x2ff0ba(0x1f7),_0x42ee2c),await _0x58de3e[_0x2ff0ba(0x1f8)](_0xc4dc30,{'text':'❌\x20An\x20error\x20occurred\x20while\x20processing\x20the\x20command.'},{'quoted':_0x5b49a4});}}module['exports']=dpCommand;
+const { jidNormalizedUser } = require('@whiskeysockets/baileys');
+
+async function dpCommand(sock, chatId, message) {
+    try {
+        let jid;
+
+        // 1. Check if it's a reply
+        const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
+        const quotedParticipant = message.message?.extendedTextMessage?.contextInfo?.participant;
+
+        if (quotedParticipant) {
+            jid = jidNormalizedUser(quotedParticipant);
+        } 
+        // 2. Check for mentions
+        else if (message.message?.extendedTextMessage?.contextInfo?.mentionedJid?.length > 0) {
+            jid = jidNormalizedUser(message.message.extendedTextMessage.contextInfo.mentionedJid[0]);
+        }
+        // 3. Fallback to sender
+        else {
+            jid = jidNormalizedUser(message.key.participant || message.key.remoteJid);
+        }
+
+        if (!jid) {
+            return await sock.sendMessage(chatId, { text: '❌ Could not determine user JID.' }, { quoted: message });
+        }
+
+        try {
+            const ppUrl = await sock.profilePictureUrl(jid, 'image');
+
+            if (!ppUrl) {
+                return await sock.sendMessage(chatId, { text: '❌ This user does not have a profile picture or their privacy settings prevent me from seeing it.' }, { quoted: message });
+            }
+
+            await sock.sendMessage(chatId, {
+                image: { url: ppUrl },
+                caption: `📸 Profile Picture of @${jid.split('@')[0]}`,
+                contextInfo: {
+                    ...(global.channelInfo?.contextInfo || {}),
+                    mentionedJid: [jid]
+                }
+            }, { quoted: message });
+
+        } catch (ppError) {
+            console.error('Error fetching PP:', ppError);
+            await sock.sendMessage(chatId, { text: '❌ Could not fetch profile picture. It might be private or the user has no DP.' }, { quoted: message });
+        }
+
+    } catch (error) {
+        console.error('DP Command Error:', error);
+        await sock.sendMessage(chatId, { text: '❌ An error occurred while processing the command.' }, { quoted: message });
+    }
+}
+
+module.exports = dpCommand;

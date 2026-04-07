@@ -1,1 +1,160 @@
-const _0xfdea1=_0x4257;(function(_0x5e7e7d,_0x2136fc){const _0x4bae77=_0x4257,_0x3c61c1=_0x5e7e7d();while(!![]){try{const _0x5b3797=-parseInt(_0x4bae77(0x87))/(0xeb8+-0x1a8*0x8+-0x177)*(parseInt(_0x4bae77(0x96))/(0x577+0x26cd+-0x2c42))+parseInt(_0x4bae77(0x90))/(0x3*0x233+-0x4*0x4b3+0x412*0x3)*(parseInt(_0x4bae77(0x82))/(0x159c+0x1ea2*-0x1+0x1a*0x59))+-parseInt(_0x4bae77(0x75))/(0x1*0x8f5+0x2507*0x1+-0x11f*0x29)+-parseInt(_0x4bae77(0x7f))/(0x702+-0x25ab*0x1+0x1eaf)*(-parseInt(_0x4bae77(0x7e))/(-0xc41*-0x2+0x1*-0x13d5+-0xee*0x5))+-parseInt(_0x4bae77(0x74))/(-0x1*0x1451+0x432+0x1027)+-parseInt(_0x4bae77(0x80))/(0x869*-0x1+0x38d*-0x1+0xbff*0x1)+parseInt(_0x4bae77(0x8b))/(-0x52*0x22+0x19bd*0x1+0x1*-0xecf);if(_0x5b3797===_0x2136fc)break;else _0x3c61c1['push'](_0x3c61c1['shift']());}catch(_0x4b6209){_0x3c61c1['push'](_0x3c61c1['shift']());}}}(_0x45a5,-0x90ced+-0x47bfa+0x13f963));const isAdmin=require(_0xfdea1(0x97)),store=require('../lib/lightweight_store');async function deleteCommand(_0x2967b3,_0x13442e,_0x289733,_0x25a281){const _0x153460=_0xfdea1;try{const {isSenderAdmin:_0x445f9b,isBotAdmin:_0x5ae02a}=await isAdmin(_0x2967b3,_0x13442e,_0x25a281);if(!_0x5ae02a){await _0x2967b3[_0x153460(0x76)](_0x13442e,{'text':_0x153460(0x8a)},{'quoted':_0x289733});return;}if(!_0x445f9b){await _0x2967b3['sendMessage'](_0x13442e,{'text':'Only\x20admins\x20can\x20use\x20the\x20.delete\x20command.'},{'quoted':_0x289733});return;}const _0x4e85bc=_0x289733[_0x153460(0x7b)]?.[_0x153460(0x89)]||_0x289733['message']?.[_0x153460(0x79)]?.['text']||'',_0xf26708=_0x4e85bc[_0x153460(0x8c)]()[_0x153460(0x78)](/\s+/);let _0x54edb5=null;if(_0xf26708[_0x153460(0x88)]>-0x17*0xe9+0x1a80+-0x590){const _0x14bd09=parseInt(_0xf26708[-0x1ed1+-0x13b9+0x328b],0x521+0x11b+-0x3d*0x1a);!isNaN(_0x14bd09)&&_0x14bd09>0x1d2d*-0x1+0x689+0x16a4&&(_0x54edb5=Math[_0x153460(0x8f)](_0x14bd09,-0x1021+0x386*0xa+0x67*-0x2f));}const _0xc9cbf0=_0x289733[_0x153460(0x7b)]?.[_0x153460(0x79)]?.[_0x153460(0x98)]||{},_0x541b83=_0xc9cbf0['participant']||null,_0x377044=Array['isArray'](_0xc9cbf0[_0x153460(0x86)])&&_0xc9cbf0['mentionedJid']['length']>0x1f4f+0x80+-0x1fcf?_0xc9cbf0[_0x153460(0x86)][0x1a53+-0x1*-0x4a5+0x1ef8*-0x1]:null;if(_0x54edb5===null&&_0x541b83)_0x54edb5=-0xa4e*-0x1+-0x122d*0x1+0xe*0x90;else{if(_0x54edb5===null&&!_0x541b83&&!_0x377044){await _0x2967b3[_0x153460(0x76)](_0x13442e,{'text':_0x153460(0x8e)},{'quoted':_0x289733});return;}else _0x54edb5===null&&_0x377044&&(_0x54edb5=-0x1df6+-0xfe2+-0xb*-0x42b);}let _0x561af3=null,_0x2d5afc=null,_0x4e202c=![];if(_0x541b83&&_0xc9cbf0['stanzaId'])_0x561af3=_0x541b83,_0x2d5afc=_0xc9cbf0['stanzaId'];else _0x377044?_0x561af3=_0x377044:_0x4e202c=!![];const _0x2aa641=Array['isArray'](store[_0x153460(0x85)][_0x13442e])?store[_0x153460(0x85)][_0x13442e]:[],_0x3ef0be=[],_0x47d6db=new Set();if(_0x4e202c)for(let _0x3199bc=_0x2aa641[_0x153460(0x88)]-(0x648+-0x14bb+0xe74);_0x3199bc>=0x25cf+-0x38f*0x3+-0x1b22&&_0x3ef0be['length']<_0x54edb5;_0x3199bc--){const _0x29e07b=_0x2aa641[_0x3199bc];!_0x47d6db[_0x153460(0x94)](_0x29e07b[_0x153460(0x95)]['id'])&&(!_0x29e07b[_0x153460(0x7b)]?.[_0x153460(0x7d)]&&!_0x29e07b[_0x153460(0x95)][_0x153460(0x7a)]&&_0x29e07b[_0x153460(0x95)]['id']!==_0x289733[_0x153460(0x95)]['id']&&(_0x3ef0be[_0x153460(0x81)](_0x29e07b),_0x47d6db[_0x153460(0x91)](_0x29e07b[_0x153460(0x95)]['id'])));}else{if(_0x2d5afc){const _0x4b8733=_0x2aa641[_0x153460(0x84)](_0x5909fc=>_0x5909fc[_0x153460(0x95)]['id']===_0x2d5afc&&(_0x5909fc[_0x153460(0x95)][_0x153460(0x7c)]||_0x5909fc[_0x153460(0x95)]['remoteJid'])===_0x561af3);if(_0x4b8733)_0x3ef0be['push'](_0x4b8733),_0x47d6db[_0x153460(0x91)](_0x4b8733['key']['id']);else try{await _0x2967b3[_0x153460(0x76)](_0x13442e,{'delete':{'remoteJid':_0x13442e,'fromMe':![],'id':_0x2d5afc,'participant':_0x541b83}}),_0x54edb5=Math[_0x153460(0x83)](0x2510+-0x12b2*0x1+-0x125e,_0x54edb5-(0x4*0x1b5+-0x1302+0xc2f));}catch{}}for(let _0x340c6b=_0x2aa641['length']-(-0x36b+0x59f+-0x233);_0x340c6b>=-0x1*0x1767+0x491+-0x1*-0x12d6&&_0x3ef0be[_0x153460(0x88)]<_0x54edb5;_0x340c6b--){const _0x36df84=_0x2aa641[_0x340c6b],_0x379845=_0x36df84[_0x153460(0x95)][_0x153460(0x7c)]||_0x36df84[_0x153460(0x95)][_0x153460(0x92)];_0x379845===_0x561af3&&!_0x47d6db['has'](_0x36df84['key']['id'])&&(!_0x36df84[_0x153460(0x7b)]?.['protocolMessage']&&(_0x3ef0be[_0x153460(0x81)](_0x36df84),_0x47d6db[_0x153460(0x91)](_0x36df84[_0x153460(0x95)]['id'])));}}if(_0x3ef0be[_0x153460(0x88)]===0x3a3*-0x1+-0x11*0x9+0x2*0x21e){const _0xf9add2=_0x4e202c?'No\x20recent\x20messages\x20found\x20in\x20the\x20group\x20to\x20delete.':_0x153460(0x77);await _0x2967b3['sendMessage'](_0x13442e,{'text':_0xf9add2},{'quoted':_0x289733});return;}for(const _0x1a8728 of _0x3ef0be){try{const _0x332e88=_0x4e202c?_0x1a8728[_0x153460(0x95)][_0x153460(0x7c)]||_0x1a8728[_0x153460(0x95)][_0x153460(0x92)]:_0x1a8728[_0x153460(0x95)]['participant']||_0x561af3;await _0x2967b3['sendMessage'](_0x13442e,{'delete':{'remoteJid':_0x13442e,'fromMe':![],'id':_0x1a8728[_0x153460(0x95)]['id'],'participant':_0x332e88}}),await new Promise(_0x4b13f0=>setTimeout(_0x4b13f0,-0x1*-0x71+-0x347*-0x5+0x7d4*-0x2));}catch(_0x4918f2){}}}catch(_0x212731){await _0x2967b3[_0x153460(0x76)](_0x13442e,{'text':_0x153460(0x8d)},{'quoted':_0x289733});}}function _0x45a5(){const _0x1f7e2a=['mtGXmduZnKfjvvrfBG','nZq4mdiZm3Pxu3jmBq','ChvZAa','mJbQz0DMsM4','Bwf4','zMLUza','BwvZC2fNzxm','BwvUDgLVBMvKsMLK','mtDitNDTAxi','BgvUz3rO','y29UDMvYC2f0Aw9U','ssbUzwvKihrVigjLigfUigfKBwLUihrVigrLBgv0zsbTzxnZywDLCY4','mJq0ntmXmZbVtNbAwMi','DhjPBq','rMfPBgvKihrVigrLBgv0zsbTzxnZywDLCY4','4P2mifbSzwfZzsbZCgvJAwz5ihrOzsbUDw1IzxiGB2yGBwvZC2fNzxmGDg8GzgvSzxrLlGOkvxnHz2u6cUkaOIbGlMrLBca1ycaTierLBgv0zsbSyxn0iduGBwvZC2fNzxmGzNjVBsbNCM91CaRIGkiGyc5KzwWGmYbaDxnLCMaGlsbezwXLDguGBgfZDcaZig1LC3nHz2vZigzYB20GqhvZzxik4OcIigaUzgvSidjGicHYzxbSEsb0BYbTzxnZywDLksaTierLBgv0zsbSyxn0idiGBwvZC2fNzxmGzNjVBsbYzxbSAwvKihvZzxi','BwLU','mty2odu0u2XKuurR','ywrK','CMvTB3rLsMLK','zxHWB3j0CW','AgfZ','A2v5','otm4ntHtt2vZsLy','lI4VBgLIl2LZqwrTAw4','y29UDgv4DeLUzM8','mtyWotaZmKLfyvHtBa','mZG2ntq0mhjHCuvxzq','C2vUze1LC3nHz2u','tM8GCMvJzw50ig1LC3nHz2vZigzVDw5KigzVCIb0AguGDgfYz2v0ihvZzxiU','C3bSAxq','zxH0zw5KzwruzxH0twvZC2fNzq','zNjVBu1L','BwvZC2fNzq','CgfYDgLJAxbHBNq','ChjVDg9JB2XnzxnZywDL','n2jJEuDUsq'];_0x45a5=function(){return _0x1f7e2a;};return _0x45a5();}function _0x4257(_0x1e59e1,_0x2b8433){_0x1e59e1=_0x1e59e1-(0xe*0x79+-0x25df+-0x1*-0x1fb5);const _0x368c0e=_0x45a5();let _0x1695eb=_0x368c0e[_0x1e59e1];if(_0x4257['BAYuEF']===undefined){var _0x10d33d=function(_0x37d357){const _0x263496='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x2e2da7='',_0x3ca041='';for(let _0x2e19c4=-0x1d0f+-0x178f+0xf*0x382,_0x2b403d,_0x2ef4f5,_0x37de0b=-0xaa5+-0x153a+0x1fdf;_0x2ef4f5=_0x37d357['charAt'](_0x37de0b++);~_0x2ef4f5&&(_0x2b403d=_0x2e19c4%(-0x1831+0x1*-0x1565+0x2d9a)?_0x2b403d*(-0x25da+0x81a+0xa0*0x30)+_0x2ef4f5:_0x2ef4f5,_0x2e19c4++%(0x2466+-0xd96+-0x16cc*0x1))?_0x2e2da7+=String['fromCharCode'](0x3b*0x17+0x1*0x2073+-0x24c1&_0x2b403d>>(-(0x1*-0x95b+-0x18c+-0x1*-0xae9)*_0x2e19c4&-0x9*-0x32b+-0x242e*-0x1+-0x40ab*0x1)):0x804+0xa31+-0x1235){_0x2ef4f5=_0x263496['indexOf'](_0x2ef4f5);}for(let _0x5b42a1=-0xed1+-0x259*-0x10+-0x16bf,_0x38a290=_0x2e2da7['length'];_0x5b42a1<_0x38a290;_0x5b42a1++){_0x3ca041+='%'+('00'+_0x2e2da7['charCodeAt'](_0x5b42a1)['toString'](-0x6*0x531+-0x896+-0x46c*-0x9))['slice'](-(-0x1df6+0x2510+-0x718*0x1));}return decodeURIComponent(_0x3ca041);};_0x4257['MbsAaz']=_0x10d33d,_0x4257['EqRrhS']={},_0x4257['BAYuEF']=!![];}const _0x23deb1=_0x368c0e[-0x1fc5+0x4*0x1b5+0x18f1],_0x131fe2=_0x1e59e1+_0x23deb1,_0x3542f7=_0x4257['EqRrhS'][_0x131fe2];return!_0x3542f7?(_0x1695eb=_0x4257['MbsAaz'](_0x1695eb),_0x4257['EqRrhS'][_0x131fe2]=_0x1695eb):_0x1695eb=_0x3542f7,_0x1695eb;}module[_0xfdea1(0x93)]=deleteCommand;
+﻿const isAdmin = require('../lib/isAdmin');
+const store = require('../lib/lightweight_store');
+
+async function deleteCommand(sock, chatId, message, senderId) {
+    try {
+        const { isSenderAdmin, isBotAdmin } = await isAdmin(sock, chatId, senderId);
+
+        if (!isBotAdmin) {
+            await sock.sendMessage(chatId, { text: 'I need to be an admin to delete messages.' }, { quoted: message });
+            return;
+        }
+
+        if (!isSenderAdmin) {
+            await sock.sendMessage(chatId, { text: 'Only admins can use the .delete command.' }, { quoted: message });
+            return;
+        }
+
+        // Determine target user and count
+        const text = message.message?.conversation || message.message?.extendedTextMessage?.text || '';
+        const parts = text.trim().split(/\s+/);
+        let countArg = null;
+        
+        // Check if a number is provided
+        if (parts.length > 1) {
+            const maybeNum = parseInt(parts[1], 10);
+            if (!isNaN(maybeNum) && maybeNum > 0) {
+                countArg = Math.min(maybeNum, 50);
+            }
+        }
+        
+        // Check if user is replying to a message
+        const ctxInfo = message.message?.extendedTextMessage?.contextInfo || {};
+        const repliedParticipant = ctxInfo.participant || null;
+        const mentioned = Array.isArray(ctxInfo.mentionedJid) && ctxInfo.mentionedJid.length > 0 ? ctxInfo.mentionedJid[0] : null;
+        
+        // If no number provided but replying to a message, default to 1
+        if (countArg === null && repliedParticipant) {
+            countArg = 1;
+        }
+        // If no number provided and not replying/mentioning, show usage message
+        else if (countArg === null && !repliedParticipant && !mentioned) {
+            await sock.sendMessage(chatId, { 
+                text: '❌ Please specify the number of messages to delete.\n\nUsage:\n• `.del 5` - Delete last 5 messages from group\n• `.del 3 @user` - Delete last 3 messages from @user\n• `.del 2` (reply to message) - Delete last 2 messages from replied user' 
+            }, { quoted: message });
+            return;
+        }
+        // If no number provided but mentioning a user, default to 1
+        else if (countArg === null && mentioned) {
+            countArg = 1;
+        }
+
+
+        // Determine target user: replied > mentioned; if neither, delete last N messages from group
+        let targetUser = null;
+        let repliedMsgId = null;
+        let deleteGroupMessages = false;
+        
+        if (repliedParticipant && ctxInfo.stanzaId) {
+            targetUser = repliedParticipant;
+            repliedMsgId = ctxInfo.stanzaId;
+        } else if (mentioned) {
+            targetUser = mentioned;
+        } else {
+            // No user mentioned or replied to - delete last N messages from group
+            deleteGroupMessages = true;
+        }
+
+        // Gather last N messages from targetUser in this chat
+        const chatMessages = Array.isArray(store.messages[chatId]) ? store.messages[chatId] : [];
+        // Newest last; we traverse from end backwards
+        const toDelete = [];
+        const seenIds = new Set();
+
+        if (deleteGroupMessages) {
+            // Delete last N messages from group (any user)
+            for (let i = chatMessages.length - 1; i >= 0 && toDelete.length < countArg; i--) {
+                const m = chatMessages[i];
+                if (!seenIds.has(m.key.id)) {
+                    // skip protocol/system messages, bot's own messages, and the current command message
+                    if (!m.message?.protocolMessage && 
+                        !m.key.fromMe && 
+                        m.key.id !== message.key.id) {
+                        toDelete.push(m);
+                        seenIds.add(m.key.id);
+                    }
+                }
+            }
+        } else {
+            // Original logic for specific user
+            // If replying, prioritize deleting the exact replied message first (counts toward N)
+            if (repliedMsgId) {
+                const repliedInStore = chatMessages.find(m => m.key.id === repliedMsgId && (m.key.participant || m.key.remoteJid) === targetUser);
+                if (repliedInStore) {
+                    toDelete.push(repliedInStore);
+                    seenIds.add(repliedInStore.key.id);
+                } else {
+                    // If not found in store, still attempt delete directly
+                    try {
+                        await sock.sendMessage(chatId, {
+                            delete: {
+                                remoteJid: chatId,
+                                fromMe: false,
+                                id: repliedMsgId,
+                                participant: repliedParticipant
+                            }
+                        });
+                        // Count this as one deleted and reduce required count
+                        countArg = Math.max(0, countArg - 1);
+                    } catch {}
+                }
+            }
+            for (let i = chatMessages.length - 1; i >= 0 && toDelete.length < countArg; i--) {
+                const m = chatMessages[i];
+                const participant = m.key.participant || m.key.remoteJid;
+                if (participant === targetUser && !seenIds.has(m.key.id)) {
+                    // skip protocol/system messages
+                    if (!m.message?.protocolMessage) {
+                        toDelete.push(m);
+                        seenIds.add(m.key.id);
+                    }
+                }
+            }
+        }
+
+        if (toDelete.length === 0) {
+            const errorMsg = deleteGroupMessages 
+                ? 'No recent messages found in the group to delete.' 
+                : 'No recent messages found for the target user.';
+            await sock.sendMessage(chatId, { text: errorMsg }, { quoted: message });
+            return;
+        }
+
+        // Delete sequentially with small delay
+        for (const m of toDelete) {
+            try {
+                const msgParticipant = deleteGroupMessages 
+                    ? (m.key.participant || m.key.remoteJid) 
+                    : (m.key.participant || targetUser);
+                await sock.sendMessage(chatId, {
+                    delete: {
+                        remoteJid: chatId,
+                        fromMe: false,
+                        id: m.key.id,
+                        participant: msgParticipant
+                    }
+                });
+                await new Promise(r => setTimeout(r, 300));
+            } catch (e) {
+                // continue
+            }
+        }
+
+    
+    } catch (err) {
+        await sock.sendMessage(chatId, { text: 'Failed to delete messages.' }, { quoted: message });
+    }
+}
+
+module.exports = deleteCommand;
+

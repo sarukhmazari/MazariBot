@@ -145,4 +145,3 @@ async function handleCommand(sock, m, currentSessionPhone) {
 }
 
 module.exports = handleCommand;
-

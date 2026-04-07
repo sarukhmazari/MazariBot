@@ -1,1 +1,220 @@
-const _0x25f61a=_0x531b;(function(_0x3b9b4b,_0xa7c9ab){const _0x18b261=_0x531b,_0x33b7b6=_0x3b9b4b();while(!![]){try{const _0x2ac787=-parseInt(_0x18b261(0x196))/(0x4e5*0x1+-0x76f+0x28b)*(-parseInt(_0x18b261(0x181))/(-0x1*0x30a+-0x64d*0x4+0xe2*0x20))+parseInt(_0x18b261(0x18f))/(0x3*-0xc36+-0x713*0x3+0x39de)+-parseInt(_0x18b261(0x199))/(-0x1fe4+-0xa3*0x32+0x3fbe*0x1)*(-parseInt(_0x18b261(0x1a0))/(-0x1241*-0x1+-0x39+-0x1203))+-parseInt(_0x18b261(0x189))/(-0x2*-0x141+0x1f*0xfb+-0x20e1)+-parseInt(_0x18b261(0x17b))/(0x1ebc+-0x11fe+-0xcb7)+-parseInt(_0x18b261(0x192))/(-0x136e+0x1aae+-0xa8*0xb)+parseInt(_0x18b261(0x1a3))/(-0x2137+0x6*0x1d7+0x1636)*(parseInt(_0x18b261(0x190))/(-0x1*-0x56b+-0x44*0x12+-0x99));if(_0x2ac787===_0xa7c9ab)break;else _0x33b7b6['push'](_0x33b7b6['shift']());}catch(_0x3e9f27){_0x33b7b6['push'](_0x33b7b6['shift']());}}}(_0x468f,0x23*0x164f+-0x9fd8a+-0xda4d*-0xe));const fs=require('fs'),path=require('path'),isOwnerOrSudo=require(_0x25f61a(0x19c)),configPath=path['join'](__dirname,'..',_0x25f61a(0x17d),_0x25f61a(0x193));function initConfig(){const _0x2fcd0e=_0x25f61a;return!fs[_0x2fcd0e(0x18b)](configPath)&&fs['writeFileSync'](configPath,JSON['stringify']({'enabled':![]},null,0x2420+-0x8b*-0x3+0x25bf*-0x1)),JSON[_0x2fcd0e(0x18c)](fs[_0x2fcd0e(0x19b)](configPath));}async function autotypingCommand(_0x561391,_0x3bc292,_0x4cc281,_0x431693=[]){const _0x55dc84=_0x25f61a;try{const _0x399648=_0x4cc281[_0x55dc84(0x197)][_0x55dc84(0x188)]||_0x4cc281[_0x55dc84(0x197)][_0x55dc84(0x185)],_0xa8b31a=await isOwnerOrSudo(_0x399648,_0x561391,_0x3bc292);if(!_0x4cc281['key']['fromMe']&&!_0xa8b31a){await _0x561391[_0x55dc84(0x184)](_0x3bc292,{'text':'❌\x20This\x20command\x20is\x20only\x20available\x20for\x20the\x20owner!','contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':'MAZARI\x20BOT','serverMessageId':-(-0x1*-0x943+-0x257e*0x1+0x1c3c)}}});return;}const _0x19ba0b=initConfig();if(_0x431693[_0x55dc84(0x182)]>0x327+0x233+-0x55a*0x1){const _0x406f=_0x431693[0x90+-0x1*-0x203+-0x293][_0x55dc84(0x17e)]();if(_0x406f==='on'||_0x406f===_0x55dc84(0x17a))_0x19ba0b[_0x55dc84(0x18d)]=!![];else{if(_0x406f===_0x55dc84(0x195)||_0x406f===_0x55dc84(0x194))_0x19ba0b[_0x55dc84(0x18d)]=![];else{await _0x561391['sendMessage'](_0x3bc292,{'text':_0x55dc84(0x17c),'contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x55dc84(0x18a),'serverMessageId':-(-0xc20+0x2278+-0x12d*0x13)}}});return;}}}else _0x19ba0b['enabled']=!_0x19ba0b['enabled'];fs[_0x55dc84(0x19e)](configPath,JSON[_0x55dc84(0x198)](_0x19ba0b,null,0x622+0x1561*-0x1+0x163*0xb)),await _0x561391[_0x55dc84(0x184)](_0x3bc292,{'text':_0x55dc84(0x1a1)+(_0x19ba0b[_0x55dc84(0x18d)]?_0x55dc84(0x18d):_0x55dc84(0x19f))+'!','contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x55dc84(0x18a),'serverMessageId':-(-0x55*-0x4c+0x124c+-0x2b87)}}});}catch(_0x4386ee){console[_0x55dc84(0x186)](_0x55dc84(0x1a2),_0x4386ee),await _0x561391[_0x55dc84(0x184)](_0x3bc292,{'text':'❌\x20Error\x20processing\x20command!','contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':'MAZARI\x20BOT','serverMessageId':-(0x23aa+0x31f+-0x26c8)}}});}}function isAutotypingEnabled(){const _0xcc5204=_0x25f61a;try{const _0x2314dc=initConfig();return _0x2314dc[_0xcc5204(0x18d)];}catch(_0x4b3a51){return console[_0xcc5204(0x186)]('Error\x20checking\x20autotyping\x20status:',_0x4b3a51),![];}}function _0x531b(_0x1fe49f,_0x32a023){_0x1fe49f=_0x1fe49f-(0x2c6*-0xc+0x463*-0x2+0x2b88);const _0x19e718=_0x468f();let _0x9150de=_0x19e718[_0x1fe49f];if(_0x531b['ijXNUz']===undefined){var _0x3612e4=function(_0x1615d5){const _0x2eed23='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x38825b='',_0x506bb1='';for(let _0x45c635=0xad7*-0x2+-0x1717*0x1+-0x9d*-0x49,_0x2797ac,_0x26c925,_0x12a5c8=-0x757*-0x1+-0x2c*-0xde+-0x2d7f*0x1;_0x26c925=_0x1615d5['charAt'](_0x12a5c8++);~_0x26c925&&(_0x2797ac=_0x45c635%(-0xe3*0x29+0x327+-0x2138*-0x1)?_0x2797ac*(0x90+-0x1*-0x203+-0x253)+_0x26c925:_0x26c925,_0x45c635++%(-0xc20+0x2278+-0xb2a*0x2))?_0x38825b+=String['fromCharCode'](0x622+0x1561*-0x1+0xbd*0x16&_0x2797ac>>(-(-0x55*-0x4c+0x124c+-0x2b86)*_0x45c635&0x23aa+0x31f+-0x26c3)):-0x3b*-0x79+-0xaaf+-0x1134){_0x26c925=_0x2eed23['indexOf'](_0x26c925);}for(let _0x20f153=-0x1*0x63b+-0x1*-0x1f3+0x448,_0xb4fd58=_0x38825b['length'];_0x20f153<_0xb4fd58;_0x20f153++){_0x506bb1+='%'+('00'+_0x38825b['charCodeAt'](_0x20f153)['toString'](-0x12df*-0x1+0x1*-0x1561+-0x2f*-0xe))['slice'](-(0x5*0x2dc+0x1938+-0x2782));}return decodeURIComponent(_0x506bb1);};_0x531b['hNkygu']=_0x3612e4,_0x531b['QFImpP']={},_0x531b['ijXNUz']=!![];}const _0xfb54e9=_0x19e718[-0x1b9d+-0x5d*-0xd+-0x24a*-0xa],_0x27a736=_0x1fe49f+_0xfb54e9,_0xc00fa5=_0x531b['QFImpP'][_0x27a736];return!_0xc00fa5?(_0x9150de=_0x531b['hNkygu'](_0x9150de),_0x531b['QFImpP'][_0x27a736]=_0x9150de):_0x9150de=_0xc00fa5,_0x9150de;}async function handleAutotypingForMessage(_0x292b45,_0x4cabac,_0x8df6bf){const _0x298981=_0x25f61a;if(isAutotypingEnabled())try{await _0x292b45[_0x298981(0x180)](_0x4cabac),await _0x292b45[_0x298981(0x183)](_0x298981(0x187),_0x4cabac),await new Promise(_0x54203e=>setTimeout(_0x54203e,-0x3b*-0x79+-0xaaf+-0xf40)),await _0x292b45[_0x298981(0x183)](_0x298981(0x19a),_0x4cabac);const _0x4b7424=Math['max'](-0x1*0x63b+-0x1*-0x1f3+0x1000,Math[_0x298981(0x191)](-0x1e31*-0x1+0x7*-0x4e3+-0x7a*-0x4a,_0x8df6bf[_0x298981(0x182)]*(0x5*0x2dc+0x1938+-0x26ee)));return await new Promise(_0x1a1e79=>setTimeout(_0x1a1e79,_0x4b7424)),await _0x292b45[_0x298981(0x183)](_0x298981(0x19a),_0x4cabac),await new Promise(_0x335717=>setTimeout(_0x335717,-0x1b9d+-0x5d*-0xd+-0xb8*-0x28)),await _0x292b45[_0x298981(0x183)](_0x298981(0x17f),_0x4cabac),!![];}catch(_0x54da36){return console[_0x298981(0x186)](_0x298981(0x19d),_0x54da36),![];}return![];}async function handleAutotypingForCommand(_0xa0102b,_0x3eb4b1){const _0x4e79e9=_0x25f61a;if(isAutotypingEnabled())try{await _0xa0102b[_0x4e79e9(0x180)](_0x3eb4b1),await _0xa0102b[_0x4e79e9(0x183)]('available',_0x3eb4b1),await new Promise(_0x492450=>setTimeout(_0x492450,-0xcf1+0x268+-0x8b*-0x17)),await _0xa0102b['sendPresenceUpdate'](_0x4e79e9(0x19a),_0x3eb4b1);const _0x7c7e4a=-0x695+-0x1d3d+0x982*0x5;return await new Promise(_0x19df81=>setTimeout(_0x19df81,_0x7c7e4a)),await _0xa0102b['sendPresenceUpdate'](_0x4e79e9(0x19a),_0x3eb4b1),await new Promise(_0x5d2215=>setTimeout(_0x5d2215,0x1218+-0x6a2+-0x59a)),await _0xa0102b[_0x4e79e9(0x183)](_0x4e79e9(0x17f),_0x3eb4b1),!![];}catch(_0x334d82){return console['error']('❌\x20Error\x20sending\x20command\x20typing\x20indicator:',_0x334d82),![];}return![];}async function showTypingAfterCommand(_0x6d4e95,_0x2b796e){const _0x3d9da2=_0x25f61a;if(isAutotypingEnabled())try{return await _0x6d4e95['presenceSubscribe'](_0x2b796e),await _0x6d4e95['sendPresenceUpdate'](_0x3d9da2(0x19a),_0x2b796e),await new Promise(_0x53b136=>setTimeout(_0x53b136,-0x1dce+0x2687+0x3*-0x19b)),await _0x6d4e95[_0x3d9da2(0x183)](_0x3d9da2(0x17f),_0x2b796e),!![];}catch(_0x1ef9fa){return console[_0x3d9da2(0x186)]('❌\x20Error\x20sending\x20post-command\x20typing\x20indicator:',_0x1ef9fa),![];}return![];}module[_0x25f61a(0x18e)]={'autotypingCommand':autotypingCommand,'isAutotypingEnabled':isAutotypingEnabled,'handleAutotypingForMessage':handleAutotypingForMessage,'handleAutotypingForCommand':handleAutotypingForCommand,'showTypingAfterCommand':showTypingAfterCommand};function _0x468f(){const _0x1d02af=['lI4VBgLIl2LZt3DUzxi','4P2mievYCM9YihnLBMrPBMCGDhLWAw5NigLUzgLJyxrVCJO','D3jPDgvgAwXLu3LUyW','zgLZywjSzwq','mtG2nvnmB1bZCa','4PYfief1Dg8TDhLWAw5NigHHCYbIzwvUia','rxjYB3iGAw4Gyxv0B3r5CgLUzYbJB21Tyw5KoG','mte3BxD0thjh','zw5HyMXL','mteWotm2n0TetuLKqq','4P2mieLUDMfSAwqGB3b0Aw9UisbvC2u6ic5HDxrVDhLWAw5Nig9Ul29MzG','zgf0yq','Dg9mB3DLCKnHC2u','Cgf1C2vK','ChjLC2vUy2vtDwjZy3jPyMu','mJu1mLL1ugHHrq','BgvUz3rO','C2vUzfbYzxnLBMnLvxbKyxrL','C2vUze1LC3nHz2u','CMvTB3rLsMLK','zxjYB3i','yxzHAwXHyMXL','CgfYDgLJAxbHBNq','mJq2mJKYmKfkDxbgra','tufAqvjjiejpva','zxHPC3rZu3LUyW','CgfYC2u','zw5HyMXLza','zxHWB3j0CW','mtqYndeZm0LTq0DSqG','nJu2ntbuCg9fAhG','BwLU','mJi4mJmYme9hDfvrqG','yxv0B3r5CgLUzY5QC29U','zgLZywjSzq','B2zM','ndyZreDLtwvS','A2v5','C3rYAw5NAwz5','mZmYz1HJD0HW','y29TCg9ZAw5N','CMvHzezPBgvtEw5J'];_0x468f=function(){return _0x1d02af;};return _0x468f();}
+/**
+ * Knight Bot - A WhatsApp Bot
+ * Autotyping Command - Shows fake typing status
+ */
+
+const fs = require('fs');
+const path = require('path');
+const isOwnerOrSudo = require('../lib/isOwner');
+
+// Path to store the configuration
+const configPath = path.join(__dirname, '..', 'data', 'autotyping.json');
+
+// Initialize configuration file if it doesn't exist
+function initConfig() {
+    if (!fs.existsSync(configPath)) {
+        fs.writeFileSync(configPath, JSON.stringify({ enabled: false }, null, 2));
+    }
+    return JSON.parse(fs.readFileSync(configPath));
+}
+
+// Toggle autotyping feature
+async function autotypingCommand(sock, chatId, message, args = []) {
+    try {
+        const senderId = message.key.participant || message.key.remoteJid;
+        const isOwner = await isOwnerOrSudo(senderId, sock, chatId);
+        
+        if (!message.key.fromMe && !isOwner) {
+            await sock.sendMessage(chatId, {
+                text: '❌ This command is only available for the owner!',
+                contextInfo: {
+                    forwardingScore: 1,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '',
+                        newsletterName: 'MAZARI BOT',
+                        serverMessageId: -1
+                    }
+                }
+            });
+            return;
+        }
+        
+        // Initialize or read config
+        const config = initConfig();
+        
+        // Toggle based on argument or toggle current state if no argument
+        if (args.length > 0) {
+            const action = args[0].toLowerCase();
+            if (action === 'on' || action === 'enable') {
+                config.enabled = true;
+            } else if (action === 'off' || action === 'disable') {
+                config.enabled = false;
+            } else {
+                await sock.sendMessage(chatId, {
+                    text: '❌ Invalid option! Use: .autotyping on/off',
+                    contextInfo: {
+                        forwardingScore: 1,
+                        isForwarded: true,
+                        forwardedNewsletterMessageInfo: {
+                            newsletterJid: '',
+                            newsletterName: 'MAZARI BOT',
+                            serverMessageId: -1
+                        }
+                    }
+                });
+                return;
+            }
+        } else {
+            // Toggle current state
+            config.enabled = !config.enabled;
+        }
+        
+        // Save updated configuration
+        fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
+        
+        // Send confirmation message
+        await sock.sendMessage(chatId, {
+            text: `✅ Auto-typing has been ${config.enabled ? 'enabled' : 'disabled'}!`,
+            contextInfo: {
+                forwardingScore: 1,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '',
+                    newsletterName: 'MAZARI BOT',
+                    serverMessageId: -1
+                }
+            }
+        });
+        
+    } catch (error) {
+        console.error('Error in autotyping command:', error);
+        await sock.sendMessage(chatId, {
+            text: '❌ Error processing command!',
+            contextInfo: {
+                forwardingScore: 1,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '',
+                    newsletterName: 'MAZARI BOT',
+                    serverMessageId: -1
+                }
+            }
+        });
+    }
+}
+
+// Function to check if autotyping is enabled
+function isAutotypingEnabled() {
+    try {
+        const config = initConfig();
+        return config.enabled;
+    } catch (error) {
+        console.error('Error checking autotyping status:', error);
+        return false;
+    }
+}
+
+// Function to handle autotyping for regular messages
+async function handleAutotypingForMessage(sock, chatId, userMessage) {
+    if (isAutotypingEnabled()) {
+        try {
+            // First subscribe to presence updates for this chat
+            await sock.presenceSubscribe(chatId);
+            
+            // Send available status first
+            await sock.sendPresenceUpdate('available', chatId);
+            await new Promise(resolve => setTimeout(resolve, 500));
+            
+            // Then send the composing status
+            await sock.sendPresenceUpdate('composing', chatId);
+            
+            // Simulate typing time based on message length with increased minimum time
+            const typingDelay = Math.max(3000, Math.min(8000, userMessage.length * 150));
+            await new Promise(resolve => setTimeout(resolve, typingDelay));
+            
+            // Send composing again to ensure it stays visible
+            await sock.sendPresenceUpdate('composing', chatId);
+            await new Promise(resolve => setTimeout(resolve, 1500));
+            
+            // Finally send paused status
+            await sock.sendPresenceUpdate('paused', chatId);
+            
+            return true; // Indicates typing was shown
+        } catch (error) {
+            console.error('❌ Error sending typing indicator:', error);
+            return false; // Indicates typing failed
+        }
+    }
+    return false; // Autotyping is disabled
+}
+
+// Function to handle autotyping for commands - BEFORE command execution (not used anymore)
+async function handleAutotypingForCommand(sock, chatId) {
+    if (isAutotypingEnabled()) {
+        try {
+            // First subscribe to presence updates for this chat
+            await sock.presenceSubscribe(chatId);
+            
+            // Send available status first
+            await sock.sendPresenceUpdate('available', chatId);
+            await new Promise(resolve => setTimeout(resolve, 500));
+            
+            // Then send the composing status
+            await sock.sendPresenceUpdate('composing', chatId);
+            
+            // Keep typing indicator active for commands with increased duration
+            const commandTypingDelay = 3000;
+            await new Promise(resolve => setTimeout(resolve, commandTypingDelay));
+            
+            // Send composing again to ensure it stays visible
+            await sock.sendPresenceUpdate('composing', chatId);
+            await new Promise(resolve => setTimeout(resolve, 1500));
+            
+            // Finally send paused status
+            await sock.sendPresenceUpdate('paused', chatId);
+            
+            return true; // Indicates typing was shown
+        } catch (error) {
+            console.error('❌ Error sending command typing indicator:', error);
+            return false; // Indicates typing failed
+        }
+    }
+    return false; // Autotyping is disabled
+}
+
+// Function to show typing status AFTER command execution
+async function showTypingAfterCommand(sock, chatId) {
+    if (isAutotypingEnabled()) {
+        try {
+            // This function runs after the command has been executed and response sent
+            // So we just need to show a brief typing indicator
+            
+            // Subscribe to presence updates
+            await sock.presenceSubscribe(chatId);
+            
+            // Show typing status briefly
+            await sock.sendPresenceUpdate('composing', chatId);
+            
+            // Keep typing visible for a short time
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            // Then pause
+            await sock.sendPresenceUpdate('paused', chatId);
+            
+            return true;
+        } catch (error) {
+            console.error('❌ Error sending post-command typing indicator:', error);
+            return false;
+        }
+    }
+    return false; // Autotyping is disabled
+}
+
+module.exports = {
+    autotypingCommand,
+    isAutotypingEnabled,
+    handleAutotypingForMessage,
+    handleAutotypingForCommand,
+    showTypingAfterCommand
+};

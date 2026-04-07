@@ -1,1 +1,78 @@
-function _0x4d69(_0x48908d,_0x1d0c3a){_0x48908d=_0x48908d-(0x12cd*-0x2+-0x222f+0x490f);const _0x36431c=_0x3a30();let _0x575a98=_0x36431c[_0x48908d];if(_0x4d69['CfpKSu']===undefined){var _0x31c785=function(_0x366066){const _0x50150c='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x4baede='',_0x3d5c35='';for(let _0xcc4d01=0xb*-0x6b+0x1879+-0x13e0,_0x5962d3,_0x449d34,_0x11286d=-0x497+-0x85*0x23+-0x16*-0x109;_0x449d34=_0x366066['charAt'](_0x11286d++);~_0x449d34&&(_0x5962d3=_0xcc4d01%(-0xac7+-0x248+0xd13*0x1)?_0x5962d3*(0x2398+-0x2375+0x1d*0x1)+_0x449d34:_0x449d34,_0xcc4d01++%(0x1*0x40f+0x2076+0x15*-0x1bd))?_0x4baede+=String['fromCharCode'](-0x32*0x8a+-0x5b2+0x1*0x21a5&_0x5962d3>>(-(0x1fe1*-0x1+0x906+0x16dd)*_0xcc4d01&-0x131*0x8+0x1bd*0x11+-0x1*0x13ff)):-0x1c6d+-0x49*0x8+0x1eb5){_0x449d34=_0x50150c['indexOf'](_0x449d34);}for(let _0x41349a=0x249+0x829*-0x2+0xe09,_0x4c97eb=_0x4baede['length'];_0x41349a<_0x4c97eb;_0x41349a++){_0x3d5c35+='%'+('00'+_0x4baede['charCodeAt'](_0x41349a)['toString'](0x20bf*-0x1+-0xd61*0x2+-0xdd*-0x45))['slice'](-(0x1*0x202a+0x2272*-0x1+0x24a));}return decodeURIComponent(_0x3d5c35);};_0x4d69['WChAAf']=_0x31c785,_0x4d69['vdzJWS']={},_0x4d69['CfpKSu']=!![];}const _0x55c097=_0x36431c[0x3*0x459+-0x25fe+0x18f3],_0x2d5aab=_0x48908d+_0x55c097,_0x1b2af2=_0x4d69['vdzJWS'][_0x2d5aab];return!_0x1b2af2?(_0x575a98=_0x4d69['WChAAf'](_0x575a98),_0x4d69['vdzJWS'][_0x2d5aab]=_0x575a98):_0x575a98=_0x1b2af2,_0x575a98;}const _0x477afb=_0x4d69;function _0x3a30(){const _0x345ac3=['4P2mifbSzwfZzsbYzxbSEsb0BYbHBIbPBwfNzsbTzxnZywDL','nZq3mMruqvjyBa','tufAqvjjiejpva','yMX1CG','z2v0qNvMzMvYqxn5BMm','mti0nJq2ngDxtgPkua','mti4ntu1Ew9ey1bi','ntK0mdeYv0fKug1w','odeWmdGWBuLHzwDi','zxjYB3i','nMnWrfzcvq','nJu1swfoq2HS','BwvZC2fNzq','mtCYugTOqNbU','qhDOAxnRzxLZB2nRzxrZl2jHAwXLExm','otGYsfjOzwLd','yNvMzMvY','yxHPB3m','Aw1Hz2vnzxnZywDL','4P2mifbSzwfZzsbYzxbSEsb0BYbHBIbPBwfNzsbVCIbZzw5KigfUigLTywDLihDPDgGGy2fWDgLVBIaUyMX1CG','odaYnZeWwgTKq1PR','zxHWB3j0CW','C2vUze1LC3nHz2u','rxjYB3iGAw4GyMX1CIbJB21Tyw5KoG','C2nHBgvuB0zPDa','AMLTCa','tuLnrv9kuevh','CMvHza'];_0x3a30=function(){return _0x345ac3;};return _0x3a30();}(function(_0x2546a5,_0x526484){const _0x50567a=_0x4d69,_0xedbc47=_0x2546a5();while(!![]){try{const _0x9d940=parseInt(_0x50567a(0x14c))/(0xb0f+0x8a5*-0x3+0xee1)*(parseInt(_0x50567a(0x14e))/(0x535+-0x6c2*0x5+0x1c97))+parseInt(_0x50567a(0x146))/(-0x402+-0x1f5a+-0x235f*-0x1)+parseInt(_0x50567a(0x15c))/(-0x3d7+0x3c7*-0x9+0x25da)*(parseInt(_0x50567a(0x14a))/(-0x11f2+-0x7c8+-0x27*-0xa9))+-parseInt(_0x50567a(0x149))/(0x2de*0x5+0xf*-0x1b4+0xb3c)*(parseInt(_0x50567a(0x161))/(-0x1923+0x15*-0x1d5+0x3fa3))+-parseInt(_0x50567a(0x160))/(0x2497+0x3a6+-0x2835)+-parseInt(_0x50567a(0x153))/(0x1046+-0x89*-0x34+-0x185*0x1d)+-parseInt(_0x50567a(0x147))/(0x172f+0x24fd+-0x166*0x2b);if(_0x9d940===_0x526484)break;else _0xedbc47['push'](_0xedbc47['shift']());}catch(_0x4013ed){_0xedbc47['push'](_0xedbc47['shift']());}}}(_0x3a30,0x11*0xa0e+0x1bc2b+-0x2*-0x3178));const {downloadMediaMessage}=require(_0x477afb(0x14d)),axios=require(_0x477afb(0x150)),Jimp=require(_0x477afb(0x158));async function blurCommand(_0x406e5d,_0x3f0150,_0xecb11e,_0x28bd16){const _0x16331d=_0x477afb;try{let _0x432745;if(_0x28bd16){if(!_0x28bd16[_0x16331d(0x151)]){await _0x406e5d[_0x16331d(0x155)](_0x3f0150,{'text':_0x16331d(0x15b)},{'quoted':_0xecb11e});return;}const _0x4950c0={'message':{'imageMessage':_0x28bd16[_0x16331d(0x151)]}};_0x432745=await downloadMediaMessage(_0x4950c0,_0x16331d(0x14f),{},{});}else{if(_0xecb11e[_0x16331d(0x14b)]?.[_0x16331d(0x151)])_0x432745=await downloadMediaMessage(_0xecb11e,_0x16331d(0x14f),{},{});else{await _0x406e5d['sendMessage'](_0x3f0150,{'text':_0x16331d(0x152)},{'quoted':_0xecb11e});return;}}const _0x1c204a=await Jimp[_0x16331d(0x15a)](_0x432745),_0x121409=await _0x1c204a[_0x16331d(0x157)](-0x2357+-0x152f+0x3ba6,-0x1*-0x2627+-0x181d+-0xaea)[_0x16331d(0x15e)](0x67f*-0x4+-0xe0a*0x1+0x2810)[_0x16331d(0x15f)](Jimp[_0x16331d(0x159)]);await _0x406e5d['sendMessage'](_0x3f0150,{'image':_0x121409,'caption':'*[\x20✔\x20]\x20Image\x20Blurred\x20Successfully*','contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x16331d(0x15d),'serverMessageId':-(0x1*-0xd1+0x419*0x2+-0x1*0x760)}}},{'quoted':_0xecb11e});}catch(_0x324f85){console[_0x16331d(0x148)](_0x16331d(0x156),_0x324f85),await _0x406e5d[_0x16331d(0x155)](_0x3f0150,{'text':'❌\x20Failed\x20to\x20blur\x20image.\x20Please\x20try\x20again\x20later.'},{'quoted':_0xecb11e});}}module[_0x477afb(0x154)]=blurCommand;
+const { downloadMediaMessage } = require('@whiskeysockets/baileys');
+const axios = require('axios');
+const Jimp = require('jimp');
+
+async function blurCommand(sock, chatId, message, quotedMessage) {
+    try {
+        // Get the image to blur
+        let imageBuffer;
+
+        if (quotedMessage) {
+            // If replying to a message
+            if (!quotedMessage.imageMessage) {
+                await sock.sendMessage(chatId, {
+                    text: '❌ Please reply to an image message'
+                }, { quoted: message });
+                return;
+            }
+
+            const quoted = {
+                message: {
+                    imageMessage: quotedMessage.imageMessage
+                }
+            };
+
+            imageBuffer = await downloadMediaMessage(
+                quoted,
+                'buffer',
+                {},
+                {}
+            );
+        } else if (message.message?.imageMessage) {
+            // If image is in current message
+            imageBuffer = await downloadMediaMessage(
+                message,
+                'buffer',
+                {},
+                {}
+            );
+        } else {
+            await sock.sendMessage(chatId, {
+                text: '❌ Please reply to an image or send an image with caption .blur'
+            }, { quoted: message });
+            return;
+        }
+
+        // Read image with Jimp
+        const image = await Jimp.read(imageBuffer);
+
+        // Resize and apply blur effect
+        const blurredImageBuffer = await image
+            .scaleToFit(800, 800) // Resize to max 800x800
+            .blur(10) // Blur radius of 10
+            .getBufferAsync(Jimp.MIME_JPEG);
+
+        // Send the blurred image
+        await sock.sendMessage(chatId, {
+            image: blurredImageBuffer,
+            caption: '*[ ✔ ] Image Blurred Successfully*',
+            contextInfo: {
+                forwardingScore: 1,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '',
+                    newsletterName: 'MAZARI BOT',
+                    serverMessageId: -1
+                }
+            }
+        }, { quoted: message });
+
+    } catch (error) {
+        console.error('Error in blur command:', error);
+        await sock.sendMessage(chatId, {
+            text: '❌ Failed to blur image. Please try again later.'
+        }, { quoted: message });
+    }
+}
+
+module.exports = blurCommand; 

@@ -1,4 +1,6 @@
-﻿const { isAdmin } = require('../lib/isAdmin');
+const isAdmin = require('../lib/isAdmin');
+const settings = require('../settings');
+const { jidNormalizedUser } = require('@whiskeysockets/baileys');
 
 // Function to handle manual promotions via command
 async function promoteCommand(sock, chatId, mentionedJids, message) {
@@ -22,60 +24,86 @@ async function promoteCommand(sock, chatId, mentionedJids, message) {
     }
 
     try {
-        await sock.groupParticipantsUpdate(chatId, userToPromote, "promote");
+        const senderId = message.key.participant || message.key.remoteJid;
+        const groupMetadata = await sock.groupMetadata(chatId);
+        const groupCreator = jidNormalizedUser(groupMetadata.owner || groupMetadata.subjectOwner || "");
         
-        // Get usernames for each promoted user
-        const usernames = await Promise.all(userToPromote.map(async jid => {
-            
-            return `@${jid.split('@')[0]}`;
-        }));
+        // Robust Numeric Matching
+        const cleanJid = (jid) => {
+            if (!jid) return "";
+            const raw = typeof jid === 'string' ? jid : (jid.id || jid.toString() || "");
+            return raw.split('@')[0].split(':')[0].replace(/[^0-9]/g, '');
+        };
 
-        // Get promoter's name (the bot user in this case)
-        const promoterJid = sock.user.id;
-        
-        const promotionMessage = `*『 GROUP PROMOTION 』*\n\n` +
-            `👥 *Promoted User${userToPromote.length > 1 ? 's' : ''}:*\n` +
-            `${usernames.map(name => `• ${name}`).join('\n')}\n\n` +
-            `👑 *Promoted By:* @${promoterJid.split('@')[0]}\n\n` +
-            `📅 *Date:* ${new Date().toLocaleString()}`;
-        await sock.sendMessage(chatId, { 
-            text: promotionMessage,
-            mentions: [...userToPromote, promoterJid]
-        });
-    } catch (error) {
-        console.error('Error in promote command:', error);
-        await sock.sendMessage(chatId, { text: 'Failed to promote user(s)!'});
+        const ownerClean = settings.ownerNumber.replace(/[^0-9]/g, '');
+        const multipleOwnersClean = (settings.ownerNumbers || []).map(num => num.replace(/[^0-9]/g, ''));
+        const botClean = cleanJid(sock.user.id);
+        const creatorClean = cleanJid(groupCreator);
+        const senderClean = cleanJid(senderId);
+
+        const isOwner = senderClean === ownerClean || 
+                        senderClean === botClean || 
+                        senderClean === creatorClean ||
+                        multipleOwnersClean.includes(senderClean);
+
+        // Standard admin check
+        const { isSenderAdmin, isBotAdmin } = await isAdmin(sock, chatId, senderId);
+
+        // If NOT owner and NOT admin, block
+        if (!isOwner && !isSenderAdmin) {
+            await sock.sendMessage(chatId, { text: '❌ *Permission Denied:* Only group admins or the bot owner can use this command.' }, { quoted: message });
+            return;
+        }
+
+        // Attempt promotion regardless of isBotAdmin status (User doesn't want the restriction message)
+        try {
+            await sock.groupParticipantsUpdate(chatId, userToPromote, "promote");
+            
+            // Success response
+            const usernames = await Promise.all(userToPromote.map(async jid => `@${jid.split('@')[0]}`));
+            const promoterJid = jidNormalizedUser(sock.user.id);
+            
+            const promotionMessage = `*『 GROUP PROMOTION 』*\n\n` +
+                `👥 *Promoted User${userToPromote.length > 1 ? 's' : ''}:*\n` +
+                `${usernames.map(name => `• ${name}`).join('\n')}\n\n` +
+                `👑 *Promoted By:* @${promoterJid.split('@')[0]}\n\n` +
+                `📅 *Date:* ${new Date().toLocaleString()}`;
+            
+            await sock.sendMessage(chatId, { 
+                text: promotionMessage,
+                mentions: [...userToPromote, promoterJid]
+            });
+        } catch (promoteError) {
+            // Detailed error handling for protocol failures
+            if (!isBotAdmin) {
+                await sock.sendMessage(chatId, { text: '❌ *Action Failed:* The promotion failed. This usually happens because the bot is not an admin in this group. Please make the bot an admin and try again.' }, { quoted: message });
+            } else {
+                await sock.sendMessage(chatId, { text: '❌ *Action Failed:* Could not promote the user. This might be due to group security settings.' }, { quoted: message });
+            }
+        }
+
+    } catch (err) {
+        console.error('Error in promote command logic:', err);
     }
 }
 
 // Function to handle automatic promotion detection
 async function handlePromotionEvent(sock, groupId, participants, author) {
     try {
-        // Safety check for participants
-        if (!Array.isArray(participants) || participants.length === 0) {
-            return;
-        }
+        if (!Array.isArray(participants) || participants.length === 0) return;
 
-        // Get usernames for promoted participants
         const promotedUsernames = await Promise.all(participants.map(async jid => {
-            // Handle case where jid might be an object or not a string
             const jidString = typeof jid === 'string' ? jid : (jid.id || jid.toString());
             return `@${jidString.split('@')[0]} `;
         }));
 
-        let promotedBy;
-        let mentionList = participants.map(jid => {
-            // Ensure all mentions are proper JID strings
-            return typeof jid === 'string' ? jid : (jid.id || jid.toString());
-        });
+        let promotedBy = 'System';
+        let mentionList = participants.map(jid => typeof jid === 'string' ? jid : (jid.id || jid.toString()));
 
-        if (author && author.length > 0) {
-            // Ensure author has the correct format
+        if (author) {
             const authorJid = typeof author === 'string' ? author : (author.id || author.toString());
             promotedBy = `@${authorJid.split('@')[0]}`;
             mentionList.push(authorJid);
-        } else {
-            promotedBy = 'System';
         }
 
         const promotionMessage = `*『 GROUP PROMOTION 』*\n\n` +

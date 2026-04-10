@@ -1,10 +1,4 @@
 {
-  "109994179600386@lid": {
-    "count": 2,
-    "lastMessageTime": 1775406311646,
-    "blocked": false,
-    "ignored": false
-  },
   "30825651400921@lid": {
     "count": 1,
     "lastMessageTime": 1775208583096,
@@ -38,6 +32,30 @@
   "272438919176196@lid": {
     "count": 2,
     "lastMessageTime": 1775586516196,
+    "blocked": false,
+    "ignored": false
+  },
+  "120363402591161310@newsletter": {
+    "count": 1,
+    "lastMessageTime": 1775743182886,
+    "blocked": false,
+    "ignored": false
+  },
+  "923085759612@s.whatsapp.net": {
+    "count": 1,
+    "lastMessageTime": 1775819071708,
+    "blocked": false,
+    "ignored": false
+  },
+  "149039928578202@lid": {
+    "count": 1,
+    "lastMessageTime": 1775821435622,
+    "blocked": false,
+    "ignored": false
+  },
+  "253635166474449@lid": {
+    "count": 1,
+    "lastMessageTime": 1775822423937,
     "blocked": false,
     "ignored": false
   }

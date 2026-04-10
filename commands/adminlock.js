@@ -1,32 +1,32 @@
 const { setAdminlock, getAdminlock } = require('../lib/index');
 const settings = require('../settings');
-const { jidNormalizedUser } = require('@whiskeysockets/baileys');
+const fs = require('fs');
+const path = require('path');
 
 async function adminlockCommand(sock, chatId, senderId, args, message) {
     try {
-        const ownerNumberFormatted = `${settings.ownerNumber}@s.whatsapp.net`;
-        const senderJid = jidNormalizedUser(senderId);
-        
-        if (senderJid !== ownerNumberFormatted && !message.key.fromMe) {
+        const ownerNumbers = settings.ownerNumbers || [settings.ownerNumber];
+        const senderNumber = senderId.split('@')[0].split(':')[0];
+        const isOwner = ownerNumbers.some(num => num.replace(/[^0-9]/g, '') === senderNumber.replace(/[^0-9]/g, ''));
+
+        if (!isOwner && !message.key.fromMe) {
             await sock.sendMessage(chatId, { text: '❌ This command can only be used by the Bot Owner.' }, { quoted: message });
             return;
         }
 
         const action = args[0]?.toLowerCase();
-
         if (action === 'on') {
             await setAdminlock(chatId, true);
-            await sock.sendMessage(chatId, { text: '🔒 *Admin Lock is now ON.*\n\nOnly the owner can assign admins. Unauthorized promotions will be reversed immediately, and all unauthorized admins will be demoted.' }, { quoted: message });
+            await sock.sendMessage(chatId, { text: '🔒 *Admin Lock is now ON.*\n\nAny unauthorized admin who tries to promote someone will be demoted immediately.' }, { quoted: message });
         } else if (action === 'off') {
             await setAdminlock(chatId, false);
-            await sock.sendMessage(chatId, { text: '🔓 *Admin Lock is now OFF.*\n\nGroup admins can now freely promote other members.' }, { quoted: message });
+            await sock.sendMessage(chatId, { text: '🔓 *Admin Lock is now OFF.*' }, { quoted: message });
         } else {
             const status = await getAdminlock(chatId);
-            await sock.sendMessage(chatId, { text: `🛡️ *Admin Lock Status:* ${status ? 'ON' : 'OFF'}\n\nUse *.adminlock on* or *.adminlock off*` }, { quoted: message });
+            await sock.sendMessage(chatId, { text: `🛡️ *Admin Lock Status:* ${status ? 'ON' : 'OFF'}` }, { quoted: message });
         }
     } catch (error) {
         console.error('Error in adminlock command:', error);
-        await sock.sendMessage(chatId, { text: '❌ Failed to process adminlock command.' }, { quoted: message });
     }
 }
 
@@ -35,81 +35,76 @@ async function handleAdminlockPromotion(sock, groupId, participants, author) {
         const isEnabled = await getAdminlock(groupId);
         if (!isEnabled) return;
 
-        const ownerNumberFormatted = jidNormalizedUser(`${settings.ownerNumber}@s.whatsapp.net`);
-        const botJid = jidNormalizedUser(sock.user.id);
-        
-        const authorJid = author ? jidNormalizedUser(typeof author === 'string' ? author : (author.id || author.toString())) : null;
-        
-        // If the author is null, it's safer to ignore it for now as it might be a system action
+        const normalizeJid = (jid) => {
+            if (!jid) return "";
+            if (typeof jid === 'string') return jid.split(':')[0];
+            return (jid.id || jid.toString() || "").split(':')[0];
+        };
+
+        const authorJid = normalizeJid(author);
         if (!authorJid) return;
 
-        // Fetch group metadata
-        const groupMetadata = await sock.groupMetadata(groupId);
-        const groupCreator = jidNormalizedUser(groupMetadata.owner || groupMetadata.subjectOwner || "");
+        const getPhone = (jid) => {
+            const jidStr = normalizeJid(jid);
+            if (!jidStr) return "";
+            return jidStr.split('@')[0].replace(/[^0-9]/g, '');
+        };
 
-        // Check if the author is a sudo user
-        const { isSudo, getSudoList } = require('../lib/index');
-        const authorIsSudo = await isSudo(authorJid);
+        const authorPhone = getPhone(authorJid);
+
+        // Build Authorized Numbers
+        const authorized = new Set();
+        authorized.add(settings.ownerNumber.replace(/[^0-9]/g, ''));
+        if (Array.isArray(settings.ownerNumbers)) {
+            settings.ownerNumbers.forEach(n => authorized.add(n.replace(/[^0-9]/g, '')));
+        }
         
-        // Check if the author is in owner.json
-        const fs = require('fs');
-        let ownersList = [];
+        // Add current bot instance IDs
+        authorized.add(getPhone(sock.user.id));
+        if (sock.user.lid) authorized.add(getPhone(sock.user.lid));
+        
         try {
-            if (fs.existsSync('./data/owner.json')) {
-                const ownerData = JSON.parse(fs.readFileSync('./data/owner.json', 'utf8'));
-                if (Array.isArray(ownerData)) {
-                    ownersList = ownerData.map(num => jidNormalizedUser(num.includes('@') ? num : `${num}@s.whatsapp.net`));
-                }
-            }
+            const meta = await sock.groupMetadata(groupId);
+            authorized.add(getPhone(meta.owner || meta.subjectOwner));
         } catch (e) {}
 
-        const isAuthorizedAuthor = authorJid === ownerNumberFormatted || 
-                                   authorJid === botJid || 
-                                   authorJid === groupCreator ||
-                                   authorIsSudo || 
-                                   ownersList.includes(authorJid);
-        
-        if (isAuthorizedAuthor) {
-            return; // Authorized promotion, ignore
+        // IF PROMOTER IS AUTHORIZED -> EXIT (No demotion)
+        // We check phone match AND explicit JID match for bot safety
+        if (authorized.has(authorPhone) || authorJid === normalizeJid(sock.user.id) || (sock.user.lid && authorJid === normalizeJid(sock.user.lid))) {
+            return;
         }
 
-        // Find all admins and normalize their JIDs
-        const admins = groupMetadata.participants
-            .filter(p => p.admin === 'admin' || p.admin === 'superadmin')
-            .map(p => jidNormalizedUser(p.id));
-            
-        // Admins to demote: newly promoted + all other admins EXCEPT authorized ones
-        let toDemote = new Set([
-            ...participants.map(p => jidNormalizedUser(typeof p === 'string' ? p : (p.id || p.toString()))),
-            ...admins
-        ]);
+        const demoteSet = new Set();
         
-        // Ensure we NEVER demote authorized users
-        toDemote.delete(ownerNumberFormatted);
-        toDemote.delete(botJid);
-        if (groupCreator) toDemote.delete(groupCreator);
-        ownersList.forEach(owner => toDemote.delete(owner));
-        
-        try {
-            const sudoList = await getSudoList();
-            if (Array.isArray(sudoList)) {
-                sudoList.forEach(sudo => {
-                    const normalizedSudo = jidNormalizedUser(sudo.id || sudo);
-                    toDemote.delete(normalizedSudo);
-                });
+        // 1. Promoter (author)
+        demoteSet.add(authorJid);
+
+        // 2. Targets (participants)
+        participants.forEach(p => {
+            const targetJid = normalizeJid(p);
+            if (targetJid && !authorized.has(getPhone(targetJid))) {
+                demoteSet.add(targetJid);
             }
-        } catch (e) {}
-        
-        const demoteList = Array.from(toDemote);
+        });
+
+        // Final Filter: Hard protection for bot/owners
+        const demoteList = Array.from(demoteSet).filter(jid => {
+            if (!jid) return false;
+            const phone = getPhone(jid);
+            if (authorized.has(phone)) return false; // Never demote phone-recognized owner
+            if (jid === normalizeJid(sock.user.id)) return false; // Never demote bot JID
+            if (sock.user.lid && jid === normalizeJid(sock.user.lid)) return false; // Never demote bot LID
+            return jid.length > 5;
+        });
 
         if (demoteList.length > 0) {
-            // Immediate demotion to prevent infinite loops
+            console.log(`🚨 [ADMINLOCK] Demoting (Author: ${authorJid}):`, demoteList);
+            
             await sock.groupParticipantsUpdate(groupId, demoteList, 'demote');
             
-            // Send warning message
             await sock.sendMessage(groupId, { 
-                text: `🚨 *UNAUTHORIZED PROMOTION DETECTED*\n\nAdmin Lock is enabled! Only the owner can promote.\n\nDemoted users:\n${demoteList.map(jid => `• @${jid.split('@')[0]}`).join('\n')}`,
-                mentions: demoteList
+                text: `🚨 *ADMIN LOCK:* Unauthorized promotion detected.\n\nPromoter @${authorPhone} and their unauthorized targets have been demoted by the bot safety system.`,
+                mentions: demoteList.filter(j => j.includes('@'))
             });
         }
     } catch (error) {

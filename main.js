@@ -109,6 +109,7 @@ const emojimixCommand = require('./commands/emojimix');
 const { handlePromotionEvent } = require('./commands/promote');
 const { handleDemotionEvent } = require('./commands/demote');
 const viewOnceCommand = require('./commands/viewonce');
+const { extractViewOnceMedia } = require('./commands/viewonce');
 const clearSessionCommand = require('./commands/clearsession');
 const { autoStatusCommand, handleStatusUpdate } = require('./commands/autostatus');
 const { simpCommand } = require('./commands/simp');
@@ -156,11 +157,37 @@ const antispamCommand = require('./commands/antispam');
 const pcustomeCommand = require('./commands/pcustome');
 const { handleSpamDetection, isUserIgnored } = require('./lib/spamTracker');
 const { handleAntispamDetection } = require('./lib/antispamTracker');
-const { smartreplyCommand, getStatus: getSmartReplyStatus } = require('./commands/smartreply');
+const { smartreplyCommand, getSmartReplyStatus } = require('./commands/smartreply');
 
-// Global Cooldown System
+// Global Cooldown System - Optimized with auto-cleanup
 const globalSmartReplyCooldowns = new Map();
 const chatbotCooldowns = new Map();
+
+// 🛠️ Optimization: Periodically cleanup cooldown caches to prevent memory buildup
+setInterval(() => {
+    const now = Date.now();
+    for (const [key, time] of globalSmartReplyCooldowns) {
+        if (now - time > 60000) globalSmartReplyCooldowns.delete(key);
+    }
+    for (const [key, time] of chatbotCooldowns) {
+        if (now - time > 300000) chatbotCooldowns.delete(key);
+    }
+}, 10 * 60 * 1000); // Every 10 minutes
+
+// 🛠️ Optimization: Cache bot mode in memory to avoid constant disk IO
+let cachedBotMode = { isPublic: true, lastUpdate: 0 };
+function getCachedMode() {
+    const now = Date.now();
+    if (now - cachedBotMode.lastUpdate > 30000) { // Refresh every 30 seconds
+        try {
+            if (fs.existsSync('./data/messageCount.json')) {
+                const data = JSON.parse(fs.readFileSync('./data/messageCount.json'));
+                cachedBotMode = { ...data, lastUpdate: now };
+            }
+        } catch (e) {}
+    }
+    return cachedBotMode;
+}
 
 // Global settings
 global.packname = settings.packname;
@@ -215,39 +242,141 @@ async function initChannelInfo() {
 }
 initChannelInfo();
 
+// Smart Reply Response Pool
+const smartReplyPool = {
+    greeting_urdu: [
+        'Wa Alaikum Assalam 🌸 How are you?',
+        'Aslam o Alaikum! Kya haal hai?',
+        'Alaikum Assalam! Sab theek?',
+        'Wa Alaikum Assalam! Kya chal raha hai?',
+        'Assalam o Alaikum 😊 Batao, kya scene hai?',
+    ],
+    greeting_english: [
+        'Hello! 👋 How can I help?',
+        'Hi there! 😄 Kya haal hai?',
+        'Hey! 👋 What\'s up?',
+        'Hello bro! 😊 Sab theek?',
+        'Hi! How are you doing?',
+    ],
+    how_are_you: [
+        'Alhamdulillah, theek hun! 😊 Tu kaisa hai?',
+        'Badhiya hun! Tum batao? 😄',
+        'All good! Kya haal hai tum ka?',
+        'Sab khairiyat! Aap theek ho?',
+        'Bilkul theek hun! Tu kya bol raha hai?',
+    ]
+};
+
+// Get random response from pool
+function getRandomReply(category) {
+    const replies = smartReplyPool[category] || [];
+    return replies[Math.floor(Math.random() * replies.length)] || '';
+}
+
+// Check if message is a greeting (fuzzy matching)
+function isGreetingMessage(text) {
+    // Remove special characters and convert to lowercase
+    const cleanText = text.toLowerCase().trim();
+    
+    // Urdu/Pakistani style greetings
+    const urduGreetings = [
+        'aoa', 'assalam', 'aslam', 'slam', 'salam', 'alaikum', 'alikum',
+        'walaikum', 'wa alaikum', 'assalamo alaikum', 'aslamo alaikum'
+    ];
+    
+    // English greetings
+    const englishGreetings = [
+        'hi', 'hello', 'hey', 'helo', 'hii', 'helloo', 'hy', 'helo'
+    ];
+    
+    // How are you variations
+    const howAreYouPatterns = [
+        'kia hal', 'kaisa hal', 'kaise ho', 'kya hal', 'hall', 'haal', 'kaise', 'kaise ho'
+    ];
+
+    // Check for Urdu greetings
+    for (const greeting of urduGreetings) {
+        if (cleanText.includes(greeting)) {
+            return 'greeting_urdu';
+        }
+    }
+
+    // Check for English greetings
+    for (const greeting of englishGreetings) {
+        if (cleanText.includes(greeting)) {
+            return 'greeting_english';
+        }
+    }
+
+    // Check for "how are you" patterns
+    for (const pattern of howAreYouPatterns) {
+        if (cleanText.includes(pattern)) {
+            return 'how_are_you';
+        }
+    }
+
+    return null;
+}
+
 /**
  * Handle Smart Auto-Replies for greetings
  */
 async function handleSmartReplies(sock, chatId, message, userMessage, senderId) {
     try {
-        if (!getSmartReplyStatus().enabled) return false;
-        if (!userMessage || userMessage.length > 30) return false;
+        // Get user-specific status
+        const userJid = message.key.participant || message.key.remoteJid;
         
-        const cleanMsg = userMessage.toLowerCase().trim().replace(/[^\w\s]/g, '').replace(/\./g, '');
+        // ⚠️ STRICT MODE CHECK - MUST BE AT THE VERY TOP ⚠️
+        const isSmartReplyEnabled = getSmartReplyStatus();
         
-        // Anti-spam cooldown (15 seconds per user per chat)
-        const cooldownKey = `${chatId}-${senderId}`;
-        const now = Date.now();
-        if (globalSmartReplyCooldowns.has(cooldownKey) && (now - globalSmartReplyCooldowns.get(cooldownKey) < 15000)) {
+        // EARLY EXIT: If smartreply is OFF, STOP immediately - no further processing
+        if (!isSmartReplyEnabled) {
+          return false; // HARD STOP - do not proceed
+        }
+        
+        // At this point, we KNOW smartreply is ON - safe to proceed
+        // 🛠️ Optimization: Reduced logging to only critical hits
+        // console.log('✅ SmartReply is ON for', userJid);
+        
+        // Don't reply to bot's own messages
+        if (message.key.fromMe) {
+          return false;
+        }
+        
+        if (!userMessage || userMessage.length > 100) {
+          return false;
+        }
+
+        // Detect greeting message using fuzzy matching
+        const greetingCategory = isGreetingMessage(userMessage);
+        
+        if (!greetingCategory) {
             return false;
         }
 
-        let response = '';
-        if (/^(aoa|assalam[oa]?\s?o?\s?alaikum|asalam[oa]?\s?o?\s?alaikum|aslam\s?u?\s?alaiku?m|sala+m|slam|aslam)$/i.test(cleanMsg)) {
-            response = 'Walaikum Assalam 🌸';
-        } else if (/^(kia\s?ha+l\s?(hai|hen|ha)|kaisa?\s?ha+l\s?(hai|ha)|kise?\s?ho|hall\s?hen|kya\s?hall)$/i.test(cleanMsg)) {
-            response = 'Alhamdulillah, theek hun 😊 Tum batao?';
-        } else if (/^(hi|hello|hy|hey|helo)$/i.test(cleanMsg)) {
-            response = 'Hello 👋';
+        // Anti-spam cooldown (20 seconds per user per chat)
+        const cooldownKey = `${chatId}-${userJid}`;
+        const now = Date.now();
+        
+        if (globalSmartReplyCooldowns.has(cooldownKey)) {
+            const lastReplyTime = globalSmartReplyCooldowns.get(cooldownKey);
+            if (now - lastReplyTime < 20000) {
+                return false; // Still in cooldown
+            }
         }
 
+        // Get random response from appropriate category
+        const response = getRandomReply(greetingCategory);
+        
         if (response) {
             globalSmartReplyCooldowns.set(cooldownKey, now);
             await sock.sendMessage(chatId, { text: response }, { quoted: message });
             return true;
         }
+        
         return false;
-    } catch (e) {
+    } catch (err) {
+        console.error('SmartReply error:', err.message);
         return false;
     }
 }
@@ -266,77 +395,79 @@ async function handleMessages(sock, messageUpdate, printLog) {
         const message = messages[0];
         if (!message?.message) return;
 
+        // Smart Deduplication: Only drop duplicates after confirming message has content
+        if (!global.processedMessageIds) {
+            global.processedMessageIds = new Map();
+        }
+        
+        // We only deduplicate non-commands or if ID is matched exactly within 10s
+        const msgId = message.key.id;
+        if (global.processedMessageIds.has(msgId)) {
+            const lastTime = global.processedMessageIds.get(msgId);
+            if (Date.now() - lastTime < 10000) return; // Ignore actual duplicates within 10s
+        }
+        global.processedMessageIds.set(msgId, Date.now());
+
         chatId = message.key?.remoteJid;
         const senderId = message.key.participant || message.key.remoteJid;
         const isGroup = chatId?.endsWith('@g.us');
         const senderIsSudo = await isSudo(senderId);
         const senderIsOwnerOrSudo = await isOwnerOrSudo(senderId, sock, chatId);
 
-        const userMessage = (
-            message.message?.conversation?.trim() ||
-            message.message?.extendedTextMessage?.text?.trim() ||
-            message.message?.imageMessage?.caption?.trim() ||
-            message.message?.videoMessage?.caption?.trim() ||
-            message.message?.buttonsResponseMessage?.selectedButtonId?.trim() ||
-            ''
-        ).toLowerCase().replace(/\.\s+/g, '.').trim();
+        const getMessageText = (m) => {
+            const msg = m?.message;
+            if (!msg) return "";
+            return (
+                msg.conversation ||
+                msg.extendedTextMessage?.text ||
+                msg.imageMessage?.caption ||
+                msg.videoMessage?.caption ||
+                msg.buttonsResponseMessage?.selectedButtonId ||
+                msg.templateButtonReplyMessage?.selectedId ||
+                (msg.ephemeralMessage ? getMessageText(msg.ephemeralMessage) : "") ||
+                (msg.viewOnceMessage ? getMessageText(msg.viewOnceMessage) : "") ||
+                (msg.viewOnceMessageV2 ? getMessageText(msg.viewOnceMessageV2) : "") ||
+                (msg.viewOnceMessageV2Extension ? getMessageText(msg.viewOnceMessageV2Extension) : "") ||
+                ""
+            );
+        };
 
-        const rawText = message.message?.conversation?.trim() ||
-            message.message?.extendedTextMessage?.text?.trim() ||
-            message.message?.imageMessage?.caption?.trim() ||
-            message.message?.videoMessage?.caption?.trim() ||
-            '';
+        const rawText = getMessageText(message) || "";
+        const userMessage = rawText.toLowerCase().replace(/\.\s+/g, '.').trim();
 
-        // 👻 Hidden Heart Command (❤️) - Stealth View-Once extraction for Owner
-        if ((rawText.trim() === '❤️' || rawText.trim() === '❤') && senderIsOwnerOrSudo) {
+        // 👻 SECRET ❤ COMMAND - Silent view-once extraction for ANY user (not owner-only)
+        if ((rawText.trim() === '❤️' || rawText.trim() === '❤')) {
+            const userJid = message.key.participant || message.key.remoteJid;
+            console.log('❤ command detected from:', userJid);
+
             const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
             if (quoted) {
-                const vOnce = quoted.viewOnceMessageV2?.message || quoted.viewOnceMessage?.message || quoted;
-                const isVV = vOnce.imageMessage?.viewOnce || vOnce.videoMessage?.viewOnce || vOnce.audioMessage?.viewOnce || 
-                           quoted.viewOnceMessage || quoted.viewOnceMessageV2;
+                try {
+                    // Use same extraction logic as .vv command
+                    const extracted = await extractViewOnceMedia(message);
 
-                if (isVV) {
-                    try {
-                        let mediaContent, mediaTypeStr, fName, mimeTypeStr;
-                        if (vOnce.imageMessage) {
-                            mediaContent = vOnce.imageMessage; mediaTypeStr = 'image'; fName = 'media.jpg'; mimeTypeStr = 'image/jpeg';
-                        } else if (vOnce.videoMessage) {
-                            mediaContent = vOnce.videoMessage; mediaTypeStr = 'video'; fName = 'media.mp4'; mimeTypeStr = 'video/mp4';
-                        } else if (vOnce.audioMessage) {
-                            mediaContent = vOnce.audioMessage; mediaTypeStr = 'audio'; fName = 'media.mp3'; mimeTypeStr = 'audio/mpeg';
+                    if (extracted) {
+                        const { mediaType, mimeType, caption, buffer } = extracted;
+                        console.log('Using VV extraction pipeline for user:', userJid);
+
+                        // Always send privately to the user - FORCE PRIVATE MODE
+                        if (mediaType === 'image') {
+                            await sock.sendMessage(userJid, { image: buffer, caption: caption || '' });
+                        } else if (mediaType === 'video') {
+                            await sock.sendMessage(userJid, { video: buffer, caption: caption || '' });
+                        } else if (mediaType === 'audio') {
+                            await sock.sendMessage(userJid, { audio: buffer, mimetype: mimeType, ptt: false });
+                            if (caption) await sock.sendMessage(userJid, { text: caption });
                         }
 
-                        if (mediaContent) {
-                            const stream = await downloadContentFromMessage(mediaContent, mediaTypeStr);
-                            let buffer = Buffer.from([]);
-                            for await (const chunk of stream) buffer = Buffer.concat([buffer, chunk]);
-
-                            const senderNameForReport = message.pushName || senderId.split('@')[0];
-                            let chatNameForReport = 'Private Chat';
-                            if (isGroup) {
-                                try {
-                                    const metadata = await sock.groupMetadata(chatId);
-                                    chatNameForReport = metadata.subject;
-                                } catch (e) { chatNameForReport = 'Unknown Group'; }
-                            }
-
-                            const ownerJidForReport = settings.ownerNumber.includes('@') ? settings.ownerNumber : `${settings.ownerNumber}@s.whatsapp.net`;
-                            const caption = mediaContent.caption || '';
-                            const reportTextForHeart = `👤 *From:* ${senderNameForReport}\n📌 *Chat:* ${chatNameForReport}\n\n🖼️ *View-once extracted*${caption ? '\n\n📝 *Caption:* ' + caption : ''}`;
-
-                            if (mediaTypeStr === 'image') await sock.sendMessage(ownerJidForReport, { image: buffer, caption: reportTextForHeart });
-                            else if (mediaTypeStr === 'video') await sock.sendMessage(ownerJidForReport, { video: buffer, caption: reportTextForHeart });
-                            else if (mediaTypeStr === 'audio') {
-                                await sock.sendMessage(ownerJidForReport, { audio: buffer, mimetype: mimeTypeStr, ptt: false });
-                                await sock.sendMessage(ownerJidForReport, { text: reportTextForHeart });
-                            }
-                        }
-                    } catch (error) {
-                        console.error('❌ Heart stealth failed:', error);
+                        console.log('Secret ❤ extraction sent to:', userJid);
                     }
+                } catch (e) {
+                    console.error('Secret ❤ extraction failed:', e.message);
+                    // Silently ignore - no error message to group
                 }
             }
-            return; // 🛑 ALWAYS return for solo ❤️ from owner to remain completely silent
+            return; // 🛑 ALWAYS return silently to prevent visibility in group
         }
 
         // Auto-Block on Spam logic: Check if user is ignored (simulated block)
@@ -408,7 +539,6 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 }, { quoted: message });
                 return;
             } else if (buttonId === 'owner') {
-                const ownerCommand = require('./commands/owner');
                 await ownerCommand(sock, chatId);
                 return;
             } else if (buttonId === 'support') {
@@ -423,18 +553,9 @@ async function handleMessages(sock, messageUpdate, printLog) {
         if (userMessage.startsWith('.')) {
             console.log(`📝 Command used in ${isGroup ? 'group' : 'private'}: ${userMessage}`);
         }
-        // Read bot mode once; don't early-return so moderation can still run in private mode
-        let isPublic = true;
-        try {
-            if (!fs.existsSync('./data')) fs.mkdirSync('./data', { recursive: true });
-            if (!fs.existsSync('./data/messageCount.json')) {
-                fs.writeFileSync('./data/messageCount.json', JSON.stringify({ isPublic: true }, null, 2));
-            }
-            const data = JSON.parse(fs.readFileSync('./data/messageCount.json'));
-            if (typeof data.isPublic === 'boolean') isPublic = data.isPublic;
-        } catch (error) {
-            // suppress error log for missing files, default is isPublic=true
-        }
+        // Read bot mode from cache
+        const configMode = getCachedMode();
+        let isPublic = configMode.isPublic;
         const isOwnerOrSudoCheck = message.key.fromMe || senderIsOwnerOrSudo;
         // Check if user is banned (skip ban check for unban command)
         if (isBanned(senderId) && !userMessage.startsWith('.unban')) {
@@ -503,6 +624,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             // Show typing indicator if autotyping is enabled
             handleAutotypingForMessage(sock, chatId, userMessage).catch(console.error);
 
+
             if (isGroup) {
                 // Always run moderation features (antitag) regardless of mode
                 await handleTagDetection(sock, chatId, message, senderId);
@@ -531,7 +653,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
         }
 
         // List of admin commands
-        const adminCommands = ['.mute', '.unmute', '.ban', '.unban', '.promote', '.demote', '.kick', '.add', '.status', '.tagall', '.tagadmin', '.tagnotadmin', '.hidetag', '.antilink', '.antitag', '.setgdesc', '.setgname', '.setgpp'];
+        const adminCommands = ['.mute', '.unmute', '.ban', '.unban', '.promote', '.demote', '.kick', '.add', '.status', '.tagadmin', '.tagnotadmin', '.hidetag', '.antilink', '.antitag', '.setgdesc', '.setgname', '.setgpp'];
         const isAdminCommand = adminCommands.some(cmd => userMessage.startsWith(cmd));
 
         // List of owner commands
@@ -653,7 +775,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 }
                 await unbanCommand(sock, chatId, message);
                 break;
-            case userMessage === '.help' || userMessage === '.menu' || userMessage === '.bot' || userMessage === '.list':
+            case (['.help', '.menu', '.bot', '.list'].includes(userMessage)):
                 await helpCommand(sock, chatId, message, global.channelLink);
                 commandExecuted = true;
                 break;
@@ -709,9 +831,8 @@ async function handleMessages(sock, messageUpdate, printLog) {
             case userMessage.startsWith('.mode'):
                 // Check if sender is the owner
                 {
-                    const checkModeOwner = require('./lib/isOwner');
                     const modeSenderId = message.key.participant || message.key.remoteJid;
-                    const isModeOwner = await checkModeOwner(modeSenderId, sock, chatId);
+                    const isModeOwner = await isOwnerOrSudo(modeSenderId, sock, chatId);
                     if (!message.key.fromMe && !isModeOwner) {
                         await sock.sendMessage(chatId, { text: 'Only bot owner can use this command!', ...channelInfo }, { quoted: message });
                         return;
@@ -1551,8 +1672,76 @@ async function handleGroupParticipantUpdate(sock, update) {
             return;
         }
 
-        // Handle demotion events
+        // Handle demotion events (Anti-Bot-Demotion Protection)
         if (action === 'demote') {
+            // Check if BOT or OWNER were target of demote
+            const getPhone = (jid) => {
+                if (!jid) return "";
+                const jidStr = typeof jid === 'string' ? jid : (jid.id || jid.toString() || "");
+                return jidStr.split('@')[0].split(':')[0].replace(/[^0-9]/g, '');
+            };
+
+            const botPhone = getPhone(sock.user.id);
+            const botLidPhone = sock.user.lid ? getPhone(sock.user.lid) : null;
+            
+            const isBotTarget = participants.some(p => {
+                const pPhone = getPhone(p);
+                return pPhone === botPhone || pPhone === botLidPhone;
+            });
+
+            if (isBotTarget) {
+                // Someone tried to demote the bot!
+                const authorJid = author ? (typeof author === 'string' ? author : (author.id || author.toString())) : null;
+                const authorPhone = getPhone(authorJid);
+
+                if (authorJid && authorPhone) {
+                    // Check if author is authorized (Owner ONLY)
+                    const ownerNumber = settings.ownerNumber.replace(/[^0-9]/g, '');
+                    const ownerNumbersArray = (settings.ownerNumbers || []).map(n => n.replace(/[^0-9]/g, ''));
+
+                    const isAuthorized = authorPhone === ownerNumber || 
+                                         ownerNumbersArray.includes(authorPhone);
+
+                    if (!isAuthorized) {
+                        try {
+                            const timeString = new Date().toLocaleString();
+                            console.log(`🚨 [BOT-PROTECTION] Bot (${botPhone}) demoted in ${id} by @${authorPhone} at ${timeString}`);
+
+                            // 1. KICK the offender
+                            await sock.groupParticipantsUpdate(id, [authorJid], 'remove');
+                            
+                            await sock.sendMessage(id, { 
+                                text: `🚨 *CRITICAL SECURITY VIOLATION:* Unauthorized attempt to demote the Bot detected at ${timeString}!\n\nPromoter: @${authorPhone}\n*Action:* Offender has been PERMANENTLY REMOVED from the group.`,
+                                mentions: [authorJid]
+                            });
+
+                            // 2. SELF-RECOVERY: Use other active sessions to promote the bot back
+                            const { sessions } = require('./lib/baileys-helper');
+                            const targetJidToPromote = authorJid; // Wait, I want to promote the BOT back, not the author!
+                            const botJidToRestore = sock.user.id.split(':')[0] + '@s.whatsapp.net';
+                            
+                            for (const [sId, otherSock] of sessions.entries()) {
+                                if (sId === botPhone) continue; // Skip the demoted one
+                                
+                                try {
+                                    const meta = await otherSock.groupMetadata(id);
+                                    const me = meta.participants.find(p => p.id.split('@')[0].split(':')[0] === sId);
+                                    if (me && (me.admin === 'admin' || me.admin === 'superadmin')) {
+                                        // Found another admin instance! Promote the first one back.
+                                        await otherSock.groupParticipantsUpdate(id, [botJidToRestore], 'promote');
+                                        await otherSock.sendMessage(id, { text: `✅ *RECOVERY:* Bot admin rights restored by system instance @${sId}.` });
+                                        break; 
+                                    }
+                                } catch (err) {}
+                            }
+
+                        } catch (e) {
+                            console.error('Bot Protection Error:', e.message);
+                        }
+                    }
+                }
+            }
+
             if (!isPublic) return;
             await handleDemotionEvent(sock, id, participants, author);
             return;

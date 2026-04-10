@@ -5,6 +5,13 @@ const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
 
+// Suppress verbose baileys output dynamically to reduce terminal/memory strain
+const originalLog = console.log;
+console.log = function (...args) {
+    if (typeof args[0] === 'string' && args[0].includes('Closing session: SessionEntry')) return;
+    originalLog.apply(console, args);
+};
+
 async function launch() {
   console.log(chalk.cyan(`🚀 Starting Mazari Bot Multi-Session System...`));
   console.log(chalk.gray(`🆔 [PROCESS] ID: ${process.pid}`));
@@ -86,18 +93,19 @@ async function launch() {
     if (pairedSessions.length > 0) {
       console.log(chalk.blue(`📡 Resuming ${pairedSessions.length} active sessions from database...`));
       for (const session of pairedSessions) {
-        // Don't re-initialize if we just did it above
-        if (session.phone_number !== primaryPhone) {
-          await initSession(session.phone_number);
+        const dbPhone = session.phone_number.replace(/[^0-9]/g, '');
+        if (dbPhone !== primaryPhone) {
+          initSession(dbPhone).catch(err => console.error(`Failed to init session ${dbPhone}:`, err));
+          await new Promise(resolve => setTimeout(resolve, 2000)); // 2s stagger
         }
       }
     } else if (!primaryPhone) {
-      // Fallback to local if DB is empty and no new number provided
       const localSessions = fs.readdirSync(sessionDir).filter(name => fs.lstatSync(path.join(sessionDir, name)).isDirectory());
       if (localSessions.length > 0) {
         console.log(chalk.blue(`📁 Resuming ${localSessions.length} sessions from local storage...`));
         for (const phone of localSessions) {
-          await initSession(phone);
+          initSession(phone).catch(err => console.error(`Failed to init local session ${phone}:`, err));
+          await new Promise(resolve => setTimeout(resolve, 2000)); // 2s stagger
         }
       } else {
         console.log(chalk.red('❌ No active sessions found.'));

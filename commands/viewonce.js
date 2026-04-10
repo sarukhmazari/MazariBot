@@ -2,73 +2,54 @@ const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 const settings = require('../settings');
 const fs = require('fs');
 const path = require('path');
-const isOwnerOrSudo = require('../lib/isOwner');
 
-// Path to store VV mode
+// Per-user VV mode storage
+const vvMode = new Map();
+
+// Path to persist modes (optional, for restart persistence)
 const modePath = path.join(__dirname, '../data/vvMode.json');
 
-// Helper to get current mode
-function getVVMode() {
+// Load persisted modes on startup
+function loadVVMode() {
     try {
-        if (!fs.existsSync(modePath)) {
-            return 'public'; // Default to public
+        if (fs.existsSync(modePath)) {
+            const data = JSON.parse(fs.readFileSync(modePath));
+            for (const [user, mode] of Object.entries(data)) {
+                vvMode.set(user, mode);
+            }
         }
-        const data = JSON.parse(fs.readFileSync(modePath));
-        return data.mode || 'public';
     } catch (e) {
-        return 'public';
+        console.error('Failed to load VV modes:', e);
     }
 }
 
-// Helper to set mode
-function setVVMode(mode) {
+// Save modes to file
+function saveVVMode() {
     try {
-        const dir = path.dirname(modePath);
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
+        const data = {};
+        for (const [user, mode] of vvMode) {
+            data[user] = mode;
         }
-        fs.writeFileSync(modePath, JSON.stringify({ mode }));
-        return true;
+        fs.writeFileSync(modePath, JSON.stringify(data));
     } catch (e) {
-        console.error('❌ [VV BUG-FIX] Failed to save mode:', e);
-        return false;
+        console.error('Failed to save VV modes:', e);
     }
 }
+
+// Initialize
+loadVVMode();
 
 /**
- * .vv command - Strictly Enforced Mode System
- * .vv private / .vv public -> Change Mode
- * .vv -> Extract and Send based on Mode
+ * REUSABLE: Extract view-once media and return buffer
+ * Used by both .vv and ❤ secret command
+ * Returns: { mediaContent, mediaType, mimeType, caption, buffer } or null if not view-once
  */
-async function viewonceCommand(sock, chatId, message) {
+async function extractViewOnceMedia(message) {
     try {
-        const senderId = message.key.participant || message.key.remoteJid;
-        const text = (
-            message.message?.conversation ||
-            message.message?.extendedTextMessage?.text ||
-            ''
-        ).trim().toLowerCase();
-        
-        const args = text.split(/\s+/);
-        const subCommand = args[1];
-
-        // 1. Handle Mode Configuration (Highest Priority)
-        if (subCommand === 'private' || subCommand === 'public') {
-            const isOwner = await isOwnerOrSudo(senderId, sock, chatId);
-            if (!isOwner) {
-                return await sock.sendMessage(chatId, { text: '❌ Only owner can change VV mode' }, { quoted: message });
-            }
-            
-            const newMode = subCommand;
-            setVVMode(newMode);
-            const responseText = newMode === 'private' ? '🔒 VV set to PRIVATE mode' : '🌐 VV set to PUBLIC mode';
-            return await sock.sendMessage(chatId, { text: responseText }, { quoted: message });
-        }
-
         // 2. Reply Validation
         const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
         if (!quoted) {
-            return await sock.sendMessage(chatId, { text: '❌ Reply to a view-once message.' }, { quoted: message });
+            return null;
         }
 
         const vOnce = quoted.viewOnceMessageV2?.message || quoted.viewOnceMessage?.message || quoted;
@@ -77,27 +58,24 @@ async function viewonceCommand(sock, chatId, message) {
         const quotedAudio = vOnce.audioMessage;
 
         // 3. Prepare Media Extraction
-        let mediaContent, mediaType, fileName, mimeType, caption;
+        let mediaContent, mediaType, mimeType, caption;
         if (quotedImage && (quotedImage.viewOnce || vOnce === quoted.viewOnceMessage?.message || vOnce === quoted.viewOnceMessageV2?.message)) {
             mediaContent = quotedImage;
             mediaType = 'image';
-            fileName = 'media.jpg';
             mimeType = 'image/jpeg';
             caption = quotedImage.caption || '';
         } else if (quotedVideo && (quotedVideo.viewOnce || vOnce === quoted.viewOnceMessage?.message || vOnce === quoted.viewOnceMessageV2?.message)) {
             mediaContent = quotedVideo;
             mediaType = 'video';
-            fileName = 'media.mp4';
             mimeType = 'video/mp4';
             caption = quotedVideo.caption || '';
         } else if (quotedAudio && (quotedAudio.viewOnce || vOnce === quoted.viewOnceMessage?.message || vOnce === quoted.viewOnceMessageV2?.message)) {
             mediaContent = quotedAudio;
             mediaType = 'audio';
-            fileName = 'media.mp3';
             mimeType = 'audio/mpeg';
             caption = '';
         } else {
-            return await sock.sendMessage(chatId, { text: '❌ Reply to a view-once message' }, { quoted: message });
+            return null;
         }
 
         // 4. Download Content
@@ -105,50 +83,88 @@ async function viewonceCommand(sock, chatId, message) {
         let buffer = Buffer.from([]);
         for await (const chunk of stream) buffer = Buffer.concat([buffer, chunk]);
 
-        // 5. Mode Enforcement (STRICT)
-        const currentMode = getVVMode();
-        const isGroup = chatId.endsWith('@g.us');
+        return { mediaContent, mediaType, mimeType, caption, buffer };
 
-        if (currentMode === 'private') {
-            // ACTION: Forward to the dynamic sender JID
-            const targetSenderId = message.message?.extendedTextMessage?.contextInfo?.participant || message.key.participant || message.key.remoteJid;
-            const senderName = message.pushName || targetSenderId.split('@')[0];
-            
-            let chatName = 'Private Chat';
-            if (isGroup) {
-                try {
-                    const groupMetadata = await sock.groupMetadata(chatId);
-                    chatName = groupMetadata.subject;
-                } catch (e) {
-                    chatName = 'Unknown Group';
-                }
-            }
+    } catch (error) {
+        console.error('❌ Extract view-once error:', error);
+        return null;
+    }
+}
 
-            // Correct dynamic sender assignment per instructions
-            const sender = isGroup ? message.key.participant : message.key.remoteJid;
-            const reportText = `👤 *From:* ${senderName}\n📌 *Chat:* ${chatName}\n\n📝 *Caption:* ${caption || 'None'}`;
+/**
+ * .vv command - Per-User Mode System
+ * .vv private / .vv public -> Change Mode for the user
+ * .vv -> Extract and Send based on user's Mode
+ */
+async function viewonceCommand(sock, chatId, message) {
+    try {
+        const userJid = message.key.participant || message.key.remoteJid;
+        if (!userJid) {
+            console.error('No userJid found for VV command');
+            return await sock.sendMessage(chatId, { text: '❌ Unable to identify user.' }, { quoted: message });
+        }
 
+        const text = (
+            message.message?.conversation ||
+            message.message?.extendedTextMessage?.text ||
+            ''
+        ).trim().toLowerCase();
+
+        const args = text.split(/\s+/);
+        const subCommand = args[1];
+
+        console.log('VV Command - User:', userJid, 'SubCommand:', subCommand);
+
+        // 1. Handle Mode Configuration (Per User)
+        if (subCommand === 'private' || subCommand === 'public') {
+            const newMode = subCommand;
+            vvMode.set(userJid, newMode);
+            saveVVMode(); // Persist
+
+            const responseText = newMode === 'private' ?
+                '🔒 VV mode set to PRIVATE for you only' :
+                '🌐 VV mode set to PUBLIC for you only';
+
+            console.log('VV Mode set for', userJid, 'to', newMode);
+            return await sock.sendMessage(chatId, { text: responseText }, { quoted: message });
+        }
+
+        // Use reusable extraction function
+        const extracted = await extractViewOnceMedia(message);
+        if (!extracted) {
+            return await sock.sendMessage(chatId, { text: '❌ Reply to a view-once message' }, { quoted: message });
+        }
+
+        const { mediaType, mimeType, caption, buffer } = extracted;
+
+        // 5. Get User's Mode
+        const mode = vvMode.get(userJid) || 'public';
+        console.log('VV Extract - User:', userJid, 'Mode:', mode, 'Sending to:', mode === 'private' ? userJid : chatId);
+
+        // 6. Send Based on Mode
+        if (mode === 'private') {
+            // Send to user's private chat
             try {
                 if (mediaType === 'image') {
-                    await sock.sendMessage(sender, { image: buffer, caption: reportText });
+                    await sock.sendMessage(userJid, { image: buffer, caption: `📝 Caption: ${caption || 'None'}` });
                 } else if (mediaType === 'video') {
-                    await sock.sendMessage(sender, { video: buffer, caption: reportText });
+                    await sock.sendMessage(userJid, { video: buffer, caption: `📝 Caption: ${caption || 'None'}` });
                 } else if (mediaType === 'audio') {
-                    await sock.sendMessage(sender, { audio: buffer, mimetype: mimeType, ptt: false });
-                    await sock.sendMessage(sender, { text: reportText });
+                    await sock.sendMessage(userJid, { audio: buffer, mimetype: mimeType, ptt: false });
+                    await sock.sendMessage(userJid, { text: `📝 Caption: ${caption || 'None'}` });
                 }
 
-                // Small confirmation message in original chat
-                await sock.sendMessage(chatId, { text: '✅ Sent privately' });
+                // Confirmation in original chat
+                await sock.sendMessage(chatId, { text: '✅ Sent privately to you' });
                 return;
 
             } catch (e) {
-                console.error('❌ Private DM failed:', e);
+                console.error('❌ Private send failed for', userJid, ':', e);
                 return await sock.sendMessage(chatId, { text: '❌ Failed to send media privately' });
             }
-        } 
-        
-        // 6. Public Logic
+        }
+
+        // 7. Public Mode - Send in same chat
         const options = { quoted: message };
         if (mediaType === 'image') {
             await sock.sendMessage(chatId, { image: buffer, caption: caption }, options);
@@ -159,9 +175,10 @@ async function viewonceCommand(sock, chatId, message) {
         }
 
     } catch (error) {
-        console.error('❌ Fatal error:', error);
+        console.error('❌ Fatal error in VV:', error);
         await sock.sendMessage(chatId, { text: '❌ Failed to process command!' });
     }
 }
 
 module.exports = viewonceCommand;
+module.exports.extractViewOnceMedia = extractViewOnceMedia;

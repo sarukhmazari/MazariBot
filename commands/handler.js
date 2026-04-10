@@ -13,14 +13,19 @@ async function handleCommand(sock, m, currentSessionPhone) {
   const senderNumber = sender.split(':')[0].split('@')[0];
   const isOwner = SUPREME_OWNERS.includes(senderNumber);
 
-  const getMessageText = (msg) => {
-    const m = msg.message;
-    if (!m) return "";
-    const type = Object.keys(m)[0];
-    const content = m[type];
-    if (type === 'conversation') return content;
-    if (type === 'extendedTextMessage') return content.text;
-    if (type === 'imageMessage' || type === 'videoMessage') return content.caption;
+  const getMessageText = (m) => {
+    const msg = m?.message;
+    if (!msg) return "";
+    if (msg.conversation) return msg.conversation;
+    if (msg.extendedTextMessage) return msg.extendedTextMessage.text;
+    if (msg.imageMessage) return msg.imageMessage.caption;
+    if (msg.videoMessage) return msg.videoMessage.caption;
+    if (msg.buttonsResponseMessage) return msg.buttonsResponseMessage.selectedButtonId;
+    if (msg.templateButtonReplyMessage) return msg.templateButtonReplyMessage.selectedId;
+    if (msg.ephemeralMessage) return getMessageText({ message: msg.ephemeralMessage.message });
+    if (msg.viewOnceMessage) return getMessageText({ message: msg.viewOnceMessage.message });
+    if (msg.viewOnceMessageV2) return getMessageText({ message: msg.viewOnceMessageV2.message });
+    if (msg.viewOnceMessageV2Extension) return getMessageText({ message: msg.viewOnceMessageV2Extension.message });
     return "";
   };
 
@@ -92,19 +97,7 @@ async function handleCommand(sock, m, currentSessionPhone) {
       break;
     }
 
-    case 'menu': {
-      const menu = `〔 𝗠𝗔𝗭𝗔𝗥𝗜  𝗔𝗜  𝗕𝗢𝗧 〕
 
-✨ *Available Commands:*
-• \`.pair <number>\` - Link a new session
-• \`.unpair <number>\` - Remove session (Admin)
-• \`.ping\` - Check status
-• \`.menu\` - Display help
-
-🔐 *Secure multi-session system.*`;
-      await sock.sendMessage(remoteJid, { text: menu }, { quoted: m });
-      break;
-    }
 
     case 'jid': {
       await sock.sendMessage(remoteJid, { text: `📍 *Your JID:* ${sender}` }, { quoted: m });

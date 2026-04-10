@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const { writeExifImg } = require('../lib/exif');
+const { writeExifImg } = require('../lib/exif-clean');
 const delay = time => new Promise(res => setTimeout(res, time));
 const fs = require('fs');
 const path = require('path');

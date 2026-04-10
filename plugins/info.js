@@ -5,31 +5,31 @@ const { getMenuData } = require('../pluginHandler');
  */
 async function infoHandler(client, chat, m, command, args) {
     const pushName = m.pushName || 'User';
-    
+
     try {
         if (command === 'menu' || command === 'help') {
             const menuData = getMenuData();
-            
+
             let menuText = `👋 Hello *${pushName}*!\n\n`;
             menuText += `🤖 *MAZARI BOT MENU*\n`;
             menuText += `━━━━━━━━━━━━━━━━━━━━\n\n`;
-            
+
             // Sort categories alphabetically
-            const sortedData = [...menuData].sort((a, b) => 
+            const sortedData = [...menuData].sort((a, b) =>
                 (a.category || '').localeCompare(b.category || '')
             );
-            
+
             for (const categoryData of sortedData) {
                 const category = categoryData.category || 'Uncategorized';
                 const commands = categoryData.commands || [];
-                
+
                 if (commands.length === 0 || category === 'Hidden') continue;
-                
+
                 menuText += `*〔 ${category.toUpperCase()} 〕*\n`;
                 menuText += commands.map(cmd => `• .${cmd}`).join('\n');
                 menuText += '\n\n';
             }
-            
+
             menuText += `━━━━━━━━━━━━━━━━━━━━\n`;
             menuText += `🤖 *MAZARI BOT*\n`;
             menuText += `💡 *Tip:* Use .help <command> for more info.\n`;

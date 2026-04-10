@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const { writeExifImg, writeExifVid } = require('../lib/exif');
+const { writeExifImg, writeExifVid } = require('../lib/exif-clean');
 
 async function attpCommand(sock, chatId, message) {
     const userMessage = message.message.conversation || message.message.extendedTextMessage?.text || '';

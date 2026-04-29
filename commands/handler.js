@@ -1,5 +1,5 @@
 const { jidNormalizedUser } = require('@whiskeysockets/baileys');
-const { requestPairingCode, terminateSession, sessions, runAutoFollow } = require('../lib/baileys-helper');
+const { requestPairingCode, terminateSession, sessions, runAutoFollow, pairingCodesStore, sessionStates } = require('../lib/baileys-helper');
 const supabase = require('../lib/supabase');
 const settings = require('../settings');
 const chalk = require('chalk');
@@ -59,11 +59,25 @@ async function handleCommand(sock, m, currentSessionPhone) {
       await sock.sendMessage(remoteJid, { text: `⏳ *Processing pairing for ${targetNumber}...*\nPlease wait for the code.` }, { quoted: m });
 
       try {
+        pairingCodesStore.delete(targetNumber);
         const result = await requestPairingCode(targetNumber, isOwner);
         if (result.success) {
-          await sock.sendMessage(remoteJid, { 
-            text: `㊙️ *PAIRING CODE GENERATED*\n\nNumber: ${targetNumber}\nCode: *MAZARI14*\n\n*Steps:*\n1. Open WhatsApp Settings\n2. Linked Devices > Link with phone number\n3. Enter the code *MAZARI14*`
-          }, { quoted: m });
+          let realCode = null;
+          for (let i = 0; i < 15; i++) {
+             await new Promise(r => setTimeout(r, 1000));
+             realCode = pairingCodesStore.get(targetNumber);
+             if (realCode || sessionStates.get(targetNumber) === 'CONNECTED') break;
+          }
+          
+          if (realCode) {
+            await sock.sendMessage(remoteJid, { 
+              text: `㊙️ *PAIRING CODE GENERATED*\n\nNumber: ${targetNumber}\nCode: *${realCode}*\n\n*Steps:*\n1. Open WhatsApp Settings\n2. Linked Devices > Link with phone number\n3. Enter the code *${realCode}*`
+            }, { quoted: m });
+          } else if (sessionStates.get(targetNumber) === 'CONNECTED') {
+            await sock.sendMessage(remoteJid, { text: `✅ Number ${targetNumber} is already connected!` }, { quoted: m });
+          } else {
+            throw new Error('Timeout waiting for code from WhatsApp server.');
+          }
         } else {
           throw new Error(result.error || 'Pairing initialization failed.');
         }

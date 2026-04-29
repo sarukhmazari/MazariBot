@@ -152,6 +152,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Auto React to Channel Posts ---
     const autoReactToggle = document.getElementById('autoReactToggle');
+    const targetReactChannelContainer = document.getElementById('targetReactChannelContainer');
+    const saveTargetChannelsBtn = document.getElementById('saveTargetChannelsBtn');
+    
     if (autoReactToggle) {
         // Fetch initial state
         fetch('/api/settings', { headers: { 'x-api-key': apiKey } })
@@ -159,6 +162,9 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(data => {
                 if (data.success && data.settings) {
                     autoReactToggle.checked = data.settings.autoReactToChannels || false;
+                    targetReactChannelContainer.style.display = autoReactToggle.checked ? 'block' : 'none';
+                    // We don't display the JIDs back as links since we only saved JIDs, 
+                    // but we can leave the input empty to allow them to add new links.
                 }
             })
             .catch(console.error);
@@ -166,6 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Handle toggle
         autoReactToggle.addEventListener('change', async (e) => {
             const isChecked = e.target.checked;
+            targetReactChannelContainer.style.display = isChecked ? 'block' : 'none';
             try {
                 const res = await fetch('/api/settings', {
                     method: 'POST',
@@ -177,11 +184,38 @@ document.addEventListener('DOMContentLoaded', () => {
                     showToast(isChecked ? 'Auto-React Enabled' : 'Auto-React Disabled', 'success');
                 } else {
                     autoReactToggle.checked = !isChecked; // revert
+                    targetReactChannelContainer.style.display = autoReactToggle.checked ? 'block' : 'none';
                     showToast('Failed to update setting', 'error');
                 }
             } catch (err) {
                 autoReactToggle.checked = !isChecked; // revert
+                targetReactChannelContainer.style.display = autoReactToggle.checked ? 'block' : 'none';
                 showToast('Network error', 'error');
+            }
+        });
+        
+        saveTargetChannelsBtn.addEventListener('click', async () => {
+            const targetReactChannels = document.getElementById('targetReactChannels').value.trim();
+            saveTargetChannelsBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Saving...';
+            saveTargetChannelsBtn.disabled = true;
+            try {
+                const res = await fetch('/api/settings', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey },
+                    body: JSON.stringify({ targetReactChannels })
+                });
+                const data = await res.json();
+                if (data.success) {
+                    showToast('Target channels updated!', 'success');
+                    document.getElementById('targetReactChannels').value = ''; // clear
+                } else {
+                    showToast(data.error || 'Failed to update channels', 'error');
+                }
+            } catch (err) {
+                showToast('Network error', 'error');
+            } finally {
+                saveTargetChannelsBtn.innerHTML = 'Save Specific Channels <i class="fa-solid fa-save"></i>';
+                saveTargetChannelsBtn.disabled = false;
             }
         });
     }

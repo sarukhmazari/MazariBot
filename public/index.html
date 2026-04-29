@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js for Analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="auth-overlay" id="authOverlay">
@@ -28,6 +30,7 @@
             <nav>
                 <a href="#" class="tab-link active" data-target="overviewSection"><i class="fa-solid fa-chart-line"></i> Overview</a>
                 <a href="#" class="tab-link" data-target="sessionsSection"><i class="fa-solid fa-mobile-screen"></i> Sessions Management</a>
+                <a href="#" class="tab-link" data-target="analyticsSection"><i class="fa-solid fa-chart-pie"></i> Analytics Dashboard</a>
                 <a href="#" class="tab-link" data-target="broadcastSection"><i class="fa-solid fa-bullhorn"></i> Broadcast & Control</a>
                 <a href="#" class="tab-link" data-target="logsSection"><i class="fa-solid fa-terminal"></i> Server Logs</a>
                 <a href="#" id="logoutBtn" style="margin-top: auto;"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
@@ -162,6 +165,52 @@
                             <p class="desc text-small">If empty, bot reacts to ALL channels it follows. If specified, it will ONLY react to these specific channels.</p>
                         </div>
                         <button id="saveTargetChannelsBtn" class="primary-btn">Save Specific Channels <i class="fa-solid fa-save"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="analyticsSection" class="section-content" style="display: none;">
+                <div class="glass card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-chart-bar"></i> Performance Analytics</h3>
+                        <button id="resetAnalyticsBtn" class="primary-btn" style="padding: 5px 15px; font-size: 0.8rem; background: rgba(255,0,0,0.2); border-color: rgba(255,0,0,0.3);">Reset Stats</button>
+                    </div>
+                    <div class="analytics-grid">
+                        <div class="stat-box glass">
+                            <span class="label">Total Likes Delivered</span>
+                            <span class="value" id="totalLikesStat">0</span>
+                        </div>
+                        <div class="stat-box glass">
+                            <span class="label">Total Messages Sent</span>
+                            <span class="value" id="totalSentStat">0</span>
+                        </div>
+                        <div class="stat-box glass">
+                            <span class="label">Total Messages Received</span>
+                            <span class="value" id="totalReceivedStat">0</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 30px; height: 300px;">
+                        <canvas id="analyticsChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="glass card" style="margin-top: 20px;">
+                    <h3><i class="fa-solid fa-list-check"></i> Per-Session Stats</h3>
+                    <div class="table-container">
+                        <table id="sessionStatsTable">
+                            <thead>
+                                <tr>
+                                    <th>Session</th>
+                                    <th>Uptime</th>
+                                    <th>Sent</th>
+                                    <th>Received</th>
+                                    <th>Likes</th>
+                                </tr>
+                            </thead>
+                            <tbody id="sessionStatsBody">
+                                <!-- Loaded via script -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

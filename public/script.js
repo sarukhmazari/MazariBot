@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let pollingInterval;
     let pairingPollInterval;
     let logsPollInterval;
+    let analyticsPollInterval;
+    let analyticsChart;
 
     // Check if already logged in
     if (apiKey) {
@@ -39,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         apiKeyInput.value = '';
         if(pollingInterval) clearInterval(pollingInterval);
         if(logsPollInterval) clearInterval(logsPollInterval);
+        if(analyticsPollInterval) clearInterval(analyticsPollInterval);
     });
 
     // --- Tab Navigation ---
@@ -220,6 +223,103 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Analytics Dashboard ---
+    function initAnalyticsChart() {
+        const ctx = document.getElementById('analyticsChart').getContext('2d');
+        analyticsChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [],
+                datasets: [
+                    { label: 'Sent', data: [], backgroundColor: '#646cff' },
+                    { label: 'Received', data: [], backgroundColor: '#535bf2' },
+                    { label: 'Likes', data: [], backgroundColor: '#e91e63' }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: 'rgba(255,255,255,0.6)' } },
+                    x: { grid: { display: false }, ticks: { color: 'rgba(255,255,255,0.6)' } }
+                },
+                plugins: {
+                    legend: { labels: { color: 'white', font: { family: 'Outfit' } } }
+                }
+            }
+        });
+    }
+
+    async function loadAnalytics() {
+        try {
+            const res = await fetch('/api/analytics', { headers: { 'x-api-key': apiKey } });
+            const data = await res.json();
+            if (data.success) {
+                const stats = data.analytics;
+                
+                // Update totals
+                let totalSent = 0, totalReceived = 0, totalLikes = stats.totalLikes || 0;
+                const labels = [], sentData = [], receivedData = [], likesData = [];
+                const tableBody = document.getElementById('sessionStatsBody');
+                tableBody.innerHTML = '';
+
+                Object.entries(stats.sessions).forEach(([phone, s]) => {
+                    totalSent += (s.sent || 0);
+                    totalReceived += (s.received || 0);
+                    
+                    labels.push(phone);
+                    sentData.push(s.sent || 0);
+                    receivedData.push(s.received || 0);
+                    likesData.push(s.likes || 0);
+
+                    const uptime = s.connectedAt ? formatUptime(Math.floor((Date.now() - s.connectedAt) / 1000)) : 'Offline';
+                    tableBody.innerHTML += `
+                        <tr>
+                            <td>${phone}</td>
+                            <td>${uptime}</td>
+                            <td>${s.sent || 0}</td>
+                            <td>${s.received || 0}</td>
+                            <td>${s.likes || 0}</td>
+                        </tr>
+                    `;
+                });
+
+                document.getElementById('totalLikesStat').textContent = totalLikes;
+                document.getElementById('totalSentStat').textContent = totalSent;
+                document.getElementById('totalReceivedStat').textContent = totalReceived;
+
+                // Update Chart
+                if (!analyticsChart) initAnalyticsChart();
+                analyticsChart.data.labels = labels;
+                analyticsChart.data.datasets[0].data = sentData;
+                analyticsChart.data.datasets[1].data = receivedData;
+                analyticsChart.data.datasets[2].data = likesData;
+                analyticsChart.update();
+            }
+        } catch (e) { console.error('Analytics error:', e); }
+    }
+
+    document.getElementById('resetAnalyticsBtn').addEventListener('click', async () => {
+        if (!confirm('Are you sure you want to reset all analytics data?')) return;
+        try {
+            const res = await fetch('/api/analytics/reset', { method: 'POST', headers: { 'x-api-key': apiKey } });
+            const data = await res.json();
+            if (data.success) {
+                showToast('Analytics reset successfully', 'success');
+                loadAnalytics();
+            }
+        } catch (e) { showToast('Reset failed', 'error'); }
+    });
+
+    function formatUptime(seconds) {
+        if (isNaN(seconds) || seconds < 0) return '0s';
+        const d = Math.floor(seconds / (3600 * 24));
+        const h = Math.floor((seconds % (3600 * 24)) / 3600);
+        const m = Math.floor((seconds % 3600) / 60);
+        const s = seconds % 60;
+        return (d > 0 ? d + 'd ' : '') + (h > 0 ? h + 'h ' : '') + (m > 0 ? m + 'm ' : '') + s + 's';
+    }
+
     // --- Sessions Management ---
     document.getElementById('showAddSessionBtn').addEventListener('click', () => {
         const box = document.getElementById('addSessionBox');
@@ -341,6 +441,10 @@ document.addEventListener('DOMContentLoaded', () => {
             
             updateStats(data);
             
+            loadAnalytics();
+            if(analyticsPollInterval) clearInterval(analyticsPollInterval);
+            analyticsPollInterval = setInterval(loadAnalytics, 10000);
+
             if(pollingInterval) clearInterval(pollingInterval);
             pollingInterval = setInterval(fetchStats, 5000);
             

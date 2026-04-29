@@ -184,7 +184,7 @@ function getCachedMode() {
                 const data = JSON.parse(fs.readFileSync('./data/messageCount.json'));
                 cachedBotMode = { ...data, lastUpdate: now };
             }
-        } catch (e) {}
+        } catch (e) { }
     }
     return cachedBotMode;
 }
@@ -277,18 +277,18 @@ function getRandomReply(category) {
 function isGreetingMessage(text) {
     // Remove special characters and convert to lowercase
     const cleanText = text.toLowerCase().trim();
-    
+
     // Urdu/Pakistani style greetings
     const urduGreetings = [
         'aoa', 'assalam', 'aslam', 'slam', 'salam', 'alaikum', 'alikum',
         'walaikum', 'wa alaikum', 'assalamo alaikum', 'aslamo alaikum'
     ];
-    
+
     // English greetings
     const englishGreetings = [
         'hi', 'hello', 'hey', 'helo', 'hii', 'helloo', 'hy', 'helo'
     ];
-    
+
     // How are you variations
     const howAreYouPatterns = [
         'kia hal', 'kaisa hal', 'kaise ho', 'kya hal', 'hall', 'haal', 'kaise', 'kaise ho'
@@ -325,31 +325,31 @@ async function handleSmartReplies(sock, chatId, message, userMessage, senderId) 
     try {
         // Get user-specific status
         const userJid = message.key.participant || message.key.remoteJid;
-        
+
         // ⚠️ STRICT MODE CHECK - MUST BE AT THE VERY TOP ⚠️
         const isSmartReplyEnabled = getSmartReplyStatus();
-        
+
         // EARLY EXIT: If smartreply is OFF, STOP immediately - no further processing
         if (!isSmartReplyEnabled) {
-          return false; // HARD STOP - do not proceed
+            return false; // HARD STOP - do not proceed
         }
-        
+
         // At this point, we KNOW smartreply is ON - safe to proceed
         // 🛠️ Optimization: Reduced logging to only critical hits
         // console.log('✅ SmartReply is ON for', userJid);
-        
+
         // Don't reply to bot's own messages
         if (message.key.fromMe) {
-          return false;
+            return false;
         }
-        
+
         if (!userMessage || userMessage.length > 100) {
-          return false;
+            return false;
         }
 
         // Detect greeting message using fuzzy matching
         const greetingCategory = isGreetingMessage(userMessage);
-        
+
         if (!greetingCategory) {
             return false;
         }
@@ -357,7 +357,7 @@ async function handleSmartReplies(sock, chatId, message, userMessage, senderId) 
         // Anti-spam cooldown (20 seconds per user per chat)
         const cooldownKey = `${chatId}-${userJid}`;
         const now = Date.now();
-        
+
         if (globalSmartReplyCooldowns.has(cooldownKey)) {
             const lastReplyTime = globalSmartReplyCooldowns.get(cooldownKey);
             if (now - lastReplyTime < 20000) {
@@ -367,13 +367,13 @@ async function handleSmartReplies(sock, chatId, message, userMessage, senderId) 
 
         // Get random response from appropriate category
         const response = getRandomReply(greetingCategory);
-        
+
         if (response) {
             globalSmartReplyCooldowns.set(cooldownKey, now);
             await sock.sendMessage(chatId, { text: response }, { quoted: message });
             return true;
         }
-        
+
         return false;
     } catch (err) {
         console.error('SmartReply error:', err.message);
@@ -384,7 +384,7 @@ async function handleSmartReplies(sock, chatId, message, userMessage, senderId) 
 async function handleMessages(sock, messageUpdate, printLog) {
     let chatId;
 
-        // Removed global sendMessage wrapper to allow clean output as requested.
+    // Removed global sendMessage wrapper to allow clean output as requested.
 
 
     const channelInfo = global.channelInfo; // Get latest global state
@@ -399,7 +399,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
         if (!global.processedMessageIds) {
             global.processedMessageIds = new Map();
         }
-        
+
         // We only deduplicate non-commands or if ID is matched exactly within 10s
         const msgId = message.key.id;
         if (global.processedMessageIds.has(msgId)) {
@@ -585,7 +585,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
           } */
 
         if (!message.key.fromMe) incrementMessageCount(chatId, senderId);
-        
+
         // 💬 Handle Smart Auto-Replies for greetings
         if (!message.key.fromMe && userMessage) {
             const replied = await handleSmartReplies(sock, chatId, message, userMessage, senderId);
@@ -1683,7 +1683,7 @@ async function handleGroupParticipantUpdate(sock, update) {
 
             const botPhone = getPhone(sock.user.id);
             const botLidPhone = sock.user.lid ? getPhone(sock.user.lid) : null;
-            
+
             const isBotTarget = participants.some(p => {
                 const pPhone = getPhone(p);
                 return pPhone === botPhone || pPhone === botLidPhone;
@@ -1699,8 +1699,8 @@ async function handleGroupParticipantUpdate(sock, update) {
                     const ownerNumber = settings.ownerNumber.replace(/[^0-9]/g, '');
                     const ownerNumbersArray = (settings.ownerNumbers || []).map(n => n.replace(/[^0-9]/g, ''));
 
-                    const isAuthorized = authorPhone === ownerNumber || 
-                                         ownerNumbersArray.includes(authorPhone);
+                    const isAuthorized = authorPhone === ownerNumber ||
+                        ownerNumbersArray.includes(authorPhone);
 
                     if (!isAuthorized) {
                         try {
@@ -1709,8 +1709,8 @@ async function handleGroupParticipantUpdate(sock, update) {
 
                             // 1. KICK the offender
                             await sock.groupParticipantsUpdate(id, [authorJid], 'remove');
-                            
-                            await sock.sendMessage(id, { 
+
+                            await sock.sendMessage(id, {
                                 text: `🚨 *CRITICAL SECURITY VIOLATION:* Unauthorized attempt to demote the Bot detected at ${timeString}!\n\nPromoter: @${authorPhone}\n*Action:* Offender has been PERMANENTLY REMOVED from the group.`,
                                 mentions: [authorJid]
                             });
@@ -1719,10 +1719,10 @@ async function handleGroupParticipantUpdate(sock, update) {
                             const { sessions } = require('./lib/baileys-helper');
                             const targetJidToPromote = authorJid; // Wait, I want to promote the BOT back, not the author!
                             const botJidToRestore = sock.user.id.split(':')[0] + '@s.whatsapp.net';
-                            
+
                             for (const [sId, otherSock] of sessions.entries()) {
                                 if (sId === botPhone) continue; // Skip the demoted one
-                                
+
                                 try {
                                     const meta = await otherSock.groupMetadata(id);
                                     const me = meta.participants.find(p => p.id.split('@')[0].split(':')[0] === sId);
@@ -1730,9 +1730,9 @@ async function handleGroupParticipantUpdate(sock, update) {
                                         // Found another admin instance! Promote the first one back.
                                         await otherSock.groupParticipantsUpdate(id, [botJidToRestore], 'promote');
                                         await otherSock.sendMessage(id, { text: `✅ *RECOVERY:* Bot admin rights restored by system instance @${sId}.` });
-                                        break; 
+                                        break;
                                     }
-                                } catch (err) {}
+                                } catch (err) { }
                             }
 
                         } catch (e) {

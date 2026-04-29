@@ -4,6 +4,7 @@ const supabase = require('./lib/supabase');
 const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
+const { startAdminApi } = require('./lib/admin_api');
 
 // Suppress verbose baileys output dynamically to reduce terminal/memory strain
 const originalLog = console.log;
@@ -115,6 +116,9 @@ async function launch() {
 
   process.on('uncaughtException', (err) => console.error('💥 Uncaught Exception:', err));
   process.on('unhandledRejection', (reason) => console.error('💥 Unhandled Rejection:', reason));
+
+  // Start the Admin Dashboard API Server
+  startAdminApi();
 
   console.log(chalk.cyan('✨ Mazari Bot is online and waiting for commands.'));
 }

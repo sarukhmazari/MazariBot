@@ -9,7 +9,7 @@ const crypto = require('crypto');
 async function stickerCommand(sock, chatId, message) {
     // The message that will be quoted in the reply.
     const messageToQuote = message;
-    
+
     // The message object that contains the media to be downloaded.
     let targetMessage = message;
 
@@ -30,7 +30,7 @@ async function stickerCommand(sock, chatId, message) {
     const mediaMessage = targetMessage.message?.imageMessage || targetMessage.message?.videoMessage || targetMessage.message?.documentMessage;
 
     if (!mediaMessage) {
-        await sock.sendMessage(chatId, { 
+        await sock.sendMessage(chatId, {
             text: 'Please reply to an image/video with .sticker, or send an image/video with .sticker as the caption.',
             contextInfo: {
                 forwardingScore: 999,
@@ -41,18 +41,18 @@ async function stickerCommand(sock, chatId, message) {
                     serverMessageId: -1
                 }
             }
-        },{ quoted: messageToQuote });
+        }, { quoted: messageToQuote });
         return;
     }
 
     try {
-        const mediaBuffer = await downloadMediaMessage(targetMessage, 'buffer', {}, { 
-            logger: undefined, 
-            reuploadRequest: sock.updateMediaMessage 
+        const mediaBuffer = await downloadMediaMessage(targetMessage, 'buffer', {}, {
+            logger: undefined,
+            reuploadRequest: sock.updateMediaMessage
         });
 
         if (!mediaBuffer) {
-            await sock.sendMessage(chatId, { 
+            await sock.sendMessage(chatId, {
                 text: 'Failed to download media. Please try again.',
                 contextInfo: {
                     forwardingScore: 999,
@@ -81,9 +81,9 @@ async function stickerCommand(sock, chatId, message) {
         fs.writeFileSync(tempInput, mediaBuffer);
 
         // Check if media is animated (GIF or video)
-        const isAnimated = mediaMessage.mimetype?.includes('gif') || 
-                          mediaMessage.mimetype?.includes('video') || 
-                          mediaMessage.seconds > 0;
+        const isAnimated = mediaMessage.mimetype?.includes('gif') ||
+            mediaMessage.mimetype?.includes('video') ||
+            mediaMessage.seconds > 0;
 
         // Convert to WebP using ffmpeg with optimized settings for animated/non-animated
         const ffmpegCommand = isAnimated
@@ -117,9 +117,9 @@ async function stickerCommand(sock, chatId, message) {
                 });
                 if (fs.existsSync(tempOutput2)) {
                     webpBuffer = fs.readFileSync(tempOutput2);
-                    try { fs.unlinkSync(tempOutput2); } catch {}
+                    try { fs.unlinkSync(tempOutput2); } catch { }
                 }
-            } catch {}
+            } catch { }
         }
         // Read the WebP file
         webpBuffer = fs.readFileSync(tempOutput);
@@ -139,9 +139,9 @@ async function stickerCommand(sock, chatId, message) {
                 });
                 if (fs.existsSync(tempOutput2)) {
                     webpBuffer = fs.readFileSync(tempOutput2);
-                    try { fs.unlinkSync(tempOutput2); } catch {}
+                    try { fs.unlinkSync(tempOutput2); } catch { }
                 }
-            } catch {}
+            } catch { }
         }
 
         // Add metadata using webpmux
@@ -190,15 +190,15 @@ async function stickerCommand(sock, chatId, message) {
                     exif2.writeUIntLE(jsonBuffer2.length, 14, 4);
                     img2.exif = exif2;
                     finalBuffer = await img2.save(null);
-                    try { fs.unlinkSync(tempOutput3); } catch {}
+                    try { fs.unlinkSync(tempOutput3); } catch { }
                 }
-            } catch {}
+            } catch { }
         }
 
         // Send the sticker
-        await sock.sendMessage(chatId, { 
+        await sock.sendMessage(chatId, {
             sticker: finalBuffer
-        },{ quoted: messageToQuote });
+        }, { quoted: messageToQuote });
 
         // Cleanup temp files
         try {
@@ -210,7 +210,7 @@ async function stickerCommand(sock, chatId, message) {
 
     } catch (error) {
         console.error('Error in sticker command:', error);
-        await sock.sendMessage(chatId, { 
+        await sock.sendMessage(chatId, {
             text: 'Failed to create sticker! Try again later.',
             contextInfo: {
                 forwardingScore: 999,

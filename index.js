@@ -6,11 +6,29 @@ const path = require('path');
 const chalk = require('chalk');
 const { startAdminApi } = require('./lib/admin_api');
 
+// Global log capturer for Admin Panel
+global.botLogs = [];
+function addLog(args, type = 'info') {
+    const time = new Date().toLocaleTimeString();
+    let str = Array.isArray(args) ? args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ') : String(args);
+    // Remove ansi color codes from string for clean web display
+    str = str.replace(/\x1B\[\d+m/g, '').replace(/\[\d+m/g, '');
+    global.botLogs.push({ time, msg: str, type });
+    if (global.botLogs.length > 200) global.botLogs.shift();
+}
+
 // Suppress verbose baileys output dynamically to reduce terminal/memory strain
 const originalLog = console.log;
 console.log = function (...args) {
     if (typeof args[0] === 'string' && args[0].includes('Closing session: SessionEntry')) return;
+    addLog(args, 'info');
     originalLog.apply(console, args);
+};
+
+const originalError = console.error;
+console.error = function (...args) {
+    addLog(args, 'error');
+    originalError.apply(console, args);
 };
 
 async function launch() {

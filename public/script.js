@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let apiKey = localStorage.getItem('mazari_api_key');
     let pollingInterval;
     let pairingPollInterval;
+    let logsPollInterval;
 
     // Check if already logged in
     if (apiKey) {
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         authOverlay.style.display = 'flex';
         apiKeyInput.value = '';
         if(pollingInterval) clearInterval(pollingInterval);
+        if(logsPollInterval) clearInterval(logsPollInterval);
     });
 
     // --- Tab Navigation ---
@@ -55,7 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById(target).style.display = 'block';
             headerTitle.textContent = link.textContent.trim();
             
-            if(target === 'sessionsSection') fetchStats(); // Refresh instantly
+            if(target === 'sessionsSection') fetchStats();
+            if(target === 'logsSection') {
+                fetchLogs();
+                if(!logsPollInterval) logsPollInterval = setInterval(fetchLogs, 2000);
+            } else {
+                if(logsPollInterval) { clearInterval(logsPollInterval); logsPollInterval = null; }
+            }
         });
     });
 
@@ -177,6 +185,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // --- System Control ---
+    document.getElementById('restartBotBtn').addEventListener('click', async () => {
+        if(!confirm('Are you sure you want to restart the entire Bot server? This will temporarily disconnect all sessions.')) return;
+        try {
+            const btn = document.getElementById('restartBotBtn');
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Restarting...';
+            
+            const res = await fetch('/api/restart', {
+                method: 'POST',
+                headers: { 'x-api-key': apiKey }
+            });
+            const data = await res.json();
+            if(data.success) {
+                showToast('Server is restarting. Please wait...', 'warning');
+                setTimeout(() => window.location.reload(), 5000);
+            }
+        } catch(e) { showToast('Error restarting server', 'error'); }
+    });
+
     // --- Core API Data Fetching ---
     async function verifyAndLoadDashboard() {
         try {
@@ -271,6 +298,37 @@ document.addEventListener('DOMContentLoaded', () => {
         // Only update select options if length changed to prevent losing user selection while polling
         if(senderSession.options.length !== (sessions.filter(s=>s.status==='CONNECTED').length + 1)) {
             senderSession.innerHTML = optionsHtml;
+        }
+    }
+
+    async function fetchLogs() {
+        if (!apiKey) return;
+        try {
+            const res = await fetch('/api/logs', {
+                headers: { 'x-api-key': apiKey }
+            });
+            if (res.ok) {
+                const data = await res.json();
+                renderLogs(data.logs);
+            }
+        } catch (e) { }
+    }
+
+    function renderLogs(logs) {
+        const terminal = document.getElementById('terminalOutput');
+        if(!logs || logs.length === 0) return;
+        
+        let html = '';
+        logs.forEach(l => {
+            const cssClass = l.type === 'error' ? 'log-line error' : 'log-line';
+            html += `<div class="${cssClass}"><span class="log-time">[${l.time}]</span> ${l.msg}</div>`;
+        });
+        
+        // Only update if content changed or scrolled to bottom
+        const isScrolledToBottom = terminal.scrollHeight - terminal.clientHeight <= terminal.scrollTop + 50;
+        terminal.innerHTML = html;
+        if(isScrolledToBottom) {
+            terminal.scrollTop = terminal.scrollHeight;
         }
     }
 

@@ -94,6 +94,12 @@ p.desc { color: var(--text-secondary); margin-bottom: 15px; font-size: 14px; }
 .pairing-code-box { background: rgba(59, 130, 246, 0.1); border: 1px dashed var(--accent); border-radius: 15px; padding: 30px; text-align: center; margin-top: 20px; }
 .pairing-code-box h1 { font-size: 40px; letter-spacing: 5px; color: var(--accent); margin: 15px 0; font-family: monospace; }
 
+/* Terminal Logs */
+.terminal-box { background: #000; border-radius: 10px; padding: 15px; font-family: 'Consolas', 'Courier New', monospace; font-size: 13px; color: #a3e635; overflow-y: auto; flex: 1; border: 1px solid rgba(255,255,255,0.1); box-shadow: inset 0 0 10px rgba(0,0,0,0.5); }
+.log-line { margin-bottom: 4px; line-height: 1.4; word-wrap: break-word; }
+.log-line.error { color: #ef4444; }
+.log-time { color: #64748b; margin-right: 10px; font-size: 12px; }
+
 /* Toast */
 .toast { position: fixed; bottom: 30px; right: 30px; padding: 15px 25px; border-radius: 10px; color: white; font-weight: 600; transform: translateY(100px); opacity: 0; transition: all 0.3s ease; z-index: 2000; }
 .toast.show { transform: translateY(0); opacity: 1; }

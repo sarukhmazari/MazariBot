@@ -29,6 +29,7 @@
                 <a href="#" class="tab-link active" data-target="overviewSection"><i class="fa-solid fa-chart-line"></i> Overview</a>
                 <a href="#" class="tab-link" data-target="sessionsSection"><i class="fa-solid fa-mobile-screen"></i> Sessions Management</a>
                 <a href="#" class="tab-link" data-target="broadcastSection"><i class="fa-solid fa-bullhorn"></i> Broadcast & Control</a>
+                <a href="#" class="tab-link" data-target="logsSection"><i class="fa-solid fa-terminal"></i> Server Logs</a>
                 <a href="#" id="logoutBtn" style="margin-top: auto;"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
             </nav>
         </aside>
@@ -44,6 +45,9 @@
             </header>
 
             <div id="overviewSection" class="section-content active">
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+                    <button id="restartBotBtn" class="danger-btn"><i class="fa-solid fa-power-off"></i> Restart Bot Server</button>
+                </div>
                 <!-- Stats Grid -->
                 <div class="stats-grid">
                     <div class="stat-card glass">
@@ -117,6 +121,21 @@
                         <textarea id="messageText" rows="4" placeholder="Type your message here..."></textarea>
                     </div>
                     <button id="sendMsgBtn" class="primary-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+            <div id="logsSection" class="section-content" style="display: none;">
+                <div class="glass card" style="height: calc(100vh - 150px); display: flex; flex-direction: column;">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-terminal"></i> Live Server Logs</h3>
+                        <div class="log-controls">
+                            <span class="status-indicator"><div class="pulse"></div> Live</span>
+                        </div>
+                    </div>
+                    <div id="terminalOutput" class="terminal-box">
+                        <!-- Logs will appear here -->
+                        <div class="log-line"><span class="log-time">[SYSTEM]</span> Connecting to log stream...</div>
+                    </div>
                 </div>
             </div>
             

@@ -150,6 +150,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Auto React to Channel Posts ---
+    const autoReactToggle = document.getElementById('autoReactToggle');
+    if (autoReactToggle) {
+        // Fetch initial state
+        fetch('/api/settings', { headers: { 'x-api-key': apiKey } })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success && data.settings) {
+                    autoReactToggle.checked = data.settings.autoReactToChannels || false;
+                }
+            })
+            .catch(console.error);
+
+        // Handle toggle
+        autoReactToggle.addEventListener('change', async (e) => {
+            const isChecked = e.target.checked;
+            try {
+                const res = await fetch('/api/settings', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey },
+                    body: JSON.stringify({ autoReactToChannels: isChecked })
+                });
+                const data = await res.json();
+                if (data.success) {
+                    showToast(isChecked ? 'Auto-React Enabled' : 'Auto-React Disabled', 'success');
+                } else {
+                    autoReactToggle.checked = !isChecked; // revert
+                    showToast('Failed to update setting', 'error');
+                }
+            } catch (err) {
+                autoReactToggle.checked = !isChecked; // revert
+                showToast('Network error', 'error');
+            }
+        });
+    }
+
     // --- Sessions Management ---
     document.getElementById('showAddSessionBtn').addEventListener('click', () => {
         const box = document.getElementById('addSessionBox');

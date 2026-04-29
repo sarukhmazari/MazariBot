@@ -68,18 +68,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Broadcast ---
+    const msgTypeSelect = document.getElementById('msgType');
+    const targetNumGroup = document.getElementById('targetNumGroup');
+
+    msgTypeSelect.addEventListener('change', () => {
+        if(msgTypeSelect.value === 'direct') {
+            targetNumGroup.style.display = 'block';
+        } else {
+            targetNumGroup.style.display = 'none';
+        }
+    });
+
     sendMsgBtn.addEventListener('click', async () => {
+        const type = msgTypeSelect.value;
         const to = document.getElementById('targetNum').value.trim();
         const text = document.getElementById('messageText').value.trim();
         const sessionPhone = senderSession.value;
 
-        if (!to || !text) return showToast('Please fill all fields', 'error');
+        if (type === 'direct' && !to) return showToast('Please enter a target number', 'error');
+        if (!text) return showToast('Please enter a message', 'error');
 
         sendMsgBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
         sendMsgBtn.disabled = true;
 
         try {
-            const payload = { to, text };
+            const payload = { text, type };
+            if(type === 'direct') payload.to = to;
             if(sessionPhone) payload.sessionPhone = sessionPhone;
 
             const res = await fetch('/api/message', {

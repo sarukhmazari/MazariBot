@@ -113,9 +113,20 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Target Number (with country code, no +)</label>
-                        <input type="text" id="targetNum" placeholder="e.g. 923001234567 or Group JID">
+                        <label>Message Type</label>
+                        <select id="msgType" class="custom-select">
+                            <option value="direct">Direct Message / Specific Chat</option>
+                            <option value="all_groups">Broadcast to All Groups</option>
+                            <option value="status">Post to Status (Story)</option>
+                        </select>
                     </div>
+
+                    <div class="form-group" id="targetNumGroup">
+                        <label>Target Number or JID (No '+' sign)</label>
+                        <input type="text" id="targetNum" placeholder="e.g. 923001234567 or Group/Channel JID">
+                        <p class="desc text-small">For Channels, you must include @newsletter (e.g. 120363000@newsletter)</p>
+                    </div>
+                    
                     <div class="form-group">
                         <label>Message Content</label>
                         <textarea id="messageText" rows="4" placeholder="Type your message here..."></textarea>

@@ -26,9 +26,9 @@
                 <h1>Mazari<span>Bot</span></h1>
             </div>
             <nav>
-                <a href="#" class="active"><i class="fa-solid fa-chart-line"></i> Overview</a>
-                <a href="#broadcast"><i class="fa-solid fa-bullhorn"></i> Broadcast</a>
-                <a href="#sessions"><i class="fa-solid fa-mobile-screen"></i> Sessions</a>
+                <a href="#" class="tab-link active" data-target="overviewSection"><i class="fa-solid fa-chart-line"></i> Overview</a>
+                <a href="#" class="tab-link" data-target="sessionsSection"><i class="fa-solid fa-mobile-screen"></i> Sessions Management</a>
+                <a href="#" class="tab-link" data-target="broadcastSection"><i class="fa-solid fa-bullhorn"></i> Broadcast & Control</a>
                 <a href="#" id="logoutBtn" style="margin-top: auto;"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
             </nav>
         </aside>
@@ -36,52 +36,91 @@
         <!-- Main Content -->
         <main class="content">
             <header class="glass">
-                <h2>Dashboard Overview</h2>
+                <h2 id="headerTitle">Dashboard Overview</h2>
                 <div class="status-indicator">
                     <div class="pulse"></div>
                     <span id="botStatus">Online</span>
                 </div>
             </header>
 
-            <!-- Stats Grid -->
-            <div class="stats-grid">
-                <div class="stat-card glass">
-                    <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
-                    <div class="stat-info">
-                        <h3>Uptime</h3>
-                        <p id="uptimeVal">Loading...</p>
+            <div id="overviewSection" class="section-content active">
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card glass">
+                        <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="stat-info">
+                            <h3>Total Uptime</h3>
+                            <p id="uptimeVal">Loading...</p>
+                        </div>
                     </div>
-                </div>
-                <div class="stat-card glass">
-                    <div class="stat-icon"><i class="fa-solid fa-memory"></i></div>
-                    <div class="stat-info">
-                        <h3>Memory Usage</h3>
-                        <p id="memoryVal">Loading...</p>
+                    <div class="stat-card glass">
+                        <div class="stat-icon"><i class="fa-solid fa-memory"></i></div>
+                        <div class="stat-info">
+                            <h3>Memory Usage</h3>
+                            <p id="memoryVal">Loading...</p>
+                        </div>
                     </div>
-                </div>
-                <div class="stat-card glass">
-                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
-                    <div class="stat-info">
-                        <h3>Active Sessions</h3>
-                        <p id="sessionsVal">Loading...</p>
+                    <div class="stat-card glass">
+                        <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                        <div class="stat-info">
+                            <h3>Active Sessions</h3>
+                            <p id="sessionsVal">Loading...</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Controls Section -->
-            <div class="controls-section glass">
-                <h3><i class="fa-solid fa-paper-plane"></i> Send Message / Broadcast</h3>
-                <div class="form-group">
-                    <label>Target Number (with country code, no +)</label>
-                    <input type="text" id="targetNum" placeholder="e.g. 923001234567">
+            <div id="sessionsSection" class="section-content" style="display: none;">
+                <div class="glass card">
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-network-wired"></i> Connected Sessions</h3>
+                        <button id="showAddSessionBtn" class="primary-btn small-btn"><i class="fa-solid fa-plus"></i> Add New Session</button>
+                    </div>
+                    <div id="sessionsList" class="sessions-list">
+                        <!-- Dynamic Sessions will appear here -->
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>Message Content</label>
-                    <textarea id="messageText" rows="4" placeholder="Type your message here..."></textarea>
+
+                <!-- Add Session Form (Hidden by default) -->
+                <div id="addSessionBox" class="glass card" style="display: none; margin-top: 20px;">
+                    <h3><i class="fa-solid fa-qrcode"></i> Pair New Number</h3>
+                    <p class="desc">Enter the phone number you want to connect to the bot (without '+' or spaces, e.g. 923001234567)</p>
+                    <div class="form-group flex-group">
+                        <input type="text" id="newSessionPhone" placeholder="Phone Number...">
+                        <button id="reqPairingBtn" class="primary-btn">Request Code</button>
+                    </div>
+                    <div id="pairingCodeDisplay" class="pairing-code-box" style="display: none;">
+                        <p>Your Pairing Code is:</p>
+                        <h1 id="thePairingCode">----</h1>
+                        <p class="desc text-small">Enter this code in your WhatsApp linked devices screen. It will expire in 5 minutes.</p>
+                    </div>
                 </div>
-                <button id="sendMsgBtn" class="primary-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
-                <div id="toast" class="toast"></div>
             </div>
+
+            <div id="broadcastSection" class="section-content" style="display: none;">
+                <div class="controls-section glass">
+                    <h3><i class="fa-solid fa-paper-plane"></i> Send Message / Broadcast</h3>
+                    
+                    <div class="form-group">
+                        <label>Send From (Select Session)</label>
+                        <select id="senderSession" class="custom-select">
+                            <option value="">Default (First Active Session)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Target Number (with country code, no +)</label>
+                        <input type="text" id="targetNum" placeholder="e.g. 923001234567 or Group JID">
+                    </div>
+                    <div class="form-group">
+                        <label>Message Content</label>
+                        <textarea id="messageText" rows="4" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button id="sendMsgBtn" class="primary-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+            
+            <div id="toast" class="toast"></div>
         </main>
     </div>
 

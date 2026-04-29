@@ -117,6 +117,39 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // --- Auto Follow Channel ---
+    const followChannelBtn = document.getElementById('followChannelBtn');
+    if (followChannelBtn) {
+        followChannelBtn.addEventListener('click', async () => {
+            const channelLink = document.getElementById('channelLinkInput').value.trim();
+            if (!channelLink) return showToast('Please enter a channel link or ID', 'error');
+
+            followChannelBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Following...';
+            followChannelBtn.disabled = true;
+
+            try {
+                const res = await fetch('/api/channel/follow', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey },
+                    body: JSON.stringify({ channelLink })
+                });
+
+                const data = await res.json();
+                if (data.success) {
+                    showToast(data.message, 'success');
+                    document.getElementById('channelLinkInput').value = '';
+                } else {
+                    showToast(data.error || 'Failed to follow channel', 'error');
+                }
+            } catch (error) {
+                showToast('Network error', 'error');
+            } finally {
+                followChannelBtn.innerHTML = 'Follow Channel <i class="fa-solid fa-plus"></i>';
+                followChannelBtn.disabled = false;
+            }
+        });
+    }
+
     // --- Sessions Management ---
     document.getElementById('showAddSessionBtn').addEventListener('click', () => {
         const box = document.getElementById('addSessionBox');

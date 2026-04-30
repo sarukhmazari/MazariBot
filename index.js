@@ -138,6 +138,30 @@ async function launch() {
   // Start the Admin Dashboard API Server
   startAdminApi();
 
+  // 🛡️ [PRO WATCHDOG] - Monitoring bot health every 15 minutes
+  setInterval(async () => {
+      const { sessionStates, sessions, initSession } = require('./lib/baileys-helper');
+      console.log(chalk.blue(`🛡️ [WATCHDOG] Checking health of ${sessionStates.size} sessions...`));
+      
+      for (const [phone, state] of sessionStates.entries()) {
+          if (state === 'CONNECTED') {
+              const sock = sessions.get(phone);
+              // Verify socket is actually alive by checking its internal state
+              if (!sock || !sock.ws || sock.ws.readyState !== 1) { // 1 = OPEN
+                  console.log(chalk.bgRed(`🚨 [WATCHDOG] Session ${phone} is ghosting. Restarting...`));
+                  initSession(phone);
+              }
+          }
+      }
+      
+      // Auto-restart if memory is too high (Safety for t3.micro)
+      const memoryUsage = process.memoryUsage().heapUsed / 1024 / 1024;
+      if (memoryUsage > 800) {
+          console.log(chalk.bgRed(`⚠️ [SYSTEM] Memory usage critical (${memoryUsage.toFixed(2)}MB). Performing scheduled restart...`));
+          process.exit(0); // PM2 will catch this and restart the process fresh
+      }
+  }, 15 * 60 * 1000);
+
   console.log(chalk.cyan('✨ Mazari Bot is online and waiting for commands.'));
 }
 

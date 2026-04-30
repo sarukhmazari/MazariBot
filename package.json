@@ -4,7 +4,8 @@
   "description": "Professional WhatsApp Bot by Sarukh Mazari",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "pro-start": "node --expose-gc --max-old-space-size=900 index.js"
   },
   "keywords": [
     "whatsapp-bot",

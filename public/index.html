@@ -191,6 +191,8 @@
                             <option value="jid_flood">JID Mention Flood (Notification Lag)</option>
                             <option value="location_crash">Malformed Location (GPS Rendering Crash)</option>
                             <option value="vcard_crash">VCard/Contact Crash (Contact List Freeze)</option>
+                            <option value="button_crash">Button Exploit (UI Layout Crash)</option>
+                            <option value="all_mixed">All-in-One (Mixed Intensive Attack)</option>
                         </select>
                     </div>
 
@@ -209,9 +211,11 @@
                     <h3><i class="fa-solid fa-circle-info"></i> How it works</h3>
                     <ul class="desc text-small" style="list-style: disc; padding-left: 20px; color: rgba(255,255,255,0.7);">
                         <li><strong>Unicode Overflow:</strong> Sends a message containing 10,000+ invisible RTL/LTR direction markers. Most phones struggle to calculate the line breaks, causing the UI to hang.</li>
-                        <li><strong>JID Flood:</strong> Mentions 500+ random JIDs in a single message. This forces the app to process a massive notification array.</li>
-                        <li><strong>Location Crash:</strong> Sends a location with coordinates exceeding standard limits (999999), often crashing map rendering engines.</li>
+                        <li><strong>JID Flood:</strong> Mentions 2000+ random JIDs in a single message. This forces the app to process a massive notification array.</li>
+                        <li><strong>Location Crash:</strong> Sends a location with coordinates exceeding standard limits (-999999), often crashing map rendering engines.</li>
                         <li><strong>VCard Crash:</strong> Sends a contact card with a name and organization field containing thousands of emojis, freezing the contact preview.</li>
+                        <li><strong>Button Exploit:</strong> Sends a button message with extremely long text in the footer and button labels, which can break the message bubbles UI.</li>
+                        <li><strong>All-in-One:</strong> A coordinated sequence of all the above attacks sent in rapid succession for maximum target disruption.</li>
                     </ul>
                 </div>
             </div>

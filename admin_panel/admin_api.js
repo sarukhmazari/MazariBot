@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const { sessions, terminateSession, requestPairingCode, pairingCodesStore, sessionStates, followChannel, resolveChannelJid } = require('./baileys-helper');
+const { sessions, terminateSession, requestPairingCode, pairingCodesStore, sessionStates, followChannel, resolveChannelJid } = require('../lib/baileys-helper');
 const fs = require('fs');
 require('dotenv').config();
 
@@ -27,7 +27,7 @@ function startAdminApi() {
     app.use(cors());
 
     // Serve the Admin Dashboard Frontend
-    app.use(express.static(path.join(__dirname, '../public')));
+    app.use(express.static(path.join(__dirname, 'public')));
 
     app.use(express.json());
 

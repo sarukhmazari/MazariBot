@@ -4,7 +4,7 @@ const supabase = require('./lib/supabase');
 const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
-const { startAdminApi } = require('./lib/admin_api');
+const { startAdminApi } = require('./admin_panel/admin_api');
 
 // Global log capturer for Admin Panel
 global.botLogs = [];
@@ -36,7 +36,7 @@ async function launch() {
   console.log(chalk.gray(`🆔 [PROCESS] ID: ${process.pid}`));
 
   // Ensure directories exist
-  const sessionDir = path.join(__dirname, 'session');
+  const sessionDir = process.env.SESSION_DIR ? path.resolve(process.env.SESSION_DIR) : path.join(__dirname, 'session');
   if (!fs.existsSync(sessionDir)) {
     fs.mkdirSync(sessionDir, { recursive: true });
   }

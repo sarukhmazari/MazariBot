@@ -1,3 +1,13 @@
+---
+title: Mazari Bot
+emoji: 🤖
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 <div align="center">
   <img src="assets/images/banner.png" alt="Mazari AI Bot Banner" width="100%">
   

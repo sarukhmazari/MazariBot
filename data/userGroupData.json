@@ -30,6 +30,11 @@
       "enabled": true,
       "message": "Welcome {user} to {group}! 🎉",
       "channelId": ""
+    },
+    "120363429953857297@g.us": {
+      "enabled": true,
+      "message": "Welcome to Group",
+      "channelId": ""
     }
   },
   "goodbye": {},

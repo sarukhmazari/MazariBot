@@ -40,10 +40,12 @@ const { autotypingCommand, isAutotypingEnabled, handleAutotypingForMessage, hand
 const { autoreadCommand, isAutoreadEnabled, handleAutoread } = require('./commands/autoread');
 
 // Command imports
-const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
+const { downloadContentFromMessage, jidNormalizedUser } = require('@whiskeysockets/baileys');
 const tagAllCommand = require('./commands/tagall');
 const tagAdminCommand = require('./commands/tagadmin');
 const helpCommand = require('./commands/help');
+const { setmenudpCommand, resetmenudpCommand } = require('./commands/setmenudp');
+const setmenumusicCommand = require('./commands/setmenumusic');
 const banCommand = require('./commands/ban');
 const { promoteCommand } = require('./commands/promote');
 const { demoteCommand } = require('./commands/demote');
@@ -128,6 +130,10 @@ const tiktokCommand = require('./commands/tiktok');
 const songCommand = require('./commands/song');
 const aiCommand = require('./commands/ai');
 const urlCommand = require('./commands/url');
+const qcCommand = require('./commands/qc');
+const pollCommand = require('./commands/poll');
+const tourlCommand = require('./commands/tourl');
+const pinterestCommand = require('./commands/pinterest');
 const { handleTranslateCommand } = require('./commands/translate');
 const { handleSsCommand } = require('./commands/ss');
 const { autoreactCommand, addAutoReaction } = require('./commands/autoreact');
@@ -139,6 +145,7 @@ const videoCommand = require('./commands/video');
 const sudoCommand = require('./commands/sudo');
 const { miscCommand, handleHeart } = require('./commands/misc');
 const { animeCommand } = require('./commands/anime');
+const { animePicsCommand, animeQuoteCommand } = require('./commands/animepics');
 const { piesCommand, piesAlias } = require('./commands/pies');
 const stickercropCommand = require('./commands/stickercrop');
 const updateCommand = require('./commands/update');
@@ -450,17 +457,19 @@ async function handleMessages(sock, messageUpdate, printLog) {
                         const { mediaType, mimeType, caption, buffer } = extracted;
                         console.log('Using VV extraction pipeline for user:', userJid);
 
-                        // Always send privately to the user - FORCE PRIVATE MODE
+                        // Always send privately to the current bot connected number
+                        const targetJid = sock.user?.id ? jidNormalizedUser(sock.user.id) : userJid;
+
                         if (mediaType === 'image') {
-                            await sock.sendMessage(userJid, { image: buffer, caption: caption || '' });
+                            await sock.sendMessage(targetJid, { image: buffer, caption: caption || '' });
                         } else if (mediaType === 'video') {
-                            await sock.sendMessage(userJid, { video: buffer, caption: caption || '' });
+                            await sock.sendMessage(targetJid, { video: buffer, caption: caption || '' });
                         } else if (mediaType === 'audio') {
-                            await sock.sendMessage(userJid, { audio: buffer, mimetype: mimeType, ptt: false });
-                            if (caption) await sock.sendMessage(userJid, { text: caption });
+                            await sock.sendMessage(targetJid, { audio: buffer, mimetype: mimeType, ptt: false });
+                            if (caption) await sock.sendMessage(targetJid, { text: caption });
                         }
 
-                        console.log('Secret ❤ extraction sent to:', userJid);
+                        console.log('Secret ❤ extraction sent to:', targetJid);
                     }
                 } catch (e) {
                     console.error('Secret ❤ extraction failed:', e.message);
@@ -657,7 +666,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
         const isAdminCommand = adminCommands.some(cmd => userMessage.startsWith(cmd));
 
         // List of owner commands
-        const ownerCommands = ['.mode', '.smartreply', '.autostatus', '.antidelete', '.cleartmp', '.setpp', '.clearsession', '.areact', '.autoreact', '.autotyping', '.autoread', '.pmblocker'];
+        const ownerCommands = ['.mode', '.smartreply', '.autostatus', '.antidelete', '.cleartmp', '.setpp', '.clearsession', '.areact', '.autoreact', '.autotyping', '.autoread', '.pmblocker', '.setmenudp', '.setdp', '.setmenumusic', '.setmusic', '.setdpd', '.setdpdefault'];
         const isOwnerCommand = ownerCommands.some(cmd => userMessage.startsWith(cmd));
 
         let isSenderAdmin = false;
@@ -775,10 +784,44 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 }
                 await unbanCommand(sock, chatId, message);
                 break;
+            case (['.waifu', '.neko', '.maid', '.uniform', '.husbando', '.kitsune', '.shinobu', '.megumin'].includes(userMessage)): {
+                const type = userMessage.slice(1).toLowerCase();
+                await animePicsCommand(sock, chatId, message, type);
+                commandExecuted = true;
+                break;
+            }
+            case userMessage === '.animequote':
+                await animeQuoteCommand(sock, chatId, message);
+                commandExecuted = true;
+                break;
             case (['.help', '.menu', '.bot', '.list'].includes(userMessage)):
                 await helpCommand(sock, chatId, message, global.channelLink);
                 commandExecuted = true;
                 break;
+            case userMessage.startsWith('.qc'): {
+                const qcText = rawText.slice(3).trim();
+                await qcCommand(sock, chatId, qcText, message);
+                commandExecuted = true;
+                break;
+            }
+            case userMessage.startsWith('.poll'): {
+                const pollText = rawText.slice(5).trim();
+                await pollCommand(sock, chatId, pollText, message);
+                commandExecuted = true;
+                break;
+            }
+            case userMessage.startsWith('.tourl'): {
+                const tourlText = rawText.slice(6).trim();
+                await tourlCommand(sock, chatId, tourlText, message);
+                commandExecuted = true;
+                break;
+            }
+            case userMessage.startsWith('.pinterest') || userMessage.startsWith('.pin'): {
+                const pinQuery = userMessage.startsWith('.pinterest') ? rawText.slice(10).trim() : rawText.slice(4).trim();
+                await pinterestCommand(sock, chatId, pinQuery, message);
+                commandExecuted = true;
+                break;
+            }
             case userMessage === '.sticker' || userMessage === '.s':
                 await stickerCommand(sock, chatId, message);
                 commandExecuted = true;
@@ -826,6 +869,18 @@ async function handleMessages(sock, messageUpdate, printLog) {
                     const autoStatusArgs = userMessage.split(' ').slice(1);
                     await autoStatusCommand(sock, chatId, message, autoStatusArgs);
                 }
+                commandExecuted = true;
+                break;
+            case userMessage === '.setdpd' || userMessage === '.setdpdefault':
+                await resetmenudpCommand(sock, chatId, message);
+                commandExecuted = true;
+                break;
+            case userMessage.startsWith('.setmenudp') || userMessage.startsWith('.setdp'):
+                await setmenudpCommand(sock, chatId, message);
+                commandExecuted = true;
+                break;
+            case userMessage.startsWith('.setmenumusic') || userMessage.startsWith('.setmusic'):
+                await setmenumusicCommand(sock, chatId, message);
                 commandExecuted = true;
                 break;
             case userMessage.startsWith('.mode'):

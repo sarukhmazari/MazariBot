@@ -377,9 +377,7 @@ function startAdminApi() {
     });
 
     app.listen(port, () => {
-        console.log(`\n🌐 [ADMIN API] Dashboard API is running on port ${port}`);
-        console.log(`🔑 [ADMIN API] Your API Key is: ${apiKey}`);
-        console.log(`🛡️  Make sure to open port ${port} in your AWS EC2 Security Group!\n`);
+        // Silently listening to keep logs clean
     });
 }
 

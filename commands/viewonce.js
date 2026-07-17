@@ -79,6 +79,10 @@ async function extractViewOnceMedia(message) {
         }
 
         // 4. Download Content
+        if (!mediaContent.mediaKey) {
+            throw new Error('Media key is missing. The message may have expired or cannot be decrypted.');
+        }
+        
         const stream = await downloadContentFromMessage(mediaContent, mediaType);
         let buffer = Buffer.from([]);
         for await (const chunk of stream) buffer = Buffer.concat([buffer, chunk]);
@@ -86,7 +90,7 @@ async function extractViewOnceMedia(message) {
         return { mediaContent, mediaType, mimeType, caption, buffer };
 
     } catch (error) {
-        console.error('❌ Extract view-once error:', error);
+        console.error('❌ Extract view-once error:', error.message || error);
         return null;
     }
 }

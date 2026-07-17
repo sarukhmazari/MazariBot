@@ -29,12 +29,6 @@
     "blocked": false,
     "ignored": false
   },
-  "272438919176196@lid": {
-    "count": 2,
-    "lastMessageTime": 1775586516196,
-    "blocked": false,
-    "ignored": false
-  },
   "120363402591161310@newsletter": {
     "count": 1,
     "lastMessageTime": 1775743182886,
@@ -59,9 +53,27 @@
     "blocked": false,
     "ignored": false
   },
-  "12224080949405@lid": {
-    "count": 4,
-    "lastMessageTime": 1776351896110,
+  "221230091251953@lid": {
+    "count": 1,
+    "lastMessageTime": 1781274951679,
+    "blocked": false,
+    "ignored": false
+  },
+  "155774420516927@lid": {
+    "count": 1,
+    "lastMessageTime": 1780937850012,
+    "blocked": false,
+    "ignored": false
+  },
+  "120363181925896741@newsletter": {
+    "count": 2,
+    "lastMessageTime": 1783507387801,
+    "blocked": false,
+    "ignored": false
+  },
+  "192359455281231@lid": {
+    "count": 1,
+    "lastMessageTime": 1783855355520,
     "blocked": false,
     "ignored": false
   }

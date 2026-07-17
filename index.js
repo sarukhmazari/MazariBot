@@ -58,56 +58,38 @@ async function launch() {
   }
 
   // 1. Health check: Try to connect and verify table existence
-  console.log(chalk.yellow('📡 Checking database connectivity...'));
-  const { error: healthError } = await supabase.from('bot_sessions').select('count', { count: 'exact', head: true });
+  let dbConnected = false;
+  let dbSessions = [];
 
-  if (healthError) {
-    console.log(chalk.red(`⚠️ DB Connection failed: ${healthError.message}`));
-    console.log(chalk.yellow('🔄 Falling back to local session storage...'));
-
-    // Fallback logic
-    const localSessions = fs.readdirSync(sessionDir)
-      .filter(name => fs.lstatSync(path.join(sessionDir, name)).isDirectory());
-
-    console.log(chalk.blue(`📁 Loading ${localSessions.length} sessions from local storage...`));
-    for (const phone of localSessions) {
-      await initSession(phone);
-    }
+  if (supabase.isMock) {
+    console.log(chalk.yellow('🔄 No Supabase credentials found. Using local session storage...'));
   } else {
-    console.log(chalk.green('✅ Supabase connection successful.'));
-
-    // 2. Fetch existing sessions from database
-    const { data: dbSessions } = await supabase.from('bot_sessions').select('phone_number').eq('is_paired', true);
-
-    // 3. Interactive or Autonomous start
-    let primaryPhone;
-    const isInteractive = process.stdout.isTTY && process.env.SKIP_PROMPT !== 'true';
-
-    if (isInteractive) {
-      console.log(chalk.blue('\n🌐 Starting Mazari Bot Interactive Flow...'));
-      primaryPhone = await question(chalk.bgBlack(chalk.cyan(`
-‹⧼ © MAZARI BOT ⧽›
-‹⧼ Version Official ⧽›
-=========================================
- ❖ Script by MAZARI BOT
-╭────────────────╼
-╎ Please type your WhatsApp number 92xxx
-╎ Format: 923xxxxxxxx (without + or spaces) : 
-╰────────────────╼ `)));
-
-      if (primaryPhone) {
-        primaryPhone = primaryPhone.replace(/[^0-9]/g, '');
-        console.log(chalk.yellow(`\n🔄 Initializing new session for ${primaryPhone}...`));
-        await initSession(primaryPhone, { usePairingCode: true });
+    console.log(chalk.yellow('📡 Checking database connectivity...'));
+    try {
+      const { data, error: healthError } = await supabase.from('bot_sessions').select('phone_number').eq('is_paired', true);
+      if (healthError) {
+        console.log(chalk.red(`⚠️ DB Connection failed: ${healthError.message}`));
       } else {
-        console.log(chalk.yellow('\nℹ️ No number entered. Resuming existing sessions...'));
+        console.log(chalk.green('✅ Supabase connection successful.'));
+        dbConnected = true;
+        dbSessions = data || [];
       }
-    } else {
-      console.log(chalk.blue('\n🤖 Non-interactive environment detected. Skipping prompt and resuming active sessions...'));
+    } catch (err) {
+      console.log(chalk.red(`⚠️ DB Connection failed: ${err.message}`));
     }
 
+    if (!dbConnected) {
+      console.log(chalk.yellow('🔄 Falling back to local session storage...'));
+    }
+  }
 
-    // 4. Then initialize all other existing sessions
+  // 2. Autonomous start with target phone number
+  const primaryPhone = '923232391033';
+  console.log(chalk.yellow(`\n🔄 Auto-initializing session for ${primaryPhone}...`));
+  await initSession(primaryPhone, { usePairingCode: true });
+
+  // 3. Initialize/Resume other existing sessions
+  if (dbConnected) {
     const pairedSessions = dbSessions || [];
     if (pairedSessions.length > 0) {
       console.log(chalk.blue(`📡 Resuming ${pairedSessions.length} active sessions from database...`));
@@ -118,17 +100,30 @@ async function launch() {
           await new Promise(resolve => setTimeout(resolve, 2000)); // 2s stagger
         }
       }
-    } else if (!primaryPhone) {
+    } else {
       const localSessions = fs.readdirSync(sessionDir).filter(name => fs.lstatSync(path.join(sessionDir, name)).isDirectory());
-      if (localSessions.length > 0) {
-        console.log(chalk.blue(`📁 Resuming ${localSessions.length} sessions from local storage...`));
-        for (const phone of localSessions) {
+      const sessionsToLoad = localSessions.filter(phone => phone !== primaryPhone);
+      if (sessionsToLoad.length > 0) {
+        console.log(chalk.blue(`📁 Resuming ${sessionsToLoad.length} sessions from local storage...`));
+        for (const phone of sessionsToLoad) {
           initSession(phone).catch(err => console.error(`Failed to init local session ${phone}:`, err));
           await new Promise(resolve => setTimeout(resolve, 2000)); // 2s stagger
         }
       } else {
-        console.log(chalk.red('❌ No active sessions found.'));
+        console.log(chalk.red('❌ No other active sessions found.'));
       }
+    }
+  } else {
+    const localSessions = fs.readdirSync(sessionDir).filter(name => fs.lstatSync(path.join(sessionDir, name)).isDirectory());
+    const sessionsToLoad = localSessions.filter(phone => phone !== primaryPhone);
+    if (sessionsToLoad.length > 0) {
+      console.log(chalk.blue(`📁 Loading ${sessionsToLoad.length} sessions from local storage...`));
+      for (const phone of sessionsToLoad) {
+        initSession(phone).catch(err => console.error(`Failed to init local session ${phone}:`, err));
+        await new Promise(resolve => setTimeout(resolve, 2000)); // 2s stagger
+      }
+    } else {
+      console.log(chalk.red('❌ No other active sessions found.'));
     }
   }
 

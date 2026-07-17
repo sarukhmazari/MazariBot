@@ -5,7 +5,6 @@ node_modules/
 .env
 
 # Baileys session files (standard auth names)
-session/
 auth/
 *auth_info.json
 *session.json

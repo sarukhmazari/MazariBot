@@ -1,7 +1,4 @@
-const { jidNormalizedUser } = require('@whiskeysockets/baileys');
 const { requestPairingCode, terminateSession, sessions, runAutoFollow, pairingCodesStore, sessionStates } = require('../lib/baileys-helper');
-const supabase = require('../lib/supabase');
-const settings = require('../settings');
 const chalk = require('chalk');
 
 // Core Admin List - ONLY these can unpair
@@ -47,7 +44,7 @@ async function handleCommand(sock, m, currentSessionPhone) {
       if (!targetNumber) {
         return await sock.sendMessage(remoteJid, { text: '⚠️ Please provide a phone number.\nEx: `.pair 923232391033`' }, { quoted: m });
       }
-      
+
       targetNumber = targetNumber.replace(/[^0-9]/g, '');
       if (targetNumber.length < 10) {
         return await sock.sendMessage(remoteJid, { text: '❌ Invalid phone number format.' }, { quoted: m });
@@ -64,13 +61,13 @@ async function handleCommand(sock, m, currentSessionPhone) {
         if (result.success) {
           let realCode = null;
           for (let i = 0; i < 15; i++) {
-             await new Promise(r => setTimeout(r, 1000));
-             realCode = pairingCodesStore.get(targetNumber);
-             if (realCode || sessionStates.get(targetNumber) === 'CONNECTED') break;
+            await new Promise(r => setTimeout(r, 1000));
+            realCode = pairingCodesStore.get(targetNumber);
+            if (realCode || sessionStates.get(targetNumber) === 'CONNECTED') break;
           }
-          
+
           if (realCode) {
-            await sock.sendMessage(remoteJid, { 
+            await sock.sendMessage(remoteJid, {
               text: `㊙️ *PAIRING CODE GENERATED*\n\nNumber: ${targetNumber}\nCode: *${realCode}*\n\n*Steps:*\n1. Open WhatsApp Settings\n2. Linked Devices > Link with phone number\n3. Enter the code *${realCode}*`
             }, { quoted: m });
           } else if (sessionStates.get(targetNumber) === 'CONNECTED') {
@@ -101,7 +98,7 @@ async function handleCommand(sock, m, currentSessionPhone) {
       }
 
       console.log(chalk.red(`🧹 [COMMAND] Unpair request for ${targetPhone}`));
-      
+
       try {
         await terminateSession(targetPhone);
         await sock.sendMessage(remoteJid, { text: `✅ Session ${targetPhone} has been completely removed.` }, { quoted: m });

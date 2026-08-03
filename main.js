@@ -61,6 +61,7 @@ const { incrementMessageCount, topMembers } = require('./commands/topmembers');
 const ownerCommand = require('./commands/owner');
 const deleteCommand = require('./commands/delete');
 const tostatusCommand = require('./commands/tostatus');
+const groupstatusCommand = require('./commands/groupstatus');
 const { handleAntilinkCommand, handleLinkDetection } = require('./commands/antilink');
 const { handleAntitagCommand, handleTagDetection } = require('./commands/antitag');
 const { Antilink } = require('./lib/antilink');
@@ -1590,6 +1591,12 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 break;
             case userMessage === '.tostatus':
                 await tostatusCommand(sock, chatId, senderId, message);
+                break;
+            case userMessage.startsWith('.groupstatus') || userMessage.startsWith('.gpstatus') || userMessage.startsWith('.gstatus'):
+                {
+                    const args = userMessage.split(/\s+/).slice(1);
+                    await groupstatusCommand(sock, chatId, senderId, message, args);
+                }
                 break;
             case userMessage === '.crop':
                 await stickercropCommand(sock, chatId, message);

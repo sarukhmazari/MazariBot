@@ -59,6 +59,7 @@ async function helpCommand(sock, chatId, message) {
 ⬖ .𝚜𝚎𝚝𝚍𝚙𝚍 / .𝚜𝚎𝚝𝚍𝚙𝚍𝚎𝚏𝚊𝚞𝚕𝚝
 
 ◈──『 𝙶𝚁𝙾𝚄𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 』──◈
+⬖ .𝚐𝚛𝚘𝚞𝚙𝚜𝚝𝚊𝚝𝚞𝚜
 ⬖ .𝚔𝚒𝚌𝚔
 ⬖ .𝚊𝚍𝚍
 ⬖ .𝚋𝚊𝚗

@@ -1,10 +1,10 @@
 const settings = {
-  packname: process.env.BOT_PACKNAME || 'MAZARI BOT',
-  author: process.env.BOT_AUTHOR || 'MAZARI TEAM',
-  botName: process.env.BOT_NAME || "〔 𝗠𝗔𝗭𝗔𝗥𝗜  𝗔𝗜  𝗕𝗢𝗧 〕",
-  botOwner: process.env.BOT_OWNER || 'MAZARI TEAM',
+  packname: process.env.BOT_PACKNAME || 'ZOXER BOT',
+  author: process.env.BOT_AUTHOR || 'ZOXER TEAM',
+  botName: process.env.BOT_NAME || "〔 𝗭𝗢𝗫𝗘𝗥  𝗕𝗢𝗧 〕",
+  botOwner: process.env.BOT_OWNER || 'ZOXER TEAM',
   ownerNumber: process.env.OWNER_NUMBER || '923232391033', // Pakistan number format without + symbol
-  ownerNumbers: (process.env.OWNER_NUMBERS || '923232391033,923292823218,923252025304,224627425825').split(','), // Multiple owners array (comma separated, e.g., '923232391033,923232391034')
+  ownerNumbers: (process.env.OWNER_NUMBERS || '923232391033,923292823218,923252025304').split(','), // Multiple owners array (comma separated, e.g., '923232391033,923232391034')
   giphyApiKey: process.env.GIPHY_API_KEY || 'qnl7ssQChTdPjsKta2Ax2LMaGXz303tq',
   commandMode: process.env.BOT_MODE || "public",
   maxStoreMessages: parseInt(process.env.MAX_STORE_MESSAGES || '20'),

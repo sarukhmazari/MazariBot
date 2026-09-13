@@ -32,7 +32,7 @@ async function autoreadCommand(sock, chatId, message, args = []) {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '',
-                        newsletterName: 'MAZARI BOT',
+                        newsletterName: 'ZOXER BOT',
                         serverMessageId: -1
                     }
                 }
@@ -59,7 +59,7 @@ async function autoreadCommand(sock, chatId, message, args = []) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: '',
-                            newsletterName: 'MAZARI BOT',
+                            newsletterName: 'ZOXER BOT',
                             serverMessageId: -1
                         }
                     }
@@ -82,7 +82,7 @@ async function autoreadCommand(sock, chatId, message, args = []) {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '',
-                    newsletterName: 'MAZARI BOT',
+                    newsletterName: 'ZOXER BOT',
                     serverMessageId: -1
                 }
             }
@@ -97,7 +97,7 @@ async function autoreadCommand(sock, chatId, message, args = []) {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '',
-                    newsletterName: 'MAZARI BOT',
+                    newsletterName: 'ZOXER BOT',
                     serverMessageId: -1
                 }
             }

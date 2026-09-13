@@ -3,19 +3,24 @@ node_modules/
 
 # Environment files
 .env
+.env.*
+*.env
 
-# Baileys session files (standard auth names)
+# Baileys session files & auth folders
+session/
 auth/
 *auth_info.json
 *session.json
 mazari_session/
+*.session
 
-# Repository Maintenance
+# Repository Maintenance & logs
 baileys_store.json
 temp/
 tmp/
 *.zip
 *.bin
+*.log
 
 # OS specific files
 .DS_Store

@@ -9,7 +9,7 @@ const channelInfo = {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '',
-            newsletterName: 'MAZARI BOT',
+            newsletterName: 'ZOXER BOT',
             serverMessageId: -1
         }
     }

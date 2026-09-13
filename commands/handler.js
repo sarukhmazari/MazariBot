@@ -34,7 +34,7 @@ async function handleCommand(sock, m, currentSessionPhone) {
 
   switch (command) {
     case 'ping':
-      await sock.sendMessage(remoteJid, { text: '🏓 *Mazari Bot is active!*' }, { quoted: m });
+      await sock.sendMessage(remoteJid, { text: '🏓 *ZOXER BOT is active!*' }, { quoted: m });
       break;
 
     case 'pair': {

@@ -1,1 +1,118 @@
-const _0x4e2aa7=_0xf89f;(function(_0x4f48e4,_0x20866e){const _0x583217=_0xf89f,_0x517e51=_0x4f48e4();while(!![]){try{const _0x4981af=-parseInt(_0x583217(0xcc))/(0x556+-0x151b*-0x1+-0x1a70)+parseInt(_0x583217(0xd3))/(-0x2171+0xb92+-0x1*-0x15e1)*(-parseInt(_0x583217(0xc4))/(-0x103*0x1d+0x2*0x8ea+0x5*0x24e))+parseInt(_0x583217(0xd8))/(-0x33b*-0x5+-0x4be+-0xb65)+-parseInt(_0x583217(0xc9))/(0x24dd*-0x1+-0x2*0xbb9+-0x35a*-0x12)+-parseInt(_0x583217(0xd7))/(0x1706*0x1+0x3a*0x1f+-0x1e06)+-parseInt(_0x583217(0xd4))/(0x5e*-0x26+0x1909+-0xb0e)*(parseInt(_0x583217(0xda))/(-0x2496*-0x1+0x64*0x41+-0x2*0x1ef9))+-parseInt(_0x583217(0xce))/(-0x197b+-0x2*-0x554+0xedc)*(-parseInt(_0x583217(0xc6))/(-0x228e*0x1+-0x6fa*-0x3+0xdaa));if(_0x4981af===_0x20866e)break;else _0x517e51['push'](_0x517e51['shift']());}catch(_0x1b8fb2){_0x517e51['push'](_0x517e51['shift']());}}}(_0x23e3,-0x2092b+0x2f01b+0x83c2b));function _0xf89f(_0x4c3a8f,_0x5331fe){_0x4c3a8f=_0x4c3a8f-(-0x1cc4+-0x16cb+0x344b);const _0x5b1eb7=_0x23e3();let _0x3538a8=_0x5b1eb7[_0x4c3a8f];if(_0xf89f['EwINfx']===undefined){var _0x17baec=function(_0x4e2040){const _0x4d5797='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x5226ed='',_0x12267a='';for(let _0x34dc30=-0xd*-0x19c+-0x1fec*0x1+0xb00,_0x9695a1,_0x177571,_0x5f3cae=0x85*0x35+-0x1b6e+0x1b*-0x1;_0x177571=_0x4e2040['charAt'](_0x5f3cae++);~_0x177571&&(_0x9695a1=_0x34dc30%(-0x179e+0x1226+0x57c)?_0x9695a1*(-0xb5*-0x3+0xcf9+-0xed8)+_0x177571:_0x177571,_0x34dc30++%(-0x1232+0x2*-0x395+-0x32c*-0x8))?_0x5226ed+=String['fromCharCode'](-0x30d*0x9+-0x8f3+-0x1*-0x2567&_0x9695a1>>(-(-0x5dd*-0x2+0xb*-0x35f+-0x2b*-0x97)*_0x34dc30&0x189b+-0x181*0x6+-0xf8f)):0x20ea+0x1d29+-0x3e13){_0x177571=_0x4d5797['indexOf'](_0x177571);}for(let _0x1d8ec7=-0x11ab+0x17a+-0x1031*-0x1,_0x2b0bc8=_0x5226ed['length'];_0x1d8ec7<_0x2b0bc8;_0x1d8ec7++){_0x12267a+='%'+('00'+_0x5226ed['charCodeAt'](_0x1d8ec7)['toString'](0x41e+0x4ca*-0x1+-0x5e*-0x2))['slice'](-(-0x2de*0x2+-0x1*0x11ad+0x221*0xb));}return decodeURIComponent(_0x12267a);};_0xf89f['vUXvtG']=_0x17baec,_0xf89f['kICmid']={},_0xf89f['EwINfx']=!![];}const _0x2b9789=_0x5b1eb7[0x163d+-0x66e*0x6+0x1057],_0x54ef7f=_0x4c3a8f+_0x2b9789,_0x188df8=_0xf89f['kICmid'][_0x54ef7f];return!_0x188df8?(_0x3538a8=_0xf89f['vUXvtG'](_0x3538a8),_0xf89f['kICmid'][_0x54ef7f]=_0x3538a8):_0x3538a8=_0x188df8,_0x3538a8;}const axios=require(_0x4e2aa7(0xbc)),{sleep}=require(_0x4e2aa7(0xd5));async function pairCommand(_0x440f1b,_0x10ad80,_0x192ca6,_0x4c3a8f){const _0x425347=_0x4e2aa7;try{if(!_0x4c3a8f)return await _0x440f1b[_0x425347(0xbd)](_0x10ad80,{'text':'Please\x20provide\x20valid\x20WhatsApp\x20number\x0aExample:\x20.pair\x2091702395XXXX','contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x425347(0xd6),'serverMessageId':-(-0xcdb*0x3+0xa97*-0x1+0x3129)}}});const _0x5331fe=_0x4c3a8f[_0x425347(0xdd)](',')[_0x425347(0xdc)](_0x5b1eb7=>_0x5b1eb7[_0x425347(0xc5)](/[^0-9]/g,''))['filter'](_0x3538a8=>_0x3538a8[_0x425347(0xdb)]>0x2513+-0x2*-0x114e+-0x47aa&&_0x3538a8[_0x425347(0xdb)]<0xd*-0xb0+0x21f+0x6e5);if(_0x5331fe['length']===-0x22cc+-0x1232+0x7*0x792)return await _0x440f1b[_0x425347(0xbd)](_0x10ad80,{'text':_0x425347(0xc1),'contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x425347(0xd6),'serverMessageId':-(0x254d+-0x1f0c+-0x140*0x5)}}});for(const _0x17baec of _0x5331fe){const _0x2b9789=_0x17baec+_0x425347(0xbf),_0x54ef7f=await _0x440f1b['onWhatsApp'](_0x2b9789);if(!_0x54ef7f[-0x1c35+-0x18f*-0x1+-0xd53*-0x2]?.[_0x425347(0xd9)])return await _0x440f1b[_0x425347(0xbd)](_0x10ad80,{'text':_0x425347(0xd2),'contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':'MAZARI\x20BOT','serverMessageId':-(-0x1b*-0xd5+-0x9*-0x13b+-0x2189)}}});await _0x440f1b[_0x425347(0xbd)](_0x10ad80,{'text':_0x425347(0xc3),'contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x425347(0xd6),'serverMessageId':-(0x15b2+0x1c5*-0x13+0xbee)}}});try{const _0x188df8=await axios[_0x425347(0xbe)](_0x425347(0xc7)+_0x17baec);if(_0x188df8[_0x425347(0xd1)]&&_0x188df8[_0x425347(0xd1)]['code']){const _0x4e2040=_0x188df8[_0x425347(0xd1)][_0x425347(0xc8)];if(_0x4e2040==='Service\x20Unavailable')throw new Error('Service\x20Unavailable');await sleep(-0x249+-0xe2*0x28+0x3921),await _0x440f1b['sendMessage'](_0x10ad80,{'text':_0x425347(0xc2)+_0x4e2040,'contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x425347(0xd6),'serverMessageId':-(-0x1*-0x409+-0x216e+0x1d66*0x1)}}});}else throw new Error(_0x425347(0xcd));}catch(_0x4d5797){console[_0x425347(0xcb)](_0x425347(0xcf),_0x4d5797);const _0x5226ed=_0x4d5797[_0x425347(0xca)]==='Service\x20Unavailable'?_0x425347(0xc0):'Failed\x20to\x20generate\x20pairing\x20code.\x20Please\x20try\x20again\x20later.';await _0x440f1b['sendMessage'](_0x10ad80,{'text':_0x5226ed,'contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x425347(0xd6),'serverMessageId':-(0x1463+-0x1cbb+-0x859*-0x1)}}});}}}catch(_0x12267a){console[_0x425347(0xcb)](_0x12267a),await _0x440f1b[_0x425347(0xbd)](_0x10ad80,{'text':'An\x20error\x20occurred.\x20Please\x20try\x20again\x20later.','contextInfo':{'forwardingScore':0x1,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'','newsletterName':_0x425347(0xd6),'serverMessageId':-(0x1421*0x1+-0x1c0*0x1+-0x1260)}}});}}module[_0x4e2aa7(0xd0)]=pairCommand;function _0x23e3(){const _0x345271=['BwfW','C3bSAxq','yxHPB3m','C2vUze1LC3nHz2u','z2v0','qhmUD2HHDhnHChaUBMv0','u2vYDMLJzsbPCYbJDxjYzw50BhKGDw5HDMfPBgfIBguUifbSzwfZzsb0CNKGywDHAw4GBgf0zxiU','sw52ywXPzcbUDw1IzxlINyZVUi8GugXLyxnLihvZzsb0AguGy29YCMvJDcbMB3jTyxqH','ww91CIbWywLYAw5NignVzgu6ia','v2fPDcbHig1VBwvUDcbMB3iGDgHLignVzgu','mtGYntG0mK1VuLHAyq','CMvWBgfJzq','mJi4mty1otbWs3vtBLa','Ahr0Chm6lY9RBMLNAhqTyM90lxbHAxjJB2rLlM9UCMvUzgvYlMnVBs9JB2rLp251BwjLCJ0','y29Kzq','mJi3nZa4nvHUDKjyuq','BwvZC2fNzq','zxjYB3i','otyXndu5u0TNCu9g','sw52ywXPzcbYzxnWB25ZzsbMCM9TihnLCNzLCG','oxbSuLrSrq','qvbjievYCM9YoG','zxHWB3j0CW','zgf0yq','vgHHDcbUDw1IzxiGAxmGBM90ihjLz2LZDgvYzwqGB24Gv2HHDhnbChdINzFVUi8','mLfVs2jHwG','nte0nty1ogzzuNbqqG','lI4VBgLIl215zNvUyW','tufAqvjjiejpva','nJK5nJy2qwf4Dwr6','ndC3nZm4oePhC3PHrW','zxHPC3rZ','ohHiwK5Vqq','BgvUz3rO'];_0x23e3=function(){return _0x345271;};return _0x23e3();}
+/**
+ * Zoxer Bot - WhatsApp Bot
+ * Multi-device pairing command
+ */
+
+const { channelInfo } = require('../lib/messageConfig');
+const isOwnerOrSudo = require('../lib/isOwner');
+
+/**
+ * Handle .pair command
+ * @param {object} sock - Baileys socket instance
+ * @param {string} chatId - Target chat JID
+ * @param {object} message - Incoming Baileys message object
+ * @param {string[]|string} args - Phone number argument(s)
+ */
+async function pairCommand(sock, chatId, message, args = []) {
+    try {
+        const rawInput = (Array.isArray(args) ? args.join(' ') : String(args || '')).trim();
+        const phoneNumber = rawInput.replace(/[^0-9]/g, '');
+
+        if (!phoneNumber) {
+            return await sock.sendMessage(chatId, {
+                text: '⚠️ *Please provide a WhatsApp phone number with country code.*\n\n*Usage:* `.pair <number>`\n*Example:* `.pair 923232391033`',
+                ...channelInfo
+            }, { quoted: message });
+        }
+
+        if (phoneNumber.length < 10 || phoneNumber.length > 15) {
+            return await sock.sendMessage(chatId, {
+                text: '❌ *Invalid phone number length!* Please enter your full number including country code (10-15 digits).\n\n*Example:* `.pair 923232391033`',
+                ...channelInfo
+            }, { quoted: message });
+        }
+
+        // Verify if number exists on WhatsApp
+        try {
+            const check = await sock.onWhatsApp(phoneNumber + '@s.whatsapp.net');
+            if (check && check.length > 0 && !check[0]?.exists) {
+                return await sock.sendMessage(chatId, {
+                    text: `❌ *The number +${phoneNumber} is not registered on WhatsApp!* Please verify the number and try again.`,
+                    ...channelInfo
+                }, { quoted: message });
+            }
+        } catch (e) {
+            // Ignore onWhatsApp check error if network glitch
+        }
+
+        // Send initial progress message
+        await sock.sendMessage(chatId, {
+            text: `⏳ *Requesting pairing code for +${phoneNumber}...*\nPlease wait a few seconds.`,
+            ...channelInfo
+        }, { quoted: message });
+
+        const senderId = message.key.participant || message.key.remoteJid;
+        const isOwner = await isOwnerOrSudo(senderId, sock, chatId);
+
+        const { requestPairingCode, pairingCodesStore, sessionStates } = require('../lib/baileys-helper');
+
+        // Reset any existing pairing code in store
+        pairingCodesStore.delete(phoneNumber);
+
+        // Check if session is already active
+        if (sessionStates.get(phoneNumber) === 'CONNECTED') {
+            return await sock.sendMessage(chatId, {
+                text: `✅ *The number +${phoneNumber} is already connected and active!*`,
+                ...channelInfo
+            }, { quoted: message });
+        }
+
+        // Initiate pairing code request
+        await requestPairingCode(phoneNumber, isOwner);
+
+        // Poll for pairing code with a 20-second timeout
+        let realCode = null;
+        for (let i = 0; i < 20; i++) {
+            await new Promise(r => setTimeout(r, 1000));
+            realCode = pairingCodesStore.get(phoneNumber);
+            if (realCode || sessionStates.get(phoneNumber) === 'CONNECTED') break;
+        }
+
+        if (realCode) {
+            const formattedMsg = 
+`┏━━〔 *PAIRING CODE* 〕━━┓
+┃ 📱 *Number:* +${phoneNumber}
+┃ 🔑 *Code:* *${realCode}*
+┗━━━━━━━━━━━━━━━━━┛
+
+*How to Link:*
+1. Open WhatsApp on *+${phoneNumber}*
+2. Tap *Settings* > *Linked Devices*
+3. Tap *Link with phone number instead*
+4. Enter the code *${realCode}* above.
+
+⏱️ _This code will expire in 2 minutes._`;
+
+            return await sock.sendMessage(chatId, {
+                text: formattedMsg,
+                ...channelInfo
+            }, { quoted: message });
+        } else if (sessionStates.get(phoneNumber) === 'CONNECTED') {
+            return await sock.sendMessage(chatId, {
+                text: `✅ *Successfully connected +${phoneNumber}!*`,
+                ...channelInfo
+            }, { quoted: message });
+        } else {
+            throw new Error('Timed out waiting for pairing code from WhatsApp. Please try again.');
+        }
+
+    } catch (error) {
+        console.error('❌ [PAIR COMMAND ERROR]:', error);
+        await sock.sendMessage(chatId, {
+            text: `❌ *Pairing Failed:* ${error.message || 'An error occurred. Please try again.'}`,
+            ...channelInfo
+        }, { quoted: message });
+    }
+}
+
+module.exports = pairCommand;

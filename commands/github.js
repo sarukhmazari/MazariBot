@@ -6,9 +6,9 @@ const path = require('path');
 
 async function githubCommand(sock, chatId, message) {
   try {
-    let txt = `*乂  MAZARI BOT  乂*\n\n`;
-    txt += `✩  *Bot Name* : MAZARI BOT\n`;
-    txt += `✩  *Owner* : Sarukh Mazari\n`;
+    let txt = `*乂  ZOXER BOT  乂*\n\n`;
+    txt += `✩  *Bot Name* : ZOXER BOT\n`;
+    txt += `✩  *Owner* : Sarukh Zoxer\n`;
     txt += `✩  *Version* : 1.0.0\n`;
     txt += `✩  *Status* : Active\n\n`;
     txt += `💥 *Professional WhatsApp Bot*\n\n`;

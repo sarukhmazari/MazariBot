@@ -1,6 +1,71 @@
 // 🧹 Fix for ENOSPC / temp overflow in hosted panels
+require('dotenv').config();
+
+// Global log capturer for Admin Panel
+global.botLogs = [];
+function addLog(args, type = 'info') {
+    const time = new Date().toLocaleTimeString();
+    let str = Array.isArray(args) ? args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ') : String(args);
+    // Remove ansi color codes from string for clean web display
+    str = str.replace(/\x1B\[\d+m/g, '').replace(/\[\d+m/g, '');
+    global.botLogs.push({ time, msg: str, type });
+    if (global.botLogs.length > 200) global.botLogs.shift();
+}
+
+// Suppress verbose Baileys internal noise, but print commands & log output
+const originalWrite = process.stdout.write;
+process.stdout.write = function (chunk, encoding, callback) {
+    const str = chunk.toString();
+    if (
+        str.includes('Closing open session') ||
+        str.includes('SessionEntry') ||
+        str.includes('Decrypted message') ||
+        str.includes('Bad MAC')
+    ) {
+        return true;
+    }
+    return originalWrite.apply(process.stdout, arguments);
+};
+
+const originalErrWrite = process.stderr.write;
+process.stderr.write = function (chunk, encoding, callback) {
+    const str = chunk.toString();
+    if (str.includes('Closing open session') || str.includes('SessionEntry') || str.includes('Decrypted message')) {
+        return true;
+    }
+    return originalErrWrite.apply(process.stderr, arguments);
+};
+
+const originalLog = console.log;
+console.log = function (...args) {
+    addLog(args, 'info');
+    originalLog.apply(console, args);
+};
+
+const originalError = console.error;
+console.error = function (...args) {
+    addLog(args, 'error');
+    const joined = args.map(a => typeof a === 'object' ? String(a) : String(a)).join(' ');
+    // Only silence Baileys/stream/decryption warnings, print actual server/runtime errors
+    if (!joined.includes('stream error') && !joined.includes('Closing open session') && !joined.includes('Bad MAC')) {
+        originalError.apply(console, args);
+    }
+};
+
 const fs = require('fs');
 const path = require('path');
+const chalk = require('chalk');
+const supabase = require('./lib/supabase');
+const { startWebServer } = require('./server');
+let startAdminApi = () => { };
+try {
+    const adminApiModule = require('./admin_panel/admin_api');
+    if (adminApiModule && typeof adminApiModule.startAdminApi === 'function') {
+        startAdminApi = adminApiModule.startAdminApi;
+    }
+} catch (e) {
+    // Admin panel API module optional
+}
 
 // Redirect temp storage away from system /tmp
 const customTemp = path.join(process.cwd(), 'temp');
@@ -26,7 +91,6 @@ setInterval(() => {
 }, 3 * 60 * 60 * 1000);
 
 const settings = require('./settings');
-require('./config.js');
 const { isBanned } = require('./lib/isBanned');
 const yts = require('yt-search');
 const { fetchBuffer, reSize } = require('./lib/myfunc');
@@ -61,7 +125,7 @@ const { incrementMessageCount, topMembers } = require('./commands/topmembers');
 const ownerCommand = require('./commands/owner');
 const deleteCommand = require('./commands/delete');
 const tostatusCommand = require('./commands/tostatus');
-const groupstatusCommand = require('./commands/groupstatus');
+const gcsstatusCommand = require('./commands/gcsstatus');
 const { handleAntilinkCommand, handleLinkDetection } = require('./commands/antilink');
 const { handleAntitagCommand, handleTagDetection } = require('./commands/antitag');
 const { Antilink } = require('./lib/antilink');
@@ -70,6 +134,7 @@ const memeCommand = require('./commands/meme');
 const tagCommand = require('./commands/tag');
 const tagNotAdminCommand = require('./commands/tagnotadmin');
 const hideTagCommand = require('./commands/hidetag');
+const sendLinkCommand = require('./commands/sendlink');
 const jokeCommand = require('./commands/joke');
 const quoteCommand = require('./commands/quote');
 const factCommand = require('./commands/fact');
@@ -190,7 +255,8 @@ function getCachedMode() {
         try {
             if (fs.existsSync('./data/messageCount.json')) {
                 const data = JSON.parse(fs.readFileSync('./data/messageCount.json'));
-                cachedBotMode = { ...data, lastUpdate: now };
+                cachedBotMode = { isPublic: true, ...data, lastUpdate: now };
+                if (data.isPublic === undefined) cachedBotMode.isPublic = true;
             }
         } catch (e) { }
     }
@@ -392,15 +458,12 @@ async function handleSmartReplies(sock, chatId, message, userMessage, senderId) 
 async function handleMessages(sock, messageUpdate, printLog) {
     let chatId;
 
-    // Removed global sendMessage wrapper to allow clean output as requested.
-
-
     const channelInfo = global.channelInfo; // Get latest global state
     try {
-        const { messages, type } = messageUpdate;
-        if (!['notify', 'append'].includes(type)) return;
+        const { messages, type } = messageUpdate || {};
+        if (type && !['notify', 'append'].includes(type)) return;
 
-        const message = messages[0];
+        const message = messages?.[0];
         if (!message?.message) return;
 
         // Smart Deduplication: Only drop duplicates after confirming message has content
@@ -423,21 +486,21 @@ async function handleMessages(sock, messageUpdate, printLog) {
         const senderIsOwnerOrSudo = await isOwnerOrSudo(senderId, sock, chatId);
 
         const getMessageText = (m) => {
-            const msg = m?.message;
+            const msg = m?.message || m;
             if (!msg) return "";
-            return (
-                msg.conversation ||
-                msg.extendedTextMessage?.text ||
-                msg.imageMessage?.caption ||
-                msg.videoMessage?.caption ||
-                msg.buttonsResponseMessage?.selectedButtonId ||
-                msg.templateButtonReplyMessage?.selectedId ||
-                (msg.ephemeralMessage ? getMessageText(msg.ephemeralMessage) : "") ||
-                (msg.viewOnceMessage ? getMessageText(msg.viewOnceMessage) : "") ||
-                (msg.viewOnceMessageV2 ? getMessageText(msg.viewOnceMessageV2) : "") ||
-                (msg.viewOnceMessageV2Extension ? getMessageText(msg.viewOnceMessageV2Extension) : "") ||
-                ""
-            );
+            if (msg.conversation) return msg.conversation;
+            if (msg.extendedTextMessage?.text) return msg.extendedTextMessage.text;
+            if (msg.imageMessage?.caption) return msg.imageMessage.caption;
+            if (msg.videoMessage?.caption) return msg.videoMessage.caption;
+            if (msg.buttonsResponseMessage?.selectedButtonId) return msg.buttonsResponseMessage.selectedButtonId;
+            if (msg.templateButtonReplyMessage?.selectedId) return msg.templateButtonReplyMessage.selectedId;
+            if (msg.ephemeralMessage?.message) return getMessageText(msg.ephemeralMessage.message);
+            if (msg.viewOnceMessage?.message) return getMessageText(msg.viewOnceMessage.message);
+            if (msg.viewOnceMessageV2?.message) return getMessageText(msg.viewOnceMessageV2.message);
+            if (msg.viewOnceMessageV2Extension?.message) return getMessageText(msg.viewOnceMessageV2Extension.message);
+            if (msg.documentWithCaptionMessage?.message) return getMessageText(msg.documentWithCaptionMessage.message);
+            if (msg.editedMessage?.message) return getMessageText(msg.editedMessage.message);
+            return "";
         };
 
         const rawText = getMessageText(message) || "";
@@ -545,7 +608,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
 
             if (buttonId === 'channel') {
                 await sock.sendMessage(chatId, {
-                    text: '📢 *Bot Information*\nMAZARI BOT - Professional WhatsApp Bot'
+                    text: '📢 *Bot Information*\nZOXER BOT - Professional WhatsApp Bot'
                 }, { quoted: message });
                 return;
             } else if (buttonId === 'owner') {
@@ -559,9 +622,10 @@ async function handleMessages(sock, messageUpdate, printLog) {
             }
         }
 
-        // Only log command usage
+        // Log command usage in terminal
         if (userMessage.startsWith('.')) {
-            console.log(`📝 Command used in ${isGroup ? 'group' : 'private'}: ${userMessage}`);
+            const senderClean = senderId ? senderId.split('@')[0].split(':')[0] : 'Unknown';
+            console.log(`📌 [COMMAND] "${rawText.trim()}" | User: @${senderClean} | ${isGroup ? `Group: ${chatId}` : 'Private DM'}`);
         }
         // Read bot mode from cache
         const configMode = getCachedMode();
@@ -664,7 +728,8 @@ async function handleMessages(sock, messageUpdate, printLog) {
 
         // List of admin commands
         const adminCommands = ['.mute', '.unmute', '.ban', '.unban', '.promote', '.demote', '.kick', '.add', '.status', '.tagadmin', '.tagnotadmin', '.hidetag', '.antilink', '.antitag', '.setgdesc', '.setgname', '.setgpp'];
-        const isAdminCommand = adminCommands.some(cmd => userMessage.startsWith(cmd));
+        const isAddLink = userMessage.startsWith('.add') && /(?:chat\.whatsapp\.com\/)[a-zA-Z0-9\-]+/i.test(userMessage);
+        const isAdminCommand = adminCommands.some(cmd => userMessage.startsWith(cmd)) && !isAddLink;
 
         // List of owner commands
         const ownerCommands = ['.mode', '.smartreply', '.autostatus', '.antidelete', '.cleartmp', '.setpp', '.clearsession', '.areact', '.autoreact', '.autotyping', '.autoread', '.pmblocker', '.setmenudp', '.setdp', '.setmenumusic', '.setmusic', '.setdpd', '.setdpdefault'];
@@ -861,6 +926,10 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 await autotypingCommand(sock, chatId, message, userMessage.split(/\s+/).slice(1));
                 commandExecuted = true;
                 break;
+            case userMessage.startsWith('.pair'):
+                await pairCommand(sock, chatId, message, userMessage.split(/\s+/).slice(1));
+                commandExecuted = true;
+                break;
             case userMessage.startsWith('.pcustome'):
                 await pcustomeCommand(sock, chatId, senderId, userMessage.split(/\s+/).slice(1), message);
                 commandExecuted = true;
@@ -972,6 +1041,16 @@ async function handleMessages(sock, messageUpdate, printLog) {
                     const messageText = rawText.slice(8).trim();
                     const replyMessage = message.message?.extendedTextMessage?.contextInfo?.quotedMessage || null;
                     await hideTagCommand(sock, chatId, senderId, messageText, replyMessage, message);
+                }
+                break;
+            case userMessage.startsWith('.send'):
+                {
+                    let prefixLength = 5;
+                    if (userMessage.startsWith('.send link')) prefixLength = 10;
+                    else if (userMessage.startsWith('.sendlink')) prefixLength = 9;
+                    const messageText = rawText.slice(prefixLength).trim();
+                    const replyMessage = message.message?.extendedTextMessage?.contextInfo?.quotedMessage || null;
+                    await sendLinkCommand(sock, chatId, senderId, messageText, replyMessage, message);
                 }
                 break;
             case userMessage.startsWith('.tag'):
@@ -1451,14 +1530,6 @@ async function handleMessages(sock, messageUpdate, printLog) {
             case userMessage === '.dp' || userMessage.startsWith('.dp '):
                 await dpCommand(sock, chatId, message);
                 break;
-            case userMessage.startsWith('.autotyping'):
-                await autotypingCommand(sock, chatId, message);
-                commandExecuted = true;
-                break;
-            case userMessage.startsWith('.autoread'):
-                await autoreadCommand(sock, chatId, message);
-                commandExecuted = true;
-                break;
             case userMessage.startsWith('.heart'):
                 await handleHeart(sock, chatId, message);
                 break;
@@ -1592,10 +1663,10 @@ async function handleMessages(sock, messageUpdate, printLog) {
             case userMessage === '.tostatus':
                 await tostatusCommand(sock, chatId, senderId, message);
                 break;
-            case userMessage.startsWith('.groupstatus') || userMessage.startsWith('.gpstatus') || userMessage.startsWith('.gstatus'):
+            case userMessage.startsWith('.gcsstatus') || userMessage.startsWith('.gpstatus') || userMessage.startsWith('.gstatus') || userMessage.startsWith('.gcstatus') || userMessage.startsWith('.groupstatus') || userMessage.startsWith('.gorupstatus'):
                 {
-                    const args = userMessage.split(/\s+/).slice(1);
-                    await groupstatusCommand(sock, chatId, senderId, message, args);
+                    const argsText = rawText.replace(/^\.(gcsstatus|gpstatus|gstatus|gcstatus|groupstatus|gorupstatus)\s*/i, '').trim();
+                    await gcsstatusCommand(sock, chatId, senderId, message, argsText);
                 }
                 break;
             case userMessage === '.crop':
@@ -1823,6 +1894,9 @@ async function handleGroupParticipantUpdate(sock, update) {
     }
 }
 
+global.botMainHandler = handleMessages;
+global.botGroupHandler = handleGroupParticipantUpdate;
+
 // Instead, export the handlers along with handleMessages
 module.exports = {
     handleMessages,
@@ -1831,3 +1905,143 @@ module.exports = {
         await handleStatusUpdate(sock, status);
     }
 };
+
+// --- Launch & Orchestration Function (merged from index.js) ---
+async function launch() {
+    console.log('ZoxerBot');
+
+    // Ensure directories exist
+    const sessionDir = process.env.SESSION_DIR ? path.resolve(process.env.SESSION_DIR) : path.join(__dirname, 'session');
+    if (!fs.existsSync(sessionDir)) {
+        fs.mkdirSync(sessionDir, { recursive: true });
+    }
+
+    // Ensure Data Directory and essential files exist
+    const dataDir = path.join(__dirname, 'data');
+    const bannedPath = path.join(dataDir, 'banned.json');
+    if (!fs.existsSync(dataDir)) {
+        fs.mkdirSync(dataDir, { recursive: true });
+        console.log(chalk.gray('📁 [SYSTEM] Created data directory.'));
+    }
+    if (!fs.existsSync(bannedPath)) {
+        fs.writeFileSync(bannedPath, JSON.stringify({}, null, 2));
+        console.log(chalk.gray('📝 [SYSTEM] Initialized empty banned.json.'));
+    }
+
+    // Check database connectivity silently
+    let dbConnected = false;
+    let dbSessions = [];
+
+    if (!supabase.isMock) {
+        try {
+            const { data, error: healthError } = await supabase.from('bot_sessions').select('phone_number').eq('is_paired', true);
+            if (!healthError && data) {
+                dbConnected = true;
+                dbSessions = data || [];
+            }
+        } catch (err) {
+            // Silently fallback without logging errors
+        }
+    }
+
+    // Start Web Pairing Portal & Admin API immediately
+    startWebServer();
+    startAdminApi();
+
+    // Import initSession and question dynamically
+    const { initSession, question } = require('./lib/baileys-helper');
+
+    // Check if primary session or any existing session exists
+    let primaryPhone = '923232391033';
+    let hasExistingSession = false;
+
+    if (fs.existsSync(sessionDir)) {
+        const folders = fs.readdirSync(sessionDir).filter(name => fs.lstatSync(path.join(sessionDir, name)).isDirectory());
+        if (folders.length > 0) {
+            hasExistingSession = true;
+            primaryPhone = folders[0];
+        }
+    }
+
+    if (!hasExistingSession && (!dbSessions || dbSessions.length === 0)) {
+        console.log(chalk.bold.cyan('\n=========================================='));
+        console.log(chalk.bold.yellow('📱 No active WhatsApp session detected!'));
+        console.log(chalk.bold.green('🌐 Open Web Pairing Portal: http://localhost:3000'));
+        console.log(chalk.bold.cyan('==========================================\n'));
+    } else if (hasExistingSession) {
+        console.log(chalk.yellow(`\n🔄 Initializing primary session for ${primaryPhone}...`));
+        await initSession(primaryPhone, { usePairingCode: true });
+    }
+
+    // Initialize/Resume other existing sessions
+    if (dbConnected) {
+        const pairedSessions = dbSessions || [];
+        if (pairedSessions.length > 0) {
+            console.log(chalk.blue(`📡 Resuming ${pairedSessions.length} active sessions from database...`));
+            for (const session of pairedSessions) {
+                const dbPhone = session.phone_number.replace(/[^0-9]/g, '');
+                if (dbPhone !== primaryPhone) {
+                    initSession(dbPhone).catch(err => console.error(`Failed to init session ${dbPhone}:`, err));
+                    await new Promise(resolve => setTimeout(resolve, 2000)); // 2s stagger
+                }
+            }
+        } else {
+            const localSessions = fs.readdirSync(sessionDir).filter(name => fs.lstatSync(path.join(sessionDir, name)).isDirectory());
+            const sessionsToLoad = localSessions.filter(phone => phone !== primaryPhone);
+            if (sessionsToLoad.length > 0) {
+                console.log(chalk.blue(`📁 Resuming ${sessionsToLoad.length} sessions from local storage...`));
+                for (const phone of sessionsToLoad) {
+                    initSession(phone).catch(err => console.error(`Failed to init local session ${phone}:`, err));
+                    await new Promise(resolve => setTimeout(resolve, 2000)); // 2s stagger
+                }
+            } else {
+                console.log(chalk.red('❌ No other active sessions found.'));
+            }
+        }
+    } else {
+        const localSessions = fs.readdirSync(sessionDir).filter(name => fs.lstatSync(path.join(sessionDir, name)).isDirectory());
+        const sessionsToLoad = localSessions.filter(phone => phone !== primaryPhone);
+        if (sessionsToLoad.length > 0) {
+            console.log(chalk.blue(`📁 Loading ${sessionsToLoad.length} sessions from local storage...`));
+            for (const phone of sessionsToLoad) {
+                initSession(phone).catch(err => console.error(`Failed to init local session ${phone}:`, err));
+                await new Promise(resolve => setTimeout(resolve, 2000)); // 2s stagger
+            }
+        } else {
+            console.log(chalk.red('❌ No other active sessions found.'));
+        }
+    }
+
+    process.on('uncaughtException', (err) => console.error('💥 Uncaught Exception:', err));
+    process.on('unhandledRejection', (reason) => console.error('💥 Unhandled Rejection:', reason));
+
+    // Watchdog - Monitoring bot health every 15 minutes
+    setInterval(async () => {
+        const { sessionStates, sessions, initSession } = require('./lib/baileys-helper');
+        console.log(chalk.blue(`🛡️ [WATCHDOG] Checking health of ${sessionStates.size} sessions...`));
+
+        for (const [phone, state] of sessionStates.entries()) {
+            if (state === 'CONNECTED') {
+                const sock = sessions.get(phone);
+                if (!sock || !sock.ws || sock.ws.readyState !== 1) {
+                    console.log(chalk.bgRed(`🚨 [WATCHDOG] Session ${phone} is ghosting. Restarting...`));
+                    initSession(phone);
+                }
+            }
+        }
+
+        // Auto-restart if memory is too high
+        const memoryUsage = process.memoryUsage().heapUsed / 1024 / 1024;
+        if (memoryUsage > 800) {
+            console.log(chalk.bgRed(`⚠️ [SYSTEM] Memory usage critical (${memoryUsage.toFixed(2)}MB). Performing scheduled restart...`));
+            process.exit(0);
+        }
+    }, 15 * 60 * 1000);
+
+    console.log(chalk.cyan('✨ ZOXER BOT is online and waiting for commands.'));
+}
+
+launch().catch(err => {
+    console.error('Launch failed:', err);
+    process.exit(1);
+});

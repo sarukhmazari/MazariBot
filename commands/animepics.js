@@ -117,7 +117,7 @@ async function animePicsCommand(sock, chatId, message, type) {
         if (imageUrl) {
             await sock.sendMessage(chatId, {
                 image: { url: imageUrl },
-                caption: `✨ *Here is your ${type.charAt(0).toUpperCase() + type.slice(1)}!* 🌸\n📡 *Source:* ${resolvedFrom}\n\n© MAZARI BOT`
+                caption: `✨ *Here is your ${type.charAt(0).toUpperCase() + type.slice(1)}!* 🌸\n📡 *Source:* ${resolvedFrom}\n\n© ZOXER BOT`
             }, { quoted: message });
 
             await sock.sendMessage(chatId, { react: { text: '💖', key: message.key } });
@@ -137,7 +137,7 @@ async function animePicsCommand(sock, chatId, message, type) {
             const buffer = fs.readFileSync(localPath);
             await sock.sendMessage(chatId, {
                 image: buffer,
-                caption: `⚠️ *[Offline Mode]* Could not connect to the anime servers. Displaying default graphic.\n\n© MAZARI BOT`
+                caption: `⚠️ *[Offline Mode]* Could not connect to the anime servers. Displaying default graphic.\n\n© ZOXER BOT`
             }, { quoted: message });
             await sock.sendMessage(chatId, { react: { text: '⚠️', key: message.key } });
         } else {

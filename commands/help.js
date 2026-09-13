@@ -17,7 +17,7 @@ async function helpCommand(sock, chatId, message) {
             const data = JSON.parse(fs.readFileSync('./data/messageCount.json'));
             if (typeof data.isPublic === 'boolean') isPublic = data.isPublic;
         }
-    } catch (e) {}
+    } catch (e) { }
     const mode = isPublic ? '𝚙𝚞𝚋𝚕𝚒𝚌' : '𝚙𝚛𝚒𝚟𝚊𝚝𝚎';
 
     // Count commands dynamically from the commands folder
@@ -27,7 +27,7 @@ async function helpCommand(sock, chatId, message) {
 
     // Construct the menu with the new design
     const helpMessage = `⌬───────────⏣───────────⌬
-〔 𝗠𝗔𝗭𝗔𝗥𝗜  𝗔𝗜  𝗕𝗢𝗧 〕
+〔 𝗭𝗢𝗫𝗘𝗥  𝗕𝗢𝗧 〕
 ⌬───────────⏣───────────⌬
 ⧫ 𝙾𝚆𝙽𝙴𝚁: 𝙼𝙰𝚉𝙰𝚁𝙸 𝚃𝙴𝙰𝙼
 ⧫ 𝚂𝚃𝙰𝚃𝚄𝚂: ${mode}
@@ -59,7 +59,6 @@ async function helpCommand(sock, chatId, message) {
 ⬖ .𝚜𝚎𝚝𝚍𝚙𝚍 / .𝚜𝚎𝚝𝚍𝚙𝚍𝚎𝚏𝚊𝚞𝚕𝚝
 
 ◈──『 𝙶𝚁𝙾𝚄𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 』──◈
-⬖ .𝚐𝚛𝚘𝚞𝚙𝚜𝚝𝚊𝚝𝚞𝚜
 ⬖ .𝚔𝚒𝚌𝚔
 ⬖ .𝚊𝚍𝚍
 ⬖ .𝚋𝚊𝚗
@@ -71,6 +70,7 @@ async function helpCommand(sock, chatId, message) {
 ⬖ .𝚝𝚊𝚐𝚊𝚕𝚕
 ⬖ .𝚝𝚊𝚐𝚊𝚍𝚖𝚒𝚗
 ⬖ .𝚑𝚒𝚍𝚎𝚝𝚊𝚐
+⬖ .𝚜𝚎𝚗𝚍 𝚕𝚒𝚗𝚔 / .𝚜𝚎𝚗𝚍𝚕𝚒𝚗𝚔
 ⬖ .𝚊𝚗𝚝𝚒𝚕𝚒𝚗𝚔
 ⬖ .𝚊𝚗𝚝𝚒𝚝𝚊𝚐
 ⬖ .𝚠𝚎𝚕𝚌𝚘𝚖𝚎
@@ -170,7 +170,7 @@ async function helpCommand(sock, chatId, message) {
             const customMenuPath = './assets/images/custom_menu.jpg';
             const imageSource = fs.existsSync(customMenuPath)
                 ? fs.readFileSync(customMenuPath)
-                : { url: 'https://zoxer-api.sarukhmazari1.workers.dev/api/cdn/mz-dzqgy9' };
+                : { url: 'https://mazari-api.sarukhmazari1.workers.dev/api/cdn/mz-dzqgy9' };
 
             menuMsg = await sock.sendMessage(chatId, {
                 image: imageSource,

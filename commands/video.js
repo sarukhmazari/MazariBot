@@ -52,7 +52,7 @@ async function videoCommand(sock, chatId, message) {
                         await sock.sendMessage(chatId, {
                             video: { url: localFilePath },
                             mimetype: 'video/mp4',
-                            caption: `*${video.title}*\n\n> *_Downloaded by MAZARI BOT_*`
+                            caption: `*${video.title}*\n\n> *_Downloaded by ZOXER BOT_*`
                         }, { quoted: message });
 
                         // Clean up
@@ -81,7 +81,7 @@ async function videoCommand(sock, chatId, message) {
                 await sock.sendMessage(chatId, {
                     video: { url: videoUrl },
                     mimetype: 'video/mp4',
-                    caption: `*${video.title}*\n\n> *_Downloaded by MAZARI BOT_*`
+                    caption: `*${video.title}*\n\n> *_Downloaded by ZOXER BOT_*`
                 }, { quoted: message });
                 return;
             }

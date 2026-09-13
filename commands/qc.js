@@ -165,8 +165,8 @@ async function qcCommand(sock, chatId, text, message) {
 
         const json = {
             'sticker-pack-id': crypto.randomBytes(32).toString('hex'),
-            'sticker-pack-name': settings.packname || 'MazariBot',
-            'sticker-pack-publisher': settings.author || 'Sarukh Mazari',
+            'sticker-pack-name': settings.packname || 'zoxerbot',
+            'sticker-pack-publisher': settings.author || 'Sarukh Zoxer',
             'emojis': ['🤖']
         };
 

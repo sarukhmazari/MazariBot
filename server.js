@@ -142,7 +142,10 @@ app.get('/api/pair/status/:phone', async (req, res) => {
 
 // Fallback to index.html for single page app (Express 5 compatible)
 app.use((req, res) => {
-    res.sendFile(path.join(frontendPath, 'index.html'));
+    const indexPath = fs.existsSync(path.join(__dirname, 'public', 'index.html'))
+        ? path.join(__dirname, 'public', 'index.html')
+        : path.join(__dirname, 'frontend', 'index.html');
+    res.sendFile(indexPath);
 });
 
 /**

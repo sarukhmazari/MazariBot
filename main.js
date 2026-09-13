@@ -67,9 +67,12 @@ try {
     // Admin panel API module optional
 }
 
-// Redirect temp storage away from system /tmp
-const customTemp = path.join(process.cwd(), 'temp');
-if (!fs.existsSync(customTemp)) fs.mkdirSync(customTemp, { recursive: true });
+// Redirect temp storage away from system /tmp (safe for serverless and local)
+const isVercelEnv = process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME;
+const customTemp = isVercelEnv ? '/tmp' : path.join(process.cwd(), 'temp');
+if (!isVercelEnv && !fs.existsSync(customTemp)) {
+    try { fs.mkdirSync(customTemp, { recursive: true }); } catch (e) {}
+}
 process.env.TMPDIR = customTemp;
 process.env.TEMP = customTemp;
 process.env.TMP = customTemp;
@@ -2041,7 +2044,11 @@ async function launch() {
     console.log(chalk.cyan('✨ ZOXER BOT is online and waiting for commands.'));
 }
 
-launch().catch(err => {
-    console.error('Launch failed:', err);
-    process.exit(1);
-});
+if (require.main === module) {
+    launch().catch(err => {
+        console.error('Launch failed:', err);
+        process.exit(1);
+    });
+}
+
+module.exports = { launch };

@@ -2,7 +2,7 @@
   "name": "zoxerbot",
   "version": "1.0.0",
   "description": "Professional WhatsApp Bot by Sarukh Zoxer",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
     "start": "node main.js",
     "pro-start": "node --expose-gc --max-old-space-size=900 main.js"

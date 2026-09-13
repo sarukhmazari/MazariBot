@@ -4,6 +4,7 @@
   "description": "Professional WhatsApp Bot by Sarukh Zoxer",
   "main": "server.js",
   "scripts": {
+    "build": "echo Build Complete",
     "start": "node main.js",
     "pro-start": "node --expose-gc --max-old-space-size=900 main.js"
   },

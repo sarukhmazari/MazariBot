@@ -1,10 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const chalk = require('chalk');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || process.env.ADMIN_PORT || 3000;
+const isServerless = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
 
 // Middleware
 app.use(cors());
@@ -13,28 +14,39 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve static frontend files with no-cache headers
 const frontendPath = path.join(__dirname, 'frontend');
-app.use(express.static(frontendPath, {
-    etag: false,
-    maxAge: 0,
-    setHeaders: (res) => {
-        res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
-    }
-}));
+const publicPath = path.join(__dirname, 'public');
+
+if (fs.existsSync(publicPath)) {
+    app.use(express.static(publicPath, { etag: false, maxAge: 0 }));
+}
+if (fs.existsSync(frontendPath)) {
+    app.use(express.static(frontendPath, { etag: false, maxAge: 0 }));
+}
 
 /**
  * Healthcheck API
  */
 app.get('/api/health', (req, res) => {
-    const { sessionStates } = require('./lib/baileys-helper');
     let activeSessionsCount = 0;
-    for (const [phone, state] of sessionStates.entries()) {
-        if (state === 'CONNECTED') activeSessionsCount++;
+    let totalSessions = 0;
+    try {
+        const { sessionStates } = require('./lib/baileys-helper');
+        if (sessionStates) {
+            for (const [phone, state] of sessionStates.entries()) {
+                if (state === 'CONNECTED') activeSessionsCount++;
+            }
+            totalSessions = sessionStates.size;
+        }
+    } catch (e) {
+        // Fallback gracefully in serverless
     }
+
     res.json({
         success: true,
         status: 'online',
+        platform: isServerless ? 'vercel' : 'node',
         activeSessions: activeSessionsCount,
-        totalSessions: sessionStates.size,
+        totalSessions: totalSessions,
         timestamp: new Date().toISOString()
     });
 });
@@ -64,7 +76,7 @@ app.post('/api/pair', async (req, res) => {
         }
 
         // Check if already connected
-        if (sessionStates.get(phoneNumber) === 'CONNECTED') {
+        if (sessionStates && sessionStates.get(phoneNumber) === 'CONNECTED') {
             return res.json({
                 success: true,
                 alreadyConnected: true,
@@ -74,7 +86,7 @@ app.post('/api/pair', async (req, res) => {
         }
 
         // Reset any existing code for this number
-        pairingCodesStore.delete(phoneNumber);
+        if (pairingCodesStore) pairingCodesStore.delete(phoneNumber);
 
         // Initiate Baileys session & request pairing code
         await requestPairingCode(phoneNumber, false);
@@ -83,8 +95,8 @@ app.post('/api/pair', async (req, res) => {
         let realCode = null;
         for (let i = 0; i < 20; i++) {
             await new Promise(r => setTimeout(r, 1000));
-            realCode = pairingCodesStore.get(phoneNumber);
-            if (realCode || sessionStates.get(phoneNumber) === 'CONNECTED') break;
+            if (pairingCodesStore) realCode = pairingCodesStore.get(phoneNumber);
+            if (realCode || (sessionStates && sessionStates.get(phoneNumber) === 'CONNECTED')) break;
         }
 
         if (realCode) {
@@ -95,7 +107,7 @@ app.post('/api/pair', async (req, res) => {
                 expiresInSeconds: 120,
                 message: 'Pairing code generated successfully.'
             });
-        } else if (sessionStates.get(phoneNumber) === 'CONNECTED') {
+        } else if (sessionStates && sessionStates.get(phoneNumber) === 'CONNECTED') {
             return res.json({
                 success: true,
                 alreadyConnected: true,
@@ -126,7 +138,7 @@ app.get('/api/pair/status/:phone', async (req, res) => {
     try {
         const { sessionStates } = require('./lib/baileys-helper');
         const phoneNumber = String(req.params.phone).replace(/[^0-9]/g, '').trim();
-        const state = sessionStates.get(phoneNumber) || 'IDLE';
+        const state = (sessionStates && sessionStates.get(phoneNumber)) || 'IDLE';
         const isConnected = state === 'CONNECTED';
 
         res.json({
@@ -140,11 +152,15 @@ app.get('/api/pair/status/:phone', async (req, res) => {
     }
 });
 
-// Fallback to index.html for single page app (Express 5 compatible)
+// Fallback to index.html for single page app
 app.use((req, res) => {
-    const indexPath = fs.existsSync(path.join(__dirname, 'public', 'index.html'))
-        ? path.join(__dirname, 'public', 'index.html')
-        : path.join(__dirname, 'frontend', 'index.html');
+    let indexPath = path.join(__dirname, 'index.html');
+    if (!fs.existsSync(indexPath)) {
+        indexPath = path.join(__dirname, 'public', 'index.html');
+    }
+    if (!fs.existsSync(indexPath)) {
+        indexPath = path.join(__dirname, 'frontend', 'index.html');
+    }
     res.sendFile(indexPath);
 });
 
@@ -154,14 +170,14 @@ app.use((req, res) => {
 function startWebServer(port = PORT) {
     return new Promise((resolve) => {
         const server = app.listen(port, () => {
-            console.log(chalk.bold.green(`🌐 [WEB PORTAL] Live at: http://localhost:${port}`));
+            console.log(`🌐 [WEB PORTAL] Live at: http://localhost:${port}`);
             resolve(server);
         });
     });
 }
 
-// Allow direct execution: node server.js
-if (require.main === module) {
+// Allow direct execution: node server.js (prevent auto-listen in serverless)
+if (require.main === module && !isServerless) {
     startWebServer();
 }
 
